@@ -20,22 +20,14 @@
             margin: 0 auto;
             line-height: 1.6;
         }
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 28px;
-        }
-        .logo img {
-            width: 36px;
-            height: 36px;
-            border-radius: 8px;
-        }
-        .logo-text {
-            font-size: 14px;
-            font-weight: 700;
-            color: #1e293b;
-            letter-spacing: 0.3px;
+        .logo-img {
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            vertical-align: middle;
+            margin-right: 8px;
+            position: relative;
+            top: -2px;
         }
         .back {
             font-size: 13px;
@@ -183,12 +175,8 @@
     </style>
 </head>
 <body>
-    <div class="logo">
-        <img src="favicon-32x32.png" width="36" height="36" alt="">
-        <span class="logo-text">千年隼</span>
-    </div>
     <a href="index.html" class="back">← 返回</a>
-    <h1>持仓股</h1>
+    <h1><img src="favicon-32x32.png" class="logo-img" alt="">持仓股</h1>
     <h2 id="a"><span class="mkt-dot mkt-dot-a"></span>A股 <span style="font-weight:400;font-size:11px;color:#94a3b8">· 11只 · 最新 2026-05-29 15:15</span></h2>
     <div class="stock-list">
         <a href="stock_比亚迪.html" class="stock-item">比亚迪</a>
@@ -239,6 +227,6 @@
         <a href="stock_Sea.html" class="stock-item">Sea</a>
         <a href="stock_回声星通信.html" class="stock-item">回声星通信</a>
     </div>
-    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-05-29 21:55</div>
+    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-05-29 22:02</div>
 </body>
 </html>
