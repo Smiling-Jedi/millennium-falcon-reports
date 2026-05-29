@@ -55,8 +55,57 @@
       {
         "name": "腾讯控股",
         "code": "HK.00700",
-        "doc_url": "https://www.feishu.cn/docx/TBpqdgKmWoXSwDxeLvQcx0HtnIg",
-        "doc_id": "TBpqdgKmWoXSwDxeLvQcx0HtnIg",
+        "doc_url": "https://www.feishu.cn/docx/Gfyed4kn1oHluGxgN2KcEwmOnZf",
+        "doc_id": "Gfyed4kn1oHluGxgN2KcEwmOnZf",
+        "date": "2026-05-29"
+      },
+      {
+        "name": "粤海投资",
+        "code": "HK.00270",
+        "doc_url": "https://www.feishu.cn/docx/YbNYdRrbuomuX0xy1NicvTarnCc",
+        "doc_id": "YbNYdRrbuomuX0xy1NicvTarnCc",
+        "date": "2026-05-29"
+      },
+      {
+        "name": "恒瑞医药",
+        "code": "HK.01276",
+        "doc_url": "https://www.feishu.cn/docx/Z1CwdJKj8o8InlxQpC3cWqFFn8s",
+        "doc_id": "Z1CwdJKj8o8InlxQpC3cWqFFn8s",
+        "date": "2026-05-29"
+      },
+      {
+        "name": "小米集团-W",
+        "code": "HK.01810",
+        "doc_url": "https://www.feishu.cn/docx/GZmPdr9KZoJBfjxsDLNcZVE6nPg",
+        "doc_id": "GZmPdr9KZoJBfjxsDLNcZVE6nPg",
+        "date": "2026-05-29"
+      },
+      {
+        "name": "建滔积层板",
+        "code": "HK.01888",
+        "doc_url": "https://www.feishu.cn/docx/QEqzd34ngoZQ8zxc0NKcfoV2nVb",
+        "doc_id": "QEqzd34ngoZQ8zxc0NKcfoV2nVb",
+        "date": "2026-05-29"
+      },
+      {
+        "name": "美团-W",
+        "code": "HK.03690",
+        "doc_url": "https://www.feishu.cn/docx/VOIhdLhUeocQNzxPttXc05nWnAb",
+        "doc_id": "VOIhdLhUeocQNzxPttXc05nWnAb",
+        "date": "2026-05-29"
+      },
+      {
+        "name": "百济神州",
+        "code": "HK.06160",
+        "doc_url": "https://www.feishu.cn/docx/W0WBdn2GzoF1ycxcUetccXaonDe",
+        "doc_id": "W0WBdn2GzoF1ycxcUetccXaonDe",
+        "date": "2026-05-29"
+      },
+      {
+        "name": "阿里巴巴-W",
+        "code": "HK.09988",
+        "doc_url": "https://www.feishu.cn/docx/R5ccdBnXNoGsnvxcxrccHnjnnLf",
+        "doc_id": "R5ccdBnXNoGsnvxcxrccHnjnnLf",
         "date": "2026-05-29"
       }
     ],
@@ -71,5 +120,5 @@
       "market": "美股"
     }
   ],
-  "update_time": "2026-05-29 17:35"
+  "update_time": "2026-05-29 17:43"
 }
