@@ -4,23 +4,29 @@
       {
         "name": "比亚迪",
         "code": "SZ.002594",
-        "doc_url": "https://www.feishu.cn/docx/HUGhdHCUZo45LuxX6pLcKtSXnmf",
-        "doc_id": "HUGhdHCUZo45LuxX6pLcKtSXnmf",
-        "date": "2026-05-29"
+        "doc_url": "https://www.feishu.cn/docx/UrRbdXqxUo4u8gx3aHdcxL24nqg",
+        "doc_id": "UrRbdXqxUo4u8gx3aHdcxL24nqg",
+        "date": "2026-05-29",
+        "input_tokens": 116,
+        "output_tokens": 2372
       },
       {
         "name": "阳光电源",
         "code": "SZ.300274",
-        "doc_url": "https://www.feishu.cn/docx/G9YUdnHG1oxVJNx7tucc9Kj0nAc",
-        "doc_id": "G9YUdnHG1oxVJNx7tucc9Kj0nAc",
-        "date": "2026-05-29"
+        "doc_url": "https://www.feishu.cn/docx/XQUYdwPHQogUeuxChaGcCLdynvg",
+        "doc_id": "XQUYdwPHQogUeuxChaGcCLdynvg",
+        "date": "2026-05-29",
+        "input_tokens": 28,
+        "output_tokens": 2038
       },
       {
         "name": "宁德时代",
         "code": "SZ.300750",
-        "doc_url": "https://www.feishu.cn/docx/FxtKdABBdotqA1x1VSicJUxQn4e",
-        "doc_id": "FxtKdABBdotqA1x1VSicJUxQn4e",
-        "date": "2026-05-29"
+        "doc_url": "https://www.feishu.cn/docx/UZqAdw02woIuyMxmpnCcqy63n9f",
+        "doc_id": "UZqAdw02woIuyMxmpnCcqy63n9f",
+        "date": "2026-05-29",
+        "input_tokens": 121,
+        "output_tokens": 2146
       },
       {
         "name": "中信证券",
@@ -39,16 +45,20 @@
       {
         "name": "兴业银行",
         "code": "SH.601166",
-        "doc_url": "https://www.feishu.cn/docx/CGANdribLoyQF6xcTQecieg2nzg",
-        "doc_id": "CGANdribLoyQF6xcTQecieg2nzg",
-        "date": "2026-05-29"
+        "doc_url": "https://www.feishu.cn/docx/T99YdhRMMoKpL3x5Nu4cqic6nab",
+        "doc_id": "T99YdhRMMoKpL3x5Nu4cqic6nab",
+        "date": "2026-05-29",
+        "input_tokens": 124,
+        "output_tokens": 2116
       },
       {
         "name": "交通银行",
         "code": "SH.601328",
-        "doc_url": "https://www.feishu.cn/docx/YzHWd4c0eoyckBxLR8IcsiPkn1g",
-        "doc_id": "YzHWd4c0eoyckBxLR8IcsiPkn1g",
-        "date": "2026-05-29"
+        "doc_url": "https://www.feishu.cn/docx/DCNNd9SGeoLGnWxqi15cs878n4z",
+        "doc_id": "DCNNd9SGeoLGnWxqi15cs878n4z",
+        "date": "2026-05-29",
+        "input_tokens": 87,
+        "output_tokens": 1817
       },
       {
         "name": "交通银行",
@@ -83,58 +93,74 @@
       {
         "name": "腾讯控股",
         "code": "HK.00700",
-        "doc_url": "https://www.feishu.cn/docx/Gfyed4kn1oHluGxgN2KcEwmOnZf",
-        "doc_id": "Gfyed4kn1oHluGxgN2KcEwmOnZf",
-        "date": "2026-05-29"
+        "doc_url": "https://www.feishu.cn/docx/Z3aQdi9uQorQ1oxdYeOcFCE8nac",
+        "doc_id": "Z3aQdi9uQorQ1oxdYeOcFCE8nac",
+        "date": "2026-05-29",
+        "input_tokens": 1627,
+        "output_tokens": 2173
       },
       {
         "name": "粤海投资",
         "code": "HK.00270",
-        "doc_url": "https://www.feishu.cn/docx/YbNYdRrbuomuX0xy1NicvTarnCc",
-        "doc_id": "YbNYdRrbuomuX0xy1NicvTarnCc",
-        "date": "2026-05-29"
+        "doc_url": "https://www.feishu.cn/docx/CFusdYk5eo13FcxmKqTcS9LGnad",
+        "doc_id": "CFusdYk5eo13FcxmKqTcS9LGnad",
+        "date": "2026-05-29",
+        "input_tokens": 1433,
+        "output_tokens": 2178
       },
       {
         "name": "恒瑞医药",
         "code": "HK.01276",
-        "doc_url": "https://www.feishu.cn/docx/Z1CwdJKj8o8InlxQpC3cWqFFn8s",
-        "doc_id": "Z1CwdJKj8o8InlxQpC3cWqFFn8s",
-        "date": "2026-05-29"
+        "doc_url": "https://www.feishu.cn/docx/U8gKdLOUloRf1ex12escN2mRnIg",
+        "doc_id": "U8gKdLOUloRf1ex12escN2mRnIg",
+        "date": "2026-05-29",
+        "input_tokens": 1615,
+        "output_tokens": 2534
       },
       {
         "name": "小米集团-W",
         "code": "HK.01810",
-        "doc_url": "https://www.feishu.cn/docx/GZmPdr9KZoJBfjxsDLNcZVE6nPg",
-        "doc_id": "GZmPdr9KZoJBfjxsDLNcZVE6nPg",
-        "date": "2026-05-29"
+        "doc_url": "https://www.feishu.cn/docx/AgcNdHgT2outkixLQmRcJIJPnlg",
+        "doc_id": "AgcNdHgT2outkixLQmRcJIJPnlg",
+        "date": "2026-05-29",
+        "input_tokens": 1635,
+        "output_tokens": 1663
       },
       {
         "name": "建滔积层板",
         "code": "HK.01888",
-        "doc_url": "https://www.feishu.cn/docx/QEqzd34ngoZQ8zxc0NKcfoV2nVb",
-        "doc_id": "QEqzd34ngoZQ8zxc0NKcfoV2nVb",
-        "date": "2026-05-29"
+        "doc_url": "https://www.feishu.cn/docx/QGH6d5DMXoqZrPxrFYTc27SLn1f",
+        "doc_id": "QGH6d5DMXoqZrPxrFYTc27SLn1f",
+        "date": "2026-05-29",
+        "input_tokens": 1606,
+        "output_tokens": 2668
       },
       {
         "name": "美团-W",
         "code": "HK.03690",
-        "doc_url": "https://www.feishu.cn/docx/VOIhdLhUeocQNzxPttXc05nWnAb",
-        "doc_id": "VOIhdLhUeocQNzxPttXc05nWnAb",
-        "date": "2026-05-29"
+        "doc_url": "https://www.feishu.cn/docx/MHHRdZAMSoXijmxcshec8BUYnIg",
+        "doc_id": "MHHRdZAMSoXijmxcshec8BUYnIg",
+        "date": "2026-05-29",
+        "input_tokens": 1769,
+        "output_tokens": 2151
       },
       {
         "name": "百济神州",
         "code": "HK.06160",
-        "doc_url": "https://www.feishu.cn/docx/W0WBdn2GzoF1ycxcUetccXaonDe",
-        "doc_id": "W0WBdn2GzoF1ycxcUetccXaonDe",
-        "date": "2026-05-29"
+        "doc_url": "https://www.feishu.cn/docx/Oe2tdFmKcoQmuUx6lkhcUa8Pnyb",
+        "doc_id": "Oe2tdFmKcoQmuUx6lkhcUa8Pnyb",
+        "date": "2026-05-29",
+        "input_tokens": 1433,
+        "output_tokens": 2674
       },
       {
         "name": "阿里巴巴-W",
         "code": "HK.09988",
-        "doc_url": "https://www.feishu.cn/docx/R5ccdBnXNoGsnvxcxrccHnjnnLf",
-        "doc_id": "R5ccdBnXNoGsnvxcxrccHnjnnLf",
-        "date": "2026-05-29"
+        "doc_url": "https://www.feishu.cn/docx/LfuzdHgUSocvNHxaQ6zcf0OinOe",
+        "doc_id": "LfuzdHgUSocvNHxaQ6zcf0OinOe",
+        "date": "2026-05-29",
+        "input_tokens": 1718,
+        "output_tokens": 2608
       },
       {
         "name": "小米集团-W",
@@ -221,9 +247,99 @@
         "doc_url": "https://www.feishu.cn/docx/QhWMdfx0wofTcPxRzOicdReEnpb",
         "doc_id": "QhWMdfx0wofTcPxRzOicdReEnpb",
         "date": "2026-05-28"
+      },
+      {
+        "name": "Circle",
+        "code": "US.CRCL",
+        "doc_url": "https://www.feishu.cn/docx/JQZDdYW7HooiCtxYExOc37DfnOd",
+        "doc_id": "JQZDdYW7HooiCtxYExOc37DfnOd",
+        "date": "2026-05-29",
+        "input_tokens": 1432,
+        "output_tokens": 2202
+      },
+      {
+        "name": "Lumentum",
+        "code": "US.LITE",
+        "doc_url": "https://www.feishu.cn/docx/T0RNdo2Qdo72FOxp6koc0DUCn4e",
+        "doc_id": "T0RNdo2Qdo72FOxp6koc0DUCn4e",
+        "date": "2026-05-29",
+        "input_tokens": 1903,
+        "output_tokens": 1559
+      },
+      {
+        "name": "Meta",
+        "code": "US.META",
+        "doc_url": "https://www.feishu.cn/docx/O4LVdNMEcoidoHxeEtucUhUrnvd",
+        "doc_id": "O4LVdNMEcoidoHxeEtucUhUrnvd",
+        "date": "2026-05-29",
+        "input_tokens": 1784,
+        "output_tokens": 2048
+      },
+      {
+        "name": "微软",
+        "code": "US.MSFT",
+        "doc_url": "https://www.feishu.cn/docx/HQH1dk8c4orT5txvk33crFYWnMd",
+        "doc_id": "HQH1dk8c4orT5txvk33crFYWnMd",
+        "date": "2026-05-29",
+        "input_tokens": 1440,
+        "output_tokens": 2380
+      },
+      {
+        "name": "英伟达",
+        "code": "US.NVDA",
+        "doc_url": "https://www.feishu.cn/docx/GdtmdCkRfoRJ7KxDL9dcZLywnrd",
+        "doc_id": "GdtmdCkRfoRJ7KxDL9dcZLywnrd",
+        "date": "2026-05-29",
+        "input_tokens": 1440,
+        "output_tokens": 2305
+      },
+      {
+        "name": "Palantir",
+        "code": "US.PLTR",
+        "doc_url": "https://www.feishu.cn/docx/D47zdAx8ko4UT1xzvzHc8eBhnpg",
+        "doc_id": "D47zdAx8ko4UT1xzvzHc8eBhnpg",
+        "date": "2026-05-29",
+        "input_tokens": 1511,
+        "output_tokens": 1634
+      },
+      {
+        "name": "SoFi",
+        "code": "US.SOFI",
+        "doc_url": "https://www.feishu.cn/docx/TxRcdfjk0okZG1xjDPwcOtVFnpf",
+        "doc_id": "TxRcdfjk0okZG1xjDPwcOtVFnpf",
+        "date": "2026-05-29",
+        "input_tokens": 1436,
+        "output_tokens": 2445
+      },
+      {
+        "name": "特斯拉",
+        "code": "US.TSLA",
+        "doc_url": "https://www.feishu.cn/docx/TsKZdYYYDoA7XTxg5bQcL1ehnId",
+        "doc_id": "TsKZdYYYDoA7XTxg5bQcL1ehnId",
+        "date": "2026-05-29",
+        "input_tokens": 1525,
+        "output_tokens": 2739
+      },
+      {
+        "name": "Sea",
+        "code": "US.SE",
+        "doc_url": "https://www.feishu.cn/docx/ECQpd5jLmoDLjlxdYzfcBI3gnpf",
+        "doc_id": "ECQpd5jLmoDLjlxdYzfcBI3gnpf",
+        "date": "2026-05-29",
+        "input_tokens": 1771,
+        "output_tokens": 1803
+      },
+      {
+        "name": "回声星通信",
+        "code": "US.SATS",
+        "doc_url": "https://www.feishu.cn/docx/L47cdREjro95gTxb46OcRlJAnZe",
+        "doc_id": "L47cdREjro95gTxb46OcRlJAnZe",
+        "date": "2026-05-29",
+        "input_tokens": 1433,
+        "output_tokens": 2099
       }
     ]
   },
   "watchlist": [],
-  "update_time": "2026-05-29 18:01"
+  "update_time": "2026-05-29 20:46"
 }
