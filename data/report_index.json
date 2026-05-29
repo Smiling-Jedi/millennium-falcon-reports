@@ -113,12 +113,10 @@
   },
   "watchlist": [
     {
-      "code": "US.SE",
       "name": "Sea Limited",
-      "shares": 0,
-      "avg_cost": 0,
+      "code": "US.SE",
       "market": "美股"
     }
   ],
-  "update_time": "2026-05-29 17:43"
+  "update_time": "2026-05-29 17:52"
 }
