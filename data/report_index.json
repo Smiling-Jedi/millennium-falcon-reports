@@ -1,6 +1,56 @@
 {
   "reports": {
-    "A股": [],
+    "A股": [
+      {
+        "name": "比亚迪",
+        "code": "SZ.002594",
+        "doc_url": "https://www.feishu.cn/docx/HUGhdHCUZo45LuxX6pLcKtSXnmf",
+        "doc_id": "HUGhdHCUZo45LuxX6pLcKtSXnmf",
+        "date": "2026-05-29"
+      },
+      {
+        "name": "阳光电源",
+        "code": "SZ.300274",
+        "doc_url": "https://www.feishu.cn/docx/G9YUdnHG1oxVJNx7tucc9Kj0nAc",
+        "doc_id": "G9YUdnHG1oxVJNx7tucc9Kj0nAc",
+        "date": "2026-05-29"
+      },
+      {
+        "name": "宁德时代",
+        "code": "SZ.300750",
+        "doc_url": "https://www.feishu.cn/docx/FxtKdABBdotqA1x1VSicJUxQn4e",
+        "doc_id": "FxtKdABBdotqA1x1VSicJUxQn4e",
+        "date": "2026-05-29"
+      },
+      {
+        "name": "中信证券",
+        "code": "SH.600030",
+        "doc_url": "https://www.feishu.cn/docx/OeRTdvSkqoMYlYxAgyccIo74nrf",
+        "doc_id": "OeRTdvSkqoMYlYxAgyccIo74nrf",
+        "date": "2026-05-29"
+      },
+      {
+        "name": "招商银行",
+        "code": "SH.600036",
+        "doc_url": "https://www.feishu.cn/docx/BWt2dxH9yojiiwxFGYrcHxl5nig",
+        "doc_id": "BWt2dxH9yojiiwxFGYrcHxl5nig",
+        "date": "2026-05-29"
+      },
+      {
+        "name": "兴业银行",
+        "code": "SH.601166",
+        "doc_url": "https://www.feishu.cn/docx/CGANdribLoyQF6xcTQecieg2nzg",
+        "doc_id": "CGANdribLoyQF6xcTQecieg2nzg",
+        "date": "2026-05-29"
+      },
+      {
+        "name": "交通银行",
+        "code": "SH.601328",
+        "doc_url": "https://www.feishu.cn/docx/YzHWd4c0eoyckBxLR8IcsiPkn1g",
+        "doc_id": "YzHWd4c0eoyckBxLR8IcsiPkn1g",
+        "date": "2026-05-29"
+      }
+    ],
     "港股": [
       {
         "name": "腾讯控股",
@@ -21,5 +71,5 @@
       "market": "美股"
     }
   ],
-  "update_time": "2026-05-29 17:24"
+  "update_time": "2026-05-29 17:35"
 }
