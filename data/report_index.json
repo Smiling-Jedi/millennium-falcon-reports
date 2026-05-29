@@ -1,0 +1,95 @@
+{
+  "reports": {
+    "A股": [],
+    "港股": [],
+    "美股": [
+      {
+        "name": "Circle",
+        "code": "US.CRCL",
+        "doc_url": "https://www.feishu.cn/docx/V8cIdkQXdoVc9Ux5N7bcbb17nfh",
+        "doc_id": "V8cIdkQXdoVc9Ux5N7bcbb17nfh",
+        "date": "2026-05-28"
+      },
+      {
+        "name": "Lumentum",
+        "code": "US.LITE",
+        "doc_url": "https://www.feishu.cn/docx/IlGkd56Jiobhj6xxjUpcc0imnwc",
+        "doc_id": "IlGkd56Jiobhj6xxjUpcc0imnwc",
+        "date": "2026-05-28"
+      },
+      {
+        "name": "Meta",
+        "code": "US.META",
+        "doc_url": "https://www.feishu.cn/docx/XwtZdoVqQo279vxCXu7c8aESndc",
+        "doc_id": "XwtZdoVqQo279vxCXu7c8aESndc",
+        "date": "2026-05-28"
+      },
+      {
+        "name": "微软",
+        "code": "US.MSFT",
+        "doc_url": "https://www.feishu.cn/docx/QCxNdupEwoInh6xgzsQcZnLunNg",
+        "doc_id": "QCxNdupEwoInh6xgzsQcZnLunNg",
+        "date": "2026-05-28"
+      },
+      {
+        "name": "蔚来",
+        "code": "US.NIO",
+        "doc_url": "https://www.feishu.cn/docx/CAV2dqCoJo8Q4ux5THHcvuQ8nXg",
+        "doc_id": "CAV2dqCoJo8Q4ux5THHcvuQ8nXg",
+        "date": "2026-05-28"
+      },
+      {
+        "name": "英伟达",
+        "code": "US.NVDA",
+        "doc_url": "https://www.feishu.cn/docx/Ie8Edwyubo2dcVx0LtWcTI7UnWc",
+        "doc_id": "Ie8Edwyubo2dcVx0LtWcTI7UnWc",
+        "date": "2026-05-28"
+      },
+      {
+        "name": "拼多多",
+        "code": "US.PDD",
+        "doc_url": "https://www.feishu.cn/docx/D4r2dDhgmobniXxSmYbcwDYtnZg",
+        "doc_id": "D4r2dDhgmobniXxSmYbcwDYtnZg",
+        "date": "2026-05-28"
+      },
+      {
+        "name": "Palantir",
+        "code": "US.PLTR",
+        "doc_url": "https://www.feishu.cn/docx/HcTBdNRNSosGwwxZMYucC9svnLc",
+        "doc_id": "HcTBdNRNSosGwwxZMYucC9svnLc",
+        "date": "2026-05-28"
+      },
+      {
+        "name": "Rocket Lab",
+        "code": "US.RKLB",
+        "doc_url": "https://www.feishu.cn/docx/CWY8dkAbFo1Awqxfss2ccswwnCg",
+        "doc_id": "CWY8dkAbFo1Awqxfss2ccswwnCg",
+        "date": "2026-05-28"
+      },
+      {
+        "name": "SoFi",
+        "code": "US.SOFI",
+        "doc_url": "https://www.feishu.cn/docx/C7FWd8u0XofdlKxVAtZcuI4snNb",
+        "doc_id": "C7FWd8u0XofdlKxVAtZcuI4snNb",
+        "date": "2026-05-28"
+      },
+      {
+        "name": "特斯拉",
+        "code": "US.TSLA",
+        "doc_url": "https://www.feishu.cn/docx/QhWMdfx0wofTcPxRzOicdReEnpb",
+        "doc_id": "QhWMdfx0wofTcPxRzOicdReEnpb",
+        "date": "2026-05-28"
+      }
+    ]
+  },
+  "watchlist": [
+    {
+      "code": "US.SE",
+      "name": "Sea Limited",
+      "shares": 0,
+      "avg_cost": 0,
+      "market": "美股"
+    }
+  ],
+  "update_time": "2026-05-29 08:10"
+}
