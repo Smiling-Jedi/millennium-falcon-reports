@@ -4,11 +4,11 @@
       {
         "name": "比亚迪",
         "code": "SZ.002594",
-        "doc_url": "https://www.feishu.cn/docx/UrRbdXqxUo4u8gx3aHdcxL24nqg",
-        "doc_id": "UrRbdXqxUo4u8gx3aHdcxL24nqg",
+        "doc_url": "https://www.feishu.cn/docx/PsgVd4xFuofU5VxjmStcXSsPnQc",
+        "doc_id": "PsgVd4xFuofU5VxjmStcXSsPnQc",
         "date": "2026-05-29",
         "input_tokens": 116,
-        "output_tokens": 2372
+        "output_tokens": 2366
       },
       {
         "name": "阳光电源",
@@ -93,11 +93,11 @@
       {
         "name": "腾讯控股",
         "code": "HK.00700",
-        "doc_url": "https://www.feishu.cn/docx/Z3aQdi9uQorQ1oxdYeOcFCE8nac",
-        "doc_id": "Z3aQdi9uQorQ1oxdYeOcFCE8nac",
+        "doc_url": "https://www.feishu.cn/docx/HmmgdjX5codpDHxREjyc0isbnvd",
+        "doc_id": "HmmgdjX5codpDHxREjyc0isbnvd",
         "date": "2026-05-29",
-        "input_tokens": 1627,
-        "output_tokens": 2173
+        "input_tokens": 91,
+        "output_tokens": 2361
       },
       {
         "name": "粤海投资",
@@ -341,5 +341,5 @@
     ]
   },
   "watchlist": [],
-  "update_time": "2026-05-29 20:46"
+  "update_time": "2026-05-29 21:55"
 }
