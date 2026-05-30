@@ -360,9 +360,107 @@
         "report_title": "放量急挫 暂避锋芒",
         "input_tokens": 1501,
         "output_tokens": 1527
+      },
+      {
+        "name": "Circle",
+        "code": "US.CRCL",
+        "doc_url": "https://www.feishu.cn/docx/HTqkdWcSAo93sZxEuYHcbqhHnFf",
+        "doc_id": "HTqkdWcSAo93sZxEuYHcbqhHnFf",
+        "date": "2026-05-30",
+        "report_title": "放量突破均线压制",
+        "input_tokens": 1499,
+        "output_tokens": 1786
+      },
+      {
+        "name": "Lumentum",
+        "code": "US.LITE",
+        "doc_url": "https://www.feishu.cn/docx/E4ITdpjIXoyCFJxROE4coqsxnNe",
+        "doc_id": "E4ITdpjIXoyCFJxROE4coqsxnNe",
+        "date": "2026-05-30",
+        "report_title": "天量换手洗盘",
+        "input_tokens": 1976,
+        "output_tokens": 1778
+      },
+      {
+        "name": "Meta",
+        "code": "US.META",
+        "doc_url": "https://www.feishu.cn/docx/Ls9qd5SBGor3GCxG7MXcPPDdngd",
+        "doc_id": "Ls9qd5SBGor3GCxG7MXcPPDdngd",
+        "date": "2026-05-30",
+        "report_title": "AI变现落地,超买区警惕回调",
+        "input_tokens": 1863,
+        "output_tokens": 1996
+      },
+      {
+        "name": "微软",
+        "code": "US.MSFT",
+        "doc_url": "https://www.feishu.cn/docx/VMt8dKpmBo6aXdxy2BCc2DWQnvc",
+        "doc_id": "VMt8dKpmBo6aXdxy2BCc2DWQnvc",
+        "date": "2026-05-30",
+        "report_title": "放量突破超买区，注意短期回调风险",
+        "input_tokens": 1504,
+        "output_tokens": 1704
+      },
+      {
+        "name": "英伟达",
+        "code": "US.NVDA",
+        "doc_url": "https://www.feishu.cn/docx/Unlld5s9CoDriexO1YncOKb4nGd",
+        "doc_id": "Unlld5s9CoDriexO1YncOKb4nGd",
+        "date": "2026-05-30",
+        "report_title": "高位放量回调，RSI超买",
+        "input_tokens": 1506,
+        "output_tokens": 1756
+      },
+      {
+        "name": "Palantir",
+        "code": "US.PLTR",
+        "doc_url": "https://www.feishu.cn/docx/MQjwdCTNHouuWSxNaFncSC3Lnrg",
+        "doc_id": "MQjwdCTNHouuWSxNaFncSC3Lnrg",
+        "date": "2026-05-30",
+        "report_title": "AI板块共振 放量突破",
+        "input_tokens": 1582,
+        "output_tokens": 1688
+      },
+      {
+        "name": "SoFi",
+        "code": "US.SOFI",
+        "doc_url": "https://www.feishu.cn/docx/QV4wdExJeo7bYpxiThdc9n2Bn30",
+        "doc_id": "QV4wdExJeo7bYpxiThdc9n2Bn30",
+        "date": "2026-05-30",
+        "report_title": "放量冲高回落，超买需谨慎",
+        "input_tokens": 1560,
+        "output_tokens": 1698
+      },
+      {
+        "name": "特斯拉",
+        "code": "US.TSLA",
+        "doc_url": "https://www.feishu.cn/docx/RQW0dyC8mopFBrxHWTccJxJ3nuh",
+        "doc_id": "RQW0dyC8mopFBrxHWTccJxJ3nuh",
+        "date": "2026-05-30",
+        "report_title": "高位缩量十字星待变",
+        "input_tokens": 1594,
+        "output_tokens": 2068
+      },
+      {
+        "name": "回声星通信",
+        "code": "US.SATS",
+        "doc_url": "https://www.feishu.cn/docx/OKMGdE2ZjoD4F0xTUQXcWkM4nQl",
+        "doc_id": "OKMGdE2ZjoD4F0xTUQXcWkM4nQl",
+        "date": "2026-05-30",
+        "report_title": "长腿探底 多空博弈加剧",
+        "input_tokens": 1501,
+        "output_tokens": 2307
       }
     ]
   },
-  "watchlist": [],
-  "update_time": "2026-05-29 22:35"
+  "watchlist": [
+    {
+      "code": "US.SE",
+      "name": "Sea",
+      "shares": 60,
+      "avg_cost": 91.167,
+      "market": "美股"
+    }
+  ],
+  "update_time": "2026-05-30 10:13"
 }
