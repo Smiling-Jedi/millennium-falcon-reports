@@ -119,6 +119,8 @@
             transition: all .15s;
         }
         .stock-item:active { border-color: #2563eb; color: #2563eb; background: #f0f5ff; }
+        .stock-item-up { border-color: #fecaca; background: transparent; color: #475569; }
+        .stock-item-down { border-color: #bbf7d0; background: transparent; color: #475569; }
         .report-link {
             display: block;
             padding: 14px 0;
@@ -138,6 +140,8 @@
         }
         .report-date.new { color: #2563eb; }
         .report-date.today { color: #dc2626; }
+        .report-date.chg-up { color: #fca5a5; }
+        .report-date.chg-down { color: #86efac; }
         .stock-code {
             font-size: 12px;
             color: #94a3b8;
@@ -170,6 +174,32 @@
             font-size: 11px;
             color: #cbd5e1;
         }
+        .new-dot {
+            display: inline-block;
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            background: #2563eb;
+            margin-right: 4px;
+            vertical-align: middle;
+            position: relative;
+            top: -1px;
+            animation: pulse-dot 2s ease-in-out infinite;
+        }
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        .new-dot-sm {
+            display: inline-block;
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background: #2563eb;
+            margin-right: 6px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            animation: pulse-dot 2s ease-in-out infinite;
+        }
     </style>
 </head>
 <body>
@@ -177,9 +207,23 @@
     <h1>Meta <span class="mkt-tag mkt-tag-us">美股</span></h1>
     <p style="font-size:12px;color:#94a3b8;margin-bottom:24px;">META</p>
 
-    <a href="https://www.feishu.cn/docx/Ls9qd5SBGor3GCxG7MXcPPDdngd" class="report-link"><span class="report-date today">2026-05-30</span>AI变现落地,超买区警惕回调 →</a>
-    <a href="https://www.feishu.cn/docx/ItyFd3m9wobEfrxqhqCciPIgnrd" class="report-link"><span class="report-date">2026-05-29</span>AI变现落地 缩量回调测支撑 →</a>
-    <a href="https://www.feishu.cn/docx/XwtZdoVqQo279vxCXu7c8aESndc" class="report-link"><span class="report-date">2026-05-28</span>日报 →</a>
+    <a href="https://www.feishu.cn/docx/Ls9qd5SBGor3GCxG7MXcPPDdngd" class="report-link" data-stock="Meta" data-date="2026-05-30" data-has-reply="0"><span class="report-date today chg-down">2026-05-30</span>AI变现落地,超买区警惕回调 →</a>
+    <a href="https://www.feishu.cn/docx/ItyFd3m9wobEfrxqhqCciPIgnrd" class="report-link" data-stock="Meta" data-date="2026-05-29" data-has-reply="0"><span class="report-date chg-down">2026-05-29</span>AI变现落地 缩量回调测支撑 →</a>
+    <a href="https://www.feishu.cn/docx/XwtZdoVqQo279vxCXu7c8aESndc" class="report-link" data-stock="Meta" data-date="2026-05-28" data-has-reply="0"><span class="report-date chg-down">2026-05-28</span>日报 →</a>
     <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-05-30 10:13</div>
 </body>
 </html>
+<script>
+(function(){
+var t="2026-05-30",K='mf_seen_';
+var els=document.querySelectorAll('[data-stock]');
+for(var i=0;i<els.length;i++){var e=els[i];
+var n=e.getAttribute('data-stock');
+var d=e.getAttribute('data-date');
+var r=e.getAttribute('data-has-reply')==='1';
+var sk=K+n,h=localStorage.getItem(sk)||'';
+if(d>h||r){var dot=document.createElement('span');
+dot.className='new-dot';e.insertBefore(dot,e.firstChild);
+e.addEventListener('click',function(){localStorage.setItem(this.getAttribute('data-stock')?K+this.getAttribute('data-stock'):'','');});}
+})();
+</script>
