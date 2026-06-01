@@ -211,12 +211,12 @@
     <a href="https://www.feishu.cn/docx/VMt8dKpmBo6aXdxy2BCc2DWQnvc" class="report-link" data-stock="微软" data-date="2026-05-30" data-has-reply="0"><span class="report-date chg-up">2026-05-30</span>放量突破超买区，注意短期回调风险 →</a>
     <a href="https://www.feishu.cn/docx/HG5ddxnOboyK30xEMI3cPeEunzh" class="report-link" data-stock="微软" data-date="2026-05-29" data-has-reply="0"><span class="report-date chg-up">2026-05-29</span>放量突破阻力位，RSI超买需警惕 →</a>
     <a href="https://www.feishu.cn/docx/QCxNdupEwoInh6xgzsQcZnLunNg" class="report-link" data-stock="微软" data-date="2026-05-28" data-has-reply="0"><span class="report-date chg-up">2026-05-28</span>日报 →</a>
-    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-05-30 10:13</div>
+    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-01 23:10</div>
 </body>
 </html>
 <script>
 (function(){
-var t="2026-05-31",K='mf_seen_';
+var K='mf_seen_';
 var els=document.querySelectorAll('[data-stock]');
 for(var i=0;i<els.length;i++){var e=els[i];
 var n=e.getAttribute('data-stock');
@@ -225,6 +225,6 @@ var r=e.getAttribute('data-has-reply')==='1';
 var sk=K+n,h=localStorage.getItem(sk)||'';
 if(d>h||r){var dot=document.createElement('span');
 dot.className='new-dot';e.insertBefore(dot,e.firstChild);
-e.addEventListener('click',function(){localStorage.setItem(this.getAttribute('data-stock')?K+this.getAttribute('data-stock'):'','');});}
+(function(dt){e.addEventListener('click',function(){localStorage.setItem(K+e.getAttribute('data-stock'),dt||e.getAttribute('data-date'));});})(d);}
 })();
 </script>

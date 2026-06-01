@@ -103,6 +103,61 @@
         "doc_url": "https://www.feishu.cn/docx/E98vd5IaJoiO98xP9t5ctK33nYe",
         "date": "2026-05-28",
         "change_rate": -6.37
+      },
+      {
+        "name": "比亚迪",
+        "code": "SZ.002594",
+        "doc_url": "https://www.feishu.cn/docx/Fg1Odp3JYoh4wJxuKNxc0va0n0f",
+        "doc_id": "Fg1Odp3JYoh4wJxuKNxc0va0n0f",
+        "date": "2026-06-01",
+        "report_title": "放量破位，销量预警",
+        "change_rate": -2.63,
+        "input_tokens": 2163,
+        "output_tokens": 2662
+      },
+      {
+        "name": "阳光电源",
+        "code": "SZ.300274",
+        "doc_url": "https://www.feishu.cn/docx/PsSedt9EJoQoABxR3QCcy6pQnLb",
+        "doc_id": "PsSedt9EJoQoABxR3QCcy6pQnLb",
+        "date": "2026-06-01",
+        "report_title": "放量回调 机构承接",
+        "change_rate": -2.24,
+        "input_tokens": 2197,
+        "output_tokens": 1840
+      },
+      {
+        "name": "宁德时代",
+        "code": "SZ.300750",
+        "doc_url": "https://www.feishu.cn/docx/DiDJd6qT1oDGPuxLKzCct9UznMg",
+        "doc_id": "DiDJd6qT1oDGPuxLKzCct9UznMg",
+        "date": "2026-06-01",
+        "report_title": "高位放量滞涨，警惕回调风险",
+        "change_rate": -0.92,
+        "input_tokens": 2088,
+        "output_tokens": 2157
+      },
+      {
+        "name": "兴业银行",
+        "code": "SH.601166",
+        "doc_url": "https://www.feishu.cn/docx/GDNIdkFzRoyiqBxImZCcwzTLnPe",
+        "doc_id": "GDNIdkFzRoyiqBxImZCcwzTLnPe",
+        "date": "2026-06-01",
+        "report_title": "缩量震荡，均线压制待突破",
+        "change_rate": -0.32,
+        "input_tokens": 1814,
+        "output_tokens": 2244
+      },
+      {
+        "name": "交通银行",
+        "code": "SH.601328",
+        "doc_url": "https://www.feishu.cn/docx/NtDzdqYBgo0XxpxLF4HcJiktnQe",
+        "doc_id": "NtDzdqYBgo0XxpxLF4HcJiktnQe",
+        "date": "2026-06-01",
+        "report_title": "放量上涨机构回补",
+        "change_rate": 1.95,
+        "input_tokens": 1811,
+        "output_tokens": 2704
       }
     ],
     "港股": [
@@ -512,5 +567,5 @@
       "market": "美股"
     }
   ],
-  "update_time": "2026-05-30 10:13"
+  "update_time": "2026-06-01 23:10"
 }

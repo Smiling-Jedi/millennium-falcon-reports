@@ -208,14 +208,15 @@
     <h1>交通银行 <span class="mkt-tag mkt-tag-a">A股</span></h1>
     <p style="font-size:12px;color:#94a3b8;margin-bottom:24px;">601328</p>
 
+    <a href="https://www.feishu.cn/docx/NtDzdqYBgo0XxpxLF4HcJiktnQe" class="report-link" data-stock="交通银行" data-date="2026-06-01" data-has-reply="0"><span class="report-date today chg-up">2026-06-01</span>放量上涨机构回补 →</a>
     <a href="https://www.feishu.cn/docx/ZRD3dxuAkoMwW7xn9kxcF94unwf" class="report-link" data-stock="交通银行" data-date="2026-05-29" data-has-reply="0"><span class="report-date chg-up">2026-05-29</span>机构加仓 低估待修复 →</a>
     <a href="https://www.feishu.cn/docx/Y0KYdl7ahoTbBaxS8jRc2SEznfh" class="report-link" data-stock="交通银行" data-date="2026-05-28" data-has-reply="0"><span class="report-date chg-up">2026-05-28</span>日报 →</a>
-    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-05-30 10:13</div>
+    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-01 23:10</div>
 </body>
 </html>
 <script>
 (function(){
-var t="2026-05-31",K='mf_seen_';
+var K='mf_seen_';
 var els=document.querySelectorAll('[data-stock]');
 for(var i=0;i<els.length;i++){var e=els[i];
 var n=e.getAttribute('data-stock');
@@ -224,6 +225,6 @@ var r=e.getAttribute('data-has-reply')==='1';
 var sk=K+n,h=localStorage.getItem(sk)||'';
 if(d>h||r){var dot=document.createElement('span');
 dot.className='new-dot';e.insertBefore(dot,e.firstChild);
-e.addEventListener('click',function(){localStorage.setItem(this.getAttribute('data-stock')?K+this.getAttribute('data-stock'):'','');});}
+(function(dt){e.addEventListener('click',function(){localStorage.setItem(K+e.getAttribute('data-stock'),dt||e.getAttribute('data-date'));});})(d);}
 })();
 </script>

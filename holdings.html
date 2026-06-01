@@ -206,13 +206,13 @@
 </head>
 <body>
     <h1><img src="favicon-32x32.png" class="logo-img" alt="">持仓股</h1>
-    <h2 id="a"><span class="mkt-dot mkt-dot-a"></span>A股 <span style="font-weight:400;font-size:11px;color:#94a3b8">· 5只 · 最新 2026-05-29 15:15</span></h2>
+    <h2 id="a"><span class="mkt-dot mkt-dot-a"></span>A股 <span style="font-weight:400;font-size:11px;color:#94a3b8">· 5只 · 最新 2026-06-01 15:15</span></h2>
     <div class="stock-list">
-        <a href="stock_交通银行.html" class="stock-item stock-item-up" data-stock="交通银行" data-date="2026-05-29" data-has-reply="0">交通银行</a>
-        <a href="stock_兴业银行.html" class="stock-item stock-item-up" data-stock="兴业银行" data-date="2026-05-29" data-has-reply="0">兴业银行</a>
-        <a href="stock_宁德时代.html" class="stock-item stock-item-up" data-stock="宁德时代" data-date="2026-05-29" data-has-reply="0">宁德时代</a>
-        <a href="stock_比亚迪.html" class="stock-item stock-item-up" data-stock="比亚迪" data-date="2026-05-29" data-has-reply="0">比亚迪</a>
-        <a href="stock_阳光电源.html" class="stock-item stock-item-down" data-stock="阳光电源" data-date="2026-05-29" data-has-reply="0">阳光电源</a>
+        <a href="stock_交通银行.html" class="stock-item stock-item-up" data-stock="交通银行" data-date="2026-06-01" data-has-reply="0">交通银行</a>
+        <a href="stock_兴业银行.html" class="stock-item stock-item-down" data-stock="兴业银行" data-date="2026-06-01" data-has-reply="0">兴业银行</a>
+        <a href="stock_宁德时代.html" class="stock-item stock-item-down" data-stock="宁德时代" data-date="2026-06-01" data-has-reply="0">宁德时代</a>
+        <a href="stock_比亚迪.html" class="stock-item stock-item-down" data-stock="比亚迪" data-date="2026-06-01" data-has-reply="0">比亚迪</a>
+        <a href="stock_阳光电源.html" class="stock-item stock-item-down" data-stock="阳光电源" data-date="2026-06-01" data-has-reply="0">阳光电源</a>
     </div>
     <h2 id="hk"><span class="mkt-dot mkt-dot-hk"></span>港股 <span style="font-weight:400;font-size:11px;color:#94a3b8">· 8只 · 最新 2026-05-29 16:15</span></h2>
     <div class="stock-list">
@@ -237,12 +237,12 @@
         <a href="stock_特斯拉.html" class="stock-item stock-item-down" data-stock="特斯拉" data-date="2026-05-30" data-has-reply="0">特斯拉</a>
         <a href="stock_英伟达.html" class="stock-item stock-item-down" data-stock="英伟达" data-date="2026-05-30" data-has-reply="0">英伟达</a>
     </div>
-    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-05-30 10:13</div>
+    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-01 23:10</div>
 </body>
 </html>
 <script>
 (function(){
-var t="2026-05-31",K='mf_seen_';
+var K='mf_seen_';
 var els=document.querySelectorAll('[data-stock]');
 for(var i=0;i<els.length;i++){var e=els[i];
 var n=e.getAttribute('data-stock');
@@ -251,6 +251,6 @@ var r=e.getAttribute('data-has-reply')==='1';
 var sk=K+n,h=localStorage.getItem(sk)||'';
 if(d>h||r){var dot=document.createElement('span');
 dot.className='new-dot';e.insertBefore(dot,e.firstChild);
-e.addEventListener('click',function(){localStorage.setItem(this.getAttribute('data-stock')?K+this.getAttribute('data-stock'):'','');});}
+(function(dt){e.addEventListener('click',function(){localStorage.setItem(K+e.getAttribute('data-stock'),dt||e.getAttribute('data-date'));});})(d);}
 })();
 </script>
