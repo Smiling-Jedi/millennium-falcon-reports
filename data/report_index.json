@@ -256,6 +256,94 @@
         "doc_url": "https://www.feishu.cn/docx/R3KLdFmEFozisNxkFD0cvTq6nXm",
         "date": "2026-05-28",
         "change_rate": -1.82
+      },
+      {
+        "name": "粤海投资",
+        "code": "HK.00270",
+        "doc_url": "https://www.feishu.cn/docx/CdcrdAQRIo7bN2x6JiUcGUHgn5c",
+        "doc_id": "CdcrdAQRIo7bN2x6JiUcGUHgn5c",
+        "date": "2026-06-01",
+        "report_title": "缩量反弹，多空胶着待方向",
+        "change_rate": 0.6,
+        "input_tokens": 1810,
+        "output_tokens": 1999
+      },
+      {
+        "name": "腾讯控股",
+        "code": "HK.00700",
+        "doc_url": "https://www.feishu.cn/docx/OPyudBECpoQilAxYffrchNGJnhe",
+        "doc_id": "OPyudBECpoQilAxYffrchNGJnhe",
+        "date": "2026-06-01",
+        "report_title": "量价齐升 回购做多",
+        "change_rate": 2.06,
+        "input_tokens": 2097,
+        "output_tokens": 2415
+      },
+      {
+        "name": "恒瑞医药",
+        "code": "HK.01276",
+        "doc_url": "https://www.feishu.cn/docx/GrRSd1v5zoQJz4xPz3DcbnTmn4b",
+        "doc_id": "GrRSd1v5zoQJz4xPz3DcbnTmn4b",
+        "date": "2026-06-01",
+        "report_title": "缩量回调测试支撑",
+        "change_rate": -2.82,
+        "input_tokens": 1810,
+        "output_tokens": 1840
+      },
+      {
+        "name": "小米集团-W",
+        "code": "HK.01810",
+        "doc_url": "https://www.feishu.cn/docx/DFMBdgmzZo1XqXxeEJscCs0RnDe",
+        "doc_id": "DFMBdgmzZo1XqXxeEJscCs0RnDe",
+        "date": "2026-06-01",
+        "report_title": "放量反弹资金入场，关注反弹持续性",
+        "change_rate": 2.43,
+        "input_tokens": 1810,
+        "output_tokens": 3008
+      },
+      {
+        "name": "建滔积层板",
+        "code": "HK.01888",
+        "doc_url": "https://www.feishu.cn/docx/SIjddxAxzojDVlxdqzEcoPEZnig",
+        "doc_id": "SIjddxAxzojDVlxdqzEcoPEZnig",
+        "date": "2026-06-01",
+        "report_title": "高位放量杀跌，RSI超买需警惕",
+        "change_rate": -13.11,
+        "input_tokens": 2222,
+        "output_tokens": 2577
+      },
+      {
+        "name": "美团-W",
+        "code": "HK.03690",
+        "doc_url": "https://www.feishu.cn/docx/NFQZdDgOvoNwzGxYCLKcHEnFn2f",
+        "doc_id": "NFQZdDgOvoNwzGxYCLKcHEnFn2f",
+        "date": "2026-06-01",
+        "report_title": "业绩超预期修复",
+        "change_rate": 6.54,
+        "input_tokens": 2239,
+        "output_tokens": 2319
+      },
+      {
+        "name": "百济神州",
+        "code": "HK.06160",
+        "doc_url": "https://www.feishu.cn/docx/Rbk9dQ5aooPTEnx5AO8cPBnCnNh",
+        "doc_id": "Rbk9dQ5aooPTEnx5AO8cPBnCnNh",
+        "date": "2026-06-01",
+        "report_title": "破位下行考验支撑",
+        "change_rate": -3.0,
+        "input_tokens": 1811,
+        "output_tokens": 2463
+      },
+      {
+        "name": "阿里巴巴-W",
+        "code": "HK.09988",
+        "doc_url": "https://www.feishu.cn/docx/BCSmdNXyeoZFjFxfDbFc9f6dnNg",
+        "doc_id": "BCSmdNXyeoZFjFxfDbFc9f6dnNg",
+        "date": "2026-06-01",
+        "report_title": "资金异动暗藏机构建仓信号",
+        "change_rate": 1.57,
+        "input_tokens": 2172,
+        "output_tokens": 2092
       }
     ],
     "美股": [
@@ -567,5 +655,5 @@
       "market": "美股"
     }
   ],
-  "update_time": "2026-06-01 23:10"
+  "update_time": "2026-06-01 23:14"
 }
