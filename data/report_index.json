@@ -219,7 +219,7 @@
       {
         "name": "腾讯控股",
         "code": "HK.00700",
-        "doc_url": "https://www.feishu.cn/docx/SFJzdP15zowCTCxkVSFcj9csnke",
+        "doc_url": "https://y4ldtde4ko.feishu.cn/docx/SFJzdP15zowCTCxkVSFcj9csnke",
         "doc_id": "SFJzdP15zowCTCxkVSFcj9csnke",
         "date": "2026-05-29",
         "report_title": "缩量企稳待方向",
@@ -326,13 +326,13 @@
       {
         "name": "腾讯控股",
         "code": "HK.00700",
-        "doc_url": "https://www.feishu.cn/docx/OPyudBECpoQilAxYffrchNGJnhe",
-        "doc_id": "OPyudBECpoQilAxYffrchNGJnhe",
+        "doc_url": "https://y4ldtde4ko.feishu.cn/docx/QZyVdDROSomaKLx3XqycQ0W0nRc",
+        "doc_id": "QZyVdDROSomaKLx3XqycQ0W0nRc",
         "date": "2026-06-01",
-        "report_title": "量价齐升 回购做多",
+        "report_title": "回购托底中的弱势反弹",
         "change_rate": 2.06,
-        "input_tokens": 2097,
-        "output_tokens": 2415
+        "input_tokens": 50,
+        "output_tokens": 2430
       },
       {
         "name": "恒瑞医药",
@@ -710,5 +710,5 @@
       "market": "美股"
     }
   ],
-  "update_time": "2026-06-02 00:32"
+  "update_time": "2026-06-02 00:55"
 }
