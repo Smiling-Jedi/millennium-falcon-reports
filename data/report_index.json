@@ -118,24 +118,24 @@
       {
         "name": "阳光电源",
         "code": "SZ.300274",
-        "doc_url": "https://www.feishu.cn/docx/PsSedt9EJoQoABxR3QCcy6pQnLb",
-        "doc_id": "PsSedt9EJoQoABxR3QCcy6pQnLb",
+        "doc_url": "https://www.feishu.cn/docx/KGzDdscx7o42UrxFpJ2cqlg9nNb",
+        "doc_id": "KGzDdscx7o42UrxFpJ2cqlg9nNb",
         "date": "2026-06-01",
-        "report_title": "放量回调 机构承接",
+        "report_title": "放量回踩待确认",
         "change_rate": -2.24,
         "input_tokens": 2197,
-        "output_tokens": 1840
+        "output_tokens": 1887
       },
       {
         "name": "宁德时代",
         "code": "SZ.300750",
-        "doc_url": "https://www.feishu.cn/docx/DiDJd6qT1oDGPuxLKzCct9UznMg",
-        "doc_id": "DiDJd6qT1oDGPuxLKzCct9UznMg",
+        "doc_url": "https://www.feishu.cn/docx/T76ndot74oxld9xIIJ2cHEssnDb",
+        "doc_id": "T76ndot74oxld9xIIJ2cHEssnDb",
         "date": "2026-06-01",
-        "report_title": "高位放量滞涨，警惕回调风险",
+        "report_title": "缩量回调考验支撑",
         "change_rate": -0.92,
         "input_tokens": 2088,
-        "output_tokens": 2157
+        "output_tokens": 2198
       },
       {
         "name": "兴业银行",
@@ -158,6 +158,61 @@
         "change_rate": 1.95,
         "input_tokens": 1811,
         "output_tokens": 2704
+      },
+      {
+        "name": "招商银行",
+        "code": "SH.600036",
+        "doc_url": "https://www.feishu.cn/docx/CqAOdgKmGoe3TuxhTqgc50COn5d",
+        "doc_id": "CqAOdgKmGoe3TuxhTqgc50COn5d",
+        "date": "2026-06-01",
+        "report_title": "缩量震荡等待方向",
+        "change_rate": 0.5,
+        "input_tokens": 1812,
+        "output_tokens": 2277
+      },
+      {
+        "name": "中来股份",
+        "code": "SZ.300393",
+        "doc_url": "https://www.feishu.cn/docx/N26JdYQOxoCerMxebYXcBBtpnJS",
+        "doc_id": "N26JdYQOxoCerMxebYXcBBtpnJS",
+        "date": "2026-06-01",
+        "report_title": "破位下行 观望等待",
+        "change_rate": -1.39,
+        "input_tokens": 1813,
+        "output_tokens": 1783
+      },
+      {
+        "name": "机器人ETF华夏",
+        "code": "SH.562500",
+        "doc_url": "https://www.feishu.cn/docx/Ojn7d0fhToHfbVxqbPTcxyt7nVb",
+        "doc_id": "Ojn7d0fhToHfbVxqbPTcxyt7nVb",
+        "date": "2026-06-01",
+        "report_title": "缩量回调，超买区待整理",
+        "change_rate": -1.43,
+        "input_tokens": 2051,
+        "output_tokens": 2761
+      },
+      {
+        "name": "医药ETF易方达",
+        "code": "SH.512010",
+        "doc_url": "https://www.feishu.cn/docx/OgDfdkFQoo88wtxObnvcY3sfnsd",
+        "doc_id": "OgDfdkFQoo88wtxObnvcY3sfnsd",
+        "date": "2026-06-01",
+        "report_title": "放量下跌，谨慎防御",
+        "change_rate": -1.16,
+        "input_tokens": 1814,
+        "output_tokens": 2251
+      },
+      {
+        "name": "纳指ETF国泰",
+        "code": "SH.513100",
+        "doc_url": "https://www.feishu.cn/docx/Xd3SdqIKCoOwcRxMWP4cSkOEniq",
+        "doc_id": "Xd3SdqIKCoOwcRxMWP4cSkOEniq",
+        "date": "2026-06-01",
+        "report_title": "放量突破新高，关注阻力",
+        "change_rate": 4.05,
+        "input_tokens": 2063,
+        "output_tokens": 2821
       }
     ],
     "港股": [
@@ -655,5 +710,5 @@
       "market": "美股"
     }
   ],
-  "update_time": "2026-06-01 23:14"
+  "update_time": "2026-06-02 00:32"
 }
