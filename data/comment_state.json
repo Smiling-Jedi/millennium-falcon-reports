@@ -1,11 +1,17 @@
 {
   "K4BVdXNHyolax1xpX6Jc9z2qnsh": {
     "reply_date": "2026-05-29",
-    "stock_name": "阳光电源"
+    "stock_name": "阳光电源",
+    "comment_ids": [
+      "7645691983414987991"
+    ]
   },
   "RmrydwKb7o7vARx16FEc79Pqn2e": {
     "reply_date": "2026-05-29",
-    "stock_name": "宁德时代"
+    "stock_name": "宁德时代",
+    "comment_ids": [
+      "7645693175092251844"
+    ]
   },
   "OPyudBECpoQilAxYffrchNGJnhe": {
     "reply_date": "2026-06-01",
@@ -13,7 +19,11 @@
   },
   "GrRSd1v5zoQJz4xPz3DcbnTmn4b": {
     "reply_date": "2026-06-01",
-    "stock_name": "恒瑞医药"
+    "stock_name": "恒瑞医药",
+    "comment_ids": [
+      "7646455222180613298",
+      "7646455586522942665"
+    ]
   },
   "DFMBdgmzZo1XqXxeEJscCs0RnDe": {
     "reply_date": "2026-06-01",
@@ -21,14 +31,96 @@
   },
   "SIjddxAxzojDVlxdqzEcoPEZnig": {
     "reply_date": "2026-06-01",
-    "stock_name": "建滔积层板"
+    "stock_name": "建滔积层板",
+    "comment_ids": [
+      "7646453157665328353"
+    ]
   },
   "BCSmdNXyeoZFjFxfDbFc9f6dnNg": {
     "reply_date": "2026-06-01",
-    "stock_name": "阿里巴巴-W"
+    "stock_name": "阿里巴巴-W",
+    "comment_ids": [
+      "7646458681952881878",
+      "7646458946613415106"
+    ]
   },
   "QV4wdExJeo7bYpxiThdc9n2Bn30": {
     "reply_date": "2026-05-30",
-    "stock_name": "SoFi"
+    "stock_name": "SoFi",
+    "comment_ids": [
+      "7646459350310980788"
+    ]
+  },
+  "CWpZd9kt5oaj3dxyft2c70Icnfh": {
+    "reply_date": "2026-05-29",
+    "stock_name": "比亚迪",
+    "comment_ids": [
+      "7645688717809568948",
+      "7645688896562466012",
+      "7645689110593539263",
+      "7645689399241378994",
+      "7645690407220710605",
+      "7645696043744513223"
+    ]
+  },
+  "CPijdkrz0oZjNkx8nzFclXmOnBc": {
+    "reply_date": "2026-05-29",
+    "stock_name": "兴业银行",
+    "comment_ids": [
+      "7645585703887277263",
+      "7645585888902171859",
+      "7645586083563965652",
+      "7645591571548179655"
+    ]
+  },
+  "HTqkdWcSAo93sZxEuYHcbqhHnFf": {
+    "reply_date": "2026-05-30",
+    "stock_name": "Circle",
+    "comment_ids": [
+      "7645542601948400830",
+      "7645719104879447253"
+    ]
+  },
+  "E4ITdpjIXoyCFJxROE4coqsxnNe": {
+    "reply_date": "2026-05-30",
+    "stock_name": "Lumentum",
+    "comment_ids": [
+      "7645539213466668217",
+      "7645539565083593918",
+      "7645539684436692180",
+      "7645540139833232563"
+    ]
+  },
+  "Ls9qd5SBGor3GCxG7MXcPPDdngd": {
+    "reply_date": "2026-05-30",
+    "stock_name": "Meta",
+    "comment_ids": [
+      "7645544397827755194",
+      "7645544678971935964",
+      "7645545171865586898"
+    ]
+  },
+  "VMt8dKpmBo6aXdxy2BCc2DWQnvc": {
+    "reply_date": "2026-05-30",
+    "stock_name": "微软",
+    "comment_ids": [
+      "7645548937474018483",
+      "7645550024964721884"
+    ]
+  },
+  "MQjwdCTNHouuWSxNaFncSC3Lnrg": {
+    "reply_date": "2026-05-30",
+    "stock_name": "Palantir",
+    "comment_ids": [
+      "7645581842053237980"
+    ]
+  },
+  "OKMGdE2ZjoD4F0xTUQXcWkM4nQl": {
+    "reply_date": "2026-05-30",
+    "stock_name": "回声星通信",
+    "comment_ids": [
+      "7645580811202235607",
+      "7645581372475575508"
+    ]
   }
 }

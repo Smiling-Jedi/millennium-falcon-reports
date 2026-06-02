@@ -348,13 +348,14 @@
       {
         "name": "小米集团-W",
         "code": "HK.01810",
-        "doc_url": "https://www.feishu.cn/docx/DFMBdgmzZo1XqXxeEJscCs0RnDe",
-        "doc_id": "DFMBdgmzZo1XqXxeEJscCs0RnDe",
+        "doc_url": "https://www.feishu.cn/docx/RD9ydjS8AoGaDHxRXe4c6SYYncf",
+        "doc_id": "RD9ydjS8AoGaDHxRXe4c6SYYncf",
         "date": "2026-06-01",
-        "report_title": "放量反弹资金入场，关注反弹持续性",
-        "change_rate": 2.43,
+        "report_title": "止跌反弹资金结构性入场",
+        "change_rate": 1.74,
         "input_tokens": 1810,
-        "output_tokens": 3008
+        "output_tokens": 2184,
+        "prompt_version": "0.3.0"
       },
       {
         "name": "建滔积层板",
@@ -698,6 +699,114 @@
         "input_tokens": 1501,
         "output_tokens": 2307,
         "change_rate": -1.43
+      },
+      {
+        "name": "Circle",
+        "code": "US.CRCL",
+        "doc_url": "https://www.feishu.cn/docx/EVlod32dkoik8dxxtAbcGqRPnWe",
+        "doc_id": "EVlod32dkoik8dxxtAbcGqRPnWe",
+        "date": "2026-06-02",
+        "report_title": "放量回调测均线支撑",
+        "change_rate": -7.11,
+        "input_tokens": 1806,
+        "output_tokens": 2990,
+        "prompt_version": "0.3.0"
+      },
+      {
+        "name": "Lumentum",
+        "code": "US.LITE",
+        "doc_url": "https://www.feishu.cn/docx/U1Prd3tPsoxEOjxQ8YDc8lD8nMb",
+        "doc_id": "U1Prd3tPsoxEOjxQ8YDc8lD8nMb",
+        "date": "2026-06-02",
+        "report_title": "AI主题催化放量反弹",
+        "change_rate": 5.85,
+        "input_tokens": 2233,
+        "output_tokens": 2361,
+        "prompt_version": "0.3.0"
+      },
+      {
+        "name": "Meta",
+        "code": "US.META",
+        "doc_url": "https://www.feishu.cn/docx/RKeHd2wWdoYJ9yxogwWcpuPCnzh",
+        "doc_id": "RKeHd2wWdoYJ9yxogwWcpuPCnzh",
+        "date": "2026-06-02",
+        "report_title": "放量破位超买释放",
+        "change_rate": -5.07,
+        "input_tokens": 1988,
+        "output_tokens": 2270,
+        "prompt_version": "0.3.0"
+      },
+      {
+        "name": "微软",
+        "code": "US.MSFT",
+        "doc_url": "https://www.feishu.cn/docx/WyTUdUrckoSegZxrIuoc5iIHnHh",
+        "doc_id": "WyTUdUrckoSegZxrIuoc5iIHnHh",
+        "date": "2026-06-02",
+        "report_title": "超买区域放量，短期调整风险",
+        "change_rate": 2.28,
+        "input_tokens": 2010,
+        "output_tokens": 3319,
+        "prompt_version": "0.3.0"
+      },
+      {
+        "name": "英伟达",
+        "code": "US.NVDA",
+        "doc_url": "https://www.feishu.cn/docx/RjEedl5iGoLWuUxM9T8cjZX2nLg",
+        "doc_id": "RjEedl5iGoLWuUxM9T8cjZX2nLg",
+        "date": "2026-06-02",
+        "report_title": "放量突破，指标过热",
+        "change_rate": 6.26,
+        "input_tokens": 2257,
+        "output_tokens": 1671,
+        "prompt_version": "0.3.0"
+      },
+      {
+        "name": "Palantir",
+        "code": "US.PLTR",
+        "doc_url": "https://www.feishu.cn/docx/X4yZdvzPgoDrx3xPY9bcO4mUnBM",
+        "doc_id": "X4yZdvzPgoDrx3xPY9bcO4mUnBM",
+        "date": "2026-06-02",
+        "report_title": "放量突破均线压制",
+        "change_rate": 2.63,
+        "input_tokens": 1889,
+        "output_tokens": 2427,
+        "prompt_version": "0.3.0"
+      },
+      {
+        "name": "SoFi",
+        "code": "US.SOFI",
+        "doc_url": "https://www.feishu.cn/docx/GcWGdH8SYojYqxxqFtPcsPUwnhc",
+        "doc_id": "GcWGdH8SYojYqxxqFtPcsPUwnhc",
+        "date": "2026-06-02",
+        "report_title": "量价背离需警惕",
+        "change_rate": 1.98,
+        "input_tokens": 1815,
+        "output_tokens": 2140,
+        "prompt_version": "0.3.0"
+      },
+      {
+        "name": "特斯拉",
+        "code": "US.TSLA",
+        "doc_url": "https://www.feishu.cn/docx/EYjAdP25FoOcN0x7DxCc7TDynPe",
+        "doc_id": "EYjAdP25FoOcN0x7DxCc7TDynPe",
+        "date": "2026-06-02",
+        "report_title": "放量回踩关键支撑位",
+        "change_rate": -4.57,
+        "input_tokens": 1875,
+        "output_tokens": 2110,
+        "prompt_version": "0.3.0"
+      },
+      {
+        "name": "回声星通信",
+        "code": "US.SATS",
+        "doc_url": "https://www.feishu.cn/docx/LVFsdEZHYov9X2xmRyUcAUUanvL",
+        "doc_id": "LVFsdEZHYov9X2xmRyUcAUUanvL",
+        "date": "2026-06-02",
+        "report_title": "冲高回落尾盘异动",
+        "change_rate": -1.37,
+        "input_tokens": 1814,
+        "output_tokens": 2048,
+        "prompt_version": "0.3.0"
       }
     ]
   },
@@ -710,5 +819,5 @@
       "market": "美股"
     }
   ],
-  "update_time": "2026-06-02 00:55"
+  "update_time": "2026-06-02 12:28"
 }
