@@ -1,0 +1,28 @@
+{
+  "A股": [
+    {
+      "date": "2026-06-02",
+      "doc_url": "https://www.feishu.cn/docx/Us3hdh4vWorl4AxCjwrc0lGpnpc",
+      "doc_id": "Us3hdh4vWorl4AxCjwrc0lGpnpc",
+      "update_time": "13:22",
+      "report_title": "新能源强势领涨 量能回升",
+      "input_tokens": 4646,
+      "output_tokens": 3289,
+      "prompt_version": "0.1.0",
+      "stock_count": 10
+    }
+  ],
+  "港股": [
+    {
+      "date": "2026-06-02",
+      "doc_url": "https://www.feishu.cn/docx/QG3Nd6WLXo3FzHxqy0rcxpSNngd",
+      "doc_id": "QG3Nd6WLXo3FzHxqy0rcxpSNngd",
+      "update_time": "13:22",
+      "report_title": "科技股引领分化反弹",
+      "input_tokens": 3876,
+      "output_tokens": 2432,
+      "prompt_version": "0.1.0",
+      "stock_count": 8
+    }
+  ]
+}

@@ -180,13 +180,15 @@
             display: inline-block;
             width: 8px; height: 8px;
             border-radius: 50%;
-            background: #2563eb;
             margin-right: 4px;
             vertical-align: middle;
             position: relative;
             top: -1px;
             animation: pulse-dot 2s ease-in-out infinite;
         }
+        .new-dot-a { background: #dc2626; }
+        .new-dot-hk { background: #16a34a; }
+        .new-dot-us { background: #2563eb; }
         @keyframes pulse-dot {
             0%, 100% { opacity: 1; }
             50% { opacity: 0.4; }
@@ -208,21 +210,27 @@
     <h1>蔚来 <span class="mkt-tag mkt-tag-us">美股</span></h1>
     <p style="font-size:12px;color:#94a3b8;margin-bottom:24px;">NIO</p>
 
-    <a href="https://www.feishu.cn/docx/CAV2dqCoJo8Q4ux5THHcvuQ8nXg" class="report-link" data-stock="蔚来" data-date="2026-05-28" data-has-reply="0"><span class="report-date chg-up">2026-05-28</span>日报 →</a>
-    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-02 12:28</div>
+    <a href="https://www.feishu.cn/docx/CAV2dqCoJo8Q4ux5THHcvuQ8nXg" class="report-link" data-stock="蔚来" data-date="2026-05-28" data-has-reply="0" data-market="us"><span class="report-date chg-up">2026-05-28</span>日报 →</a>
+    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-02 13:22</div>
 </body>
 </html>
 <script>
 (function(){
-var K='mf_seen_';
+var K='mf_seen_',P='mf_reply_';
 var els=document.querySelectorAll('[data-stock]');
 for(var i=0;i<els.length;i++){var e=els[i];
 var n=e.getAttribute('data-stock');
 var d=e.getAttribute('data-date');
 var r=e.getAttribute('data-has-reply')==='1';
-var sk=K+n,h=localStorage.getItem(sk)||'';
-if(d>h||r){var dot=document.createElement('span');
-dot.className='new-dot';e.insertBefore(dot,e.firstChild);
-(function(dt){e.addEventListener('click',function(){localStorage.setItem(K+e.getAttribute('data-stock'),dt||e.getAttribute('data-date'));});})(d);}
+var m=e.getAttribute('data-market')||'us';
+var sk=K+n,rk=P+n+'_'+d;
+var h=localStorage.getItem(sk)||'';
+var rs=localStorage.getItem(rk)||'';
+if(d>h||(r&&rs!=='1')){var dot=document.createElement('span');
+dot.className='new-dot new-dot-'+m;e.insertBefore(dot,e.firstChild);
+(function(dt,rn){e.addEventListener('click',function(){
+localStorage.setItem(K+this.getAttribute('data-stock'),dt);
+if(rn){localStorage.setItem(P+this.getAttribute('data-stock')+'_'+dt,'1');}
+});})(d,r);}
 })();
 </script>
