@@ -703,13 +703,13 @@
       {
         "name": "Circle",
         "code": "US.CRCL",
-        "doc_url": "https://www.feishu.cn/docx/IdxwdgFBWo1zhexgAUUcVUIOnPd",
-        "doc_id": "IdxwdgFBWo1zhexgAUUcVUIOnPd",
+        "doc_url": "https://www.feishu.cn/docx/JvdCdpaEToz9XnxGlikcFk9Dn0b",
+        "doc_id": "JvdCdpaEToz9XnxGlikcFk9Dn0b",
         "date": "2026-06-02",
-        "report_title": "放量回踩 均线支撑待考验",
+        "report_title": "放量回调机构成本区",
         "change_rate": -7.11,
         "input_tokens": 14,
-        "output_tokens": 2089,
+        "output_tokens": 2216,
         "prompt_version": "0.3.0"
       },
       {
@@ -819,5 +819,5 @@
       "market": "美股"
     }
   ],
-  "update_time": "2026-06-02 14:20"
+  "update_time": "2026-06-02 14:35"
 }
