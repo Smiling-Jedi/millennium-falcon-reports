@@ -1243,110 +1243,110 @@
       {
         "name": "Circle",
         "code": "US.CRCL",
-        "doc_url": "https://www.feishu.cn/docx/C3ezdeUdso1aOaxYptUc9oofndh",
-        "doc_id": "C3ezdeUdso1aOaxYptUc9oofndh",
+        "doc_url": "https://www.feishu.cn/docx/ZepIdgIMQoLxdyxZRqZcrbjGnrf",
+        "doc_id": "ZepIdgIMQoLxdyxZRqZcrbjGnrf",
         "date": "2026-06-03",
-        "report_title": "缩量回调守趋势，成本支撑待确认",
-        "change_rate": -3.92,
-        "input_tokens": 2193,
-        "output_tokens": 2111,
-        "prompt_version": "0.4.1"
+        "report_title": "利空突袭放量破位，减仓观望",
+        "change_rate": -7.59,
+        "input_tokens": 2501,
+        "output_tokens": 1481,
+        "prompt_version": "0.4.2"
       },
       {
         "name": "Lumentum",
         "code": "US.LITE",
-        "doc_url": "https://www.feishu.cn/docx/MBkVdpLckopmmJxMBssceefanCb",
-        "doc_id": "MBkVdpLckopmmJxMBssceefanCb",
+        "doc_url": "https://www.feishu.cn/docx/VMRwdZOnsowMbkxkQwdc3duln8g",
+        "doc_id": "VMRwdZOnsowMbkxkQwdc3duln8g",
         "date": "2026-06-03",
-        "report_title": "放量突破强势上攻",
-        "change_rate": 13.72,
-        "input_tokens": 2540,
-        "output_tokens": 2248,
-        "prompt_version": "0.4.1"
+        "report_title": "放量跌破关键支撑，减仓观望",
+        "change_rate": -6.51,
+        "input_tokens": 2552,
+        "output_tokens": 1499,
+        "prompt_version": "0.4.2"
       },
       {
         "name": "Meta",
         "code": "US.META",
-        "doc_url": "https://www.feishu.cn/docx/RhtgdDLoColDnExQ9zRcgjYYnrd",
-        "doc_id": "RhtgdDLoColDnExQ9zRcgjYYnrd",
+        "doc_url": "https://www.feishu.cn/docx/Thl5dZiJeoyan3xhShIcWA7xnIg",
+        "doc_id": "Thl5dZiJeoyan3xhShIcWA7xnIg",
         "date": "2026-06-03",
-        "report_title": "超买区域遇阻，内部争议压制情绪",
-        "change_rate": -0.47,
-        "input_tokens": 2400,
-        "output_tokens": 2213,
-        "prompt_version": "0.4.1"
+        "report_title": "超跌反弹遇均线压力，观望",
+        "change_rate": 2.93,
+        "input_tokens": 2527,
+        "output_tokens": 1396,
+        "prompt_version": "0.4.2"
       },
       {
         "name": "微软",
         "code": "US.MSFT",
-        "doc_url": "https://www.feishu.cn/docx/LiDHduKFAocUCzx5Qp6cJmQQnkf",
-        "doc_id": "LiDHduKFAocUCzx5Qp6cJmQQnkf",
+        "doc_url": "https://www.feishu.cn/docx/CdFQd5PN1oF7qqxBJOWcVvKdnwd",
+        "doc_id": "CdFQd5PN1oF7qqxBJOWcVvKdnwd",
         "date": "2026-06-03",
-        "report_title": "利好兑现超买回调，静待支撑确认",
-        "change_rate": -4.17,
-        "input_tokens": 2591,
-        "output_tokens": 2806,
-        "prompt_version": "0.4.1"
+        "report_title": "高位放量回调，减仓观望",
+        "change_rate": -3.35,
+        "input_tokens": 2592,
+        "output_tokens": 1472,
+        "prompt_version": "0.4.2"
       },
       {
         "name": "英伟达",
         "code": "US.NVDA",
-        "doc_url": "https://www.feishu.cn/docx/Hb8xdjfycobZBjxjujwc1I2fn3f",
-        "doc_id": "Hb8xdjfycobZBjxjujwc1I2fn3f",
+        "doc_url": "https://www.feishu.cn/docx/C3JhdrTfeoPSLLxYrihc9ZZMnwb",
+        "doc_id": "C3JhdrTfeoPSLLxYrihc9ZZMnwb",
         "date": "2026-06-03",
-        "report_title": "高位微跌蓄势，GTC前多头未变",
-        "change_rate": -0.69,
-        "input_tokens": 2500,
-        "output_tokens": 1793,
-        "prompt_version": "0.4.1"
+        "report_title": "高位回落超买承压，减仓锁定利润",
+        "change_rate": -2.53,
+        "input_tokens": 2552,
+        "output_tokens": 1295,
+        "prompt_version": "0.4.2"
       },
       {
         "name": "Palantir",
         "code": "US.PLTR",
-        "doc_url": "https://www.feishu.cn/docx/Fn9OdrAKhouHPUxc1hncGo9tnOc",
-        "doc_id": "Fn9OdrAKhouHPUxc1hncGo9tnOc",
+        "doc_url": "https://www.feishu.cn/docx/L18Vds3vFoLFFSxH9VrcT8zdn5c",
+        "doc_id": "L18Vds3vFoLFFSxH9VrcT8zdn5c",
         "date": "2026-06-03",
-        "report_title": "放量回调均线支撑，短期震荡整理",
-        "change_rate": -5.28,
-        "input_tokens": 2204,
-        "output_tokens": 1720,
-        "prompt_version": "0.4.1"
+        "report_title": "放量跌破短期均线，减仓观望",
+        "change_rate": -5.35,
+        "input_tokens": 2494,
+        "output_tokens": 1334,
+        "prompt_version": "0.4.2"
       },
       {
         "name": "SoFi",
         "code": "US.SOFI",
-        "doc_url": "https://www.feishu.cn/docx/GgEQdH76GocGcdxYvQocEdEHnyb",
-        "doc_id": "GgEQdH76GocGcdxYvQocEdEHnyb",
+        "doc_url": "https://www.feishu.cn/docx/FdrpdlbPtoOST4xd4wdch4nPn2d",
+        "doc_id": "FdrpdlbPtoOST4xd4wdch4nPn2d",
         "date": "2026-06-03",
-        "report_title": "高位放量回落，资金出逃信号",
-        "change_rate": -4.52,
-        "input_tokens": 2241,
-        "output_tokens": 2396,
-        "prompt_version": "0.4.1"
+        "report_title": "放量跌破均线，减仓观望",
+        "change_rate": -6.03,
+        "input_tokens": 2513,
+        "output_tokens": 1459,
+        "prompt_version": "0.4.2"
       },
       {
         "name": "特斯拉",
         "code": "US.TSLA",
-        "doc_url": "https://www.feishu.cn/docx/BuO9dDLD2oPf8nxbO52cbaeXnxf",
-        "doc_id": "BuO9dDLD2oPf8nxbO52cbaeXnxf",
+        "doc_url": "https://www.feishu.cn/docx/A4updX7W5oUp6ZxKTACc4Me9nLe",
+        "doc_id": "A4updX7W5oUp6ZxKTACc4Me9nLe",
         "date": "2026-06-03",
-        "report_title": "放量突破前高 资金面转好",
-        "change_rate": 1.89,
-        "input_tokens": 2198,
-        "output_tokens": 2282,
-        "prompt_version": "0.4.1"
+        "report_title": "缩量微涨均线纠缠，持有观望",
+        "change_rate": 0.21,
+        "input_tokens": 2536,
+        "output_tokens": 1404,
+        "prompt_version": "0.4.2"
       },
       {
         "name": "回声星通信",
         "code": "US.SATS",
-        "doc_url": "https://www.feishu.cn/docx/TC03dsMnAopCe7xlXVOcyGzunLe",
-        "doc_id": "TC03dsMnAopCe7xlXVOcyGzunLe",
+        "doc_url": "https://www.feishu.cn/docx/G2CtdOZV8oJcdYx20hncg2Dongg",
+        "doc_id": "G2CtdOZV8oJcdYx20hncg2Dongg",
         "date": "2026-06-03",
-        "report_title": "放量下挫失守均线 观望为宜",
-        "change_rate": -3.04,
-        "input_tokens": 2236,
-        "output_tokens": 2898,
-        "prompt_version": "0.4.1"
+        "report_title": "缩量弱势整理，观望",
+        "change_rate": -0.49,
+        "input_tokens": 2488,
+        "output_tokens": 1299,
+        "prompt_version": "0.4.2"
       }
     ]
   },
@@ -1360,5 +1360,5 @@
       "market": "美股"
     }
   ],
-  "update_time": "2026-06-03 20:17"
+  "update_time": "2026-06-03 23:55"
 }
