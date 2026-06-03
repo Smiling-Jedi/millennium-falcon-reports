@@ -333,6 +333,18 @@
         "input_tokens": 2149,
         "output_tokens": 2230,
         "prompt_version": "0.3.0"
+      },
+      {
+        "name": "阳光电源",
+        "code": "SZ.300274",
+        "doc_url": "https://www.feishu.cn/docx/YLWzdjY8EoOxOQxjEwscKpLOnkf",
+        "doc_id": "YLWzdjY8EoOxOQxjEwscKpLOnkf",
+        "date": "2026-06-03",
+        "report_title": "高位震荡，储能新周期定方向",
+        "change_rate": -1.1,
+        "input_tokens": 2775,
+        "output_tokens": 2353,
+        "prompt_version": "0.4.0"
       }
     ],
     "港股": [
@@ -524,98 +536,194 @@
       {
         "name": "粤海投资",
         "code": "HK.00270",
-        "doc_url": "https://www.feishu.cn/docx/Y4vPdxSf3oi9kjxPVIecf7fBnMc",
-        "doc_id": "Y4vPdxSf3oi9kjxPVIecf7fBnMc",
+        "doc_url": "https://www.feishu.cn/docx/NDWPdqIBro3frLxzUl6ce36kndc",
+        "doc_id": "NDWPdqIBro3frLxzUl6ce36kndc",
         "date": "2026-06-02",
-        "report_title": "缩量整固蓄势待突破",
+        "report_title": "高位缩量 关键阻力待验证",
         "change_rate": -0.36,
-        "input_tokens": 1808,
-        "output_tokens": 2237,
-        "prompt_version": "0.3.0"
+        "input_tokens": 1993,
+        "output_tokens": 2363,
+        "prompt_version": "0.4.0"
       },
       {
         "name": "腾讯控股",
         "code": "HK.00700",
-        "doc_url": "https://www.feishu.cn/docx/PdffdXaDSoYkaUxnuGncFzfZnNg",
-        "doc_id": "PdffdXaDSoYkaUxnuGncFzfZnNg",
+        "doc_url": "https://www.feishu.cn/docx/IAc7doEVAobfkLxONZ1cNTDZnpc",
+        "doc_id": "IAc7doEVAobfkLxONZ1cNTDZnpc",
         "date": "2026-06-02",
-        "report_title": "放量突破震荡区间",
+        "report_title": "放量反弹，挑战均线",
         "change_rate": 10.46,
-        "input_tokens": 2099,
-        "output_tokens": 2229,
-        "prompt_version": "0.3.0"
+        "input_tokens": 2529,
+        "output_tokens": 2386,
+        "prompt_version": "0.4.0"
       },
       {
         "name": "恒瑞医药",
         "code": "HK.01276",
-        "doc_url": "https://www.feishu.cn/docx/VpWKddsURo59llxBQM3cQE2lnYe",
-        "doc_id": "VpWKddsURo59llxBQM3cQE2lnYe",
+        "doc_url": "https://www.feishu.cn/docx/FFXrdfD3hoH5nTxt9iAcMcOgn7g",
+        "doc_id": "FFXrdfD3hoH5nTxt9iAcMcOgn7g",
         "date": "2026-06-02",
-        "report_title": "缩量企稳 底部或近",
+        "report_title": "缩量反抽，防守待变",
         "change_rate": 0.6,
-        "input_tokens": 1811,
-        "output_tokens": 3808,
-        "prompt_version": "0.3.0"
+        "input_tokens": 2080,
+        "output_tokens": 2244,
+        "prompt_version": "0.4.0"
       },
       {
         "name": "小米集团-W",
         "code": "HK.01810",
-        "doc_url": "https://www.feishu.cn/docx/H1IwdONqLoJxN0xrEGTcFcuanuf",
-        "doc_id": "H1IwdONqLoJxN0xrEGTcFcuanuf",
+        "doc_url": "https://www.feishu.cn/docx/T6hBdUPNkonWZmxk3m2cJfKUnXf",
+        "doc_id": "T6hBdUPNkonWZmxk3m2cJfKUnXf",
         "date": "2026-06-02",
-        "report_title": "放量反弹，资金结构改善",
+        "report_title": "放量反弹机构资金回流",
         "change_rate": 3.13,
-        "input_tokens": 1811,
-        "output_tokens": 2282,
-        "prompt_version": "0.3.0"
+        "input_tokens": 1992,
+        "output_tokens": 2326,
+        "prompt_version": "0.4.0"
       },
       {
         "name": "建滔积层板",
         "code": "HK.01888",
-        "doc_url": "https://www.feishu.cn/docx/NTegdd2UJo5We8xienccOsixnMd",
-        "doc_id": "NTegdd2UJo5We8xienccOsixnMd",
+        "doc_url": "https://www.feishu.cn/docx/IMNedqjOooq13rxORQmcw81knvh",
+        "doc_id": "IMNedqjOooq13rxORQmcw81knvh",
         "date": "2026-06-02",
-        "report_title": "冲高回落 风险信号显现",
+        "report_title": "强势新高难掩背离隐患",
         "change_rate": 4.38,
-        "input_tokens": 2221,
-        "output_tokens": 2018,
-        "prompt_version": "0.3.0"
+        "input_tokens": 2393,
+        "output_tokens": 2301,
+        "prompt_version": "0.4.0"
       },
       {
         "name": "美团-W",
         "code": "HK.03690",
-        "doc_url": "https://www.feishu.cn/docx/VxmwdlOu0ot8k3x5WYyc108Hnsg",
-        "doc_id": "VxmwdlOu0ot8k3x5WYyc108Hnsg",
+        "doc_url": "https://www.feishu.cn/docx/GShidaW3uoj6W3xirIXcQFmenxg",
+        "doc_id": "GShidaW3uoj6W3xirIXcQFmenxg",
         "date": "2026-06-02",
-        "report_title": "盈利改善放量突破",
+        "report_title": "财报减亏放量反弹",
         "change_rate": 9.27,
-        "input_tokens": 2313,
-        "output_tokens": 1854,
-        "prompt_version": "0.3.0"
+        "input_tokens": 2495,
+        "output_tokens": 2242,
+        "prompt_version": "0.4.0"
       },
       {
         "name": "百济神州",
         "code": "HK.06160",
-        "doc_url": "https://www.feishu.cn/docx/EgQzdghzhoGNbkxGYIzcGjpJnHe",
-        "doc_id": "EgQzdghzhoGNbkxGYIzcGjpJnHe",
+        "doc_url": "https://www.feishu.cn/docx/KjtVd6rTLopNNIxk1dpcHMXqnmb",
+        "doc_id": "KjtVd6rTLopNNIxk1dpcHMXqnmb",
         "date": "2026-06-02",
-        "report_title": "缩量探底尾盘回稳",
+        "report_title": "缩量下探 考验支撑点",
         "change_rate": -1.57,
-        "input_tokens": 1814,
-        "output_tokens": 2258,
-        "prompt_version": "0.3.0"
+        "input_tokens": 1955,
+        "output_tokens": 1900,
+        "prompt_version": "0.4.0"
       },
       {
         "name": "阿里巴巴-W",
         "code": "HK.09988",
-        "doc_url": "https://www.feishu.cn/docx/AJbGdFo05oldFYxToN7czZ2EnZe",
-        "doc_id": "AJbGdFo05oldFYxToN7czZ2EnZe",
+        "doc_url": "https://www.feishu.cn/docx/DtQqdMKIToLPKdx65oscdTQNnSb",
+        "doc_id": "DtQqdMKIToLPKdx65oscdTQNnSb",
         "date": "2026-06-02",
-        "report_title": "放量突破均线压制",
+        "report_title": "放量反弹 均线纠缠下的多空博弈",
         "change_rate": 6.6,
-        "input_tokens": 2291,
-        "output_tokens": 2346,
-        "prompt_version": "0.3.0"
+        "input_tokens": 2682,
+        "output_tokens": 2236,
+        "prompt_version": "0.4.0"
+      },
+      {
+        "name": "粤海投资",
+        "code": "HK.00270",
+        "doc_url": "https://www.feishu.cn/docx/IdPmdt92Oosbr5x9AkocOkIsnfg",
+        "doc_id": "IdPmdt92Oosbr5x9AkocOkIsnfg",
+        "date": "2026-06-03",
+        "report_title": "缩量微跌，资金暗流",
+        "change_rate": -1.31,
+        "input_tokens": 2874,
+        "output_tokens": 2472,
+        "prompt_version": "0.4.0"
+      },
+      {
+        "name": "腾讯控股",
+        "code": "HK.00700",
+        "doc_url": "https://www.feishu.cn/docx/AaxJdg3yvoFYdkxy5iJckd5EnGY",
+        "doc_id": "AaxJdg3yvoFYdkxy5iJckd5EnGY",
+        "date": "2026-06-03",
+        "report_title": "破位放量 资金分歧加剧",
+        "change_rate": -3.16,
+        "input_tokens": 1939,
+        "output_tokens": 3052,
+        "prompt_version": "0.4.0"
+      },
+      {
+        "name": "恒瑞医药",
+        "code": "HK.01276",
+        "doc_url": "https://www.feishu.cn/docx/QCA1dDIEJoBp8YxgLCCcJyiAnTh",
+        "doc_id": "QCA1dDIEJoBp8YxgLCCcJyiAnTh",
+        "date": "2026-06-03",
+        "report_title": "放量破位，多空易手",
+        "change_rate": -7.05,
+        "input_tokens": 2840,
+        "output_tokens": 2541,
+        "prompt_version": "0.4.0"
+      },
+      {
+        "name": "小米集团-W",
+        "code": "HK.01810",
+        "doc_url": "https://www.feishu.cn/docx/D7g6dYG1hoqEyexVQgycO0qgnyc",
+        "doc_id": "D7g6dYG1hoqEyexVQgycO0qgnyc",
+        "date": "2026-06-03",
+        "report_title": "缩量下探寻支撑位",
+        "change_rate": -3.51,
+        "input_tokens": 2665,
+        "output_tokens": 2319,
+        "prompt_version": "0.4.0"
+      },
+      {
+        "name": "建滔积层板",
+        "code": "HK.01888",
+        "doc_url": "https://www.feishu.cn/docx/UNRVdgEJEoNHg5xaCzEc2s6QnYg",
+        "doc_id": "UNRVdgEJEoNHg5xaCzEc2s6QnYg",
+        "date": "2026-06-03",
+        "report_title": "放量暴涨，超买信号频现",
+        "change_rate": 9.55,
+        "input_tokens": 2949,
+        "output_tokens": 2472,
+        "prompt_version": "0.4.0"
+      },
+      {
+        "name": "美团-W",
+        "code": "HK.03690",
+        "doc_url": "https://www.feishu.cn/docx/MfMBdnJKhoZ13QxCf5dc4rfmnHd",
+        "doc_id": "MfMBdnJKhoZ13QxCf5dc4rfmnHd",
+        "date": "2026-06-03",
+        "report_title": "财报利好消化 低开低走",
+        "change_rate": -5.96,
+        "input_tokens": 2926,
+        "output_tokens": 2548,
+        "prompt_version": "0.4.0"
+      },
+      {
+        "name": "百济神州",
+        "code": "HK.06160",
+        "doc_url": "https://www.feishu.cn/docx/MBdadJ3VjoWrJwxKstPcTfqSnLd",
+        "doc_id": "MBdadJ3VjoWrJwxKstPcTfqSnLd",
+        "date": "2026-06-03",
+        "report_title": "缩量回调，多空分歧加剧",
+        "change_rate": -2.13,
+        "input_tokens": 2931,
+        "output_tokens": 2778,
+        "prompt_version": "0.4.0"
+      },
+      {
+        "name": "阿里巴巴-W",
+        "code": "HK.09988",
+        "doc_url": "https://www.feishu.cn/docx/NayHdNGgBo9yJ9xTymeca83tncd",
+        "doc_id": "NayHdNGgBo9yJ9xTymeca83tncd",
+        "date": "2026-06-03",
+        "report_title": "冲高回落放量回调",
+        "change_rate": -3.28,
+        "input_tokens": 2844,
+        "output_tokens": 1917,
+        "prompt_version": "0.4.0"
       }
     ],
     "美股": [
@@ -931,14 +1039,14 @@
       {
         "name": "Lumentum",
         "code": "US.LITE",
-        "doc_url": "https://www.feishu.cn/docx/U1Prd3tPsoxEOjxQ8YDc8lD8nMb",
-        "doc_id": "U1Prd3tPsoxEOjxQ8YDc8lD8nMb",
+        "doc_url": "https://www.feishu.cn/docx/FWbNdQLF6oDQlNxraR6cJBegnDc",
+        "doc_id": "FWbNdQLF6oDQlNxraR6cJBegnDc",
         "date": "2026-06-02",
-        "report_title": "AI主题催化放量反弹",
+        "report_title": "放量上攻，AI催化反转",
         "change_rate": 5.85,
-        "input_tokens": 2233,
-        "output_tokens": 2361,
-        "prompt_version": "0.3.0"
+        "input_tokens": 2462,
+        "output_tokens": 2295,
+        "prompt_version": "0.4.0"
       },
       {
         "name": "Meta",
@@ -955,14 +1063,14 @@
       {
         "name": "微软",
         "code": "US.MSFT",
-        "doc_url": "https://www.feishu.cn/docx/WyTUdUrckoSegZxrIuoc5iIHnHh",
-        "doc_id": "WyTUdUrckoSegZxrIuoc5iIHnHh",
+        "doc_url": "https://www.feishu.cn/docx/Eq86dz9oiol8sWxFslccLoJrnHe",
+        "doc_id": "Eq86dz9oiol8sWxFslccLoJrnHe",
         "date": "2026-06-02",
-        "report_title": "超买区域放量，短期调整风险",
+        "report_title": "放量走高但资金背离",
         "change_rate": 2.28,
-        "input_tokens": 2010,
-        "output_tokens": 3319,
-        "prompt_version": "0.3.0"
+        "input_tokens": 105,
+        "output_tokens": 1911,
+        "prompt_version": "0.4.0"
       },
       {
         "name": "英伟达",
@@ -1003,14 +1111,14 @@
       {
         "name": "特斯拉",
         "code": "US.TSLA",
-        "doc_url": "https://www.feishu.cn/docx/EYjAdP25FoOcN0x7DxCc7TDynPe",
-        "doc_id": "EYjAdP25FoOcN0x7DxCc7TDynPe",
+        "doc_url": "https://www.feishu.cn/docx/ShnmdHJXhoGj80xuMvEcahBpnxf",
+        "doc_id": "ShnmdHJXhoGj80xuMvEcahBpnxf",
         "date": "2026-06-02",
-        "report_title": "放量回踩关键支撑位",
+        "report_title": "放量回调，多头结构未破",
         "change_rate": -4.57,
-        "input_tokens": 1875,
-        "output_tokens": 2110,
-        "prompt_version": "0.3.0"
+        "input_tokens": 2056,
+        "output_tokens": 2168,
+        "prompt_version": "0.4.0"
       },
       {
         "name": "回声星通信",
@@ -1032,8 +1140,9 @@
       "name": "Sea",
       "shares": 60,
       "avg_cost": 91.167,
+      "role": "底仓",
       "market": "美股"
     }
   ],
-  "update_time": "2026-06-02 16:24"
+  "update_time": "2026-06-03 19:10"
 }
