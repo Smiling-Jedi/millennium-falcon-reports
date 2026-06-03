@@ -337,14 +337,122 @@
       {
         "name": "阳光电源",
         "code": "SZ.300274",
-        "doc_url": "https://www.feishu.cn/docx/YLWzdjY8EoOxOQxjEwscKpLOnkf",
-        "doc_id": "YLWzdjY8EoOxOQxjEwscKpLOnkf",
+        "doc_url": "https://www.feishu.cn/docx/AXzNdfknVozX30xzXVycBiS9nAc",
+        "doc_id": "AXzNdfknVozX30xzXVycBiS9nAc",
         "date": "2026-06-03",
-        "report_title": "高位震荡，储能新周期定方向",
+        "report_title": "储能大单催化，均线待突破",
         "change_rate": -1.1,
         "input_tokens": 2775,
-        "output_tokens": 2353,
-        "prompt_version": "0.4.0"
+        "output_tokens": 2372,
+        "prompt_version": "0.4.1"
+      },
+      {
+        "name": "比亚迪",
+        "code": "SZ.002594",
+        "doc_url": "https://www.feishu.cn/docx/HtrTd2cFao2pvdx2LgccWwLDnjg",
+        "doc_id": "HtrTd2cFao2pvdx2LgccWwLDnjg",
+        "date": "2026-06-03",
+        "report_title": "缩量回调测支撑，智能化成新锚",
+        "change_rate": -2.0,
+        "input_tokens": 2835,
+        "output_tokens": 2233,
+        "prompt_version": "0.4.1"
+      },
+      {
+        "name": "宁德时代",
+        "code": "SZ.300750",
+        "doc_url": "https://www.feishu.cn/docx/DCDgd9fz0o5qmnxhySIcaiD3nSh",
+        "doc_id": "DCDgd9fz0o5qmnxhySIcaiD3nSh",
+        "date": "2026-06-03",
+        "report_title": "利好密集落地 高位缩量回调",
+        "change_rate": -1.72,
+        "input_tokens": 2724,
+        "output_tokens": 2548,
+        "prompt_version": "0.4.1"
+      },
+      {
+        "name": "招商银行",
+        "code": "SH.600036",
+        "doc_url": "https://www.feishu.cn/docx/XY4kdnUPjobrM1xAdVYc8QjMnjd",
+        "doc_id": "XY4kdnUPjobrM1xAdVYc8QjMnjd",
+        "date": "2026-06-03",
+        "report_title": "缩量回调待方向选择",
+        "change_rate": -0.77,
+        "input_tokens": 2662,
+        "output_tokens": 2582,
+        "prompt_version": "0.4.1"
+      },
+      {
+        "name": "兴业银行",
+        "code": "SH.601166",
+        "doc_url": "https://www.feishu.cn/docx/UO66dVg4OopSl0xktnxcwCzZnPg",
+        "doc_id": "UO66dVg4OopSl0xktnxcwCzZnPg",
+        "date": "2026-06-03",
+        "report_title": "缩量回调待支撑 数智转型定军心",
+        "change_rate": -0.64,
+        "input_tokens": 2785,
+        "output_tokens": 2900,
+        "prompt_version": "0.4.1"
+      },
+      {
+        "name": "交通银行",
+        "code": "SH.601328",
+        "doc_url": "https://www.feishu.cn/docx/HUDVduCTIo8jIRxyyFJcrmOQn4e",
+        "doc_id": "HUDVduCTIo8jIRxyyFJcrmOQn4e",
+        "date": "2026-06-03",
+        "report_title": "缩量回调 考验支撑",
+        "change_rate": -1.02,
+        "input_tokens": 2810,
+        "output_tokens": 2631,
+        "prompt_version": "0.4.1"
+      },
+      {
+        "name": "中来股份",
+        "code": "SZ.300393",
+        "doc_url": "https://www.feishu.cn/docx/YratdCEqfoLUv0xqVWNcy1R7nFd",
+        "doc_id": "YratdCEqfoLUv0xqVWNcy1R7nFd",
+        "date": "2026-06-03",
+        "report_title": "破位均线待夯实，管理层换血谋变",
+        "change_rate": 1.45,
+        "input_tokens": 2726,
+        "output_tokens": 2832,
+        "prompt_version": "0.4.1"
+      },
+      {
+        "name": "机器人ETF华夏",
+        "code": "SH.562500",
+        "doc_url": "https://www.feishu.cn/docx/IuvOd3wmcogDZVx7Mu6ccZ9On6g",
+        "doc_id": "IuvOd3wmcogDZVx7Mu6ccZ9On6g",
+        "date": "2026-06-03",
+        "report_title": "政策催化放量上攻",
+        "change_rate": 0.45,
+        "input_tokens": 2782,
+        "output_tokens": 1820,
+        "prompt_version": "0.4.1"
+      },
+      {
+        "name": "医药ETF易方达",
+        "code": "SH.512010",
+        "doc_url": "https://www.feishu.cn/docx/LFM4dfm7WorhujxSEpJciHK0npZ",
+        "doc_id": "LFM4dfm7WorhujxSEpJciHK0npZ",
+        "date": "2026-06-03",
+        "report_title": "缩量回调守支撑 机构与散户分化明显",
+        "change_rate": -1.79,
+        "input_tokens": 2754,
+        "output_tokens": 2496,
+        "prompt_version": "0.4.1"
+      },
+      {
+        "name": "纳指ETF国泰",
+        "code": "SH.513100",
+        "doc_url": "https://www.feishu.cn/docx/C1m3dvCaKolczfxBcdOcMHVnnxd",
+        "doc_id": "C1m3dvCaKolczfxBcdOcMHVnnxd",
+        "date": "2026-06-03",
+        "report_title": "溢价高企触发停牌，风险警示",
+        "change_rate": -1.88,
+        "input_tokens": 2733,
+        "output_tokens": 3061,
+        "prompt_version": "0.4.1"
       }
     ],
     "港股": [
@@ -1144,5 +1252,5 @@
       "market": "美股"
     }
   ],
-  "update_time": "2026-06-03 19:53"
+  "update_time": "2026-06-03 20:03"
 }
