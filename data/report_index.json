@@ -453,6 +453,126 @@
         "input_tokens": 2733,
         "output_tokens": 3061,
         "prompt_version": "0.4.1"
+      },
+      {
+        "name": "比亚迪",
+        "code": "SZ.002594",
+        "doc_url": "https://www.feishu.cn/docx/B4oLdewmpoU1VxxJEZDc9UvNnDb",
+        "doc_id": "B4oLdewmpoU1VxxJEZDc9UvNnDb",
+        "date": "2026-06-04",
+        "report_title": "缩量失守均线群，观望",
+        "change_rate": -1.46,
+        "input_tokens": 2740,
+        "output_tokens": 1573,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "阳光电源",
+        "code": "SZ.300274",
+        "doc_url": "https://www.feishu.cn/docx/TvMtdfSyFoHEeKxkr5DcAHEvnTe",
+        "doc_id": "TvMtdfSyFoHEeKxkr5DcAHEvnTe",
+        "date": "2026-06-04",
+        "report_title": "放量跌破短期均线，减仓观望",
+        "change_rate": -3.78,
+        "input_tokens": 2749,
+        "output_tokens": 1325,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "宁德时代",
+        "code": "SZ.300750",
+        "doc_url": "https://www.feishu.cn/docx/LTVVdMorvokBXNx1ZMWcirLJnag",
+        "doc_id": "LTVVdMorvokBXNx1ZMWcirLJnag",
+        "date": "2026-06-04",
+        "report_title": "放量跌破均线簇，减仓观望",
+        "change_rate": -4.27,
+        "input_tokens": 2704,
+        "output_tokens": 1579,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "招商银行",
+        "code": "SH.600036",
+        "doc_url": "https://www.feishu.cn/docx/Pw8VdeBxVoyBi2xYGJtcEZqCniC",
+        "doc_id": "Pw8VdeBxVoyBi2xYGJtcEZqCniC",
+        "date": "2026-06-04",
+        "report_title": "缩量回踩均线，持有观望",
+        "change_rate": -1.04,
+        "input_tokens": 2649,
+        "output_tokens": 1380,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "兴业银行",
+        "code": "SH.601166",
+        "doc_url": "https://www.feishu.cn/docx/PNo7dbaRwoEEUMxj82PcVOgknEk",
+        "doc_id": "PNo7dbaRwoEEUMxj82PcVOgknEk",
+        "date": "2026-06-04",
+        "report_title": "缩量回踩均线，短线观望",
+        "change_rate": -1.08,
+        "input_tokens": 2733,
+        "output_tokens": 1429,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "交通银行",
+        "code": "SH.601328",
+        "doc_url": "https://www.feishu.cn/docx/MDv8dnDK1o3P7NxWxN9c34thnOh",
+        "doc_id": "MDv8dnDK1o3P7NxWxN9c34thnOh",
+        "date": "2026-06-04",
+        "report_title": "缩量回踩均线，暂宜观望",
+        "change_rate": -0.88,
+        "input_tokens": 2758,
+        "output_tokens": 1392,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "中来股份",
+        "code": "SZ.300393",
+        "doc_url": "https://www.feishu.cn/docx/PrAZdMCf6oqnoExwFHMc5KnqnMM",
+        "doc_id": "PrAZdMCf6oqnoExwFHMc5KnqnMM",
+        "date": "2026-06-04",
+        "report_title": "超跌反弹遇均线，暂观望",
+        "change_rate": 1.87,
+        "input_tokens": 2779,
+        "output_tokens": 1402,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "机器人ETF华夏",
+        "code": "SH.562500",
+        "doc_url": "https://www.feishu.cn/docx/GPLfdiHJFo3goMx9RTUc5bNEn5f",
+        "doc_id": "GPLfdiHJFo3goMx9RTUc5bNEn5f",
+        "date": "2026-06-04",
+        "report_title": "缩量企稳均线纠缠，观望",
+        "change_rate": 0.0,
+        "input_tokens": 2813,
+        "output_tokens": 1463,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "医药ETF易方达",
+        "code": "SH.512010",
+        "doc_url": "https://www.feishu.cn/docx/Nl59dy1wpo8DN0xtgyrcuSBunde",
+        "doc_id": "Nl59dy1wpo8DN0xtgyrcuSBunde",
+        "date": "2026-06-04",
+        "report_title": "缩量探底收十字星，观望",
+        "change_rate": 0.0,
+        "input_tokens": 2745,
+        "output_tokens": 1611,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "纳指ETF国泰",
+        "code": "SH.513100",
+        "doc_url": "https://www.feishu.cn/docx/ABBHd2dLNoYpSIxybIlcX2mBnOe",
+        "doc_id": "ABBHd2dLNoYpSIxybIlcX2mBnOe",
+        "date": "2026-06-04",
+        "report_title": "溢价风险频现，建议观望",
+        "change_rate": 0.0,
+        "input_tokens": 2761,
+        "output_tokens": 1468,
+        "prompt_version": "0.4.2"
       }
     ],
     "港股": [
@@ -832,6 +952,102 @@
         "input_tokens": 1947,
         "output_tokens": 2770,
         "prompt_version": "0.4.0"
+      },
+      {
+        "name": "粤海投资",
+        "code": "HK.00270",
+        "doc_url": "https://www.feishu.cn/docx/HPwvdKVsEoztPFxWJ1qcbmt6nJg",
+        "doc_id": "HPwvdKVsEoztPFxWJ1qcbmt6nJg",
+        "date": "2026-06-04",
+        "report_title": "缩量回调守均线，持有观望",
+        "change_rate": -0.61,
+        "input_tokens": 2809,
+        "output_tokens": 1361,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "腾讯控股",
+        "code": "HK.00700",
+        "doc_url": "https://www.feishu.cn/docx/Car1dFgMzoS5gExI4uHcO5Tgne2",
+        "doc_id": "Car1dFgMzoS5gExI4uHcO5Tgne2",
+        "date": "2026-06-04",
+        "report_title": "冲高回落显疲态，暂观望",
+        "change_rate": -1.59,
+        "input_tokens": 2836,
+        "output_tokens": 1402,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "恒瑞医药",
+        "code": "HK.01276",
+        "doc_url": "https://www.feishu.cn/docx/Sw9odW73koqZB6xp1SSclPfnnNc",
+        "doc_id": "Sw9odW73koqZB6xp1SSclPfnnNc",
+        "date": "2026-06-04",
+        "report_title": "缩量跌破均线群，观望",
+        "change_rate": -2.47,
+        "input_tokens": 2819,
+        "output_tokens": 1475,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "小米集团-W",
+        "code": "HK.01810",
+        "doc_url": "https://www.feishu.cn/docx/ZgSIdIMKeofjrQxwqZYcLLjNnvb",
+        "doc_id": "ZgSIdIMKeofjrQxwqZYcLLjNnvb",
+        "date": "2026-06-04",
+        "report_title": "超跌区域现回购，观望待企稳",
+        "change_rate": -0.7,
+        "input_tokens": 2751,
+        "output_tokens": 1327,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "建滔积层板",
+        "code": "HK.01888",
+        "doc_url": "https://www.feishu.cn/docx/BV7AdsuXvowE0yxXsK8c989qnKb",
+        "doc_id": "BV7AdsuXvowE0yxXsK8c989qnKb",
+        "date": "2026-06-04",
+        "report_title": "高位放量滞涨，减仓观望",
+        "change_rate": 0.28,
+        "input_tokens": 2888,
+        "output_tokens": 1312,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "美团-W",
+        "code": "HK.03690",
+        "doc_url": "https://www.feishu.cn/docx/PfMHdrlAQoeWjdxgrFicQftNnWf",
+        "doc_id": "PfMHdrlAQoeWjdxgrFicQftNnWf",
+        "date": "2026-06-04",
+        "report_title": "超卖区域缩量下探，观望",
+        "change_rate": -2.24,
+        "input_tokens": 2909,
+        "output_tokens": 1394,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "百济神州",
+        "code": "HK.06160",
+        "doc_url": "https://www.feishu.cn/docx/X9fxdqwBNowhRJxHS5zciNrSnyh",
+        "doc_id": "X9fxdqwBNowhRJxHS5zciNrSnyh",
+        "date": "2026-06-04",
+        "report_title": "缩量反弹承压，观望为主",
+        "change_rate": 1.63,
+        "input_tokens": 2912,
+        "output_tokens": 1324,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "阿里巴巴-W",
+        "code": "HK.09988",
+        "doc_url": "https://www.feishu.cn/docx/WplydI5LJooGdxxLtAzcTDs2nrc",
+        "doc_id": "WplydI5LJooGdxxLtAzcTDs2nrc",
+        "date": "2026-06-04",
+        "report_title": "利好兑现后回调，观望",
+        "change_rate": -2.45,
+        "input_tokens": 2907,
+        "output_tokens": 1541,
+        "prompt_version": "0.4.2"
       }
     ],
     "美股": [
@@ -1347,6 +1563,114 @@
         "input_tokens": 2488,
         "output_tokens": 1299,
         "prompt_version": "0.4.2"
+      },
+      {
+        "name": "Circle",
+        "code": "US.CRCL",
+        "doc_url": "https://www.feishu.cn/docx/WjXYda6q5oCzxCxEo8ec1537nnc",
+        "doc_id": "WjXYda6q5oCzxCxEo8ec1537nnc",
+        "date": "2026-06-04",
+        "report_title": "放量跌停破均线，减仓观望",
+        "change_rate": -10.63,
+        "input_tokens": 2190,
+        "output_tokens": 1380,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "Lumentum",
+        "code": "US.LITE",
+        "doc_url": "https://www.feishu.cn/docx/GOlUdpaq8oX3R7xf00Vc5ywYnDh",
+        "doc_id": "GOlUdpaq8oX3R7xf00Vc5ywYnDh",
+        "date": "2026-06-04",
+        "report_title": "放量长阴破五日，减仓观望",
+        "change_rate": -8.86,
+        "input_tokens": 2558,
+        "output_tokens": 1399,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "Meta",
+        "code": "US.META",
+        "doc_url": "https://www.feishu.cn/docx/Wxwxda7KmokTOPxYxbKcGtWWnb0",
+        "doc_id": "Wxwxda7KmokTOPxYxbKcGtWWnb0",
+        "date": "2026-06-04",
+        "report_title": "超跌反弹遇超买，暂观望",
+        "change_rate": 4.24,
+        "input_tokens": 2532,
+        "output_tokens": 1499,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "微软",
+        "code": "US.MSFT",
+        "doc_url": "https://www.feishu.cn/docx/YyUEd96LBoik9NxYRnIcb8AbnLb",
+        "doc_id": "YyUEd96LBoik9NxYRnIcb8AbnLb",
+        "date": "2026-06-04",
+        "report_title": "放量回调破阻力，观望",
+        "change_rate": -3.17,
+        "input_tokens": 2617,
+        "output_tokens": 1293,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "英伟达",
+        "code": "US.NVDA",
+        "doc_url": "https://www.feishu.cn/docx/WpTAdsWoEo2XImxLKICc7XKunyh",
+        "doc_id": "WpTAdsWoEo2XImxLKICc7XKunyh",
+        "date": "2026-06-04",
+        "report_title": "高位放量回调，短线观望",
+        "change_rate": -3.62,
+        "input_tokens": 2527,
+        "output_tokens": 1249,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "Palantir",
+        "code": "US.PLTR",
+        "doc_url": "https://www.feishu.cn/docx/W8gkdkdRJoY9bGxBAXtclXnlnWf",
+        "doc_id": "W8gkdkdRJoY9bGxBAXtclXnlnWf",
+        "date": "2026-06-04",
+        "report_title": "放量破位均线群，减仓观望",
+        "change_rate": -6.55,
+        "input_tokens": 2554,
+        "output_tokens": 1455,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "SoFi",
+        "code": "US.SOFI",
+        "doc_url": "https://www.feishu.cn/docx/EFLBda2eLoUWudx8XfocrDdhnFN",
+        "doc_id": "EFLBda2eLoUWudx8XfocrDdhnFN",
+        "date": "2026-06-04",
+        "report_title": "放量破位均线，减仓观望",
+        "change_rate": -5.98,
+        "input_tokens": 2478,
+        "output_tokens": 1580,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "特斯拉",
+        "code": "US.TSLA",
+        "doc_url": "https://www.feishu.cn/docx/Fr2qdXdaTova4zxRUl4cFECSncc",
+        "doc_id": "Fr2qdXdaTova4zxRUl4cFECSncc",
+        "date": "2026-06-04",
+        "report_title": "高位震荡收十字星，持有观望",
+        "change_rate": -0.01,
+        "input_tokens": 2552,
+        "output_tokens": 1245,
+        "prompt_version": "0.4.2"
+      },
+      {
+        "name": "回声星通信",
+        "code": "US.SATS",
+        "doc_url": "https://www.feishu.cn/docx/Df3gdVgF7o5xEIx8v8fcv2xmnvg",
+        "doc_id": "Df3gdVgF7o5xEIx8v8fcv2xmnvg",
+        "date": "2026-06-04",
+        "report_title": "缩量跌破均线群，观望",
+        "change_rate": -2.13,
+        "input_tokens": 2389,
+        "output_tokens": 1106,
+        "prompt_version": "0.4.2"
       }
     ]
   },
@@ -1360,5 +1684,5 @@
       "market": "美股"
     }
   ],
-  "update_time": "2026-06-03 23:55"
+  "update_time": "2026-06-04 16:44"
 }
