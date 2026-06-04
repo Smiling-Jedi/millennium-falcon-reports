@@ -1,5 +1,5 @@
 {
-  "update_time": "2026-06-04 18:35",
+  "update_time": "2026-06-04 23:06",
   "stocks": {
     "SZ.002594": {
       "name": "比亚迪",
@@ -13,7 +13,7 @@
       "rsi_5y_high": 95.0,
       "sentiment_score": 35,
       "sentiment_label": "关注",
-      "sentiment_summary": "东财Top1% | 雪球讨论2/关注5/交易4 | 综合得分71",
+      "sentiment_summary": "东财Top1% | 雪球讨论2/关注5/交易3 | 综合得分71",
       "signal": "normal",
       "position_weight": 1422300.0,
       "drawdown_from_high": -76.6,
@@ -62,7 +62,7 @@
       "rsi_5y_high": 89.9,
       "sentiment_score": 35,
       "sentiment_label": "关注",
-      "sentiment_summary": "东财Top1% | 雪球讨论20/关注35/交易44 | 综合得分75",
+      "sentiment_summary": "东财Top1% | 雪球讨论29/关注35/交易40 | 综合得分75",
       "signal": "normal",
       "position_weight": 597800.0,
       "drawdown_from_high": -16.8,
@@ -111,7 +111,7 @@
       "rsi_5y_high": 91.8,
       "sentiment_score": 35,
       "sentiment_label": "关注",
-      "sentiment_summary": "东财Top1% | 雪球讨论13/关注15/交易14 | 综合得分76",
+      "sentiment_summary": "东财Top1% | 雪球讨论10/关注15/交易14 | 综合得分76",
       "signal": "normal",
       "position_weight": 426420.0,
       "drawdown_from_high": -38.0,
@@ -160,7 +160,7 @@
       "rsi_5y_high": 95.8,
       "sentiment_score": 35,
       "sentiment_label": "关注",
-      "sentiment_summary": "东财Top1% | 雪球讨论11/关注3/交易7 | 综合得分68",
+      "sentiment_summary": "东财Top1% | 雪球讨论5/关注3/交易6 | 综合得分68",
       "signal": "normal",
       "position_weight": 96250.0,
       "drawdown_from_high": -33.1,
@@ -936,18 +936,18 @@
       "name": "Circle",
       "market": "US",
       "code": "US.CRCL",
-      "current_price": 90.13,
-      "rsi_14": 21.91,
-      "rsi_percentile": 8.9,
-      "rsi_panic_line": 31.1,
+      "current_price": 92.76,
+      "rsi_14": 25.99,
+      "rsi_percentile": 14.3,
+      "rsi_panic_line": 30.5,
       "rsi_5y_low": 8.2,
       "rsi_5y_high": 89.1,
       "sentiment_score": 15,
       "sentiment_label": "平静",
       "sentiment_summary": "东财无数据 | 雪球未上榜",
       "signal": "watch",
-      "position_weight": 451.0,
-      "drawdown_from_high": -65.8,
+      "position_weight": 464.0,
+      "drawdown_from_high": -64.8,
       "panic_events_5y": [
         {
           "date": "2025-11-20",
@@ -959,13 +959,13 @@
           "date": "2026-01-27",
           "rsi": 22.76,
           "return_3m_pct": 34.9,
-          "return_6m_pct": 28.8
+          "return_6m_pct": 32.6
         },
         {
           "date": "2026-02-04",
           "rsi": 12.37,
           "return_3m_pct": 121.3,
-          "return_6m_pct": 63.7
+          "return_6m_pct": 68.5
         },
         {
           "date": "2026-04-09",
@@ -985,18 +985,18 @@
       "name": "Lumentum",
       "market": "US",
       "code": "US.LITE",
-      "current_price": 938.0,
-      "rsi_14": 42.83,
-      "rsi_percentile": 30.4,
+      "current_price": 898.3,
+      "rsi_14": 42.1,
+      "rsi_percentile": 28.6,
       "rsi_panic_line": 37.7,
       "rsi_5y_low": 12.2,
       "rsi_5y_high": 100.0,
       "sentiment_score": 15,
       "sentiment_label": "平静",
       "sentiment_summary": "东财无数据 | 雪球未上榜",
-      "signal": "normal",
-      "position_weight": 3752.0,
-      "drawdown_from_high": -10.9,
+      "signal": "watch",
+      "position_weight": 3593.0,
+      "drawdown_from_high": -14.7,
       "panic_events_5y": [
         {
           "date": "2025-04-11",
@@ -1014,7 +1014,7 @@
           "date": "2026-01-16",
           "rsi": 36.95,
           "return_3m_pct": 176.1,
-          "return_6m_pct": 189.3
+          "return_6m_pct": 177.0
         },
         {
           "date": "2026-04-28",
@@ -1034,9 +1034,9 @@
       "name": "Meta",
       "market": "US",
       "code": "US.META",
-      "current_price": 622.98,
-      "rsi_14": 52.8,
-      "rsi_percentile": 47.5,
+      "current_price": 638.52,
+      "rsi_14": 57.91,
+      "rsi_percentile": 58.1,
       "rsi_panic_line": 37.0,
       "rsi_5y_low": 9.8,
       "rsi_5y_high": 100.0,
@@ -1044,14 +1044,14 @@
       "sentiment_label": "平静",
       "sentiment_summary": "东财无数据 | 雪球未上榜",
       "signal": "normal",
-      "position_weight": 49838.0,
-      "drawdown_from_high": -21.0,
+      "position_weight": 51082.0,
+      "drawdown_from_high": -19.0,
       "panic_events_5y": [
         {
           "date": "2026-01-20",
           "rsi": 26.08,
           "return_3m_pct": 10.8,
-          "return_6m_pct": 3.2
+          "return_6m_pct": 5.8
         },
         {
           "date": "2026-02-19",
@@ -1062,13 +1062,13 @@
         {
           "date": "2026-03-27",
           "rsi": 18.01,
-          "return_3m_pct": 18.5,
+          "return_3m_pct": 21.5,
           "return_6m_pct": null
         },
         {
           "date": "2026-04-06",
           "rsi": 35.38,
-          "return_3m_pct": 8.7,
+          "return_3m_pct": 11.4,
           "return_6m_pct": null
         },
         {
@@ -1083,9 +1083,9 @@
       "name": "微软",
       "market": "US",
       "code": "US.MSFT",
-      "current_price": 427.34,
-      "rsi_14": 59.87,
-      "rsi_percentile": 64.1,
+      "current_price": 429.65,
+      "rsi_14": 59.2,
+      "rsi_percentile": 62.9,
       "rsi_panic_line": 38.1,
       "rsi_5y_low": 6.8,
       "rsi_5y_high": 96.0,
@@ -1093,20 +1093,20 @@
       "sentiment_label": "平静",
       "sentiment_summary": "东财无数据 | 雪球未上榜",
       "signal": "normal",
-      "position_weight": 64101.0,
-      "drawdown_from_high": -20.7,
+      "position_weight": 64448.0,
+      "drawdown_from_high": -20.2,
       "panic_events_5y": [
         {
           "date": "2026-01-21",
           "rsi": 20.44,
           "return_3m_pct": -2.3,
-          "return_6m_pct": -3.3
+          "return_6m_pct": -2.8
         },
         {
           "date": "2026-02-03",
           "rsi": 28.9,
           "return_3m_pct": 0.3,
-          "return_6m_pct": 4.4
+          "return_6m_pct": 4.9
         },
         {
           "date": "2026-02-17",
@@ -1117,7 +1117,7 @@
         {
           "date": "2026-03-27",
           "rsi": 8.68,
-          "return_3m_pct": 20.0,
+          "return_3m_pct": 20.7,
           "return_6m_pct": null
         },
         {
@@ -1132,9 +1132,9 @@
       "name": "英伟达",
       "market": "US",
       "code": "US.NVDA",
-      "current_price": 214.5,
-      "rsi_14": 41.65,
-      "rsi_percentile": 23.2,
+      "current_price": 215.28,
+      "rsi_14": 32.35,
+      "rsi_percentile": 7.4,
       "rsi_panic_line": 40.5,
       "rsi_5y_low": 8.2,
       "rsi_5y_high": 98.6,
@@ -1142,37 +1142,37 @@
       "sentiment_label": "平静",
       "sentiment_summary": "东财无数据 | 雪球未上榜",
       "signal": "watch",
-      "position_weight": 64350.0,
-      "drawdown_from_high": -8.9,
+      "position_weight": 64584.0,
+      "drawdown_from_high": -8.6,
       "panic_events_5y": [
-        {
-          "date": "2026-03-13",
-          "rsi": 39.33,
-          "return_3m_pct": 19.1,
-          "return_6m_pct": null
-        },
         {
           "date": "2026-03-17",
           "rsi": 37.2,
-          "return_3m_pct": 18.0,
+          "return_3m_pct": 18.5,
           "return_6m_pct": null
         },
         {
           "date": "2026-03-20",
           "rsi": 37.39,
-          "return_3m_pct": 24.3,
+          "return_3m_pct": 24.8,
           "return_6m_pct": null
         },
         {
           "date": "2026-03-24",
           "rsi": 39.33,
-          "return_3m_pct": 22.6,
+          "return_3m_pct": 23.0,
           "return_6m_pct": null
         },
         {
           "date": "2026-03-30",
           "rsi": 26.06,
-          "return_3m_pct": 30.0,
+          "return_3m_pct": 30.5,
+          "return_6m_pct": null
+        },
+        {
+          "date": "2026-06-04",
+          "rsi": 32.35,
+          "return_3m_pct": null,
           "return_6m_pct": null
         }
       ]
@@ -1181,9 +1181,9 @@
       "name": "Palantir",
       "market": "US",
       "code": "US.PLTR",
-      "current_price": 142.2,
-      "rsi_14": 60.32,
-      "rsi_percentile": 65.5,
+      "current_price": 141.97,
+      "rsi_14": 57.44,
+      "rsi_percentile": 59.7,
       "rsi_panic_line": 35.9,
       "rsi_5y_low": 7.5,
       "rsi_5y_high": 94.1,
@@ -1191,14 +1191,14 @@
       "sentiment_label": "平静",
       "sentiment_summary": "东财无数据 | 雪球未上榜",
       "signal": "normal",
-      "position_weight": 8532.0,
-      "drawdown_from_high": -31.4,
+      "position_weight": 8518.0,
+      "drawdown_from_high": -31.5,
       "panic_events_5y": [
         {
           "date": "2026-02-02",
           "rsi": 12.79,
           "return_3m_pct": -1.2,
-          "return_6m_pct": -3.8
+          "return_6m_pct": -3.9
         },
         {
           "date": "2026-02-24",
@@ -1230,9 +1230,9 @@
       "name": "SoFi",
       "market": "US",
       "code": "US.SOFI",
-      "current_price": 16.68,
-      "rsi_14": 59.66,
-      "rsi_percentile": 70.9,
+      "current_price": 17.05,
+      "rsi_14": 57.63,
+      "rsi_percentile": 66.5,
       "rsi_panic_line": 34.5,
       "rsi_5y_low": 4.0,
       "rsi_5y_high": 95.5,
@@ -1240,8 +1240,8 @@
       "sentiment_label": "平静",
       "sentiment_summary": "东财无数据 | 雪球未上榜",
       "signal": "normal",
-      "position_weight": 33360.0,
-      "drawdown_from_high": -48.2,
+      "position_weight": 34100.0,
+      "drawdown_from_high": -47.1,
       "panic_events_5y": [
         {
           "date": "2026-02-27",
@@ -1252,13 +1252,13 @@
         {
           "date": "2026-03-17",
           "rsi": 32.55,
-          "return_3m_pct": -4.0,
+          "return_3m_pct": -1.8,
           "return_6m_pct": null
         },
         {
           "date": "2026-03-27",
           "rsi": 11.8,
-          "return_3m_pct": 9.5,
+          "return_3m_pct": 12.0,
           "return_6m_pct": null
         },
         {
@@ -1279,9 +1279,9 @@
       "name": "特斯拉",
       "market": "US",
       "code": "US.TSLA",
-      "current_price": 423.7,
-      "rsi_14": 40.48,
-      "rsi_percentile": 27.5,
+      "current_price": 418.94,
+      "rsi_14": 39.51,
+      "rsi_percentile": 25.8,
       "rsi_panic_line": 35.8,
       "rsi_5y_low": 6.9,
       "rsi_5y_high": 97.5,
@@ -1289,14 +1289,14 @@
       "sentiment_label": "平静",
       "sentiment_summary": "东财无数据 | 雪球未上榜",
       "signal": "watch",
-      "position_weight": 105925.0,
-      "drawdown_from_high": -13.5,
+      "position_weight": 104735.0,
+      "drawdown_from_high": -14.5,
       "panic_events_5y": [
         {
           "date": "2026-02-05",
           "rsi": 34.18,
           "return_3m_pct": 3.7,
-          "return_6m_pct": 6.7
+          "return_6m_pct": 5.5
         },
         {
           "date": "2026-03-03",
@@ -1307,19 +1307,19 @@
         {
           "date": "2026-03-20",
           "rsi": 32.44,
-          "return_3m_pct": 15.1,
+          "return_3m_pct": 13.9,
           "return_6m_pct": null
         },
         {
           "date": "2026-03-30",
           "rsi": 30.59,
-          "return_3m_pct": 19.3,
+          "return_3m_pct": 17.9,
           "return_6m_pct": null
         },
         {
           "date": "2026-04-07",
           "rsi": 31.28,
-          "return_3m_pct": null,
+          "return_3m_pct": 20.9,
           "return_6m_pct": null
         }
       ]
@@ -1328,9 +1328,9 @@
       "name": "回声星通信",
       "market": "US",
       "code": "US.SATS",
-      "current_price": 120.92,
-      "rsi_14": 37.24,
-      "rsi_percentile": 24.1,
+      "current_price": 123.82,
+      "rsi_14": 38.54,
+      "rsi_percentile": 26.1,
       "rsi_panic_line": 35.2,
       "rsi_5y_low": 3.6,
       "rsi_5y_high": 98.9,
@@ -1338,8 +1338,8 @@
       "sentiment_label": "平静",
       "sentiment_summary": "东财无数据 | 雪球未上榜",
       "signal": "watch",
-      "position_weight": 6046.0,
-      "drawdown_from_high": -14.7,
+      "position_weight": 6191.0,
+      "drawdown_from_high": -12.7,
       "panic_events_5y": [
         {
           "date": "2025-11-20",
@@ -1351,7 +1351,7 @@
           "date": "2026-02-04",
           "rsi": 32.01,
           "return_3m_pct": 13.6,
-          "return_6m_pct": 9.2
+          "return_6m_pct": 11.9
         },
         {
           "date": "2026-02-11",
@@ -1377,9 +1377,9 @@
       "name": "Sea",
       "market": "US",
       "code": "US.SE",
-      "current_price": 89.46,
-      "rsi_14": 43.41,
-      "rsi_percentile": 38.9,
+      "current_price": 92.14,
+      "rsi_14": 56.73,
+      "rsi_percentile": 64.9,
       "rsi_panic_line": 33.8,
       "rsi_5y_low": 4.4,
       "rsi_5y_high": 95.7,
@@ -1387,14 +1387,14 @@
       "sentiment_label": "平静",
       "sentiment_summary": "东财无数据 | 雪球未上榜",
       "signal": "normal",
-      "position_weight": 5368.0,
-      "drawdown_from_high": -75.6,
+      "position_weight": 5528.0,
+      "drawdown_from_high": -74.9,
       "panic_events_5y": [
         {
           "date": "2026-02-03",
           "rsi": 17.79,
           "return_3m_pct": -21.9,
-          "return_6m_pct": -17.3
+          "return_6m_pct": -14.8
         },
         {
           "date": "2026-02-13",
@@ -1411,13 +1411,13 @@
         {
           "date": "2026-03-19",
           "rsi": 21.22,
-          "return_3m_pct": 10.5,
+          "return_3m_pct": 13.8,
           "return_6m_pct": null
         },
         {
           "date": "2026-03-25",
           "rsi": 26.79,
-          "return_3m_pct": 8.5,
+          "return_3m_pct": 11.7,
           "return_6m_pct": null
         }
       ]
@@ -1426,36 +1426,30 @@
       "name": "博通",
       "market": "US",
       "code": "US.AVGO",
-      "current_price": 479.23,
-      "rsi_14": 73.63,
-      "rsi_percentile": 88.5,
-      "rsi_panic_line": 41.5,
+      "current_price": 408.15,
+      "rsi_14": 41.22,
+      "rsi_percentile": 19.6,
+      "rsi_panic_line": 41.4,
       "rsi_5y_low": 6.8,
       "rsi_5y_high": 94.3,
       "sentiment_score": 15,
       "sentiment_label": "平静",
       "sentiment_summary": "东财无数据 | 雪球未上榜",
-      "signal": "caution",
-      "position_weight": 14377.0,
-      "drawdown_from_high": -0.5,
+      "signal": "watch",
+      "position_weight": 12244.0,
+      "drawdown_from_high": -15.2,
       "panic_events_5y": [
-        {
-          "date": "2025-12-31",
-          "rsi": 23.23,
-          "return_3m_pct": -8.9,
-          "return_6m_pct": 38.8
-        },
         {
           "date": "2026-01-23",
           "rsi": 35.67,
           "return_3m_pct": 32.4,
-          "return_6m_pct": 50.1
+          "return_6m_pct": 27.8
         },
         {
           "date": "2026-02-03",
           "rsi": 29.94,
           "return_3m_pct": 33.7,
-          "return_6m_pct": 49.9
+          "return_6m_pct": 27.7
         },
         {
           "date": "2026-03-03",
@@ -1466,7 +1460,13 @@
         {
           "date": "2026-03-30",
           "rsi": 22.5,
-          "return_3m_pct": 63.3,
+          "return_3m_pct": 39.1,
+          "return_6m_pct": null
+        },
+        {
+          "date": "2026-06-04",
+          "rsi": 41.22,
+          "return_3m_pct": null,
           "return_6m_pct": null
         }
       ]
@@ -1475,9 +1475,9 @@
       "name": "Coherent",
       "market": "US",
       "code": "US.COHR",
-      "current_price": 417.43,
-      "rsi_14": 53.9,
-      "rsi_percentile": 52.2,
+      "current_price": 397.94,
+      "rsi_14": 48.2,
+      "rsi_percentile": 40.0,
       "rsi_panic_line": 37.0,
       "rsi_5y_low": 0.8,
       "rsi_5y_high": 94.7,
@@ -1485,8 +1485,8 @@
       "sentiment_label": "平静",
       "sentiment_summary": "东财无数据 | 雪球未上榜",
       "signal": "normal",
-      "position_weight": 1252.0,
-      "drawdown_from_high": -2.2,
+      "position_weight": 1194.0,
+      "drawdown_from_high": -6.8,
       "panic_events_5y": [
         {
           "date": "2025-04-08",
@@ -1509,13 +1509,13 @@
         {
           "date": "2026-03-20",
           "rsi": 36.43,
-          "return_3m_pct": 64.6,
+          "return_3m_pct": 56.9,
           "return_6m_pct": null
         },
         {
           "date": "2026-03-30",
           "rsi": 36.38,
-          "return_3m_pct": 90.0,
+          "return_3m_pct": 81.2,
           "return_6m_pct": null
         }
       ]
@@ -1532,14 +1532,15 @@
       "HK.06160",
       "HK.09988",
       "US.CRCL",
+      "US.LITE",
       "US.NVDA",
       "US.TSLA",
-      "US.SATS"
+      "US.SATS",
+      "US.AVGO"
     ],
     "caution": [
       "SH.601166",
-      "HK.02382",
-      "US.AVGO"
+      "HK.02382"
     ]
   },
   "rsi_data": {
@@ -43440,7 +43441,8 @@
         "2026-05-29",
         "2026-06-01",
         "2026-06-02",
-        "2026-06-03"
+        "2026-06-03",
+        "2026-06-04"
       ],
       "rsi_values": [
         null,
@@ -43692,7 +43694,8 @@
         49.53,
         28.06,
         30.02,
-        21.91
+        21.91,
+        25.99
       ]
     },
     "US.LITE": {
@@ -44951,7 +44954,8 @@
         "2026-05-29",
         "2026-06-01",
         "2026-06-02",
-        "2026-06-03"
+        "2026-06-03",
+        "2026-06-04"
       ],
       "rsi_values": [
         null,
@@ -46208,7 +46212,8 @@
         46.1,
         35.96,
         53.11,
-        42.83
+        42.83,
+        42.1
       ]
     },
     "US.META": {
@@ -47467,7 +47472,8 @@
         "2026-05-29",
         "2026-06-01",
         "2026-06-02",
-        "2026-06-03"
+        "2026-06-03",
+        "2026-06-04"
       ],
       "rsi_values": [
         null,
@@ -48724,7 +48730,8 @@
         64.02,
         50.78,
         47.36,
-        52.8
+        52.8,
+        57.91
       ]
     },
     "US.MSFT": {
@@ -49982,7 +49989,8 @@
         "2026-05-29",
         "2026-06-01",
         "2026-06-02",
-        "2026-06-03"
+        "2026-06-03",
+        "2026-06-04"
       ],
       "rsi_values": [
         null,
@@ -51238,7 +51246,8 @@
         71.71,
         76.85,
         66.37,
-        59.87
+        59.87,
+        59.2
       ]
     },
     "US.NVDA": {
@@ -52496,7 +52505,8 @@
         "2026-05-29",
         "2026-06-01",
         "2026-06-02",
-        "2026-06-03"
+        "2026-06-03",
+        "2026-06-04"
       ],
       "rsi_values": [
         null,
@@ -53752,7 +53762,8 @@
         46.25,
         53.9,
         51.61,
-        41.65
+        41.65,
+        32.35
       ]
     },
     "US.PLTR": {
@@ -55010,7 +55021,8 @@
         "2026-05-29",
         "2026-06-01",
         "2026-06-02",
-        "2026-06-03"
+        "2026-06-03",
+        "2026-06-04"
       ],
       "rsi_values": [
         null,
@@ -56266,7 +56278,8 @@
         71.28,
         75.15,
         64.75,
-        60.32
+        60.32,
+        57.44
       ]
     },
     "US.SOFI": {
@@ -57524,7 +57537,8 @@
         "2026-05-29",
         "2026-06-01",
         "2026-06-02",
-        "2026-06-03"
+        "2026-06-03",
+        "2026-06-04"
       ],
       "rsi_values": [
         null,
@@ -58780,7 +58794,8 @@
         69.63,
         68.89,
         63.9,
-        59.66
+        59.66,
+        57.63
       ]
     },
     "US.TSLA": {
@@ -60038,7 +60053,8 @@
         "2026-05-29",
         "2026-06-01",
         "2026-06-02",
-        "2026-06-03"
+        "2026-06-03",
+        "2026-06-04"
       ],
       "rsi_values": [
         null,
@@ -61294,7 +61310,8 @@
         52.96,
         38.69,
         46.12,
-        40.48
+        40.48,
+        39.51
       ]
     },
     "US.SATS": {
@@ -62552,7 +62569,8 @@
         "2026-05-29",
         "2026-06-01",
         "2026-06-02",
-        "2026-06-03"
+        "2026-06-03",
+        "2026-06-04"
       ],
       "rsi_values": [
         null,
@@ -63808,7 +63826,8 @@
         52.22,
         48.12,
         44.11,
-        37.24
+        37.24,
+        38.54
       ]
     },
     "US.SE": {
@@ -65066,7 +65085,8 @@
         "2026-05-29",
         "2026-06-01",
         "2026-06-02",
-        "2026-06-03"
+        "2026-06-03",
+        "2026-06-04"
       ],
       "rsi_values": [
         null,
@@ -66322,7 +66342,8 @@
         55.3,
         63.42,
         45.14,
-        43.41
+        43.41,
+        56.73
       ]
     },
     "US.AVGO": {
@@ -67580,7 +67601,8 @@
         "2026-05-29",
         "2026-06-01",
         "2026-06-02",
-        "2026-06-03"
+        "2026-06-03",
+        "2026-06-04"
       ],
       "rsi_values": [
         null,
@@ -68836,7 +68858,8 @@
         57.75,
         63.16,
         73.54,
-        73.63
+        73.63,
+        41.22
       ]
     },
     "US.COHR": {
@@ -70094,7 +70117,8 @@
         "2026-05-29",
         "2026-06-01",
         "2026-06-02",
-        "2026-06-03"
+        "2026-06-03",
+        "2026-06-04"
       ],
       "rsi_values": [
         null,
@@ -71350,7 +71374,8 @@
         57.25,
         43.91,
         63.48,
-        53.9
+        53.9,
+        48.2
       ]
     }
   }

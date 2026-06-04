@@ -1615,13 +1615,13 @@
       {
         "name": "微软",
         "code": "US.MSFT",
-        "doc_url": "https://www.feishu.cn/docx/EUnVdbCfnoH41sxHJVSc2ngqnCf",
-        "doc_id": "EUnVdbCfnoH41sxHJVSc2ngqnCf",
+        "doc_url": "https://www.feishu.cn/docx/WBF9dgPj8op6JrxibtycfGnpnCh",
+        "doc_id": "WBF9dgPj8op6JrxibtycfGnpnCh",
         "date": "2026-06-04",
-        "report_title": "放量跌破短期均线，观望",
-        "change_rate": -3.17,
-        "input_tokens": 2591,
-        "output_tokens": 1355,
+        "report_title": "缩量回调均线下方，观望",
+        "change_rate": 0.58,
+        "input_tokens": 2592,
+        "output_tokens": 1615,
         "prompt_version": "0.4.2"
       },
       {
@@ -1723,5 +1723,5 @@
     ]
   },
   "watchlist": [],
-  "update_time": "2026-06-04 18:26"
+  "update_time": "2026-06-04 22:57"
 }
