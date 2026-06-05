@@ -533,6 +533,126 @@
         "input_tokens": 3406,
         "output_tokens": 2818,
         "prompt_version": "0.5.0"
+      },
+      {
+        "name": "比亚迪",
+        "code": "SZ.002594",
+        "doc_url": "https://www.feishu.cn/docx/WROHdAr8Ooj2Tzx2Tdicz1ddn81",
+        "doc_id": "WROHdAr8Ooj2Tzx2Tdicz1ddn81",
+        "date": "2026-06-05",
+        "report_title": "弱势震荡守支撑，持有观察",
+        "change_rate": -0.46,
+        "input_tokens": 3615,
+        "output_tokens": 2496,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "阳光电源",
+        "code": "SZ.300274",
+        "doc_url": "https://www.feishu.cn/docx/BQ5QdlMl1oIIynxeQLRcrh0AnFh",
+        "doc_id": "BQ5QdlMl1oIIynxeQLRcrh0AnFh",
+        "date": "2026-06-05",
+        "report_title": "放量击穿支撑区，减仓",
+        "change_rate": -6.45,
+        "input_tokens": 3376,
+        "output_tokens": 2900,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "宁德时代",
+        "code": "SZ.300750",
+        "doc_url": "https://www.feishu.cn/docx/U9nEdriSJoaQQOxXwCTcYEQGnWY",
+        "doc_id": "U9nEdriSJoaQQOxXwCTcYEQGnWY",
+        "date": "2026-06-05",
+        "report_title": "弱势下探支撑位，减仓",
+        "change_rate": -1.27,
+        "input_tokens": 3639,
+        "output_tokens": 2599,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "招商银行",
+        "code": "SH.600036",
+        "doc_url": "https://www.feishu.cn/docx/ELJrdZgJao3UdixHSNgc11w4ndf",
+        "doc_id": "ELJrdZgJao3UdixHSNgc11w4ndf",
+        "date": "2026-06-05",
+        "report_title": "均线多头排列，持有观察",
+        "change_rate": 1.26,
+        "input_tokens": 3702,
+        "output_tokens": 2790,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "兴业银行",
+        "code": "SH.601166",
+        "doc_url": "https://www.feishu.cn/docx/N7IFdgXt6oOYe8xWrSIcdrsbnve",
+        "doc_id": "N7IFdgXt6oOYe8xWrSIcdrsbnve",
+        "date": "2026-06-05",
+        "report_title": "放量逼近阻力位，持有",
+        "change_rate": 1.69,
+        "input_tokens": 3712,
+        "output_tokens": 2102,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "交通银行",
+        "code": "SH.601328",
+        "doc_url": "https://www.feishu.cn/docx/OfHhdAcIYoa0OFxzLZWcLVKDnnd",
+        "doc_id": "OfHhdAcIYoa0OFxzLZWcLVKDnnd",
+        "date": "2026-06-05",
+        "report_title": "放量突破均线压制，持有",
+        "change_rate": 1.64,
+        "input_tokens": 3843,
+        "output_tokens": 2488,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "中来股份",
+        "code": "SZ.300393",
+        "doc_url": "https://www.feishu.cn/docx/LDyrdIzImotDwox3R3hcKR4Pnvf",
+        "doc_id": "LDyrdIzImotDwox3R3hcKR4Pnvf",
+        "date": "2026-06-05",
+        "report_title": "缩量破位均线，观望为宜",
+        "change_rate": -3.34,
+        "input_tokens": 3736,
+        "output_tokens": 2674,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "机器人ETF华夏",
+        "code": "SH.562500",
+        "doc_url": "https://www.feishu.cn/docx/Ubh7dtOZSoJzK9xDPcWcXBPmnBb",
+        "doc_id": "Ubh7dtOZSoJzK9xDPcWcXBPmnBb",
+        "date": "2026-06-05",
+        "report_title": "利好催化放量上攻，持有",
+        "change_rate": 2.65,
+        "input_tokens": 3777,
+        "output_tokens": 2063,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "医药ETF易方达",
+        "code": "SH.512010",
+        "doc_url": "https://www.feishu.cn/docx/TAKXdY5VYoSLr0xHPKgcBiaYnzb",
+        "doc_id": "TAKXdY5VYoSLr0xHPKgcBiaYnzb",
+        "date": "2026-06-05",
+        "report_title": "多空交织下，保持观望",
+        "change_rate": 0.0,
+        "input_tokens": 3609,
+        "output_tokens": 2816,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "纳指ETF国泰",
+        "code": "SH.513100",
+        "doc_url": "https://www.feishu.cn/docx/Jd9BduFlXo8pghxW9n1co6s0nRe",
+        "doc_id": "Jd9BduFlXo8pghxW9n1co6s0nRe",
+        "date": "2026-06-05",
+        "report_title": "溢价风险扰动，谨慎持有",
+        "change_rate": -1.34,
+        "input_tokens": 3726,
+        "output_tokens": 2330,
+        "prompt_version": "0.5.0"
       }
     ],
     "港股": [
@@ -1593,5 +1713,5 @@
     ]
   },
   "watchlist": [],
-  "update_time": "2026-06-05 14:44"
+  "update_time": "2026-06-05 17:23"
 }
