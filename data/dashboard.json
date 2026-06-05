@@ -1,5 +1,5 @@
 {
-  "update_time": "2026-06-05 12:13",
+  "update_time": "2026-06-05 14:48",
   "stocks": {
     "SZ.002594": {
       "name": "比亚迪",
@@ -750,7 +750,7 @@
       "sentiment_label": "平静",
       "sentiment_summary": "东财无数据 | 雪球未上榜",
       "signal": "caution",
-      "position_weight": 8145.0,
+      "position_weight": 16290.0,
       "drawdown_from_high": -67.3,
       "panic_events_5y": [
         {
