@@ -1,6 +1,17 @@
 {
   "A股": [
     {
+      "date": "2026-06-05",
+      "doc_url": "https://www.feishu.cn/docx/ZUyZdLWI3o1u2HxPgUicfdmcnUb",
+      "doc_id": "ZUyZdLWI3o1u2HxPgUicfdmcnUb",
+      "update_time": "12:20",
+      "report_title": "银行护盘成长承压",
+      "input_tokens": 5537,
+      "output_tokens": 2847,
+      "prompt_version": "0.2.0",
+      "stock_count": 10
+    },
+    {
       "date": "2026-06-02",
       "doc_url": "https://www.feishu.cn/docx/Us3hdh4vWorl4AxCjwrc0lGpnpc",
       "doc_id": "Us3hdh4vWorl4AxCjwrc0lGpnpc",
