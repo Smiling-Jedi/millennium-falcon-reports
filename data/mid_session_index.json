@@ -25,6 +25,17 @@
   ],
   "港股": [
     {
+      "date": "2026-06-05",
+      "doc_url": "https://www.feishu.cn/docx/K7ADdODaCoLWQ6xS8SscnUEknSf",
+      "doc_id": "K7ADdODaCoLWQ6xS8SscnUEknSf",
+      "update_time": "12:32",
+      "report_title": "港股分化 科技承压 光学走强",
+      "input_tokens": 5067,
+      "output_tokens": 3185,
+      "prompt_version": "0.2.0",
+      "stock_count": 9
+    },
+    {
       "date": "2026-06-02",
       "doc_url": "https://www.feishu.cn/docx/QG3Nd6WLXo3FzHxqy0rcxpSNngd",
       "doc_id": "QG3Nd6WLXo3FzHxqy0rcxpSNngd",
