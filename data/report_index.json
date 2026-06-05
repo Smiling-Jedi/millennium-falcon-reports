@@ -1817,9 +1817,141 @@
         "input_tokens": 2879,
         "output_tokens": 2168,
         "prompt_version": "0.5.0"
+      },
+      {
+        "name": "Circle",
+        "code": "US.CRCL",
+        "doc_url": "https://www.feishu.cn/docx/DzVCdH7OXoog17x0k1JcPlIdnOb",
+        "doc_id": "DzVCdH7OXoog17x0k1JcPlIdnOb",
+        "date": "2026-06-05",
+        "report_title": "超卖区域震荡，维持观望",
+        "change_rate": 0.45,
+        "input_tokens": 3420,
+        "output_tokens": 2007,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "Lumentum",
+        "code": "US.LITE",
+        "doc_url": "https://www.feishu.cn/docx/F3DpdZEOpo1TswxNJ26c3niandd",
+        "doc_id": "F3DpdZEOpo1TswxNJ26c3niandd",
+        "date": "2026-06-05",
+        "report_title": "放量震荡站上均线，观望",
+        "change_rate": 0.75,
+        "input_tokens": 3132,
+        "output_tokens": 2618,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "Meta",
+        "code": "US.META",
+        "doc_url": "https://www.feishu.cn/docx/M3IldZLVboco2oxF4gzcIIhTnog",
+        "doc_id": "M3IldZLVboco2oxF4gzcIIhTnog",
+        "date": "2026-06-05",
+        "report_title": "均线上方窄幅震荡，持有",
+        "change_rate": 0.74,
+        "input_tokens": 3414,
+        "output_tokens": 2080,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "微软",
+        "code": "US.MSFT",
+        "doc_url": "https://www.feishu.cn/docx/AejDdiVKNoCTtSxTdyMcrpoTnRd",
+        "doc_id": "AejDdiVKNoCTtSxTdyMcrpoTnRd",
+        "date": "2026-06-05",
+        "report_title": "缩量震荡待非农，建议观望",
+        "change_rate": 0.17,
+        "input_tokens": 3358,
+        "output_tokens": 2846,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "英伟达",
+        "code": "US.NVDA",
+        "doc_url": "https://www.feishu.cn/docx/Hnm7dBhH2oCC6NxvYZ3cOwxvnTg",
+        "doc_id": "Hnm7dBhH2oCC6NxvYZ3cOwxvnTg",
+        "date": "2026-06-05",
+        "report_title": "缩量站上均线，持有观望",
+        "change_rate": 1.94,
+        "input_tokens": 3422,
+        "output_tokens": 2249,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "Palantir",
+        "code": "US.PLTR",
+        "doc_url": "https://www.feishu.cn/docx/Y8lKdVg6colNpGxofLccqFbRnMd",
+        "doc_id": "Y8lKdVg6colNpGxofLccqFbRnMd",
+        "date": "2026-06-05",
+        "report_title": "缩量回调失均线，观望",
+        "change_rate": -0.35,
+        "input_tokens": 3505,
+        "output_tokens": 2221,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "SoFi",
+        "code": "US.SOFI",
+        "doc_url": "https://www.feishu.cn/docx/CLXHduVPhosw78xOQMNcn06Onlf",
+        "doc_id": "CLXHduVPhosw78xOQMNcn06Onlf",
+        "date": "2026-06-05",
+        "report_title": "放量反弹遇阻，持有观望",
+        "change_rate": 2.82,
+        "input_tokens": 3486,
+        "output_tokens": 2865,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "特斯拉",
+        "code": "US.TSLA",
+        "doc_url": "https://www.feishu.cn/docx/Y7yTd9rJToKvARxLkM3cajMYnrg",
+        "doc_id": "Y7yTd9rJToKvARxLkM3cajMYnrg",
+        "date": "2026-06-05",
+        "report_title": "缩量失守短期均线，观望",
+        "change_rate": -1.24,
+        "input_tokens": 3404,
+        "output_tokens": 2538,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "Sea",
+        "code": "US.SE",
+        "doc_url": "https://www.feishu.cn/docx/Pi0ndMuZJocL2pxmWGsclAMqnXb",
+        "doc_id": "Pi0ndMuZJocL2pxmWGsclAMqnXb",
+        "date": "2026-06-05",
+        "report_title": "缩量反弹站上均线，持有",
+        "change_rate": 2.94,
+        "input_tokens": 3531,
+        "output_tokens": 2402,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "博通",
+        "code": "US.AVGO",
+        "doc_url": "https://www.feishu.cn/docx/C35fd09TsolrcSxMa2NcLFfcnsb",
+        "doc_id": "C35fd09TsolrcSxMa2NcLFfcnsb",
+        "date": "2026-06-05",
+        "report_title": "放量暴跌探支撑，建议观望",
+        "change_rate": -12.59,
+        "input_tokens": 3562,
+        "output_tokens": 2551,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "Coherent",
+        "code": "US.COHR",
+        "doc_url": "https://www.feishu.cn/docx/X30UdIMCPoQjdex5KsicIrQgn8e",
+        "doc_id": "X30UdIMCPoQjdex5KsicIrQgn8e",
+        "date": "2026-06-05",
+        "report_title": "放量站上均线，持有观察",
+        "change_rate": 1.07,
+        "input_tokens": 3271,
+        "output_tokens": 2781,
+        "prompt_version": "0.5.0"
       }
     ]
   },
   "watchlist": [],
-  "update_time": "2026-06-05 17:32"
+  "update_time": "2026-06-05 19:59"
 }
