@@ -1949,9 +1949,141 @@
         "input_tokens": 3271,
         "output_tokens": 2781,
         "prompt_version": "0.5.0"
+      },
+      {
+        "name": "Circle",
+        "code": "US.CRCL",
+        "doc_url": "https://www.feishu.cn/docx/Uxl6dtIUlo6dKFxExhpcGlPnnM2",
+        "doc_id": "Uxl6dtIUlo6dKFxExhpcGlPnnM2",
+        "date": "2026-06-06",
+        "report_title": "放量失守均线，观望",
+        "change_rate": -11.33,
+        "input_tokens": 3689,
+        "output_tokens": 2644,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "Lumentum",
+        "code": "US.LITE",
+        "doc_url": "https://www.feishu.cn/docx/QQ18ddVoyoGEAJxNCz3cBnxZnkn",
+        "doc_id": "QQ18ddVoyoGEAJxNCz3cBnxZnkn",
+        "date": "2026-06-06",
+        "report_title": "缩量失守均线，观望",
+        "change_rate": -8.62,
+        "input_tokens": 3332,
+        "output_tokens": 2998,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "Meta",
+        "code": "US.META",
+        "doc_url": "https://www.feishu.cn/docx/AaE5dzv7doP3y2xXY14cQqS5nXL",
+        "doc_id": "AaE5dzv7doP3y2xXY14cQqS5nXL",
+        "date": "2026-06-06",
+        "report_title": "放量破位均线，减仓",
+        "change_rate": -5.51,
+        "input_tokens": 3646,
+        "output_tokens": 3327,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "微软",
+        "code": "US.MSFT",
+        "doc_url": "https://www.feishu.cn/docx/Sk8RdkCcLojMZZxIxzRc2pRWnId",
+        "doc_id": "Sk8RdkCcLojMZZxIxzRc2pRWnId",
+        "date": "2026-06-06",
+        "report_title": "弱势调整失守均线，观望",
+        "change_rate": -2.66,
+        "input_tokens": 3843,
+        "output_tokens": 2440,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "英伟达",
+        "code": "US.NVDA",
+        "doc_url": "https://www.feishu.cn/docx/YPuHdVXWYo4FSSxKCVHc5RqpnGd",
+        "doc_id": "YPuHdVXWYo4FSSxKCVHc5RqpnGd",
+        "date": "2026-06-06",
+        "report_title": "放量失守均线，减仓控制回撤",
+        "change_rate": -6.2,
+        "input_tokens": 3649,
+        "output_tokens": 2289,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "Palantir",
+        "code": "US.PLTR",
+        "doc_url": "https://www.feishu.cn/docx/A0Hnd8tz9ozLfFxzX5RcTxx7nYf",
+        "doc_id": "A0Hnd8tz9ozLfFxzX5RcTxx7nYf",
+        "date": "2026-06-06",
+        "report_title": "破位下跌失守均线，观望",
+        "change_rate": -4.35,
+        "input_tokens": 3686,
+        "output_tokens": 2690,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "SoFi",
+        "code": "US.SOFI",
+        "doc_url": "https://www.feishu.cn/docx/Wy90d3wBZovdJTxlw0YcoJdNnQd",
+        "doc_id": "Wy90d3wBZovdJTxlw0YcoJdNnQd",
+        "date": "2026-06-06",
+        "report_title": "放量跌破均线支撑，观望",
+        "change_rate": -6.53,
+        "input_tokens": 3705,
+        "output_tokens": 2176,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "特斯拉",
+        "code": "US.TSLA",
+        "doc_url": "https://www.feishu.cn/docx/QE4ldoHK4oL09OxqhT3ckW59n52",
+        "doc_id": "QE4ldoHK4oL09OxqhT3ckW59n52",
+        "date": "2026-06-06",
+        "report_title": "放量破位均线，建议观望",
+        "change_rate": -6.56,
+        "input_tokens": 3702,
+        "output_tokens": 2617,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "Sea",
+        "code": "US.SE",
+        "doc_url": "https://www.feishu.cn/docx/RJOhd4Maqo0wbjxWcBwc5WI8nxt",
+        "doc_id": "RJOhd4Maqo0wbjxWcBwc5WI8nxt",
+        "date": "2026-06-06",
+        "report_title": "缩量失守短期均线，观望",
+        "change_rate": -6.0,
+        "input_tokens": 3603,
+        "output_tokens": 2438,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "博通",
+        "code": "US.AVGO",
+        "doc_url": "https://www.feishu.cn/docx/GjcPdAViHoodzix1KukcOTown2f",
+        "doc_id": "GjcPdAViHoodzix1KukcOTown2f",
+        "date": "2026-06-06",
+        "report_title": "断头铡刀失守均线，观望",
+        "change_rate": -7.92,
+        "input_tokens": 4038,
+        "output_tokens": 2808,
+        "prompt_version": "0.5.0"
+      },
+      {
+        "name": "Coherent",
+        "code": "US.COHR",
+        "doc_url": "https://www.feishu.cn/docx/RiLCd3vpOov367xbzFJct3ucnXd",
+        "doc_id": "RiLCd3vpOov367xbzFJct3ucnXd",
+        "date": "2026-06-06",
+        "report_title": "放量下挫破均线，减仓",
+        "change_rate": -10.64,
+        "input_tokens": 3573,
+        "output_tokens": 2410,
+        "prompt_version": "0.5.0"
       }
     ]
   },
   "watchlist": [],
-  "update_time": "2026-06-05 19:59"
+  "update_time": "2026-06-06 09:40"
 }
