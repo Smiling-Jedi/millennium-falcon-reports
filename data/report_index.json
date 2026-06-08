@@ -653,6 +653,138 @@
         "input_tokens": 3726,
         "output_tokens": 2330,
         "prompt_version": "0.5.0"
+      },
+      {
+        "name": "阳光电源",
+        "code": "SZ.300274",
+        "doc_url": "https://www.feishu.cn/docx/Mdj4dVB6vowoOwxVT5Ic23ybnpd",
+        "doc_id": "Mdj4dVB6vowoOwxVT5Ic23ybnpd",
+        "date": "2026-06-08",
+        "report_title": null,
+        "change_rate": -4.52,
+        "input_tokens": 5,
+        "output_tokens": 3308,
+        "prompt_version": "1.0.0"
+      },
+      {
+        "name": "宁德时代",
+        "code": "SZ.300750",
+        "doc_url": "https://www.feishu.cn/docx/BENvdDWFQoIXhhxDUqOcB5kjnEc",
+        "doc_id": "BENvdDWFQoIXhhxDUqOcB5kjnEc",
+        "date": "2026-06-08",
+        "report_title": null,
+        "change_rate": -2.48,
+        "input_tokens": 3012,
+        "output_tokens": 3623,
+        "prompt_version": "1.0.0"
+      },
+      {
+        "name": "招商银行",
+        "code": "SH.600036",
+        "doc_url": "https://www.feishu.cn/docx/O9cpdyPxJoko1wxwL6UcyXvcnDg",
+        "doc_id": "O9cpdyPxJoko1wxwL6UcyXvcnDg",
+        "date": "2026-06-08",
+        "report_title": null,
+        "change_rate": -0.21,
+        "input_tokens": 2711,
+        "output_tokens": 3020,
+        "prompt_version": "1.0.0"
+      },
+      {
+        "name": "兴业银行",
+        "code": "SH.601166",
+        "doc_url": "https://www.feishu.cn/docx/VHPfdt38eo7UVNx2y9VcWwgjnwc",
+        "doc_id": "VHPfdt38eo7UVNx2y9VcWwgjnwc",
+        "date": "2026-06-08",
+        "report_title": null,
+        "change_rate": -0.32,
+        "input_tokens": 2867,
+        "output_tokens": 2867,
+        "prompt_version": "1.0.0"
+      },
+      {
+        "name": "交通银行",
+        "code": "SH.601328",
+        "doc_url": "https://www.feishu.cn/docx/XLZ8dJvphozBefxDOHpc2HFXngh",
+        "doc_id": "XLZ8dJvphozBefxDOHpc2HFXngh",
+        "date": "2026-06-08",
+        "report_title": null,
+        "change_rate": 0.44,
+        "input_tokens": 2608,
+        "output_tokens": 2947,
+        "prompt_version": "1.0.0"
+      },
+      {
+        "name": "中来股份",
+        "code": "SZ.300393",
+        "doc_url": "https://www.feishu.cn/docx/S5IHd2WpZoZxk7xnelMcWpWHnkb",
+        "doc_id": "S5IHd2WpZoZxk7xnelMcWpWHnkb",
+        "date": "2026-06-08",
+        "report_title": null,
+        "change_rate": -8.04,
+        "input_tokens": 2154,
+        "output_tokens": 2529,
+        "prompt_version": "1.0.0"
+      },
+      {
+        "name": "机器人ETF华夏",
+        "code": "SH.562500",
+        "doc_url": "https://www.feishu.cn/docx/Vo3YdW9FHotuIyxU5UNctBA9nhb",
+        "doc_id": "Vo3YdW9FHotuIyxU5UNctBA9nhb",
+        "date": "2026-06-08",
+        "report_title": null,
+        "change_rate": 0.86,
+        "input_tokens": 3240,
+        "output_tokens": 3082,
+        "prompt_version": "1.0.0"
+      },
+      {
+        "name": "医药ETF易方达",
+        "code": "SH.512010",
+        "doc_url": "https://www.feishu.cn/docx/RKpRdjkDpo8LezxrIYBcsw7PnGf",
+        "doc_id": "RKpRdjkDpo8LezxrIYBcsw7PnGf",
+        "date": "2026-06-08",
+        "report_title": null,
+        "change_rate": -3.03,
+        "input_tokens": 3775,
+        "output_tokens": 2470,
+        "prompt_version": "1.0.0"
+      },
+      {
+        "name": "纳指ETF国泰",
+        "code": "SH.513100",
+        "doc_url": "https://www.feishu.cn/docx/DOffdLaIsoBXzQx8LWBcPKSrn2c",
+        "doc_id": "DOffdLaIsoBXzQx8LWBcPKSrn2c",
+        "date": "2026-06-08",
+        "report_title": null,
+        "change_rate": -4.52,
+        "input_tokens": 2790,
+        "output_tokens": 2303,
+        "prompt_version": "1.0.0"
+      },
+      {
+        "name": "润泽科技",
+        "code": "SZ.300442",
+        "doc_url": "https://www.feishu.cn/docx/VMgvd0vyGoHFmLxq6UMcq1eVnXb",
+        "doc_id": "VMgvd0vyGoHFmLxq6UMcq1eVnXb",
+        "date": "2026-06-08",
+        "report_title": null,
+        "change_rate": -5.19,
+        "input_tokens": 3477,
+        "output_tokens": 2909,
+        "prompt_version": "1.0.0"
+      },
+      {
+        "name": "比亚迪",
+        "code": "SZ.002594",
+        "doc_url": "https://www.feishu.cn/docx/NLx4dfQCwon10lxz14bcM4fVnCd",
+        "doc_id": "NLx4dfQCwon10lxz14bcM4fVnCd",
+        "date": "2026-06-08",
+        "report_title": null,
+        "change_rate": -1.96,
+        "input_tokens": 29,
+        "output_tokens": 2898,
+        "prompt_version": "1.0.0"
       }
     ],
     "港股": [
@@ -2081,9 +2213,21 @@
         "input_tokens": 3573,
         "output_tokens": 2410,
         "prompt_version": "0.5.0"
+      },
+      {
+        "name": "Coherent",
+        "code": "US.COHR",
+        "doc_url": "https://www.feishu.cn/docx/IciIdw8W9oRYy5xijfLcRk20nPO",
+        "doc_id": "IciIdw8W9oRYy5xijfLcRk20nPO",
+        "date": "2026-06-08",
+        "report_title": null,
+        "change_rate": -10.64,
+        "input_tokens": 3618,
+        "output_tokens": 2964,
+        "prompt_version": "1.0.0"
       }
     ]
   },
   "watchlist": [],
-  "update_time": "2026-06-06 09:40"
+  "update_time": "2026-06-08 16:04"
 }

@@ -221,7 +221,7 @@
         text-decoration: none;
     ">
         <div style="font-weight:700;font-size:18px;color:#1e293b;margin-bottom:4px">持仓股 <span id="dots-holdings"></span></div>
-        <div style="font-size:13px;color:#94a3b8">A股 · 港股 · 美股</div>
+        <div style="font-size:13px;color:#94a3b8">A股 06-08 · 港股 06-05 · 美股 06-08</div>
     </a>
     <a href="watchlist.html" id="card-watchlist" style="
         display: block;
@@ -235,7 +235,7 @@
         <div style="font-weight:700;font-size:18px;color:#1e293b;margin-bottom:4px">关注股 <span id="dots-watchlist"></span></div>
         <div style="font-size:13px;color:#94a3b8">跟踪观察列表</div>
     </a>
-    <script id="mf-idx-data" type="application/json">{"holdings": {"a": "2026-06-05", "hk": "2026-06-05", "us": "2026-06-06"}, "watchlist": {}}</script>
+    <script id="mf-idx-data" type="application/json">{"holdings": {"a": "2026-06-08", "hk": "2026-06-05", "us": "2026-06-08"}, "watchlist": {}}</script>
 <script>
 (function(){
 var dataEl=document.getElementById('mf-idx-data');
@@ -265,6 +265,6 @@ checkCard('holdings','h',data.holdings);
 checkCard('watchlist','w',data.watchlist);
 })();
 window.addEventListener('pageshow',function(e){if(e.persisted)location.reload();});
-</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-06 09:40</div>
+</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-08 16:31</div>
 </body>
 </html>
