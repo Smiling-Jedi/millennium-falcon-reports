@@ -1372,6 +1372,102 @@
         "input_tokens": 3633,
         "output_tokens": 2567,
         "prompt_version": "0.5.0"
+      },
+      {
+        "name": "粤海投资",
+        "code": "HK.00270",
+        "doc_url": "https://www.feishu.cn/docx/S5eAd4qzOogFnMxJVPTckI0gnue",
+        "doc_id": "S5eAd4qzOogFnMxJVPTckI0gnue",
+        "date": "2026-06-08",
+        "report_title": "均线纠缠收十字星，F型持仓待加仓点",
+        "change_rate": -0.24,
+        "input_tokens": 0,
+        "output_tokens": 2124,
+        "prompt_version": "1.0.0"
+      },
+      {
+        "name": "腾讯控股",
+        "code": "HK.00700",
+        "doc_url": "https://www.feishu.cn/docx/TakndMAcooeoF8xNckLcJ3jOn3p",
+        "doc_id": "TakndMAcooeoF8xNckLcJ3jOn3p",
+        "date": "2026-06-08",
+        "report_title": "冲高回落守446，机构派发散户接",
+        "change_rate": -1.5,
+        "input_tokens": 0,
+        "output_tokens": 1698,
+        "prompt_version": "1.0.0"
+      },
+      {
+        "name": "小米集团-W",
+        "code": "HK.01810",
+        "doc_url": "https://www.feishu.cn/docx/PschdfxQToKInSxGdJkcqIPInOg",
+        "doc_id": "PschdfxQToKInSxGdJkcqIPInOg",
+        "date": "2026-06-08",
+        "report_title": "缩量探底机构吸筹，空头格局未改",
+        "change_rate": -1.51,
+        "input_tokens": 0,
+        "output_tokens": 1591,
+        "prompt_version": "1.0.0"
+      },
+      {
+        "name": "建滔积层板",
+        "code": "HK.01888",
+        "doc_url": "https://www.feishu.cn/docx/JbxbdxAImoBOFSxEANbcRiLRndc",
+        "doc_id": "JbxbdxAImoBOFSxEANbcRiLRndc",
+        "date": "2026-06-08",
+        "report_title": "放量突破前高，机构分歧加剧",
+        "change_rate": 12.08,
+        "input_tokens": 1669,
+        "output_tokens": 1433,
+        "prompt_version": "1.0.0"
+      },
+      {
+        "name": "舜宇光学科技",
+        "code": "HK.02382",
+        "doc_url": "https://www.feishu.cn/docx/KFDoddesWoVbOoxbWYqcjQjCnof",
+        "doc_id": "KFDoddesWoVbOoxbWYqcjQjCnof",
+        "date": "2026-06-08",
+        "report_title": "放量长阴跌破MA5，机构分歧散户出逃",
+        "change_rate": -6.03,
+        "input_tokens": 0,
+        "output_tokens": 1371,
+        "prompt_version": "1.0.0"
+      },
+      {
+        "name": "美团-W",
+        "code": "HK.03690",
+        "doc_url": "https://www.feishu.cn/docx/P0k3dcC01oLYWZxyLejcuwwXnPg",
+        "doc_id": "P0k3dcC01oLYWZxyLejcuwwXnPg",
+        "date": "2026-06-08",
+        "report_title": "缩量跌破均线，机构观望散户出逃",
+        "change_rate": -4.63,
+        "input_tokens": 1661,
+        "output_tokens": 1339,
+        "prompt_version": "1.0.0"
+      },
+      {
+        "name": "百济神州",
+        "code": "HK.06160",
+        "doc_url": "https://www.feishu.cn/docx/NDoJd49Fsogtjfx72VjcIOobnKf",
+        "doc_id": "NDoJd49Fsogtjfx72VjcIOobnKf",
+        "date": "2026-06-08",
+        "report_title": "缩量企稳，机构低吸，趋势未改",
+        "change_rate": 0.06,
+        "input_tokens": 0,
+        "output_tokens": 2010,
+        "prompt_version": "1.0.0"
+      },
+      {
+        "name": "阿里巴巴-W",
+        "code": "HK.09988",
+        "doc_url": "https://www.feishu.cn/docx/Aq7ednRCtoEYVmx2SGbcZOw9ndb",
+        "doc_id": "Aq7ednRCtoEYVmx2SGbcZOw9ndb",
+        "date": "2026-06-08",
+        "report_title": "跌破预警线，机构抛压主导",
+        "change_rate": -2.94,
+        "input_tokens": 3428,
+        "output_tokens": 1927,
+        "prompt_version": "1.0.0"
       }
     ],
     "美股": [
@@ -2229,5 +2325,5 @@
     ]
   },
   "watchlist": [],
-  "update_time": "2026-06-08 16:04"
+  "update_time": "2026-06-08 18:25"
 }

@@ -241,8 +241,8 @@
             line-height: 1.6;
         }
         .plan-row strong { color: #334155; }
-        .plan-stop { color: #b91c1c; }
-        .plan-profit { color: #15803d; }
+        /* B1: 统一灰色，不区分颜色 */
+        .plan-row { color: #64748b; }
         .plan-sub {
             font-size: 13px;
             color: #94a3b8;
@@ -263,7 +263,7 @@
     <p style="font-size:12px;color:#94a3b8;margin-bottom:24px;">512010</p>
 
     <div class="plan-card">
-      <div class="plan-hdr"><span class="plan-ttl">交易计划 v3</span><span class="plan-tag">建议减仓</span></div>
+      <div class="plan-hdr"><span class="plan-ttl">📋 交易计划 v3</span><span class="plan-tag">建议减仓</span></div>
       <div class="plan-row"><strong>持仓</strong> &nbsp; 1,895,800股 @0.394</div>
       <div class="plan-row plan-stop"><strong>止损</strong> &nbsp; 跌破0.323（52周低点）+连续5天收不回+行业基本面恶化 → 再评估是否继续减</div>
     </div>
@@ -294,6 +294,6 @@ if(rn){localStorage.setItem(P+this.getAttribute('data-stock')+'_'+dt,'1');}
 });})(d,r);}
 }})();
 window.addEventListener('pageshow',function(e){if(e.persisted)location.reload();});
-</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-08 17:56</div>
+</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-08 18:53</div>
 </body>
 </html>

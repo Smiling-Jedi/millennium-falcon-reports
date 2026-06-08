@@ -241,8 +241,8 @@
             line-height: 1.6;
         }
         .plan-row strong { color: #334155; }
-        .plan-stop { color: #b91c1c; }
-        .plan-profit { color: #15803d; }
+        /* B1: 统一灰色，不区分颜色 */
+        .plan-row { color: #64748b; }
         .plan-sub {
             font-size: 13px;
             color: #94a3b8;
@@ -263,7 +263,7 @@
     <p style="font-size:12px;color:#94a3b8;margin-bottom:24px;">513100</p>
 
     <div class="plan-card">
-      <div class="plan-hdr"><span class="plan-ttl">交易计划 v1</span><span class="plan-tag"></span></div>
+      <div class="plan-hdr"><span class="plan-ttl">📋 交易计划 v1</span><span class="plan-tag"></span></div>
       <div class="plan-row"><strong>持仓</strong> &nbsp; 78,400 份 @ ¥2.113 | 市值 ~¥16.8 万 | 占 A 股</div>
       <div class="plan-row plan-stop"><strong>止损</strong> &nbsp; 纳指得分跌到 #2 以下 → 系统自动判断 HOLD 还是 SWITCH | 策略 B 累计回撤 >20% → 暂停资金扩容，重新评估。不是清仓——策略 B 的止损是调仓信号，不是价格止损</div>
       <div class="plan-row plan-profit"><strong>止盈</strong> &nbsp; 策略 B 无传统止盈——动量轮动的核心是「永远持有当下最强的那个」。 | 不设固定止盈位。如果纳指得分持续下滑 + 其他 ETF 得分超过阈值，系统会发出 SWITCH 信号</div>
@@ -295,6 +295,6 @@ if(rn){localStorage.setItem(P+this.getAttribute('data-stock')+'_'+dt,'1');}
 });})(d,r);}
 }})();
 window.addEventListener('pageshow',function(e){if(e.persisted)location.reload();});
-</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-08 17:56</div>
+</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-08 18:53</div>
 </body>
 </html>

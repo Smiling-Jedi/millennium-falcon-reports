@@ -241,8 +241,8 @@
             line-height: 1.6;
         }
         .plan-row strong { color: #334155; }
-        .plan-stop { color: #b91c1c; }
-        .plan-profit { color: #15803d; }
+        /* B1: 统一灰色，不区分颜色 */
+        .plan-row { color: #64748b; }
         .plan-sub {
             font-size: 13px;
             color: #94a3b8;
@@ -263,11 +263,11 @@
     <p style="font-size:12px;color:#94a3b8;margin-bottom:24px;">NVDA</p>
 
     <div class="plan-card">
-      <div class="plan-hdr"><span class="plan-ttl">交易计划 v2</span><span class="plan-tag"></span></div>
+      <div class="plan-hdr"><span class="plan-ttl">📋 交易计划 v2</span><span class="plan-tag"></span></div>
       <div class="plan-row"><strong>持仓</strong> &nbsp; 300 股 @ $180.51 | 浮盈 +13.6% | 仓位 ~18.6%</div>
       <div class="plan-row plan-stop"><strong>止损</strong> &nbsp; $164 跌破（前低破位 + 新 LL → 宽幅震荡转反转） | → 停止加仓，强制与 Master 重新评估。不自动减仓——PE 12.5x 的 NVDA 是送钱不是风险</div>
       <div class="plan-row plan-profit"><strong>止盈</strong> &nbsp; $236（前高, PE ~18.5x）→ 卖 1/6（~60 股） | $298（59家分析师共识, PE ~23x）→ 卖 1/4（~80 股）</div>
-      <div class="plan-insight">放量失守均线，减仓控制回撤</div>
+      <div class="plan-insight">💡 放量失守均线，减仓控制回撤</div>
     </div>
 
     <a href="https://www.feishu.cn/docx/YPuHdVXWYo4FSSxKCVHc5RqpnGd" class="report-link" data-stock="英伟达" data-date="2026-06-06" data-has-reply="0" data-market="us"><span class="report-date chg-down">2026-06-06</span>放量失守均线，减仓控制回撤 →</a>
@@ -298,6 +298,6 @@ if(rn){localStorage.setItem(P+this.getAttribute('data-stock')+'_'+dt,'1');}
 });})(d,r);}
 }})();
 window.addEventListener('pageshow',function(e){if(e.persisted)location.reload();});
-</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-08 17:56</div>
+</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-08 18:53</div>
 </body>
 </html>

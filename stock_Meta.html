@@ -241,8 +241,8 @@
             line-height: 1.6;
         }
         .plan-row strong { color: #334155; }
-        .plan-stop { color: #b91c1c; }
-        .plan-profit { color: #15803d; }
+        /* B1: 统一灰色，不区分颜色 */
+        .plan-row { color: #64748b; }
         .plan-sub {
             font-size: 13px;
             color: #94a3b8;
@@ -263,11 +263,11 @@
     <p style="font-size:12px;color:#94a3b8;margin-bottom:24px;">META</p>
 
     <div class="plan-card">
-      <div class="plan-hdr"><span class="plan-ttl">交易计划 v3</span><span class="plan-tag"></span></div>
+      <div class="plan-hdr"><span class="plan-ttl">📋 交易计划 v3</span><span class="plan-tag"></span></div>
       <div class="plan-row"><strong>持仓</strong> &nbsp; 80 股 @ $619.25 | 仓位 ~14.3%</div>
       <div class="plan-row plan-stop"><strong>止损</strong> &nbsp; $580 收盘跌破+次日未收回 → 减至50股（~8%） | $580是20日低点，破了=短期结构失效。基本面没变，减仓不认输</div>
       <div class="plan-row plan-profit"><strong>止盈</strong> &nbsp; $691卖1/4 · $743卖1/4 · $800+清仓</div>
-      <div class="plan-insight">放量破位均线，减仓</div>
+      <div class="plan-insight">💡 放量破位均线，减仓</div>
     </div>
 
     <a href="https://www.feishu.cn/docx/AaE5dzv7doP3y2xXY14cQqS5nXL" class="report-link" data-stock="Meta" data-date="2026-06-06" data-has-reply="0" data-market="us"><span class="report-date chg-down">2026-06-06</span>放量破位均线，减仓 →</a>
@@ -298,6 +298,6 @@ if(rn){localStorage.setItem(P+this.getAttribute('data-stock')+'_'+dt,'1');}
 });})(d,r);}
 }})();
 window.addEventListener('pageshow',function(e){if(e.persisted)location.reload();});
-</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-08 17:56</div>
+</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-08 18:53</div>
 </body>
 </html>

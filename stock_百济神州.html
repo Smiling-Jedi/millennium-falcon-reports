@@ -241,8 +241,8 @@
             line-height: 1.6;
         }
         .plan-row strong { color: #334155; }
-        .plan-stop { color: #b91c1c; }
-        .plan-profit { color: #15803d; }
+        /* B1: 统一灰色，不区分颜色 */
+        .plan-row { color: #64748b; }
         .plan-sub {
             font-size: 13px;
             color: #94a3b8;
@@ -263,13 +263,14 @@
     <p style="font-size:12px;color:#94a3b8;margin-bottom:24px;">06160</p>
 
     <div class="plan-card">
-      <div class="plan-hdr"><span class="plan-ttl">交易计划 v1.1</span><span class="plan-tag"></span></div>
+      <div class="plan-hdr"><span class="plan-ttl">📋 交易计划 v1.1</span><span class="plan-tag"></span></div>
       <div class="plan-row"><strong>持仓</strong> &nbsp; 2,000 股 @ HK$179.21</div>
-      <div class="plan-row plan-stop"><strong>止损</strong> &nbsp; MA60（179.3）已跌破 → 不加仓更多（三档已规划完毕），但不减仓——基本面和 AH 折价提供硬底 | HK$143.30（52 周低点）收盘跌破 + 连续 3 天收不回 → 减仓至 2,000 股（还原到换仓前）。破了…</div>
-      <div class="plan-row plan-profit"><strong>止盈</strong> &nbsp; HK$200（整数关口 + MA200 附近，+19.3% vs 均价）→ 卖 1,000 股（1/4），先锁一笔利… | HK$220（接近 A 股价位，AH 折价收敛至 ~10%，+31.2% vs 均价）→ 卖 1,000 股（1/4…</div>
-      <div class="plan-insight">缩量下跌机构接筹，持有</div>
+      <div class="plan-row plan-stop"><strong>止损</strong> &nbsp; MA60（179.3）已跌破 → 不加仓更多（三档已规划完毕），但不减仓——基本面和 AH 折价提供硬底 | HK$143.30（52 周低点）收盘跌破 + 连续 3 天收不回 → 减仓至 2,000 股（还原到换仓前）。破了 52 周低说明拐点假设需要重检</div>
+      <div class="plan-row plan-profit"><strong>止盈</strong> &nbsp; HK$200（整数关口 + MA200 附近，+19.3% vs 均价）→ 卖 1,000 股（1/4），先锁一笔利润 | HK$220（接近 A 股价位，AH 折价收敛至 ~10%，+31.2% vs 均价）→ 卖 1,000 股（1/4），AH 差价收敛逻辑兑现</div>
+      <div class="plan-insight">💡 缩量企稳，机构低吸，趋势未改</div>
     </div>
 
+    <a href="https://www.feishu.cn/docx/NDoJd49Fsogtjfx72VjcIOobnKf" class="report-link" data-stock="百济神州" data-date="2026-06-08" data-has-reply="0" data-market="hk"><span class="report-date today chg-up">2026-06-08</span>缩量企稳，机构低吸，趋势未改 →</a>
     <a href="https://www.feishu.cn/docx/ZZlAdR6hqovH1zxAlMQcHjGFnhb" class="report-link" data-stock="百济神州" data-date="2026-06-05" data-has-reply="0" data-market="hk"><span class="report-date chg-down">2026-06-05</span>缩量下跌机构接筹，持有 →</a>
     <a href="https://www.feishu.cn/docx/Ry7XdNyBaoHcUUxxN7YcFQrWnqg" class="report-link" data-stock="百济神州" data-date="2026-06-04" data-has-reply="0" data-market="hk"><span class="report-date chg-up">2026-06-04</span>弱势震荡消化利空，坚守观察 →</a>
     <a href="https://www.feishu.cn/docx/Ql5Jd7gkboJFTsxU5f1con3Vnme" class="report-link" data-stock="百济神州" data-date="2026-06-03" data-has-reply="0" data-market="hk"><span class="report-date chg-down">2026-06-03</span>缩量回踩关键支撑 →</a>
@@ -296,6 +297,6 @@ if(rn){localStorage.setItem(P+this.getAttribute('data-stock')+'_'+dt,'1');}
 });})(d,r);}
 }})();
 window.addEventListener('pageshow',function(e){if(e.persisted)location.reload();});
-</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-08 17:56</div>
+</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-08 18:53</div>
 </body>
 </html>
