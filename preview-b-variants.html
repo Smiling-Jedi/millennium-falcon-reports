@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>风格B子变体</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #f1f5f9;
+    padding: 40px 20px 80px;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  h2 { font-size: 15px; color: #64748b; margin: 40px 0 12px; letter-spacing: 1px; border-top: 1px solid #e2e8f0; padding-top: 32px; }
+  h2:first-of-type { border: none; padding-top: 0; margin-top: 0; }
+
+  /* 股票头部 */
+  .stock-header { margin-bottom: 14px; }
+  .stock-name { font-size: 22px; font-weight: 700; color: #1e293b; }
+  .stock-tag { display:inline-block; font-size:10px; font-weight:600; padding:1px 6px; border-radius:3px; background:#fef2f2; color:#dc2626; margin-left:8px; vertical-align:middle; position:relative; top:-2px; }
+  .stock-code { font-size: 12px; color: #94a3b8; margin-top:2px; }
+
+  /* 日报列表 */
+  .report-link {
+    display: block;
+    padding: 13px 0;
+    border-bottom: 1px solid #f0f0f0;
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 15px;
+  }
+  .report-link:active { color: #2563eb; }
+  .report-date { font-size:12px; font-weight:500; margin-right:8px; }
+  .report-date.today { color:#dc2626; }
+  .report-date.up { color:#16a34a; }
+  .report-date.down { color:#81c784; }
+
+  /* ════════════════ B1: 基准 ════════════════ */
+  .b1-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #2563eb;
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+  }
+  .b1-card .hdr { margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; }
+  .b1-card .ttl { font-size: 14px; font-weight: 600; color: #1e293b; }
+  .b1-card .tag { font-size: 11px; font-weight: 500; color: #2563eb; background: #eff6ff; padding: 2px 8px; border-radius: 10px; }
+  .b1-card .row { font-size: 13px; color: #64748b; margin-bottom: 5px; line-height: 1.6; }
+  .b1-card .row strong { color: #334155; }
+  .b1-card .insight { font-size: 13px; color: #475569; margin-top: 8px; padding-top: 8px; border-top: 1px solid #f1f5f9; }
+
+  /* ════════════════ B2: 左侧色条随市场变色 ════════════════ */
+  .b2-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #dc2626;  /* A股红色 */
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+  }
+  .b2-card .hdr { margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; }
+  .b2-card .ttl { font-size: 14px; font-weight: 600; color: #1e293b; }
+  .b2-card .tag { font-size: 11px; font-weight: 600; color: #dc2626; background: #fef2f2; padding: 2px 8px; border-radius: 4px; }
+  .b2-card .row { font-size: 13px; color: #64748b; margin-bottom: 5px; line-height: 1.6; }
+  .b2-card .row strong { color: #334155; }
+  .b2-card .insight { font-size: 13px; color: #475569; margin-top: 8px; padding-top: 8px; border-top: 1px solid #f1f5f9; }
+
+  /* ════════════════ B3: 双行间距 + 图标前置 ════════════════ */
+  .b3-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #2563eb;
+    border-radius: 0 8px 8px 0;
+    padding: 16px 18px;
+    margin-bottom: 20px;
+  }
+  .b3-card .hdr { margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+  .b3-card .ttl { font-size: 14px; font-weight: 600; color: #1e293b; }
+  .b3-card .tag { font-size: 11px; font-weight: 500; color: #2563eb; background: #eff6ff; padding: 2px 10px; border-radius: 10px; }
+  .b3-card .row { font-size: 13px; color: #64748b; margin-bottom: 8px; line-height: 1.7; display: flex; align-items: flex-start; gap: 6px; }
+  .b3-card .row .ico { flex-shrink: 0; width: 20px; text-align: center; font-size: 12px; }
+  .b3-card .row .txt { flex: 1; }
+  .b3-card .insight { font-size: 13px; color: #475569; margin-top: 10px; padding-top: 10px; border-top: 1px solid #f1f5f9; display: flex; gap: 6px; }
+  .b3-card .insight .ico { flex-shrink: 0; }
+
+  /* ════════════════ B4: 柔和渐变左侧 ════════════════ */
+  .b4-card {
+    background: linear-gradient(135deg, #f8faff 0%, #fff 40%);
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #6366f1;
+    border-radius: 0 10px 10px 0;
+    padding: 16px 18px;
+    margin-bottom: 20px;
+  }
+  .b4-card .hdr { margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; }
+  .b4-card .ttl { font-size: 14px; font-weight: 600; color: #1e293b; }
+  .b4-card .tag { font-size: 11px; font-weight: 500; color: #6366f1; border: 1px solid #e0e7ff; padding: 2px 8px; border-radius: 10px; }
+  .b4-card .row { font-size: 13px; color: #64748b; margin-bottom: 5px; line-height: 1.6; }
+  .b4-card .row strong { color: #334155; }
+  .b4-card .insight { font-size: 13px; color: #475569; margin-top: 8px; padding: 8px 10px; border-radius: 6px; background: #f8fafc; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════ 股票头（共用） ═══════════ -->
+<div class="stock-header">
+  <span class="stock-name">比亚迪</span><span class="stock-tag">A股</span>
+  <div class="stock-code">002594</div>
+</div>
+
+<!-- ═══ B1 ═══ -->
+<h2>B1 · 基准（蓝条 + 紧凑）</h2>
+
+<div class="b1-card">
+  <div class="hdr">
+    <span class="ttl">📋 交易计划 v1</span>
+    <span class="tag">持有</span>
+  </div>
+  <div class="row"><strong>持仓</strong> &nbsp; 15,000 股 @ 87.981</div>
+  <div class="row"><strong>止损</strong> &nbsp; ⚠️ 跌破 85.88 → 减仓 1/3 &nbsp;|&nbsp; 🛑 清仓待补充</div>
+  <div class="row"><strong>止盈</strong> &nbsp; ⏳ 待补充。机构目标 ¥167</div>
+  <div class="insight">💡 缩量失守短期均线，持有观察</div>
+</div>
+
+<a href="#" class="report-link"><span class="report-date today down">06-08</span>日报 →</a>
+<a href="#" class="report-link"><span class="report-date down">06-05</span>弱势震荡守支撑，持有观察 →</a>
+<a href="#" class="report-link"><span class="report-date down">06-04</span>缩量失守短期均线，持有观察 →</a>
+<a href="#" class="report-link"><span class="report-date down">06-03</span>缩量回调测支撑，智能化成新锚 →</a>
+
+<!-- ═══ B2 ═══ -->
+<h2>B2 · 市场色（A股红条 + 红标签）</h2>
+
+<div class="b2-card">
+  <div class="hdr">
+    <span class="ttl">📋 交易计划 v1</span>
+    <span class="tag">持有</span>
+  </div>
+  <div class="row"><strong>持仓</strong> &nbsp; 15,000 股 @ 87.981</div>
+  <div class="row"><strong>止损</strong> &nbsp; ⚠️ 跌破 85.88 → 减仓 1/3 &nbsp;|&nbsp; 🛑 清仓待补充</div>
+  <div class="row"><strong>止盈</strong> &nbsp; ⏳ 待补充。机构目标 ¥167</div>
+  <div class="insight">💡 缩量失守短期均线，持有观察</div>
+</div>
+
+<a href="#" class="report-link"><span class="report-date today down">06-08</span>日报 →</a>
+<a href="#" class="report-link"><span class="report-date down">06-05</span>弱势震荡守支撑，持有观察 →</a>
+<a href="#" class="report-link"><span class="report-date down">06-04</span>缩量失守短期均线，持有观察 →</a>
+<a href="#" class="report-link"><span class="report-date down">06-03</span>缩量回调测支撑，智能化成新锚 →</a>
+
+<!-- ═══ B3 ═══ -->
+<h2>B3 · 图标前置 + 双行呼吸感</h2>
+
+<div class="b3-card">
+  <div class="hdr">
+    <span class="ttl">📋 交易计划 v1</span>
+    <span class="tag">持有</span>
+  </div>
+  <div class="row"><span class="ico">📦</span><span class="txt"><strong>持仓</strong> &nbsp; 15,000 股 @ 87.981</span></div>
+  <div class="row"><span class="ico">🛡️</span><span class="txt"><strong>止损</strong> &nbsp; 跌破 85.88 → 减仓 1/3<br><span style="color:#94a3b8;">清仓条件：待 Master 补充</span></span></div>
+  <div class="row"><span class="ico">🎯</span><span class="txt"><strong>止盈</strong> &nbsp; 待补充。机构目标 ¥167（+79%）</span></div>
+  <div class="insight"><span class="ico">💡</span><span class="txt">缩量失守短期均线，持有观察</span></div>
+</div>
+
+<a href="#" class="report-link"><span class="report-date today down">06-08</span>日报 →</a>
+<a href="#" class="report-link"><span class="report-date down">06-05</span>弱势震荡守支撑，持有观察 →</a>
+<a href="#" class="report-link"><span class="report-date down">06-04</span>缩量失守短期均线，持有观察 →</a>
+<a href="#" class="report-link"><span class="report-date down">06-03</span>缩量回调测支撑，智能化成新锚 →</a>
+
+<!-- ═══ B4 ═══ -->
+<h2>B4 · 柔和渐变底 + 紫色调</h2>
+
+<div class="b4-card">
+  <div class="hdr">
+    <span class="ttl">📋 交易计划 v1</span>
+    <span class="tag">持有</span>
+  </div>
+  <div class="row"><strong>持仓</strong> &nbsp; 15,000 股 @ 87.981</div>
+  <div class="row"><strong>止损</strong> &nbsp; ⚠️ 跌破 85.88 → 减仓 1/3 &nbsp;|&nbsp; 🛑 清仓待补充</div>
+  <div class="row"><strong>止盈</strong> &nbsp; ⏳ 待补充。机构目标 ¥167</div>
+  <div class="insight">💡 缩量失守短期均线，持有观察</div>
+</div>
+
+<a href="#" class="report-link"><span class="report-date today down">06-08</span>日报 →</a>
+<a href="#" class="report-link"><span class="report-date down">06-05</span>弱势震荡守支撑，持有观察 →</a>
+<a href="#" class="report-link"><span class="report-date down">06-04</span>缩量失守短期均线，持有观察 →</a>
+<a href="#" class="report-link"><span class="report-date down">06-03</span>缩量回调测支撑，智能化成新锚 →</a>
+
+</body>
+</html>

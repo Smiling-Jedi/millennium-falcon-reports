@@ -206,21 +206,71 @@
             top: -2px;
             animation: pulse-dot 2s ease-in-out infinite;
         }
+        /* 交易计划卡片 (B1) */
+        .plan-card {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #2563eb;
+            border-radius: 0 8px 8px 0;
+            padding: 14px 18px;
+            margin-bottom: 20px;
+        }
+        .plan-hdr {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .plan-ttl {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1e293b;
+        }
+        .plan-tag {
+            font-size: 11px;
+            font-weight: 500;
+            color: #2563eb;
+            background: #eff6ff;
+            padding: 2px 8px;
+            border-radius: 10px;
+        }
+        .plan-row {
+            font-size: 13px;
+            color: #64748b;
+            margin-bottom: 5px;
+            line-height: 1.6;
+        }
+        .plan-row strong { color: #334155; }
+        .plan-stop { color: #b91c1c; }
+        .plan-profit { color: #15803d; }
+        .plan-sub {
+            font-size: 13px;
+            color: #94a3b8;
+            padding-left: 2.4em;
+            line-height: 1.7;
+        }
+        .plan-insight {
+            font-size: 13px;
+            color: #475569;
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid #f1f5f9;
+        }
     </style>
 </head>
 <body>
     <h1>纳指ETF国泰 <span class="mkt-tag mkt-tag-a">A股</span></h1>
     <p style="font-size:12px;color:#94a3b8;margin-bottom:24px;">513100</p>
 
-    <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:12px 16px;margin-bottom:20px;font-size:12px;line-height:1.9;">
-      <div style="font-weight:600;color:#1e293b;margin-bottom:6px;">📋 交易计划 v1  <span style="font-weight:400;font-size:11px;color:#2563eb;margin-left:8px;"></span></div>
-      <div style="color:#64748b;"><span style="color:#1e293b;font-weight:500;">持仓</span>  78,400 份 @ ¥2.113 | 市值 ~¥16.8 万 | 占 A 股 </div>
-      <div style="color:#64748b;margin-top:4px;"><span style="color:#dc2626;font-weight:500;">止损</span></div>
-      <div style="color:#94a3b8;padding-left:2.8em;">⚠️ 纳指得分跌到 #2 以下 → 系统自动判断 HOLD 还是 SWITCH</div>
-      <div style="color:#94a3b8;padding-left:2.8em;">🛑 策略 B 累计回撤 >20% → 暂停资金扩容，重新评估。不是清仓——策略 B 的止损是调仓信号，不是价格止损</div>
-      <div style="color:#64748b;margin-top:4px;"><span style="color:#16a34a;font-weight:500;">止盈</span></div>
-      <div style="color:#94a3b8;padding-left:2.8em;">策略 B 无传统止盈——动量轮动的核心是「永远持有当下最强的那个」。</div>
-      <div style="color:#94a3b8;padding-left:2.8em;">⏳ 不设固定止盈位。如果纳指得分持续下滑 + 其他 ETF 得分超过阈值，系统会发出 SWITCH 信号</div>
+    <div class="plan-card">
+      <div class="plan-hdr"><span class="plan-ttl">交易计划 v1</span><span class="plan-tag"></span></div>
+      <div class="plan-row"><strong>持仓</strong> &nbsp; 78,400 份 @ ¥2.113 | 市值 ~¥16.8 万 | 占 A 股</div>
+      <div class="plan-row plan-stop"><strong>止损</strong></div>
+      <div class="plan-row plan-sub">纳指得分跌到 #2 以下 → 系统自动判断 HOLD 还是 SWITCH</div>
+      <div class="plan-row plan-sub">策略 B 累计回撤 >20% → 暂停资金扩容，重新评估。不是清仓——策略 B 的止损是调仓信号，不是价格止损</div>
+      <div class="plan-row plan-profit"><strong>止盈</strong></div>
+      <div class="plan-row plan-sub">策略 B 无传统止盈——动量轮动的核心是「永远持有当下最强的那个」。</div>
+      <div class="plan-row plan-sub">不设固定止盈位。如果纳指得分持续下滑 + 其他 ETF 得分超过阈值，系统会发出 SWITCH 信号</div>
     </div>
 
     <a href="https://www.feishu.cn/docx/DOffdLaIsoBXzQx8LWBcPKSrn2c" class="report-link" data-stock="纳指ETF国泰" data-date="2026-06-08" data-has-reply="0" data-market="a"><span class="report-date today chg-down">2026-06-08</span>日报 →</a>
@@ -249,6 +299,6 @@ if(rn){localStorage.setItem(P+this.getAttribute('data-stock')+'_'+dt,'1');}
 });})(d,r);}
 }})();
 window.addEventListener('pageshow',function(e){if(e.persisted)location.reload();});
-</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-08 16:31</div>
+</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-08 17:53</div>
 </body>
 </html>
