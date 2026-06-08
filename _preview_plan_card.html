@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>计划卡片预览</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #fafbfc;
+    color: #2c3e50;
+    padding: 36px 24px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  h1 { font-size: 22px; margin-bottom: 4px; }
+  .mkt-tag-a { display:inline-block; font-size:10px; font-weight:600; padding:1px 6px; border-radius:3px; background:#fef2f2; color:#dc2626; margin-left:6px; vertical-align:middle; }
+  .code { font-size: 12px; color: #94a3b8; margin-bottom: 24px; }
+
+  /* 计划卡片 */
+  .plan-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .plan-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+  }
+  .plan-card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e293b;
+  }
+  .plan-card-action {
+    font-size: 12px;
+    font-weight: 500;
+    color: #2563eb;
+    background: #eff6ff;
+    padding: 3px 10px;
+    border-radius: 12px;
+  }
+  .plan-card-divider {
+    border: none;
+    border-top: 1px solid #f1f5f9;
+    margin: 14px 0;
+  }
+  .plan-section {
+    margin-bottom: 12px;
+  }
+  .plan-section:last-child { margin-bottom: 0; }
+  .plan-label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .plan-label.pos { color: #334155; }
+  .plan-label.stop { color: #dc2626; }
+  .plan-label.profit { color: #16a34a; }
+  .plan-value {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.8;
+  }
+  .plan-sub {
+    font-size: 13px;
+    color: #94a3b8;
+    padding-left: 1.5em;
+    line-height: 1.8;
+  }
+  .plan-insight {
+    font-size: 13px;
+    color: #475569;
+    line-height: 1.6;
+  }
+
+  /* 日报列表 */
+  .report-link {
+    display: block;
+    padding: 14px 0;
+    border-bottom: 1px solid #f0f0f0;
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 15px;
+  }
+  .report-date { font-size:12px; font-weight:500; margin-right:10px; }
+  .report-date.today { color:#dc2626; }
+  .report-date.chg-down { color:#81c784; }
+</style>
+</head>
+<body>
+
+<h1>比亚迪 <span class="mkt-tag-a">A股</span></h1>
+<p class="code">002594</p>
+
+<!-- 新卡片 -->
+<div class="plan-card">
+  <div class="plan-card-header">
+    <span class="plan-card-title">📋 交易计划 v1</span>
+    <span class="plan-card-action">持有</span>
+  </div>
+
+  <div class="plan-section">
+    <div class="plan-label pos">持仓</div>
+    <div class="plan-value">15,000 股 @ 87.981</div>
+  </div>
+
+  <hr class="plan-card-divider">
+
+  <div class="plan-section">
+    <div class="plan-label stop">止损</div>
+    <div class="plan-sub">⚠️ 跌破 85.88（W3 低点 / 52 周低）→ 减仓 1/3 至 10,000 股</div>
+    <div class="plan-sub">🛑 清仓条件：待 Master 补充</div>
+  </div>
+
+  <div class="plan-section">
+    <div class="plan-label profit">止盈</div>
+    <div class="plan-sub">⏳ 待补充。机构目标均价 ¥167（+79% 空间），可作为参考</div>
+  </div>
+
+  <hr class="plan-card-divider">
+
+  <div class="plan-section">
+    <div class="plan-insight">💡 缩量失守短期均线，持有观察</div>
+  </div>
+</div>
+
+<!-- 日报列表 -->
+<a href="#" class="report-link"><span class="report-date today chg-down">2026-06-08</span>日报 →</a>
+<a href="#" class="report-link"><span class="report-date chg-down">2026-06-05</span>弱势震荡守支撑，持有观察 →</a>
+<a href="#" class="report-link"><span class="report-date chg-down">2026-06-04</span>缩量失守短期均线，持有观察 →</a>
+<a href="#" class="report-link"><span class="report-date chg-down">2026-06-03</span>缩量回调测支撑 →</a>
+
+</body>
+</html>
