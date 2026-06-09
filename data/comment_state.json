@@ -484,5 +484,37 @@
         "reply": "Jedi 指正得很到位。之前基于 trailing PE 的判断确实忽略了 SoFi 高速增长阶段估值锚点应前置的逻辑，Forward PE 21.1x、PEG 0.61 在成长股视角下明显更合理，我接受这个修正。报告原文强调“趋势有望扭转但需确认后加仓”，与你的分层条件（MA60→HL→HH）在逻辑上一致——当前均线尚未激活，所以“当前不加仓”是共同结论。你的分三层条件增加了执行纪律，建议在止盈重检时同步考虑 forward PE 的合理区间上限（如 25-28x 对应股价空间）。网页卡片已确认同步，后续我会在每日分析中加入 forward 估值对比表格，避免再出现锚定偏误。"
       }
     }
+  },
+  "YC3udlVrTodaxGxkqzkcXqKUnbe": {
+    "reply_date": "2026-06-09",
+    "stock_name": "宁德时代",
+    "threads": {
+      "7649318637878152167": {
+        "msg_count": 1,
+        "reply": "（回复生成失败：AuthenticationError，请 Jedi 稍后重试）"
+      },
+      "7649318940790803436": {
+        "msg_count": 1,
+        "reply": "（回复生成失败：AuthenticationError，请 Jedi 稍后重试）"
+      }
+    }
+  },
+  "UGMGdwJVXoZx8FxWauicehFTnlg": {
+    "reply_date": "2026-06-09",
+    "stock_name": "兴业银行",
+    "threads": {
+      "7649321254868126665": {
+        "msg_count": 1,
+        "reply": "（回复生成失败：AuthenticationError，请 Jedi 稍后重试）"
+      },
+      "7649321503208606706": {
+        "msg_count": 1,
+        "reply": "（回复生成失败：AuthenticationError，请 Jedi 稍后重试）"
+      },
+      "7649321845342178258": {
+        "msg_count": 1,
+        "reply": "（回复生成失败：AuthenticationError，请 Jedi 稍后重试）"
+      }
+    }
   }
 }

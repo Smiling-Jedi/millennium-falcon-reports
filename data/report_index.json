@@ -1600,6 +1600,114 @@
         "input_tokens": 3428,
         "output_tokens": 1927,
         "prompt_version": "1.0.0"
+      },
+      {
+        "name": "粤海投资",
+        "code": "HK.00270",
+        "doc_url": "https://www.feishu.cn/docx/V9p2dlwpaocLCkxExRzcahBLn5f",
+        "doc_id": "V9p2dlwpaocLCkxExRzcahBLn5f",
+        "date": "2026-06-09",
+        "report_title": "【持有】冲高回落考验MA20，估值安全边际充足，静待方向选择",
+        "change_rate": 0.36,
+        "input_tokens": 90,
+        "output_tokens": 3081,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "腾讯控股",
+        "code": "HK.00700",
+        "doc_url": "https://www.feishu.cn/docx/EA7vdXbHoox2TixSTeecBr2Pntg",
+        "doc_id": "EA7vdXbHoox2TixSTeecBr2Pntg",
+        "date": "2026-06-09",
+        "report_title": "【观望】均线纠缠待方向，回购持续但反转未确认",
+        "change_rate": 1.52,
+        "input_tokens": 99,
+        "output_tokens": 2540,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "小米集团-W",
+        "code": "HK.01810",
+        "doc_url": "https://www.feishu.cn/docx/MfkLdJqr1oVq7OxS8yfcc6xsnXf",
+        "doc_id": "MfkLdJqr1oVq7OxS8yfcc6xsnXf",
+        "date": "2026-06-09",
+        "report_title": "【观望】股价持续走弱，关注前期低点支撑与回购支撑力度",
+        "change_rate": -0.66,
+        "input_tokens": 117,
+        "output_tokens": 2367,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "建滔积层板",
+        "code": "HK.01888",
+        "doc_url": "https://www.feishu.cn/docx/RunIdz13Sopa8PxbEmfcnbwincf",
+        "doc_id": "RunIdz13Sopa8PxbEmfcnbwincf",
+        "date": "2026-06-09",
+        "report_title": null,
+        "change_rate": 12.6,
+        "input_tokens": 26,
+        "output_tokens": 2464,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "舜宇光学科技",
+        "code": "HK.02382",
+        "doc_url": "https://www.feishu.cn/docx/SRI3dlYXIoRF1FxjCNZcGXyWnje",
+        "doc_id": "SRI3dlYXIoRF1FxjCNZcGXyWnje",
+        "date": "2026-06-09",
+        "report_title": "【持有】缩量调整待方向，持有观察仓",
+        "change_rate": -0.45,
+        "input_tokens": 4313,
+        "output_tokens": 3159,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "美团-W",
+        "code": "HK.03690",
+        "doc_url": "https://www.feishu.cn/docx/VmtJdkLkFoivSBxrj8ScMgxtnQd",
+        "doc_id": "VmtJdkLkFoivSBxrj8ScMgxtnQd",
+        "date": "2026-06-09",
+        "report_title": "【持有】券商密集唱多，等待底部确认信号",
+        "change_rate": 1.25,
+        "input_tokens": 2626,
+        "output_tokens": 2446,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "百济神州",
+        "code": "HK.06160",
+        "doc_url": "https://www.feishu.cn/docx/Br4vd36KXoAGgSxqXTycDGmen5e",
+        "doc_id": "Br4vd36KXoAGgSxqXTycDGmen5e",
+        "date": "2026-06-09",
+        "report_title": null,
+        "change_rate": -2.08,
+        "input_tokens": 4896,
+        "output_tokens": 2818,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "阿里巴巴-W",
+        "code": "HK.09988",
+        "doc_url": "https://www.feishu.cn/docx/G9hndVEZuo3DLdx0S5TciPOsnze",
+        "doc_id": "G9hndVEZuo3DLdx0S5TciPOsnze",
+        "date": "2026-06-09",
+        "report_title": "【观望】价格有效击穿预警线，耐心等待企稳，暂不执行任何操作",
+        "change_rate": -1.43,
+        "input_tokens": 4443,
+        "output_tokens": 2899,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "南方两倍做多三星电子",
+        "code": "HK.07747",
+        "doc_url": "https://www.feishu.cn/docx/MhL6dgM7coNBtqxgwwhc2oXgnHd",
+        "doc_id": "MhL6dgM7coNBtqxgwwhc2oXgnHd",
+        "date": "2026-06-09",
+        "report_title": null,
+        "change_rate": 9.4,
+        "input_tokens": 2642,
+        "output_tokens": 2619,
+        "prompt_version": "1.1.0"
       }
     ],
     "美股": [
@@ -2709,5 +2817,5 @@
     ]
   },
   "watchlist": [],
-  "update_time": "2026-06-09 17:02"
+  "update_time": "2026-06-09 17:58"
 }
