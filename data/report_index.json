@@ -2685,13 +2685,13 @@
       {
         "name": "博通",
         "code": "US.AVGO",
-        "doc_url": "https://www.feishu.cn/docx/PCRcdAzekobh33xOZGpcW9DSnze",
-        "doc_id": "PCRcdAzekobh33xOZGpcW9DSnze",
+        "doc_url": "https://www.feishu.cn/docx/XbO1d7CSWoJhbaxtFThcmtyInAd",
+        "doc_id": "XbO1d7CSWoJhbaxtFThcmtyInAd",
         "date": "2026-06-09",
-        "report_title": "【观望】均线纠缠下探支撑，中期趋势待验",
+        "report_title": "【持有】宽幅震荡中，按计划持有等待关键买点",
         "change_rate": 2.82,
-        "input_tokens": 2948,
-        "output_tokens": 2966,
+        "input_tokens": 4268,
+        "output_tokens": 1992,
         "prompt_version": "1.0.0"
       },
       {
@@ -2709,5 +2709,5 @@
     ]
   },
   "watchlist": [],
-  "update_time": "2026-06-09 16:58"
+  "update_time": "2026-06-09 17:02"
 }
