@@ -1,6 +1,17 @@
 {
   "A股": [
     {
+      "date": "2026-06-09",
+      "doc_url": "https://www.feishu.cn/docx/OyUTd6dpkofsZvxAwxHcM39xnZc",
+      "doc_id": "OyUTd6dpkofsZvxAwxHcM39xnZc",
+      "update_time": "12:42",
+      "report_title": "银行护盘 新能源承压",
+      "input_tokens": 6020,
+      "output_tokens": 3153,
+      "prompt_version": "0.2.0",
+      "stock_count": 11
+    },
+    {
       "date": "2026-06-05",
       "doc_url": "https://www.feishu.cn/docx/ZUyZdLWI3o1u2HxPgUicfdmcnUb",
       "doc_id": "ZUyZdLWI3o1u2HxPgUicfdmcnUb",
@@ -24,6 +35,17 @@
     }
   ],
   "港股": [
+    {
+      "date": "2026-06-09",
+      "doc_url": "https://www.feishu.cn/docx/OWrSdbnb5oOoSvxqL12cGnZynvb",
+      "doc_id": "OWrSdbnb5oOoSvxqL12cGnZynvb",
+      "update_time": "12:42",
+      "report_title": "腾讯建滔领涨科技分化",
+      "input_tokens": 4585,
+      "output_tokens": 2728,
+      "prompt_version": "0.2.0",
+      "stock_count": 8
+    },
     {
       "date": "2026-06-05",
       "doc_url": "https://www.feishu.cn/docx/K7ADdODaCoLWQ6xS8SscnUEknSf",

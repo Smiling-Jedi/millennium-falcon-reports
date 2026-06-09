@@ -117,7 +117,7 @@
             border-radius: 4px;
             text-decoration: none;
             color: #475569;
-            font-size: 16px;
+            font-size: 17px;
             transition: all .15s;
         }
         .stock-item:active { border-color: #2563eb; color: #2563eb; background: #f0f5ff; }
@@ -131,7 +131,7 @@
             border-bottom: 1px solid #f0f0f0;
             text-decoration: none;
             color: #2c3e50;
-            font-size: 15px;
+            font-size: 16px;
         }
         .report-link:last-child { border-bottom: none; }
         .report-link:active { color: #2563eb; }
@@ -206,12 +206,63 @@
             top: -2px;
             animation: pulse-dot 2s ease-in-out infinite;
         }
+        /* 交易计划卡片 (B1) */
+        .plan-card {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #2563eb;
+            border-radius: 0 8px 8px 0;
+            padding: 14px 18px;
+            margin-bottom: 20px;
+        }
+        .plan-hdr {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .plan-ttl {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1e293b;
+        }
+        .plan-tag {
+            font-size: 11px;
+            font-weight: 500;
+            color: #2563eb;
+            background: #eff6ff;
+            padding: 2px 8px;
+            border-radius: 10px;
+        }
+        .plan-row {
+            font-size: 13px;
+            color: #64748b;
+            margin-bottom: 5px;
+            line-height: 1.6;
+        }
+        .plan-row strong { color: #334155; }
+        /* B1: 统一灰色，不区分颜色 */
+        .plan-row { color: #64748b; }
+        .plan-sub {
+            font-size: 13px;
+            color: #94a3b8;
+            padding-left: 2.4em;
+            line-height: 1.7;
+        }
+        .plan-insight {
+            font-size: 13px;
+            color: #475569;
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid #f1f5f9;
+        }
     </style>
 </head>
 <body>
     <h1><img src="favicon-32x32.png" class="logo-img" alt="">A股盘中速览</h1>
     <p class="page-intro">午间交易小结 · 上午收盘后自动生成</p>
     <a href="holdings.html" class="back">← 返回持仓</a>
+    <a href="https://www.feishu.cn/docx/OyUTd6dpkofsZvxAwxHcM39xnZc" class="report-link" data-stock="mid_a_2026_06_09" data-date="2026-06-09" data-has-reply="0" data-market="a"><span class="report-date today">2026-06-09 12:42</span>银行护盘 新能源承压 · 11只 →</a>
     <a href="https://www.feishu.cn/docx/ZUyZdLWI3o1u2HxPgUicfdmcnUb" class="report-link" data-stock="mid_a_2026_06_05" data-date="2026-06-05" data-has-reply="0" data-market="a"><span class="report-date">2026-06-05 12:20</span>银行护盘成长承压 · 10只 →</a>
     <a href="https://www.feishu.cn/docx/Us3hdh4vWorl4AxCjwrc0lGpnpc" class="report-link" data-stock="mid_a_2026_06_02" data-date="2026-06-02" data-has-reply="0" data-market="a"><span class="report-date">2026-06-02 13:22</span>新能源强势领涨 量能回升 · 10只 →</a>
 <script>
@@ -234,6 +285,6 @@ if(rn){localStorage.setItem(P+this.getAttribute('data-stock')+'_'+dt,'1');}
 });})(d,r);}
 }})();
 window.addEventListener('pageshow',function(e){if(e.persisted)location.reload();});
-</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-08 12:05</div>
+</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-09 12:42</div>
 </body>
 </html>
