@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>持仓 Treemap 预览</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", sans-serif;
+            background: #F7F5F2;
+            color: #3D3D3D;
+            min-height: 100vh;
+            padding: 0;
+        }
+        .header {
+            padding: 16px 16px 8px;
+            background: #F7F5F2;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .header h1 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #3D3D3D;
+            letter-spacing: 0.5px;
+        }
+        .header .sub {
+            font-size: 12px;
+            color: #9B958C;
+            margin-top: 2px;
+        }
+        .treemap-wrap {
+            padding: 8px 16px 24px;
+            height: calc(100vh - 80px);
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+        .market-section {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            padding-top: 24px;
+        }
+        .market-label {
+            position: absolute;
+            top: 6px;
+            left: 10px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            z-index: 5;
+            padding: 2px 8px;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(4px);
+        }
+        .market-label .dot {
+            display: inline-block;
+            width: 7px; height: 7px;
+            border-radius: 50%;
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+        /* A股 - 莫兰迪紫 */
+        .market-a { background: #F5F0FA; }
+        .market-a .market-label { color: #7A5A9C; }
+        .market-a .dot { background: #927BBE; }
+        /* 港股 - 鼠尾草绿 */
+        .market-hk { background: #F0F5F1; }
+        .market-hk .market-label { color: #5A7A66; }
+        .market-hk .dot { background: #7FA68B; }
+        /* 美股 - 雾蓝 */
+        .market-us { background: #F0F4F6; }
+        .market-us .market-label { color: #5A7A8A; }
+        .market-us .dot { background: #6F97A8; }
+
+        .treemap-cell {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .treemap-cell:active {
+            transform: scale(0.97);
+            z-index: 10;
+        }
+        .cell-border {
+            position: absolute;
+            inset: 1.5px;
+            border-radius: 8px;
+            pointer-events: none;
+            border: 2.5px solid transparent;
+            transition: border-color 0.2s;
+        }
+        /* 涨跌边框色 - 莫兰迪色系 */
+        .cell-border.up { border-color: #8FB89E; }
+        .cell-border.down { border-color: #C98B8B; }
+        .cell-border.flat { border-color: #D4CFC7; }
+        /* 观察仓 */
+        .cell-border.watch {
+            border-style: dashed;
+            border-width: 2px;
+            background: rgba(255,255,255,0.35);
+        }
+        .cell-bg {
+            position: absolute;
+            inset: 0;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.7);
+            transition: background 0.2s;
+        }
+        .treemap-cell:hover .cell-bg,
+        .treemap-cell:active .cell-bg {
+            background: rgba(255,255,255,0.95);
+        }
+        .cell-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 4px;
+            width: 100%;
+        }
+        .stock-name {
+            font-size: 13px;
+            font-weight: 600;
+            color: #3D3D3D;
+            line-height: 1.3;
+            word-break: keep-all;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .stock-name.small {
+            font-size: 11px;
+        }
+        .stock-meta {
+            font-size: 10px;
+            color: #9B958C;
+            margin-top: 2px;
+            font-variant-numeric: tabular-nums;
+        }
+        .stock-meta .chg {
+            font-weight: 500;
+        }
+        .stock-meta .chg.up { color: #5A8A6A; }
+        .stock-meta .chg.down { color: #B07070; }
+        /* 新文档红点 */
+        .new-badge {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            z-index: 5;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        .new-badge.a { background: #C4707A; }
+        .new-badge.hk { background: #7FA68B; }
+        .new-badge.us { background: #6F97A8; }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.85); }
+        }
+        /* 小方块只显示缩写 */
+        .stock-abbr {
+            font-size: 14px;
+            font-weight: 700;
+            color: #5A5A5A;
+        }
+        /* 隐藏滚动条但允许滚动 */
+        body::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📦 持仓全景</h1>
+        <p class="sub">方块大小 ≈ 仓位占比 · 2026-06-10</p>
+    </div>
+    <div class="treemap-wrap" id="treemapWrap"></div>
+
+<script>
+// ===== 真实持仓数据 =====
+const portfolioData = {
+    "A股": {
+        "total_market_value": 4425625.19,
+        "positions": [
+            {"name": "比亚迪", "market_value": 1354650, "weight": 30.6, "change_rate": -1.72, "role": "底仓"},
+            {"name": "医药ETF", "market_value": 883014, "weight": 20.0, "change_rate": 1.56, "role": "底仓"},
+            {"name": "阳光电源", "market_value": 502425, "weight": 11.4, "change_rate": -5.87, "role": "底仓"},
+            {"name": "机器人ETF", "market_value": 452000, "weight": 10.2, "change_rate": -3.99, "role": "底仓"},
+            {"name": "宁德时代", "market_value": 388500, "weight": 8.8, "change_rate": -2.75, "role": "底仓"},
+            {"name": "兴业银行", "market_value": 217235, "weight": 4.9, "change_rate": 2.38, "role": "底仓"},
+            {"name": "纳指ETF", "market_value": 114276, "weight": 2.6, "change_rate": -2.59, "role": "底仓"},
+            {"name": "交通银行", "market_value": 104100, "weight": 2.4, "change_rate": 0.87, "role": "底仓"},
+            {"name": "招商银行", "market_value": 97250, "weight": 2.2, "change_rate": 1.07, "role": "底仓"},
+            {"name": "中来股份", "market_value": 41200, "weight": 0.9, "change_rate": -2.25, "role": "底仓"},
+            {"name": "润泽科技", "market_value": 23070, "weight": 0.5, "change_rate": 1.14, "role": "观察"}
+        ]
+    },
+    "港股": {
+        "total_market_value": 6061485,
+        "positions": [
+            {"name": "腾讯控股", "market_value": 3352320, "weight": 55.3, "change_rate": 2.74, "role": "底仓"},
+            {"name": "阿里巴巴", "market_value": 1362000, "weight": 22.5, "change_rate": -2.22, "role": "底仓"},
+            {"name": "粤海投资", "market_value": 613460, "weight": 10.1, "change_rate": 0.12, "role": "底仓"},
+            {"name": "百济神州", "market_value": 489000, "weight": 8.1, "change_rate": 2.07, "role": "底仓"},
+            {"name": "小米集团", "market_value": 131600, "weight": 2.2, "change_rate": -3.24, "role": "底仓"},
+            {"name": "两倍做多", "market_value": 44550, "weight": 0.7, "change_rate": -12.03, "role": "底仓"},
+            {"name": "建滔积层", "market_value": 30600, "weight": 0.5, "change_rate": -2.86, "role": "底仓"},
+            {"name": "舜宇光学", "market_value": 22155, "weight": 0.4, "change_rate": -3.78, "role": "底仓"},
+            {"name": "美团", "market_value": 15800, "weight": 0.3, "change_rate": 2.33, "role": "底仓"}
+        ]
+    },
+    "美股": {
+        "total_market_value": 347898,
+        "positions": [
+            {"name": "特斯拉", "market_value": 99170, "weight": 28.5, "change_rate": -3.0, "role": "底仓"},
+            {"name": "英伟达", "market_value": 66621, "weight": 19.1, "change_rate": -0.22, "role": "底仓"},
+            {"name": "微软", "market_value": 60512, "weight": 17.4, "change_rate": -2.02, "role": "底仓"},
+            {"name": "Meta", "market_value": 46767, "weight": 13.4, "change_rate": -0.14, "role": "底仓"},
+            {"name": "SoFi", "market_value": 32940, "weight": 9.5, "change_rate": -0.18, "role": "底仓"},
+            {"name": "博通", "market_value": 19608, "weight": 5.6, "change_rate": -1.12, "role": "观察"},
+            {"name": "Palantir", "market_value": 7924, "weight": 2.3, "change_rate": -3.22, "role": "观察"},
+            {"name": "Lumentum", "market_value": 6574, "weight": 1.9, "change_rate": -8.22, "role": "观察"},
+            {"name": "Sea", "market_value": 5092, "weight": 1.5, "change_rate": 0.45, "role": "观察"},
+            {"name": "Circle", "market_value": 1622, "weight": 0.5, "change_rate": -1.73, "role": "观察"},
+            {"name": "Coherent", "market_value": 1068, "weight": 0.3, "change_rate": -11.44, "role": "观察"}
+        ]
+    }
+};
+
+const marketConfig = {
+    "A股": { key: "a", class: "market-a" },
+    "港股": { key: "hk", class: "market-hk" },
+    "美股": { key: "us", class: "market-us" }
+};
+
+// ===== 水平条带 Treemap 算法（手机端优化） =====
+function squarify(values, x, y, width, height) {
+    const total = values.reduce((s, v) => s + v.value, 0);
+    if (total === 0) return values.map(v => ({...v, x, y, w: 0, h: 0}));
+
+    // 按 weight 降序排列
+    let items = values.map(v => ({...v, norm: v.value / total})).sort((a, b) => b.norm - a.norm);
+    const result = [];
+    const MIN_CELL_W = 22; // 最小宽度 22%
+    const MIN_CELL_H = 18; // 最小高度 18%
+
+    // 合并极小项（< 3% 且股票数 > 5）
+    let merged = [];
+    let tinySum = 0;
+    let tinyItems = [];
+    for (const item of items) {
+        if (item.norm < 0.03 && items.length > 5) {
+            tinySum += item.norm;
+            tinyItems.push(item);
+        } else {
+            merged.push(item);
+        }
+    }
+    if (tinyItems.length > 0) {
+        merged.push({
+            name: tinyItems.map(t => t.name).join('/').substring(0, 8) + '..',
+            norm: tinySum,
+            isGroup: true,
+            change_rate: 0,
+            role: '底仓',
+            weight: Math.round(tinySum * 100 * 10) / 10
+        });
+    }
+    items = merged.sort((a, b) => b.norm - a.norm);
+
+    // 水平条带布局：从上到下，每行1-3只
+    let remainingH = height;
+    let currentY = y;
+
+    while (items.length > 0) {
+        // 决定当前行放几只
+        let rowCount = Math.min(items.length, items[0].norm > 0.5 ? 1 : items[0].norm > 0.3 ? 2 : 3);
+        if (items.length === 1) rowCount = 1;
+
+        const rowItems = items.slice(0, rowCount);
+        const rowSum = rowItems.reduce((s, it) => s + it.norm, 0);
+
+        // 行高度（至少 MIN_CELL_H）
+        let rowH = (rowSum / total) * height;
+        rowH = Math.max(rowH, MIN_CELL_H);
+        rowH = Math.min(rowH, remainingH);
+        if (items.length === rowCount) rowH = remainingH; // 最后一行占满
+
+        // 行内按 norm 比例分配宽度
+        const rowTotal = rowItems.reduce((s, it) => s + it.norm, 0);
+        let currentX = x;
+        let remainingW = width;
+
+        for (let i = 0; i < rowItems.length; i++) {
+            const it = rowItems[i];
+            let cellW = (it.norm / rowTotal) * width;
+            cellW = Math.max(cellW, MIN_CELL_W);
+            cellW = Math.min(cellW, remainingW);
+            if (i === rowItems.length - 1) cellW = remainingW; // 最后一个占满剩余
+
+            result.push({...it, x: currentX, y: currentY, w: cellW, h: rowH});
+            currentX += cellW;
+            remainingW -= cellW;
+        }
+
+        currentY += rowH;
+        remainingH -= rowH;
+        items = items.slice(rowCount);
+    }
+
+    return result;
+}
+
+// ===== 渲染 =====
+function renderTreemap() {
+    const wrap = document.getElementById('treemapWrap');
+    const wrapRect = wrap.getBoundingClientRect();
+    const wrapW = wrapRect.width;
+    const wrapH = wrapRect.height;
+
+    // 计算三个市场的总权重
+    const totalMV = Object.values(portfolioData).reduce((s, m) => s + m.total_market_value, 0);
+    const marketWeights = {};
+    for (const [name, data] of Object.entries(portfolioData)) {
+        marketWeights[name] = data.total_market_value / totalMV;
+    }
+
+    // 分配高度（设最小高度 18%）
+    const minH = 0.18;
+    let adjWeights = {};
+    let excess = 0;
+    let normalSum = 0;
+    for (const [name, w] of Object.entries(marketWeights)) {
+        if (w < minH) {
+            adjWeights[name] = minH;
+            excess += minH - w;
+        } else {
+            normalSum += w;
+        }
+    }
+    for (const [name, w] of Object.entries(marketWeights)) {
+        if (w >= minH) {
+            adjWeights[name] = w - (excess * w / normalSum);
+        }
+    }
+
+    let currentY = 0;
+    for (const [marketName, data] of Object.entries(portfolioData)) {
+        const config = marketConfig[marketName];
+        const mktH = adjWeights[marketName] * wrapH;
+
+        // 市场容器
+        const section = document.createElement('div');
+        section.className = `market-section ${config.class}`;
+        section.style.height = mktH + 'px';
+
+        // 市场标签
+        const label = document.createElement('div');
+        label.className = 'market-label';
+        label.innerHTML = `<span class="dot"></span>${marketName} · ${data.positions.length}只`;
+        section.appendChild(label);
+
+        // Treemap 单元格
+        const items = data.positions.map(p => ({
+            value: p.market_value,
+            name: p.name,
+            change_rate: p.change_rate,
+            role: p.role,
+            weight: p.weight
+        }));
+
+        const cells = squarify(items, 0, 0, 100, 100);
+
+        for (const cell of cells) {
+            const pos = data.positions.find(p => p.name === cell.name) ||
+                       (cell.isGroup && cell.children ? cell.children[0] : null);
+            if (!pos) continue;
+
+            const el = document.createElement('a');
+            el.className = 'treemap-cell';
+            el.href = '#';
+            el.style.left = cell.x + '%';
+            el.style.top = cell.y + '%';
+            el.style.width = cell.w + '%';
+            el.style.height = cell.h + '%';
+
+            const isWatch = pos.role === '观察';
+            const chgClass = pos.change_rate > 0 ? 'up' : pos.change_rate < 0 ? 'down' : 'flat';
+            const watchClass = isWatch ? 'watch' : '';
+
+            const showFull = cell.w > 20 && cell.h > 25;
+            const showMeta = cell.w > 25 && cell.h > 35;
+
+            let nameDisplay = pos.name;
+            if (!showFull && pos.name.length > 3) {
+                nameDisplay = pos.name.substring(0, 2) + '..';
+            }
+
+            el.innerHTML = `
+                <div class="cell-bg"></div>
+                <div class="cell-border ${chgClass} ${watchClass}"></div>
+                <div class="cell-content">
+                    <div class="stock-name ${!showFull ? 'small' : ''}">${nameDisplay}</div>
+                    ${showMeta ? `<div class="stock-meta">
+                        <span class="chg ${chgClass}">${pos.change_rate > 0 ? '+' : ''}${pos.change_rate}%</span>
+                        <span>· ${pos.weight}%</span>
+                    </div>` : ''}
+                </div>
+            `;
+
+            section.appendChild(el);
+        }
+
+        wrap.appendChild(section);
+        currentY += mktH;
+    }
+}
+
+// 初始化
+window.addEventListener('load', renderTreemap);
+window.addEventListener('resize', () => {
+    document.getElementById('treemapWrap').innerHTML = '';
+    renderTreemap();
+});
+</script>
+</body>
+</html>

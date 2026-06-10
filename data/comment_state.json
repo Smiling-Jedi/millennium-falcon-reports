@@ -516,5 +516,35 @@
         "reply": "（回复生成失败：AuthenticationError，请 Jedi 稍后重试）"
       }
     }
+  },
+  "F698d4jjSoE6Wlx78XjcVrjSnvc": {
+    "reply_date": "2026-06-10",
+    "stock_name": "比亚迪",
+    "threads": {
+      "7649669507757247695": {
+        "msg_count": 1,
+        "reply": "（LLM 暂不可用，请 Jedi 稍后通过日报指令触发重新回复）"
+      }
+    }
+  },
+  "RDMvdOuwJoOy0JxpKbBcSJahngc": {
+    "reply_date": "2026-06-10",
+    "stock_name": "阳光电源",
+    "threads": {
+      "7649667019847011561": {
+        "msg_count": 1,
+        "reply": "（LLM 暂不可用，请 Jedi 稍后通过日报指令触发重新回复）"
+      }
+    }
+  },
+  "L75Xdw0Asoe42oxNokCcR2I9nSd": {
+    "reply_date": "2026-06-10",
+    "stock_name": "宁德时代",
+    "threads": {
+      "7649671037847702746": {
+        "msg_count": 1,
+        "reply": "（LLM 暂不可用，请 Jedi 稍后通过日报指令触发重新回复）"
+      }
+    }
   }
 }

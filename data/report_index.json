@@ -1840,6 +1840,114 @@
         "input_tokens": 2642,
         "output_tokens": 2619,
         "prompt_version": "1.1.0"
+      },
+      {
+        "name": "粤海投资",
+        "code": "HK.00270",
+        "doc_url": "https://www.feishu.cn/docx/OrPPdYkBXohw0IxdhcgcIRsMnTg",
+        "doc_id": "OrPPdYkBXohw0IxdhcgcIRsMnTg",
+        "date": "2026-06-10",
+        "report_title": null,
+        "change_rate": 0.12,
+        "input_tokens": 3762,
+        "output_tokens": 3009,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "腾讯控股",
+        "code": "HK.00700",
+        "doc_url": "https://www.feishu.cn/docx/Xft8dJqPUobdFgxfQoocWXoAnAe",
+        "doc_id": "Xft8dJqPUobdFgxfQoocWXoAnAe",
+        "date": "2026-06-10",
+        "report_title": "【观望】量价背离反弹，等MA60稳住再说",
+        "change_rate": 2.74,
+        "input_tokens": 3717,
+        "output_tokens": 2378,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "小米集团-W",
+        "code": "HK.01810",
+        "doc_url": "https://www.feishu.cn/docx/ROnzdAaIMo3QxuxtXrocXp4Wnmh",
+        "doc_id": "ROnzdAaIMo3QxuxtXrocXp4Wnmh",
+        "date": "2026-06-10",
+        "report_title": "【减仓】放量破位创新低，资金面空头主导，须主动降低风险敞口",
+        "change_rate": -3.24,
+        "input_tokens": 2791,
+        "output_tokens": 2732,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "建滔积层板",
+        "code": "HK.01888",
+        "doc_url": "https://www.feishu.cn/docx/TV1xdAmEBoMjqUxCKo3cs8zonZb",
+        "doc_id": "TV1xdAmEBoMjqUxCKo3cs8zonZb",
+        "date": "2026-06-10",
+        "report_title": "【持有】冲高回落 方案B止盈触发 零成本持仓启动",
+        "change_rate": -2.86,
+        "input_tokens": 3579,
+        "output_tokens": 2841,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "舜宇光学科技",
+        "code": "HK.02382",
+        "doc_url": "https://www.feishu.cn/docx/DCLpdPGTBodCkxxeJOzcfUUPnHg",
+        "doc_id": "DCLpdPGTBodCkxxeJOzcfUUPnHg",
+        "date": "2026-06-10",
+        "report_title": "【加仓】盘中触及第一档加仓区间70-73港元，按计划执行买入800股。",
+        "change_rate": -3.78,
+        "input_tokens": 4259,
+        "output_tokens": 3065,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "美团-W",
+        "code": "HK.03690",
+        "doc_url": "https://www.feishu.cn/docx/EEeQdLqUGox45bxW0nwcNKJ1nZe",
+        "doc_id": "EEeQdLqUGox45bxW0nwcNKJ1nZe",
+        "date": "2026-06-10",
+        "report_title": "【观望】均线反压未解 趋势偏弱暂宜观望",
+        "change_rate": 2.33,
+        "input_tokens": 2626,
+        "output_tokens": 2317,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "百济神州",
+        "code": "HK.06160",
+        "doc_url": "https://www.feishu.cn/docx/Z5dUdU4JgoGkE2xJuq2c8YD8npe",
+        "doc_id": "Z5dUdU4JgoGkE2xJuq2c8YD8npe",
+        "date": "2026-06-10",
+        "report_title": "【持有】H股止跌企稳于第一档位，坚守拐点逻辑等待催化剂",
+        "change_rate": 2.07,
+        "input_tokens": 4873,
+        "output_tokens": 3002,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "阿里巴巴-W",
+        "code": "HK.09988",
+        "doc_url": "https://www.feishu.cn/docx/KKeldNVEFo0bhYxshCjc6Sp0nDe",
+        "doc_id": "KKeldNVEFo0bhYxshCjc6Sp0nDe",
+        "date": "2026-06-10",
+        "report_title": "【减仓】跌破警戒，关注100港元硬止损纪律",
+        "change_rate": -2.21,
+        "input_tokens": 4455,
+        "output_tokens": 2828,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "南方两倍做多三星电子",
+        "code": "HK.07747",
+        "doc_url": "https://www.feishu.cn/docx/BpD9d391JoOvyqxSCV2cXXgmn4b",
+        "doc_id": "BpD9d391JoOvyqxSCV2cXXgmn4b",
+        "date": "2026-06-10",
+        "report_title": "【观望】韩股熔断拖累单日暴跌12%，暂无交易计划保持关注",
+        "change_rate": -12.03,
+        "input_tokens": 2625,
+        "output_tokens": 2574,
+        "prompt_version": "1.1.0"
       }
     ],
     "美股": [
@@ -2949,5 +3057,5 @@
     ]
   },
   "watchlist": [],
-  "update_time": "2026-06-10 15:28"
+  "update_time": "2026-06-10 16:26"
 }
