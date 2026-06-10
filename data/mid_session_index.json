@@ -1,6 +1,94 @@
 {
   "A股": [
     {
+      "date": "2026-06-10",
+      "doc_url": "https://www.feishu.cn/docx/NLWkdYoJEopP10xA8gacOWKwntb",
+      "doc_id": "NLWkdYoJEopP10xA8gacOWKwntb",
+      "update_time": "13:12",
+      "report_title": "银行护盘新能源杀跌",
+      "input_tokens": 13109,
+      "output_tokens": 3175,
+      "prompt_version": "0.3.0",
+      "stock_count": 11
+    },
+    {
+      "date": "2026-06-10",
+      "doc_url": "https://www.feishu.cn/docx/EC8BdQf7doCJ8qx0jCpceKXDnbb",
+      "doc_id": "EC8BdQf7doCJ8qx0jCpceKXDnbb",
+      "update_time": "13:08",
+      "report_title": "银行护盘成长普跌，新能源再遭抛售",
+      "input_tokens": 13189,
+      "output_tokens": 3047,
+      "prompt_version": "0.3.0",
+      "stock_count": 11
+    },
+    {
+      "date": "2026-06-10",
+      "doc_url": "https://www.feishu.cn/docx/BRmddFbeeoITg4xAaBVcbNndnQe",
+      "doc_id": "BRmddFbeeoITg4xAaBVcbNndnQe",
+      "update_time": "13:06",
+      "report_title": "银行护盘新能源重挫",
+      "input_tokens": 13196,
+      "output_tokens": 3207,
+      "prompt_version": "0.3.0",
+      "stock_count": 11
+    },
+    {
+      "date": "2026-06-10",
+      "doc_url": "https://www.feishu.cn/docx/VZdJdAlAKovjxLxXuR4cJv6PnSh",
+      "doc_id": "VZdJdAlAKovjxLxXuR4cJv6PnSh",
+      "update_time": "13:00",
+      "report_title": "银行逆势护盘成长赛道重挫",
+      "input_tokens": 72,
+      "output_tokens": 2915,
+      "prompt_version": "0.3.0",
+      "stock_count": 11
+    },
+    {
+      "date": "2026-06-10",
+      "doc_url": "https://www.feishu.cn/docx/S5qFdatkSoR4LSx8zUzcItcpnvg",
+      "doc_id": "S5qFdatkSoR4LSx8zUzcItcpnvg",
+      "update_time": "12:58",
+      "report_title": "银行护盘新能源重挫",
+      "input_tokens": 13256,
+      "output_tokens": 2630,
+      "prompt_version": "0.3.0",
+      "stock_count": 11
+    },
+    {
+      "date": "2026-06-10",
+      "doc_url": "https://www.feishu.cn/docx/EvZKdPO1IoCa9xxjkWEcagNSnsb",
+      "doc_id": "EvZKdPO1IoCa9xxjkWEcagNSnsb",
+      "update_time": "12:36",
+      "report_title": "银行逆市护盘新能源深跌分化",
+      "input_tokens": 7639,
+      "output_tokens": 3284,
+      "prompt_version": "0.3.0",
+      "stock_count": 11
+    },
+    {
+      "date": "2026-06-10",
+      "doc_url": "https://www.feishu.cn/docx/YGkedvPVrotAlvx91t5czPnonY9",
+      "doc_id": "YGkedvPVrotAlvx91t5czPnonY9",
+      "update_time": "12:19",
+      "report_title": "银行护盘成长重挫",
+      "input_tokens": 12150,
+      "output_tokens": 3242,
+      "prompt_version": "0.3.0",
+      "stock_count": 11
+    },
+    {
+      "date": "2026-06-10",
+      "doc_url": "https://www.feishu.cn/docx/N7Wfd5IoEo1DAuxa8VMc2Ij1nNd",
+      "doc_id": "N7Wfd5IoEo1DAuxa8VMc2Ij1nNd",
+      "update_time": "11:37",
+      "report_title": "银行独红成长承压",
+      "input_tokens": 6020,
+      "output_tokens": 2779,
+      "prompt_version": "0.2.0",
+      "stock_count": 11
+    },
+    {
       "date": "2026-06-09",
       "doc_url": "https://www.feishu.cn/docx/OyUTd6dpkofsZvxAwxHcM39xnZc",
       "doc_id": "OyUTd6dpkofsZvxAwxHcM39xnZc",
