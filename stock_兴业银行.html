@@ -264,7 +264,7 @@
 
     <div class="plan-card">
       <div class="plan-hdr"><span class="plan-ttl">📋 交易计划 v2</span><span class="plan-tag"></span></div>
-      <div class="plan-row"><strong>持仓</strong> &nbsp; 当前持仓：11,500 股 @ ¥18.63 | 浮盈 -0.5% |</div>
+      <div class="plan-row"><strong>持仓</strong> &nbsp; 当前持仓：11,500 股 @ ¥18.63 | 浮盈 -0.5% | F 型收息锚</div>
       <div class="plan-row plan-stop"><strong>止损</strong> &nbsp; - F 型估值锚止损：PE > 15x 或股息率 < 4% | - 对应股价 > ¥55+ 或 < ¥5.8，几年内不触发 | - F 型不需要价格止损——越跌股息率越高，越值得买</div>
       <div class="plan-row plan-profit"><strong>止盈</strong> &nbsp; - T1 ¥25.82（PE 7.1x PB 0.65），+39% 空间，届时减仓 1/3 | - F 型以收息为主，止盈非首要</div>
     </div>
@@ -283,6 +283,13 @@
 (function(){
 var K='mf_seen_',P='mf_reply_';
 var els=document.querySelectorAll('[data-stock]');
+// 预计算每只股票的最新日期（个股页有多个不同日期的链接，防止点旧链接覆盖正确标记）
+var maxDt={};
+for(var i=0;i<els.length;i++){
+var sn=els[i].getAttribute('data-stock');
+var sd=els[i].getAttribute('data-date');
+if(!maxDt[sn]||sd>maxDt[sn])maxDt[sn]=sd;
+}
 for(var i=0;i<els.length;i++){var e=els[i];
 var n=e.getAttribute('data-stock');
 var d=e.getAttribute('data-date');
@@ -291,14 +298,15 @@ var m=e.getAttribute('data-market')||'us';
 var sk=K+n,rk=P+n+'_'+d;
 var h=localStorage.getItem(sk)||'';
 var rs=localStorage.getItem(rk)||'';
+var md=maxDt[n];
 if(d>h||(r&&rs!=='1')){var dot=document.createElement('span');
 dot.className='new-dot new-dot-'+m;e.insertBefore(dot,e.firstChild);
 (function(dt,rn){e.addEventListener('click',function(){
-localStorage.setItem(K+this.getAttribute('data-stock'),dt);
+localStorage.setItem(K+this.getAttribute('data-stock'),md);
 if(rn){localStorage.setItem(P+this.getAttribute('data-stock')+'_'+dt,'1');}
 });})(d,r);}
 }})();
 window.addEventListener('pageshow',function(e){if(e.persisted)location.reload();});
-</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-11 16:26</div>
+</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-11 21:14</div>
 </body>
 </html>

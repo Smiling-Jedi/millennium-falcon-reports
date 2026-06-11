@@ -263,11 +263,11 @@
     <p style="font-size:12px;color:#94a3b8;margin-bottom:24px;">06160</p>
 
     <div class="plan-card">
-      <div class="plan-hdr"><span class="plan-ttl">📋 交易计划 v1.1</span><span class="plan-tag"></span></div>
-      <div class="plan-row"><strong>持仓</strong> &nbsp; 2,000 股 @ HK$179.21</div>
-      <div class="plan-row plan-entry"><strong>加仓</strong> &nbsp; 第 1 档 HK$160-165→买1,000 股(拐点信念 + AH 折价 31%，怕踏空拐点) · 第 2 档 HK$145-150→买1,100 股(深度回调，-9.2%, 2.1x ATR)</div>
-      <div class="plan-row plan-stop"><strong>止损</strong> &nbsp; MA60（179.3）已跌破 → 不加仓更多（三档已规划完毕），但不减仓——基本面和 AH 折价提供硬底 | HK$143.30（52 周低点）收盘跌破 + 连续 3 天收不回 → 减仓至 2,000 股（还原到换仓前）。破了 52 周低说明拐点假设需要重检</div>
-      <div class="plan-row plan-profit"><strong>止盈</strong> &nbsp; HK$200（整数关口 + MA200 附近，+19.3% vs 均价）→ 卖 1,000 股（1/4），先锁一笔利润 | HK$220（接近 A 股价位，AH 折价收敛至 ~10%，+31.2% vs 均价）→ 卖 1,000 股（1/4），AH 差价收敛逻辑兑现 | 暂不设定：留 2,300 股底仓给创新药全球长线。待 T1/T2 触发后根据趋势和 Q2 业绩再定</div>
+      <div class="plan-hdr"><span class="plan-ttl">📋 交易计划 v1.2</span><span class="plan-tag"></span></div>
+      <div class="plan-row"><strong>持仓</strong> &nbsp; 3,000 股 @ HK$173.79</div>
+      <div class="plan-row plan-entry"><strong>加仓</strong> &nbsp; 已执行 1,000 股 @ ~162.36 · 下一笔 无预设档位</div>
+      <div class="plan-row plan-stop"><strong>止损</strong> &nbsp; HK$143.30（52 周低点）收盘跌破 + 连续 3 天收不回 → 减仓至 2,000 股</div>
+      <div class="plan-row plan-profit"><strong>止盈</strong> &nbsp; HK$200 → 卖 1,000 股 | HK$220 → 卖 1,000 股</div>
       <div class="plan-insight">💡 【观望】放量下挫逼近前低，静待第二档入场条件触发</div>
     </div>
 
@@ -285,6 +285,13 @@
 (function(){
 var K='mf_seen_',P='mf_reply_';
 var els=document.querySelectorAll('[data-stock]');
+// 预计算每只股票的最新日期（个股页有多个不同日期的链接，防止点旧链接覆盖正确标记）
+var maxDt={};
+for(var i=0;i<els.length;i++){
+var sn=els[i].getAttribute('data-stock');
+var sd=els[i].getAttribute('data-date');
+if(!maxDt[sn]||sd>maxDt[sn])maxDt[sn]=sd;
+}
 for(var i=0;i<els.length;i++){var e=els[i];
 var n=e.getAttribute('data-stock');
 var d=e.getAttribute('data-date');
@@ -293,14 +300,15 @@ var m=e.getAttribute('data-market')||'us';
 var sk=K+n,rk=P+n+'_'+d;
 var h=localStorage.getItem(sk)||'';
 var rs=localStorage.getItem(rk)||'';
+var md=maxDt[n];
 if(d>h||(r&&rs!=='1')){var dot=document.createElement('span');
 dot.className='new-dot new-dot-'+m;e.insertBefore(dot,e.firstChild);
 (function(dt,rn){e.addEventListener('click',function(){
-localStorage.setItem(K+this.getAttribute('data-stock'),dt);
+localStorage.setItem(K+this.getAttribute('data-stock'),md);
 if(rn){localStorage.setItem(P+this.getAttribute('data-stock')+'_'+dt,'1');}
 });})(d,r);}
 }})();
 window.addEventListener('pageshow',function(e){if(e.persisted)location.reload();});
-</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-11 16:26</div>
+</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-11 21:14</div>
 </body>
 </html>

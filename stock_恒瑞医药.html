@@ -278,6 +278,13 @@
 (function(){
 var K='mf_seen_',P='mf_reply_';
 var els=document.querySelectorAll('[data-stock]');
+// 预计算每只股票的最新日期（个股页有多个不同日期的链接，防止点旧链接覆盖正确标记）
+var maxDt={};
+for(var i=0;i<els.length;i++){
+var sn=els[i].getAttribute('data-stock');
+var sd=els[i].getAttribute('data-date');
+if(!maxDt[sn]||sd>maxDt[sn])maxDt[sn]=sd;
+}
 for(var i=0;i<els.length;i++){var e=els[i];
 var n=e.getAttribute('data-stock');
 var d=e.getAttribute('data-date');
@@ -286,14 +293,15 @@ var m=e.getAttribute('data-market')||'us';
 var sk=K+n,rk=P+n+'_'+d;
 var h=localStorage.getItem(sk)||'';
 var rs=localStorage.getItem(rk)||'';
+var md=maxDt[n];
 if(d>h||(r&&rs!=='1')){var dot=document.createElement('span');
 dot.className='new-dot new-dot-'+m;e.insertBefore(dot,e.firstChild);
 (function(dt,rn){e.addEventListener('click',function(){
-localStorage.setItem(K+this.getAttribute('data-stock'),dt);
+localStorage.setItem(K+this.getAttribute('data-stock'),md);
 if(rn){localStorage.setItem(P+this.getAttribute('data-stock')+'_'+dt,'1');}
 });})(d,r);}
 }})();
 window.addEventListener('pageshow',function(e){if(e.persisted)location.reload();});
-</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-11 16:26</div>
+</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-11 21:14</div>
 </body>
 </html>

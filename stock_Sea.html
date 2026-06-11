@@ -266,6 +266,7 @@
       <div class="plan-hdr"><span class="plan-ttl">📋 交易计划 v1</span><span class="plan-tag"></span></div>
       <div class="plan-row"><strong>持仓</strong> &nbsp; 60 股 @ $91.17（观察仓）</div>
       <div class="plan-row plan-entry"><strong>加仓</strong> &nbsp; 55 股 @ $82（MA60 下方支撑区） | 加仓后：115 股 @ $86.8，总成本 ~$9,980（美股 2.9%） | > 5 年数据说 MA200 下方突破只有 33% 胜率。但 $10K 仅占美股 1.8%，试错成本低。$82 比 $110 便宜 25%，R:R 从 2.2:1 提升到 6.5:1。</div>
+      <div class="plan-row plan-stop"><strong>止损</strong> &nbsp; 交易层 55 股→低于 $77 约 1.5x ATR，过滤假跌破。$77 是可以被测试的，$74 才是真破了。亏 -$440[M5.1] · 观察层 60 股→W10 绝对低点，跌破说明反弹结构破坏。全清 [M5.2]</div>
       <div class="plan-row plan-profit"><strong>止盈</strong> &nbsp; $110（W10 高点，+27% vs 均价 $86.8）→ 卖 35 股，回收成本 [M5.1] | $150（+73% vs 均价）→ 卖 40 股，留 40 股底仓 [M5.2]</div>
     </div>
 
@@ -279,6 +280,13 @@
 (function(){
 var K='mf_seen_',P='mf_reply_';
 var els=document.querySelectorAll('[data-stock]');
+// 预计算每只股票的最新日期（个股页有多个不同日期的链接，防止点旧链接覆盖正确标记）
+var maxDt={};
+for(var i=0;i<els.length;i++){
+var sn=els[i].getAttribute('data-stock');
+var sd=els[i].getAttribute('data-date');
+if(!maxDt[sn]||sd>maxDt[sn])maxDt[sn]=sd;
+}
 for(var i=0;i<els.length;i++){var e=els[i];
 var n=e.getAttribute('data-stock');
 var d=e.getAttribute('data-date');
@@ -287,14 +295,15 @@ var m=e.getAttribute('data-market')||'us';
 var sk=K+n,rk=P+n+'_'+d;
 var h=localStorage.getItem(sk)||'';
 var rs=localStorage.getItem(rk)||'';
+var md=maxDt[n];
 if(d>h||(r&&rs!=='1')){var dot=document.createElement('span');
 dot.className='new-dot new-dot-'+m;e.insertBefore(dot,e.firstChild);
 (function(dt,rn){e.addEventListener('click',function(){
-localStorage.setItem(K+this.getAttribute('data-stock'),dt);
+localStorage.setItem(K+this.getAttribute('data-stock'),md);
 if(rn){localStorage.setItem(P+this.getAttribute('data-stock')+'_'+dt,'1');}
 });})(d,r);}
 }})();
 window.addEventListener('pageshow',function(e){if(e.persisted)location.reload();});
-</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-11 16:26</div>
+</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-11 21:14</div>
 </body>
 </html>

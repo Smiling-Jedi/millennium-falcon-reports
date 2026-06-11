@@ -263,11 +263,11 @@
     <p style="font-size:12px;color:#94a3b8;margin-bottom:24px;">AVGO</p>
 
     <div class="plan-card">
-      <div class="plan-hdr"><span class="plan-ttl">📋 交易计划 v2</span><span class="plan-tag"></span></div>
-      <div class="plan-row"><strong>持仓</strong> &nbsp; 30 股 @ $420</div>
-      <div class="plan-row plan-entry"><strong>加仓</strong> &nbsp; 已持有 $420→买30( 6/3 已执行) · $390→买+20(触及 $390 且 MA60 斜率仍为正) · $368→买+25(Fib 61.8% 回调，MA120($360)上方)</div>
-      <div class="plan-row plan-stop"><strong>止损</strong> &nbsp; MA200($355) 周线收盘跌破 + 两周未收回 → 停止加仓，减至参考仓位 ~12%（约 45 股） | 护城河瓦解 → 全清。触发条件： DSP 双寡头被打破（Google TPU 全面转向自研/竞争对手替代） VMware 整合失败导致商誉减值 >$10B AI CapEx 结构性崩塌 | > 为什么不用 MA60：Beta 1.43 + ATR 5.4% = 高波动 A 型。MA60($386) 离现价仅 2.6%（0.5 ATR），日内噪声就能触发。A 型有估值底，不需要紧止损。MA200($355) 距现价 10.5%（2 ATR），给趋势呼吸空间。</div>
-      <div class="plan-row plan-profit"><strong>止盈</strong> &nbsp; $480（Forward PE ~25x + 接近前高 $495）→ 卖 20 股，回收 ~$9,600 | $580（Forward PE ~30x + 分析师高区）→ 卖 25 股，回收 ~$14,500 | $700+ 或 PE>35x → 卖 25 股，回收 ~$17,500，留 25 股底仓 | > 三档全触：回收 ~$41,600（已超过 $36,500 总成本），留 25 股底仓。A 型的核心——「止盈不急，让复利继续跑」。</div>
+      <div class="plan-hdr"><span class="plan-ttl">📋 交易计划 v3</span><span class="plan-tag"></span></div>
+      <div class="plan-row"><strong>持仓</strong> &nbsp; 底仓 50 股 + 波段仓 0 股（拟建） | 总 50 股</div>
+      <div class="plan-row plan-entry"><strong>加仓</strong> &nbsp; 买20股(PEG<0.5 + 止跌确认) · 买20股(PEG仍<0.5 + 再次止跌) · 买10股(PEG<0.3 极端机会)</div>
+      <div class="plan-row plan-profit"><strong>止盈</strong> &nbsp; T1 ~$426-445→卖波段仓 50% · T2 ~$484+→卖波段仓剩余 50%</div>
+      <div class="plan-row plan-signal"><strong>止跌确认</strong> &nbsp; 4选2 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</div>
       <div class="plan-insight">💡 【观望】AVGO缩量震荡收跌，逼近MA60关键支撑，等待390加仓信号确认</div>
     </div>
 
@@ -280,6 +280,13 @@
 (function(){
 var K='mf_seen_',P='mf_reply_';
 var els=document.querySelectorAll('[data-stock]');
+// 预计算每只股票的最新日期（个股页有多个不同日期的链接，防止点旧链接覆盖正确标记）
+var maxDt={};
+for(var i=0;i<els.length;i++){
+var sn=els[i].getAttribute('data-stock');
+var sd=els[i].getAttribute('data-date');
+if(!maxDt[sn]||sd>maxDt[sn])maxDt[sn]=sd;
+}
 for(var i=0;i<els.length;i++){var e=els[i];
 var n=e.getAttribute('data-stock');
 var d=e.getAttribute('data-date');
@@ -288,14 +295,15 @@ var m=e.getAttribute('data-market')||'us';
 var sk=K+n,rk=P+n+'_'+d;
 var h=localStorage.getItem(sk)||'';
 var rs=localStorage.getItem(rk)||'';
+var md=maxDt[n];
 if(d>h||(r&&rs!=='1')){var dot=document.createElement('span');
 dot.className='new-dot new-dot-'+m;e.insertBefore(dot,e.firstChild);
 (function(dt,rn){e.addEventListener('click',function(){
-localStorage.setItem(K+this.getAttribute('data-stock'),dt);
+localStorage.setItem(K+this.getAttribute('data-stock'),md);
 if(rn){localStorage.setItem(P+this.getAttribute('data-stock')+'_'+dt,'1');}
 });})(d,r);}
 }})();
 window.addEventListener('pageshow',function(e){if(e.persisted)location.reload();});
-</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-11 16:26</div>
+</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-11 21:14</div>
 </body>
 </html>

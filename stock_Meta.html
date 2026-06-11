@@ -263,11 +263,11 @@
     <p style="font-size:12px;color:#94a3b8;margin-bottom:24px;">META</p>
 
     <div class="plan-card">
-      <div class="plan-hdr"><span class="plan-ttl">📋 交易计划 v3</span><span class="plan-tag"></span></div>
-      <div class="plan-row"><strong>持仓</strong> &nbsp; 80 股 @ $619.25 | 仓位 ~14.3%</div>
-      <div class="plan-row plan-entry"><strong>加仓</strong> &nbsp; MA20走平+站上$615 → 加20股，升至 ~16% · R:R 2.2:1 | 目标$691 止损$580。趋势刚修复时胜率偏低，小仓位试探 | 跌至$520放量反弹 → 加30股，升至 ~17% · R:R 3.1:1 | 目标$613 止损$490。结构支撑位反弹概率更高，赔率更优</div>
-      <div class="plan-row plan-stop"><strong>止损</strong> &nbsp; $580 收盘跌破+次日未收回 → 减至50股（~8%） | $580是20日低点，破了=短期结构失效。基本面没变，减仓不认输 | $520 跌破 → 清仓</div>
-      <div class="plan-row plan-profit"><strong>止盈</strong> &nbsp; $691卖1/4 · $743卖1/4 · $800+清仓</div>
+      <div class="plan-hdr"><span class="plan-ttl">📋 交易计划 v4</span><span class="plan-tag"></span></div>
+      <div class="plan-row"><strong>持仓</strong> &nbsp; 底仓 50 股 + 波段仓 30 股 | 总 80 股</div>
+      <div class="plan-row plan-entry"><strong>加仓</strong> &nbsp; 已有 买30股(—) · 拟加 买20股(PEG<0.5 + 止跌确认（2个信号）)</div>
+      <div class="plan-row plan-profit"><strong>止盈</strong> &nbsp; T1 ~$796-832→卖波段仓 50% · T2 ~$904+→卖波段仓剩余 50%</div>
+      <div class="plan-row plan-signal"><strong>止跌确认</strong> &nbsp; 4选2 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</div>
       <div class="plan-insight">💡 【持有】欧盟反垄断施压，580支撑面临考验，继续观望等信号</div>
     </div>
 
@@ -285,6 +285,13 @@
 (function(){
 var K='mf_seen_',P='mf_reply_';
 var els=document.querySelectorAll('[data-stock]');
+// 预计算每只股票的最新日期（个股页有多个不同日期的链接，防止点旧链接覆盖正确标记）
+var maxDt={};
+for(var i=0;i<els.length;i++){
+var sn=els[i].getAttribute('data-stock');
+var sd=els[i].getAttribute('data-date');
+if(!maxDt[sn]||sd>maxDt[sn])maxDt[sn]=sd;
+}
 for(var i=0;i<els.length;i++){var e=els[i];
 var n=e.getAttribute('data-stock');
 var d=e.getAttribute('data-date');
@@ -293,14 +300,15 @@ var m=e.getAttribute('data-market')||'us';
 var sk=K+n,rk=P+n+'_'+d;
 var h=localStorage.getItem(sk)||'';
 var rs=localStorage.getItem(rk)||'';
+var md=maxDt[n];
 if(d>h||(r&&rs!=='1')){var dot=document.createElement('span');
 dot.className='new-dot new-dot-'+m;e.insertBefore(dot,e.firstChild);
 (function(dt,rn){e.addEventListener('click',function(){
-localStorage.setItem(K+this.getAttribute('data-stock'),dt);
+localStorage.setItem(K+this.getAttribute('data-stock'),md);
 if(rn){localStorage.setItem(P+this.getAttribute('data-stock')+'_'+dt,'1');}
 });})(d,r);}
 }})();
 window.addEventListener('pageshow',function(e){if(e.persisted)location.reload();});
-</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-11 16:26</div>
+</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-11 21:14</div>
 </body>
 </html>
