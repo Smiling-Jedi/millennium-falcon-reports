@@ -136,6 +136,17 @@
   "港股": [
     {
       "date": "2026-06-11",
+      "doc_url": "https://www.feishu.cn/docx/H834dkuE3oHhBsxiHrncV8Dcnzc",
+      "doc_id": "H834dkuE3oHhBsxiHrncV8Dcnzc",
+      "update_time": "13:30",
+      "report_title": "科技拖累分化加剧",
+      "input_tokens": 11112,
+      "output_tokens": 3206,
+      "prompt_version": "0.3.1",
+      "stock_count": 9
+    },
+    {
+      "date": "2026-06-11",
       "doc_url": "https://www.feishu.cn/docx/LlNLdE9FhoGCnZxSWbgc1l1Fn6d",
       "doc_id": "LlNLdE9FhoGCnZxSWbgc1l1Fn6d",
       "update_time": "12:34",
