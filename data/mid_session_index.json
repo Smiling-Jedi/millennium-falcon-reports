@@ -136,6 +136,17 @@
   "港股": [
     {
       "date": "2026-06-11",
+      "doc_url": "https://www.feishu.cn/docx/Keufdt5kKoaTSixlnUFc1lb0nGg",
+      "doc_id": "Keufdt5kKoaTSixlnUFc1lb0nGg",
+      "update_time": "14:17",
+      "report_title": null,
+      "input_tokens": 11308,
+      "output_tokens": 3231,
+      "prompt_version": "0.3.3",
+      "stock_count": 9
+    },
+    {
+      "date": "2026-06-11",
       "doc_url": "https://www.feishu.cn/docx/IhOmdujAro9LsAxfCaQclrUTnef",
       "doc_id": "IhOmdujAro9LsAxfCaQclrUTnef",
       "update_time": "13:45",
