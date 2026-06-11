@@ -33,7 +33,6 @@
         }
         .treemap-wrap {
             padding: 8px 16px 24px;
-            height: calc(100vh - 80px);
             display: flex;
             flex-direction: column;
             gap: 3px;
@@ -249,53 +248,37 @@ function squarify(values, x, y, width, height) {
     const total = values.reduce((s, v) => s + v.value, 0);
     if (total === 0) return values.map(v => ({...v, x, y, w: 0, h: 0}));
 
-    // 按 weight 降序排列
+    // 按 weight 降序排列，不合并，每只股票都显示
     let items = values.map(v => ({...v, norm: v.value / total})).sort((a, b) => b.norm - a.norm);
     const result = [];
-    const MIN_CELL_W = 22; // 最小宽度 22%
-    const MIN_CELL_H = 18; // 最小高度 18%
-
-    // 合并极小项（< 3% 且股票数 > 5）
-    let merged = [];
-    let tinySum = 0;
-    let tinyItems = [];
-    for (const item of items) {
-        if (item.norm < 0.03 && items.length > 5) {
-            tinySum += item.norm;
-            tinyItems.push(item);
-        } else {
-            merged.push(item);
-        }
-    }
-    if (tinyItems.length > 0) {
-        merged.push({
-            name: tinyItems.map(t => t.name).join('/').substring(0, 8) + '..',
-            norm: tinySum,
-            isGroup: true,
-            change_rate: 0,
-            role: '底仓',
-            weight: Math.round(tinySum * 100 * 10) / 10
-        });
-    }
-    items = merged.sort((a, b) => b.norm - a.norm);
+    const MIN_CELL_W = 20;  // 最小宽度 20%
+    const MIN_CELL_H = 14;  // 最小高度 14%
 
     // 水平条带布局：从上到下，每行1-3只
     let remainingH = height;
     let currentY = y;
 
     while (items.length > 0) {
-        // 决定当前行放几只
-        let rowCount = Math.min(items.length, items[0].norm > 0.5 ? 1 : items[0].norm > 0.3 ? 2 : 3);
-        if (items.length === 1) rowCount = 1;
+        // 决定当前行放几只：大单只占一行，其他2-3只
+        let rowCount;
+        if (items.length === 1) {
+            rowCount = 1;
+        } else if (items[0].norm > 0.45) {
+            rowCount = 1;
+        } else if (items.length === 2) {
+            rowCount = 2;
+        } else {
+            rowCount = 3;
+        }
+        rowCount = Math.min(rowCount, items.length);
 
         const rowItems = items.slice(0, rowCount);
         const rowSum = rowItems.reduce((s, it) => s + it.norm, 0);
 
-        // 行高度（至少 MIN_CELL_H）
+        // 行高度（至少 MIN_CELL_H，最多不超过剩余高度）
         let rowH = (rowSum / total) * height;
         rowH = Math.max(rowH, MIN_CELL_H);
         rowH = Math.min(rowH, remainingH);
-        if (items.length === rowCount) rowH = remainingH; // 最后一行占满
 
         // 行内按 norm 比例分配宽度
         const rowTotal = rowItems.reduce((s, it) => s + it.norm, 0);
@@ -307,7 +290,7 @@ function squarify(values, x, y, width, height) {
             let cellW = (it.norm / rowTotal) * width;
             cellW = Math.max(cellW, MIN_CELL_W);
             cellW = Math.min(cellW, remainingW);
-            if (i === rowItems.length - 1) cellW = remainingW; // 最后一个占满剩余
+            if (i === rowItems.length - 1) cellW = remainingW;
 
             result.push({...it, x: currentX, y: currentY, w: cellW, h: rowH});
             currentX += cellW;
@@ -322,56 +305,53 @@ function squarify(values, x, y, width, height) {
     return result;
 }
 
+// ===== 行布局算法（固定高度行，宽度按仓位比例） =====
+function layoutRows(items, containerW) {
+    const total = items.reduce((s, v) => s + v.value, 0);
+    if (total === 0) return [];
+
+    const sorted = items.map(v => ({...v, norm: v.value / total})).sort((a, b) => b.norm - a.norm);
+    const MIN_CELL_W = 22;  // 最小宽度 %
+    const ROW_H = 56;       // 每行固定高度 px
+    const result = [];
+
+    while (sorted.length > 0) {
+        let rowCount;
+        if (sorted.length === 1) rowCount = 1;
+        else if (sorted[0].norm > 0.5) rowCount = 1;
+        else if (sorted.length === 2) rowCount = 2;
+        else rowCount = 3;
+        rowCount = Math.min(rowCount, sorted.length);
+
+        const rowItems = sorted.slice(0, rowCount);
+        const rowTotal = rowItems.reduce((s, it) => s + it.norm, 0);
+
+        let currentX = 0;
+        let remainingW = 100;
+        for (let i = 0; i < rowItems.length; i++) {
+            const it = rowItems[i];
+            let cellW = (it.norm / rowTotal) * 100;
+            cellW = Math.max(cellW, MIN_CELL_W);
+            cellW = Math.min(cellW, remainingW);
+            if (i === rowItems.length - 1) cellW = remainingW;
+            result.push({...it, w: cellW, h: ROW_H});
+            currentX += cellW;
+            remainingW -= cellW;
+        }
+        sorted.splice(0, rowCount);
+    }
+    return result;
+}
+
 // ===== 渲染 =====
 function renderTreemap() {
     const wrap = document.getElementById('treemapWrap');
-    const wrapRect = wrap.getBoundingClientRect();
-    const wrapW = wrapRect.width;
-    const wrapH = wrapRect.height;
+    wrap.innerHTML = '';
 
-    // 计算三个市场的总权重
-    const totalMV = Object.values(portfolioData).reduce((s, m) => s + m.total_market_value, 0);
-    const marketWeights = {};
-    for (const [name, data] of Object.entries(portfolioData)) {
-        marketWeights[name] = data.total_market_value / totalMV;
-    }
-
-    // 分配高度（设最小高度 18%）
-    const minH = 0.18;
-    let adjWeights = {};
-    let excess = 0;
-    let normalSum = 0;
-    for (const [name, w] of Object.entries(marketWeights)) {
-        if (w < minH) {
-            adjWeights[name] = minH;
-            excess += minH - w;
-        } else {
-            normalSum += w;
-        }
-    }
-    for (const [name, w] of Object.entries(marketWeights)) {
-        if (w >= minH) {
-            adjWeights[name] = w - (excess * w / normalSum);
-        }
-    }
-
-    let currentY = 0;
     for (const [marketName, data] of Object.entries(portfolioData)) {
         const config = marketConfig[marketName];
-        const mktH = adjWeights[marketName] * wrapH;
 
-        // 市场容器
-        const section = document.createElement('div');
-        section.className = `market-section ${config.class}`;
-        section.style.height = mktH + 'px';
-
-        // 市场标签
-        const label = document.createElement('div');
-        label.className = 'market-label';
-        label.innerHTML = `<span class="dot"></span>${marketName} · ${data.positions.length}只`;
-        section.appendChild(label);
-
-        // Treemap 单元格
+        // 市场容器 - 高度根据行数自动
         const items = data.positions.map(p => ({
             value: p.market_value,
             name: p.name,
@@ -379,28 +359,63 @@ function renderTreemap() {
             role: p.role,
             weight: p.weight
         }));
+        const rows = layoutRows(items);
+        const rowCount = new Set(rows.map((r, i) => {
+            let count = 0, idx = 0;
+            for (let j = 0; j <= i; j++) {
+                if (j === 0 || (rows[j-1] && rows.slice(0, j).reduce((s, it) => s + it.w, 0) + rows[j].w > 100)) count++;
+            }
+            return count;
+        })).size;
+        // 更简单的方法：根据rows数量推算行数
+        let actualRows = 0, acc = 0;
+        for (const r of rows) {
+            if (acc + r.w > 100) { actualRows++; acc = r.w; }
+            else if (acc === 0) { actualRows++; acc = r.w; }
+            else { acc += r.w; }
+        }
 
-        const cells = squarify(items, 0, 0, 100, 100);
+        const sectionH = 28 + actualRows * 56; // 标签28px + 每行56px
 
-        for (const cell of cells) {
-            const pos = data.positions.find(p => p.name === cell.name) ||
-                       (cell.isGroup && cell.children ? cell.children[0] : null);
+        const section = document.createElement('div');
+        section.className = `market-section ${config.class}`;
+        section.style.height = sectionH + 'px';
+
+        // 市场标签
+        const label = document.createElement('div');
+        label.className = 'market-label';
+        label.innerHTML = `<span class="dot"></span>${marketName} · ${data.positions.length}只`;
+        section.appendChild(label);
+
+        // 渲染单元格
+        let currentY = 28;
+        let currentX = 0;
+        let rowAcc = 0;
+
+        for (const cell of rows) {
+            if (rowAcc + cell.w > 100 + 0.1) {
+                currentY += 56;
+                currentX = 0;
+                rowAcc = 0;
+            }
+
+            const pos = data.positions.find(p => p.name === cell.name);
             if (!pos) continue;
 
             const el = document.createElement('a');
             el.className = 'treemap-cell';
             el.href = '#';
-            el.style.left = cell.x + '%';
-            el.style.top = cell.y + '%';
+            el.style.left = currentX + '%';
+            el.style.top = currentY + 'px';
             el.style.width = cell.w + '%';
-            el.style.height = cell.h + '%';
+            el.style.height = cell.h + 'px';
 
             const isWatch = pos.role === '观察';
             const chgClass = pos.change_rate > 0 ? 'up' : pos.change_rate < 0 ? 'down' : 'flat';
             const watchClass = isWatch ? 'watch' : '';
 
-            const showFull = cell.w > 20 && cell.h > 25;
-            const showMeta = cell.w > 25 && cell.h > 35;
+            const showFull = cell.w > 22;
+            const showMeta = cell.w > 28;
 
             let nameDisplay = pos.name;
             if (!showFull && pos.name.length > 3) {
@@ -420,10 +435,11 @@ function renderTreemap() {
             `;
 
             section.appendChild(el);
+            currentX += cell.w;
+            rowAcc += cell.w;
         }
 
         wrap.appendChild(section);
-        currentY += mktH;
     }
 }
 

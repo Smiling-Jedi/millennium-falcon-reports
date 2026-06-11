@@ -1,6 +1,17 @@
 {
   "A股": [
     {
+      "date": "2026-06-11",
+      "doc_url": "https://www.feishu.cn/docx/LZ0bdAIkxo4nQWx0X7wcER0In1c",
+      "doc_id": "LZ0bdAIkxo4nQWx0X7wcER0In1c",
+      "update_time": "12:33",
+      "report_title": "题材重挫，银行超买承压",
+      "input_tokens": 13083,
+      "output_tokens": 5695,
+      "prompt_version": "0.3.0",
+      "stock_count": 11
+    },
+    {
       "date": "2026-06-10",
       "doc_url": "https://www.feishu.cn/docx/NLWkdYoJEopP10xA8gacOWKwntb",
       "doc_id": "NLWkdYoJEopP10xA8gacOWKwntb",
@@ -123,6 +134,17 @@
     }
   ],
   "港股": [
+    {
+      "date": "2026-06-11",
+      "doc_url": "https://www.feishu.cn/docx/LlNLdE9FhoGCnZxSWbgc1l1Fn6d",
+      "doc_id": "LlNLdE9FhoGCnZxSWbgc1l1Fn6d",
+      "update_time": "12:34",
+      "report_title": "恒生承压阿里领跌 建滔逆市飙升",
+      "input_tokens": 10367,
+      "output_tokens": 2718,
+      "prompt_version": "0.3.0",
+      "stock_count": 9
+    },
     {
       "date": "2026-06-09",
       "doc_url": "https://www.feishu.cn/docx/OWrSdbnb5oOoSvxqL12cGnZynvb",
