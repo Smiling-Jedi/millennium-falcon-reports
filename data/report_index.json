@@ -1049,6 +1049,138 @@
         "input_tokens": 4292,
         "output_tokens": 2954,
         "prompt_version": "1.1.0"
+      },
+      {
+        "name": "比亚迪",
+        "code": "SZ.002594",
+        "doc_url": "https://www.feishu.cn/docx/FUvid2R3uoAR6ZxJcFecBeZ0nqb",
+        "doc_id": "FUvid2R3uoAR6ZxJcFecBeZ0nqb",
+        "date": "2026-06-11",
+        "report_title": "【持有】价跌量缩空头主导，持仓观望等待MA20走平信号",
+        "change_rate": -0.56,
+        "input_tokens": 3461,
+        "output_tokens": 2822,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "阳光电源",
+        "code": "SZ.300274",
+        "doc_url": "https://www.feishu.cn/docx/L2RkdmNxDolae7xA4yHcZajYnFf",
+        "doc_id": "L2RkdmNxDolae7xA4yHcZajYnFf",
+        "date": "2026-06-11",
+        "report_title": "【持有】放量反弹站上MA60，左侧加仓条件未触发",
+        "change_rate": 2.23,
+        "input_tokens": 4417,
+        "output_tokens": 3289,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "宁德时代",
+        "code": "SZ.300750",
+        "doc_url": "https://www.feishu.cn/docx/VHHGdTQSSo6pGjx7tY2cH8VdnKc",
+        "doc_id": "VHHGdTQSSo6pGjx7tY2cH8VdnKc",
+        "date": "2026-06-11",
+        "report_title": null,
+        "change_rate": -1.62,
+        "input_tokens": 4532,
+        "output_tokens": 3237,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "招商银行",
+        "code": "SH.600036",
+        "doc_url": "https://www.feishu.cn/docx/Pfikde4y9oBigAxVCdjcamnsndg",
+        "doc_id": "Pfikde4y9oBigAxVCdjcamnsndg",
+        "date": "2026-06-11",
+        "report_title": "【观望】缩量盘整，均线纠缠，静待MA60突破信号",
+        "change_rate": -0.44,
+        "input_tokens": 3266,
+        "output_tokens": 2515,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "兴业银行",
+        "code": "SH.601166",
+        "doc_url": "https://www.feishu.cn/docx/HjPUdQyzPonEwVxVGK4cjnUMn2b",
+        "doc_id": "HjPUdQyzPonEwVxVGK4cjnUMn2b",
+        "date": "2026-06-11",
+        "report_title": null,
+        "change_rate": -0.53,
+        "input_tokens": 3442,
+        "output_tokens": 3086,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "交通银行",
+        "code": "SH.601328",
+        "doc_url": "https://www.feishu.cn/docx/WUkVd5E68oKjOXx4VZlcL1IlnKg",
+        "doc_id": "WUkVd5E68oKjOXx4VZlcL1IlnKg",
+        "date": "2026-06-11",
+        "report_title": null,
+        "change_rate": 0.43,
+        "input_tokens": 3283,
+        "output_tokens": 2806,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "中来股份",
+        "code": "SZ.300393",
+        "doc_url": "https://www.feishu.cn/docx/O88sdBTiGo2cGNxPiDgcS6zOnje",
+        "doc_id": "O88sdBTiGo2cGNxPiDgcS6zOnje",
+        "date": "2026-06-11",
+        "report_title": "【持有】地量阴跌继续探底，观察仓按兵不动等信号",
+        "change_rate": -0.85,
+        "input_tokens": 2455,
+        "output_tokens": 2456,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "机器人ETF华夏",
+        "code": "SH.562500",
+        "doc_url": "https://www.feishu.cn/docx/U3apdJ5a8oD7A8x4EZzcyVGLnsb",
+        "doc_id": "U3apdJ5a8oD7A8x4EZzcyVGLnsb",
+        "date": "2026-06-11",
+        "report_title": "【观望】政策利好难敌估值压缩，耐心等待入场档位触发",
+        "change_rate": -3.54,
+        "input_tokens": 4058,
+        "output_tokens": 3205,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "医药ETF易方达",
+        "code": "SH.512010",
+        "doc_url": "https://www.feishu.cn/docx/F36Pdt6eKomM9Jxnykbc1eDAnme",
+        "doc_id": "F36Pdt6eKomM9Jxnykbc1eDAnme",
+        "date": "2026-06-11",
+        "report_title": "【观望】多空平衡待方向，下行趋势未破，减仓后保持观望",
+        "change_rate": 0.0,
+        "input_tokens": 4596,
+        "output_tokens": 3030,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "纳指ETF国泰",
+        "code": "SH.513100",
+        "doc_url": "https://www.feishu.cn/docx/HDUCdx4CyoF8uyxe3AHcFSwenze",
+        "doc_id": "HDUCdx4CyoF8uyxe3AHcFSwenze",
+        "date": "2026-06-11",
+        "report_title": null,
+        "change_rate": -0.47,
+        "input_tokens": 3250,
+        "output_tokens": 3217,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "润泽科技",
+        "code": "SZ.300442",
+        "doc_url": "https://www.feishu.cn/docx/LJyxd9lnLoPmJ7x4xJsctvsXndc",
+        "doc_id": "LJyxd9lnLoPmJ7x4xJsctvsXndc",
+        "date": "2026-06-11",
+        "report_title": "【观望】趋势空头延续，等待解禁落地与估值修复",
+        "change_rate": -3.75,
+        "input_tokens": 3833,
+        "output_tokens": 3004,
+        "prompt_version": "1.1.0"
       }
     ],
     "港股": [
@@ -3056,6 +3188,79 @@
       }
     ]
   },
-  "watchlist": [],
-  "update_time": "2026-06-10 16:26"
+  "watchlist": [
+    {
+      "code": "SZ.300442",
+      "name": "润泽科技",
+      "shares": 300,
+      "avg_cost": 90.93,
+      "role": "观察",
+      "market": "A股"
+    },
+    {
+      "code": "SH.600406",
+      "name": "国电南瑞",
+      "shares": 0,
+      "avg_cost": 0,
+      "role": "观察",
+      "market": "A股"
+    },
+    {
+      "code": "SH.600183",
+      "name": "生益科技",
+      "shares": 0,
+      "avg_cost": 0,
+      "role": "观察",
+      "market": "A股"
+    },
+    {
+      "code": "US.CRCL",
+      "name": "Circle",
+      "shares": 0,
+      "avg_cost": 0,
+      "role": "观察",
+      "market": "美股"
+    },
+    {
+      "code": "US.LITE",
+      "name": "Lumentum",
+      "shares": 0,
+      "avg_cost": 0,
+      "role": "观察",
+      "market": "美股"
+    },
+    {
+      "code": "US.PLTR",
+      "name": "Palantir",
+      "shares": 0,
+      "avg_cost": 0,
+      "role": "观察",
+      "market": "美股"
+    },
+    {
+      "code": "US.SE",
+      "name": "Sea",
+      "shares": 0,
+      "avg_cost": 0,
+      "role": "观察",
+      "market": "美股"
+    },
+    {
+      "code": "US.AVGO",
+      "name": "博通",
+      "shares": 0,
+      "avg_cost": 0,
+      "role": "观察",
+      "market": "美股"
+    },
+    {
+      "code": "US.COHR",
+      "name": "Coherent",
+      "shares": 0,
+      "avg_cost": 0,
+      "role": "观察",
+      "market": "美股"
+    }
+  ],
+  "update_time": "2026-06-11 15:29"
 }
