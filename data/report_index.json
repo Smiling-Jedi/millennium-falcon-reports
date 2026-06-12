@@ -1181,6 +1181,138 @@
         "input_tokens": 3833,
         "output_tokens": 3004,
         "prompt_version": "1.1.0"
+      },
+      {
+        "name": "比亚迪",
+        "code": "SZ.002594",
+        "doc_url": "https://www.feishu.cn/docx/UqlqdexIIo5yWfxgfSjcZYU6nTj",
+        "doc_id": "UqlqdexIIo5yWfxgfSjcZYU6nTj",
+        "date": "2026-06-12",
+        "report_title": "【观望】超跌反弹续涨2.0%，均线纠缠待明朗，继续按兵不动",
+        "change_rate": 2.0,
+        "input_tokens": 3700,
+        "output_tokens": 2711,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "阳光电源",
+        "code": "SZ.300274",
+        "doc_url": "https://www.feishu.cn/docx/OYMqdk3SQol1ynxfi9mcKIbKn4g",
+        "doc_id": "OYMqdk3SQol1ynxfi9mcKIbKn4g",
+        "date": "2026-06-12",
+        "report_title": "【观望】股价反弹但未触发入场条件，继续等待企稳信号",
+        "change_rate": 1.37,
+        "input_tokens": 4760,
+        "output_tokens": 2454,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "宁德时代",
+        "code": "SZ.300750",
+        "doc_url": "https://www.feishu.cn/docx/BpDadipGxoPxgJx5cAIcJ0qPnqg",
+        "doc_id": "BpDadipGxoPxgJx5cAIcJ0qPnqg",
+        "date": "2026-06-12",
+        "report_title": "【持有】反弹力度温和，关注 MA20 压制与入场区间距离",
+        "change_rate": 3.31,
+        "input_tokens": 4804,
+        "output_tokens": 2904,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "招商银行",
+        "code": "SH.600036",
+        "doc_url": "https://www.feishu.cn/docx/JVsjdMsinoDJXUxCcQpcZn97npc",
+        "doc_id": "JVsjdMsinoDJXUxCcQpcZn97npc",
+        "date": "2026-06-12",
+        "report_title": null,
+        "change_rate": 1.58,
+        "input_tokens": 3759,
+        "output_tokens": 2881,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "兴业银行",
+        "code": "SH.601166",
+        "doc_url": "https://www.feishu.cn/docx/Vu8ed38N4oQTufxZAwscCdtonoh",
+        "doc_id": "Vu8ed38N4oQTufxZAwscCdtonoh",
+        "date": "2026-06-12",
+        "report_title": "【持有】放量站上均线密集区，静待除息后企稳确认",
+        "change_rate": 1.75,
+        "input_tokens": 3696,
+        "output_tokens": 3682,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "交通银行",
+        "code": "SH.601328",
+        "doc_url": "https://www.feishu.cn/docx/DDYwdbUHtot0BWxASTec1j95nob",
+        "doc_id": "DDYwdbUHtot0BWxASTec1j95nob",
+        "date": "2026-06-12",
+        "report_title": null,
+        "change_rate": 2.44,
+        "input_tokens": 3627,
+        "output_tokens": 2631,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "中来股份",
+        "code": "SZ.300393",
+        "doc_url": "https://www.feishu.cn/docx/ThcJd6s67o2TahxWurbc2xdJnbg",
+        "doc_id": "ThcJd6s67o2TahxWurbc2xdJnbg",
+        "date": "2026-06-12",
+        "report_title": "【观望】弱势探底逼近地板，静待光伏催化破局",
+        "change_rate": -0.61,
+        "input_tokens": 3125,
+        "output_tokens": 2278,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "机器人ETF华夏",
+        "code": "SH.562500",
+        "doc_url": "https://www.feishu.cn/docx/Fka7dUfhKowwvux8MJacmtXJngg",
+        "doc_id": "Fka7dUfhKowwvux8MJacmtXJngg",
+        "date": "2026-06-12",
+        "report_title": "【持有】缩量平收，均线纠缠中耐心等待方向选择",
+        "change_rate": 0.0,
+        "input_tokens": 4390,
+        "output_tokens": 2581,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "医药ETF易方达",
+        "code": "SH.512010",
+        "doc_url": "https://www.feishu.cn/docx/VAKFdJLm1o0mDaxuS3Fcu9s8n5d",
+        "doc_id": "VAKFdJLm1o0mDaxuS3Fcu9s8n5d",
+        "date": "2026-06-12",
+        "report_title": "【持有】多空指标纠缠，静待MA20走平信号明确",
+        "change_rate": 0.0,
+        "input_tokens": 4924,
+        "output_tokens": 2773,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "纳指ETF国泰",
+        "code": "SH.513100",
+        "doc_url": "https://www.feishu.cn/docx/RdmpdA2o3o4WW4xGxkvcReG9nzf",
+        "doc_id": "RdmpdA2o3o4WW4xGxkvcReG9nzf",
+        "date": "2026-06-12",
+        "report_title": "【持有】溢价风险加剧，持仓暂持观望，关注MA60支撑",
+        "change_rate": 1.41,
+        "input_tokens": 3880,
+        "output_tokens": 2722,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "润泽科技",
+        "code": "SZ.300442",
+        "doc_url": "https://www.feishu.cn/docx/FgREdDvI9oU5GfxmZ59cfBObnLv",
+        "doc_id": "FgREdDvI9oU5GfxmZ59cfBObnLv",
+        "date": "2026-06-12",
+        "report_title": "【观望】趋势仍处空头环境，耐心等待中报与止跌信号",
+        "change_rate": -0.66,
+        "input_tokens": 4294,
+        "output_tokens": 2989,
+        "prompt_version": "1.1.0"
       }
     ],
     "港股": [
@@ -3442,5 +3574,5 @@
       "market": "A股"
     }
   ],
-  "update_time": "2026-06-12 11:27"
+  "update_time": "2026-06-12 15:28"
 }

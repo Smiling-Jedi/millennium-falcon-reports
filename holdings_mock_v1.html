@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>持仓股 Mockup v1 - 千年隼日报</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: #f8f9fa;
+            color: #334155;
+            padding: 28px 20px 48px;
+            max-width: 520px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .back {
+            font-size: 13px;
+            color: #94a3b8;
+            text-decoration: none;
+            margin-bottom: 16px;
+            display: inline-block;
+        }
+        h1 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 0.3px;
+        }
+        h1 img {
+            width: 26px;
+            height: 26px;
+            border-radius: 6px;
+            vertical-align: middle;
+            margin-right: 8px;
+            position: relative;
+            top: -2px;
+        }
+
+        /* Tab 栏 */
+        .tab-bar {
+            display: flex;
+            border-bottom: 1px solid #e2e8f0;
+            margin-bottom: 24px;
+            position: sticky;
+            top: 0;
+            background: #f8f9fa;
+            z-index: 10;
+            padding-top: 8px;
+        }
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 12px 0 10px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #94a3b8;
+            cursor: pointer;
+            position: relative;
+            transition: color .2s;
+        }
+        .tab.active { color: #334155; font-weight: 600; }
+        .tab::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 20%;
+            right: 20%;
+            height: 3px;
+            border-radius: 3px 3px 0 0;
+            background: transparent;
+            transition: background .2s;
+        }
+        .tab.active[data-market="a"]::after { background: #f87171; }
+        .tab.active[data-market="hk"]::after { background: #4ade80; }
+        .tab.active[data-market="us"]::after { background: #60a5fa; }
+
+        .tab-panel { display: none; }
+        .tab-panel.active { display: block; animation: fadeIn .25s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* 区域标题 */
+        .section-title {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: 600;
+            color: #475569;
+            margin: 24px 0 12px;
+            padding-left: 10px;
+            border-left: 3px solid #cbd5e1;
+        }
+        .section-title.main { border-color: #64748b; }
+        .section-title.watch { border-color: #fbbf24; }
+        .section-title.follow { border-color: #94a3b8; }
+        .section-meta {
+            font-size: 12px;
+            color: #94a3b8;
+            font-weight: 400;
+        }
+
+        /* 股票块 */
+        .stock-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .stock-item {
+            display: inline-flex;
+            align-items: center;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #475569;
+            background: #fff;
+            transition: all .15s;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+        }
+        .stock-item:hover { border-color: #94a3b8; }
+        .stock-item:active { transform: scale(0.98); }
+        .stock-item-up { border-color: #fecaca; }
+        .stock-item-down { border-color: #a5d6a7; }
+
+        /* 盘中速报 */
+        .mid-session {
+            margin-top: 28px;
+            padding: 16px;
+            background: #fff;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+        }
+        .mid-session-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #475569;
+            margin-bottom: 10px;
+        }
+        .mid-session-title a {
+            float: right;
+            font-size: 12px;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .mid-link {
+            display: block;
+            padding: 8px 0;
+            border-bottom: 1px solid #f1f5f9;
+            text-decoration: none;
+            color: #334155;
+            font-size: 14px;
+        }
+        .mid-link:last-child { border-bottom: none; }
+        .mid-date {
+            font-size: 11px;
+            color: #94a3b8;
+            margin-right: 8px;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 16px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 11px;
+            color: #94a3b8;
+            text-align: center;
+        }
+        .empty {
+            font-size: 13px;
+            color: #94a3b8;
+            padding: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back">← 返回首页</a>
+    <h1><img src="favicon-32x32.png" alt="">持仓股</h1>
+
+    <div class="tab-bar">
+        <div class="tab active" data-market="a" onclick="switchTab('a')">A股</div>
+        <div class="tab" data-market="hk" onclick="switchTab('hk')">港股</div>
+        <div class="tab" data-market="us" onclick="switchTab('us')">美股</div>
+    </div>
+
+    <!-- A股 -->
+    <div class="tab-panel active" id="panel-a">
+        <div class="section-title main">
+            <span>正式仓 · 10只</span>
+            <span class="section-meta">市值 ¥442.56万</span>
+        </div>
+        <div class="stock-list">
+            <a href="#" class="stock-item" style="font-size:1.45em;padding:10px 22px;">比亚迪</a>
+            <a href="#" class="stock-item" style="font-size:1.29em;padding:9px 19px;">医药ETF易方达</a>
+            <a href="#" class="stock-item" style="font-size:1.02em;padding:7px 14px;">阳光电源</a>
+            <a href="#" class="stock-item" style="font-size:0.97em;padding:7px 13px;">机器人ETF华夏</a>
+            <a href="#" class="stock-item" style="font-size:0.94em;padding:6px 13px;">兴业银行</a>
+            <a href="#" class="stock-item" style="font-size:0.87em;padding:6px 12px;">纳指ETF国泰</a>
+            <a href="#" class="stock-item" style="font-size:0.87em;padding:6px 12px;">宁德时代</a>
+            <a href="#" class="stock-item" style="font-size:0.86em;padding:6px 12px;">交通银行</a>
+            <a href="#" class="stock-item" style="font-size:0.86em;padding:6px 12px;">招商银行</a>
+            <a href="#" class="stock-item" style="font-size:0.85em;padding:6px 12px;">中来股份</a>
+        </div>
+
+        <div class="section-title watch">
+            <span>观察仓 · 1只</span>
+            <span class="section-meta">市值 ¥2.73万</span>
+        </div>
+        <div class="stock-list">
+            <a href="#" class="stock-item" style="font-size:0.85em;padding:6px 12px;">润泽科技</a>
+        </div>
+
+        <div class="section-title follow">
+            <span>关注仓 · 2只</span>
+            <span class="section-meta">未持仓</span>
+        </div>
+        <div class="stock-list">
+            <a href="#" class="stock-item" style="font-size:0.9em;padding:7px 14px;">国电南瑞</a>
+            <a href="#" class="stock-item" style="font-size:0.9em;padding:7px 14px;">生益科技</a>
+        </div>
+
+        <div class="mid-session">
+            <div class="mid-session-title">盘中速览 <a href="mid_session_a.html">查看全部 →</a></div>
+            <a href="#" class="mid-link"><span class="mid-date">06-12</span>A股早盘：新能源链企稳，银行板块小幅回调</a>
+            <a href="#" class="mid-link"><span class="mid-date">06-11</span>盘中：比亚迪放量突破，机器人ETF缩量整理</a>
+        </div>
+    </div>
+
+    <!-- 港股 -->
+    <div class="tab-panel" id="panel-hk">
+        <div class="section-title main">
+            <span>正式仓 · 9只</span>
+            <span class="section-meta">市值 HK$640.37万</span>
+        </div>
+        <div class="stock-list">
+            <a href="#" class="stock-item" style="font-size:1.45em;padding:10px 22px;">腾讯控股</a>
+            <a href="#" class="stock-item" style="font-size:1.25em;padding:9px 18px;">阿里巴巴-W</a>
+            <a href="#" class="stock-item" style="font-size:1.00em;padding:7px 14px;">粤海投资</a>
+            <a href="#" class="stock-item" style="font-size:0.99em;padding:7px 14px;">百济神州</a>
+            <a href="#" class="stock-item" style="font-size:0.88em;padding:6px 12px;">小米集团-W</a>
+            <a href="#" class="stock-item" style="font-size:0.86em;padding:6px 12px;">南方两倍做多三星电子</a>
+            <a href="#" class="stock-item" style="font-size:0.86em;padding:6px 12px;">舜宇光学科技</a>
+            <a href="#" class="stock-item" style="font-size:0.85em;padding:6px 12px;">美团-W</a>
+            <a href="#" class="stock-item" style="font-size:0.85em;padding:6px 12px;">建滔积层板</a>
+        </div>
+
+        <div class="section-title follow">
+            <span>关注仓 · 1只</span>
+            <span class="section-meta">未持仓</span>
+        </div>
+        <div class="stock-list">
+            <a href="#" class="stock-item" style="font-size:0.9em;padding:7px 14px;">恒瑞医药</a>
+        </div>
+
+        <div class="mid-session">
+            <div class="mid-session-title">盘中速览 <a href="mid_session_hk.html">查看全部 →</a></div>
+            <a href="#" class="mid-link"><span class="mid-date">06-12</span>港股午盘：科网股分化，腾讯守稳480港元</a>
+        </div>
+    </div>
+
+    <!-- 美股 -->
+    <div class="tab-panel" id="panel-us">
+        <div class="section-title main">
+            <span>正式仓 · 12只</span>
+            <span class="section-meta">市值 $35.11万</span>
+        </div>
+        <div class="stock-list">
+            <a href="#" class="stock-item" style="font-size:1.27em;padding:9px 18px;">特斯拉</a>
+            <a href="#" class="stock-item" style="font-size:1.15em;padding:8px 16px;">微软</a>
+            <a href="#" class="stock-item" style="font-size:1.15em;padding:8px 16px;">英伟达</a>
+            <a href="#" class="stock-item" style="font-size:1.14em;padding:8px 16px;">Meta</a>
+            <a href="#" class="stock-item" style="font-size:1.05em;padding:7px 14px;">SoFi</a>
+            <a href="#" class="stock-item" style="font-size:0.95em;padding:7px 13px;">博通</a>
+            <a href="#" class="stock-item" style="font-size:0.87em;padding:6px 12px;">Palantir</a>
+            <a href="#" class="stock-item" style="font-size:0.86em;padding:6px 12px;">Lumentum</a>
+            <a href="#" class="stock-item" style="font-size:0.85em;padding:6px 12px;">Sea</a>
+            <a href="#" class="stock-item" style="font-size:0.85em;padding:6px 12px;">Circle</a>
+            <a href="#" class="stock-item" style="font-size:0.85em;padding:6px 12px;">US.AXTI</a>
+            <a href="#" class="stock-item" style="font-size:0.85em;padding:6px 12px;">Coherent</a>
+        </div>
+
+        <div class="section-title follow">
+            <span>关注仓 · 3只</span>
+            <span class="section-meta">未持仓</span>
+        </div>
+        <div class="stock-list">
+            <a href="#" class="stock-item" style="font-size:0.9em;padding:7px 14px;">蔚来</a>
+            <a href="#" class="stock-item" style="font-size:0.9em;padding:7px 14px;">拼多多</a>
+            <a href="#" class="stock-item" style="font-size:0.9em;padding:7px 14px;">Rocket Lab</a>
+        </div>
+
+        <div class="mid-session">
+            <div class="mid-session-title">盘中速览 <span style="float:right;font-size:12px;color:#94a3b8;font-weight:400;">暂无</span></div>
+            <div class="empty">美股盘中速览尚未生成</div>
+        </div>
+    </div>
+
+    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-12 12:24</div>
+
+<script>
+function switchTab(m) {
+    document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.market === m));
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('active', p.id === 'panel-' + m));
+}
+</script>
+</body>
+</html>
