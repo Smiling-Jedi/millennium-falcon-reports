@@ -2320,6 +2320,102 @@
         "input_tokens": 1951,
         "output_tokens": 2164,
         "prompt_version": "1.1.0"
+      },
+      {
+        "name": "粤海投资",
+        "code": "HK.00270",
+        "doc_url": "https://www.feishu.cn/docx/CWz6dbkU4oWLBcxbTx7cQ8jtn5f",
+        "doc_id": "CWz6dbkU4oWLBcxbTx7cQ8jtn5f",
+        "date": "2026-06-12",
+        "report_title": "【持有】均线纠缠消化阻力，估值保护下继续持有收息",
+        "change_rate": 1.08,
+        "input_tokens": 3676,
+        "output_tokens": 2548,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "腾讯控股",
+        "code": "HK.00700",
+        "doc_url": "https://www.feishu.cn/docx/S6d3d6uNgo0wJkxYxZbcnqFon8d",
+        "doc_id": "S6d3d6uNgo0wJkxYxZbcnqFon8d",
+        "date": "2026-06-12",
+        "report_title": "【持有】高盛喊话估值见底，回购持续，但趋势未逆转",
+        "change_rate": 1.4,
+        "input_tokens": 4995,
+        "output_tokens": 2940,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "小米集团-W",
+        "code": "HK.01810",
+        "doc_url": "https://www.feishu.cn/docx/NFYPdlwOkoCGKgxJys7cH0o5nce",
+        "doc_id": "NFYPdlwOkoCGKgxJys7cH0o5nce",
+        "date": "2026-06-12",
+        "report_title": "【减仓】回购支撑有限，趋势空头未改，继续执行退出计划",
+        "change_rate": 1.39,
+        "input_tokens": 3290,
+        "output_tokens": 3138,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "建滔积层板",
+        "code": "HK.01888",
+        "doc_url": "https://www.feishu.cn/docx/ObVhdkikaodyzfxkljHcID9OnMd",
+        "doc_id": "ObVhdkikaodyzfxkljHcID9OnMd",
+        "date": "2026-06-12",
+        "report_title": "【持有】高位震荡消化涨幅，零成本持仓继续让利润奔跑",
+        "change_rate": -2.38,
+        "input_tokens": 3623,
+        "output_tokens": 3066,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "舜宇光学科技",
+        "code": "HK.02382",
+        "doc_url": "https://www.feishu.cn/docx/X4gzdlaYyo1YDLxcRUScHhixn1f",
+        "doc_id": "X4gzdlaYyo1YDLxcRUScHhixn1f",
+        "date": "2026-06-12",
+        "report_title": "【持有】股价反弹但未触计划条件，继续持有等待",
+        "change_rate": 0.85,
+        "input_tokens": 4282,
+        "output_tokens": 3188,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "美团-W",
+        "code": "HK.03690",
+        "doc_url": "https://www.feishu.cn/docx/WoiEdlJVzoWiijxohKic0f1hnTb",
+        "doc_id": "WoiEdlJVzoWiijxohKic0f1hnTb",
+        "date": "2026-06-12",
+        "report_title": "【观望】均线纠缠待方向确认，资金小单主导上攻乏力",
+        "change_rate": -0.26,
+        "input_tokens": 2563,
+        "output_tokens": 2182,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "百济神州",
+        "code": "HK.06160",
+        "doc_url": "https://www.feishu.cn/docx/Y6NddmIHQovzTIx8fzBcK3Oinsc",
+        "doc_id": "Y6NddmIHQovzTIx8fzBcK3Oinsc",
+        "date": "2026-06-12",
+        "report_title": "【观望】战略收缩引发抛压，耐心等待止跌信号与支撑确认",
+        "change_rate": 2.25,
+        "input_tokens": 4598,
+        "output_tokens": 3079,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "阿里巴巴-W",
+        "code": "HK.09988",
+        "doc_url": "https://www.feishu.cn/docx/WAEhdb78KoLNfbxhZufcnY8MnMb",
+        "doc_id": "WAEhdb78KoLNfbxhZufcnY8MnMb",
+        "date": "2026-06-12",
+        "report_title": "【持有】反弹遇阻均线空头，100港元不加仓线仍为核心纪律",
+        "change_rate": 2.61,
+        "input_tokens": 4301,
+        "output_tokens": 2393,
+        "prompt_version": "1.1.0"
       }
     ],
     "美股": [
@@ -3574,5 +3670,5 @@
       "market": "A股"
     }
   ],
-  "update_time": "2026-06-12 15:28"
+  "update_time": "2026-06-12 16:26"
 }
