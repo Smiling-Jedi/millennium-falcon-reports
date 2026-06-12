@@ -3293,6 +3293,126 @@
         "input_tokens": 3835,
         "output_tokens": 2322,
         "prompt_version": "1.1.0"
+      },
+      {
+        "name": "Meta",
+        "code": "US.META",
+        "doc_url": "https://www.feishu.cn/docx/IxfsdeohjordvmxVFcbcyXZBnge",
+        "doc_id": "IxfsdeohjordvmxVFcbcyXZBnge",
+        "date": "2026-06-12",
+        "report_title": null,
+        "change_rate": -0.45,
+        "input_tokens": 125,
+        "output_tokens": 3178,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "微软",
+        "code": "US.MSFT",
+        "doc_url": "https://www.feishu.cn/docx/NhxjdkiJrorUp7xSPn6cI3bEnzc",
+        "doc_id": "NhxjdkiJrorUp7xSPn6cI3bEnzc",
+        "date": "2026-06-12",
+        "report_title": "【观望】均线纠缠承压，估值溢价消化中，静待加仓条件成熟",
+        "change_rate": -1.77,
+        "input_tokens": 5131,
+        "output_tokens": 2806,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "英伟达",
+        "code": "US.NVDA",
+        "doc_url": "https://www.feishu.cn/docx/AjQvdHLisopOlexZOGtcsl36ntg",
+        "doc_id": "AjQvdHLisopOlexZOGtcsl36ntg",
+        "date": "2026-06-12",
+        "report_title": "【持有】MA60支撑初现，止跌信号观察中，继续持有",
+        "change_rate": 2.22,
+        "input_tokens": 3881,
+        "output_tokens": 4000,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "Palantir",
+        "code": "US.PLTR",
+        "doc_url": "https://www.feishu.cn/docx/V7HpdiS2JoEgMsxZW9hcBzlJnlb",
+        "doc_id": "V7HpdiS2JoEgMsxZW9hcBzlJnlb",
+        "date": "2026-06-12",
+        "report_title": null,
+        "change_rate": 0.67,
+        "input_tokens": 4050,
+        "output_tokens": 3198,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "SoFi",
+        "code": "US.SOFI",
+        "doc_url": "https://www.feishu.cn/docx/FmDrdTFEBosNZjxn8IZcnWwRnjc",
+        "doc_id": "FmDrdTFEBosNZjxn8IZcnWwRnjc",
+        "date": "2026-06-12",
+        "report_title": null,
+        "change_rate": 5.04,
+        "input_tokens": 3754,
+        "output_tokens": 2957,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "特斯拉",
+        "code": "US.TSLA",
+        "doc_url": "https://www.feishu.cn/docx/KRDNdTgHxobgWqxBW4Ac8yfdnGh",
+        "doc_id": "KRDNdTgHxobgWqxBW4Ac8yfdnGh",
+        "date": "2026-06-12",
+        "report_title": null,
+        "change_rate": 4.6,
+        "input_tokens": 2996,
+        "output_tokens": 2865,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "Sea",
+        "code": "US.SE",
+        "doc_url": "https://www.feishu.cn/docx/GNAld7jopoEHikxZtjhcl1zfnkP",
+        "doc_id": "GNAld7jopoEHikxZtjhcl1zfnkP",
+        "date": "2026-06-12",
+        "report_title": "【观望】MA200 关键位博弈，静待趋势明朗",
+        "change_rate": 3.94,
+        "input_tokens": 3799,
+        "output_tokens": 2740,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "博通",
+        "code": "US.AVGO",
+        "doc_url": "https://www.feishu.cn/docx/Cco0dXhv6onzLLxkxqccBX86n6U",
+        "doc_id": "Cco0dXhv6onzLLxkxqccBX86n6U",
+        "date": "2026-06-12",
+        "report_title": null,
+        "change_rate": 3.62,
+        "input_tokens": 4157,
+        "output_tokens": 3042,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "Coherent",
+        "code": "US.COHR",
+        "doc_url": "https://www.feishu.cn/docx/ULySdNbhqodyqExZN22c8eKan3z",
+        "doc_id": "ULySdNbhqodyqExZN22c8eKan3z",
+        "date": "2026-06-12",
+        "report_title": "【持有】股价反弹但波动未收敛，继续等待加仓信号",
+        "change_rate": 2.48,
+        "input_tokens": 3556,
+        "output_tokens": 2469,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "US.AXTI",
+        "code": "US.AXTI",
+        "doc_url": "https://www.feishu.cn/docx/DtbAdnHHooMxPnxBnkgcCWTLnnb",
+        "doc_id": "DtbAdnHHooMxPnxBnkgcCWTLnnb",
+        "date": "2026-06-12",
+        "report_title": null,
+        "change_rate": 3.58,
+        "input_tokens": 3799,
+        "output_tokens": 3142,
+        "prompt_version": "1.1.0"
       }
     ]
   },
@@ -3320,55 +3440,7 @@
       "avg_cost": 0,
       "role": "观察",
       "market": "A股"
-    },
-    {
-      "code": "US.CRCL",
-      "name": "Circle",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "观察",
-      "market": "美股"
-    },
-    {
-      "code": "US.LITE",
-      "name": "Lumentum",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "观察",
-      "market": "美股"
-    },
-    {
-      "code": "US.PLTR",
-      "name": "Palantir",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "观察",
-      "market": "美股"
-    },
-    {
-      "code": "US.SE",
-      "name": "Sea",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "观察",
-      "market": "美股"
-    },
-    {
-      "code": "US.AVGO",
-      "name": "博通",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "观察",
-      "market": "美股"
-    },
-    {
-      "code": "US.COHR",
-      "name": "Coherent",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "观察",
-      "market": "美股"
     }
   ],
-  "update_time": "2026-06-11 16:26"
+  "update_time": "2026-06-12 11:27"
 }
