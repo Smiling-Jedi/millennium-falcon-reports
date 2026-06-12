@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>持仓股 v17 - 千年隼日报</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #fafafa;
+            --paper: #ffffff;
+            --ink: #1a1a1a;
+            --ink-light: #6b6b6b;
+            --line: #e0e0e0;
+            --red: #c98b8b;
+            --green: #8fbfa3;
+            --blue: #8fa8bf;
+            --yellow: #d4b483;
+            --gray: #b8b8b8;
+            --dot: #8fa8bf;
+            --serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", serif;
+        }
+        body {
+            font-family: var(--serif);
+            background: var(--bg);
+            color: var(--ink);
+            padding: 32px 0 60px;
+            max-width: 540px;
+            margin: 0 auto;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        /* 统一水平边距 */
+        .page-pad {
+            padding-left: 22px;
+            padding-right: 22px;
+        }
+
+        /* 刊头 */
+        .masthead {
+            border-bottom: 1px solid var(--ink);
+            padding-bottom: 18px;
+            margin-bottom: 24px;
+        }
+        .masthead-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        .masthead-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .masthead-logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+        }
+        .masthead-title .zh {
+            display: block;
+            font-size: 26px;
+            font-weight: 600;
+            letter-spacing: 4px;
+            line-height: 1.2;
+        }
+        .masthead-title .en {
+            display: block;
+            font-size: 11px;
+            color: var(--ink-light);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 2px;
+        }
+        .masthead-date {
+            text-align: right;
+            font-size: 12px;
+            color: var(--ink-light);
+            line-height: 1.6;
+            letter-spacing: 0.5px;
+        }
+        .masthead-date .day {
+            font-size: 20px;
+            color: var(--ink);
+            font-weight: 500;
+        }
+        .masthead-tagline {
+            font-size: 11px;
+            color: var(--ink-light);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Tab */
+        .tab-bar {
+            display: flex;
+            border-bottom: 1px solid var(--line);
+            margin-bottom: 0;
+            background: var(--bg);
+        }
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 12px 0 10px;
+            font-size: 15px;
+            font-weight: 400;
+            color: var(--ink-light);
+            cursor: pointer;
+            position: relative;
+            transition: color .2s;
+            letter-spacing: 1px;
+        }
+        .tab.active { color: var(--ink); font-weight: 500; }
+        .tab::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 30%;
+            right: 30%;
+            height: 1px;
+            background: transparent;
+        }
+        .tab.active::after { background: var(--ink); }
+
+        /* 盘中速览 - 紧凑，无日期 */
+        .mid-bar {
+            padding: 12px 0;
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--line);
+        }
+        .mid-label {
+            font-size: 10px;
+            font-weight: 500;
+            color: var(--ink-light);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+        .mid-link {
+            display: block;
+            text-decoration: none;
+            color: var(--ink);
+            font-size: 15px;
+            line-height: 1.5;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .mid-link:hover { opacity: 0.7; }
+        .mid-meta {
+            text-align: right;
+            margin-top: 4px;
+            font-size: 11px;
+            color: var(--ink-light);
+        }
+        .mid-meta a {
+            color: var(--ink-light);
+            text-decoration: none;
+            letter-spacing: 0.5px;
+        }
+        .mid-empty { font-size: 15px; color: var(--ink-light); }
+
+        .tab-panel { display: none; }
+        .tab-panel.active { display: block; animation: fadeIn .25s ease; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        /* 区域标题 */
+        .section-title {
+            display: flex;
+            align-items: baseline;
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--ink);
+            margin: 26px 0 12px;
+            letter-spacing: 1px;
+        }
+        .section-title .count {
+            font-size: 12px;
+            color: var(--ink-light);
+            margin-left: 10px;
+            font-weight: 400;
+            letter-spacing: 0;
+        }
+
+        /* Grid 股票块 */
+        .stock-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+        .stock-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 52px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            background: var(--paper);
+            transition: all .15s;
+            border: 1px solid;
+            padding: 0 8px;
+            text-align: center;
+            line-height: 1.3;
+            position: relative;
+            overflow: hidden;
+        }
+        .stock-item:hover { opacity: 0.8; }
+        .stock-item:active { transform: scale(0.98); }
+        .stock-item.up { border-color: var(--red); color: var(--red); }
+        .stock-item.down { border-color: var(--green); color: var(--green); }
+        .stock-item.flat { border-color: var(--gray); color: var(--ink-light); }
+        .stock-item.large { grid-column: span 2; }
+        .stock-item .name {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 100%;
+        }
+        .new-dot {
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--dot);
+            animation: pulse 2s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.35; }
+        }
+
+        /* 关注仓 */
+        .follow-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .follow-item {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 42px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 400;
+            background: var(--paper);
+            border: 1px solid var(--line);
+            color: var(--ink-light);
+            padding: 0 16px;
+            position: relative;
+        }
+        .follow-item:hover { border-color: var(--ink-light); }
+
+        /* 更新时间 */
+        .update-hint {
+            font-size: 11px;
+            color: var(--ink-light);
+            margin-top: 24px;
+            padding-top: 12px;
+            border-top: 1px solid var(--line);
+            text-align: center;
+            letter-spacing: 0.5px;
+            font-style: italic;
+        }
+
+        .footer {
+            margin-top: 44px;
+            padding-top: 16px;
+            border-top: 1px solid var(--ink);
+            font-size: 11px;
+            color: var(--ink-light);
+            text-align: center;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="masthead page-pad">
+        <div class="masthead-top">
+            <div class="masthead-logo">
+                <img src="favicon-32x32.png" alt="">
+                <div class="masthead-title">
+                    <span class="zh">千年隼</span>
+                    <span class="en">Millennium Falcon</span>
+                </div>
+            </div>
+            <div class="masthead-date">
+                <div class="day">06/12</div>
+                <div>FRIDAY</div>
+            </div>
+        </div>
+        <div class="masthead-tagline">Daily Intelligence for Jedi's Portfolio</div>
+    </div>
+
+    <div class="tab-bar page-pad">
+        <div class="tab active" data-market="a" onclick="switchTab('a')">A股</div>
+        <div class="tab" data-market="hk" onclick="switchTab('hk')">港股</div>
+        <div class="tab" data-market="us" onclick="switchTab('us')">美股</div>
+    </div>
+
+    <div class="mid-bar page-pad" id="mid-bar-a">
+        <div class="mid-label">盘中速览</div>
+        <a href="#" class="mid-link">A股早盘：新能源链企稳，银行板块小幅回调</a>
+        <div class="mid-meta">
+            <a href="mid_session_a.html">查看全部 →</a>
+        </div>
+    </div>
+    <div class="mid-bar page-pad" id="mid-bar-hk" style="display:none;">
+        <div class="mid-label">盘中速览</div>
+        <a href="#" class="mid-link">港股午盘：科网股分化，腾讯守稳480港元</a>
+        <div class="mid-meta">
+            <a href="mid_session_hk.html">查看全部 →</a>
+        </div>
+    </div>
+    <div class="mid-bar page-pad" id="mid-bar-us" style="display:none;">
+        <div class="mid-label">盘中速览</div>
+        <div class="mid-empty">美股盘中速览尚未生成</div>
+    </div>
+
+    <!-- A股 -->
+    <div class="tab-panel active" id="panel-a">
+        <div class="section-title page-pad">正式仓<span class="count">10只</span></div>
+        <div class="stock-grid page-pad">
+            <a href="#" class="stock-item up large" data-stock="比亚迪" data-date="2026-06-12" data-market="a"><span class="name">比亚迪</span><span class="new-dot"></span></a>
+            <a href="#" class="stock-item down large" data-stock="医药ETF易方达" data-date="2026-06-11" data-market="a"><span class="name">医药ETF易方达</span></a>
+            <a href="#" class="stock-item up medium" data-stock="阳光电源" data-date="2026-06-12" data-market="a"><span class="name">阳光电源</span><span class="new-dot"></span></a>
+            <a href="#" class="stock-item down small" data-stock="机器人ETF华夏" data-date="2026-06-11" data-market="a"><span class="name">机器人ETF华夏</span></a>
+            <a href="#" class="stock-item up small" data-stock="兴业银行" data-date="2026-06-12" data-market="a"><span class="name">兴业银行</span><span class="new-dot"></span></a>
+            <a href="#" class="stock-item up small" data-stock="纳指ETF国泰" data-date="2026-06-11" data-market="a"><span class="name">纳指ETF国泰</span></a>
+            <a href="#" class="stock-item down small" data-stock="宁德时代" data-date="2026-06-11" data-market="a"><span class="name">宁德时代</span></a>
+            <a href="#" class="stock-item up small" data-stock="交通银行" data-date="2026-06-12" data-market="a"><span class="name">交通银行</span><span class="new-dot"></span></a>
+            <a href="#" class="stock-item down small" data-stock="招商银行" data-date="2026-06-11" data-market="a"><span class="name">招商银行</span></a>
+            <a href="#" class="stock-item down small" data-stock="中来股份" data-date="2026-06-11" data-market="a"><span class="name">中来股份</span></a>
+        </div>
+
+        <div class="section-title page-pad">观察仓<span class="count">1只</span></div>
+        <div class="stock-grid page-pad">
+            <a href="#" class="stock-item down small" data-stock="润泽科技" data-date="2026-06-11" data-market="a"><span class="name">润泽科技</span></a>
+        </div>
+
+        <div class="section-title page-pad">关注仓<span class="count">2只</span></div>
+        <div class="follow-list page-pad">
+            <a href="#" class="follow-item">国电南瑞</a>
+            <a href="#" class="follow-item">生益科技</a>
+        </div>
+
+        <div class="update-hint page-pad">A股日报更新于 06-12 12:24</div>
+    </div>
+
+    <!-- 港股 -->
+    <div class="tab-panel" id="panel-hk">
+        <div class="section-title page-pad">正式仓<span class="count">9只</span></div>
+        <div class="stock-grid page-pad">
+            <a href="#" class="stock-item down large" data-stock="腾讯控股" data-date="2026-06-12" data-market="hk"><span class="name">腾讯控股</span><span class="new-dot"></span></a>
+            <a href="#" class="stock-item down large" data-stock="阿里巴巴-W" data-date="2026-06-12" data-market="hk"><span class="name">阿里巴巴-W</span><span class="new-dot"></span></a>
+            <a href="#" class="stock-item up medium" data-stock="粤海投资" data-date="2026-06-12" data-market="hk"><span class="name">粤海投资</span><span class="new-dot"></span></a>
+            <a href="#" class="stock-item down medium" data-stock="百济神州" data-date="2026-06-11" data-market="hk"><span class="name">百济神州</span></a>
+            <a href="#" class="stock-item down small" data-stock="小米集团-W" data-date="2026-06-11" data-market="hk"><span class="name">小米集团-W</span></a>
+            <a href="#" class="stock-item down small" data-stock="南方两倍做多三星电子" data-date="2026-06-11" data-market="hk"><span class="name">南方两倍做多三星电子</span></a>
+            <a href="#" class="stock-item down small" data-stock="舜宇光学科技" data-date="2026-06-11" data-market="hk"><span class="name">舜宇光学科技</span></a>
+            <a href="#" class="stock-item down small" data-stock="美团-W" data-date="2026-06-11" data-market="hk"><span class="name">美团-W</span></a>
+            <a href="#" class="stock-item up small" data-stock="建滔积层板" data-date="2026-06-12" data-market="hk"><span class="name">建滔积层板</span><span class="new-dot"></span></a>
+        </div>
+
+        <div class="section-title page-pad">关注仓<span class="count">1只</span></div>
+        <div class="follow-list page-pad">
+            <a href="#" class="follow-item">恒瑞医药</a>
+        </div>
+
+        <div class="update-hint page-pad">港股日报更新于 06-12 12:24</div>
+    </div>
+
+    <!-- 美股 -->
+    <div class="tab-panel" id="panel-us">
+        <div class="section-title page-pad">正式仓<span class="count">12只</span></div>
+        <div class="stock-grid page-pad">
+            <a href="#" class="stock-item up large" data-stock="特斯拉" data-date="2026-06-12" data-market="us"><span class="name">特斯拉</span><span class="new-dot"></span></a>
+            <a href="#" class="stock-item down medium" data-stock="微软" data-date="2026-06-12" data-market="us"><span class="name">微软</span><span class="new-dot"></span></a>
+            <a href="#" class="stock-item up medium" data-stock="英伟达" data-date="2026-06-12" data-market="us"><span class="name">英伟达</span><span class="new-dot"></span></a>
+            <a href="#" class="stock-item down medium" data-stock="Meta" data-date="2026-06-12" data-market="us"><span class="name">Meta</span><span class="new-dot"></span></a>
+            <a href="#" class="stock-item up small" data-stock="SoFi" data-date="2026-06-12" data-market="us"><span class="name">SoFi</span><span class="new-dot"></span></a>
+            <a href="#" class="stock-item up small" data-stock="博通" data-date="2026-06-12" data-market="us"><span class="name">博通</span><span class="new-dot"></span></a>
+            <a href="#" class="stock-item up small" data-stock="Palantir" data-date="2026-06-12" data-market="us"><span class="name">Palantir</span><span class="new-dot"></span></a>
+            <a href="#" class="stock-item down small" data-stock="Lumentum" data-date="2026-06-12" data-market="us"><span class="name">Lumentum</span><span class="new-dot"></span></a>
+            <a href="#" class="stock-item up small" data-stock="Sea" data-date="2026-06-12" data-market="us"><span class="name">Sea</span><span class="new-dot"></span></a>
+            <a href="#" class="stock-item up small" data-stock="Circle" data-date="2026-06-09" data-market="us"><span class="name">Circle</span></a>
+            <a href="#" class="stock-item up small" data-stock="US.AXTI" data-date="2026-06-12" data-market="us"><span class="name">US.AXTI</span><span class="new-dot"></span></a>
+            <a href="#" class="stock-item up small" data-stock="Coherent" data-date="2026-06-12" data-market="us"><span class="name">Coherent</span><span class="new-dot"></span></a>
+        </div>
+
+        <div class="section-title page-pad">关注仓<span class="count">3只</span></div>
+        <div class="follow-list page-pad">
+            <a href="#" class="follow-item">蔚来</a>
+            <a href="#" class="follow-item">拼多多</a>
+            <a href="#" class="follow-item">Rocket Lab</a>
+        </div>
+
+        <div class="update-hint page-pad">美股日报更新于 06-12 06:18</div>
+    </div>
+
+    <div class="footer page-pad">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-12 12:24</div>
+
+<script>
+(function(){
+    var K='mf_holdings_seen_';
+    var items=document.querySelectorAll('.stock-item[data-stock]');
+    var maxDt={};
+    items.forEach(function(e){
+        var n=e.getAttribute('data-stock');
+        var d=e.getAttribute('data-date')||'';
+        if(!maxDt[n]||d>maxDt[n])maxDt[n]=d;
+    });
+    items.forEach(function(e){
+        var n=e.getAttribute('data-stock');
+        var d=e.getAttribute('data-date')||'';
+        var dot=e.querySelector('.new-dot');
+        if(!dot)return;
+        var seen=localStorage.getItem(K+n)||'';
+        if(d<=seen) dot.style.display='none';
+        e.addEventListener('click',function(){
+            localStorage.setItem(K+n,maxDt[n]||d);
+            dot.style.display='none';
+        });
+    });
+})();
+
+function switchTab(m) {
+    document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.market === m));
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('active', p.id === 'panel-' + m));
+    document.querySelectorAll('[id^="mid-bar-"]').forEach(b => b.style.display = b.id === 'mid-bar-' + m ? 'block' : 'none');
+}
+</script>
+</body>
+</html>

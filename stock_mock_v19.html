@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>比亚迪 - 千年隼日报</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #f7f5f2;
+            --paper: #ffffff;
+            --ink: #1c1c1c;
+            --ink-light: #7a7a7a;
+            --line: #e0ddd8;
+            --line-dark: #1c1c1c;
+            --red: #c27b7b;
+            --green: #7da88f;
+            --blue: #8a9fb5;
+            --gray: #999999;
+            --dot: #8a9fb5;
+            --pad-x: 24px;
+            --serif-zh: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", serif;
+            --serif-en: "Cormorant Garamond", "Playfair Display", "Georgia", serif;
+            --script: "Dancing Script", "Brush Script MT", "KaiTi", cursive;
+        }
+
+        html { -webkit-font-smoothing: antialiased; }
+
+        body {
+            font-family: var(--serif-zh);
+            background: var(--bg);
+            color: var(--ink);
+            padding: 36px 0 64px;
+            max-width: 520px;
+            margin: 0 auto;
+            line-height: 1.65;
+            font-size: 16px;
+        }
+
+        .container { padding-left: var(--pad-x); padding-right: var(--pad-x); }
+
+        /* 刊头 */
+        .masthead {
+            border-bottom: 1.5px solid var(--line-dark);
+            padding-bottom: 16px;
+            margin-bottom: 18px;
+        }
+        .masthead-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 8px;
+        }
+        .brand { display: flex; align-items: center; gap: 12px; }
+        .brand img { width: 42px; height: 42px; border-radius: 10px; }
+        .brand-title .zh {
+            display: block;
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: 5px;
+            line-height: 1.1;
+        }
+        .brand-title .en {
+            display: block;
+            font-family: var(--serif-en);
+            font-size: 11px;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: var(--ink-light);
+            margin-top: 2px;
+        }
+        .issue {
+            text-align: right;
+            font-family: var(--serif-en);
+        }
+        .issue .day { font-size: 30px; font-weight: 500; line-height: 1; color: var(--ink); }
+        .issue .month { font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--ink-light); margin-top: 2px; }
+        .tagline {
+            font-family: var(--script);
+            font-size: 15px;
+            color: var(--ink-light);
+            letter-spacing: 0.5px;
+        }
+
+        /* 返回 */
+        .back {
+            display: inline-flex;
+            align-items: center;
+            color: var(--ink-light);
+            text-decoration: none;
+            font-size: 13px;
+            margin-bottom: 18px;
+            transition: color .15s ease;
+        }
+        .back:hover { color: var(--ink); }
+        .back::before {
+            content: '←';
+            margin-right: 6px;
+            font-family: var(--serif-en);
+        }
+
+        /* 股票标题 */
+        .stock-header {
+            margin-bottom: 22px;
+        }
+        .stock-name {
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 6px;
+        }
+        .stock-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 13px;
+            color: var(--ink-light);
+        }
+        .mkt-tag {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 600;
+            padding: 2px 7px;
+            border-radius: 3px;
+            letter-spacing: 0.5px;
+            border: 1px solid;
+        }
+        .mkt-tag.a { border-color: var(--red); color: var(--red); }
+        .mkt-tag.hk { border-color: var(--green); color: var(--green); }
+        .mkt-tag.us { border-color: var(--blue); color: var(--blue); }
+
+        /* 交易计划卡片 */
+        .plan-card {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 18px 20px;
+            margin-bottom: 28px;
+        }
+        .plan-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--line);
+        }
+        .plan-title {
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .plan-status {
+            font-size: 11px;
+            font-weight: 500;
+            padding: 3px 9px;
+            border-radius: 3px;
+            border: 1px solid var(--line);
+            color: var(--ink-light);
+        }
+        .plan-row {
+            font-size: 14px;
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: var(--ink-light);
+        }
+        .plan-row strong {
+            color: var(--ink);
+            font-weight: 600;
+            margin-right: 8px;
+        }
+        .plan-insight {
+            margin-top: 14px;
+            padding-top: 14px;
+            border-top: 1px solid var(--line);
+            font-size: 14px;
+            color: var(--ink);
+            line-height: 1.6;
+        }
+
+        /* 历史日报 */
+        .section-title {
+            display: flex;
+            align-items: baseline;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--ink);
+            margin: 28px 0 12px;
+            letter-spacing: 1px;
+        }
+        .section-title .count {
+            font-size: 13px;
+            color: var(--ink-light);
+            margin-left: 10px;
+            font-weight: 400;
+        }
+        .report-list {
+            border-top: 1px solid var(--line);
+        }
+        .report-link {
+            display: flex;
+            align-items: baseline;
+            padding: 14px 0;
+            border-bottom: 1px solid var(--line);
+            text-decoration: none;
+            color: var(--ink);
+            font-size: 15px;
+            line-height: 1.5;
+            transition: opacity .15s ease;
+        }
+        .report-link:hover { opacity: 0.7; }
+        .report-date {
+            font-family: var(--serif-en);
+            font-size: 12px;
+            color: var(--ink-light);
+            margin-right: 12px;
+            min-width: 78px;
+            font-variant-numeric: tabular-nums;
+            flex-shrink: 0;
+        }
+        .report-title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .footer {
+            margin-top: 44px;
+            padding-top: 16px;
+            border-top: 1.5px solid var(--line-dark);
+            font-size: 11px;
+            color: var(--ink-light);
+            text-align: center;
+            letter-spacing: 1px;
+            font-family: var(--serif-en);
+        }
+    </style>
+</head>
+<body>
+    <header class="masthead container">
+        <div class="masthead-top">
+            <div class="brand">
+                <img src="favicon-32x32.png" alt="">
+                <div class="brand-title">
+                    <span class="zh">千年隼</span>
+                    <span class="en">Millennium Falcon</span>
+                </div>
+            </div>
+            <div class="issue">
+                <div class="day">12</div>
+                <div class="month">Jun · Friday</div>
+            </div>
+        </div>
+        <div class="tagline">May the force be with u</div>
+    </header>
+
+    <main class="container">
+        <a href="holdings.html" class="back">返回持仓页</a>
+
+        <div class="stock-header">
+            <h1 class="stock-name">比亚迪</h1>
+            <div class="stock-meta">
+                <span class="mkt-tag a">A股</span>
+                <span>002594</span>
+            </div>
+        </div>
+
+        <div class="plan-card">
+            <div class="plan-header">
+                <span class="plan-title">交易计划</span>
+                <span class="plan-status">持有</span>
+            </div>
+            <div class="plan-row"><strong>持仓</strong>15,000 股 @ 87.981</div>
+            <div class="plan-row"><strong>加仓</strong>MA20 走平 + 站上 ¥96 → 加仓 · R:R 待定</div>
+            <div class="plan-row"><strong>止损</strong>跌破 85.88（W3 低点 / 52 周低）→ 减仓 1/3 至 10,000 股</div>
+            <div class="plan-row"><strong>止盈</strong>机构目标均价 ¥167（+79% 空间），待 Master 补充</div>
+            <div class="plan-insight">【观望】超跌反弹续涨 2.0%，均线纠缠待明朗，继续按兵不动。</div>
+        </div>
+
+        <div class="section-title">历史日报<span class="count">11篇</span></div>
+        <div class="report-list">
+            <a href="#" class="report-link"><span class="report-date">2026-06-12</span><span class="report-title">【观望】超跌反弹续涨 2.0%，均线纠缠待明朗，继续按兵不动 →</span></a>
+            <a href="#" class="report-link"><span class="report-date">2026-06-11</span><span class="report-title">【持有】价跌量缩空头主导，持仓观望等待 MA20 走平信号 →</span></a>
+            <a href="#" class="report-link"><span class="report-date">2026-06-10</span><span class="report-title">日报 →</span></a>
+            <a href="#" class="report-link"><span class="report-date">2026-06-09</span><span class="report-title">【持有】多空交织，持仓观望 →</span></a>
+            <a href="#" class="report-link"><span class="report-date">2026-06-08</span><span class="report-title">日报 →</span></a>
+            <a href="#" class="report-link"><span class="report-date">2026-06-05</span><span class="report-title">弱势震荡守支撑，持有观察 →</span></a>
+            <a href="#" class="report-link"><span class="report-date">2026-06-04</span><span class="report-title">缩量失守短期均线，持有观察 →</span></a>
+            <a href="#" class="report-link"><span class="report-date">2026-06-03</span><span class="report-title">缩量回调测支撑，智能化成新锚 →</span></a>
+            <a href="#" class="report-link"><span class="report-date">2026-06-02</span><span class="report-title">缩量反弹遇均线压制 →</span></a>
+            <a href="#" class="report-link"><span class="report-date">2026-06-01</span><span class="report-title">放量破位，销量预警 →</span></a>
+            <a href="#" class="report-link"><span class="report-date">2026-05-29</span><span class="report-title">利好消化，技术承压 →</span></a>
+        </div>
+    </main>
+
+    <footer class="footer container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-12 16:27</footer>
+</body>
+</html>
