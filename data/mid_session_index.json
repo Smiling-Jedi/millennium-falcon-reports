@@ -1,6 +1,28 @@
 {
   "A股": [
     {
+      "date": "2026-06-12",
+      "doc_url": "https://www.feishu.cn/docx/WKVcd5t7ooR7nwxwEVhcjPW5n7b",
+      "doc_id": "WKVcd5t7ooR7nwxwEVhcjPW5n7b",
+      "update_time": "12:06",
+      "report_title": null,
+      "input_tokens": 14477,
+      "output_tokens": 5395,
+      "prompt_version": "0.4.0",
+      "stock_count": 11
+    },
+    {
+      "date": "2026-06-12",
+      "doc_url": "https://www.feishu.cn/docx/FGg4dv33Ro2uy3xPseNcQa13nNd",
+      "doc_id": "FGg4dv33Ro2uy3xPseNcQa13nNd",
+      "update_time": "11:36",
+      "report_title": "新能源强反，防御板块稳步攀升",
+      "input_tokens": 14120,
+      "output_tokens": 4174,
+      "prompt_version": "0.3.3",
+      "stock_count": 11
+    },
+    {
       "date": "2026-06-11",
       "doc_url": "https://www.feishu.cn/docx/LZ0bdAIkxo4nQWx0X7wcER0In1c",
       "doc_id": "LZ0bdAIkxo4nQWx0X7wcER0In1c",
@@ -134,6 +156,17 @@
     }
   ],
   "港股": [
+    {
+      "date": "2026-06-12",
+      "doc_url": "https://www.feishu.cn/docx/Axu7dKKVwoHUUjxtlDgcRNEBn5f",
+      "doc_id": "Axu7dKKVwoHUUjxtlDgcRNEBn5f",
+      "update_time": "12:10",
+      "report_title": null,
+      "input_tokens": 11015,
+      "output_tokens": 4828,
+      "prompt_version": "0.4.0",
+      "stock_count": 9
+    },
     {
       "date": "2026-06-11",
       "doc_url": "https://www.feishu.cn/docx/Keufdt5kKoaTSixlnUFc1lb0nGg",
