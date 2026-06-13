@@ -3641,6 +3641,162 @@
         "input_tokens": 3799,
         "output_tokens": 3142,
         "prompt_version": "1.1.0"
+      },
+      {
+        "name": "Circle",
+        "code": "US.CRCL",
+        "doc_url": "https://www.feishu.cn/docx/JvLodklnLoS1pWxbor0cKRksnkg",
+        "doc_id": "JvLodklnLoS1pWxbor0cKRksnkg",
+        "date": "2026-06-13",
+        "report_title": "【减仓】预警线已破，趋势全面走弱，建议减仓避险",
+        "change_rate": -5.8,
+        "input_tokens": 2734,
+        "output_tokens": 2622,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "Lumentum",
+        "code": "US.LITE",
+        "doc_url": "https://www.feishu.cn/docx/MkuAdo58Ao6x5kxeo9ccQH95nDg",
+        "doc_id": "MkuAdo58Ao6x5kxeo9ccQH95nDg",
+        "date": "2026-06-13",
+        "report_title": null,
+        "change_rate": 3.59,
+        "input_tokens": 3765,
+        "output_tokens": 2729,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "Meta",
+        "code": "US.META",
+        "doc_url": "https://www.feishu.cn/docx/UR1idHG1foPt5YxGvUQcVuwqnZf",
+        "doc_id": "UR1idHG1foPt5YxGvUQcVuwqnZf",
+        "date": "2026-06-13",
+        "report_title": null,
+        "change_rate": -0.26,
+        "input_tokens": 4089,
+        "output_tokens": 2685,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "微软",
+        "code": "US.MSFT",
+        "doc_url": "https://www.feishu.cn/docx/JzXddAXUfojP2FxlWjwcxx4AnKg",
+        "doc_id": "JzXddAXUfojP2FxlWjwcxx4AnKg",
+        "date": "2026-06-13",
+        "report_title": "【观望】结束连跌企稳，但反转趋势未变，等待止跌信号",
+        "change_rate": 0.1,
+        "input_tokens": 5427,
+        "output_tokens": 2272,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "英伟达",
+        "code": "US.NVDA",
+        "doc_url": "https://www.feishu.cn/docx/U50PdV9JToFzcuxUz80cNUYGnLb",
+        "doc_id": "U50PdV9JToFzcuxUz80cNUYGnLb",
+        "date": "2026-06-13",
+        "report_title": "【持有】英伟达横盘收涨，止跌信号蓄势中",
+        "change_rate": 0.16,
+        "input_tokens": 4104,
+        "output_tokens": 2940,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "SoFi",
+        "code": "US.SOFI",
+        "doc_url": "https://www.feishu.cn/docx/EhrddydNxoxpA9xAuofciNhKn1M",
+        "doc_id": "EhrddydNxoxpA9xAuofciNhKn1M",
+        "date": "2026-06-13",
+        "report_title": "【持有】静候技术信号明朗，基本面不改下短期窄震。",
+        "change_rate": -0.54,
+        "input_tokens": 3985,
+        "output_tokens": 2885,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "特斯拉",
+        "code": "US.TSLA",
+        "doc_url": "https://www.feishu.cn/docx/PlERdEN61opTAOxjkPxcKXcynoc",
+        "doc_id": "PlERdEN61opTAOxjkPxcKXcynoc",
+        "date": "2026-06-13",
+        "report_title": "【持有】SpaceX上市催化反弹，继续等待$440减持窗口",
+        "change_rate": 1.82,
+        "input_tokens": 3072,
+        "output_tokens": 2793,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "Sea",
+        "code": "US.SE",
+        "doc_url": "https://www.feishu.cn/docx/VJPbdFG39ojlhNx5Sf0cbHFknPe",
+        "doc_id": "VJPbdFG39ojlhNx5Sf0cbHFknPe",
+        "date": "2026-06-13",
+        "report_title": null,
+        "change_rate": -3.21,
+        "input_tokens": 3889,
+        "output_tokens": 2759,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "博通",
+        "code": "US.AVGO",
+        "doc_url": "https://www.feishu.cn/docx/KqRFdBddJovZOcx5CEWcvftRnUf",
+        "doc_id": "KqRFdBddJovZOcx5CEWcvftRnUf",
+        "date": "2026-06-13",
+        "report_title": "【持有】短线承压但PEG锚未破，耐心等待止跌确认信号",
+        "change_rate": -0.91,
+        "input_tokens": 4224,
+        "output_tokens": 2935,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "Coherent",
+        "code": "US.COHR",
+        "doc_url": "https://www.feishu.cn/docx/NbOIdYJvuo4anmxhtU6c5XYonKh",
+        "doc_id": "NbOIdYJvuo4anmxhtU6c5XYonKh",
+        "date": "2026-06-13",
+        "report_title": "【持有】放量大涨，多空博弈剧烈，维持持有观望",
+        "change_rate": 5.9,
+        "input_tokens": 3834,
+        "output_tokens": 2751,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "US.AXTI",
+        "code": "US.AXTI",
+        "doc_url": "https://www.feishu.cn/docx/VzdEd0l2poDHgGxTbescB81pnDg",
+        "doc_id": "VzdEd0l2poDHgGxTbescB81pnDg",
+        "date": "2026-06-13",
+        "report_title": null,
+        "change_rate": 10.01,
+        "input_tokens": 4015,
+        "output_tokens": 2835,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "SpaceX",
+        "code": "US.SPCX",
+        "doc_url": "https://www.feishu.cn/docx/A3Hvd6O8loZj8GxjJzycPJYknMW",
+        "doc_id": "A3Hvd6O8loZj8GxjJzycPJYknMW",
+        "date": "2026-06-13",
+        "report_title": null,
+        "change_rate": 19.22,
+        "input_tokens": 2246,
+        "output_tokens": 2616,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "2倍做多RKLB ETF-Defiance",
+        "code": "US.RKLX",
+        "doc_url": "https://www.feishu.cn/docx/WZNCdoNmToKHLQxaD7dcwqYCnIh",
+        "doc_id": "WZNCdoNmToKHLQxaD7dcwqYCnIh",
+        "date": "2026-06-13",
+        "report_title": "【观望】2倍做多ETF单日暴跌21.68%，趋势恶化建议观望",
+        "change_rate": -21.68,
+        "input_tokens": 1959,
+        "output_tokens": 2707,
+        "prompt_version": "1.1.0"
       }
     ]
   },
@@ -3670,5 +3826,5 @@
       "market": "A股"
     }
   ],
-  "update_time": "2026-06-12 16:26"
+  "update_time": "2026-06-13 18:00"
 }
