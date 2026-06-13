@@ -3797,6 +3797,18 @@
         "input_tokens": 1959,
         "output_tokens": 2707,
         "prompt_version": "1.1.0"
+      },
+      {
+        "name": "Palantir",
+        "code": "US.PLTR",
+        "doc_url": "https://www.feishu.cn/docx/RfYwdMZM8olXPOxYi9bcND69nXb",
+        "doc_id": "RfYwdMZM8olXPOxYi9bcND69nXb",
+        "date": "2026-06-13",
+        "report_title": "【持有】向下测试支撑，预警触发但无需操作",
+        "change_rate": -2.36,
+        "input_tokens": 12,
+        "output_tokens": 3426,
+        "prompt_version": "1.1.0"
       }
     ]
   },
@@ -3826,5 +3838,5 @@
       "market": "A股"
     }
   ],
-  "update_time": "2026-06-13 18:00"
+  "update_time": "2026-06-13 20:27"
 }
