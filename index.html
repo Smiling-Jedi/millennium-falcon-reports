@@ -179,7 +179,46 @@
         .side-idx a.stop-signal.active { border-left-color: var(--green); background: #e8f5e9; }
 
         @media (max-width: 720px) {
-            .side-idx { display: none; }
+            .side-idx {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                transform: none;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 4px;
+                padding: 8px 12px;
+                background: rgba(255,255,255,0.95);
+                backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: blur(8px);
+                border-bottom: 1px solid var(--line);
+                opacity: 1;
+                z-index: 200;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+            }
+            .side-idx::-webkit-scrollbar { display: none; }
+            body { padding-top: 52px; }
+            .side-idx a {
+                flex-shrink: 0;
+                font-size: 13px;
+                padding: 4px 10px;
+                border: 1px solid var(--line);
+                border-left: 2px solid var(--line);
+                border-radius: 14px;
+                background: #fff;
+            }
+            .side-idx a.active {
+                border-color: var(--line-dark);
+                border-left: 2px solid var(--line-dark);
+                font-weight: 700;
+            }
+            .side-idx a.hot { color: var(--red); border-color: #ffcdd2; background: #fff5f5; }
+            .side-idx a.hot.active { border-left-color: var(--red); }
+            .side-idx a.stop-signal { color: var(--green); border-color: #c8e6c9; background: #e8f5e9; }
+            .side-idx a.stop-signal.active { border-left-color: var(--green); }
         }
 
         /* ---- Mobile Tabs — horizontal scroll on narrow screens ---- */
@@ -215,7 +254,7 @@
         .mobile-tabs a.stop-signal { color: var(--green); border-color: #c8e6c9; background: #e8f5e9; }
 
         @media (max-width: 720px) {
-            .mobile-tabs { display: flex; }
+            .mobile-tabs { display: none; }
         }
 
         /* 信息卡片 v24：更强的区域感 */
@@ -908,7 +947,7 @@
         <div class="panel-footer container">
             <a href="all_reports_us.html">查看全部 18 只美股日报<span>→</span></a>
         </div>
-        <div class="update-hint container">美股日报更新于 06-14 10:17</div>
+        <div class="update-hint container">美股日报更新于 06-14 10:22</div>
     </article>
 
     <!-- ===== A股 Panel ===== -->
@@ -1269,7 +1308,7 @@
         <div class="panel-footer container">
             <a href="all_reports_a.html">查看全部 14 只A股日报<span>→</span></a>
         </div>
-        <div class="update-hint container">A股日报更新于 06-14 10:17</div>
+        <div class="update-hint container">A股日报更新于 06-14 10:22</div>
     </article>
 
     <!-- ===== 港股 Panel ===== -->
@@ -1530,13 +1569,13 @@
         <div class="panel-footer container">
             <a href="all_reports_hk.html">查看全部 10 只港股日报<span>→</span></a>
         </div>
-        <div class="update-hint container">港股日报更新于 06-14 10:17</div>
+        <div class="update-hint container">港股日报更新于 06-14 10:22</div>
     </article>
 
     <!-- ===== Side Index ===== -->
     <nav class="side-idx" id="sideIdx"></nav>
 
-    <footer class="footer container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-14 10:17</footer>
+    <footer class="footer container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-14 10:22</footer>
 
 <script>
 const snapshotData = {
