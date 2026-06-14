@@ -179,46 +179,7 @@
         .side-idx a.stop-signal.active { border-left-color: var(--green); background: #e8f5e9; }
 
         @media (max-width: 720px) {
-            .side-idx {
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-                transform: none;
-                flex-direction: row;
-                flex-wrap: wrap;
-                gap: 4px;
-                padding: 8px 12px;
-                background: rgba(255,255,255,0.95);
-                backdrop-filter: blur(8px);
-                -webkit-backdrop-filter: blur(8px);
-                border-bottom: 1px solid var(--line);
-                opacity: 1;
-                z-index: 200;
-                overflow-x: auto;
-                -webkit-overflow-scrolling: touch;
-                scrollbar-width: none;
-            }
-            .side-idx::-webkit-scrollbar { display: none; }
-            body { padding-top: 52px; }
-            .side-idx a {
-                flex-shrink: 0;
-                font-size: 13px;
-                padding: 4px 10px;
-                border: 1px solid var(--line);
-                border-left: 2px solid var(--line);
-                border-radius: 14px;
-                background: #fff;
-            }
-            .side-idx a.active {
-                border-color: var(--line-dark);
-                border-left: 2px solid var(--line-dark);
-                font-weight: 700;
-            }
-            .side-idx a.hot { color: var(--red); border-color: #ffcdd2; background: #fff5f5; }
-            .side-idx a.hot.active { border-left-color: var(--red); }
-            .side-idx a.stop-signal { color: var(--green); border-color: #c8e6c9; background: #e8f5e9; }
-            .side-idx a.stop-signal.active { border-left-color: var(--green); }
+            .side-idx { display: none; }
         }
 
         /* ---- Mobile Tabs — horizontal scroll on narrow screens ---- */
@@ -254,7 +215,7 @@
         .mobile-tabs a.stop-signal { color: var(--green); border-color: #c8e6c9; background: #e8f5e9; }
 
         @media (max-width: 720px) {
-            .mobile-tabs { display: none; }
+            .mobile-tabs { display: flex; }
         }
 
         /* 信息卡片 v24：更强的区域感 */

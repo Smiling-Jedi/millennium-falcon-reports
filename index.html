@@ -179,46 +179,7 @@
         .side-idx a.stop-signal.active { border-left-color: var(--green); background: #e8f5e9; }
 
         @media (max-width: 720px) {
-            .side-idx {
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-                transform: none;
-                flex-direction: row;
-                flex-wrap: wrap;
-                gap: 4px;
-                padding: 8px 12px;
-                background: rgba(255,255,255,0.95);
-                backdrop-filter: blur(8px);
-                -webkit-backdrop-filter: blur(8px);
-                border-bottom: 1px solid var(--line);
-                opacity: 1;
-                z-index: 200;
-                overflow-x: auto;
-                -webkit-overflow-scrolling: touch;
-                scrollbar-width: none;
-            }
-            .side-idx::-webkit-scrollbar { display: none; }
-            body { padding-top: 52px; }
-            .side-idx a {
-                flex-shrink: 0;
-                font-size: 13px;
-                padding: 4px 10px;
-                border: 1px solid var(--line);
-                border-left: 2px solid var(--line);
-                border-radius: 14px;
-                background: #fff;
-            }
-            .side-idx a.active {
-                border-color: var(--line-dark);
-                border-left: 2px solid var(--line-dark);
-                font-weight: 700;
-            }
-            .side-idx a.hot { color: var(--red); border-color: #ffcdd2; background: #fff5f5; }
-            .side-idx a.hot.active { border-left-color: var(--red); }
-            .side-idx a.stop-signal { color: var(--green); border-color: #c8e6c9; background: #e8f5e9; }
-            .side-idx a.stop-signal.active { border-left-color: var(--green); }
+            .side-idx { display: none; }
         }
 
         /* ---- Mobile Tabs — horizontal scroll on narrow screens ---- */
@@ -254,7 +215,7 @@
         .mobile-tabs a.stop-signal { color: var(--green); border-color: #c8e6c9; background: #e8f5e9; }
 
         @media (max-width: 720px) {
-            .mobile-tabs { display: none; }
+            .mobile-tabs { display: flex; }
         }
 
         /* 信息卡片 v24：更强的区域感 */
@@ -551,8 +512,8 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.18</strong>; Fwd PE 15.7x &lt; S&amp;P 20.5x</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">止跌 <span class="wait">4选2 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</span><span class="sub-item">均线支撑 <span class="no">❌</span> / 阳线+放量 <span class="no">❌</span> / 卖压衰竭 <span class="no">❌</span> / 波动见顶 <span class="no">❌</span></span><span class="sub-item">拟加：<strong>30股</strong> ⏳</span></span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.18</strong>; Fwd PE 15.7x &lt; S&amp;P 20.5x; 窗口 <strong>$200–$261</strong> ✅; 当前 $205.19</span></div>
+                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">拟加 ~$190，当前 $205.19（还差 8.0%） <span class="wait">❌</span>止跌 <span class="wait">4选2 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</span><span class="sub-item">拟加：<strong>30 股</strong> ⏳</span></span></div>
                     <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T1 ~<strong>$300</strong>（还差 46.2%）❌; T2 T2 | PEG > 1.2 + 技术走弱（4 选 2）+ 到站重检 | 卖波段剩余 50% | ❌</span></div>
                     <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅</span></div>
                 </div>
@@ -580,7 +541,7 @@
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val">Fwd PE 20.5x</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">档① PE < 22x ~$370，当前 $390.74（还差 5.6%） <span class="wait">❌</span>止跌 <span class="wait">≥2个 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</span><span class="sub-item">均线支撑 <span class="no">❌</span> / 阳线+放量 <span class="no">❌</span> / 卖压衰竭 <span class="no">❌</span> / 波动见顶 <span class="no">❌</span></span></span></div>
+                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">档① PE < 22x ~$370，当前 $390.74（还差 5.6%） <span class="wait">❌</span>止跌 <span class="wait">≥2个 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</span></span></div>
                     <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅</span></div>
                 </div>
                 </a>
@@ -606,8 +567,8 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.48</strong>; Fwd PE 15.8x &lt; S&amp;P 20.5x</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">止跌 <span class="wait">4选2 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</span><span class="sub-item">均线支撑 <span class="no">❌</span> / 阳线+放量 <span class="no">❌</span> / 卖压衰竭 <span class="no">❌</span> / 波动见顶 <span class="no">❌</span></span><span class="sub-item">拟加：<strong>20股</strong> ⏳</span></span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.48</strong>; Fwd PE 15.8x &lt; S&amp;P 20.5x; 窗口 <strong>$570–$597</strong> ❌; 当前 $566.98</span></div>
+                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">止跌 <span class="wait">4选2 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</span><span class="sub-item">拟加：<strong>20 股</strong> ⏳</span></span></div>
                     <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T1 ~<strong>$852</strong>（还差 50.3%）❌; T2 T2 | PEG > 1.2 + 技术走弱（4 选 2）+ 到站重检 | 卖波段剩余 50% | ❌</span></div>
                     <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅</span></div>
                 </div>
@@ -635,7 +596,6 @@
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.61</strong>; Fwd PE 21.1x</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val"><span class="sub-item">拟加：<strong>300 股</strong> ⏳</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/EhrddydNxoxpA9xAuofciNhKn1M" class="card-report-link" target="_blank">
@@ -660,8 +620,8 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.40</strong>; Fwd PE 19x &lt; S&amp;P 20.5x</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">止跌 <span class="wait">4选2 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</span><span class="sub-item">均线支撑 <span class="no">❌</span> / 阳线+放量 <span class="no">❌</span> / 卖压衰竭 <span class="no">❌</span> / 波动见顶 <span class="no">❌</span></span></span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.40</strong>; Fwd PE 19x &lt; S&amp;P 20.5x; 窗口 <strong>$375–$397</strong> ✅; 当前 $382.07</span></div>
+                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">止跌 <span class="wait">4选2 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</span></span></div>
                     <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T1 ~<strong>$456</strong>（还差 19.3%）❌; T2 T2 | PEG > 1.2 + 技术走弱（4 选 2）+ 到站重检 | 卖波段剩余 50% | ❌</span></div>
                 </div>
                 </a>
@@ -713,7 +673,6 @@
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.63</strong>; Fwd PE 48x</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val"><span class="sub-item">ATR 收敛 或 MA60 放量阳线 <span class="no">❌</span> / Q2 季报增速确认 <span class="no">❌</span></span><span class="sub-item">拟加：<strong>4 股</strong> ⏳</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/MkuAdo58Ao6x5kxeo9ccQH95nDg" class="card-report-link" target="_blank">
@@ -738,7 +697,7 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val">窗口 <strong>$2024–$2026</strong> ❌; 当前 $82.94</span></div>
+                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">60 股 @ $91.17（观察仓）</span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/VJPbdFG39ojlhNx5Sf0cbHFknPe" class="card-report-link" target="_blank">
@@ -947,7 +906,7 @@
         <div class="panel-footer container">
             <a href="all_reports_us.html">查看全部 18 只美股日报<span>→</span></a>
         </div>
-        <div class="update-hint container">美股日报更新于 06-14 10:22</div>
+        <div class="update-hint container">美股日报更新于 06-14 10:30</div>
     </article>
 
     <!-- ===== A股 Panel ===== -->
@@ -1308,7 +1267,7 @@
         <div class="panel-footer container">
             <a href="all_reports_a.html">查看全部 14 只A股日报<span>→</span></a>
         </div>
-        <div class="update-hint container">A股日报更新于 06-14 10:22</div>
+        <div class="update-hint container">A股日报更新于 06-14 10:30</div>
     </article>
 
     <!-- ===== 港股 Panel ===== -->
@@ -1328,7 +1287,7 @@
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>TTM PE 15.7x</strong></span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">止跌 <span class="wait">≥3个 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</span><span class="sub-item">均线支撑 <span class="no">❌</span> / 阳线+放量 <span class="no">❌</span> / 卖压衰竭 <span class="no">❌</span> / 波动见顶 <span class="no">❌</span></span></span></div>
+                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">止跌 <span class="wait">≥3个 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</span></span></div>
                     <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T2 档 2 | PE < 12.7x | < 370 HKD | 再降 1.5x，接近 3 年最低 11.8x | ❌</span></div>
                     <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅</span></div>
                 </div>
@@ -1456,7 +1415,7 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val">窗口 <strong>$2023–$2026</strong> ❌; 当前 $71.55</span></div>
+                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">600 股 @ HK$76.81（300 观察仓 + 300 第一档加仓）</span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/X4gzdlaYyo1YDLxcRUScHhixn1f" class="card-report-link" target="_blank">
@@ -1569,13 +1528,13 @@
         <div class="panel-footer container">
             <a href="all_reports_hk.html">查看全部 10 只港股日报<span>→</span></a>
         </div>
-        <div class="update-hint container">港股日报更新于 06-14 10:22</div>
+        <div class="update-hint container">港股日报更新于 06-14 10:30</div>
     </article>
 
     <!-- ===== Side Index ===== -->
     <nav class="side-idx" id="sideIdx"></nav>
 
-    <footer class="footer container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-14 10:22</footer>
+    <footer class="footer container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-14 10:30</footer>
 
 <script>
 const snapshotData = {
