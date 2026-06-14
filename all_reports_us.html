@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>博通 · 日报汇总 · 千年隼</title>
+    <title>美股日报汇总 · 千年隼</title>
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <style>
         :root {
@@ -415,7 +415,20 @@
             color: var(--ink-faint);
             letter-spacing: 1px;
         }
-    </style>
+    
+        .report-list-v { display:flex; flex-direction:column; gap:2px; margin-top:12px; }
+        .r-row { display:grid; grid-template-columns:1fr 2fr auto auto; gap:6px; align-items:center;
+            padding:8px 0; border-bottom:1px solid var(--line); font-size:14px; }
+        .r-name { font-weight:600; }
+        .r-title { color:var(--ink-soft); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+        .r-date { color:var(--ink-faint); font-size:13px; }
+        .r-tag { font-size:12px; padding:1px 6px; border-radius:4px; }
+        .r-tag.hold { background:var(--tag-hold-bg); color:var(--tag-hold-ink); }
+        .r-tag.watch { background:var(--tag-watch-bg); color:var(--tag-watch-ink); }
+        .r-tag.add { background:var(--tag-add-bg); color:var(--tag-add-ink); }
+        .r-tag.sell { background:var(--tag-stop-bg); color:var(--tag-stop-ink); }
+        .empty-hint { color:var(--ink-soft); font-size:14px; padding:20px 0; }
+</style>
 </head>
 <body>
     <header class="masthead container">
@@ -424,7 +437,7 @@
                 <div class="logo-mark">M</div>
                 <div class="brand-title">
                     <span class="zh">千年隼</span>
-                    <span class="en">Millennium Falcon</span>
+                    <span class="en">美股</span>
                 </div>
             </div>
             <div class="issue">
@@ -436,70 +449,14 @@
 
 
     <div class="container">
-        <a href="stock_博通.html" class="back-nav"><span class="arrow">←</span> 返回交易计划</a>
-    </div>
-
-    <header class="stock-hd container">
-        <div class="stock-hd-row">
-            <div>
-                <div class="stock-name">博通</div>
-                <div class="stock-code">US.AVGO · 美股</div>
-            </div>
-            <div class="stock-price">
-                <div class="price">382.07</div>
-                <div class="change down intl">-0.91%</div>
-            </div>
-        </div>
-    </header>
-
-    <div class="status-bar container">
-        <span class="status-item">类型 <strong>A 型纯血（PEG 框架）</strong></span>
-        <span class="status-item">趋势 <strong>HH+LL（宽幅震荡）</strong></span>
-        <span class="status-item">PE <strong>61.7x</strong></span>
-        <span class="status-item">分位 <strong>—</strong></span>
-        <span class="status-item">止跌 <strong>4选2 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</strong></span>
-        <span class="status-item">持仓 <strong>底仓 50 股 + 波段仓 0 股（拟建） | 总 50 股</strong></span>
+        <a href="index.html" class="back-nav"><span class="arrow">←</span> 返回首页</a>
     </div>
 
     <section class="section container">
-        <div class="section-title">历史日报</div>
-        <ul class="report-list">
-        <li>
-            <span class="r-date">06-13</span>
-            <span class="r-title">【持有】短线承压但PEG锚未破，耐心等待止跌确认信号</span>
-            <span class="r-tag hold">持有</span>
-        </li>
-        <li>
-            <span class="r-date">06-12</span>
-            <span class="r-title">日报</span>
-            <span class="r-tag watch">观望</span>
-        </li>
-        <li>
-            <span class="r-date">06-09</span>
-            <span class="r-title">【观望】AVGO缩量震荡收跌，逼近MA60关键支撑，等待390加仓信号确认</span>
-            <span class="r-tag add">加仓</span>
-        </li>
-        <li>
-            <span class="r-date">06-08</span>
-            <span class="r-title">放量反弹但仍存隐患，机构资金持续流出</span>
-            <span class="r-tag watch">观望</span>
-        </li>
-        <li>
-            <span class="r-date">06-06</span>
-            <span class="r-title">断头铡刀失守均线，观望</span>
-            <span class="r-tag watch">观望</span>
-        </li>
-        <li>
-            <span class="r-date">06-05</span>
-            <span class="r-title">放量暴跌探支撑，建议观望</span>
-            <span class="r-tag watch">观望</span>
-        </li>
-        <li>
-            <span class="r-date">06-04</span>
-            <span class="r-title">放量错杀，持有观望</span>
-            <span class="r-tag hold">持有</span>
-        </li>
-        </ul>
+        <div class="section-title">美股日报汇总<span class="count">0只</span></div>
+        <div class="report-list-v">
+<div class="empty-hint">该市场暂无日报</div>
+        </div>
     </section>
 
 

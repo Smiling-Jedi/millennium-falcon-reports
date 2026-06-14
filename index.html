@@ -239,6 +239,11 @@
         .stock-card.up { border-left-color: var(--red); }
         .stock-card.down { border-left-color: var(--green); }
         .stock-card.flat { border-left-color: var(--gray); }
+        /* 港股/美股涨跌颜色与国际惯例相反 (涨绿跌红) */
+        .stock-card.intl.up { border-left-color: var(--green); }
+        .stock-card.intl.down { border-left-color: var(--red); }
+        .change.intl.up { color: var(--green); }
+        .change.intl.down { color: var(--red); }
         .stock-card.flash { box-shadow: 0 0 0 3px var(--ink); transition: box-shadow 0s; }
 
         .card-main-link {
@@ -473,7 +478,7 @@
     <article class="panel active" id="panel-us">
         <div class="section-title container">正式仓<span class="count">14只</span></div>
         <div class="container cards-stage">
-            <div class="stock-card up active" id="card-特斯拉" data-weight="101608.0">
+            <div class="stock-card up intl active" id="card-特斯拉" data-weight="101608.0">
                 <a href="stock_特斯拉.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">特斯拉<span class="new-dot"></span></span>
@@ -499,7 +504,7 @@
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div class="stock-card up" id="card-英伟达" data-weight="65661.0">
+            <div class="stock-card up intl" id="card-英伟达" data-weight="65661.0">
                 <a href="stock_英伟达.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">英伟达<span class="new-dot"></span></span>
@@ -527,7 +532,7 @@
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div class="stock-card up" id="card-微软" data-weight="58611.0">
+            <div class="stock-card up intl" id="card-微软" data-weight="58611.0">
                 <a href="stock_微软.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">微软<span class="new-dot"></span></span>
@@ -554,7 +559,7 @@
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div class="stock-card down" id="card-meta" data-weight="51028.0">
+            <div class="stock-card down intl" id="card-meta" data-weight="51028.0">
                 <a href="stock_Meta.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">Meta<span class="new-dot"></span></span>
@@ -582,7 +587,7 @@
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div class="stock-card down" id="card-sofi" data-weight="33160.0">
+            <div class="stock-card down intl" id="card-sofi" data-weight="33160.0">
                 <a href="stock_SoFi.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">SoFi<span class="new-dot"></span></span>
@@ -607,7 +612,7 @@
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div class="stock-card down" id="card-博通" data-weight="22924.0">
+            <div class="stock-card down intl" id="card-博通" data-weight="22924.0">
                 <a href="stock_博通.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">博通<span class="new-dot"></span></span>
@@ -634,7 +639,7 @@
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div class="stock-card down" id="card-palantir" data-weight="7679.0">
+            <div class="stock-card down intl" id="card-palantir" data-weight="7679.0">
                 <a href="stock_Palantir.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">Palantir<span class="new-dot"></span></span>
@@ -659,7 +664,7 @@
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div class="stock-card up" id="card-lumentum" data-weight="7372.0">
+            <div class="stock-card up intl" id="card-lumentum" data-weight="7372.0">
                 <a href="stock_Lumentum.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">Lumentum<span class="new-dot"></span></span>
@@ -684,7 +689,7 @@
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div class="stock-card down" id="card-sea" data-weight="4976.0">
+            <div class="stock-card down intl" id="card-sea" data-weight="4976.0">
                 <a href="stock_Sea.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">Sea<span class="new-dot"></span></span>
@@ -709,7 +714,7 @@
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div class="stock-card down" id="card-circle" data-weight="1557.0">
+            <div class="stock-card down intl" id="card-circle" data-weight="1557.0">
                 <a href="stock_Circle.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">Circle<span class="new-dot"></span></span>
@@ -734,7 +739,7 @@
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div class="stock-card up" id="card-us.axti" data-weight="1458.0">
+            <div class="stock-card up intl" id="card-us.axti" data-weight="1458.0">
                 <a href="stock_US.AXTI.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">US.AXTI<span class="new-dot"></span></span>
@@ -759,7 +764,7 @@
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div class="stock-card up" id="card-coherent" data-weight="1155.0">
+            <div class="stock-card up intl" id="card-coherent" data-weight="1155.0">
                 <a href="stock_Coherent.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">Coherent<span class="new-dot"></span></span>
@@ -784,7 +789,7 @@
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div class="stock-card down" id="card-2倍做多rklb_etf_defiance" data-weight="966.0">
+            <div class="stock-card down intl" id="card-2倍做多rklb_etf_defiance" data-weight="966.0">
                 <a href="stock_2倍做多RKLB_ETF_Defiance.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">2倍做多RKLB ETF-Defiance<span class="new-dot"></span></span>
@@ -806,7 +811,7 @@
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div class="stock-card up" id="card-spacex" data-weight="805.0">
+            <div class="stock-card up intl" id="card-spacex" data-weight="805.0">
                 <a href="stock_SpaceX.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">SpaceX<span class="new-dot"></span></span>
@@ -833,7 +838,7 @@
         <div class="panel-footer container">
             <a href="all_reports_us.html">查看全部 14 只美股日报<span>→</span></a>
         </div>
-        <div class="update-hint container">美股日报更新于 06-14 17:06</div>
+        <div class="update-hint container">美股日报更新于 06-14 17:10</div>
     </article>
 
     <!-- ===== A股 Panel ===== -->
@@ -1176,14 +1181,14 @@
         <div class="panel-footer container">
             <a href="all_reports_a.html">查看全部 13 只A股日报<span>→</span></a>
         </div>
-        <div class="update-hint container">A股日报更新于 06-14 17:06</div>
+        <div class="update-hint container">A股日报更新于 06-14 17:10</div>
     </article>
 
     <!-- ===== 港股 Panel ===== -->
     <article class="panel" id="panel-hk">
         <div class="section-title container">正式仓<span class="count">10只</span></div>
         <div class="container cards-stage">
-            <div class="stock-card up active" id="card-腾讯控股" data-weight="3337920.0">
+            <div class="stock-card up intl active" id="card-腾讯控股" data-weight="3337920.0">
                 <a href="stock_腾讯控股.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">腾讯控股<span class="new-dot"></span></span>
@@ -1211,7 +1216,7 @@
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div class="stock-card up" id="card-阿里巴巴_w" data-weight="1322400.0">
+            <div class="stock-card up intl" id="card-阿里巴巴_w" data-weight="1322400.0">
                 <a href="stock_阿里巴巴_W.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">阿里巴巴-W<span class="new-dot"></span></span>
@@ -1236,7 +1241,7 @@
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div class="stock-card up" id="card-粤海投资" data-weight="621600.0">
+            <div class="stock-card up intl" id="card-粤海投资" data-weight="621600.0">
                 <a href="stock_粤海投资.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">粤海投资<span class="new-dot"></span></span>
@@ -1262,7 +1267,7 @@
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div class="stock-card up" id="card-百济神州" data-weight="476700.0">
+            <div class="stock-card up intl" id="card-百济神州" data-weight="476700.0">
                 <a href="stock_百济神州.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">百济神州<span class="new-dot"></span></span>
@@ -1287,7 +1292,7 @@
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div class="stock-card up" id="card-小米集团_w" data-weight="78600.0">
+            <div class="stock-card up intl" id="card-小米集团_w" data-weight="78600.0">
                 <a href="stock_小米集团_W.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">小米集团-W<span class="new-dot"></span></span>
@@ -1312,7 +1317,7 @@
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div class="stock-card up" id="card-舜宇光学科技" data-weight="42930.0">
+            <div class="stock-card up intl" id="card-舜宇光学科技" data-weight="42930.0">
                 <a href="stock_舜宇光学科技.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">舜宇光学科技<span class="new-dot"></span></span>
@@ -1337,7 +1342,7 @@
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div class="stock-card down" id="card-建滔积层板" data-weight="32800.0">
+            <div class="stock-card down intl" id="card-建滔积层板" data-weight="32800.0">
                 <a href="stock_建滔积层板.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">建滔积层板<span class="new-dot"></span></span>
@@ -1362,7 +1367,7 @@
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div class="stock-card down" id="card-美团_w" data-weight="15580.0">
+            <div class="stock-card down intl" id="card-美团_w" data-weight="15580.0">
                 <a href="stock_美团_W.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">美团-W<span class="new-dot"></span></span>
@@ -1384,7 +1389,7 @@
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div class="stock-card flat" id="card-恒瑞医药" data-weight="0.0">
+            <div class="stock-card flat intl" id="card-恒瑞医药" data-weight="0.0">
                 <a href="stock_恒瑞医药.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">恒瑞医药<span class="new-dot"></span></span>
@@ -1409,7 +1414,7 @@
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div class="stock-card flat" id="card-南方两倍做多三星电子" data-weight="0.0">
+            <div class="stock-card flat intl" id="card-南方两倍做多三星电子" data-weight="0.0">
                 <a href="stock_南方两倍做多三星电子.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">南方两倍做多三星电子<span class="new-dot"></span></span>
@@ -1436,13 +1441,13 @@
         <div class="panel-footer container">
             <a href="all_reports_hk.html">查看全部 10 只港股日报<span>→</span></a>
         </div>
-        <div class="update-hint container">港股日报更新于 06-14 17:06</div>
+        <div class="update-hint container">港股日报更新于 06-14 17:10</div>
     </article>
 
     <!-- ===== Side Index ===== -->
     <nav class="side-idx" id="sideIdx"></nav>
 
-    <footer class="footer container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-14 17:06</footer>
+    <footer class="footer container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-14 17:10</footer>
 
 <script>
 const snapshotData = {

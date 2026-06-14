@@ -239,6 +239,11 @@
         .stock-card.up { border-left-color: var(--red); }
         .stock-card.down { border-left-color: var(--green); }
         .stock-card.flat { border-left-color: var(--gray); }
+        /* 港股/美股涨跌颜色与国际惯例相反 (涨绿跌红) */
+        .stock-card.intl.up { border-left-color: var(--green); }
+        .stock-card.intl.down { border-left-color: var(--red); }
+        .change.intl.up { color: var(--green); }
+        .change.intl.down { color: var(--red); }
         .stock-card.flash { box-shadow: 0 0 0 3px var(--ink); transition: box-shadow 0s; }
 
         .card-main-link {

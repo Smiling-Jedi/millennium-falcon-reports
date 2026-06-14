@@ -160,6 +160,9 @@
         }
         .change.up   { color: var(--red); }
         .change.down { color: var(--green); }
+        /* 港股/美股涨跌颜色与国际惯例相反 (涨绿跌红) */
+        .change.intl.up { color: var(--green); }
+        .change.intl.down { color: var(--red); }
 
         /* ===== STATUS BAR ===== */
         .status-bar {
@@ -444,7 +447,7 @@
             </div>
             <div class="stock-price">
                 <div class="price">—</div>
-                <div class="change flat">0.00%</div>
+                <div class="change flat intl">0.00%</div>
             </div>
         </div>
     </header>
@@ -495,6 +498,6 @@
     </section>
 
 
-    <footer class="site-foot container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-14 17:06</footer>
+    <footer class="site-foot container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-14 17:10</footer>
 </body>
 </html>
