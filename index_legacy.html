@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>关注股 - 千年隼日报</title>
+    <title>千年隼日报</title>
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -259,48 +259,62 @@
     </style>
 </head>
 <body>
-    <h1><img src="favicon-32x32.png" class="logo-img" alt="">关注股</h1>
-    <p class="page-intro">跟踪观察列表，暂无持仓</p>
-    <h2><span class="mkt-dot mkt-dot-a"></span>A股</h2>
-    <div class="stock-list">
-        <span style="color:#94a3b8;font-size:13px;">暂无</span>
-    </div>
-    <h2><span class="mkt-dot mkt-dot-hk"></span>港股</h2>
-    <div class="stock-list">
-        <span style="color:#94a3b8;font-size:13px;">暂无</span>
-    </div>
-    <h2><span class="mkt-dot mkt-dot-us"></span>美股</h2>
-    <div class="stock-list">
-        <span style="color:#94a3b8;font-size:13px;">暂无</span>
-    </div>
+    <h1><img src="favicon-32x32.png" class="logo-img" alt="">千年隼日报</h1>
+    <p class="page-intro">每日收盘后自动生成</p>
+    <a href="holdings.html" id="card-holdings" style="
+        display: block;
+        padding: 28px 24px;
+        margin-bottom: 16px;
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        text-decoration: none;
+    ">
+        <div style="font-weight:700;font-size:18px;color:#1e293b;margin-bottom:4px">持仓股 <span id="dots-holdings"></span></div>
+        <div style="font-size:13px;color:#94a3b8">A股 06-12 · 港股 06-12 · 美股 06-13</div>
+    </a>
+    <a href="watchlist.html" id="card-watchlist" style="
+        display: block;
+        padding: 28px 24px;
+        margin-bottom: 16px;
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        text-decoration: none;
+    ">
+        <div style="font-weight:700;font-size:18px;color:#1e293b;margin-bottom:4px">关注股 <span id="dots-watchlist"></span></div>
+        <div style="font-size:13px;color:#94a3b8">跟踪观察列表</div>
+    </a>
+    <script id="mf-idx-data" type="application/json">{"holdings": {"a": "2026-06-12", "hk": "2026-06-12", "us": "2026-06-13"}, "watchlist": {}}</script>
 <script>
 (function(){
-var K='mf_seen_',P='mf_reply_';
-var els=document.querySelectorAll('[data-stock]');
-// 预计算每只股票的最新日期（个股页有多个不同日期的链接，防止点旧链接覆盖正确标记）
-var maxDt={};
-for(var i=0;i<els.length;i++){
-var sn=els[i].getAttribute('data-stock');
-var sd=els[i].getAttribute('data-date');
-if(!maxDt[sn]||sd>maxDt[sn])maxDt[sn]=sd;
-}
-for(var i=0;i<els.length;i++){var e=els[i];
-var n=e.getAttribute('data-stock');
-var d=e.getAttribute('data-date');
-var r=e.getAttribute('data-has-reply')==='1';
-var m=e.getAttribute('data-market')||'us';
-var sk=K+n,rk=P+n+'_'+d;
-var h=localStorage.getItem(sk)||'';
-var rs=localStorage.getItem(rk)||'';
-var md=maxDt[n];
-if(d>h||(r&&rs!=='1')){var dot=document.createElement('span');
-dot.className='new-dot new-dot-'+m;e.insertBefore(dot,e.firstChild);
-(function(dt,rn){e.addEventListener('click',function(){
-localStorage.setItem(K+this.getAttribute('data-stock'),md);
-if(rn){localStorage.setItem(P+this.getAttribute('data-stock')+'_'+dt,'1');}
-});})(d,r);}
-}})();
+var dataEl=document.getElementById('mf-idx-data');
+if(!dataEl)return;
+var data=JSON.parse(dataEl.textContent);
+var colors={a:'new-dot-a',hk:'new-dot-hk',us:'new-dot-us'};
+function checkCard(cardId,prefix,dates){
+var container=document.getElementById('dots-'+cardId);
+if(!container||!dates)return;
+var keys=Object.keys(dates);
+for(var i=0;i<keys.length;i++){
+var mk=keys[i];
+var key='mf_idx_'+prefix+'_'+mk;
+var seen=localStorage.getItem(key)||'';
+if(dates[mk]>seen){
+var dot=document.createElement('span');
+dot.className='new-dot '+(colors[mk]||'new-dot-us');
+container.appendChild(dot);
+}}
+var card=document.getElementById('card-'+cardId);
+if(card){card.addEventListener('click',function(){
+for(var j=0;j<keys.length;j++){
+var m=keys[j];
+localStorage.setItem('mf_idx_'+prefix+'_'+m,dates[m]);
+}});}}
+checkCard('holdings','h',data.holdings);
+checkCard('watchlist','w',data.watchlist);
+})();
 window.addEventListener('pageshow',function(e){if(e.persisted)location.reload();});
-</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-14 10:12</div>
+</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-13 20:27</div>
 </body>
 </html>
