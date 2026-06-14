@@ -179,10 +179,33 @@
         .side-idx a.stop-signal.active { border-left-color: var(--green); background: #e8f5e9; }
 
         @media (max-width: 720px) {
-            body { padding-left: 36px; }
-            .side-idx { left: 2px; gap: 0; opacity: 0.55; }
-            .side-idx a { font-size: 10px; padding: 2px 5px 2px 7px; border-radius: 3px; }
-            .side-idx a.active { font-size: 11px; }
+            body {
+                font-size: 18px;
+                padding-left: 60px;
+            }
+            .card-name { font-size: 23px; }
+            .plan-row { font-size: 16px; }
+            .report-body { font-size: 16px; }
+            .plan-row .plan-val .sub-item { font-size: 14px; }
+
+            .side-idx {
+                left: 2px;
+                gap: 2px;
+                opacity: 0.70;
+                max-width: 56px;
+            }
+            .side-idx a {
+                font-size: 12px;
+                padding: 3px 5px 3px 7px;
+                border-radius: 3px;
+                white-space: normal;
+                line-height: 1.4;
+                word-break: break-word;
+            }
+            .side-idx a.active {
+                font-size: 13px;
+                font-weight: 700;
+            }
         }
 
         /* 信息卡片 v24：更强的区域感 */
@@ -801,7 +824,7 @@
         <div class="panel-footer container">
             <a href="all_reports_us.html">查看全部 14 只美股日报<span>→</span></a>
         </div>
-        <div class="update-hint container">美股日报更新于 06-14 15:49</div>
+        <div class="update-hint container">美股日报更新于 06-14 16:01</div>
     </article>
 
     <!-- ===== A股 Panel ===== -->
@@ -1144,7 +1167,7 @@
         <div class="panel-footer container">
             <a href="all_reports_a.html">查看全部 13 只A股日报<span>→</span></a>
         </div>
-        <div class="update-hint container">A股日报更新于 06-14 15:49</div>
+        <div class="update-hint container">A股日报更新于 06-14 16:01</div>
     </article>
 
     <!-- ===== 港股 Panel ===== -->
@@ -1404,13 +1427,13 @@
         <div class="panel-footer container">
             <a href="all_reports_hk.html">查看全部 10 只港股日报<span>→</span></a>
         </div>
-        <div class="update-hint container">港股日报更新于 06-14 15:49</div>
+        <div class="update-hint container">港股日报更新于 06-14 16:01</div>
     </article>
 
     <!-- ===== Side Index ===== -->
     <nav class="side-idx" id="sideIdx"></nav>
 
-    <footer class="footer container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-14 15:49</footer>
+    <footer class="footer container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-14 16:01</footer>
 
 <script>
 const snapshotData = {

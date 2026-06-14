@@ -179,10 +179,33 @@
         .side-idx a.stop-signal.active { border-left-color: var(--green); background: #e8f5e9; }
 
         @media (max-width: 720px) {
-            body { padding-left: 36px; }
-            .side-idx { left: 2px; gap: 0; opacity: 0.55; }
-            .side-idx a { font-size: 10px; padding: 2px 5px 2px 7px; border-radius: 3px; }
-            .side-idx a.active { font-size: 11px; }
+            body {
+                font-size: 18px;
+                padding-left: 60px;
+            }
+            .card-name { font-size: 23px; }
+            .plan-row { font-size: 16px; }
+            .report-body { font-size: 16px; }
+            .plan-row .plan-val .sub-item { font-size: 14px; }
+
+            .side-idx {
+                left: 2px;
+                gap: 2px;
+                opacity: 0.70;
+                max-width: 56px;
+            }
+            .side-idx a {
+                font-size: 12px;
+                padding: 3px 5px 3px 7px;
+                border-radius: 3px;
+                white-space: normal;
+                line-height: 1.4;
+                word-break: break-word;
+            }
+            .side-idx a.active {
+                font-size: 13px;
+                font-weight: 700;
+            }
         }
 
         /* 信息卡片 v24：更强的区域感 */
