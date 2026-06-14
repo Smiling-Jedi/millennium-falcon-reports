@@ -179,43 +179,10 @@
         .side-idx a.stop-signal.active { border-left-color: var(--green); background: #e8f5e9; }
 
         @media (max-width: 720px) {
-            .side-idx { display: none; }
-        }
-
-        /* ---- Mobile Tabs — horizontal scroll on narrow screens ---- */
-        .mobile-tabs {
-            display: none;
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-            scrollbar-width: none;
-            gap: 6px;
-            padding: 2px 0 10px;
-            margin-bottom: 8px;
-        }
-        .mobile-tabs::-webkit-scrollbar { display: none; }
-        .mobile-tabs a {
-            flex-shrink: 0;
-            font-size: 13px;
-            color: var(--ink-light);
-            text-decoration: none;
-            padding: 5px 12px;
-            border: 1px solid var(--line);
-            border-radius: 16px;
-            background: #fff;
-            white-space: nowrap;
-            transition: all 0.15s;
-        }
-        .mobile-tabs a.active {
-            color: var(--ink);
-            font-weight: 700;
-            background: var(--paper);
-            border-color: var(--line-dark);
-        }
-        .mobile-tabs a.hot { color: var(--red); border-color: #ffcdd2; background: #fff5f5; }
-        .mobile-tabs a.stop-signal { color: var(--green); border-color: #c8e6c9; background: #e8f5e9; }
-
-        @media (max-width: 720px) {
-            .mobile-tabs { display: flex; }
+            body { padding-left: 36px; }
+            .side-idx { left: 2px; gap: 0; opacity: 0.55; }
+            .side-idx a { font-size: 10px; padding: 2px 5px 2px 7px; border-radius: 3px; }
+            .side-idx a.active { font-size: 11px; }
         }
 
         /* 信息卡片 v24：更强的区域感 */
@@ -472,7 +439,6 @@
 
     <!-- ===== US Panel ===== -->
     <article class="panel active" id="panel-us">
-        <div class="mobile-tabs container" id="mobile-tabs-us"></div>
         <div class="section-title container">正式仓<span class="count">9只</span></div>
 
         <div class="container cards-stage">
@@ -701,7 +667,6 @@
 
     <!-- ===== A-Share Panel ===== -->
     <article class="panel" id="panel-a">
-        <div class="mobile-tabs container" id="mobile-tabs-a"></div>
         <div class="section-title container">正式仓<span class="count">9只</span></div>
         <div class="container">
             <a href="stock_byd.html" class="stock-card up" id="card-byd" data-weight="500">
@@ -740,7 +705,6 @@
 
     <!-- ===== HK Panel ===== -->
     <article class="panel" id="panel-hk">
-        <div class="mobile-tabs container" id="mobile-tabs-hk"></div>
         <div class="section-title container">正式仓<span class="count">8只</span></div>
         <div class="container">
             <a href="stock_tencent.html" class="stock-card down active" id="card-tencent" data-weight="1000">
@@ -813,7 +777,7 @@ function activateCard(card) {
     card.classList.add('active');
 
     const id = card.id;
-    document.querySelectorAll('.side-idx a, .mobile-tabs a').forEach(a => {
+    document.querySelectorAll('.side-idx a').forEach(a => {
         a.classList.toggle('active', a.getAttribute('href') === '#' + id);
     });
 }
@@ -827,47 +791,29 @@ function activateTopCard() {
 
 function buildIndexForPanel(panel) {
     const sorted = getSortedCards(panel);
-    const market = panel.id.replace('panel-', '');
     const idx = document.getElementById('sideIdx');
-    const mobile = document.getElementById('mobile-tabs-' + market);
-
-    if (mobile) mobile.innerHTML = '';
-    if (!panel) return;
+    if (!idx) return;
 
     const isActivePanel = panel.classList.contains('active');
-    if (isActivePanel && idx) idx.innerHTML = '';
+    if (!isActivePanel) return;
 
+    idx.innerHTML = '';
     sorted.forEach(card => {
         const name = card.querySelector('.card-name').textContent.trim();
         const statusEl = card.querySelector('.card-status');
         const isAdd = statusEl?.classList.contains('add');
         const isStop = statusEl?.classList.contains('stop');
 
-        if (isActivePanel && idx) {
-            const desktopA = document.createElement('a');
-            desktopA.href = '#' + card.id;
-            desktopA.textContent = name;
-            if (isAdd) desktopA.classList.add('hot');
-            if (isStop) desktopA.classList.add('stop-signal');
-            desktopA.addEventListener('click', e => {
-                e.preventDefault();
-                activateCard(card);
-            });
-            idx.appendChild(desktopA);
-        }
-
-        if (mobile) {
-            const mobileA = document.createElement('a');
-            mobileA.href = '#' + card.id;
-            mobileA.textContent = name;
-            if (isAdd) mobileA.classList.add('hot');
-            if (isStop) mobileA.classList.add('stop-signal');
-            mobileA.addEventListener('click', e => {
-                e.preventDefault();
-                activateCard(card);
-            });
-            mobile.appendChild(mobileA);
-        }
+        const a = document.createElement('a');
+        a.href = '#' + card.id;
+        a.textContent = name;
+        if (isAdd) a.classList.add('hot');
+        if (isStop) a.classList.add('stop-signal');
+        a.addEventListener('click', e => {
+            e.preventDefault();
+            activateCard(card);
+        });
+        idx.appendChild(a);
     });
 }
 

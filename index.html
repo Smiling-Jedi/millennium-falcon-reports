@@ -179,43 +179,10 @@
         .side-idx a.stop-signal.active { border-left-color: var(--green); background: #e8f5e9; }
 
         @media (max-width: 720px) {
-            .side-idx { display: none; }
-        }
-
-        /* ---- Mobile Tabs — horizontal scroll on narrow screens ---- */
-        .mobile-tabs {
-            display: none;
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-            scrollbar-width: none;
-            gap: 6px;
-            padding: 2px 0 10px;
-            margin-bottom: 8px;
-        }
-        .mobile-tabs::-webkit-scrollbar { display: none; }
-        .mobile-tabs a {
-            flex-shrink: 0;
-            font-size: 13px;
-            color: var(--ink-light);
-            text-decoration: none;
-            padding: 5px 12px;
-            border: 1px solid var(--line);
-            border-radius: 16px;
-            background: #fff;
-            white-space: nowrap;
-            transition: all 0.15s;
-        }
-        .mobile-tabs a.active {
-            color: var(--ink);
-            font-weight: 700;
-            background: var(--paper);
-            border-color: var(--line-dark);
-        }
-        .mobile-tabs a.hot { color: var(--red); border-color: #ffcdd2; background: #fff5f5; }
-        .mobile-tabs a.stop-signal { color: var(--green); border-color: #c8e6c9; background: #e8f5e9; }
-
-        @media (max-width: 720px) {
-            .mobile-tabs { display: flex; }
+            body { padding-left: 36px; }
+            .side-idx { left: 2px; gap: 0; opacity: 0.55; }
+            .side-idx a { font-size: 10px; padding: 2px 5px 2px 7px; border-radius: 3px; }
+            .side-idx a.active { font-size: 11px; }
         }
 
         /* 信息卡片 v24：更强的区域感 */
@@ -472,7 +439,6 @@
 
     <!-- ===== 美股 Panel ===== -->
     <article class="panel active" id="panel-us">
-        <div class="mobile-tabs container" id="mobile-tabs-us"></div>
         <div class="section-title container">正式仓<span class="count">14只</span></div>
         <div class="container cards-stage">
             <div class="stock-card up active" id="card-特斯拉" data-weight="101608.0">
@@ -831,87 +797,15 @@
                 </a>
             </div>
         </div>
-        <div class="section-title container">关注股<span class="count">4只</span></div>
-        <div class="container cards-stage">
-            <div class="stock-card flat" id="card-蔚来" data-weight="0.0">
-                <a href="stock_蔚来.html" class="card-main-link">
-                    <div class="card-top">
-                        <span class="card-name">蔚来</span>
-                        <div class="card-tags">
-                            
-                            <span class="card-status watch">观望</span>
-                        </div>
-                    </div>
-
-                </a>
-
-                <a href="stock_reports_蔚来.html" class="card-more">
-                    <span>查看全部日报</span>
-                    <span class="arrow">→</span>
-                </a>
-            </div>
-            <div class="stock-card flat" id="card-拼多多" data-weight="0.0">
-                <a href="stock_拼多多.html" class="card-main-link">
-                    <div class="card-top">
-                        <span class="card-name">拼多多</span>
-                        <div class="card-tags">
-                            
-                            <span class="card-status watch">观望</span>
-                        </div>
-                    </div>
-
-                </a>
-
-                <a href="stock_reports_拼多多.html" class="card-more">
-                    <span>查看全部日报</span>
-                    <span class="arrow">→</span>
-                </a>
-            </div>
-            <div class="stock-card flat" id="card-rocket_lab" data-weight="0.0">
-                <a href="stock_Rocket_Lab.html" class="card-main-link">
-                    <div class="card-top">
-                        <span class="card-name">Rocket Lab</span>
-                        <div class="card-tags">
-                            
-                            <span class="card-status watch">观望</span>
-                        </div>
-                    </div>
-
-                </a>
-
-                <a href="stock_reports_Rocket_Lab.html" class="card-more">
-                    <span>查看全部日报</span>
-                    <span class="arrow">→</span>
-                </a>
-            </div>
-            <div class="stock-card flat" id="card-回声星通信" data-weight="0.0">
-                <a href="stock_回声星通信.html" class="card-main-link">
-                    <div class="card-top">
-                        <span class="card-name">回声星通信</span>
-                        <div class="card-tags">
-                            
-                            <span class="card-status watch">观望</span>
-                        </div>
-                    </div>
-
-                </a>
-
-                <a href="stock_reports_回声星通信.html" class="card-more">
-                    <span>查看全部日报</span>
-                    <span class="arrow">→</span>
-                </a>
-            </div>
-        </div>
 
         <div class="panel-footer container">
-            <a href="all_reports_us.html">查看全部 18 只美股日报<span>→</span></a>
+            <a href="all_reports_us.html">查看全部 14 只美股日报<span>→</span></a>
         </div>
-        <div class="update-hint container">美股日报更新于 06-14 10:31</div>
+        <div class="update-hint container">美股日报更新于 06-14 15:47</div>
     </article>
 
     <!-- ===== A股 Panel ===== -->
     <article class="panel" id="panel-a">
-        <div class="mobile-tabs container" id="mobile-tabs-a"></div>
         <div class="section-title container">正式仓<span class="count">11只</span></div>
         <div class="container cards-stage">
             <div class="stock-card up active" id="card-比亚迪" data-weight="1374000.0">
@@ -1195,25 +1089,8 @@
                 </a>
             </div>
         </div>
-        <div class="section-title container">关注股<span class="count">3只</span></div>
+        <div class="section-title container">关注股<span class="count">2只</span></div>
         <div class="container cards-stage">
-            <div class="stock-card flat" id="card-中信证券" data-weight="0.0">
-                <a href="stock_中信证券.html" class="card-main-link">
-                    <div class="card-top">
-                        <span class="card-name">中信证券</span>
-                        <div class="card-tags">
-                            
-                            <span class="card-status watch">观望</span>
-                        </div>
-                    </div>
-
-                </a>
-
-                <a href="stock_reports_中信证券.html" class="card-more">
-                    <span>查看全部日报</span>
-                    <span class="arrow">→</span>
-                </a>
-            </div>
             <div class="stock-card flat" id="card-国电南瑞" data-weight="0.0">
                 <a href="stock_国电南瑞.html" class="card-main-link">
                     <div class="card-top">
@@ -1265,14 +1142,13 @@
         </div>
 
         <div class="panel-footer container">
-            <a href="all_reports_a.html">查看全部 14 只A股日报<span>→</span></a>
+            <a href="all_reports_a.html">查看全部 13 只A股日报<span>→</span></a>
         </div>
-        <div class="update-hint container">A股日报更新于 06-14 10:31</div>
+        <div class="update-hint container">A股日报更新于 06-14 15:47</div>
     </article>
 
     <!-- ===== 港股 Panel ===== -->
     <article class="panel" id="panel-hk">
-        <div class="mobile-tabs container" id="mobile-tabs-hk"></div>
         <div class="section-title container">正式仓<span class="count">10只</span></div>
         <div class="container cards-stage">
             <div class="stock-card up active" id="card-腾讯控股" data-weight="3337920.0">
@@ -1528,13 +1404,13 @@
         <div class="panel-footer container">
             <a href="all_reports_hk.html">查看全部 10 只港股日报<span>→</span></a>
         </div>
-        <div class="update-hint container">港股日报更新于 06-14 10:31</div>
+        <div class="update-hint container">港股日报更新于 06-14 15:47</div>
     </article>
 
     <!-- ===== Side Index ===== -->
     <nav class="side-idx" id="sideIdx"></nav>
 
-    <footer class="footer container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-14 10:31</footer>
+    <footer class="footer container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-14 15:47</footer>
 
 <script>
 const snapshotData = {
@@ -1577,7 +1453,7 @@ function activateCard(card) {
     card.classList.add('active');
 
     const id = card.id;
-    document.querySelectorAll('.side-idx a, .mobile-tabs a').forEach(a => {
+    document.querySelectorAll('.side-idx a').forEach(a => {
         a.classList.toggle('active', a.getAttribute('href') === '#' + id);
     });
 }
@@ -1591,47 +1467,29 @@ function activateTopCard() {
 
 function buildIndexForPanel(panel) {
     const sorted = getSortedCards(panel);
-    const market = panel.id.replace('panel-', '');
     const idx = document.getElementById('sideIdx');
-    const mobile = document.getElementById('mobile-tabs-' + market);
-
-    if (mobile) mobile.innerHTML = '';
-    if (!panel) return;
+    if (!idx) return;
 
     const isActivePanel = panel.classList.contains('active');
-    if (isActivePanel && idx) idx.innerHTML = '';
+    if (!isActivePanel) return;
 
+    idx.innerHTML = '';
     sorted.forEach(card => {
         const name = card.querySelector('.card-name').textContent.trim();
         const statusEl = card.querySelector('.card-status');
         const isAdd = statusEl?.classList.contains('add');
         const isStop = statusEl?.classList.contains('stop');
 
-        if (isActivePanel && idx) {
-            const desktopA = document.createElement('a');
-            desktopA.href = '#' + card.id;
-            desktopA.textContent = name;
-            if (isAdd) desktopA.classList.add('hot');
-            if (isStop) desktopA.classList.add('stop-signal');
-            desktopA.addEventListener('click', e => {
-                e.preventDefault();
-                activateCard(card);
-            });
-            idx.appendChild(desktopA);
-        }
-
-        if (mobile) {
-            const mobileA = document.createElement('a');
-            mobileA.href = '#' + card.id;
-            mobileA.textContent = name;
-            if (isAdd) mobileA.classList.add('hot');
-            if (isStop) mobileA.classList.add('stop-signal');
-            mobileA.addEventListener('click', e => {
-                e.preventDefault();
-                activateCard(card);
-            });
-            mobile.appendChild(mobileA);
-        }
+        const a = document.createElement('a');
+        a.href = '#' + card.id;
+        a.textContent = name;
+        if (isAdd) a.classList.add('hot');
+        if (isStop) a.classList.add('stop-signal');
+        a.addEventListener('click', e => {
+            e.preventDefault();
+            activateCard(card);
+        });
+        idx.appendChild(a);
     });
 }
 
