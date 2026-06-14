@@ -329,6 +329,12 @@
         .plan-row .plan-val .sub-item .wait { color: #e65100; }
 
         /* 最新日报区：只放观点摘要 */
+        .card-report-link {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+        .card-report-link:hover .report-body { color: var(--ink); }
         .card-report {
             padding-top: 12px;
             border-top: 1px solid var(--line);
@@ -469,7 +475,7 @@
         <div class="mobile-tabs container" id="mobile-tabs-us"></div>
         <div class="section-title container">正式仓<span class="count">14只</span></div>
         <div class="container cards-stage">
-            <div href="stock_特斯拉.html" class="stock-card up active" id="card-特斯拉" data-weight="101608.0">
+            <div class="stock-card up active" id="card-特斯拉" data-weight="101608.0">
                 <a href="stock_特斯拉.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">特斯拉<span class="new-dot"></span></span>
@@ -480,19 +486,22 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">仓位：250 股 @$362.86 | 占比：28.3% 美股（最大仓位）| 浮盈：+6.4%</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>TTM PE 350x</strong></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/PlERdEN61opTAOxjkPxcKXcynoc" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-13</div>
                     <div class="report-body">【持有】SpaceX上市催化反弹，继续等待$440减持窗口</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_特斯拉.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_英伟达.html" class="stock-card up" id="card-英伟达" data-weight="65661.0">
+            <div class="stock-card up" id="card-英伟达" data-weight="65661.0">
                 <a href="stock_英伟达.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">英伟达<span class="new-dot"></span></span>
@@ -503,22 +512,24 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">底仓 200 股 + 波段仓 120 股 | 总 320 股</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">已有 买120股($198.83) · 拟加 买30股(~$190)</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T1 Fwd PE > S&P×1.15（~23.6x≈$300）+ PEG > 1.1 + 到站重检→卖波段 50%（60 股） · T2 PEG > 1.2 + 技术走弱（4 选 2）+ 到站重检→卖波段剩余 50%</span></div>
-                    <div class="plan-row"><span class="plan-key">止跌</span><span class="plan-val">4选2 均线支撑 阳线+放量 卖压衰竭 波动见顶</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.18</strong>; Fwd PE 15.7x &lt; S&amp;P 20.5x</span></div>
+                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">止跌 <span class="wait">4选2 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</span><span class="sub-item">均线支撑 <span class="no">❌</span> / 阳线+放量 <span class="no">❌</span> / 卖压衰竭 <span class="no">❌</span> / 波动见顶 <span class="no">❌</span></span><span class="sub-item">拟加：<strong>30股</strong> ⏳</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T1 ~<strong>$300</strong>（还差 46.2%）❌; T2 T2 | PEG > 1.2 + 技术走弱（4 选 2）+ 到站重检 | 卖波段剩余 50% | ❌</span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/U50PdV9JToFzcuxUz80cNUYGnLb" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-13</div>
                     <div class="report-body">【持有】英伟达横盘收涨，止跌信号蓄势中</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_英伟达.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_微软.html" class="stock-card up" id="card-微软" data-weight="58611.0">
+            <div class="stock-card up" id="card-微软" data-weight="58611.0">
                 <a href="stock_微软.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">微软<span class="new-dot"></span></span>
@@ -529,22 +540,23 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">底仓 100 股 + 波段仓 50 股（成本 $375） | 总 150 股</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">PE < 22x(~20%) · PE < 21x(~10%) · # 信号</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">> A 型不因「涨多了」卖底仓。 好生意的复利不因涨得多就卖。波段仓止盈后如果 PE 再次回到低位，重新按加仓规则买入。</span></div>
-                    <div class="plan-row"><span class="plan-key">止跌</span><span class="plan-val">≥2个 均线支撑 阳线+放量 卖压衰竭 波动见顶</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val">Fwd PE 20.5x</span></div>
+                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">档① PE < 22x ~$370，当前 $390.74（还差 5.6%） <span class="wait">❌</span>止跌 <span class="wait">≥2个 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</span><span class="sub-item">均线支撑 <span class="no">❌</span> / 阳线+放量 <span class="no">❌</span> / 卖压衰竭 <span class="no">❌</span> / 波动见顶 <span class="no">❌</span></span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/JzXddAXUfojP2FxlWjwcxx4AnKg" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-13</div>
                     <div class="report-body">【观望】结束连跌企稳，但反转趋势未变，等待止跌信号</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_微软.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_Meta.html" class="stock-card down" id="card-meta" data-weight="51028.0">
+            <div class="stock-card down" id="card-meta" data-weight="51028.0">
                 <a href="stock_Meta.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">Meta<span class="new-dot"></span></span>
@@ -555,22 +567,24 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">底仓 50 股 + 波段仓 30 股 | 总 80 股</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">已有 买30股(—) · 拟加 买20股(PEG<0.5 + 止跌确认（建议 3/4）)</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T1 Fwd PE > S&P×1.15（~23.6x≈$852）+ PEG > 1.1 + 到站重检→卖波段 50%（25 股） · T2 PEG > 1.2 + 技术走弱（4 选 2）+ 到站重检→卖波段剩余 50%</span></div>
-                    <div class="plan-row"><span class="plan-key">止跌</span><span class="plan-val">4选2 均线支撑 阳线+放量 卖压衰竭 波动见顶</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.48</strong>; Fwd PE 15.8x &lt; S&amp;P 20.5x</span></div>
+                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">止跌 <span class="wait">4选2 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</span><span class="sub-item">均线支撑 <span class="no">❌</span> / 阳线+放量 <span class="no">❌</span> / 卖压衰竭 <span class="no">❌</span> / 波动见顶 <span class="no">❌</span></span><span class="sub-item">拟加：<strong>20股</strong> ⏳</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T1 ~<strong>$852</strong>（还差 50.3%）❌; T2 T2 | PEG > 1.2 + 技术走弱（4 选 2）+ 到站重检 | 卖波段剩余 50% | ❌</span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/UR1idHG1foPt5YxGvUQcVuwqnZf" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-13</div>
                     <div class="report-body">日报</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_Meta.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_SoFi.html" class="stock-card down" id="card-sofi" data-weight="33160.0">
+            <div class="stock-card down" id="card-sofi" data-weight="33160.0">
                 <a href="stock_SoFi.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">SoFi<span class="new-dot"></span></span>
@@ -581,22 +595,22 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">2,000 股 @ $17.402</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">前置约束：当前不加仓（向下反转 + 超仓 9.7% > B 型参考 8% = 双重不加仓理由） | MA60($16.80) 站上 + 5日斜率转正 → 激活观察（当前差 1.8%） | 激活后，价格在 MA60 上方形成 higher low → 加 300 股</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">$14.92（W4 低点）跌破 3 天未收回 → 减至 1,000 股（~5%）。回收 ~$16,000 | 增速连续两季 <15% 或 坏账率跳升 2%+ → 全清。证伪的是「成长冲刺」逻辑，不是价格</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">$21.55（Fib 61.8%+MA120）→ 卖 500 股，回收 ~$10,800。趋势修复的第一站 | $25.82（Fib 38.2%）→ 卖 500 股，回收 ~$12,900 | $28.46（Fib 23.6%+）→ 卖 500 股，回收 ~$14,200。留 500 股底仓</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.61</strong>; Fwd PE 21.1x</span></div>
+                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val"><span class="sub-item">拟加：<strong>300 股</strong> ⏳</span></span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/EhrddydNxoxpA9xAuofciNhKn1M" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-13</div>
                     <div class="report-body">【持有】静候技术信号明朗，基本面不改下短期窄震。</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_SoFi.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_博通.html" class="stock-card down" id="card-博通" data-weight="22924.0">
+            <div class="stock-card down" id="card-博通" data-weight="22924.0">
                 <a href="stock_博通.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">博通<span class="new-dot"></span></span>
@@ -607,22 +621,23 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">底仓 50 股 + 波段仓 0 股（拟建） | 总 50 股</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">买20股(价格 ≤$397 + 止跌确认) · 买20股(价格仍 ≤$397 + 再次止跌) · 买10股(PEG<0.3 极端机会)</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T1 Fwd PE > S&P×1.15（~23.6x≈$456）+ PEG > 1.1 + 到站重检→卖波段 50% · T2 PEG > 1.2 + 技术走弱（4 选 2）+ 到站重检→卖波段剩余 50%</span></div>
-                    <div class="plan-row"><span class="plan-key">止跌</span><span class="plan-val">4选2 均线支撑 阳线+放量 卖压衰竭 波动见顶</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.40</strong>; Fwd PE 19x &lt; S&amp;P 20.5x</span></div>
+                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">止跌 <span class="wait">4选2 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</span><span class="sub-item">均线支撑 <span class="no">❌</span> / 阳线+放量 <span class="no">❌</span> / 卖压衰竭 <span class="no">❌</span> / 波动见顶 <span class="no">❌</span></span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T1 ~<strong>$456</strong>（还差 19.3%）❌; T2 T2 | PEG > 1.2 + 技术走弱（4 选 2）+ 到站重检 | 卖波段剩余 50% | ❌</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/KqRFdBddJovZOcx5CEWcvftRnUf" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-13</div>
                     <div class="report-body">【持有】短线承压但PEG锚未破，耐心等待止跌确认信号</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_博通.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_Palantir.html" class="stock-card down" id="card-palantir" data-weight="7679.0">
+            <div class="stock-card down" id="card-palantir" data-weight="7679.0">
                 <a href="stock_Palantir.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">Palantir<span class="new-dot"></span></span>
@@ -633,22 +648,21 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">60 股 @ $138.12（底仓）+ 计划 60 股波段 @ $125</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">暂不加仓：趋势向下反转中，四线全破。波段 $125 入场已是对底仓的变相加仓 | 重检条件：MA20 回到 MA60 之上 + HH 重建（>$163.70）→ 可考虑加仓</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">MA60（$143）已跌破 → 底仓 60 股持有不动（太少，减无可减），但波段 $125 买单暂停等趋势修复 | $116.25 跌破（波段硬止损位 + W5 低点 $122.68 之下）→ 底仓+波段全清。3 窗口连续 LL，不是等修复的问题</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">$200（整数关口, PE ~225x TTM, 7.2x ATR 距波段入场）→ 卖 20 股底仓 + 卖出剩余 30 股波段（波段 T2 和底仓 T1 在此汇合） | 暂不设定：留 20 股底仓给政府 AI 数据垄断长线。待 T1 触发后根据趋势和估值再定 | 波段清完、底仓留 20 股 = 总持仓从 120 股缩至 20 股，回收 ~$20,000+</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val">Fwd PE 66x</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/RfYwdMZM8olXPOxYi9bcND69nXb" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-13</div>
                     <div class="report-body">【持有】向下测试支撑，预警触发但无需操作</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_Palantir.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_Lumentum.html" class="stock-card up" id="card-lumentum" data-weight="7372.0">
+            <div class="stock-card up" id="card-lumentum" data-weight="7372.0">
                 <a href="stock_Lumentum.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">Lumentum<span class="new-dot"></span></span>
@@ -659,22 +673,22 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">8 股 @ $868.39 | 占美股 ~1.8% | 目标 14 股 / $12,000 | B 型快速成长 | PEG 0.63 | Fwd PE 48x</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">ATR 收敛 或 MA60 放量阳线(+3-4 股 → 共 11-12 股) · Q2 季报增速确认(+2-3 股 → 共 14 股)</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">预警 $853（MA60）→MA60 上移 $15，预警线同步上移。1x ATR20 = $84 缓冲给正常波动 · 硬止损 $663（MA120）→MA120 从 $663→$681</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">$1,086 卖 1/4 · $1,200 卖 1/4 · PE>80x 或趋势走坏清仓</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.63</strong>; Fwd PE 48x</span></div>
+                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val"><span class="sub-item">ATR 收敛 或 MA60 放量阳线 <span class="no">❌</span> / Q2 季报增速确认 <span class="no">❌</span></span><span class="sub-item">拟加：<strong>4 股</strong> ⏳</span></span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/MkuAdo58Ao6x5kxeo9ccQH95nDg" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-13</div>
                     <div class="report-body">日报</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_Lumentum.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_Sea.html" class="stock-card down" id="card-sea" data-weight="4976.0">
+            <div class="stock-card down" id="card-sea" data-weight="4976.0">
                 <a href="stock_Sea.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">Sea<span class="new-dot"></span></span>
@@ -685,22 +699,21 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">60 股 @ $91.17（观察仓）</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">55 股 @ $82（MA60 下方支撑区） | 加仓后：115 股 @ $86.8，总成本 ~$9,980（美股 2.9%） | > 5 年数据说 MA200 下方突破只有 33% 胜率。但 $10K 仅占美股 1.8%，试错成本低。$82 比 $110 便宜 25%，R:R 从 2.2:1 提升到 6.5:1。</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">交易层 55 股→低于 $77 约 1.5x ATR，过滤假跌破。$77 是可以被测试的，$74 才是真破了。亏 -$440[M5.1] · 观察层 60 股→W10 绝对低点，跌破说明反弹结构破坏。全清 [M5.2]</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">$110（W10 高点，+27% vs 均价 $86.8）→ 卖 35 股，回收成本 [M5.1] | $150（+73% vs 均价）→ 卖 40 股，留 40 股底仓 [M5.2]</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val">窗口 <strong>$2024–$2026</strong> ❌; 当前 $82.94</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/VJPbdFG39ojlhNx5Sf0cbHFknPe" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-13</div>
                     <div class="report-body">日报</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_Sea.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_Circle.html" class="stock-card down" id="card-circle" data-weight="1557.0">
+            <div class="stock-card down" id="card-circle" data-weight="1557.0">
                 <a href="stock_Circle.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">Circle<span class="new-dot"></span></span>
@@ -712,21 +725,20 @@
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">观察仓 20 股 @ $82.80 | 类型：D型（周期起伏）+ 成长期权</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">暂不加仓：[原因：向下反转，趋势未修复。等待 HH+HL 重建 + MA20 走平/上翘，或 价格跌至 $50-65 区间 + 日线出现止跌结构] | 重检条件：降息落地后 USDC 流通量稳定增长 + PE<40x 时可考虑加到 D 型参考仓位（8%）</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">观察仓暂不设预警止损（20 股极轻仓，$82.80 成本，<$1,700 市值。这本质是「试用期」仓位，不需要止损。真正建仓后以下生效） | 正式仓预警：跌破买入结构低点下方 $3-5 → 减仓 50% | 硬止损： USDC 流通量连续 2 季下滑 >20% 稳定币监管法案重大利空 护城河瓦解（如 Tether 合规化 + USDC 份额大跌）</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">暂不设定：[原因：观察仓阶段以验证逻辑为主，非盈利导向] | - 第一档 $118-120 → 卖 1/4（Fib 38% 回撤 + W5 LH 高点） | - 第二档 $140 → 卖 1/4（前高结构阻力）</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/JvLodklnLoS1pWxbor0cKRksnkg" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-13</div>
                     <div class="report-body">【减仓】预警线已破，趋势全面走弱，建议减仓避险</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_Circle.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_US.AXTI.html" class="stock-card up" id="card-us.axti" data-weight="1458.0">
+            <div class="stock-card up" id="card-us.axti" data-weight="1458.0">
                 <a href="stock_US.AXTI.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">US.AXTI<span class="new-dot"></span></span>
@@ -737,19 +749,21 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">15 股 @ ~$84 | 光互联组合：LITE $12K(48%) + AXTI $10.5K(42%) + COHR $2.5K(10%) | B 型</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.63</strong>; Fwd PE 113x</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/VzdEd0l2poDHgGxTbescB81pnDg" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-13</div>
                     <div class="report-body">日报</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_US.AXTI.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_Coherent.html" class="stock-card up" id="card-coherent" data-weight="1155.0">
+            <div class="stock-card up" id="card-coherent" data-weight="1155.0">
                 <a href="stock_Coherent.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">Coherent<span class="new-dot"></span></span>
@@ -760,22 +774,21 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">3 股 @ $355.06 | 占美股 ~0.3% | 目标 7 股 / ~$2,500 | B 型偏 E | PEG 0.92 | Fwd PE 43.5x</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">ATR 收敛 或 $340-355 缩量企稳(+4 股 → 共 7 股)</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">预警 MA60 跌破 → 减至 3 股→MA60 $329 · 硬止损 $321（MA60 收盘跌破+次日未收回）→ 清仓→MA60 上移，硬止损同步上移</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">$440 卖 2 股（1/3）· $500 卖 2 股（1/3）· 留 3 股底仓</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.92</strong>; Fwd PE 43.5x</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/NbOIdYJvuo4anmxhtU6c5XYonKh" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-13</div>
                     <div class="report-body">【持有】放量大涨，多空博弈剧烈，维持持有观望</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_Coherent.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_2倍做多RKLB_ETF_Defiance.html" class="stock-card down" id="card-2倍做多rklb_etf_defiance" data-weight="966.0">
+            <div class="stock-card down" id="card-2倍做多rklb_etf_defiance" data-weight="966.0">
                 <a href="stock_2倍做多RKLB_ETF_Defiance.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">2倍做多RKLB ETF-Defiance<span class="new-dot"></span></span>
@@ -785,17 +798,19 @@
                         </div>
                     </div>
 
+                </a>
+            <a href="https://www.feishu.cn/docx/WZNCdoNmToKHLQxaD7dcwqYCnIh" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-13</div>
                     <div class="report-body">【观望】2倍做多ETF单日暴跌21.68%，趋势恶化建议观望</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_2倍做多RKLB_ETF_Defiance.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_SpaceX.html" class="stock-card up" id="card-spacex" data-weight="805.0">
+            <div class="stock-card up" id="card-spacex" data-weight="805.0">
                 <a href="stock_SpaceX.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">SpaceX<span class="new-dot"></span></span>
@@ -805,11 +820,13 @@
                         </div>
                     </div>
 
+                </a>
+            <a href="https://www.feishu.cn/docx/A3Hvd6O8loZj8GxjJzycPJYknMW" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-13</div>
                     <div class="report-body">日报</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_SpaceX.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
@@ -818,7 +835,7 @@
         </div>
         <div class="section-title container">关注股<span class="count">4只</span></div>
         <div class="container cards-stage">
-            <div href="stock_蔚来.html" class="stock-card flat" id="card-蔚来" data-weight="0.0">
+            <div class="stock-card flat" id="card-蔚来" data-weight="0.0">
                 <a href="stock_蔚来.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">蔚来</span>
@@ -828,14 +845,14 @@
                         </div>
                     </div>
 
-
                 </a>
+
                 <a href="stock_reports_蔚来.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_拼多多.html" class="stock-card flat" id="card-拼多多" data-weight="0.0">
+            <div class="stock-card flat" id="card-拼多多" data-weight="0.0">
                 <a href="stock_拼多多.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">拼多多</span>
@@ -845,14 +862,14 @@
                         </div>
                     </div>
 
-
                 </a>
+
                 <a href="stock_reports_拼多多.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_Rocket_Lab.html" class="stock-card flat" id="card-rocket_lab" data-weight="0.0">
+            <div class="stock-card flat" id="card-rocket_lab" data-weight="0.0">
                 <a href="stock_Rocket_Lab.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">Rocket Lab</span>
@@ -862,14 +879,14 @@
                         </div>
                     </div>
 
-
                 </a>
+
                 <a href="stock_reports_Rocket_Lab.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_回声星通信.html" class="stock-card flat" id="card-回声星通信" data-weight="0.0">
+            <div class="stock-card flat" id="card-回声星通信" data-weight="0.0">
                 <a href="stock_回声星通信.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">回声星通信</span>
@@ -879,8 +896,8 @@
                         </div>
                     </div>
 
-
                 </a>
+
                 <a href="stock_reports_回声星通信.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
@@ -891,7 +908,7 @@
         <div class="panel-footer container">
             <a href="all_reports_us.html">查看全部 18 只美股日报<span>→</span></a>
         </div>
-        <div class="update-hint container">美股日报更新于 06-14 09:06</div>
+        <div class="update-hint container">美股日报更新于 06-14 10:02</div>
     </article>
 
     <!-- ===== A股 Panel ===== -->
@@ -899,7 +916,7 @@
         <div class="mobile-tabs container" id="mobile-tabs-a"></div>
         <div class="section-title container">正式仓<span class="count">11只</span></div>
         <div class="container cards-stage">
-            <div href="stock_比亚迪.html" class="stock-card up active" id="card-比亚迪" data-weight="1374000.0">
+            <div class="stock-card up active" id="card-比亚迪" data-weight="1374000.0">
                 <a href="stock_比亚迪.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">比亚迪<span class="new-dot"></span></span>
@@ -910,22 +927,22 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">15,000股 @87.981</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">MA20走平+站上¥96 → 加仓 · R:R待定</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">跌破85.88(W3低点/52周低) → 减仓1/3至10,000股 | 清仓条件： 待Master补充</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">待Master补充。机构目标均价¥167（+79%空间），可作为参考</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val">Fwd PE 22x</span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">跌破 85.88 减仓 1/3。不在趋势结构和均线信号冲突时动手，等两者一致</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/UqlqdexIIo5yWfxgfSjcZYU6nTj" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-12</div>
                     <div class="report-body">【观望】超跌反弹续涨2.0%，均线纠缠待明朗，继续按兵不动</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_比亚迪.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_医药ETF易方达.html" class="stock-card up" id="card-医药etf易方达" data-weight="883014.0">
+            <div class="stock-card up" id="card-医药etf易方达" data-weight="883014.0">
                 <a href="stock_医药ETF易方达.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">医药ETF易方达<span class="new-dot"></span></span>
@@ -937,21 +954,20 @@
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">1,895,800股 @0.394</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">MA20 ~0.335( 仍在下降) · MA20 5日斜率 —( 未刹车) · 52周低点 ¥0.323( 距 2.2%)</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">跌破0.323（52周低点）+连续5天收不回+行业基本面恶化 → 再评估是否继续减</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">¥0.459（52周高点, +16.5% vs 成本）→ 卖 60 万股（1/3），锁定趋势修复后的第一笔利润 | ¥0.500（整数关口, +26.9% vs 成本）→ 卖 60 万股（1/3），定投 2 年+的年化回报到位 | 暂不设定：留 ~58 万股底仓，医药长期配置不卖光。触发条件待趋势修复后再定</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/VAKFdJLm1o0mDaxuS3Fcu9s8n5d" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-12</div>
                     <div class="report-body">【持有】多空指标纠缠，静待MA20走平信号明确</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_医药ETF易方达.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_阳光电源.html" class="stock-card up" id="card-阳光电源" data-weight="520660.0">
+            <div class="stock-card up" id="card-阳光电源" data-weight="520660.0">
                 <a href="stock_阳光电源.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">阳光电源<span class="new-dot"></span></span>
@@ -963,21 +979,20 @@
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">3500股 @¥141.38</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">第 1 档 ¥128-130→买500 股(放量止跌 或 大单净流入转正) · 第 2 档 ¥120-125→买500 股(接近前低 ¥121 出现企稳结构) · 第 3 档 跌破 ¥115(结构破坏，暂停左侧买入)</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">短线纪律：收盘跌破 ¥138 且连续 3 日站不回 MA60（¥150）→ 减仓 1/3 或暂停加仓计划 | → 用于保护左侧加仓仓位，不是底仓止损 | 结构破坏：收盘跌破 ¥115（60日低点 ¥121 下方 5%）→ 清仓。趋势彻底反转，B 型逻辑失效。</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">¥182（W1高点, PE ~21x Forward）→ 卖 1/3 | ¥210（200日最高, PE ~24x Forward）→ 卖 1/3 | PE >30x 或 ¥250+ → 清仓剩余</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/OYMqdk3SQol1ynxfi9mcKIbKn4g" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-12</div>
                     <div class="report-body">【观望】股价反弹但未触发入场条件，继续等待企稳信号</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_阳光电源.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_机器人ETF华夏.html" class="stock-card down" id="card-机器人etf华夏" data-weight="436000.0">
+            <div class="stock-card down" id="card-机器人etf华夏" data-weight="436000.0">
                 <a href="stock_机器人ETF华夏.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">机器人ETF华夏<span class="new-dot"></span></span>
@@ -989,20 +1004,21 @@
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">底仓 400,000 股 @ ¥0.7843 + 计划波段 200,000 股 @ ¥1.10</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">MA60（¥1.044）收盘跌破 + 连续 3 天收不回 → 减仓 1/3（~133,000 股） | 机器人产业逻辑证伪（量产遥遥无期/指数被边缘化/政策转向）→ 全清</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">¥1.18（+15.1% vs 均价）→ 卖 100,000 股 | ¥1.23（+20.0% vs 均价）→ 卖 100,000 股</span></div>
+                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val"><span class="sub-item">¥1.05 <span class="no">❌</span> / ¥1.00 <span class="no">❌</span></span></span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/Fka7dUfhKowwvux8MJacmtXJngg" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-12</div>
                     <div class="report-body">【持有】缩量平收，均线纠缠中耐心等待方向选择</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_机器人ETF华夏.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_宁德时代.html" class="stock-card up" id="card-宁德时代" data-weight="394850.0">
+            <div class="stock-card up" id="card-宁德时代" data-weight="394850.0">
                 <a href="stock_宁德时代.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">宁德时代<span class="new-dot"></span></span>
@@ -1013,22 +1029,24 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">1,000股 @111.3443</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">< 21x(~45%) · < 19x(~18%)</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">> v2 的 ¥385/¥362 价格止损删掉——A 型框架明确不设价格止损。</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T1 > 28x（近3年~90%分位）→1/4 · T2 > 32x（近3年~94%分位）→再减 1/4 · T3 单票仓位 > A 股 20%→被动降至 15%</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.49</strong>; Fwd PE 16.7x</span></div>
+                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val"><span class="sub-item">< 21x <span class="no">❌</span> / < 19x <span class="no">❌</span></span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T2 T2锚定机构定价而非拍脑袋，T3用PE锚（利润继续增长则PE不膨胀）。留250股底仓给超长期——固态电池、储能、海外扩张的期权价值。 ❌</span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/BpDadipGxoPxgJx5cAIcJ0qPnqg" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-12</div>
                     <div class="report-body">【持有】反弹力度温和，关注 MA20 压制与入场区间距离</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_宁德时代.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_兴业银行.html" class="stock-card up" id="card-兴业银行" data-weight="214015.0">
+            <div class="stock-card up" id="card-兴业银行" data-weight="214015.0">
                 <a href="stock_兴业银行.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">兴业银行<span class="new-dot"></span></span>
@@ -1040,20 +1058,20 @@
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">当前持仓：11,500 股 @ ¥18.63 | 浮盈 -0.5% | F 型收息锚</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">- F 型估值锚止损：PE > 15x 或股息率 < 4% | - 对应股价 > ¥55+ 或 < ¥5.8，几年内不触发 | - F 型不需要价格止损——越跌股息率越高，越值得买</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">- T1 ¥25.82（PE 7.1x PB 0.65），+39% 空间，届时减仓 1/3 | - F 型以收息为主，止盈非首要</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/Vu8ed38N4oQTufxZAwscCdtonoh" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-12</div>
                     <div class="report-body">【持有】放量站上均线密集区，静待除息后企稳确认</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_兴业银行.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_纳指ETF国泰.html" class="stock-card up" id="card-纳指etf国泰" data-weight="115344.0">
+            <div class="stock-card up" id="card-纳指etf国泰" data-weight="115344.0">
                 <a href="stock_纳指ETF国泰.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">纳指ETF国泰<span class="new-dot"></span></span>
@@ -1065,21 +1083,20 @@
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">78,400 份 @ ¥2.113 | 市值 ~¥16.8 万 | 占 A 股 ~3.6% | 策略 B 动量轮动</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">资金扩容分 4 档（总计目标 ¥50 万）： | ¥16.8 万（已执行）— 当前 | ~¥25 万 — 策略再跑 1-2 月，信号稳定</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">纳指得分跌到 #2 以下 → 系统自动判断 HOLD 还是 SWITCH | 策略 B 累计回撤 >20% → 暂停资金扩容，重新评估。不是清仓——策略 B 的止损是调仓信号，不是价格止损</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">策略 B 无传统止盈——动量轮动的核心是「永远持有当下最强的那个」。 | 不设固定止盈位。如果纳指得分持续下滑 + 其他 ETF 得分超过阈值，系统会发出 SWITCH 信号</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/RdmpdA2o3o4WW4xGxkvcReG9nzf" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-12</div>
                     <div class="report-body">【持有】溢价风险加剧，持仓暂持观望，关注MA60支撑</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_纳指ETF国泰.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_交通银行.html" class="stock-card up" id="card-交通银行" data-weight="107100.0">
+            <div class="stock-card up" id="card-交通银行" data-weight="107100.0">
                 <a href="stock_交通银行.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">交通银行<span class="new-dot"></span></span>
@@ -1091,21 +1108,20 @@
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">15,000股 @7.0953</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">价格站上 MA120（¥6.88）+ MA20 斜率转正 → 可考虑加 5,000-8,000股 | 如果决定精简银行持仓 → 卖出换入兴业/招商</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">PE>15x 或 股息率<4%（F型估值锚止损） | 对应股价 >¥15+，几年内不会触发 | 不需要价格止损</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">待Master补充。机构目标分化（美银7.54 vs 华泰8.65），上行空间有限</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/DDYwdbUHtot0BWxASTec1j95nob" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-12</div>
                     <div class="report-body">日报</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_交通银行.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_招商银行.html" class="stock-card up" id="card-招商银行" data-weight="98350.0">
+            <div class="stock-card up" id="card-招商银行" data-weight="98350.0">
                 <a href="stock_招商银行.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">招商银行<span class="new-dot"></span></span>
@@ -1117,21 +1133,20 @@
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">2,500股 @39.3939</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">MA20斜率转正 + 价格站上 MA60（¥38.80）→ 加仓 1,500-2,000股</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">PE>15x 或 股息率<4%（F型估值锚止损） | 对应股价 >¥90+，几年内不会触发 | 不需要价格止损。F型核心逻辑是收息+防御</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">待Master补充。机构目标 ¥52.56（+36%空间）。F型以收息为主</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/JVsjdMsinoDJXUxCcQpcZn97npc" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-12</div>
                     <div class="report-body">日报</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_招商银行.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_中来股份.html" class="stock-card down" id="card-中来股份" data-weight="40600.0">
+            <div class="stock-card down" id="card-中来股份" data-weight="40600.0">
                 <a href="stock_中来股份.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">中来股份<span class="new-dot"></span></span>
@@ -1143,20 +1158,20 @@
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">5,000 股 @¥9.934</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">¥6.37（120 日低点）跌破 → 无条件清仓。最多再亏 ¥1.3 万，伤不到筋骨。</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">不买不卖。仓位 1.1% 不值得花精力。</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/ThcJd6s67o2TahxWurbc2xdJnbg" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-12</div>
                     <div class="report-body">【观望】弱势探底逼近地板，静待光伏催化破局</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_中来股份.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_润泽科技.html" class="stock-card down" id="card-润泽科技" data-weight="22059.0">
+            <div class="stock-card down" id="card-润泽科技" data-weight="22059.0">
                 <a href="stock_润泽科技.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">润泽科技<span class="new-dot"></span></span>
@@ -1168,15 +1183,14 @@
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">300 股 | 成本：90.93 | 市值：~2.25 万（~0.2%总资产）| B/D 混合型</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">3. 基本面确认：中报扣非增速 ≥30% + 毛利率 ≥46%</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">预警：周线跌破 MA200（~68）→ 减至 150 股 | 硬止损：跌破 Fib 78.6%=56.39 + 中报扣非负增长 → 清仓。投资逻辑被证伪</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">1档 93-95 出 100 股（回本减负）| 2档 105-111 出 100 股 | 3档 130+ 出 100 股（清仓）</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/FgREdDvI9oU5GfxmZ59cfBObnLv" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-12</div>
                     <div class="report-body">【观望】趋势仍处空头环境，耐心等待中报与止跌信号</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_润泽科技.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
@@ -1185,7 +1199,7 @@
         </div>
         <div class="section-title container">关注股<span class="count">3只</span></div>
         <div class="container cards-stage">
-            <div href="stock_中信证券.html" class="stock-card flat" id="card-中信证券" data-weight="0.0">
+            <div class="stock-card flat" id="card-中信证券" data-weight="0.0">
                 <a href="stock_中信证券.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">中信证券</span>
@@ -1195,14 +1209,14 @@
                         </div>
                     </div>
 
-
                 </a>
+
                 <a href="stock_reports_中信证券.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_国电南瑞.html" class="stock-card flat" id="card-国电南瑞" data-weight="0.0">
+            <div class="stock-card flat" id="card-国电南瑞" data-weight="0.0">
                 <a href="stock_国电南瑞.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">国电南瑞</span>
@@ -1213,21 +1227,21 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">未持有 | 0% | A型 | 观察</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">跌到管理层底附近(3000 股) · PE < 20x(3000 股) · PE < 17x（1.5x 间距）(3000 股)</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">PE > 3Y 80%分位（~24x） → 减 1/4 | PE > 3Y 最高（~31x） → 再减 1/3</span></div>
-                </div>
-                <div class="card-report">
-                    <div class="report-label">操作建议</div>
-                    <div class="report-body">观望</div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>TTM PE 22.1x</strong></span></div>
+                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val"><span class="sub-item">跌到管理层底附近 <span class="no">❌</span> / PE < 20x <span class="no">❌</span> / PE < 17x（1.5x 间距） <span class="no">❌</span></span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅</span></div>
                 </div>
                 </a>
+            <div class="card-report">
+                <div class="report-label">操作建议</div>
+                <div class="report-body">观望</div>
+            </div>
                 <a href="stock_reports_国电南瑞.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_生益科技.html" class="stock-card flat" id="card-生益科技" data-weight="0.0">
+            <div class="stock-card flat" id="card-生益科技" data-weight="0.0">
                 <a href="stock_生益科技.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">生益科技</span>
@@ -1238,16 +1252,13 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">未持有 | 0% | B 型 | 计划 50 万分三档建仓</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">一档：130-135 → 15 万（~1100 股）| 理由：MA20 附近，回调确认 | 二档：105-115 → 20 万（~1800 股）| 理由：50% Fib + 筹码密集区 | 三档：90-100 → 15 万（~1500 股）| 理由：61.8% Fib + MA60 附近</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">预警：跌破成本 -10% → 减仓至一半 | 硬止损：跌破 84 元（MA60 + 5月低点重合）→ 全部清仓</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">一档：175-180（PE ~110x，与台光电子对齐）→ 卖出 1/3 | 二档：200-210（Q2 净利继续 11 亿+ 则 Forward PE 压缩）→ 卖出 1/3</span></div>
-                </div>
-                <div class="card-report">
-                    <div class="report-label">操作建议</div>
-                    <div class="report-body">观望</div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 2.0</strong></span></div>
                 </div>
                 </a>
+            <div class="card-report">
+                <div class="report-label">操作建议</div>
+                <div class="report-body">观望</div>
+            </div>
                 <a href="stock_reports_生益科技.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
@@ -1258,7 +1269,7 @@
         <div class="panel-footer container">
             <a href="all_reports_a.html">查看全部 14 只A股日报<span>→</span></a>
         </div>
-        <div class="update-hint container">A股日报更新于 06-14 09:06</div>
+        <div class="update-hint container">A股日报更新于 06-14 10:02</div>
     </article>
 
     <!-- ===== 港股 Panel ===== -->
@@ -1266,7 +1277,7 @@
         <div class="mobile-tabs container" id="mobile-tabs-hk"></div>
         <div class="section-title container">正式仓<span class="count">10只</span></div>
         <div class="container cards-stage">
-            <div href="stock_腾讯控股.html" class="stock-card up active" id="card-腾讯控股" data-weight="3337920.0">
+            <div class="stock-card up active" id="card-腾讯控股" data-weight="3337920.0">
                 <a href="stock_腾讯控股.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">腾讯控股<span class="new-dot"></span></span>
@@ -1277,23 +1288,24 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">7,200 股 @ 405.871 HKD | 市值约 HK$326 万 | 浮盈约 +11.7%</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">档 1 PE < 14.2x(比当前 PE 降 1.5x，框架第一档) · 档 2 PE < 12.7x(再降 1.5x，接近 3 年最低 11.8x) · # 信号</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">波段预警 跌破 MA20（~450）→新买入波段减 1/3 · 🔶 波段收紧 跌破 420（W4 低点失守）→新买入波段再减 1/3 · 波段硬止损 跌破 400→波段仓全清</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T1 PE > 24.4x（3Y P80）→波段仓卖 1/2 · T2 PE > 27.6x（3Y 最高）→波段仓全清</span></div>
-                    <div class="plan-row"><span class="plan-key">止跌</span><span class="plan-val">≥3个 均线支撑 阳线+放量 卖压衰竭 波动见顶</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>TTM PE 15.7x</strong></span></div>
+                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">止跌 <span class="wait">≥3个 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</span><span class="sub-item">均线支撑 <span class="no">❌</span> / 阳线+放量 <span class="no">❌</span> / 卖压衰竭 <span class="no">❌</span> / 波动见顶 <span class="no">❌</span></span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T2 档 2 | PE < 12.7x | < 370 HKD | 再降 1.5x，接近 3 年最低 11.8x | ❌</span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/S6d3d6uNgo0wJkxYxZbcnqFon8d" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-12</div>
                     <div class="report-body">【持有】高盛喊话估值见底，回购持续，但趋势未逆转</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_腾讯控股.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_阿里巴巴_W.html" class="stock-card up" id="card-阿里巴巴_w" data-weight="1322400.0">
+            <div class="stock-card up" id="card-阿里巴巴_w" data-weight="1322400.0">
                 <a href="stock_阿里巴巴_W.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">阿里巴巴-W<span class="new-dot"></span></span>
@@ -1305,19 +1317,20 @@
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">12,000 股 @ HK$135.83</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">HK$140-145（MA120 收复）→ 卖 2,000 股 | HK$160-170（均值回归完成）→ 卖 3,000 股</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/WAEhdb78KoLNfbxhZufcnY8MnMb" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-12</div>
                     <div class="report-body">【持有】反弹遇阻均线空头，100港元不加仓线仍为核心纪律</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_阿里巴巴_W.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_粤海投资.html" class="stock-card up" id="card-粤海投资" data-weight="621600.0">
+            <div class="stock-card up" id="card-粤海投资" data-weight="621600.0">
                 <a href="stock_粤海投资.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">粤海投资<span class="new-dot"></span></span>
@@ -1329,21 +1342,21 @@
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">74,000股 @6.979</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">跌至 MA60($8.03) → 加6,000股，升至 80,000股 · R:R ~5.6:1 | 入场 8.03(PE 11.6x / 股息 5.8%)，目标 10.40-10.66，MA120 7.61 为参考底线 | F 型不设价格止损，靠估值锚保护：PE>15x 或股息<4% 才是离场信号</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">PE > 15x（股价 ~10.40）→ 减仓 1/3 | 股息率 < 4%（股价 ~11.57）→ 清仓 | → 向下无价格止损。跌了只要股息率更高、估值更便宜，反而是加仓机会</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T1 10.40(PE>15x)卖1/3 · T2 10.66(华泰目标)再卖1/3 · T3 11.57(股息<4%)清仓</span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/CWz6dbkU4oWLBcxbTx7cQ8jtn5f" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-12</div>
                     <div class="report-body">【持有】均线纠缠消化阻力，估值保护下继续持有收息</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_粤海投资.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_百济神州.html" class="stock-card up" id="card-百济神州" data-weight="476700.0">
+            <div class="stock-card up" id="card-百济神州" data-weight="476700.0">
                 <a href="stock_百济神州.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">百济神州<span class="new-dot"></span></span>
@@ -1355,21 +1368,20 @@
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">3,000 股 @ HK$173.79</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">已执行 1,000 股 @ ~162.36 · 下一笔 无预设档位</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">HK$143.30（52 周低点）收盘跌破 + 连续 3 天收不回 → 减仓至 2,000 股</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">HK$200 → 卖 1,000 股 | HK$220 → 卖 1,000 股</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/Y6NddmIHQovzTIx8fzBcK3Oinsc" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-12</div>
                     <div class="report-body">【观望】战略收缩引发抛压，耐心等待止跌信号与支撑确认</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_百济神州.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_小米集团_W.html" class="stock-card up" id="card-小米集团_w" data-weight="78600.0">
+            <div class="stock-card up" id="card-小米集团_w" data-weight="78600.0">
                 <a href="stock_小米集团_W.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">小米集团-W<span class="new-dot"></span></span>
@@ -1382,17 +1394,19 @@
                     <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">3,000 股 @ HK$33.772 | 浮亏 -23.9% | 占港股 ~1.3% | B/C 过渡型 → 失败确认</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/NFYPdlwOkoCGKgxJys7cH0o5nce" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-12</div>
                     <div class="report-body">【减仓】回购支撑有限，趋势空头未改，继续执行退出计划</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_小米集团_W.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_舜宇光学科技.html" class="stock-card up" id="card-舜宇光学科技" data-weight="42930.0">
+            <div class="stock-card up" id="card-舜宇光学科技" data-weight="42930.0">
                 <a href="stock_舜宇光学科技.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">舜宇光学科技<span class="new-dot"></span></span>
@@ -1403,22 +1417,21 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">600 股 @ HK$76.81（300 观察仓 + 300 第一档加仓）</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">下一档：62-64，1,800 股，MA60/MA120/Fib 61.8% 三线黄金袋。 | > 68-69 不设档——距 70.75 仅 2.5%，无信号买入等于同一浪中追低，不是分档。 | > 加仓后 2,900 股 @ ~67.5，总成本 ~HK$195,700</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">收盘跌破 50.3（W14 低点）→ 全仓 2,900 股清仓 | 预警：周线跌破 MA200（67.8）→ 不加第二档，等趋势企稳</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">86-90（前高 + 52 周高，+28-34% vs 均价 67.4）→ 卖 1/3（~967 股）[M5.1] | 100（整数关口 + PE ~21x，+48% vs 均价）→ 卖 1/3（~967 股）[M4.1] | 117（2023 年平台位，+74% vs 均价）→ 清仓 [M5.4]</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val">窗口 <strong>$2023–$2026</strong> ❌; 当前 $71.55</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/X4gzdlaYyo1YDLxcRUScHhixn1f" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-12</div>
                     <div class="report-body">【持有】股价反弹但未触计划条件，继续持有等待</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_舜宇光学科技.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_建滔积层板.html" class="stock-card down" id="card-建滔积层板" data-weight="32800.0">
+            <div class="stock-card down" id="card-建滔积层板" data-weight="32800.0">
                 <a href="stock_建滔积层板.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">建滔积层板<span class="new-dot"></span></span>
@@ -1429,22 +1442,21 @@
                     </div>
                 <div class="plan-block">
                     <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">持有 500 股 @ 14.323 | ~2.2% A股等值 | +347% 浮盈 | B/D 混合型</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">暂不加仓：[原因：98%分位、PEG 8.9、RSI 70.7、ATR20 8.4%]</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">MA20(50.05) 跌破 → 减仓 200 股（收回本金），保留 300 股零成本 | 暂无硬止损（成本极低 14.32，已收回本金后无需止损）</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">方案 B 建议：卖 200 股 @ 64（收回本金 12,800 HKD≈全部成本 7,160），剩余 300 股纯利润 | 后续：MA20(50.05) 跌破再减 1/3；或 Q3 季报毛利率未突破 20% 则清仓</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 8.9</strong></span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/ObVhdkikaodyzfxkljHcID9OnMd" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-12</div>
                     <div class="report-body">【持有】高位震荡消化涨幅，零成本持仓继续让利润奔跑</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_建滔积层板.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_美团_W.html" class="stock-card down" id="card-美团_w" data-weight="15580.0">
+            <div class="stock-card down" id="card-美团_w" data-weight="15580.0">
                 <a href="stock_美团_W.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">美团-W<span class="new-dot"></span></span>
@@ -1454,17 +1466,19 @@
                         </div>
                     </div>
 
+                </a>
+            <a href="https://www.feishu.cn/docx/WoiEdlJVzoWiijxohKic0f1hnTb" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-12</div>
                     <div class="report-body">【观望】均线纠缠待方向确认，资金小单主导上攻乏力</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_美团_W.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_恒瑞医药.html" class="stock-card flat" id="card-恒瑞医药" data-weight="0.0">
+            <div class="stock-card flat" id="card-恒瑞医药" data-weight="0.0">
                 <a href="stock_恒瑞医药.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">恒瑞医药<span class="new-dot"></span></span>
@@ -1477,17 +1491,19 @@
                     <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">3,000 股 @ HK$70.30（港股通 H 股）</span></div>
                 </div>
+                </a>
+            <a href="https://www.feishu.cn/docx/K6hjdFIb7oSaoDxAP1gcG5iOnkU" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-05</div>
                     <div class="report-body">缩量反弹修复，持有待变</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_恒瑞医药.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
                 </a>
             </div>
-            <div href="stock_南方两倍做多三星电子.html" class="stock-card flat" id="card-南方两倍做多三星电子" data-weight="0.0">
+            <div class="stock-card flat" id="card-南方两倍做多三星电子" data-weight="0.0">
                 <a href="stock_南方两倍做多三星电子.html" class="card-main-link">
                     <div class="card-top">
                         <span class="card-name">南方两倍做多三星电子<span class="new-dot"></span></span>
@@ -1497,11 +1513,13 @@
                         </div>
                     </div>
 
+                </a>
+            <a href="https://www.feishu.cn/docx/NjzKdQBPmo7iZfxO76sc5h1znfe" class="card-report-link" target="_blank">
                 <div class="card-report">
                     <div class="report-label">最新日报 · 06-11</div>
                     <div class="report-body">【持有】高位宽幅震荡中，缩量回踩未破前低</div>
                 </div>
-                </a>
+            </a>
                 <a href="stock_reports_南方两倍做多三星电子.html" class="card-more">
                     <span>查看全部日报</span>
                     <span class="arrow">→</span>
@@ -1512,13 +1530,13 @@
         <div class="panel-footer container">
             <a href="all_reports_hk.html">查看全部 10 只港股日报<span>→</span></a>
         </div>
-        <div class="update-hint container">港股日报更新于 06-14 09:06</div>
+        <div class="update-hint container">港股日报更新于 06-14 10:02</div>
     </article>
 
     <!-- ===== Side Index ===== -->
     <nav class="side-idx" id="sideIdx"></nav>
 
-    <footer class="footer container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-14 09:06</footer>
+    <footer class="footer container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-14 10:02</footer>
 
 <script>
 const snapshotData = {

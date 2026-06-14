@@ -7,21 +7,27 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <style>
         :root {
-            --bg: #ffffff;
-            --paper: #faf9f7;
-            --ink: #111111;
+            --bg:       #ffffff;
+            --paper:    #faf9f7;
+            --ink:      #111111;
             --ink-soft: #6b6b6b;
-            --ink-faint: #9a9a9a;
-            --line: #e8e5e1;
-            --line-dark: #1a1a1a;
-            --red: #b86b6b;
-            --green: #5b8c6f;
-            --blue: #6b8aab;
-            --amber: #c8873b;
-            --gray: #9a9a9a;
+            --ink-faint:#9a9a9a;
+            --line:     #e8e5e1;
+            --line-dark:#1a1a1a;
+            --red:      #b86b6b;
+            --green:    #5b8c6f;
+            --blue:     #6b8aab;
+            --amber:    #c8873b;
+            --gray:     #9a9a9a;
+            --tag-hold-bg:#e8f5e9; --tag-hold-ink:#2e7d32; --tag-hold-line:#c8e6c9;
+            --tag-watch-bg:#f5f5f5; --tag-watch-ink:#616161; --tag-watch-line:#e0e0e0;
+            --tag-scout-bg:#e3f2fd; --tag-scout-ink:#1565c0; --tag-scout-line:#bbdefb;
+            --tag-stop-bg:#ffebee; --tag-stop-ink:#c62828; --tag-stop-line:#ffcdd2;
+            --tag-add-bg:#fff3e0; --tag-add-ink:#e65100; --tag-add-line:#ffe0b2;
             --serif-zh: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
             --serif-en: "Cormorant Garamond", "Playfair Display", "Georgia", serif;
             --pad-x: 16px;
+            --card-pad: 16px;
             --radius-card: 12px;
             --shadow-card: 0 2px 8px rgba(0,0,0,0.06);
         }
@@ -40,12 +46,13 @@
         .container { padding-left: var(--pad-x); padding-right: var(--pad-x); }
         a { text-decoration: none; color: inherit; }
 
+        /* ===== MASTHEAD ===== */
         .masthead {
             border-bottom: 1.5px solid var(--line-dark);
             padding-bottom: 14px;
             margin-bottom: 14px;
         }
-        .masthead-top {
+        .masthead-top, .masthead-row {
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
@@ -55,7 +62,7 @@
             align-items: center;
             gap: 10px;
         }
-        .logo-mark {
+        .logo-mark, .brand-mark {
             width: 38px; height: 38px;
             border-radius: 9px;
             background: #d46b46;
@@ -68,14 +75,14 @@
             font-weight: 700;
             letter-spacing: -1px;
         }
-        .brand-title .zh {
+        .brand-title .zh, .brand-text .zh {
             display: block;
             font-size: 24px;
             font-weight: 700;
             letter-spacing: 5px;
             line-height: 1.1;
         }
-        .brand-title .en {
+        .brand-title .en, .brand-text .en {
             display: block;
             font-family: var(--serif-en);
             font-size: 10px;
@@ -97,6 +104,7 @@
             margin-top: 2px;
         }
 
+        /* ===== BACK NAV ===== */
         .back-nav {
             display: flex;
             align-items: center;
@@ -108,6 +116,7 @@
         }
         .back-nav .arrow { font-family: var(--serif-en); font-size: 14px; }
 
+        /* ===== PAGE TITLE ===== */
         .page-title {
             font-size: 22px;
             font-weight: 700;
@@ -115,156 +124,293 @@
             margin: 8px 0 18px;
         }
 
-        .status-bar {
+        /* ===== STOCK HEADER ===== */
+        .stock-hd {
+            border-bottom: 1.5px solid var(--line-dark);
+            padding-bottom: 16px;
+            margin-bottom: 14px;
+        }
+        .stock-hd-row {
             display: flex;
-            align-items: baseline;
-            gap: 12px;
-            padding: 12px 14px;
-            border-radius: var(--radius-card);
-            background: var(--paper);
-            border: 1px solid var(--line);
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .stock-name {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        .stock-code {
+            font-family: var(--serif-en);
+            font-size: 13px;
+            color: var(--ink-soft);
+            letter-spacing: 1px;
+            margin-top: 2px;
+        }
+        .stock-price { text-align: right; }
+        .stock-price .price {
+            font-family: var(--serif-en);
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 1;
+        }
+        .stock-price .change {
+            font-size: 13px;
+            margin-top: 4px;
+        }
+        .change.up   { color: var(--red); }
+        .change.down { color: var(--green); }
+
+        /* ===== STATUS BAR ===== */
+        .status-bar {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
             margin-bottom: 16px;
         }
-        .status-bar.up { border-left: 4px solid var(--red); }
-        .status-bar.down { border-left: 4px solid var(--green); }
-        .status-bar.flat { border-left: 4px solid var(--gray); }
-        .status-price { font-size: 24px; font-weight: 700; font-family: var(--serif-en); }
-        .status-change { font-size: 14px; font-weight: 600; }
-        .status-bar.up .status-change { color: var(--red); }
-        .status-bar.down .status-change { color: var(--green); }
-        .status-market { margin-left: auto; font-size: 12px; color: var(--ink-soft); }
+        @media (max-width: 400px) {
+            .status-bar { grid-template-columns: repeat(2, 1fr); }
+        }
+        .status-item {
+            font-size: 13px;
+            padding: 3px 10px;
+            border-radius: 4px;
+            border: 1px solid var(--line);
+            color: var(--ink-soft);
+            white-space: nowrap;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .status-item strong { color: var(--ink); }
 
+        /* ===== SECTION ===== */
+        .section { margin-bottom: 20px; }
+        .section-title {
+            font-size: 17px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--line);
+        }
+        .section-title .ver {
+            font-size: 11px;
+            color: var(--ink-faint);
+            font-weight: 400;
+            margin-left: 6px;
+        }
+
+        /* ===== PLAN CARD ===== */
+        .plan-card {
+            background: var(--bg);
+            border: 1px solid var(--line);
+            border-radius: var(--radius-card);
+            padding: var(--card-pad);
+            box-shadow: var(--shadow-card);
+        }
+        .plan-section {
+            padding: 12px 0;
+            border-bottom: 1px dotted var(--line);
+        }
+        .plan-section:last-child { border-bottom: none; padding-bottom: 0; }
+        .plan-section:first-child { padding-top: 0; }
+        .ps-label {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--ink-faint);
+            margin-bottom: 6px;
+        }
+        .ps-row {
+            display: flex;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 3px;
+        }
+        .ps-row .k {
+            flex: 0 0 68px;
+            font-weight: 600;
+            color: var(--ink-soft);
+            font-size: 13px;
+        }
+        .ps-row .v { flex: 1; }
+        .sig-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px 16px;
+            margin-top: 6px;
+        }
+        .sig-item {
+            font-size: 13px;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+        .sig-dot {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        .sig-dot.on  { background: var(--green); }
+        .sig-dot.off { background: var(--red); }
+        .chip {
+            font-size: 11px;
+            font-weight: 700;
+            padding: 1px 7px;
+            border-radius: 3px;
+            margin-left: 4px;
+        }
+        .chip.ok   { background: var(--tag-hold-bg); color: var(--tag-hold-ink); }
+        .chip.no   { background: var(--tag-stop-bg); color: var(--tag-stop-ink); }
+        .chip.wait { background: var(--tag-watch-bg); color: var(--tag-watch-ink); }
+
+        /* ===== DAILY CHECK ===== */
         .daily-check {
             background: var(--paper);
             border: 1px solid var(--line);
             border-radius: var(--radius-card);
-            padding: 14px 16px;
-            margin-bottom: 16px;
+            padding: 14px var(--card-pad);
+            margin-bottom: 20px;
         }
-        .daily-check-title {
-            font-size: 12px;
+        .daily-check .dc-title {
+            font-size: 13px;
             font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: #4a4a4a;
-            margin-bottom: 8px;
-        }
-        .daily-check ul {
-            list-style: none;
-            font-size: 14px;
+            letter-spacing: 2px;
             color: var(--ink-soft);
+            margin-bottom: 8px;
+            text-transform: uppercase;
         }
-        .daily-check li { padding: 3px 0; }
+        .dc-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px 12px;
+        }
+        .dc-item { font-size: 13px; }
+        .dc-item .l { color: var(--ink-soft); }
+        .dc-item .val { font-weight: 600; }
+        .dc-item.risk { background: #fff5f5; border-left: 3px solid var(--red); padding: 4px 8px; border-radius: 0 4px 4px 0; }
+        .dc-item.safe { background: #e8f5e9; border-left: 3px solid var(--green); padding: 4px 8px; border-radius: 0 4px 4px 0; }
 
-        .plan-card {
-            background: #fff;
-            border: 1px solid var(--line);
-            border-left: 4px solid var(--blue);
-            border-radius: 0 var(--radius-card) var(--radius-card) 0;
-            padding: 14px 18px;
-            margin: 16px 0;
-            box-shadow: var(--shadow-card);
+        /* ===== REPORT LIST ===== */
+        .report-list {
+            list-style: none;
+            border-left: 2px solid var(--line);
+            padding-left: 14px;
         }
-        .plan-hdr {
+        .report-list li {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            margin-bottom: 8px;
+            align-items: baseline;
+            padding: 9px 0;
+            border-bottom: 1px solid var(--line);
+            position: relative;
         }
-        .plan-ttl { font-size: 14px; font-weight: 600; color: var(--ink); }
-        .plan-tag {
-            font-size: 11px;
-            font-weight: 500;
-            color: var(--blue);
-            background: #eff6ff;
-            padding: 2px 8px;
-            border-radius: 10px;
+        .report-list li::before {
+            content: '';
+            position: absolute;
+            left: -17px;
+            top: 14px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--line);
+            border: 2px solid var(--bg);
         }
-        .plan-row { font-size: 13px; color: var(--ink-soft); margin-bottom: 5px; line-height: 1.6; }
-        .plan-row strong { color: var(--ink); }
-        .plan-insight {
+        .report-list li:first-child::before { background: var(--red); }
+        .report-list li:last-child { border-bottom: none; }
+        .report-list .r-date {
+            font-family: var(--serif-en);
             font-size: 13px;
-            color: var(--ink);
-            margin-top: 8px;
-            padding-top: 8px;
-            border-top: 1px solid var(--line);
+            color: var(--ink-soft);
+            min-width: 56px;
         }
+        .report-list .r-title {
+            flex: 1;
+            font-size: 15px;
+            margin: 0 12px;
+        }
+        .report-list .r-tag {
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 3px;
+            white-space: nowrap;
+        }
+        .r-tag.sell  { background: var(--tag-stop-bg);  color: var(--tag-stop-ink); }
+        .r-tag.hold  { background: var(--tag-hold-bg);  color: var(--tag-hold-ink); }
+        .r-tag.buy   { background: var(--tag-scout-bg); color: var(--tag-scout-ink); }
+        .r-tag.watch { background: var(--tag-watch-bg); color: var(--tag-watch-ink); }
+        .r-tag.add   { background: var(--tag-add-bg);   color: var(--tag-add-ink); }
 
-        .report-timeline,
+        /* ===== EXTERNAL LINKS ===== */
+        .ext-links {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .ext-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 14px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            font-size: 14px;
+            transition: background 0.15s;
+        }
+        .ext-link:hover { background: var(--paper); }
+
+        /* ===== SNAPSHOT LIST ===== */
         .snapshot-list {
             list-style: none;
             border-left: 2px solid var(--line);
             padding-left: 16px;
         }
-        .report-timeline li,
         .snapshot-list li {
             position: relative;
             padding: 14px 0 18px;
             border-bottom: 1px solid var(--line);
         }
-        .report-timeline li:last-child,
         .snapshot-list li:last-child { border-bottom: none; }
-        .report-timeline li::before,
         .snapshot-list li::before {
             content: '';
             position: absolute;
             left: -21px;
             top: 20px;
-            width: 8px;
-            height: 8px;
+            width: 10px;
+            height: 10px;
             border-radius: 50%;
-            background: var(--line-dark);
+            background: var(--line);
+            border: 2px solid var(--bg);
         }
-        .report-link,
-        .snapshot-link {
-            display: block;
-            text-decoration: none;
-            color: inherit;
-        }
-        .report-date,
-        .snapshot-date {
+        .snapshot-list li:first-child::before { background: var(--red); }
+        .snap-date {
             font-family: var(--serif-en);
-            font-size: 11px;
+            font-size: 12px;
             color: var(--ink-soft);
             letter-spacing: 0.5px;
+            margin-bottom: 4px;
         }
-        .report-title,
-        .snapshot-title {
-            font-size: 15px;
+        .snap-title {
+            font-size: 16px;
             font-weight: 600;
+            line-height: 1.45;
             color: var(--ink);
-            margin-top: 4px;
-            line-height: 1.4;
         }
-        .report-arrow,
-        .snapshot-arrow {
-            font-family: var(--serif-en);
-            font-size: 13px;
-            color: var(--ink-soft);
-            margin-top: 4px;
-        }
-        .snapshot-new {
-            display: inline-block;
-            font-size: 10px;
-            font-weight: 700;
-            color: #fff;
-            background: var(--red);
-            padding: 1px 5px;
-            border-radius: 3px;
-            margin-left: 6px;
-            letter-spacing: 0.5px;
-        }
-        .snapshot-meta { margin-bottom: 4px; }
+        .snap-title:hover { color: var(--ink-soft); }
 
-        .footer {
-            margin-top: 40px;
-            padding-top: 14px;
-            border-top: 1.5px solid var(--line-dark);
-            font-size: 10px;
-            color: var(--ink-soft);
+        /* ===== FOOTER ===== */
+        .site-foot, .footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid var(--line);
             text-align: center;
+            font-size: 11px;
+            color: var(--ink-faint);
             letter-spacing: 1px;
-            font-family: var(--serif-en);
         }
     </style>
 </head>
@@ -287,42 +433,63 @@
 
 
     <div class="container">
-        <a href="watchlist.html" class="back-nav"><span class="arrow">←</span> 返回首页</a>
-        <div class="page-title">Sea<span style="font-size:13px;color:var(--ink-soft);margin-left:8px;font-weight:400;">SE</span></div>
+        <a href="holdings.html" class="back-nav"><span class="arrow">←</span> 返回日报首页</a>
     </div>
 
-    <div class="container">
-        <div class="status-bar down">
-            <div class="status-price">82.94</div>
-            <div class="status-change">-3.21%</div>
-            <div class="status-market">美股</div>
+    <header class="stock-hd container">
+        <div class="stock-hd-row">
+            <div>
+                <div class="stock-name">Sea</div>
+                <div class="stock-code">US.SE · 美股</div>
+            </div>
+            <div class="stock-price">
+                <div class="price">82.94</div>
+                <div class="change down">-3.21%</div>
+            </div>
         </div>
+    </header>
+
+    <div class="status-bar container">
+        <span class="status-item">类型 <strong>B/E 混合型 — 东南亚互联网平台 + 新兴市场风投</strong></span>
+        <span class="status-item">趋势 <strong>—</strong></span>
+        <span class="status-item">PE <strong>—</strong></span>
+        <span class="status-item">分位 <strong>—</strong></span>
+        <span class="status-item">止跌 <strong>—</strong></span>
+        <span class="status-item">持仓 <strong>60 股 @ $91.17（观察仓）</strong></span>
     </div>
 
     <div class="container">
         <div class="daily-check">
-            <div class="daily-check-title">日检对照</div>
-            <ul>
-            <li>Master 交易计划 v1</li>
-            <li>入场条件对照：</li>
-            <li>MA200站上：站上 MA200（$10），当前 82.94，已站上</li>
-            <li>操作约束（日报 AI 必须遵守）：</li>
-            <li>· [约束] 趋势状态为「向下反转」，ABC 应以减仓/观望为主，A 路径不得建议加仓</li>
-            </ul>
+            <div class="dc-title">⚡ 日检对照</div>
+            <div class="dc-grid">
+        <div class="dc-item"><span class="l">加仓线</span> <span class="val">待补充</span></div>
+        <div class="dc-item safe"><span class="l">当前距</span> <span class="val">待补充</span></div>
+        <div class="dc-item"><span class="l">止跌需要</span> <span class="val">≥2 / 4</span></div>
+        <div class="dc-item"><span class="l">当前止跌</span> <span class="val">待补充</span></div>
+        <div class="dc-item risk"><span class="l">预警</span> <span class="val">趋势向下反转</span></div>
+        <div class="dc-item safe"><span class="l">硬止损</span> <span class="val">安全</span></div>
+            </div>
         </div>
     </div>
 
-    <div class="plan-card">
-      <div class="plan-hdr"><span class="plan-ttl">📋 交易计划 v1</span><span class="plan-tag"></span></div>
-      <div class="plan-row"><strong>持仓</strong> &nbsp; 60 股 @ $91.17（观察仓）</div>
-      <div class="plan-row plan-entry"><strong>加仓</strong> &nbsp; 55 股 @ $82（MA60 下方支撑区） | 加仓后：115 股 @ $86.8，总成本 ~$9,980（美股 2.9%） | > 5 年数据说 MA200 下方突破只有 33% 胜率。但 $10K 仅占美股 1.8%，试错成本低。$82 比 $110 便宜 25%，R:R 从 2.2:1 提升到 6.5:1。</div>
-      <div class="plan-row plan-stop"><strong>止损</strong> &nbsp; 交易层 55 股→低于 $77 约 1.5x ATR，过滤假跌破。$77 是可以被测试的，$74 才是真破了。亏 -$440[M5.1] · 观察层 60 股→W10 绝对低点，跌破说明反弹结构破坏。全清 [M5.2]</div>
-      <div class="plan-row plan-profit"><strong>止盈</strong> &nbsp; $110（W10 高点，+27% vs 均价 $86.8）→ 卖 35 股，回收成本 [M5.1] | $150（+73% vs 均价）→ 卖 40 股，留 40 股底仓 [M5.2]</div>
-    </div>
+    <section class="section container">
+        <div class="section-title">交易计划<span class="ver">v1 · 06-13</span></div>
+        <div class="plan-card">
+        <div class="plan-section">
+            <div class="ps-label">止损</div>
+            <div class="ps-row"><span class="k">层级</span><span class="v">股数 | 止损位 | 逻辑</span></div>
+            <div class="ps-row"><span class="k">交易层</span><span class="v">55 股 | $74 | 低于 $77 约 1.5x ATR，过滤假跌破。$77 是可以被测试的，$74 才是真破了。亏 -$440（占总仓位 4.4%）[M5.1]</span></div>
+            <div class="ps-row"><span class="k">观察层</span><span class="v">60 股 | $77 | W10 绝对低点，跌破说明反弹结构破坏。全清 [M5.2]</span></div>
+        </div>
+        <div class="plan-section">
+            <div class="ps-label">止盈</div>
+            <div class="ps-row"><span class="v">$110（W10 高点，+27% vs 均价 $86.8）→ 卖 35 股，回收成本 [M5.1]</span></div>
+            <div class="ps-row"><span class="v">$150（+73% vs 均价）→ 卖 40 股，留 40 股底仓 [M5.2]</span></div>
+        </div>
+        </div>
+    </section>
 
 
-
-
-    <footer class="footer container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-14 00:52</footer>
+    <footer class="site-foot container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-14 10:02</footer>
 </body>
 </html>
