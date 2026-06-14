@@ -149,12 +149,33 @@ def scan_stock_pages():
         all_sections.update(secs)
     print(f"  个股页 section 类型: {dict(all_sections)}")
 
-    # 检查哪些股票只有很少 section
+    # 检查哪些股票只有很少 section（仅对有知识库的股票报警）
+    import subprocess
+    kb_dirs = [os.path.expanduser("~/.claude/skills/master/knowledge"),
+               "/Users/jediyang/ClaudeCode/Project-Makemoney/millenium-falcon/knowledge"]
+    has_kb = set()
+    for d in kb_dirs:
+        if os.path.exists(d):
+            for kf in Path(d).glob("*.md"):
+                has_kb.add(kf.stem)
+    # Also add stocks that might have knowledge files with different naming
+    # Check via MasterPlanReader
+    sys.path.insert(0, os.path.join(REPORTS_DIR, ".."))
+    from app.services.master_plan_reader import MasterPlanReader
+    reader = MasterPlanReader()
+
     for f in stock_files:
         html = f.read_text(encoding="utf-8")
         secs = re.findall(r'<div class="ps-label">([^<]+)</div>', html)
         if len(secs) <= 1:
-            issue("P1", "个股页", f"section-少-{f.stem}", f"只有 {len(secs)} 个 section: {secs}")
+            # Check if this stock has a knowledge file
+            name = f.stem.replace("stock_", "")
+            # Get code from the page
+            code_match = re.search(r'stock-code">([^<]+)</div>', html)
+            code = code_match.group(1).split(" · ")[0] if code_match else ""
+            has_plan = bool(reader._read_kb(code)) if code else False
+            if has_plan:
+                issue("P1", "个股页", f"section-少-{f.stem}", f"有知识库但只有 {len(secs)} 个 section: {secs}")
 
 # ═══════════════════════════════════════════════════════════
 # 3. 日报汇总页扫描
