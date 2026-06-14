@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>千年隼日报 首页 v25</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #ffffff;
+            --paper: #faf9f7;
+            --ink: #000000;
+            --ink-light: #6b6b6b;
+            --line: #e8e5e1;
+            --line-dark: #1a1a1a;
+            --red: #b86b6b;
+            --green: #6b9b7d;
+            --blue: #7a94ab;
+            --gray: #9a9a9a;
+            --dot: #7a94ab;
+            --pad-x: 16px;
+            --serif-zh: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", serif;
+            --serif-en: "Cormorant Garamond", "Playfair Display", "Georgia", serif;
+            --script: "Dancing Script", "Brush Script MT", "KaiTi", cursive;
+        }
+
+        html { -webkit-font-smoothing: antialiased; scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--serif-zh);
+            background: var(--bg);
+            color: var(--ink);
+            padding: 32px 0 56px;
+            max-width: 560px;
+            margin: 0 auto;
+            line-height: 1.55;
+            font-size: 17px;
+        }
+
+        .container { padding-left: var(--pad-x); padding-right: var(--pad-x); }
+
+        .masthead {
+            border-bottom: 1.5px solid var(--line-dark);
+            padding-bottom: 14px;
+            margin-bottom: 14px;
+        }
+        .masthead-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 6px;
+        }
+        .brand { display: flex; align-items: center; gap: 10px; }
+        .brand .logo-mark {
+            width: 38px; height: 38px;
+            border-radius: 9px;
+            background: #d46b46;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--serif-en);
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+        .brand img { width: 38px; height: 38px; border-radius: 9px; }
+        .brand-title .zh { display: block; font-size: 26px; font-weight: 600; letter-spacing: 4px; line-height: 1.1; }
+        .brand-title .en { display: block; font-family: var(--serif-en); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--ink-light); margin-top: 2px; }
+        .issue { text-align: right; font-family: var(--serif-en); }
+        .issue .day { font-size: 28px; font-weight: 500; line-height: 1; color: var(--ink); }
+        .issue .month { font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase; color: var(--ink-light); margin-top: 2px; }
+
+        .tabs { display: flex; border-bottom: 1px solid var(--line); margin-bottom: 14px; }
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 10px 0 8px;
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--ink-light);
+            cursor: pointer;
+            position: relative;
+            letter-spacing: 1.5px;
+        }
+        .tab.active { color: var(--ink); font-weight: 800; }
+        .tab::after { content: ''; position: absolute; bottom: -1px; left: 25%; right: 25%; height: 1.5px; background: transparent; }
+        .tab.active::after { background: var(--line-dark); height: 2px; }
+
+        /* ---- Snapshot Banner ---- */
+        .snapshot-banner {
+            display: block;
+            text-decoration: none;
+            padding: 8px 0;
+            margin-bottom: 16px;
+        }
+        .snapshot-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+        .snapshot-label {
+            font-size: 10px;
+            color: var(--ink-light);
+            letter-spacing: 1.2px;
+        }
+        .snapshot-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--ink);
+            line-height: 1.3;
+            letter-spacing: 0.2px;
+        }
+        .snapshot-more {
+            display: flex;
+            align-items: center;
+            font-size: 11px;
+            color: var(--ink-light);
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .snapshot-banner:hover .snapshot-title,
+        .snapshot-banner:hover .snapshot-more { color: var(--ink); }
+
+        .panel { display: none; }
+        .panel.active { display: block; animation: fadeIn .3s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+
+        .section-title { display: flex; align-items: baseline; font-size: 20px; font-weight: 700; color: var(--ink); margin: 24px 0 12px; letter-spacing: 1px; }
+        .section-title .count { font-size: 13px; color: var(--ink-light); margin-left: 8px; font-weight: 400; }
+
+        /* ---- Side Index — left side, slot-machine style ---- */
+        .side-idx {
+            position: fixed;
+            left: max(8px, calc((100vw - 700px) / 2));
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            z-index: 100;
+            opacity: 0.65;
+            transition: opacity 0.25s;
+        }
+        .side-idx:hover { opacity: 1; }
+        .side-idx a {
+            display: block;
+            font-size: 12px;
+            font-family: var(--serif-zh);
+            color: var(--ink-light);
+            text-decoration: none;
+            padding: 3px 8px 3px 12px;
+            border-radius: 4px;
+            text-align: left;
+            letter-spacing: 0.3px;
+            transition: all 0.15s;
+            white-space: nowrap;
+            border-left: 2px solid transparent;
+            line-height: 1.35;
+            position: relative;
+        }
+        .side-idx a:hover {
+            color: var(--ink);
+            background: rgba(0,0,0,0.03);
+        }
+        .side-idx a.active {
+            color: var(--ink);
+            font-weight: 700;
+            font-size: 13px;
+            background: var(--paper);
+            border-left-color: var(--line-dark);
+        }
+        .side-idx a.hot { color: var(--red); }
+        .side-idx a.hot.active { border-left-color: var(--red); background: #fff5f5; }
+        .side-idx a.stop-signal { color: var(--green); }
+        .side-idx a.stop-signal.active { border-left-color: var(--green); background: #e8f5e9; }
+
+        @media (max-width: 720px) {
+            .side-idx { display: none; }
+        }
+
+        /* ---- Mobile Tabs — horizontal scroll on narrow screens ---- */
+        .mobile-tabs {
+            display: none;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            gap: 6px;
+            padding: 2px 0 10px;
+            margin-bottom: 8px;
+        }
+        .mobile-tabs::-webkit-scrollbar { display: none; }
+        .mobile-tabs a {
+            flex-shrink: 0;
+            font-size: 13px;
+            color: var(--ink-light);
+            text-decoration: none;
+            padding: 5px 12px;
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            background: #fff;
+            white-space: nowrap;
+            transition: all 0.15s;
+        }
+        .mobile-tabs a.active {
+            color: var(--ink);
+            font-weight: 700;
+            background: var(--paper);
+            border-color: var(--line-dark);
+        }
+        .mobile-tabs a.hot { color: var(--red); border-color: #ffcdd2; background: #fff5f5; }
+        .mobile-tabs a.stop-signal { color: var(--green); border-color: #c8e6c9; background: #e8f5e9; }
+
+        @media (max-width: 720px) {
+            .mobile-tabs { display: flex; }
+        }
+
+        /* 信息卡片 v24：更强的区域感 */
+        .stock-card {
+            display: none;
+            text-decoration: none;
+            background: #ffffff;
+            border: 1px solid var(--line);
+            border-left: 3px solid var(--gray);
+            border-radius: 0 10px 10px 0;
+            padding: 18px 17px 16px;
+            margin-bottom: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform .1s ease, border-color .1s ease, box-shadow .1s ease;
+        }
+        .stock-card.active {
+            display: block;
+            animation: fadeIn .25s ease;
+        }
+        .stock-card:hover { border-color: #d8d4ce; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .stock-card:active { transform: scale(0.995); }
+        .stock-card.up { border-left-color: var(--red); }
+        .stock-card.down { border-left-color: var(--green); }
+        .stock-card.flat { border-left-color: var(--gray); }
+        .stock-card.flash { box-shadow: 0 0 0 3px var(--ink); transition: box-shadow 0s; }
+
+        .card-main-link {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--line);
+        }
+        .card-name { font-size: 21px; font-weight: 700; letter-spacing: 0.5px; color: var(--ink); }
+        .card-tags { display: flex; gap: 7px; align-items: center; }
+        .card-status {
+            font-size: 11px;
+            font-weight: 600;
+            padding: 3px 9px;
+            border-radius: 3px;
+            border: 1px solid var(--line);
+            color: var(--ink-light);
+            letter-spacing: 0.5px;
+        }
+        .card-status.hold { background: #e8f5e9; color: #2e7d32; border-color: #c8e6c9; }
+        .card-status.watch { background: #f5f5f5; color: #616161; border-color: #e0e0e0; }
+        .card-status.scout { background: #e3f2fd; color: #1565c0; border-color: #bbdefb; }
+        .card-status.stop { background: #ffebee; color: #c62828; border-color: #ffcdd2; }
+        .card-status.add { background: #fff3e0; color: #e65100; border-color: #ffe0b2; }
+        .card-type {
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 2px;
+            background: var(--paper);
+            color: var(--ink-light);
+            letter-spacing: 0.5px;
+        }
+        .new-dot {
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--dot);
+            margin-left: 5px;
+            vertical-align: middle;
+            animation: pulse 2.2s ease-in-out infinite;
+        }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+        /* 交易计划区：统一 标签+内容 行 */
+        .plan-block { margin-bottom: 12px; }
+        .plan-label {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #4a4a4a;
+            margin-bottom: 6px;
+        }
+        .plan-row {
+            display: flex;
+            font-size: 15px;
+            color: var(--ink);
+            line-height: 1.55;
+            margin-bottom: 4px;
+        }
+        .plan-row .plan-key {
+            flex: 0 0 54px;
+            font-weight: 700;
+            color: #4a4a4a;
+            letter-spacing: 0.5px;
+            background: #f5f3f0;
+            padding: 1px 6px;
+            border-radius: 3px;
+            margin-right: 8px;
+            text-align: center;
+        }
+        .plan-row .plan-val { flex: 1; color: var(--ink); }
+        .plan-row .plan-val strong { font-weight: 700; }
+        .plan-row .plan-val .sub-item { display: block; font-size: 13px; color: var(--ink-light); margin-top: 3px; }
+        .plan-row .plan-val .sub-item .ok { color: #2e7d32; }
+        .plan-row .plan-val .sub-item .no { color: #c62828; }
+        .plan-row .plan-val .sub-item .wait { color: #e65100; }
+
+        /* 最新日报区：只放观点摘要 */
+        .card-report {
+            padding-top: 12px;
+            border-top: 1px solid var(--line);
+            margin-bottom: 12px;
+        }
+        .report-label {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #4a4a4a;
+            margin-bottom: 4px;
+        }
+        .report-body {
+            font-size: 15px;
+            color: var(--ink);
+            line-height: 1.55;
+        }
+        .report-date {
+            font-family: var(--serif-en);
+            font-size: 10px;
+            color: var(--ink-light);
+            margin-left: 6px;
+        }
+
+        /* 全部日报入口 */
+        .card-more {
+            display: flex;
+            align-items: center;
+            padding-top: 10px;
+            border-top: 1px dashed var(--line);
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--ink-light);
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+        .card-more span:first-child { flex: 1; color: var(--ink-light); }
+        .card-more .arrow { color: var(--ink-light); font-family: var(--serif-en); font-size: 13px; margin-left: 6px; }
+        .stock-card:hover .card-more span:first-child,
+        .stock-card:hover .card-more .arrow { color: var(--ink); }
+
+        .follow-list { display: flex; flex-wrap: wrap; gap: 8px; }
+        .follow-chip {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 40px;
+            border-radius: 3px;
+            text-decoration: none;
+            font-size: 15px;
+            background: transparent;
+            border: 1px solid var(--gray);
+            color: var(--ink-light);
+            padding: 0 16px;
+        }
+
+        .panel-footer {
+            margin-top: 16px;
+            padding-top: 12px;
+            border-top: 1px solid var(--line);
+            text-align: center;
+        }
+        .panel-footer a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--ink-light);
+            text-decoration: none;
+            letter-spacing: 0.5px;
+        }
+        .panel-footer a:hover { color: var(--ink); }
+
+        .update-hint {
+            font-size: 10px;
+            color: var(--ink-light);
+            margin-top: 18px;
+            padding-top: 10px;
+            border-top: 1px solid var(--line);
+            text-align: center;
+            letter-spacing: 0.5px;
+            font-family: var(--serif-en);
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 14px;
+            border-top: 1.5px solid var(--line-dark);
+            font-size: 10px;
+            color: var(--ink-light);
+            text-align: center;
+            letter-spacing: 1px;
+            font-family: var(--serif-en);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== Masthead ===== -->
+    <header class="masthead container">
+        <div class="masthead-top">
+            <div class="brand">
+                <div class="logo-mark">M</div>
+                <div class="brand-title">
+                    <span class="zh">千年隼</span>
+                    <span class="en">Millennium Falcon</span>
+                </div>
+            </div>
+            <div class="issue">
+                <div class="day">12</div>
+                <div class="month">Jun · Friday</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== Tabs ===== -->
+    <nav class="tabs container">
+        <div class="tab active" data-market="us" onclick="switchTab('us')">美股</div>
+        <div class="tab" data-market="a" onclick="switchTab('a')">A股</div>
+        <div class="tab" data-market="hk" onclick="switchTab('hk')">港股</div>
+    </nav>
+
+    <!-- ===== Snapshot Banner ===== -->
+    <a href="snapshot_us.html" class="snapshot-banner container" id="snapshotBanner">
+        <div class="snapshot-inner">
+            <div>
+                <div class="snapshot-label">盘中速览</div>
+                <div class="snapshot-title" id="snapshotTitle">美股：光互联板块集体反弹，AXTI 站上 MA60 附近</div>
+            </div>
+            <div class="snapshot-more">查看全部 <span style="font-family:var(--serif-en);margin-left:3px;">→</span></div>
+        </div>
+    </a>
+
+    <!-- ===== US Panel ===== -->
+    <article class="panel active" id="panel-us">
+        <div class="mobile-tabs container" id="mobile-tabs-us"></div>
+        <div class="section-title container">正式仓<span class="count">9只</span></div>
+
+        <div class="container cards-stage">
+
+            <!-- AVGO — 触发信号，hot -->
+            <a href="stock_avgo.html" class="stock-card down" id="card-avgo" data-weight="300">
+                <div class="card-top">
+                    <span class="card-name">博通<span class="new-dot"></span></span>
+                    <div class="card-tags">
+                        <span class="card-type">A型 复利机器</span>
+                        <span class="card-status add">可加仓</span>
+                    </div>
+                </div>
+                <div class="plan-block">
+                    <div class="plan-label">交易计划</div>
+                    <div class="plan-row"><span class="plan-key">窗口</span><span class="plan-val"><strong>PEG 0.40</strong>，Fwd PE 16.8x &lt; S&amp;P 20.5x ✅</span></div>
+                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">批次① <strong>$379 20股</strong>，止跌信号 <span class="ok">3/4</span> 已触发 ✅<span class="sub-item">均线支撑 ✅ / 阳线放量 ❌ / 卖压衰竭 ✅ / ATR 收缩 ✅</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T1 ~<strong>$520</strong>（还差 37%）❌；T2 PEG&gt;1.2 + 技术走弱</span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅；波段无价格止损 ✅</span></div>
+                </div>
+                <div class="card-report">
+                    <div class="report-label">操作建议</div>
+                    <div class="report-body">止跌 3/4 已满足，PEG 0.40 安全区内，可按计划执行批次① 20 股。</div>
+                </div>
+                <div class="card-more">
+                    <span>查看全部日报</span>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+
+            <!-- NVDA -->
+            <a href="stock_nvda.html" class="stock-card up" id="card-nvda" data-weight="400">
+                <div class="card-top">
+                    <span class="card-name">NVDA<span class="new-dot"></span></span>
+                    <div class="card-tags">
+                        <span class="card-type">A型 复利机器</span>
+                        <span class="card-status hold">持有</span>
+                    </div>
+                </div>
+                <div class="plan-block">
+                    <div class="plan-label">交易计划</div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.18</strong>，Fwd PE 15.7x &lt; S&amp;P 20.5x；买入窗口 <strong>$200–$261</strong>，当前 $204.24 ✅</span></div>
+                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">触发① 股价回到 ~$190，当前 $204.24（还差 7.0%）❌<span class="sub-item">触发② 止跌 4 信号 <span class="wait">2/4</span>：均线支撑 ✅ / 阳线放量 ❌ / 不创新低 ❌ / ATR 收缩 ✅</span><span class="sub-item">拟加：<strong>30 股</strong> ⏳</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T1 ~<strong>$300</strong>（还差 46.9%）❌；T2 PEG&gt;1.2 + 技术走弱 ❌</span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅；波段无价格止损 ✅</span></div>
+                </div>
+                <div class="card-report">
+                    <div class="report-label">操作建议</div>
+                    <div class="report-body">今日不操作，持仓不动。未来 1–3 天：若股价跌到 ~$190 且止跌信号仍 ≥2/4，执行加仓 30 股。</div>
+                </div>
+                <div class="card-more">
+                    <span>查看全部日报</span>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+
+            <!-- MSFT -->
+            <div class="stock-card down active" id="card-msft" data-weight="600">
+                <a href="stock_msft.html" class="card-main-link">
+                    <div class="card-top">
+                        <span class="card-name">微软<span class="new-dot"></span></span>
+                        <div class="card-tags">
+                            <span class="card-type">A型 复利机器</span>
+                            <span class="card-status watch">观望</span>
+                        </div>
+                    </div>
+                    <div class="plan-block">
+                        <div class="plan-label">交易计划</div>
+                        <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val">TTM PE 分位框架（增速 18% ≤ 20%），<strong>PE&lt;22x</strong>（~20%分位）→ ~$370</span></div>
+                        <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">档① PE&lt;22x (~$370)，距当前 $390.74 <span class="wait">差 5.6%</span> ⏳<span class="sub-item">止跌 4 信号 <span class="no">1/4</span>：均线支撑 ❌ / 阳线放量 ❌ / 卖压衰竭 ❌ / ATR 收缩 ✅</span><span class="sub-item">拟加：<strong>30 股</strong> · 需止跌 ≥2–3 个 ⏳</span></span></div>
+                        <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T1 PE&gt;35x（~80%分位 ~$477）❌；T2 PE&gt;40x（~95%分位 ~$546）</span></div>
+                        <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">⚠️ 趋势向下反转（已触发）；🛑 Azure 增速&lt;15% 连续2季 / EPS 下调&gt;10%</span></div>
+                    </div>
+                    <div class="card-report">
+                        <div class="report-label">操作建议</div>
+                        <div class="report-body">连跌结束企稳，PE 在 15-20% 分位，等止跌 ≥2 个再加仓。趋势未稳前不追。</div>
+                    </div>
+                </a>
+                <a href="stock_reports.html" class="card-more">
+                    <span>查看全部日报</span>
+                    <span class="arrow">→</span>
+                </a>
+            </div>
+
+            <!-- META -->
+            <a href="stock_meta.html" class="stock-card down" id="card-meta" data-weight="800">
+                <div class="card-top">
+                    <span class="card-name">Meta<span class="new-dot"></span></span>
+                    <div class="card-tags">
+                        <span class="card-type">A型 复利机器</span>
+                        <span class="card-status hold">持有</span>
+                    </div>
+                </div>
+                <div class="plan-block">
+                    <div class="plan-label">交易计划</div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.48</strong>，Fwd PE &lt; S&amp;P 20.5x；买入窗口 ✅</span></div>
+                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">止跌 4 信号 <span class="wait">1/4</span>：均线支撑 ❌ / 阳线放量 ❌ / 不创新低 ❌ / ATR 收缩 ✅<span class="sub-item">需 ≥2 个信号 ⏳ · 趋势向下反转</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T1 Fwd PE &gt; S&amp;P×1.15 + PEG&gt;1.1；T2 PEG&gt;1.2 + 技术走弱</span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅；波段无价格止损 ✅；护城河锚</span></div>
+                </div>
+                <div class="card-report">
+                    <div class="report-label">操作建议</div>
+                    <div class="report-body">窗口内但趋势未稳，持仓不动等止跌。PEG 0.48 在安全区内，不急。</div>
+                </div>
+                <div class="card-more">
+                    <span>查看全部日报</span>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+
+            <!-- TSLA -->
+            <a href="stock_tsla.html" class="stock-card up" id="card-tsla" data-weight="1000">
+                <div class="card-top">
+                    <span class="card-name">特斯拉<span class="new-dot"></span></span>
+                    <div class="card-tags">
+                        <span class="card-type">A型</span>
+                        <span class="card-status hold">持有</span>
+                    </div>
+                </div>
+                <div class="plan-block">
+                    <div class="plan-label">交易计划</div>
+                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val"><strong>250 股 @ $393.75</strong> · FSD 落地前底仓持有</span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">跌破 <strong>$385</strong> 减仓 1/3；跌破 <strong>$360</strong> 再减 1/3</span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">FSD 落地 + 交付超预期后分批锁利</span></div>
+                </div>
+                <div class="card-report">
+                    <div class="report-label">最新日报 · 06-12</div>
+                    <div class="report-body">交付数据超预期，股价反弹至 400 附近，短期情绪改善，底仓继续持有。</div>
+                </div>
+                <div class="card-more">
+                    <span>查看全部日报</span>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+
+            <!-- SOFI -->
+            <a href="stock_sofi.html" class="stock-card flat" id="card-sofi" data-weight="500">
+                <div class="card-top">
+                    <span class="card-name">SoFi</span>
+                    <div class="card-tags">
+                        <span class="card-type">B型</span>
+                        <span class="card-status hold">持有</span>
+                    </div>
+                </div>
+                <div class="plan-block">
+                    <div class="plan-label">交易计划</div>
+                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val"><strong>2,000 股 @ $17.40</strong> · 静候技术信号明朗</span></div>
+                </div>
+                <div class="card-report">
+                    <div class="report-label">最新日报 · 06-12</div>
+                    <div class="report-body">静候技术信号明朗，基本面不改下短期窄震。</div>
+                </div>
+                <div class="card-more">
+                    <span>查看全部日报</span>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+
+            <!-- Sea -->
+            <a href="stock_sea.html" class="stock-card flat" id="card-sea" data-weight="150">
+                <div class="card-top">
+                    <span class="card-name">Sea</span>
+                    <div class="card-tags">
+                        <span class="card-type">D型</span>
+                        <span class="card-status hold">持有</span>
+                    </div>
+                </div>
+                <div class="plan-block">
+                    <div class="plan-label">交易计划</div>
+                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val"><strong>60 股 @ $91.17</strong> · 周期底部持有</span></div>
+                </div>
+                <div class="card-more">
+                    <span>查看全部日报</span>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+
+            <!-- Palantir -->
+            <a href="stock_pltr.html" class="stock-card flat" id="card-pltr" data-weight="200">
+                <div class="card-top">
+                    <span class="card-name">Palantir</span>
+                    <div class="card-tags">
+                        <span class="card-type">B型</span>
+                        <span class="card-status hold">持有</span>
+                    </div>
+                </div>
+                <div class="plan-block">
+                    <div class="plan-label">交易计划</div>
+                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val"><strong>60 股 @ $138.12</strong> · 向下测试支撑，预警触发但无需操作</span></div>
+                </div>
+                <div class="card-more">
+                    <span>查看全部日报</span>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+
+            <!-- Circle -->
+            <a href="stock_circle.html" class="stock-card down" id="card-circle" data-weight="100">
+                <div class="card-top">
+                    <span class="card-name">Circle</span>
+                    <div class="card-tags">
+                        <span class="card-type">B型</span>
+                        <span class="card-status stop">减仓</span>
+                    </div>
+                </div>
+                <div class="plan-block">
+                    <div class="plan-label">交易计划</div>
+                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val"><strong>20 股 @ $82.82</strong> · 预警线已破，趋势全面走弱</span></div>
+                </div>
+                <div class="card-report">
+                    <div class="report-label">最新日报 · 06-12</div>
+                    <div class="report-body">预警线已破，趋势全面走弱，建议减仓避险。</div>
+                </div>
+                <div class="card-more">
+                    <span>查看全部日报</span>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="panel-footer container">
+            <a href="all_reports_us.html">查看全部 12 只美股日报<span>→</span></a>
+        </div>
+        <div class="update-hint container">美股日报更新于 06-12 06:18</div>
+    </article>
+
+    <!-- ===== A-Share Panel ===== -->
+    <article class="panel" id="panel-a">
+        <div class="mobile-tabs container" id="mobile-tabs-a"></div>
+        <div class="section-title container">正式仓<span class="count">9只</span></div>
+        <div class="container">
+            <a href="stock_byd.html" class="stock-card up" id="card-byd" data-weight="500">
+                <div class="card-top">
+                    <span class="card-name">比亚迪<span class="new-dot"></span></span>
+                    <div class="card-tags"><span class="card-type">A型</span><span class="card-status watch">观望</span></div>
+                </div>
+                <div class="plan-block">
+                    <div class="plan-label">交易计划</div>
+                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val"><strong>500 股 @ ¥245</strong> · 等待回调加仓</span></div>
+                </div>
+                <div class="card-report">
+                    <div class="report-label">最新日报 · 06-12</div>
+                    <div class="report-body">超跌反弹续涨 2.0%，均线纠缠待明朗，继续按兵不动。</div>
+                </div>
+                <div class="card-more"><span>查看全部日报</span><span class="arrow">→</span></div>
+            </a>
+
+            <a href="stock_ndsd.html" class="stock-card up active" id="card-ndsd" data-weight="1000">
+                <div class="card-top">
+                    <span class="card-name">宁德时代<span class="new-dot"></span></span>
+                    <div class="card-tags"><span class="card-type">A型亚类</span><span class="card-status hold">持有</span></div>
+                </div>
+                <div class="plan-block">
+                    <div class="plan-label">交易计划</div>
+                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val"><strong>1,000 股 @ ¥206</strong> · PE&lt;18x 加仓</span></div>
+                </div>
+                <div class="card-more"><span>查看全部日报</span><span class="arrow">→</span></div>
+            </a>
+        </div>
+        <div class="panel-footer container">
+            <a href="all_reports_a.html">查看全部 9 只A股日报<span>→</span></a>
+        </div>
+        <div class="update-hint container">A股日报更新于 06-12 15:20</div>
+    </article>
+
+    <!-- ===== HK Panel ===== -->
+    <article class="panel" id="panel-hk">
+        <div class="mobile-tabs container" id="mobile-tabs-hk"></div>
+        <div class="section-title container">正式仓<span class="count">8只</span></div>
+        <div class="container">
+            <a href="stock_tencent.html" class="stock-card down active" id="card-tencent" data-weight="1000">
+                <div class="card-top">
+                    <span class="card-name">腾讯控股<span class="new-dot"></span></span>
+                    <div class="card-tags"><span class="card-type">A型</span><span class="card-status hold">持有</span></div>
+                </div>
+                <div class="plan-block">
+                    <div class="plan-label">交易计划</div>
+                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val"><strong>7,200 股 @ HK$486.21</strong></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">跌破 <strong>HK$480</strong> 减仓 1/4</span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">站上 <strong>HK$520</strong> 考虑减仓 1/5</span></div>
+                </div>
+                <div class="card-report">
+                    <div class="report-label">最新日报 · 06-12</div>
+                    <div class="report-body">游戏监管情绪消化，回购支撑股价，持有观望。</div>
+                </div>
+                <div class="card-more"><span>查看全部日报</span><span class="arrow">→</span></div>
+            </a>
+        </div>
+        <div class="panel-footer container">
+            <a href="all_reports_hk.html">查看全部 8 只港股日报<span>→</span></a>
+        </div>
+        <div class="update-hint container">港股日报更新于 06-12 16:24</div>
+    </article>
+
+    <!-- ===== Side Index ===== -->
+    <nav class="side-idx" id="sideIdx"></nav>
+
+    <footer class="footer container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-12 12:24</footer>
+
+<script>
+const snapshotData = {
+    us: { href: 'snapshot_us.html', title: '美股：光互联板块集体反弹，AXTI 站上 MA60 附近' },
+    a:  { href: 'snapshot_a.html',  title: 'A股：新能源板块整体走强，光伏 ETF 涨 2.3%' },
+    hk: { href: 'snapshot_hk.html', title: '港股：腾讯回购支撑股价，游戏监管情绪消化' }
+};
+
+function switchTab(m) {
+    document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.market === m));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('active', p.id === 'panel-' + m));
+
+    const banner = document.getElementById('snapshotBanner');
+    const title = document.getElementById('snapshotTitle');
+    const data = snapshotData[m];
+    if (banner && data) banner.href = data.href;
+    if (title && data) title.textContent = data.title;
+
+    setTimeout(() => {
+        buildSideIndex();
+        activateTopCard();
+    }, 50);
+}
+
+function getSortedCards(panel) {
+    const cards = Array.from(panel.querySelectorAll('.stock-card'));
+    return cards.sort((a, b) => {
+        const wa = parseFloat(a.dataset.weight || '0');
+        const wb = parseFloat(b.dataset.weight || '0');
+        return wb - wa;
+    });
+}
+
+function activateCard(card) {
+    if (!card) return;
+    const panel = card.closest('.panel');
+    if (panel) {
+        panel.querySelectorAll('.stock-card').forEach(c => c.classList.remove('active'));
+    }
+    card.classList.add('active');
+
+    const id = card.id;
+    document.querySelectorAll('.side-idx a, .mobile-tabs a').forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+    });
+}
+
+function activateTopCard() {
+    const panel = document.querySelector('.panel.active');
+    if (!panel) return;
+    const sorted = getSortedCards(panel);
+    if (sorted.length) activateCard(sorted[0]);
+}
+
+function buildIndexForPanel(panel) {
+    const sorted = getSortedCards(panel);
+    const market = panel.id.replace('panel-', '');
+    const idx = document.getElementById('sideIdx');
+    const mobile = document.getElementById('mobile-tabs-' + market);
+
+    if (mobile) mobile.innerHTML = '';
+    if (!panel) return;
+
+    const isActivePanel = panel.classList.contains('active');
+    if (isActivePanel && idx) idx.innerHTML = '';
+
+    sorted.forEach(card => {
+        const name = card.querySelector('.card-name').textContent.trim();
+        const statusEl = card.querySelector('.card-status');
+        const isAdd = statusEl?.classList.contains('add');
+        const isStop = statusEl?.classList.contains('stop');
+
+        if (isActivePanel && idx) {
+            const desktopA = document.createElement('a');
+            desktopA.href = '#' + card.id;
+            desktopA.textContent = name;
+            if (isAdd) desktopA.classList.add('hot');
+            if (isStop) desktopA.classList.add('stop-signal');
+            desktopA.addEventListener('click', e => {
+                e.preventDefault();
+                activateCard(card);
+            });
+            idx.appendChild(desktopA);
+        }
+
+        if (mobile) {
+            const mobileA = document.createElement('a');
+            mobileA.href = '#' + card.id;
+            mobileA.textContent = name;
+            if (isAdd) mobileA.classList.add('hot');
+            if (isStop) mobileA.classList.add('stop-signal');
+            mobileA.addEventListener('click', e => {
+                e.preventDefault();
+                activateCard(card);
+            });
+            mobile.appendChild(mobileA);
+        }
+    });
+}
+
+function buildSideIndex() {
+    document.querySelectorAll('.panel').forEach(panel => buildIndexForPanel(panel));
+}
+
+buildSideIndex();
+activateTopCard();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>港股盘中速览 · 千年隼</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <style>
+        :root {
+            --bg:       #ffffff;
+            --paper:    #faf9f7;
+            --ink:      #111111;
+            --ink-soft: #6b6b6b;
+            --ink-faint:#9a9a9a;
+            --line:     #e8e5e1;
+            --line-dark:#1a1a1a;
+            --red:      #d32f2f;
+            --green:    #388e3c;
+            --serif-zh: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+            --serif-en: "Cormorant Garamond", "Playfair Display", "Georgia", serif;
+            --pad-x: 16px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { -webkit-font-smoothing: antialiased; }
+
+        body {
+            font-family: var(--serif-zh);
+            background: var(--bg);
+            color: var(--ink);
+            padding: 32px 0 56px;
+            max-width: 560px;
+            margin: 0 auto;
+            line-height: 1.55;
+            font-size: 16px;
+        }
+        .container { padding-left: var(--pad-x); padding-right: var(--pad-x); }
+        a { text-decoration: none; color: inherit; }
+
+        .masthead {
+            border-bottom: 1.5px solid var(--line-dark);
+            padding-bottom: 14px;
+            margin-bottom: 14px;
+        }
+        .masthead-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .brand-mark {
+            width: 38px; height: 38px;
+            border-radius: 9px;
+            background: #d46b46;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--serif-en);
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+        .brand-text .zh {
+            display: block;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 5px;
+            line-height: 1.1;
+        }
+        .brand-text .en {
+            display: block;
+            font-family: var(--serif-en);
+            font-size: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--ink-soft);
+            margin-top: 2px;
+        }
+
+        .back-nav {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            color: var(--ink-soft);
+            margin-bottom: 16px;
+            letter-spacing: 0.5px;
+        }
+        .back-nav .arrow { font-family: var(--serif-en); font-size: 14px; }
+
+        .page-title {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin: 8px 0 18px;
+        }
+
+        .snapshot-list {
+            list-style: none;
+            border-left: 2px solid var(--line);
+            padding-left: 16px;
+        }
+        .snapshot-list li {
+            position: relative;
+            padding: 14px 0 18px;
+            border-bottom: 1px solid var(--line);
+        }
+        .snapshot-list li:last-child { border-bottom: none; }
+        .snapshot-list li::before {
+            content: '';
+            position: absolute;
+            left: -21px;
+            top: 20px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--line);
+            border: 2px solid var(--bg);
+        }
+        .snapshot-list li:first-child::before {
+            background: var(--red);
+        }
+
+        .snap-date {
+            font-family: var(--serif-en);
+            font-size: 12px;
+            color: var(--ink-soft);
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        .snap-title {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.45;
+            color: var(--ink);
+        }
+        .snap-title:hover { color: var(--ink-soft); }
+
+        .site-foot {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid var(--line);
+            text-align: center;
+            font-size: 11px;
+            color: var(--ink-faint);
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="masthead container">
+    <div class="masthead-row">
+        <div class="brand">
+            <div class="brand-mark">M</div>
+            <div class="brand-text">
+                <span class="zh">千年隼</span>
+                <span class="en">HK Mid-day Snapshot</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<a href="index.html" class="back-nav container">
+    <span class="arrow">←</span> 返回日报首页
+</a>
+
+<div class="container">
+    <h1 class="page-title">港股盘中速览日报</h1>
+
+    <ul class="snapshot-list">
+        <li>
+            <div class="snap-date">2026-06-13 · 周五</div>
+            <a href="#" class="snap-title">腾讯回购支撑股价，游戏监管情绪消化</a>
+        </li>
+        <li>
+            <div class="snap-date">2026-06-12 · 周四</div>
+            <a href="#" class="snap-title">小米汽车业务交付超预期，股价放量突破</a>
+        </li>
+        <li>
+            <div class="snap-date">2026-06-11 · 周三</div>
+            <a href="#" class="snap-title">恒生科技指数企稳，南向资金净流入 28.5 亿</a>
+        </li>
+        <li>
+            <div class="snap-date">2026-06-10 · 周二</div>
+            <a href="#" class="snap-title">港股高股息板块轮动，粤海投资除息后企稳</a>
+        </li>
+        <li>
+            <div class="snap-date">2026-06-09 · 周一</div>
+            <a href="#" class="snap-title">百济神州利润拐点确认，AH 折价收窄</a>
+        </li>
+    </ul>
+</div>
+
+<footer class="site-foot container">
+    千年隼 v25 · 设计稿 · 2026-06-13
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>港股盘中速览 · 千年隼</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <style>
+        :root {
+            --bg: #ffffff;
+            --paper: #faf9f7;
+            --ink: #111111;
+            --ink-soft: #6b6b6b;
+            --ink-faint: #9a9a9a;
+            --line: #e8e5e1;
+            --line-dark: #1a1a1a;
+            --red: #b86b6b;
+            --green: #5b8c6f;
+            --blue: #6b8aab;
+            --amber: #c8873b;
+            --gray: #9a9a9a;
+            --serif-zh: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+            --serif-en: "Cormorant Garamond", "Playfair Display", "Georgia", serif;
+            --pad-x: 16px;
+            --radius-card: 12px;
+            --shadow-card: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { -webkit-font-smoothing: antialiased; }
+        body {
+            font-family: var(--serif-zh);
+            background: var(--bg);
+            color: var(--ink);
+            padding: 32px 0 56px;
+            max-width: 560px;
+            margin: 0 auto;
+            line-height: 1.55;
+            font-size: 16px;
+        }
+        .container { padding-left: var(--pad-x); padding-right: var(--pad-x); }
+        a { text-decoration: none; color: inherit; }
+
+        .masthead {
+            border-bottom: 1.5px solid var(--line-dark);
+            padding-bottom: 14px;
+            margin-bottom: 14px;
+        }
+        .masthead-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-mark {
+            width: 38px; height: 38px;
+            border-radius: 9px;
+            background: #d46b46;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--serif-en);
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+        .brand-title .zh {
+            display: block;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 5px;
+            line-height: 1.1;
+        }
+        .brand-title .en {
+            display: block;
+            font-family: var(--serif-en);
+            font-size: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--ink-soft);
+            margin-top: 2px;
+        }
+        .issue {
+            text-align: right;
+            font-family: var(--serif-en);
+        }
+        .issue .day { font-size: 28px; font-weight: 500; line-height: 1; }
+        .issue .meta {
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--ink-soft);
+            margin-top: 2px;
+        }
+
+        .back-nav {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            color: var(--ink-soft);
+            margin-bottom: 16px;
+            letter-spacing: 0.5px;
+        }
+        .back-nav .arrow { font-family: var(--serif-en); font-size: 14px; }
+
+        .page-title {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin: 8px 0 18px;
+        }
+
+        .status-bar {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            padding: 12px 14px;
+            border-radius: var(--radius-card);
+            background: var(--paper);
+            border: 1px solid var(--line);
+            margin-bottom: 16px;
+        }
+        .status-bar.up { border-left: 4px solid var(--red); }
+        .status-bar.down { border-left: 4px solid var(--green); }
+        .status-bar.flat { border-left: 4px solid var(--gray); }
+        .status-price { font-size: 24px; font-weight: 700; font-family: var(--serif-en); }
+        .status-change { font-size: 14px; font-weight: 600; }
+        .status-bar.up .status-change { color: var(--red); }
+        .status-bar.down .status-change { color: var(--green); }
+        .status-market { margin-left: auto; font-size: 12px; color: var(--ink-soft); }
+
+        .daily-check {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: var(--radius-card);
+            padding: 14px 16px;
+            margin-bottom: 16px;
+        }
+        .daily-check-title {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #4a4a4a;
+            margin-bottom: 8px;
+        }
+        .daily-check ul {
+            list-style: none;
+            font-size: 14px;
+            color: var(--ink-soft);
+        }
+        .daily-check li { padding: 3px 0; }
+
+        .plan-card {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-left: 4px solid var(--blue);
+            border-radius: 0 var(--radius-card) var(--radius-card) 0;
+            padding: 14px 18px;
+            margin: 16px 0;
+            box-shadow: var(--shadow-card);
+        }
+        .plan-hdr {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .plan-ttl { font-size: 14px; font-weight: 600; color: var(--ink); }
+        .plan-tag {
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--blue);
+            background: #eff6ff;
+            padding: 2px 8px;
+            border-radius: 10px;
+        }
+        .plan-row { font-size: 13px; color: var(--ink-soft); margin-bottom: 5px; line-height: 1.6; }
+        .plan-row strong { color: var(--ink); }
+        .plan-insight {
+            font-size: 13px;
+            color: var(--ink);
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid var(--line);
+        }
+
+        .report-timeline,
+        .snapshot-list {
+            list-style: none;
+            border-left: 2px solid var(--line);
+            padding-left: 16px;
+        }
+        .report-timeline li,
+        .snapshot-list li {
+            position: relative;
+            padding: 14px 0 18px;
+            border-bottom: 1px solid var(--line);
+        }
+        .report-timeline li:last-child,
+        .snapshot-list li:last-child { border-bottom: none; }
+        .report-timeline li::before,
+        .snapshot-list li::before {
+            content: '';
+            position: absolute;
+            left: -21px;
+            top: 20px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--line-dark);
+        }
+        .report-link,
+        .snapshot-link {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+        .report-date,
+        .snapshot-date {
+            font-family: var(--serif-en);
+            font-size: 11px;
+            color: var(--ink-soft);
+            letter-spacing: 0.5px;
+        }
+        .report-title,
+        .snapshot-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--ink);
+            margin-top: 4px;
+            line-height: 1.4;
+        }
+        .report-arrow,
+        .snapshot-arrow {
+            font-family: var(--serif-en);
+            font-size: 13px;
+            color: var(--ink-soft);
+            margin-top: 4px;
+        }
+        .snapshot-new {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 700;
+            color: #fff;
+            background: var(--red);
+            padding: 1px 5px;
+            border-radius: 3px;
+            margin-left: 6px;
+            letter-spacing: 0.5px;
+        }
+        .snapshot-meta { margin-bottom: 4px; }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 14px;
+            border-top: 1.5px solid var(--line-dark);
+            font-size: 10px;
+            color: var(--ink-soft);
+            text-align: center;
+            letter-spacing: 1px;
+            font-family: var(--serif-en);
+        }
+    </style>
+</head>
+<body>
+    <header class="masthead container">
+        <div class="masthead-top">
+            <div class="brand">
+                <div class="logo-mark">M</div>
+                <div class="brand-title">
+                    <span class="zh">千年隼</span>
+                    <span class="en">Millennium Falcon</span>
+                </div>
+            </div>
+            <div class="issue">
+                <div class="day">14</div>
+                <div class="meta">Jun · Sunday</div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <a href="index.html" class="back-nav"><span class="arrow">←</span> 返回首页</a>
+        <div class="page-title">港股盘中速览</div>
+    </div>
+
+    <div class="container">
+        <ul class="snapshot-list">
+        <li>
+            <a href="https://www.feishu.cn/docx/Axu7dKKVwoHUUjxtlDgcRNEBn5f" target="_blank" class="snapshot-link">
+                <div class="snapshot-meta">
+                    <span class="snapshot-date">2026-06-12 12:10</span>
+                    
+                </div>
+                <div class="snapshot-title">港股盘中速览</div>
+                <div class="snapshot-arrow">→</div>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.feishu.cn/docx/Keufdt5kKoaTSixlnUFc1lb0nGg" target="_blank" class="snapshot-link">
+                <div class="snapshot-meta">
+                    <span class="snapshot-date">2026-06-11 14:17</span>
+                    
+                </div>
+                <div class="snapshot-title">港股盘中速览</div>
+                <div class="snapshot-arrow">→</div>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.feishu.cn/docx/IhOmdujAro9LsAxfCaQclrUTnef" target="_blank" class="snapshot-link">
+                <div class="snapshot-meta">
+                    <span class="snapshot-date">2026-06-11 13:45</span>
+                    
+                </div>
+                <div class="snapshot-title">建滔独舞，科网双压</div>
+                <div class="snapshot-arrow">→</div>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.feishu.cn/docx/H834dkuE3oHhBsxiHrncV8Dcnzc" target="_blank" class="snapshot-link">
+                <div class="snapshot-meta">
+                    <span class="snapshot-date">2026-06-11 13:30</span>
+                    
+                </div>
+                <div class="snapshot-title">科技拖累分化加剧</div>
+                <div class="snapshot-arrow">→</div>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.feishu.cn/docx/LlNLdE9FhoGCnZxSWbgc1l1Fn6d" target="_blank" class="snapshot-link">
+                <div class="snapshot-meta">
+                    <span class="snapshot-date">2026-06-11 12:34</span>
+                    
+                </div>
+                <div class="snapshot-title">恒生承压阿里领跌 建滔逆市飙升</div>
+                <div class="snapshot-arrow">→</div>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.feishu.cn/docx/OWrSdbnb5oOoSvxqL12cGnZynvb" target="_blank" class="snapshot-link">
+                <div class="snapshot-meta">
+                    <span class="snapshot-date">2026-06-09 12:42</span>
+                    
+                </div>
+                <div class="snapshot-title">腾讯建滔领涨科技分化</div>
+                <div class="snapshot-arrow">→</div>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.feishu.cn/docx/K7ADdODaCoLWQ6xS8SscnUEknSf" target="_blank" class="snapshot-link">
+                <div class="snapshot-meta">
+                    <span class="snapshot-date">2026-06-05 12:32</span>
+                    
+                </div>
+                <div class="snapshot-title">港股分化 科技承压 光学走强</div>
+                <div class="snapshot-arrow">→</div>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.feishu.cn/docx/QG3Nd6WLXo3FzHxqy0rcxpSNngd" target="_blank" class="snapshot-link">
+                <div class="snapshot-meta">
+                    <span class="snapshot-date">2026-06-02 13:22</span>
+                    
+                </div>
+                <div class="snapshot-title">科技股引领分化反弹</div>
+                <div class="snapshot-arrow">→</div>
+            </a>
+        </li>
+        </ul>
+    </div>
+
+
+    <footer class="footer container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-14 00:52</footer>
+</body>
+</html>

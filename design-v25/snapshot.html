@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盘中速览 · 千年隼</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <style>
+        :root {
+            --bg:       #ffffff;
+            --paper:    #faf9f7;
+            --ink:      #111111;
+            --ink-soft: #6b6b6b;
+            --ink-faint:#9a9a9a;
+            --line:     #e8e5e1;
+            --line-dark:#1a1a1a;
+            --red:      #b86b6b;
+            --green:    #5b8c6f;
+            --blue:     #6b8aab;
+            --amber:    #c8873b;
+            --gray:     #9a9a9a;
+            --tag-hold-bg:#e8f5e9; --tag-hold-ink:#2e7d32; --tag-hold-line:#c8e6c9;
+            --tag-watch-bg:#f5f5f5; --tag-watch-ink:#616161; --tag-watch-line:#e0e0e0;
+            --tag-stop-bg:#ffebee; --tag-stop-ink:#c62828; --tag-stop-line:#ffcdd2;
+            --serif-zh: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+            --serif-en: "Cormorant Garamond", "Playfair Display", "Georgia", serif;
+            --pad-x: 16px;
+            --radius-card: 12px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { -webkit-font-smoothing: antialiased; }
+
+        body {
+            font-family: var(--serif-zh);
+            background: var(--bg);
+            color: var(--ink);
+            padding: 32px 0 56px;
+            max-width: 560px;
+            margin: 0 auto;
+            line-height: 1.55;
+            font-size: 16px;
+        }
+        .container { padding-left: var(--pad-x); padding-right: var(--pad-x); }
+        a { text-decoration: none; color: inherit; }
+
+        /* —— Masthead —— */
+        .masthead {
+            border-bottom: 1.5px solid var(--line-dark);
+            padding-bottom: 14px;
+            margin-bottom: 4px;
+        }
+        .masthead-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .brand-mark {
+            width: 36px; height: 36px;
+            border-radius: 9px;
+            background: #d46b46;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--serif-en);
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+        .brand-text .zh {
+            display: block;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 5px;
+            line-height: 1.1;
+        }
+        .brand-text .en {
+            display: block;
+            font-family: var(--serif-en);
+            font-size: 9px;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: var(--ink-soft);
+            margin-top: 2px;
+        }
+        .issue {
+            text-align: right;
+            font-family: var(--serif-en);
+        }
+        .issue .day { font-size: 28px; font-weight: 500; line-height: 1; }
+        .issue .meta {
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--ink-soft);
+            margin-top: 2px;
+        }
+
+        /* —— Mode Badge —— */
+        .mode-badge {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 2px 10px;
+            border-radius: 4px;
+            letter-spacing: 1px;
+            margin: 12px 0;
+            border: 1px solid;
+        }
+        .mode-badge.live {
+            background: #fff3e0;
+            color: #e65100;
+            border-color: #ffe0b2;
+        }
+
+        /* —— Section —— */
+        .section-hd {
+            display: flex;
+            align-items: baseline;
+            margin: 18px 0 8px;
+        }
+        .section-hd .title {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .section-hd .time {
+            font-size: 12px;
+            color: var(--ink-faint);
+            margin-left: 10px;
+        }
+
+        /* —— Market Cards —— */
+        .mkt-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+        @media (max-width: 400px) {
+            .mkt-row { grid-template-columns: 1fr; }
+        }
+        .mkt-card {
+            background: var(--bg);
+            border: 1px solid var(--line);
+            border-radius: var(--radius-card);
+            padding: 12px 14px;
+        }
+        .mkt-card .mkt-name {
+            font-size: 13px;
+            color: var(--ink-soft);
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        .mkt-card .mkt-val {
+            font-family: var(--serif-en);
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .mkt-card .mkt-chg {
+            font-size: 13px;
+            margin-top: 2px;
+        }
+        .mkt-chg.up   { color: var(--red); }
+        .mkt-chg.down { color: var(--green); }
+
+        /* —— Alert Bar —— */
+        .alert-bar {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 10px var(--pad-x);
+            margin-bottom: 16px;
+            font-size: 13px;
+        }
+        .alert-bar .alert-item {
+            padding: 3px 0;
+        }
+        .alert-bar .alert-item .sym {
+            margin-right: 4px;
+        }
+
+        /* —— Stock Row —— */
+        .stock-row {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--line);
+            gap: 10px;
+        }
+        .stock-row.etf-row {
+            border-left: 2px solid var(--blue);
+            padding-left: 10px;
+            margin-left: -12px;
+        }
+        .stock-row:last-child { border-bottom: none; }
+
+        .sr-left {
+            flex: 1;
+            min-width: 0;
+        }
+        .sr-name {
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .sr-meta {
+            font-size: 12px;
+            color: var(--ink-soft);
+            margin-top: 1px;
+        }
+        .sr-signal {
+            font-size: 12px;
+            margin-top: 2px;
+        }
+
+        .sr-right {
+            text-align: right;
+            flex-shrink: 0;
+        }
+        .sr-price {
+            font-family: var(--serif-en);
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .sr-chg {
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .sr-chg.up   { color: var(--red); }
+        .sr-chg.down { color: var(--green); }
+
+        /* —— Tag inline —— */
+        .tag {
+            font-size: 10px;
+            font-weight: 700;
+            padding: 1px 6px;
+            border-radius: 3px;
+            margin-left: 6px;
+            border: 1px solid;
+            white-space: nowrap;
+        }
+        .tag.hold  { background: var(--tag-hold-bg);  color: var(--tag-hold-ink);  border-color: var(--tag-hold-line); }
+        .tag.watch { background: var(--tag-watch-bg); color: var(--tag-watch-ink); border-color: var(--tag-watch-line); }
+        .tag.stop  { background: var(--tag-stop-bg);  color: var(--tag-stop-ink);  border-color: var(--tag-stop-line); }
+
+        /* —— Chips —— */
+        .chip { font-size: 11px; padding: 1px 6px; border-radius: 3px; font-weight: 600; }
+        .chip.red  { color: var(--red); }
+        .chip.green{ color: var(--green); }
+        .chip.amber{ color: var(--amber); }
+
+        /* —— Footer —— */
+        .site-foot {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid var(--line);
+            text-align: center;
+            font-size: 11px;
+            color: var(--ink-faint);
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Masthead -->
+<header class="masthead container">
+    <div class="masthead-row">
+        <div class="brand">
+            <div class="brand-mark">M</div>
+            <div class="brand-text">
+                <span class="zh">千年隼</span>
+                <span class="en">Mid-day Snapshot</span>
+            </div>
+        </div>
+        <div class="issue">
+            <div class="day">12</div>
+            <div class="meta">Jun · Friday</div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="mode-badge live">● 实时速览 · A股午盘</div>
+</div>
+
+<!-- Market Overview -->
+<section class="section-hd container">
+    <span class="title">大盘风向</span><span class="time">11:35 截数</span>
+</section>
+<div class="mkt-row container">
+    <div class="mkt-card">
+        <div class="mkt-name">上证指数</div>
+        <div class="mkt-val">3,247</div>
+        <div class="mkt-chg up">+0.82%</div>
+    </div>
+    <div class="mkt-card">
+        <div class="mkt-name">沪深 300</div>
+        <div class="mkt-val">3,892</div>
+        <div class="mkt-chg up">+0.65%</div>
+    </div>
+    <div class="mkt-card">
+        <div class="mkt-name">创业板指</div>
+        <div class="mkt-val">2,156</div>
+        <div class="mkt-chg up">+1.21%</div>
+    </div>
+    <div class="mkt-card">
+        <div class="mkt-name">科创 50</div>
+        <div class="mkt-val">1,087</div>
+        <div class="mkt-chg down">-0.34%</div>
+    </div>
+</div>
+
+<!-- Alerts -->
+<div class="alert-bar container">
+    <div class="alert-item"><span class="sym">●</span> <strong>宁德时代</strong> 放量突破 ¥210，距 Master 加仓线仅 5%</div>
+    <div class="alert-item"><span class="sym">▲</span> <strong>阳光电源</strong> 止跌信号从 2/4 退到 1/4，买入窗口收窄</div>
+    <div class="alert-item"><span class="sym">■</span> 新能源板块整体走强，光伏 ETF 涨 2.3%</div>
+</div>
+
+<!-- Core Positions -->
+<section class="section-hd container">
+    <span class="title">核心持仓</span>
+</section>
+<div class="container">
+
+    <div class="stock-row">
+        <div class="sr-left">
+            <div class="sr-name">宁德时代<span class="tag hold">持有</span></div>
+            <div class="sr-meta">A型亚类 · 1000股 @ ¥206</div>
+            <div class="sr-signal"><span class="chip amber">距加仓 5%</span> 止跌 2/4</div>
+        </div>
+        <div class="sr-right">
+            <div class="sr-price">¥213.50</div>
+            <div class="sr-chg up">+3.42%</div>
+        </div>
+    </div>
+
+    <div class="stock-row">
+        <div class="sr-left">
+            <div class="sr-name">比亚迪<span class="tag hold">持有</span></div>
+            <div class="sr-meta">A型 · 500股 @ ¥245</div>
+            <div class="sr-signal"><span class="chip green">正常</span></div>
+        </div>
+        <div class="sr-right">
+            <div class="sr-price">¥258.30</div>
+            <div class="sr-chg up">+1.15%</div>
+        </div>
+    </div>
+
+    <div class="stock-row">
+        <div class="sr-left">
+            <div class="sr-name">阳光电源<span class="tag watch">观望</span></div>
+            <div class="sr-meta">A型 · 700股 @ ¥72</div>
+            <div class="sr-signal"><span class="chip red">止跌 1/4</span> 趋势走弱</div>
+        </div>
+        <div class="sr-right">
+            <div class="sr-price">¥68.42</div>
+            <div class="sr-chg down">-2.18%</div>
+        </div>
+    </div>
+
+    <div class="stock-row">
+        <div class="sr-left">
+            <div class="sr-name">招商银行<span class="tag hold">持有</span></div>
+            <div class="sr-meta">F型 · 3000股 @ ¥35</div>
+            <div class="sr-signal"><span class="chip green">股息率 5.7%</span></div>
+        </div>
+        <div class="sr-right">
+            <div class="sr-price">¥36.18</div>
+            <div class="sr-chg up">+0.52%</div>
+        </div>
+    </div>
+</div>
+
+<!-- ETFs -->
+<section class="section-hd container">
+    <span class="title">ETF 策略仓</span>
+</section>
+<div class="container">
+    <div class="stock-row etf-row">
+        <div class="sr-left">
+            <div class="sr-name">纳指 ETF 国泰</div>
+            <div class="sr-meta">策略B · 53,400股 @ 2.106</div>
+        </div>
+        <div class="sr-right">
+            <div class="sr-price">¥2.245</div>
+            <div class="sr-chg up">+0.89%</div>
+        </div>
+    </div>
+    <div class="stock-row etf-row">
+        <div class="sr-left">
+            <div class="sr-name">机器人 ETF 华夏</div>
+            <div class="sr-meta">策略B · 新增</div>
+        </div>
+        <div class="sr-right">
+            <div class="sr-price">¥0.862</div>
+            <div class="sr-chg up">+2.74%</div>
+        </div>
+    </div>
+</div>
+
+<footer class="site-foot container">
+    千年隼 v25 · 盘中速览设计稿 · 2026-06-13
+</footer>
+
+</body>
+</html>
