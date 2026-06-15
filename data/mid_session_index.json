@@ -2,6 +2,17 @@
   "A股": [
     {
       "date": "2026-06-15",
+      "doc_url": "https://www.feishu.cn/docx/C1thdeC5MoiiHbxNpmLcV5a7nvg",
+      "doc_id": "C1thdeC5MoiiHbxNpmLcV5a7nvg",
+      "update_time": "12:32",
+      "report_title": "银行集体回撤，纳指ETF与润泽科技逆市强反",
+      "input_tokens": 13071,
+      "output_tokens": 5203,
+      "prompt_version": "0.4.1",
+      "stock_count": 11
+    },
+    {
+      "date": "2026-06-15",
       "doc_url": "https://www.feishu.cn/docx/ZZ83dwfZ7oInZ5xY9UWcVuFTnbg",
       "doc_id": "ZZ83dwfZ7oInZ5xY9UWcVuFTnbg",
       "update_time": "12:15",
@@ -178,6 +189,28 @@
     }
   ],
   "港股": [
+    {
+      "date": "2026-06-15",
+      "doc_url": "https://www.feishu.cn/docx/ByzWdupJgo7CrMxiJ0FcIKctnog",
+      "doc_id": "ByzWdupJgo7CrMxiJ0FcIKctnog",
+      "update_time": "12:33",
+      "report_title": "建滔暴涨超15%独领风骚，科技白马冲高回落显疲态",
+      "input_tokens": 6130,
+      "output_tokens": 5012,
+      "prompt_version": "0.4.2",
+      "stock_count": 8
+    },
+    {
+      "date": "2026-06-15",
+      "doc_url": "https://www.feishu.cn/docx/JvH5dnLpfo68k3xAD7zc49k4nKe",
+      "doc_id": "JvH5dnLpfo68k3xAD7zc49k4nKe",
+      "update_time": "12:32",
+      "report_title": "科技承压，材料独秀",
+      "input_tokens": 10093,
+      "output_tokens": 4985,
+      "prompt_version": "0.4.1",
+      "stock_count": 8
+    },
     {
       "date": "2026-06-15",
       "doc_url": "https://www.feishu.cn/docx/R5Opdm787orpGKxPlEycIxi6nxf",
