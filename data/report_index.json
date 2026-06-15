@@ -1313,6 +1313,138 @@
         "input_tokens": 4294,
         "output_tokens": 2989,
         "prompt_version": "1.1.0"
+      },
+      {
+        "name": "比亚迪",
+        "code": "SZ.002594",
+        "doc_url": "https://www.feishu.cn/docx/PAHbd7F5xoVGixx1VKgcNokznmb",
+        "doc_id": "PAHbd7F5xoVGixx1VKgcNokznmb",
+        "date": "2026-06-15",
+        "report_title": "【观望】弱势震荡未改，静待MA20走平信号",
+        "change_rate": -0.85,
+        "input_tokens": 4937,
+        "output_tokens": 2862,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "阳光电源",
+        "code": "SZ.300274",
+        "doc_url": "https://www.feishu.cn/docx/HytTduNtVoxbsaxOaE0csorBnFh",
+        "doc_id": "HytTduNtVoxbsaxOaE0csorBnFh",
+        "date": "2026-06-15",
+        "report_title": "【持有】缩量站稳MA60，AIDC新叙事酝酿中，静待右侧信号",
+        "change_rate": 0.23,
+        "input_tokens": 4955,
+        "output_tokens": 3055,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "宁德时代",
+        "code": "SZ.300750",
+        "doc_url": "https://www.feishu.cn/docx/BaUUdLQJrosw33xl0fVc6JTxnPg",
+        "doc_id": "BaUUdLQJrosw33xl0fVc6JTxnPg",
+        "date": "2026-06-15",
+        "report_title": null,
+        "change_rate": 0.82,
+        "input_tokens": 4922,
+        "output_tokens": 2882,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "招商银行",
+        "code": "SH.600036",
+        "doc_url": "https://www.feishu.cn/docx/IE43dCDw1oxZoLxsQQKci2y7naf",
+        "doc_id": "IE43dCDw1oxZoLxsQQKci2y7naf",
+        "date": "2026-06-15",
+        "report_title": "【持有】缩量回踩均线支撑，资金面承压但计划无需调整",
+        "change_rate": -0.99,
+        "input_tokens": 3870,
+        "output_tokens": 3268,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "兴业银行",
+        "code": "SH.601166",
+        "doc_url": "https://www.feishu.cn/docx/UHitdB71To9qcYxGnW2cFKFdnS1",
+        "doc_id": "UHitdB71To9qcYxGnW2cFKFdnS1",
+        "date": "2026-06-15",
+        "report_title": null,
+        "change_rate": -2.04,
+        "input_tokens": 3844,
+        "output_tokens": 2941,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "交通银行",
+        "code": "SH.601328",
+        "doc_url": "https://www.feishu.cn/docx/S2sOdS5fEo3OQDxmIIycuZ9inBg",
+        "doc_id": "S2sOdS5fEo3OQDxmIIycuZ9inBg",
+        "date": "2026-06-15",
+        "report_title": null,
+        "change_rate": -1.82,
+        "input_tokens": 3794,
+        "output_tokens": 2722,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "中来股份",
+        "code": "SZ.300393",
+        "doc_url": "https://www.feishu.cn/docx/V5UFdzO9uou9pOxq1CpcWZqmniL",
+        "doc_id": "V5UFdzO9uou9pOxq1CpcWZqmniL",
+        "date": "2026-06-15",
+        "report_title": "【观望】跌破MA20空头排列，观察仓等待方向明朗",
+        "change_rate": -0.12,
+        "input_tokens": 3081,
+        "output_tokens": 2423,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "机器人ETF华夏",
+        "code": "SH.562500",
+        "doc_url": "https://www.feishu.cn/docx/BJABdhP0Qon6VuxSRMzckEizncf",
+        "doc_id": "BJABdhP0Qon6VuxSRMzckEizncf",
+        "date": "2026-06-15",
+        "report_title": "【持有】反弹确认止跌，主仓仍需等待更多信号",
+        "change_rate": 2.75,
+        "input_tokens": 4119,
+        "output_tokens": 2724,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "医药ETF易方达",
+        "code": "SH.512010",
+        "doc_url": "https://www.feishu.cn/docx/QilQdA9KuoE1o9xrnyDcUO7Hn6b",
+        "doc_id": "QilQdA9KuoE1o9xrnyDcUO7Hn6b",
+        "date": "2026-06-15",
+        "report_title": "【观望】医药ETF价平量增，多空分歧加大，维持观望等待方向选择",
+        "change_rate": 0.0,
+        "input_tokens": 5090,
+        "output_tokens": 2769,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "纳指ETF国泰",
+        "code": "SH.513100",
+        "doc_url": "https://www.feishu.cn/docx/WoeadLOMCoQCkExHXHscYeHlned",
+        "doc_id": "WoeadLOMCoQCkExHXHscYeHlned",
+        "date": "2026-06-15",
+        "report_title": "【持有】溢价风险叠加趋势转暖，静待策略B信号指引",
+        "change_rate": 4.63,
+        "input_tokens": 4003,
+        "output_tokens": 2872,
+        "prompt_version": "1.1.0"
+      },
+      {
+        "name": "润泽科技",
+        "code": "SZ.300442",
+        "doc_url": "https://www.feishu.cn/docx/QIqQdQyq1onLFaxd6yXcFxsNnrh",
+        "doc_id": "QIqQdQyq1onLFaxd6yXcFxsNnrh",
+        "date": "2026-06-15",
+        "report_title": "【观望】放量反弹仍受均线压制，等待趋势修复或估值回归",
+        "change_rate": 6.83,
+        "input_tokens": 4149,
+        "output_tokens": 2967,
+        "prompt_version": "1.1.0"
       }
     ],
     "港股": [
@@ -3814,94 +3946,6 @@
   },
   "watchlist": [
     {
-      "code": "SZ.002594",
-      "name": "比亚迪",
-      "shares": 15000,
-      "avg_cost": 87.981,
-      "role": "底仓",
-      "market": "A股"
-    },
-    {
-      "code": "SZ.300274",
-      "name": "阳光电源",
-      "shares": 3500,
-      "avg_cost": 141.3825,
-      "role": "底仓",
-      "market": "A股"
-    },
-    {
-      "code": "SZ.300750",
-      "name": "宁德时代",
-      "shares": 1000,
-      "avg_cost": 111.3443,
-      "role": "底仓",
-      "market": "A股"
-    },
-    {
-      "code": "SH.600030",
-      "name": "中信证券",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "清仓",
-      "market": "A股"
-    },
-    {
-      "code": "SH.600036",
-      "name": "招商银行",
-      "shares": 2500,
-      "avg_cost": 39.3939,
-      "role": "底仓",
-      "market": "A股"
-    },
-    {
-      "code": "SH.601166",
-      "name": "兴业银行",
-      "shares": 11500,
-      "avg_cost": 18.63,
-      "role": "底仓",
-      "market": "A股"
-    },
-    {
-      "code": "SH.601328",
-      "name": "交通银行",
-      "shares": 15000,
-      "avg_cost": 7.0953,
-      "role": "底仓",
-      "market": "A股"
-    },
-    {
-      "code": "SZ.300393",
-      "name": "中来股份",
-      "shares": 5000,
-      "avg_cost": 9.9336,
-      "role": "底仓",
-      "market": "A股"
-    },
-    {
-      "code": "SH.562500",
-      "name": "机器人ETF华夏",
-      "shares": 400000,
-      "avg_cost": 0.7843,
-      "role": "底仓",
-      "market": "A股"
-    },
-    {
-      "code": "SH.512010",
-      "name": "医药ETF易方达",
-      "shares": 2675800,
-      "avg_cost": 0.394,
-      "role": "底仓",
-      "market": "A股"
-    },
-    {
-      "code": "SH.513100",
-      "name": "纳指ETF国泰",
-      "shares": 53400,
-      "avg_cost": 2.1062,
-      "role": "底仓",
-      "market": "A股"
-    },
-    {
       "code": "SZ.300442",
       "name": "润泽科技",
       "shares": 300,
@@ -3924,231 +3968,7 @@
       "avg_cost": 0,
       "role": "观察",
       "market": "A股"
-    },
-    {
-      "code": "HK.00270",
-      "name": "粤海投资",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "底仓",
-      "market": "港股"
-    },
-    {
-      "code": "HK.00700",
-      "name": "腾讯控股",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "底仓",
-      "market": "港股"
-    },
-    {
-      "code": "HK.01276",
-      "name": "恒瑞医药",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "底仓",
-      "market": "港股"
-    },
-    {
-      "code": "HK.01810",
-      "name": "小米集团-W",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "底仓",
-      "market": "港股"
-    },
-    {
-      "code": "HK.01888",
-      "name": "建滔积层板",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "底仓",
-      "market": "港股"
-    },
-    {
-      "code": "HK.02382",
-      "name": "舜宇光学科技",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "底仓",
-      "market": "港股"
-    },
-    {
-      "code": "HK.03690",
-      "name": "美团-W",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "底仓",
-      "market": "港股"
-    },
-    {
-      "code": "HK.06160",
-      "name": "百济神州",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "底仓",
-      "market": "港股"
-    },
-    {
-      "code": "HK.09988",
-      "name": "阿里巴巴-W",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "底仓",
-      "market": "港股"
-    },
-    {
-      "code": "HK.07747",
-      "name": "南方两倍做多三星电子",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "底仓",
-      "market": "港股"
-    },
-    {
-      "code": "US.CRCL",
-      "name": "Circle",
-      "shares": 20,
-      "avg_cost": 82.819,
-      "role": "底仓",
-      "market": "美股"
-    },
-    {
-      "code": "US.LITE",
-      "name": "Lumentum",
-      "shares": 8,
-      "avg_cost": 868.393,
-      "role": "底仓",
-      "market": "美股"
-    },
-    {
-      "code": "US.META",
-      "name": "Meta",
-      "shares": 90,
-      "avg_cost": 612.668,
-      "role": "底仓",
-      "market": "美股"
-    },
-    {
-      "code": "US.MSFT",
-      "name": "微软",
-      "shares": 150,
-      "avg_cost": 396.777,
-      "role": "底仓",
-      "market": "美股"
-    },
-    {
-      "code": "US.NIO",
-      "name": "蔚来",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "清仓",
-      "market": "美股"
-    },
-    {
-      "code": "US.NVDA",
-      "name": "英伟达",
-      "shares": 320,
-      "avg_cost": 181.729,
-      "role": "底仓",
-      "market": "美股"
-    },
-    {
-      "code": "US.PDD",
-      "name": "拼多多",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "清仓",
-      "market": "美股"
-    },
-    {
-      "code": "US.PLTR",
-      "name": "Palantir",
-      "shares": 60,
-      "avg_cost": 138.12,
-      "role": "底仓",
-      "market": "美股"
-    },
-    {
-      "code": "US.RKLB",
-      "name": "Rocket Lab",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "清仓",
-      "market": "美股"
-    },
-    {
-      "code": "US.SOFI",
-      "name": "SoFi",
-      "shares": 2000,
-      "avg_cost": 17.402,
-      "role": "底仓",
-      "market": "美股"
-    },
-    {
-      "code": "US.TSLA",
-      "name": "特斯拉",
-      "shares": 250,
-      "avg_cost": 393.751,
-      "role": "底仓",
-      "market": "美股"
-    },
-    {
-      "code": "US.SATS",
-      "name": "回声星通信",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "清仓",
-      "market": "美股"
-    },
-    {
-      "code": "US.SE",
-      "name": "Sea",
-      "shares": 60,
-      "avg_cost": 91.167,
-      "role": "底仓",
-      "market": "美股"
-    },
-    {
-      "code": "US.AVGO",
-      "name": "博通",
-      "shares": 60,
-      "avg_cost": 403.333,
-      "role": "底仓",
-      "market": "美股"
-    },
-    {
-      "code": "US.COHR",
-      "name": "Coherent",
-      "shares": 3,
-      "avg_cost": 355.06,
-      "role": "底仓",
-      "market": "美股"
-    },
-    {
-      "code": "US.AXTI",
-      "name": "US.AXTI",
-      "shares": 15,
-      "avg_cost": 83.63,
-      "role": "底仓",
-      "market": "美股"
-    },
-    {
-      "code": "US.SPCX",
-      "name": "SpaceX",
-      "shares": 5,
-      "avg_cost": 174.106,
-      "role": "底仓",
-      "market": "美股"
-    },
-    {
-      "code": "US.RKLX",
-      "name": "2倍做多RKLB ETF-Defiance",
-      "shares": 20,
-      "avg_cost": 52.52,
-      "role": "底仓",
-      "market": "美股"
     }
   ],
-  "update_time": "2026-06-14 09:05"
+  "update_time": "2026-06-15 15:29"
 }

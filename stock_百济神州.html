@@ -296,6 +296,25 @@
         .dc-item.risk { background: #fff5f5; border-left: 3px solid var(--red); padding: 4px 8px; border-radius: 0 4px 4px 0; }
         .dc-item.safe { background: #e8f5e9; border-left: 3px solid var(--green); padding: 4px 8px; border-radius: 0 4px 4px 0; }
 
+        /* ── 缓存数据版日检样式 ── */
+        .dc-rows { display: flex; flex-direction: column; gap: 4px; }
+        .dc-row { font-size: 13px; display: flex; align-items: center; gap: 8px; padding: 3px 0; }
+        .dc-label { color: var(--ink-soft); min-width: 36px; font-weight: 500; }
+        .dc-val { font-weight: 600; }
+        .dc-detail { color: var(--ink-soft); font-size: 12px; }
+        .dc-ok { color: var(--green); font-size: 12px; }
+        .dc-warn { color: #e6a817; font-size: 12px; font-weight: 600; }
+        .dc-bad { color: var(--red); font-size: 12px; font-weight: 600; }
+        .dc-alert { background: #fff5f5; border-left: 3px solid var(--red); padding: 4px 8px; border-radius: 0 4px 4px 0; font-weight: 600; }
+        .dc-reason { color: var(--ink-soft); font-size: 12px; padding-left: 8px; }
+        .dc-warning { background: #fffdf0; border-left: 3px solid #e6a817; padding: 4px 8px; border-radius: 0 4px 4px 0; }
+
+        /* ── 触发状态标签 ── */
+        .tag-green { font-size: 11px; background: #e8f5e9; color: #2e7d32; padding: 1px 6px; border-radius: 3px; font-weight: 700; }
+        .tag-yellow { font-size: 11px; background: #fff8e1; color: #e6a817; padding: 1px 6px; border-radius: 3px; font-weight: 700; }
+        .tag-red-mech { font-size: 11px; background: #ede7f6; color: #4527a0; padding: 1px 6px; border-radius: 3px; font-weight: 700; }
+        .tag-red-judge { font-size: 11px; background: #ffebee; color: #c62828; padding: 1px 6px; border-radius: 3px; font-weight: 700; }
+
         /* ===== REPORT LIST ===== */
         .report-list {
             list-style: none;
@@ -446,8 +465,8 @@
                 <div class="stock-code">HK.06160 · 港股</div>
             </div>
             <div class="stock-price">
-                <div class="price">158.90</div>
-                <div class="change up intl">+2.25%</div>
+                <div class="price">159.90</div>
+                <div class="change up intl">+0.63%</div>
             </div>
         </div>
     </header>
@@ -462,18 +481,18 @@
     </div>
 
     <div class="container">
-        <div class="daily-check">
-            <div class="dc-title">⚡ 日检对照</div>
-            <div class="dc-grid">
-        <div class="dc-item"><span class="l">加仓线</span> <span class="val">待补充</span></div>
+            <div class="daily-check">
+                <div class="dc-title">⚡ 日检对照</div>
+                <div class="dc-grid">
+            <div class="dc-item"><span class="l">加仓线</span> <span class="val">待补充</span></div>
         <div class="dc-item safe"><span class="l">当前距</span> <span class="val">待补充</span></div>
         <div class="dc-item"><span class="l">止跌需要</span> <span class="val">≥2 / 4</span></div>
         <div class="dc-item"><span class="l">当前止跌</span> <span class="val">待补充</span></div>
-        <div class="dc-item risk"><span class="l">预警</span> <span class="val">[安全] 硬止损 ¥143（），距离 10.9%</span></div>
+        <div class="dc-item risk"><span class="l">预警</span> <span class="val">[安全] 硬止损 ¥143（），距离 11.6%</span></div>
         <div class="dc-item safe"><span class="l">硬止损</span> <span class="val">HK$143.30（52 周低点）收盘跌破 + 连续 3 天收不回 → 减仓至 2,000 股</span></div>
+                </div>
             </div>
         </div>
-    </div>
 
     <section class="section container">
         <div class="section-title">交易计划<span class="ver">v1.2 · 06-12</span></div>
@@ -505,6 +524,6 @@
     </section>
 
 
-    <footer class="site-foot container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-15 13:21</footer>
+    <footer class="site-foot container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-15 15:30</footer>
 </body>
 </html>

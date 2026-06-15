@@ -296,6 +296,25 @@
         .dc-item.risk { background: #fff5f5; border-left: 3px solid var(--red); padding: 4px 8px; border-radius: 0 4px 4px 0; }
         .dc-item.safe { background: #e8f5e9; border-left: 3px solid var(--green); padding: 4px 8px; border-radius: 0 4px 4px 0; }
 
+        /* ── 缓存数据版日检样式 ── */
+        .dc-rows { display: flex; flex-direction: column; gap: 4px; }
+        .dc-row { font-size: 13px; display: flex; align-items: center; gap: 8px; padding: 3px 0; }
+        .dc-label { color: var(--ink-soft); min-width: 36px; font-weight: 500; }
+        .dc-val { font-weight: 600; }
+        .dc-detail { color: var(--ink-soft); font-size: 12px; }
+        .dc-ok { color: var(--green); font-size: 12px; }
+        .dc-warn { color: #e6a817; font-size: 12px; font-weight: 600; }
+        .dc-bad { color: var(--red); font-size: 12px; font-weight: 600; }
+        .dc-alert { background: #fff5f5; border-left: 3px solid var(--red); padding: 4px 8px; border-radius: 0 4px 4px 0; font-weight: 600; }
+        .dc-reason { color: var(--ink-soft); font-size: 12px; padding-left: 8px; }
+        .dc-warning { background: #fffdf0; border-left: 3px solid #e6a817; padding: 4px 8px; border-radius: 0 4px 4px 0; }
+
+        /* ── 触发状态标签 ── */
+        .tag-green { font-size: 11px; background: #e8f5e9; color: #2e7d32; padding: 1px 6px; border-radius: 3px; font-weight: 700; }
+        .tag-yellow { font-size: 11px; background: #fff8e1; color: #e6a817; padding: 1px 6px; border-radius: 3px; font-weight: 700; }
+        .tag-red-mech { font-size: 11px; background: #ede7f6; color: #4527a0; padding: 1px 6px; border-radius: 3px; font-weight: 700; }
+        .tag-red-judge { font-size: 11px; background: #ffebee; color: #c62828; padding: 1px 6px; border-radius: 3px; font-weight: 700; }
+
         /* ===== REPORT LIST ===== */
         .report-list {
             list-style: none;
@@ -446,53 +465,64 @@
                 <div class="stock-code">SH.562500 · A股</div>
             </div>
             <div class="stock-price">
-                <div class="price">1.09</div>
-                <div class="change down">-0.28%</div>
+                <div class="price">1.12</div>
+                <div class="change up">+3.13%</div>
             </div>
         </div>
     </header>
 
     <div class="status-bar container">
-        <span class="status-item">类型 <strong>主题配置仓（映射 B 型逻辑——趋势是导航仪）</strong></span>
+        <span class="status-item">类型 <strong>—</strong></span>
         <span class="status-item">趋势 <strong>—</strong></span>
         <span class="status-item">PE <strong>—</strong></span>
-        <span class="status-item">分位 <strong>—</strong></span>
+        <span class="status-item">分位 <strong>90%分位</strong></span>
         <span class="status-item">止跌 <strong>—</strong></span>
-        <span class="status-item">持仓 <strong>底仓 400,000 股 @ ¥0.7843 + 计划波段 200,000 股 @ ¥1.10</strong></span>
+        <span class="status-item">持仓 <strong>### 框架：ETF v2.1</strong></span>
     </div>
 
     <div class="container">
-        <div class="daily-check">
-            <div class="dc-title">⚡ 日检对照</div>
-            <div class="dc-grid">
-        <div class="dc-item"><span class="l">加仓线</span> <span class="val">待补充</span></div>
-        <div class="dc-item safe"><span class="l">当前距</span> <span class="val">待补充</span></div>
-        <div class="dc-item"><span class="l">止跌需要</span> <span class="val">≥2 / 4</span></div>
-        <div class="dc-item"><span class="l">当前止跌</span> <span class="val">待补充</span></div>
-        <div class="dc-item risk"><span class="l">预警</span> <span class="val">[接近] 预警线 ¥1（），距离 4.4%</span></div>
-        <div class="dc-item safe"><span class="l">硬止损</span> <span class="val">机器人产业逻辑证伪（量产遥遥无期/指数被边缘化/政策转向）→ 全清</span></div>
+            <div class="daily-check">
+                <div class="dc-title">⚡ 日检对照 <span class="tag-green">🟢 正常</span></div>
+                <div class="dc-rows">
+            <div class="dc-row"><span class="dc-label">止跌</span><span class="dc-val">2/4</span><span class="dc-detail">均线支撑✅  阳线放量❌  不创新低✅  ATR收缩❌</span></div>
+        <div class="dc-row"><span class="dc-label">预警</span><span class="dc-val">趋势: 数据不足（80日 / 需120日）</span></div>
+                </div>
             </div>
         </div>
-    </div>
 
     <section class="section container">
-        <div class="section-title">交易计划<span class="ver">v3 · 06-12</span></div>
+        <div class="section-title">交易计划<span class="ver">v4 · 06-15</span></div>
         <div class="plan-card">
         <div class="plan-section">
             <div class="ps-label">加仓</div>
-            <div class="ps-row"><span class="k">档位</span><span class="v">触发价 | 金额 | ~股数 | 逻辑</span></div>
-            <div class="ps-row"><span class="k"></span><span class="v">¥1.05 | ¥10 万 | 95,200 | MA60 中期趋势锚，泡沫股已有挤压</span></div>
-            <div class="ps-row"><span class="k"></span><span class="v">¥1.00 | ¥10 万 | 100,000 | 极端估值 + 整数关，最后一波泡沫投降</span></div>
+            <div class="ps-row"><span class="k">档位</span><span class="v">触发 | 状态</span></div>
+            <div class="ps-row"><span class="k">试探仓</span><span class="v">窗口开 + 方向对（¥1.10） | 已成交 500股</span></div>
+            <div class="ps-row"><span class="k">主仓</span><span class="v">区间下沿买入法 ≥2信号 | 等待</span></div>
+            <div class="ps-row"><span class="k">加仓</span><span class="v">止跌/支撑确认后回踩不破 | 等待</span></div>
+        </div>
+        <div class="plan-section">
+            <div class="ps-label">止跌确认 · 当前 ≥2</div>
+            <div class="sig-grid">
+                <div class="sig-item"><span class="sig-dot off"></span> 触及区间下沿</div>
+                <div class="sig-item"><span class="sig-dot off"></span> 下沿支撑有效</div>
+                <div class="sig-item"><span class="sig-dot off"></span> 波动收敛</div>
+            </div>
+        </div>
+        <div class="plan-section">
+            <div class="ps-label">止损</div>
+            <div class="ps-row"><span class="v">叙事破裂（机器人产业政策废止 / 技术路线替代） → 波段仓全清，底仓重评</span></div>
+            <div class="ps-row"><span class="v">波段仓价格止损 5-8% → 从入场价算</span></div>
         </div>
         <div class="plan-section">
             <div class="ps-label">止盈</div>
-            <div class="ps-row"><span class="v">¥1.18（+15.1% vs 均价）→ 卖 100,000 股</span></div>
-            <div class="ps-row"><span class="v">¥1.23（+20.0% vs 均价）→ 卖 100,000 股</span></div>
+            <div class="ps-row"><span class="k">档位</span><span class="v">PE条件 | 对应价格* | 操作</span></div>
+            <div class="ps-row"><span class="k">T1</span><span class="v">PE > 55~65x（70%分位估算） | ¥1.51 ~ 1.79 | 波段仓减 1/2</span></div>
+            <div class="ps-row"><span class="k">T2</span><span class="v">PE > 75~85x（90%分位估算） | ¥2.06 ~ 2.34 | 波段仓剩余全清</span></div>
         </div>
         </div>
     </section>
 
 
-    <footer class="site-foot container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-15 13:21</footer>
+    <footer class="site-foot container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-15 15:30</footer>
 </body>
 </html>

@@ -296,6 +296,25 @@
         .dc-item.risk { background: #fff5f5; border-left: 3px solid var(--red); padding: 4px 8px; border-radius: 0 4px 4px 0; }
         .dc-item.safe { background: #e8f5e9; border-left: 3px solid var(--green); padding: 4px 8px; border-radius: 0 4px 4px 0; }
 
+        /* ── 缓存数据版日检样式 ── */
+        .dc-rows { display: flex; flex-direction: column; gap: 4px; }
+        .dc-row { font-size: 13px; display: flex; align-items: center; gap: 8px; padding: 3px 0; }
+        .dc-label { color: var(--ink-soft); min-width: 36px; font-weight: 500; }
+        .dc-val { font-weight: 600; }
+        .dc-detail { color: var(--ink-soft); font-size: 12px; }
+        .dc-ok { color: var(--green); font-size: 12px; }
+        .dc-warn { color: #e6a817; font-size: 12px; font-weight: 600; }
+        .dc-bad { color: var(--red); font-size: 12px; font-weight: 600; }
+        .dc-alert { background: #fff5f5; border-left: 3px solid var(--red); padding: 4px 8px; border-radius: 0 4px 4px 0; font-weight: 600; }
+        .dc-reason { color: var(--ink-soft); font-size: 12px; padding-left: 8px; }
+        .dc-warning { background: #fffdf0; border-left: 3px solid #e6a817; padding: 4px 8px; border-radius: 0 4px 4px 0; }
+
+        /* ── 触发状态标签 ── */
+        .tag-green { font-size: 11px; background: #e8f5e9; color: #2e7d32; padding: 1px 6px; border-radius: 3px; font-weight: 700; }
+        .tag-yellow { font-size: 11px; background: #fff8e1; color: #e6a817; padding: 1px 6px; border-radius: 3px; font-weight: 700; }
+        .tag-red-mech { font-size: 11px; background: #ede7f6; color: #4527a0; padding: 1px 6px; border-radius: 3px; font-weight: 700; }
+        .tag-red-judge { font-size: 11px; background: #ffebee; color: #c62828; padding: 1px 6px; border-radius: 3px; font-weight: 700; }
+
         /* ===== REPORT LIST ===== */
         .report-list {
             list-style: none;
@@ -446,8 +465,8 @@
                 <div class="stock-code">HK.00270 · 港股</div>
             </div>
             <div class="stock-price">
-                <div class="price">8.40</div>
-                <div class="change up intl">+1.08%</div>
+                <div class="price">8.33</div>
+                <div class="change down intl">-0.83%</div>
             </div>
         </div>
     </header>
@@ -458,36 +477,42 @@
         <span class="status-item">PE <strong>—</strong></span>
         <span class="status-item">分位 <strong>—</strong></span>
         <span class="status-item">止跌 <strong>—</strong></span>
-        <span class="status-item">持仓 <strong>74,000股 @6.979</strong></span>
+        <span class="status-item">持仓 <strong>74,000股 @6.979 | 占港股 ~9.5% | F 型收息慢速</strong></span>
     </div>
 
     <div class="container">
-        <div class="daily-check">
-            <div class="dc-title">⚡ 日检对照</div>
-            <div class="dc-grid">
-        <div class="dc-item"><span class="l">加仓线</span> <span class="val">待补充</span></div>
+            <div class="daily-check">
+                <div class="dc-title">⚡ 日检对照</div>
+                <div class="dc-grid">
+            <div class="dc-item"><span class="l">加仓线</span> <span class="val">待补充</span></div>
         <div class="dc-item safe"><span class="l">当前距</span> <span class="val">待补充</span></div>
         <div class="dc-item"><span class="l">止跌需要</span> <span class="val">≥2 / 4</span></div>
         <div class="dc-item"><span class="l">当前止跌</span> <span class="val">待补充</span></div>
-        <div class="dc-item risk"><span class="l">预警</span> <span class="val">[条件] 预警线： PE > 15x（股价 ~10.40）→ 减仓 1/3</span></div>
-        <div class="dc-item safe"><span class="l">硬止损</span> <span class="val">股息率 < 4%（股价 ~11.57）→ 清仓</span></div>
+        <div class="dc-item risk"><span class="l">预警</span> <span class="val">[触发] 预警线 $10（），当前 8.33已跌破</span></div>
+        <div class="dc-item safe"><span class="l">硬止损</span> <span class="val">股息率 < 4%（~$11.57）→ 清仓</span></div>
+                </div>
             </div>
         </div>
-    </div>
 
     <section class="section container">
-        <div class="section-title">交易计划<span class="ver">v1 · 06-12</span></div>
+        <div class="section-title">交易计划<span class="ver">v2 · 06-12</span></div>
         <div class="plan-card">
         <div class="plan-section">
+            <div class="ps-label">卖出计划</div>
+            <div class="ps-row"><span class="k">批次</span><span class="v">价格 | 数量 | 金额 | 状态</span></div>
+            <div class="ps-row"><span class="k">T1</span><span class="v">8.50 | 10,000股 | ~HK$85,000 | 挂单中</span></div>
+            <div class="ps-row"><span class="k">T2</span><span class="v">8.60 | 10,000股 | ~HK$86,000 | 挂单中</span></div>
+            <div class="ps-row"><span class="k">T3</span><span class="v">待定 | 5,000股 | — | 待定</span></div>
+        </div>
+        <div class="plan-section">
             <div class="ps-label">加仓</div>
-            <div class="ps-row"><span class="v">跌至 MA60($8.03) → 加6,000股，升至 80,000股 · R:R ~5.6:1</span></div>
-            <div class="ps-row"><span class="v">F 型不设价格止损，靠估值锚保护：PE>15x 或股息<4% 才是离场信号</span></div>
+            <div class="ps-row"><span class="v">跌至 MA60($8.03) → 加 6,000 股，升至 55,000 股 · R:R ~5.6:1</span></div>
         </div>
         <div class="plan-section">
             <div class="ps-label">止损</div>
-            <div class="ps-row"><span class="v">PE > 15x（股价 ~10.40）→ 减仓 1/3</span></div>
-            <div class="ps-row"><span class="v">股息率 < 4%（股价 ~11.57）→ 清仓</span></div>
-            <div class="ps-row"><span class="v">→ 向下无价格止损。跌了只要股息率更高、估值更便宜，反而是加仓机会</span></div>
+            <div class="ps-row"><span class="v">PE > 15x（~$10.40）→ 减仓 1/3</span></div>
+            <div class="ps-row"><span class="v">股息率 < 4%（~$11.57）→ 清仓</span></div>
+            <div class="ps-row"><span class="v">→ 向下无价格止损</span></div>
         </div>
         <div class="plan-section">
             <div class="ps-label">止盈</div>
@@ -495,14 +520,14 @@
         </div>
         <div class="plan-section">
             <div class="ps-label">估值</div>
-            <div class="ps-row"><span class="v">PE > 15x（股价 ~10.40）→ 减仓 1/3</span></div>
-            <div class="ps-row"><span class="v">股息率 < 4%（股价 ~11.57）→ 清仓</span></div>
-            <div class="ps-row"><span class="v">→ 向下无价格止损。跌了只要股息率更高、估值更便宜，反而是加仓机会</span></div>
+            <div class="ps-row"><span class="v">PE > 15x（~$10.40）→ 减仓 1/3</span></div>
+            <div class="ps-row"><span class="v">股息率 < 4%（~$11.57）→ 清仓</span></div>
+            <div class="ps-row"><span class="v">→ 向下无价格止损</span></div>
         </div>
         </div>
     </section>
 
 
-    <footer class="site-foot container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-15 13:21</footer>
+    <footer class="site-foot container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-15 15:30</footer>
 </body>
 </html>

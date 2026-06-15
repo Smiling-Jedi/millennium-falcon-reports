@@ -151,8 +151,7 @@ def scan_stock_pages():
 
     # 检查哪些股票只有很少 section（仅对有知识库的股票报警）
     import subprocess
-    kb_dirs = [os.path.expanduser("~/.claude/skills/master/knowledge"),
-               "/Users/jediyang/ClaudeCode/Project-Makemoney/millenium-falcon/knowledge"]
+    kb_dirs = [os.path.expanduser("~/.claude/skills/master/knowledge")]
     has_kb = set()
     for d in kb_dirs:
         if os.path.exists(d):

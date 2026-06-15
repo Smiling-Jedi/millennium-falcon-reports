@@ -296,6 +296,25 @@
         .dc-item.risk { background: #fff5f5; border-left: 3px solid var(--red); padding: 4px 8px; border-radius: 0 4px 4px 0; }
         .dc-item.safe { background: #e8f5e9; border-left: 3px solid var(--green); padding: 4px 8px; border-radius: 0 4px 4px 0; }
 
+        /* ── 缓存数据版日检样式 ── */
+        .dc-rows { display: flex; flex-direction: column; gap: 4px; }
+        .dc-row { font-size: 13px; display: flex; align-items: center; gap: 8px; padding: 3px 0; }
+        .dc-label { color: var(--ink-soft); min-width: 36px; font-weight: 500; }
+        .dc-val { font-weight: 600; }
+        .dc-detail { color: var(--ink-soft); font-size: 12px; }
+        .dc-ok { color: var(--green); font-size: 12px; }
+        .dc-warn { color: #e6a817; font-size: 12px; font-weight: 600; }
+        .dc-bad { color: var(--red); font-size: 12px; font-weight: 600; }
+        .dc-alert { background: #fff5f5; border-left: 3px solid var(--red); padding: 4px 8px; border-radius: 0 4px 4px 0; font-weight: 600; }
+        .dc-reason { color: var(--ink-soft); font-size: 12px; padding-left: 8px; }
+        .dc-warning { background: #fffdf0; border-left: 3px solid #e6a817; padding: 4px 8px; border-radius: 0 4px 4px 0; }
+
+        /* ── 触发状态标签 ── */
+        .tag-green { font-size: 11px; background: #e8f5e9; color: #2e7d32; padding: 1px 6px; border-radius: 3px; font-weight: 700; }
+        .tag-yellow { font-size: 11px; background: #fff8e1; color: #e6a817; padding: 1px 6px; border-radius: 3px; font-weight: 700; }
+        .tag-red-mech { font-size: 11px; background: #ede7f6; color: #4527a0; padding: 1px 6px; border-radius: 3px; font-weight: 700; }
+        .tag-red-judge { font-size: 11px; background: #ffebee; color: #c62828; padding: 1px 6px; border-radius: 3px; font-weight: 700; }
+
         /* ===== REPORT LIST ===== */
         .report-list {
             list-style: none;
@@ -446,8 +465,8 @@
                 <div class="stock-code">SZ.300274 · A股</div>
             </div>
             <div class="stock-price">
-                <div class="price">148.76</div>
-                <div class="change up">+1.37%</div>
+                <div class="price">149.10</div>
+                <div class="change up">+0.23%</div>
             </div>
         </div>
     </header>
@@ -462,21 +481,17 @@
     </div>
 
     <div class="container">
-        <div class="daily-check">
-            <div class="dc-title">⚡ 日检对照</div>
-            <div class="dc-grid">
-        <div class="dc-item"><span class="l">加仓线</span> <span class="val">待补充</span></div>
-        <div class="dc-item safe"><span class="l">当前距</span> <span class="val">待补充</span></div>
-        <div class="dc-item"><span class="l">止跌需要</span> <span class="val">≥2 / 4</span></div>
-        <div class="dc-item"><span class="l">当前止跌</span> <span class="val">待补充</span></div>
-        <div class="dc-item risk"><span class="l">预警</span> <span class="val">[接近] 预警线 ¥138（收盘跌破 ¥138 且连续 3 日站不回 MA60（¥150），距离 7.8%</span></div>
-        <div class="dc-item safe"><span class="l">硬止损</span> <span class="val">结构破坏：收盘跌破 ¥115（60日低点 ¥121 下方 5%）→ 清仓。趋势彻底反转，B 型逻辑失效。</span></div>
+            <div class="daily-check">
+                <div class="dc-title">⚡ 日检对照 <span class="tag-green">🟢 正常</span></div>
+                <div class="dc-rows">
+            <div class="dc-row"><span class="dc-label">止跌</span><span class="dc-val">3/4</span><span class="dc-detail">均线支撑✅  阳线放量❌  不创新低✅  ATR收缩✅</span></div>
+        <div class="dc-row"><span class="dc-label">预警</span><span class="dc-val">预警线: 距离 8.0%</span></div>
+                </div>
             </div>
         </div>
-    </div>
 
     <section class="section container">
-        <div class="section-title">交易计划<span class="ver">v6 · 06-12</span></div>
+        <div class="section-title">交易计划<span class="ver">v6 · 06-15</span></div>
         <div class="plan-card">
         <div class="plan-section">
             <div class="ps-label">加仓</div>
@@ -502,6 +517,6 @@
     </section>
 
 
-    <footer class="site-foot container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-15 13:21</footer>
+    <footer class="site-foot container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-15 15:30</footer>
 </body>
 </html>
