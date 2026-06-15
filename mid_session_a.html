@@ -12,13 +12,14 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-            background: #fafbfc;
-            color: #2c3e50;
-            padding: 36px 24px 48px;
-            max-width: 480px;
+            font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+            background: #ffffff;
+            color: #111111;
+            padding: 32px 0 56px;
+            max-width: 560px;
             margin: 0 auto;
-            line-height: 1.6;
+            line-height: 1.55;
+            font-size: 16px;
         }
         .logo-img {
             width: 24px;
@@ -123,6 +124,8 @@
         .stock-item:active { border-color: #2563eb; color: #2563eb; background: #f0f5ff; }
         .stock-item-up { border-color: #fecaca; background: transparent; color: #475569; }
         .stock-item-down { border-color: #a5d6a7; background: transparent; color: #475569; }
+        .stock-item.intl-up { border-color: #a5d6a7; }
+        .stock-item.intl-down { border-color: #fecaca; }
         .up { color: #16a34a; font-weight: 500; }
         .down { color: #dc2626; font-weight: 500; }
         .report-link {
@@ -262,8 +265,10 @@
     <h1><img src="favicon-32x32.png" class="logo-img" alt="">A股盘中速览</h1>
     <p class="page-intro">午间交易小结 · 上午收盘后自动生成</p>
     <a href="holdings.html" class="back">← 返回持仓</a>
-    <a href="https://www.feishu.cn/docx/WKVcd5t7ooR7nwxwEVhcjPW5n7b" class="report-link" data-stock="mid_a_2026_06_12" data-date="2026-06-12" data-has-reply="0" data-market="a"><span class="report-date today">2026-06-12 12:06</span>盘中速览 · 11只 →</a>
-    <a href="https://www.feishu.cn/docx/FGg4dv33Ro2uy3xPseNcQa13nNd" class="report-link" data-stock="mid_a_2026_06_12" data-date="2026-06-12" data-has-reply="0" data-market="a"><span class="report-date today">2026-06-12 11:36</span>新能源强反，防御板块稳步攀升 · 11只 →</a>
+    <a href="https://www.feishu.cn/docx/ZZ83dwfZ7oInZ5xY9UWcVuFTnbg" class="report-link" data-stock="mid_a_2026_06_15" data-date="2026-06-15" data-has-reply="0" data-market="a"><span class="report-date today">2026-06-15 12:15</span>盘中速览 · 11只 →</a>
+    <a href="https://www.feishu.cn/docx/BtbNdB9WfoVLOdxPoXpcz3QOnNf" class="report-link" data-stock="mid_a_2026_06_15" data-date="2026-06-15" data-has-reply="0" data-market="a"><span class="report-date today">2026-06-15 11:36</span>盘中速览 · 11只 →</a>
+    <a href="https://www.feishu.cn/docx/WKVcd5t7ooR7nwxwEVhcjPW5n7b" class="report-link" data-stock="mid_a_2026_06_12" data-date="2026-06-12" data-has-reply="0" data-market="a"><span class="report-date">2026-06-12 12:06</span>盘中速览 · 11只 →</a>
+    <a href="https://www.feishu.cn/docx/FGg4dv33Ro2uy3xPseNcQa13nNd" class="report-link" data-stock="mid_a_2026_06_12" data-date="2026-06-12" data-has-reply="0" data-market="a"><span class="report-date">2026-06-12 11:36</span>新能源强反，防御板块稳步攀升 · 11只 →</a>
     <a href="https://www.feishu.cn/docx/LZ0bdAIkxo4nQWx0X7wcER0In1c" class="report-link" data-stock="mid_a_2026_06_11" data-date="2026-06-11" data-has-reply="0" data-market="a"><span class="report-date">2026-06-11 12:33</span>题材重挫，银行超买承压 · 11只 →</a>
     <a href="https://www.feishu.cn/docx/NLWkdYoJEopP10xA8gacOWKwntb" class="report-link" data-stock="mid_a_2026_06_10" data-date="2026-06-10" data-has-reply="0" data-market="a"><span class="report-date">2026-06-10 13:12</span>银行护盘新能源杀跌 · 11只 →</a>
     <a href="https://www.feishu.cn/docx/EC8BdQf7doCJ8qx0jCpceKXDnbb" class="report-link" data-stock="mid_a_2026_06_10" data-date="2026-06-10" data-has-reply="0" data-market="a"><span class="report-date">2026-06-10 13:08</span>银行护盘成长普跌，新能源再遭抛售 · 11只 →</a>
@@ -304,6 +309,6 @@ if(rn){localStorage.setItem(P+this.getAttribute('data-stock')+'_'+dt,'1');}
 });})(d,r);}
 }})();
 window.addEventListener('pageshow',function(e){if(e.persisted)location.reload();});
-</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-12 12:10</div>
+</script>    <div class="footer">千年隼 Millennium Falcon · 最后更新 2026-06-15 12:15</div>
 </body>
 </html>

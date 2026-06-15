@@ -1,6 +1,28 @@
 {
   "A股": [
     {
+      "date": "2026-06-15",
+      "doc_url": "https://www.feishu.cn/docx/ZZ83dwfZ7oInZ5xY9UWcVuFTnbg",
+      "doc_id": "ZZ83dwfZ7oInZ5xY9UWcVuFTnbg",
+      "update_time": "12:15",
+      "report_title": null,
+      "input_tokens": 14677,
+      "output_tokens": 5900,
+      "prompt_version": "0.4.0",
+      "stock_count": 11
+    },
+    {
+      "date": "2026-06-15",
+      "doc_url": "https://www.feishu.cn/docx/BtbNdB9WfoVLOdxPoXpcz3QOnNf",
+      "doc_id": "BtbNdB9WfoVLOdxPoXpcz3QOnNf",
+      "update_time": "11:36",
+      "report_title": null,
+      "input_tokens": 14677,
+      "output_tokens": 5802,
+      "prompt_version": "0.4.0",
+      "stock_count": 11
+    },
+    {
       "date": "2026-06-12",
       "doc_url": "https://www.feishu.cn/docx/WKVcd5t7ooR7nwxwEVhcjPW5n7b",
       "doc_id": "WKVcd5t7ooR7nwxwEVhcjPW5n7b",
@@ -156,6 +178,28 @@
     }
   ],
   "港股": [
+    {
+      "date": "2026-06-15",
+      "doc_url": "https://www.feishu.cn/docx/R5Opdm787orpGKxPlEycIxi6nxf",
+      "doc_id": "R5Opdm787orpGKxPlEycIxi6nxf",
+      "update_time": "12:07",
+      "report_title": null,
+      "input_tokens": 51,
+      "output_tokens": 4378,
+      "prompt_version": "0.4.0",
+      "stock_count": 8
+    },
+    {
+      "date": "2026-06-15",
+      "doc_url": "https://www.feishu.cn/docx/G9S5dSO8Low8GNx8qn6cfWVAn2d",
+      "doc_id": "G9S5dSO8Low8GNx8qn6cfWVAn2d",
+      "update_time": "12:06",
+      "report_title": null,
+      "input_tokens": 10035,
+      "output_tokens": 5547,
+      "prompt_version": "0.4.0",
+      "stock_count": 8
+    },
     {
       "date": "2026-06-12",
       "doc_url": "https://www.feishu.cn/docx/Axu7dKKVwoHUUjxtlDgcRNEBn5f",

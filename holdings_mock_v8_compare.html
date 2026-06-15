@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>V8 紫色系对比 · 堇青 / 薰衣草 / 紫罗兰 / 靛青</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: -apple-system, sans-serif; background: #eee; padding: 20px; }
+  h1 { font-size: 20px; margin-bottom: 16px; text-align: center; color: #333; }
+  .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; max-width: 1200px; margin: 0 auto; }
+  @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+  .panel { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .label { padding: 10px 16px; font-size: 14px; font-weight: 600; color: #fff; text-align: center; }
+  iframe { width: 100%; height: 700px; border: none; }
+</style>
+</head>
+<body>
+<h1>V8 紫色系对比</h1>
+<div class="grid">
+  <div class="panel">
+    <div class="label" style="background:#8a88b5">堇青 Periwinkle · #8a88b5 · 微紫</div>
+    <iframe src="holdings_mock_v8_periwinkle.html"></iframe>
+  </div>
+  <div class="panel">
+    <div class="label" style="background:#9b8fb8">薰衣草 Lavender · #9b8fb8 · 淡紫</div>
+    <iframe src="holdings_mock_v8_lavender.html"></iframe>
+  </div>
+  <div class="panel">
+    <div class="label" style="background:#8b83b0">紫罗兰 Violet · #8b83b0 · 偏紫</div>
+    <iframe src="holdings_mock_v8_violet.html"></iframe>
+  </div>
+  <div class="panel">
+    <div class="label" style="background:#7888a8">靛青 Indigo · #7888a8 · 沉静</div>
+    <iframe src="holdings_mock_v8_indigo.html"></iframe>
+  </div>
+</div>
+</body>
+</html>
