@@ -2548,6 +2548,114 @@
         "input_tokens": 4301,
         "output_tokens": 2393,
         "prompt_version": "1.1.0"
+      },
+      {
+        "name": "粤海投资",
+        "code": "HK.00270",
+        "doc_url": "https://www.feishu.cn/docx/Pl3xdkpTWopwWkxBez1cMt8hn4b",
+        "doc_id": "Pl3xdkpTWopwWkxBez1cMt8hn4b",
+        "date": "2026-06-15",
+        "report_title": "均线纠缠失守MA20，卖压释放测试支撑 <text color=\"green\">【持有】</text>",
+        "change_rate": -2.02,
+        "input_tokens": 4631,
+        "output_tokens": 2746,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "腾讯控股",
+        "code": "HK.00700",
+        "doc_url": "https://www.feishu.cn/docx/XPtedxcU0orw76xrBYecC7shnsd",
+        "doc_id": "XPtedxcU0orw76xrBYecC7shnsd",
+        "date": "2026-06-15",
+        "report_title": null,
+        "change_rate": -0.86,
+        "input_tokens": 6104,
+        "output_tokens": 3806,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "小米集团-W",
+        "code": "HK.01810",
+        "doc_url": "https://www.feishu.cn/docx/E0gedDdgloskvrxRrk4ctSGLnQg",
+        "doc_id": "E0gedDdgloskvrxRrk4ctSGLnQg",
+        "date": "2026-06-15",
+        "report_title": "弱势反抽无量跟随，MA20 压制确认 <text color=\"green\">【减仓】</text>",
+        "change_rate": 0.23,
+        "input_tokens": 4242,
+        "output_tokens": 2553,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "建滔积层板",
+        "code": "HK.01888",
+        "doc_url": "https://www.feishu.cn/docx/B1KWdPMvBoDusMx9tImcRdGLnRh",
+        "doc_id": "B1KWdPMvBoDusMx9tImcRdGLnRh",
+        "date": "2026-06-15",
+        "report_title": null,
+        "change_rate": 22.26,
+        "input_tokens": 4493,
+        "output_tokens": 3106,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "舜宇光学科技",
+        "code": "HK.02382",
+        "doc_url": "https://www.feishu.cn/docx/BwundlPjtoBE3Rxu4S7cvCyZnjf",
+        "doc_id": "BwundlPjtoBE3Rxu4S7cvCyZnjf",
+        "date": "2026-06-15",
+        "report_title": "放量突破MA20逼近阻力区，验证偏多但未到加仓点 <text color=\"red\">【持有】</text>",
+        "change_rate": 6.57,
+        "input_tokens": 4990,
+        "output_tokens": 2999,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "美团-W",
+        "code": "HK.03690",
+        "doc_url": "https://www.feishu.cn/docx/UkQndiB3xocOKNxESLJcaUJKnlb",
+        "doc_id": "UkQndiB3xocOKNxESLJcaUJKnlb",
+        "date": "2026-06-15",
+        "report_title": "跳空反弹难掩卖压 弱势震荡方向待选 <text color=\"red\">【观望】</text>",
+        "change_rate": 0.45,
+        "input_tokens": 3227,
+        "output_tokens": 2809,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "百济神州",
+        "code": "HK.06160",
+        "doc_url": "https://www.feishu.cn/docx/Hqa0deZfZoB3MIxLu5CcxkpPnfg",
+        "doc_id": "Hqa0deZfZoB3MIxLu5CcxkpPnfg",
+        "date": "2026-06-15",
+        "report_title": "关口上方争夺止跌结构，ETF 份额异动需警惕 <text color=\"red\">【观望】</text>",
+        "change_rate": 0.44,
+        "input_tokens": 5538,
+        "output_tokens": 3317,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "阿里巴巴-W",
+        "code": "HK.09988",
+        "doc_url": "https://www.feishu.cn/docx/XCF2dR3UpoaKoBxR3mzckL96nMf",
+        "doc_id": "XCF2dR3UpoaKoBxR3mzckL96nMf",
+        "date": "2026-06-15",
+        "report_title": null,
+        "change_rate": -0.82,
+        "input_tokens": 5157,
+        "output_tokens": 3087,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "腾讯 260828 500.00 购",
+        "code": "HK.TCH260828C500000",
+        "doc_url": "https://www.feishu.cn/docx/Fk1Sd49hso40x6xuxFecXmm2n0f",
+        "doc_id": "Fk1Sd49hso40x6xuxFecXmm2n0f",
+        "date": "2026-06-15",
+        "report_title": null,
+        "change_rate": -11.76,
+        "input_tokens": 3167,
+        "output_tokens": 2093,
+        "prompt_version": "1.2.0"
       }
     ],
     "美股": [
@@ -3970,5 +4078,5 @@
       "market": "A股"
     }
   ],
-  "update_time": "2026-06-15 15:29"
+  "update_time": "2026-06-15 16:29"
 }
