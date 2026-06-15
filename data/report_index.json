@@ -1317,134 +1317,134 @@
       {
         "name": "比亚迪",
         "code": "SZ.002594",
-        "doc_url": "https://www.feishu.cn/docx/PAHbd7F5xoVGixx1VKgcNokznmb",
-        "doc_id": "PAHbd7F5xoVGixx1VKgcNokznmb",
+        "doc_url": "https://www.feishu.cn/docx/PmDYdwUYVoWnnvxN5btc5rN2nfE",
+        "doc_id": "PmDYdwUYVoWnnvxN5btc5rN2nfE",
         "date": "2026-06-15",
-        "report_title": "【观望】弱势震荡未改，静待MA20走平信号",
+        "report_title": "比亚迪反弹遇阻 MA20 成近期关键考验 <text color=\"green\">【观望】</text>",
         "change_rate": -0.85,
-        "input_tokens": 4937,
-        "output_tokens": 2862,
-        "prompt_version": "1.1.0"
+        "input_tokens": 5602,
+        "output_tokens": 2812,
+        "prompt_version": "1.2.0"
       },
       {
         "name": "阳光电源",
         "code": "SZ.300274",
-        "doc_url": "https://www.feishu.cn/docx/HytTduNtVoxbsaxOaE0csorBnFh",
-        "doc_id": "HytTduNtVoxbsaxOaE0csorBnFh",
+        "doc_url": "https://www.feishu.cn/docx/NINvdGJvIociYlxl6zDcJiHYnsf",
+        "doc_id": "NINvdGJvIociYlxl6zDcJiHYnsf",
         "date": "2026-06-15",
-        "report_title": "【持有】缩量站稳MA60，AIDC新叙事酝酿中，静待右侧信号",
+        "report_title": "阳光电源冲高回落 MA60 预警已触 <text color=\"red\">【观望】</text>",
         "change_rate": 0.23,
-        "input_tokens": 4955,
-        "output_tokens": 3055,
-        "prompt_version": "1.1.0"
+        "input_tokens": 5704,
+        "output_tokens": 2827,
+        "prompt_version": "1.2.0"
       },
       {
         "name": "宁德时代",
         "code": "SZ.300750",
-        "doc_url": "https://www.feishu.cn/docx/BaUUdLQJrosw33xl0fVc6JTxnPg",
-        "doc_id": "BaUUdLQJrosw33xl0fVc6JTxnPg",
+        "doc_url": "https://www.feishu.cn/docx/CkFfd0qu1oe78KxmXy1cmdGKnef",
+        "doc_id": "CkFfd0qu1oe78KxmXy1cmdGKnef",
         "date": "2026-06-15",
-        "report_title": null,
+        "report_title": "冲高回落遭机构抛售，储能利好难掩短期分歧 <text color=\"red\">【观望】</text>",
         "change_rate": 0.82,
-        "input_tokens": 4922,
-        "output_tokens": 2882,
-        "prompt_version": "1.1.0"
+        "input_tokens": 5687,
+        "output_tokens": 2766,
+        "prompt_version": "1.2.0"
       },
       {
         "name": "招商银行",
         "code": "SH.600036",
-        "doc_url": "https://www.feishu.cn/docx/IE43dCDw1oxZoLxsQQKci2y7naf",
-        "doc_id": "IE43dCDw1oxZoLxsQQKci2y7naf",
+        "doc_url": "https://www.feishu.cn/docx/PBt1dcnZzobkfHxEmH8cotqhngg",
+        "doc_id": "PBt1dcnZzobkfHxEmH8cotqhngg",
         "date": "2026-06-15",
-        "report_title": "【持有】缩量回踩均线支撑，资金面承压但计划无需调整",
+        "report_title": null,
         "change_rate": -0.99,
-        "input_tokens": 3870,
-        "output_tokens": 3268,
-        "prompt_version": "1.1.0"
+        "input_tokens": 4818,
+        "output_tokens": 4000,
+        "prompt_version": "1.2.0"
       },
       {
         "name": "兴业银行",
         "code": "SH.601166",
-        "doc_url": "https://www.feishu.cn/docx/UHitdB71To9qcYxGnW2cFKFdnS1",
-        "doc_id": "UHitdB71To9qcYxGnW2cFKFdnS1",
+        "doc_url": "https://www.feishu.cn/docx/ZLESdssEToDnvNxkGrMc7a4Snth",
+        "doc_id": "ZLESdssEToDnvNxkGrMc7a4Snth",
         "date": "2026-06-15",
         "report_title": null,
         "change_rate": -2.04,
-        "input_tokens": 3844,
-        "output_tokens": 2941,
-        "prompt_version": "1.1.0"
+        "input_tokens": 4793,
+        "output_tokens": 3254,
+        "prompt_version": "1.2.0"
       },
       {
         "name": "交通银行",
         "code": "SH.601328",
-        "doc_url": "https://www.feishu.cn/docx/S2sOdS5fEo3OQDxmIIycuZ9inBg",
-        "doc_id": "S2sOdS5fEo3OQDxmIIycuZ9inBg",
+        "doc_url": "https://www.feishu.cn/docx/EX3rdjV5koSNKexi41Hcj2Kvnsh",
+        "doc_id": "EX3rdjV5koSNKexi41Hcj2Kvnsh",
         "date": "2026-06-15",
         "report_title": null,
         "change_rate": -1.82,
-        "input_tokens": 3794,
-        "output_tokens": 2722,
-        "prompt_version": "1.1.0"
+        "input_tokens": 4457,
+        "output_tokens": 2932,
+        "prompt_version": "1.2.0"
       },
       {
         "name": "中来股份",
         "code": "SZ.300393",
-        "doc_url": "https://www.feishu.cn/docx/V5UFdzO9uou9pOxq1CpcWZqmniL",
-        "doc_id": "V5UFdzO9uou9pOxq1CpcWZqmniL",
+        "doc_url": "https://www.feishu.cn/docx/XMsndIJ7po7TKIxJzm5cWKK0nwd",
+        "doc_id": "XMsndIJ7po7TKIxJzm5cWKK0nwd",
         "date": "2026-06-15",
-        "report_title": "【观望】跌破MA20空头排列，观察仓等待方向明朗",
+        "report_title": null,
         "change_rate": -0.12,
-        "input_tokens": 3081,
-        "output_tokens": 2423,
-        "prompt_version": "1.1.0"
+        "input_tokens": 3850,
+        "output_tokens": 2870,
+        "prompt_version": "1.2.0"
       },
       {
         "name": "机器人ETF华夏",
         "code": "SH.562500",
-        "doc_url": "https://www.feishu.cn/docx/BJABdhP0Qon6VuxSRMzckEizncf",
-        "doc_id": "BJABdhP0Qon6VuxSRMzckEizncf",
+        "doc_url": "https://www.feishu.cn/docx/Lzq1deRAaoX74jxqTSkc57h3nKf",
+        "doc_id": "Lzq1deRAaoX74jxqTSkc57h3nKf",
         "date": "2026-06-15",
-        "report_title": "【持有】反弹确认止跌，主仓仍需等待更多信号",
+        "report_title": null,
         "change_rate": 2.75,
-        "input_tokens": 4119,
-        "output_tokens": 2724,
-        "prompt_version": "1.1.0"
+        "input_tokens": 4792,
+        "output_tokens": 2729,
+        "prompt_version": "1.2.0"
       },
       {
         "name": "医药ETF易方达",
         "code": "SH.512010",
-        "doc_url": "https://www.feishu.cn/docx/QilQdA9KuoE1o9xrnyDcUO7Hn6b",
-        "doc_id": "QilQdA9KuoE1o9xrnyDcUO7Hn6b",
+        "doc_url": "https://www.feishu.cn/docx/RfMVdrbqUoA4hGxHXEhcUnQ7nTH",
+        "doc_id": "RfMVdrbqUoA4hGxHXEhcUnQ7nTH",
         "date": "2026-06-15",
-        "report_title": "【观望】医药ETF价平量增，多空分歧加大，维持观望等待方向选择",
+        "report_title": "极致缩量横盘 主力资金持续撤离 <text color=\"green\">【观望】</text>",
         "change_rate": 0.0,
-        "input_tokens": 5090,
-        "output_tokens": 2769,
-        "prompt_version": "1.1.0"
+        "input_tokens": 5801,
+        "output_tokens": 3600,
+        "prompt_version": "1.2.0"
       },
       {
         "name": "纳指ETF国泰",
         "code": "SH.513100",
-        "doc_url": "https://www.feishu.cn/docx/WoeadLOMCoQCkExHXHscYeHlned",
-        "doc_id": "WoeadLOMCoQCkExHXHscYeHlned",
+        "doc_url": "https://www.feishu.cn/docx/HHH4dLsVHoJPSlx8iTdcdsk4nWe",
+        "doc_id": "HHH4dLsVHoJPSlx8iTdcdsk4nWe",
         "date": "2026-06-15",
-        "report_title": "【持有】溢价风险叠加趋势转暖，静待策略B信号指引",
+        "report_title": "溢价拉响警报 4.63% 涨幅藏隐忧 <text color=\"red\">【持有】</text>",
         "change_rate": 4.63,
-        "input_tokens": 4003,
-        "output_tokens": 2872,
-        "prompt_version": "1.1.0"
+        "input_tokens": 4672,
+        "output_tokens": 3395,
+        "prompt_version": "1.2.0"
       },
       {
         "name": "润泽科技",
         "code": "SZ.300442",
-        "doc_url": "https://www.feishu.cn/docx/QIqQdQyq1onLFaxd6yXcFxsNnrh",
-        "doc_id": "QIqQdQyq1onLFaxd6yXcFxsNnrh",
+        "doc_url": "https://www.feishu.cn/docx/ApJudv5wpoXbHPxFPascrbNjnif",
+        "doc_id": "ApJudv5wpoXbHPxFPascrbNjnif",
         "date": "2026-06-15",
-        "report_title": "【观望】放量反弹仍受均线压制，等待趋势修复或估值回归",
+        "report_title": null,
         "change_rate": 6.83,
-        "input_tokens": 4149,
-        "output_tokens": 2967,
-        "prompt_version": "1.1.0"
+        "input_tokens": 4924,
+        "output_tokens": 3306,
+        "prompt_version": "1.2.0"
       }
     ],
     "港股": [
@@ -4078,5 +4078,5 @@
       "market": "A股"
     }
   ],
-  "update_time": "2026-06-15 16:29"
+  "update_time": "2026-06-15 16:41"
 }
