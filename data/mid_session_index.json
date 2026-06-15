@@ -2,6 +2,28 @@
   "A股": [
     {
       "date": "2026-06-15",
+      "doc_url": "https://www.feishu.cn/docx/FpDBdzvCMoji4UxjoNYchbssnFe",
+      "doc_id": "FpDBdzvCMoji4UxjoNYchbssnFe",
+      "update_time": "13:23",
+      "report_title": "银行股集体回撤，纳指ETF与润泽科技逆市强反",
+      "input_tokens": 18121,
+      "output_tokens": 6278,
+      "prompt_version": "0.5.1",
+      "stock_count": 11
+    },
+    {
+      "date": "2026-06-15",
+      "doc_url": "https://www.feishu.cn/docx/FMPWdS4gmoBhTXxo6dJcxmssnLh",
+      "doc_id": "FMPWdS4gmoBhTXxo6dJcxmssnLh",
+      "update_time": "12:55",
+      "report_title": "银行股集体回撤润泽科技强反，纳指ETF跳高守住药明系企稳",
+      "input_tokens": 17981,
+      "output_tokens": 4726,
+      "prompt_version": "0.5.0",
+      "stock_count": 11
+    },
+    {
+      "date": "2026-06-15",
       "doc_url": "https://www.feishu.cn/docx/C1thdeC5MoiiHbxNpmLcV5a7nvg",
       "doc_id": "C1thdeC5MoiiHbxNpmLcV5a7nvg",
       "update_time": "12:32",
@@ -189,6 +211,28 @@
     }
   ],
   "港股": [
+    {
+      "date": "2026-06-15",
+      "doc_url": "https://www.feishu.cn/docx/KfMXdmzIkoiHVPxOkg4ceF3snRg",
+      "doc_id": "KfMXdmzIkoiHVPxOkg4ceF3snRg",
+      "update_time": "13:20",
+      "report_title": "建滔暴涨18%独领风骚，科技股高开被砸午后考验支撑",
+      "input_tokens": 12833,
+      "output_tokens": 4750,
+      "prompt_version": "0.5.1",
+      "stock_count": 8
+    },
+    {
+      "date": "2026-06-15",
+      "doc_url": "https://www.feishu.cn/docx/Aa04dueXFovWNLxykcDcoBjqnWb",
+      "doc_id": "Aa04dueXFovWNLxykcDcoBjqnWb",
+      "update_time": "12:54",
+      "report_title": "建滔积层板跳高大涨近16%领跑，科技股集体冲高回落卖压真实",
+      "input_tokens": 12697,
+      "output_tokens": 4978,
+      "prompt_version": "0.5.0",
+      "stock_count": 8
+    },
     {
       "date": "2026-06-15",
       "doc_url": "https://www.feishu.cn/docx/ByzWdupJgo7CrMxiJ0FcIKctnog",
