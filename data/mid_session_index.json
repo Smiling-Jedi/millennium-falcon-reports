@@ -2,6 +2,17 @@
   "A股": [
     {
       "date": "2026-06-16",
+      "doc_url": "https://www.feishu.cn/docx/GYK0dVpjpoXCS0xTNxCcGq13nOb",
+      "doc_id": "GYK0dVpjpoXCS0xTNxCcGq13nOb",
+      "update_time": "12:40",
+      "report_title": "光储暴力反弹银行集体回撤，医药ETF触发硬止损边缘",
+      "input_tokens": 8834,
+      "output_tokens": 7247,
+      "prompt_version": "0.5.1",
+      "stock_count": 11
+    },
+    {
+      "date": "2026-06-16",
       "doc_url": "https://www.feishu.cn/docx/ZP6hdquh0ohiKDxgOwfchRKvnmh",
       "doc_id": "ZP6hdquh0ohiKDxgOwfchRKvnmh",
       "update_time": "12:34",
