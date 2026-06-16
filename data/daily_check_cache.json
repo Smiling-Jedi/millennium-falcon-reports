@@ -1,19 +1,19 @@
 {
   "date": "2026-06-16",
-  "updated": "13:10",
+  "updated": "14:15",
   "stocks": {
-    "HK.00270": {
-      "code": "HK.00270",
-      "date": "2026-06-16",
-      "current_price": 8.19,
-      "pe_ttm": 11.5,
-      "currency": "HKD",
+    "SZ.002594": {
+      "code": "SZ.002594",
+      "date": "2026-06-15",
+      "current_price": 90.82,
+      "pe_ttm": 25.38,
+      "currency": "CNY",
       "has_plan": true,
       "plan_version": "2",
-      "stock_type": "F",
-      "trigger_type": "🟢",
-      "trigger_reason": "",
-      "signal_count": 1,
+      "stock_type": "A亚类",
+      "trigger_type": "🟡",
+      "trigger_reason": "PEG 0.89 接近边界; 预警线接近: 距离 5.8%",
+      "signal_count": 3,
       "signals": [
         {
           "name": "均线支撑",
@@ -28,29 +28,36 @@
         {
           "name": "不创新低",
           "description": "连续 2 天最低价不创新低",
-          "satisfied": false
+          "satisfied": true
         },
         {
           "name": "ATR收缩",
           "description": "ATR(5) < ATR(20)",
-          "satisfied": false
+          "satisfied": true
         }
       ],
       "trend_status": "数据不足（80日 / 需120日）",
       "trend_changed": "",
       "auto_action": "",
       "auto_reason": "",
-      "small_cycle_text": "[小周期] 跳空: +0.00%(平) | 首时: +0.00% | 支撑: 8.3(x69) | 距最近8.3: +-1.0% | 阻力: 8.3(x69) | 距最近8.3: -2.0% | ATR: 5=0.1 vs 20=0.1 → 收缩✅(方向快选) | 节奏: 上午强5/下午强5(共10天)",
+      "small_cycle_text": "[小周期] 跳空: -0.52%(平) | 首时: -0.73% | 支撑: 92.4(x4), 93.4(x5), 94.2(x6) | 距最近94.2: +-4.6% | 阻力: 94.5(x3), 94.9(x3), 96.1(x4) | 距最近96.1: -6.9% | ATR: 5=0.6 vs 20=0.8 → 收缩✅(方向快选) | 节奏: 上午强2/下午强8(共10天)",
       "suggested_changes": [],
       "buy_window": null,
-      "valuation": null,
+      "valuation": {
+        "peg": 0.89,
+        "fwd_pe": 20.2,
+        "sp_fwd_pe": null,
+        "peg_ok": true,
+        "fwd_pe_ok": null,
+        "anchor_valid": true
+      },
       "stop_checks": [
         {
           "label": "预警线",
-          "price": null,
+          "price": 85.88,
           "description": "",
-          "status": "安全",
-          "detail": "不设价格止损"
+          "status": "接近",
+          "detail": "距离 5.8%"
         },
         {
           "label": "硬止损",
@@ -60,7 +67,22 @@
           "detail": "不设价格止损"
         }
       ],
-      "target_checks": []
+      "target_checks": [
+        {
+          "tier": "第1档",
+          "price_text": "$140",
+          "distance": "距当前 +54%",
+          "action": "减 1/4（约 5,000 股，前提 EPS 兑现 5.6 ",
+          "triggered": false
+        },
+        {
+          "tier": "第2档",
+          "price_text": "$120",
+          "distance": "距当前 +32%",
+          "action": "再减 1/4",
+          "triggered": false
+        }
+      ]
     }
   }
 }

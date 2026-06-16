@@ -1317,13 +1317,13 @@
       {
         "name": "比亚迪",
         "code": "SZ.002594",
-        "doc_url": "https://www.feishu.cn/docx/PmDYdwUYVoWnnvxN5btc5rN2nfE",
-        "doc_id": "PmDYdwUYVoWnnvxN5btc5rN2nfE",
+        "doc_url": "https://www.feishu.cn/docx/CQsjdxUqAovWnixsvIxcASpGnMg",
+        "doc_id": "CQsjdxUqAovWnixsvIxcASpGnMg",
         "date": "2026-06-15",
-        "report_title": "比亚迪反弹遇阻 MA20 成近期关键考验 <text color=\"green\">【观望】</text>",
+        "report_title": "缩量阴跌守90关口 机构暗中吸筹 <text color=\"green\">【持有】</text>",
         "change_rate": -0.85,
-        "input_tokens": 5602,
-        "output_tokens": 2812,
+        "input_tokens": 5420,
+        "output_tokens": 2407,
         "prompt_version": "1.2.0"
       },
       {
@@ -4258,5 +4258,5 @@
       "market": "A股"
     }
   ],
-  "update_time": "2026-06-16 13:10"
+  "update_time": "2026-06-16 14:15"
 }
