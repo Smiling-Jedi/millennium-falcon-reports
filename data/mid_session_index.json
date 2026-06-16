@@ -2,6 +2,17 @@
   "A股": [
     {
       "date": "2026-06-16",
+      "doc_url": "https://www.feishu.cn/docx/ZP6hdquh0ohiKDxgOwfchRKvnmh",
+      "doc_id": "ZP6hdquh0ohiKDxgOwfchRKvnmh",
+      "update_time": "12:34",
+      "report_title": "光储联动强势反扑银行集体回撤，医药ETF硬止损触发",
+      "input_tokens": 8098,
+      "output_tokens": 7661,
+      "prompt_version": "0.5.1",
+      "stock_count": 11
+    },
+    {
+      "date": "2026-06-16",
       "doc_url": "https://www.feishu.cn/docx/FiS8d2OG6oWrimxzhQVcQIqxnag",
       "doc_id": "FiS8d2OG6oWrimxzhQVcQIqxnag",
       "update_time": "11:58",
@@ -233,6 +244,17 @@
     }
   ],
   "港股": [
+    {
+      "date": "2026-06-16",
+      "doc_url": "https://www.feishu.cn/docx/DLm0dz3ACoXu11x7TkpcgV6znkd",
+      "doc_id": "DLm0dz3ACoXu11x7TkpcgV6znkd",
+      "update_time": "12:07",
+      "report_title": "恒指承压腾讯领跌，建滔积层板逆市独舞再创新高",
+      "input_tokens": 12454,
+      "output_tokens": 4858,
+      "prompt_version": "0.5.1",
+      "stock_count": 8
+    },
     {
       "date": "2026-06-16",
       "doc_url": "https://www.feishu.cn/docx/Ec7tdi9M7o5BvMxOyEccPqIknGh",

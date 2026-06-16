@@ -4049,6 +4049,174 @@
         "input_tokens": 12,
         "output_tokens": 3426,
         "prompt_version": "1.1.0"
+      },
+      {
+        "name": "Circle",
+        "code": "US.CRCL",
+        "doc_url": "https://www.feishu.cn/docx/CVNqdjHGNolNo3xvd0PcPLRmnvg",
+        "doc_id": "CVNqdjHGNolNo3xvd0PcPLRmnvg",
+        "date": "2026-06-16",
+        "report_title": "地缘缓和带动加密反弹 CRCL跳空仍困均线下方 <text color=\"red\">【持有】</text>",
+        "change_rate": 7.1,
+        "input_tokens": 5224,
+        "output_tokens": 2458,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "Lumentum",
+        "code": "US.LITE",
+        "doc_url": "https://www.feishu.cn/docx/RcpVdZDw8oWMrkx2VttcIpYYnFc",
+        "doc_id": "RcpVdZDw8oWMrkx2VttcIpYYnFc",
+        "date": "2026-06-16",
+        "report_title": "跳高被砸显抛压 ATR收缩待方向 <text color=\"red\">【持有】</text>",
+        "change_rate": 3.87,
+        "input_tokens": 4805,
+        "output_tokens": 2616,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "Meta",
+        "code": "US.META",
+        "doc_url": "https://www.feishu.cn/docx/T6zQdNgmXoWl4RxCSwxcTQkknHc",
+        "doc_id": "T6zQdNgmXoWl4RxCSwxcTQkknHc",
+        "date": "2026-06-16",
+        "report_title": "META 跳高守住但均线纠缠未解 <text color=\"red\">【持有】</text>",
+        "change_rate": 4.77,
+        "input_tokens": 5171,
+        "output_tokens": 2701,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "微软",
+        "code": "US.MSFT",
+        "doc_url": "https://www.feishu.cn/docx/Aa1KdU15BoQRuixuLyxct9DYnZ3",
+        "doc_id": "Aa1KdU15BoQRuixuLyxct9DYnZ3",
+        "date": "2026-06-16",
+        "report_title": "均线纠缠止跌初现 但PE仍处合理偏贵 <text color=\"red\">【持有】</text>",
+        "change_rate": 2.31,
+        "input_tokens": 6285,
+        "output_tokens": 2736,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "英伟达",
+        "code": "US.NVDA",
+        "doc_url": "https://www.feishu.cn/docx/USjCdM6kHoF8anx1b5uchf6ynfe",
+        "doc_id": "USjCdM6kHoF8anx1b5uchf6ynfe",
+        "date": "2026-06-16",
+        "report_title": "NVDA 四信号全亮止跌确认 但 MA20 未过 <text color=\"red\">【持有】</text>",
+        "change_rate": 3.54,
+        "input_tokens": 0,
+        "output_tokens": 2666,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "Palantir",
+        "code": "US.PLTR",
+        "doc_url": "https://www.feishu.cn/docx/Tdj0dIglhoNI8Hx4OpjcKVehnOd",
+        "doc_id": "Tdj0dIglhoNI8Hx4OpjcKVehnOd",
+        "date": "2026-06-16",
+        "report_title": "跳空守住但均线纠缠未解 机构净卖压制 <text color=\"red\">【持有】</text>",
+        "change_rate": 5.25,
+        "input_tokens": 4787,
+        "output_tokens": 2237,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "SoFi",
+        "code": "US.SOFI",
+        "doc_url": "https://www.feishu.cn/docx/U1BVdqV9aobkpjxepqtco8msnwe",
+        "doc_id": "U1BVdqV9aobkpjxepqtco8msnwe",
+        "date": "2026-06-16",
+        "report_title": "跳高被砸收长上影 均线纠缠方向待选 <text color=\"green\">【持有】</text>",
+        "change_rate": 3.32,
+        "input_tokens": 4454,
+        "output_tokens": 2345,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "特斯拉",
+        "code": "US.TSLA",
+        "doc_url": "https://www.feishu.cn/docx/AMmidwHfbonKoHxLyZCcKqsUnic",
+        "doc_id": "AMmidwHfbonKoHxLyZCcKqsUnic",
+        "date": "2026-06-16",
+        "report_title": "SpaceX 情绪溢价撑盘 ATR 收缩待方向 <text color=\"red\">【持有】</text>",
+        "change_rate": 1.16,
+        "input_tokens": 3738,
+        "output_tokens": 2334,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "Sea",
+        "code": "US.SE",
+        "doc_url": "https://www.feishu.cn/docx/Lk4TdQGGxobPgKxE8o6cyB6ynRe",
+        "doc_id": "Lk4TdQGGxobPgKxE8o6cyB6ynRe",
+        "date": "2026-06-16",
+        "report_title": "Sea 跳高守住 MA60 但量能不足 <text color=\"red\">【持有】</text>",
+        "change_rate": 4.49,
+        "input_tokens": 0,
+        "output_tokens": 2283,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "博通",
+        "code": "US.AVGO",
+        "doc_url": "https://www.feishu.cn/docx/XqHQdMPPQo55qixALwEcwtSVnYe",
+        "doc_id": "XqHQdMPPQo55qixALwEcwtSVnYe",
+        "date": "2026-06-16",
+        "report_title": "跳高被砸卖压真 止跌三信号已凑 <text color=\"red\">【持有】</text>",
+        "change_rate": 3.11,
+        "input_tokens": 5065,
+        "output_tokens": 2437,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "Coherent",
+        "code": "US.COHR",
+        "doc_url": "https://www.feishu.cn/docx/WsZ4dfxFYoaqDWxOqy1cy5Blnmf",
+        "doc_id": "WsZ4dfxFYoaqDWxOqy1cy5Blnmf",
+        "date": "2026-06-16",
+        "report_title": "跳空跳涨远离买点 ATR收缩未改 <text color=\"red\">【持有】</text>",
+        "change_rate": 7.48,
+        "input_tokens": 4738,
+        "output_tokens": 2309,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "US.AXTI",
+        "code": "US.AXTI",
+        "doc_url": "https://www.feishu.cn/docx/FNIldLNyfo2CkkxMWOlcQIP5n4d",
+        "doc_id": "FNIldLNyfo2CkkxMWOlcQIP5n4d",
+        "date": "2026-06-16",
+        "report_title": "AXTI 跳高 14% 直抵 T1 止盈区 <text color=\"red\">【减仓】</text>",
+        "change_rate": 13.95,
+        "input_tokens": 4977,
+        "output_tokens": 2678,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "SpaceX",
+        "code": "US.SPCX",
+        "doc_url": "https://www.feishu.cn/docx/JfeDdKkKGoPlWcx5C8xcXBMPnsb",
+        "doc_id": "JfeDdKkKGoPlWcx5C8xcXBMPnsb",
+        "date": "2026-06-16",
+        "report_title": "SpaceX上市三日暴涨40% 散户狂潮碾压机构 <text color=\"red\">【持有】</text>",
+        "change_rate": 19.6,
+        "input_tokens": 2755,
+        "output_tokens": 1645,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "2倍做多RKLB ETF-Defiance",
+        "code": "US.RKLX",
+        "doc_url": "https://www.feishu.cn/docx/Ls6xdfx07o8YnVxkoYOcncEvnoe",
+        "doc_id": "Ls6xdfx07o8YnVxkoYOcncEvnoe",
+        "date": "2026-06-16",
+        "report_title": "放量暴涨13%却遇均线纠缠困局 <text color=\"red\">【持有】</text>",
+        "change_rate": 13.25,
+        "input_tokens": 2499,
+        "output_tokens": 1455,
+        "prompt_version": "1.2.0"
       }
     ]
   },
@@ -4078,5 +4246,5 @@
       "market": "A股"
     }
   ],
-  "update_time": "2026-06-15 16:41"
+  "update_time": "2026-06-16 12:13"
 }
