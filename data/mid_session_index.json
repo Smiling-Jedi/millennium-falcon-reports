@@ -1,6 +1,28 @@
 {
   "A股": [
     {
+      "date": "2026-06-16",
+      "doc_url": "https://www.feishu.cn/docx/FiS8d2OG6oWrimxzhQVcQIqxnag",
+      "doc_id": "FiS8d2OG6oWrimxzhQVcQIqxnag",
+      "update_time": "11:58",
+      "report_title": "银行集体回撤纳指ETF逆市强反，阳光电源放量突围",
+      "input_tokens": 17305,
+      "output_tokens": 6815,
+      "prompt_version": "0.5.1",
+      "stock_count": 11
+    },
+    {
+      "date": "2026-06-16",
+      "doc_url": "https://www.feishu.cn/docx/GVq3dDyG4obdZTxlSvXcwue3neb",
+      "doc_id": "GVq3dDyG4obdZTxlSvXcwue3neb",
+      "update_time": "11:42",
+      "report_title": "阳光电源放量领涨，银行股集体回撤，医药ETF逼近预警线",
+      "input_tokens": 17811,
+      "output_tokens": 7682,
+      "prompt_version": "0.5.1",
+      "stock_count": 11
+    },
+    {
       "date": "2026-06-15",
       "doc_url": "https://www.feishu.cn/docx/FpDBdzvCMoji4UxjoNYchbssnFe",
       "doc_id": "FpDBdzvCMoji4UxjoNYchbssnFe",
@@ -211,6 +233,28 @@
     }
   ],
   "港股": [
+    {
+      "date": "2026-06-16",
+      "doc_url": "https://www.feishu.cn/docx/Ec7tdi9M7o5BvMxOyEccPqIknGh",
+      "doc_id": "Ec7tdi9M7o5BvMxOyEccPqIknGh",
+      "update_time": "12:00",
+      "report_title": "科技股集体承压建滔独舞，腾讯跳空破位期权腰斩",
+      "input_tokens": 13156,
+      "output_tokens": 5388,
+      "prompt_version": "0.5.1",
+      "stock_count": 9
+    },
+    {
+      "date": "2026-06-16",
+      "doc_url": "https://www.feishu.cn/docx/PKazd0nhFoNbOcxIiQCcK9sMnah",
+      "doc_id": "PKazd0nhFoNbOcxIiQCcK9sMnah",
+      "update_time": "11:51",
+      "report_title": "科技股集体承压建滔独舞，恒指低量寻底期权爆亏",
+      "input_tokens": 13412,
+      "output_tokens": 5353,
+      "prompt_version": "0.5.1",
+      "stock_count": 9
+    },
     {
       "date": "2026-06-15",
       "doc_url": "https://www.feishu.cn/docx/KfMXdmzIkoiHVPxOkg4ceF3snRg",
