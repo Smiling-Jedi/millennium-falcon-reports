@@ -435,6 +435,47 @@
             letter-spacing: 1px;
             font-family: var(--serif-en);
         }
+
+        /* ===== v5 统一卡片样式 ===== */
+        .stock-card.g { border-left-color: var(--green); }
+        .stock-card.y { border-left-color: #e6a817; }
+        .stock-card.r { border-left-color: var(--red); }
+        .stock-card.x { border-left-color: var(--gray); }
+
+        .card-conclusion {
+            font-size: 13px; line-height: 1.5;
+            margin-bottom: 6px;
+            display: flex; align-items: baseline; gap: 6px;
+        }
+        .card-conclusion .sigil { font-weight: 700; flex-shrink: 0; }
+        .card-conclusion .sigil.g { color: var(--green); }
+        .card-conclusion .sigil.y { color: #b8761a; }
+        .card-conclusion .sigil.r { color: var(--red); }
+        .card-conclusion .sigil.x { color: var(--ink-light); }
+        .card-conclusion .detail { color: var(--ink-light); }
+
+        .card-id { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; }
+        .card-name { font-size: 18px; font-weight: 700; letter-spacing: 0.2px; }
+        .card-price { font-size: 14px; color: var(--ink-light); margin-left: 7px; font-weight: 500; }
+        .card-badge { font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 3px; letter-spacing: 0.3px; flex-shrink: 0; }
+        .card-badge.add  { background: #faf0e4; color: #a0522d; }
+        .card-badge.hold { background: #eaf1ec; color: #3d6b4f; }
+        .card-badge.watch{ background: #f4f3f1; color: #6b6b6b; }
+        .card-badge.stop { background: #f8eae8; color: #b8453c; }
+
+        .card-plan { font-size: 13px; line-height: 1.65; }
+        .card-plan .pl { display: flex; margin-bottom: 2px; }
+        .card-plan .pl .pk { font-weight: 600; color: var(--ink-light); flex: 0 0 34px; font-size: 12px; }
+        .card-plan .pl .pv { flex: 1; }
+        .card-plan .pl .pv.mute { color: var(--gray); }
+
+        .card-report {
+            margin-top: 8px; font-size: 11px;
+            color: var(--gray);
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+            padding-top: 6px; border-top: 1px solid var(--line);
+        }
+        .card-main-link { display: block; text-decoration: none; color: inherit; }
     </style>
 </head>
 <body>

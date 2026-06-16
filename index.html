@@ -435,6 +435,47 @@
             letter-spacing: 1px;
             font-family: var(--serif-en);
         }
+
+        /* ===== v5 统一卡片样式 ===== */
+        .stock-card.g { border-left-color: var(--green); }
+        .stock-card.y { border-left-color: #e6a817; }
+        .stock-card.r { border-left-color: var(--red); }
+        .stock-card.x { border-left-color: var(--gray); }
+
+        .card-conclusion {
+            font-size: 13px; line-height: 1.5;
+            margin-bottom: 6px;
+            display: flex; align-items: baseline; gap: 6px;
+        }
+        .card-conclusion .sigil { font-weight: 700; flex-shrink: 0; }
+        .card-conclusion .sigil.g { color: var(--green); }
+        .card-conclusion .sigil.y { color: #b8761a; }
+        .card-conclusion .sigil.r { color: var(--red); }
+        .card-conclusion .sigil.x { color: var(--ink-light); }
+        .card-conclusion .detail { color: var(--ink-light); }
+
+        .card-id { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; }
+        .card-name { font-size: 18px; font-weight: 700; letter-spacing: 0.2px; }
+        .card-price { font-size: 14px; color: var(--ink-light); margin-left: 7px; font-weight: 500; }
+        .card-badge { font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 3px; letter-spacing: 0.3px; flex-shrink: 0; }
+        .card-badge.add  { background: #faf0e4; color: #a0522d; }
+        .card-badge.hold { background: #eaf1ec; color: #3d6b4f; }
+        .card-badge.watch{ background: #f4f3f1; color: #6b6b6b; }
+        .card-badge.stop { background: #f8eae8; color: #b8453c; }
+
+        .card-plan { font-size: 13px; line-height: 1.65; }
+        .card-plan .pl { display: flex; margin-bottom: 2px; }
+        .card-plan .pl .pk { font-weight: 600; color: var(--ink-light); flex: 0 0 34px; font-size: 12px; }
+        .card-plan .pl .pv { flex: 1; }
+        .card-plan .pl .pv.mute { color: var(--gray); }
+
+        .card-report {
+            margin-top: 8px; font-size: 11px;
+            color: var(--gray);
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+            padding-top: 6px; border-top: 1px solid var(--line);
+        }
+        .card-main-link { display: block; text-decoration: none; color: inherit; }
     </style>
 </head>
 <body>
@@ -487,10 +528,11 @@
                             <span class="card-status watch">观望</span>
                         </div>
                     </div>
+                    <div class="card-conclusion g">🟢正常 · 止跌 2/4</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>TTM PE 350x</strong></span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅</span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖</span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/Aqu7doKoxoEVOTxgSeRcWemnn8f" class="card-report-link" target="_blank">
@@ -513,12 +555,11 @@
                             <span class="card-status hold">持有</span>
                         </div>
                     </div>
+                    <div class="card-conclusion g">🟢正常 · 窗口内 · 止跌 4/4 · PEG 0.18</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.18</strong>; Fwd PE 15.7x &lt; S&amp;P 20.5x; 窗口 <strong>$200–$261</strong> ✅; 当前 $212.45</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">拟加 ~$190，当前 $212.45（还差 11.8%） <span class="no">❌</span>止跌 <span class="wait">4选2 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</span><span class="sub-item">拟加：<strong>30 股</strong> ⏳</span></span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T1 ~<strong>$300</strong>（还差 41.2%）❌; T2 T2 | PEG > 1.2 + 技术走弱（4 选 2）+ 到站重检 | 卖波段剩余 50% | ❌</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.18</strong>; Fwd PE 16.7x &lt; S&amp;P 20.5x; 窗口 <strong>$200–$261</strong> ✅; 当前 $212.45</span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T1 ~<strong>$300</strong>（还差 41.2%）; T2 T2 | PEG > 1.2 + 技术走弱（4 选 2）+ 到站重检 | 卖波段剩余 50% |</span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖</span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/W1jLdtlcSoXnFixkIcRcsOjPnAh" class="card-report-link" target="_blank">
@@ -537,15 +578,15 @@
                     <div class="card-top">
                         <span class="card-name">微软<span class="new-dot"></span></span>
                         <div class="card-tags">
-                            
+                            <span class="card-type">A型</span>
                             <span class="card-status watch">观望</span>
                         </div>
                     </div>
+                    <div class="card-conclusion g">🟢正常 · 止跌 2/4</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val">Fwd PE 20.5x</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">档① PE < 22x ~$370，当前 $399.76（还差 8.0%） <span class="wait">❌</span>止跌 <span class="wait">≥2个 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</span></span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅</span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖</span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/B35mdUW7BoGLiNxzXa6cdKdRnEf" class="card-report-link" target="_blank">
@@ -568,12 +609,11 @@
                             <span class="card-status add">等待加仓信号</span>
                         </div>
                     </div>
+                    <div class="card-conclusion g">🟢正常 · 窗口内 · 止跌 3/4 · PEG 0.48</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.48</strong>; Fwd PE 15.8x &lt; S&amp;P 20.5x; 窗口 <strong>$570–$597</strong> ✅; 当前 $593.48</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">止跌 <span class="wait">4选2 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</span></span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T1 ~<strong>$852</strong>（还差 43.6%）❌; T2 T2 | PEG > 1.2 + 技术走弱（4 选 2）+ 到站重检 | 卖波段剩余 50% | ❌</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅</span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T1 ~<strong>$852</strong>（还差 43.6%）; T2 T2 | PEG > 1.2 + 技术走弱（4 选 2）+ 到站重检 | 卖波段剩余 50% |</span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖</span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/KzjXdCzdioWI62xOjmGcOaGinpm" class="card-report-link" target="_blank">
@@ -592,13 +632,15 @@
                     <div class="card-top">
                         <span class="card-name">SoFi<span class="new-dot"></span></span>
                         <div class="card-tags">
-                            
+                            <span class="card-type">B型</span>
                             <span class="card-status add">等待加仓信号</span>
                         </div>
                     </div>
+                    <div class="card-conclusion g">🟢正常 · 止跌 2/4 · PEG 0.61</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.61</strong>; Fwd PE 21.1x</span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val"><span class="lv mute">—</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/ST7qdvqjco1jomxrDiZcI3vJn0d" class="card-report-link" target="_blank">
@@ -621,12 +663,11 @@
                             <span class="card-status watch">观望</span>
                         </div>
                     </div>
+                    <div class="card-conclusion g">🟢正常 · 窗口内 · 止跌 3/4 · PEG 0.69</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.40</strong>; Fwd PE 19x &lt; S&amp;P 20.9x; 窗口 <strong>$375–$397</strong> ✅; 当前 $393.94</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">止跌 <span class="wait">4选2 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</span><span class="sub-item">均线支撑 <span class="ok">✅</span> / 阳线+放量 <span class="ok">✅</span> / 卖压衰竭 <span class="ok">✅</span> / 波动见顶 <span class="ok">✅</span></span></span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T1 ~<strong>$456</strong>（还差 15.8%）❌; T2 T2 | PEG > 1.2 + 技术走弱（4 选 2）+ 到站重检 | 卖波段剩余 50% | ❌</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅</span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T1 ~<strong>$456</strong>（还差 15.8%）; T2 T2 | PEG > 1.2 + 技术走弱（4 选 2）+ 到站重检 | 卖波段剩余 50% |</span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖</span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/DjaudEvR3ocDWDxBq5hc8yIJnDe" class="card-report-link" target="_blank">
@@ -645,13 +686,15 @@
                     <div class="card-top">
                         <span class="card-name">Palantir<span class="new-dot"></span></span>
                         <div class="card-tags">
-                            
+                            <span class="card-type">B型</span>
                             <span class="card-status watch">观望</span>
                         </div>
                     </div>
+                    <div class="card-conclusion r">🔴告警 · 止跌 2/4</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val">Fwd PE 66x</span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val"><span class="lv mute">—</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/KTHLdJbfyopA3wx5PW3ceOsenDg" class="card-report-link" target="_blank">
@@ -674,9 +717,11 @@
                             <span class="card-status watch">观望</span>
                         </div>
                     </div>
+                    <div class="card-conclusion g">🟢正常 · 止跌 2/4 · PEG 0.63</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.63</strong>; Fwd PE 48x</span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val"><span class="lv mute">—</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/PQmZdqylDoaJKtxE6UFcW6F7n4g" class="card-report-link" target="_blank">
@@ -695,13 +740,15 @@
                     <div class="card-top">
                         <span class="card-name">Sea<span class="new-dot"></span></span>
                         <div class="card-tags">
-                            
+                            <span class="card-type">B型</span>
                             <span class="card-status watch">观望</span>
                         </div>
                     </div>
+                    <div class="card-conclusion g">🟢正常 · 止跌 3/4</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">60 股 @ $91.17（观察仓）</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val"><span class="lv mute">—</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/VyFLdoUY3o1uwRxf4HHccADPnCf" class="card-report-link" target="_blank">
@@ -724,9 +771,11 @@
                             <span class="card-status watch">观望</span>
                         </div>
                     </div>
+                    <div class="card-conclusion y">🟡关注 · 止跌 1/4 · PEG 0.92</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.92</strong>; Fwd PE 43.5x</span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val"><span class="lv mute">—</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/Eki5dsUIroLUU5xcaBNcm4tanab" class="card-report-link" target="_blank">
@@ -749,9 +798,11 @@
                             <span class="card-status watch">观望</span>
                         </div>
                     </div>
+                    <div class="card-conclusion g">🟢正常 · 止跌 3/4</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">观察仓 20 股 @ $82.80 | 类型：D型（周期起伏）+ 成长期权</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val"><span class="lv mute">—</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/Tth3daM3ioEwGTxewukczdsnn0X" class="card-report-link" target="_blank">
@@ -770,13 +821,15 @@
                     <div class="card-top">
                         <span class="card-name">US.AXTI<span class="new-dot"></span></span>
                         <div class="card-tags">
-                            
+                            <span class="card-type">E型</span>
                             <span class="card-status watch">观望</span>
                         </div>
                     </div>
+                    <div class="card-conclusion g">🟢正常 · 止跌 2/4</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.63</strong>; Fwd PE 113x</span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val"><span class="lv mute">—</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/K1VzdXHsqo8r55xkvzecnBIznOc" class="card-report-link" target="_blank">
@@ -796,9 +849,10 @@
                         <span class="card-name">2倍做多RKLB ETF-Defiance<span class="new-dot"></span></span>
                         <div class="card-tags">
                             
-                            <span class="card-status hold">持有</span>
+                            <span class="card-status watch">待分析</span>
                         </div>
                     </div>
+
 
                 </a>
             <a href="https://www.feishu.cn/docx/KYAed2r3KoGGE9x7OudcIGcinCM" class="card-report-link" target="_blank">
@@ -818,9 +872,10 @@
                         <span class="card-name">SpaceX<span class="new-dot"></span></span>
                         <div class="card-tags">
                             
-                            <span class="card-status hold">持有</span>
+                            <span class="card-status watch">待分析</span>
                         </div>
                     </div>
+
 
                 </a>
             <a href="https://www.feishu.cn/docx/ATIddnMdgoVBfXxK25jcr7j2nUc" class="card-report-link" target="_blank">
@@ -839,7 +894,7 @@
         <div class="panel-footer container">
             <a href="all_reports_us.html">查看全部 14 只美股日报<span>→</span></a>
         </div>
-        <div class="update-hint container">美股日报更新于 06-16 20:41</div>
+        <div class="update-hint container">美股日报更新于 06-16 22:59</div>
     </article>
 
     <!-- ===== A股 Panel ===== -->
@@ -851,15 +906,14 @@
                     <div class="card-top">
                         <span class="card-name">比亚迪<span class="new-dot"></span></span>
                         <div class="card-tags">
-                            
+                            <span class="card-type">A型</span>
                             <span class="card-status hold">持有</span>
                         </div>
                     </div>
+                    <div class="card-conclusion x">⬜待分析 · PEG 0.89</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.89</strong>; Fwd PE 20.2x</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val"><span class="sub-item">PE < 22x <span class="no">❌</span> / PE < 19x <span class="no">❌</span></span></span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T2 T2；新增 iFinD 关键数据（ROCE 2.21%/正常化 ~12-14%、资产负债率 70.94%、CAPEX/折旧 195%、Fwd PE FY2 16 ❌</span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T2 T2；新增 iFinD 关键数据（ROCE 2.21%/正常化 ~12-14%、资产负债率 70.94%、CAPEX/折旧 195%、Fwd PE FY2 16</span></div>
                     <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">跌破 85.88 减仓 1/3</span></div>
                 </div>
                 </a>
@@ -879,13 +933,15 @@
                     <div class="card-top">
                         <span class="card-name">医药ETF易方达<span class="new-dot"></span></span>
                         <div class="card-tags">
-                            
+                            <span class="card-type">B型</span>
                             <span class="card-status stop">建议减仓</span>
                         </div>
                     </div>
+                    <div class="card-conclusion x">⬜待分析</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">1,895,800股 @0.394</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val"><span class="lv mute">—</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/RfMVdrbqUoA4hGxHXEhcUnQ7nTH" class="card-report-link" target="_blank">
@@ -904,13 +960,15 @@
                     <div class="card-top">
                         <span class="card-name">阳光电源<span class="new-dot"></span></span>
                         <div class="card-tags">
-                            
+                            <span class="card-type">D型</span>
                             <span class="card-status hold">持有</span>
                         </div>
                     </div>
+                    <div class="card-conclusion x">⬜待分析</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">3500股 @¥141.38</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val"><span class="lv mute">—</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/IqaGdVlU8oXtLdx7UotcZZmxnmG" class="card-report-link" target="_blank">
@@ -933,10 +991,11 @@
                             <span class="card-status watch">观望</span>
                         </div>
                     </div>
+                    <div class="card-conclusion x">⬜待分析</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">### 框架：ETF v2.1</span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T2 T2 | PE > 75~85x（90%分位估算） | ¥2.06 ~ 2.34 | 波段仓剩余全清 | ❌</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T2 T2 | PE > 75~85x（90%分位估算） | ¥2.06 ~ 2.34 | 波段仓剩余全清 |</span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val"><span class="lv mute">—</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/M29tdIcrioUyDfxwQf7cGNvjnJb" class="card-report-link" target="_blank">
@@ -955,13 +1014,15 @@
                     <div class="card-top">
                         <span class="card-name">兴业银行<span class="new-dot"></span></span>
                         <div class="card-tags">
-                            
+                            <span class="card-type">F型</span>
                             <span class="card-status watch">观望</span>
                         </div>
                     </div>
+                    <div class="card-conclusion x">⬜待分析 · 股息 5.72%</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">当前持仓：11,500 股 @ ¥18.63 | 浮盈 -0.5% | F 型收息锚</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val"><span class="lv mute">—</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/RAmfdRC8UoB7wnxdskBcBTn8ndG" class="card-report-link" target="_blank">
@@ -984,9 +1045,11 @@
                             <span class="card-status watch">观望</span>
                         </div>
                     </div>
+                    <div class="card-conclusion x">⬜待分析</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">78,400 份 @ ¥2.113 | 市值 ~¥16.8 万 | 占 A 股 ~3.6% | 策略 B 动量轮动</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val"><span class="lv mute">—</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/Bh6Rd3cFroh7jSxGut9cgMbunNg" class="card-report-link" target="_blank">
@@ -1009,12 +1072,11 @@
                             <span class="card-status hold">持有</span>
                         </div>
                     </div>
+                    <div class="card-conclusion x">⬜待分析 · PEG 0.49</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 0.49</strong>; Fwd PE 16.7x</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val"><span class="sub-item">< 21x <span class="no">❌</span> / < 19x <span class="no">❌</span></span></span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T2 T2锚定机构定价而非拍脑袋，T3用PE锚（利润继续增长则PE不膨胀）。留250股底仓给超长期——固态电池、储能、海外扩张的期权价值。 ❌</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅</span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T2 T2锚定机构定价而非拍脑袋，T3用PE锚（利润继续增长则PE不膨胀）。留250股底仓给超长期——固态电池、储能、海外扩张的期权价值。</span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖</span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/RGHFd7uA9oi0s4x5e3icbjSMn4d" class="card-report-link" target="_blank">
@@ -1037,9 +1099,11 @@
                             <span class="card-status watch">观望</span>
                         </div>
                     </div>
+                    <div class="card-conclusion x">⬜待分析</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">15,000股 @7.0953</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val"><span class="lv mute">—</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/VakYdoekFoKAnbxhKNeccYwLnbH" class="card-report-link" target="_blank">
@@ -1062,9 +1126,11 @@
                             <span class="card-status watch">观望</span>
                         </div>
                     </div>
+                    <div class="card-conclusion x">⬜待分析</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">2,500股 @39.3939</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val"><span class="lv mute">—</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/OBrVdJGWjo56oRx2NyhcbqybnTe" class="card-report-link" target="_blank">
@@ -1087,9 +1153,11 @@
                             <span class="card-status hold">持有</span>
                         </div>
                     </div>
+                    <div class="card-conclusion x">⬜待分析</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">5,000 股 @¥9.934</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val"><span class="lv mute">—</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/Ddp6dlDLxoWOvexKb6fcRDounkb" class="card-report-link" target="_blank">
@@ -1108,13 +1176,15 @@
                     <div class="card-top">
                         <span class="card-name">润泽科技<span class="new-dot"></span></span>
                         <div class="card-tags">
-                            
+                            <span class="card-type">B型</span>
                             <span class="card-status watch">观望</span>
                         </div>
                     </div>
+                    <div class="card-conclusion x">⬜待分析</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">300 股 | 成本：90.93 | 市值：~2.25 万（~0.2%总资产）| B/D 混合型</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val"><span class="lv mute">—</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/DlpBdOAlOo0NApxX4FNcJE5gnsc" class="card-report-link" target="_blank">
@@ -1140,11 +1210,11 @@
                             <span class="card-status watch">观望</span>
                         </div>
                     </div>
+                    <div class="card-conclusion x">⬜待分析</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>TTM PE 22.1x</strong></span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val"><span class="sub-item">跌到管理层底附近 <span class="no">❌</span> / PE < 20x <span class="no">❌</span> / PE < 17x（1.5x 间距） <span class="no">❌</span></span></span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅</span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖</span></div>
                 </div>
                 </a>
             <div class="card-report">
@@ -1161,13 +1231,15 @@
                     <div class="card-top">
                         <span class="card-name">生益科技</span>
                         <div class="card-tags">
-                            
+                            <span class="card-type">B型</span>
                             <span class="card-status watch">观望</span>
                         </div>
                     </div>
+                    <div class="card-conclusion x">⬜待分析 · PEG 2.0</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 2.0</strong></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val"><span class="lv mute">—</span></span></div>
                 </div>
                 </a>
             <div class="card-report">
@@ -1184,7 +1256,7 @@
         <div class="panel-footer container">
             <a href="all_reports_a.html">查看全部 13 只A股日报<span>→</span></a>
         </div>
-        <div class="update-hint container">A股日报更新于 06-16 20:41</div>
+        <div class="update-hint container">A股日报更新于 06-16 22:59</div>
     </article>
 
     <!-- ===== 港股 Panel ===== -->
@@ -1200,12 +1272,11 @@
                             <span class="card-status hold">持有</span>
                         </div>
                     </div>
+                    <div class="card-conclusion x">⬜待分析</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>TTM PE 15.7x</strong></span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val">止跌 <span class="wait">≥3个 ①均线支撑 ②阳线+放量 ③卖压衰竭 ④波动见顶</span></span></div>
-                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T2 档 2 | PE < 12.7x | < 370 HKD | 再降 1.5x，接近 3 年最低 11.8x | ❌</span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>TTM PE 15.7x（iFinD）/ 16.73x（OpenD）</strong></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val">T2 档 2 | PE < 12.7x | < 370 HKD | 再降 1.5x，接近 3 年最低 11.8x |</span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖</span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/ReDjdQd0moOR3lxsVRRcFSh5nTc" class="card-report-link" target="_blank">
@@ -1224,13 +1295,15 @@
                     <div class="card-top">
                         <span class="card-name">阿里巴巴-W<span class="new-dot"></span></span>
                         <div class="card-tags">
-                            
+                            <span class="card-type">A型</span>
                             <span class="card-status watch">观望</span>
                         </div>
                     </div>
+                    <div class="card-conclusion x">⬜待分析</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">12,000 股 @ HK$135.83</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val"><span class="lv mute">—</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/VCBDdZQFKo7zeexneRhczdAcnSg" class="card-report-link" target="_blank">
@@ -1249,15 +1322,15 @@
                     <div class="card-top">
                         <span class="card-name">粤海投资<span class="new-dot"></span></span>
                         <div class="card-tags">
-                            
+                            <span class="card-type">F型</span>
                             <span class="card-status hold">继续持有</span>
                         </div>
                     </div>
+                    <div class="card-conclusion x">⬜待分析</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">74,000股 @6.979 | 占港股 ~9.5% | F 型收息慢速</span></div>
-                    <div class="plan-row"><span class="plan-key">加仓</span><span class="plan-val"><span class="sub-item">FCF 分红覆盖率 <span class="no">❌</span> / 营收趋势 <span class="no">❌</span> / 分红记录 <span class="no">❌</span></span></span></div>
-                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖 ✅</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val">底仓不卖</span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/PHLidOy6uomG5txL0dOcclG0n6c" class="card-report-link" target="_blank">
@@ -1276,13 +1349,15 @@
                     <div class="card-top">
                         <span class="card-name">百济神州<span class="new-dot"></span></span>
                         <div class="card-tags">
-                            
+                            <span class="card-type">B型</span>
                             <span class="card-status watch">观望</span>
                         </div>
                     </div>
+                    <div class="card-conclusion x">⬜待分析</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">3,000 股 @ HK$173.79</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val"><span class="lv mute">—</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/Zs2QdEBFqoWkfExMxawcfw7Vnib" class="card-report-link" target="_blank">
@@ -1301,13 +1376,15 @@
                     <div class="card-top">
                         <span class="card-name">小米集团-W<span class="new-dot"></span></span>
                         <div class="card-tags">
-                            
+                            <span class="card-type">A型</span>
                             <span class="card-status watch">观望</span>
                         </div>
                     </div>
+                    <div class="card-conclusion x">⬜待分析</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">3,000 股 @ HK$33.772 | 浮亏 -23.9% | 占港股 ~1.3% | B/C 过渡型 → 失败确认</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val"><span class="lv mute">—</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/DLsDdy9u8oTn1bxPocMcesX4nW6" class="card-report-link" target="_blank">
@@ -1326,13 +1403,15 @@
                     <div class="card-top">
                         <span class="card-name">舜宇光学科技<span class="new-dot"></span></span>
                         <div class="card-tags">
-                            
+                            <span class="card-type">A型</span>
                             <span class="card-status watch">观望</span>
                         </div>
                     </div>
+                    <div class="card-conclusion x">⬜待分析</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
-                    <div class="plan-row"><span class="plan-key">持仓</span><span class="plan-val">600 股 @ HK$76.81（300 观察仓 + 300 第一档加仓）</span></div>
+                    <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val"><span class="lv mute">—</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/T8AddRFXDoFepbx9UUUcP9S8nDc" class="card-report-link" target="_blank">
@@ -1351,13 +1430,15 @@
                     <div class="card-top">
                         <span class="card-name">建滔积层板<span class="new-dot"></span></span>
                         <div class="card-tags">
-                            
+                            <span class="card-type">D型</span>
                             <span class="card-status add">等待加仓信号</span>
                         </div>
                     </div>
+                    <div class="card-conclusion x">⬜待分析 · PEG 8.9</div>
                 <div class="plan-block">
-                    <div class="plan-label">交易计划</div>
                     <div class="plan-row"><span class="plan-key">买入</span><span class="plan-val"><strong>PEG 8.9</strong></span></div>
+                    <div class="plan-row"><span class="plan-key">止盈</span><span class="plan-val"><span class="lv mute">—</span></span></div>
+                    <div class="plan-row"><span class="plan-key">止损</span><span class="plan-val"><span class="lv mute">—</span></span></div>
                 </div>
                 </a>
             <a href="https://www.feishu.cn/docx/CZ8ydNmp2ox75Nxx9aRc3Qdxnic" class="card-report-link" target="_blank">
@@ -1377,9 +1458,10 @@
                         <span class="card-name">美团-W<span class="new-dot"></span></span>
                         <div class="card-tags">
                             
-                            <span class="card-status hold">持有</span>
+                            <span class="card-status watch">待分析</span>
                         </div>
                     </div>
+
 
                 </a>
             <a href="https://www.feishu.cn/docx/WwgNdBN2BolgnQxdJFscnEpln1c" class="card-report-link" target="_blank">
@@ -1399,9 +1481,10 @@
                         <span class="card-name">腾讯 260828 500.00 购<span class="new-dot"></span></span>
                         <div class="card-tags">
                             
-                            <span class="card-status hold">持有</span>
+                            <span class="card-status watch">待分析</span>
                         </div>
                     </div>
+
 
                 </a>
             <a href="https://www.feishu.cn/docx/OaXUdbzESo9HPNxG6pecHLwUnvo" class="card-report-link" target="_blank">
@@ -1420,13 +1503,13 @@
         <div class="panel-footer container">
             <a href="all_reports_hk.html">查看全部 9 只港股日报<span>→</span></a>
         </div>
-        <div class="update-hint container">港股日报更新于 06-16 20:41</div>
+        <div class="update-hint container">港股日报更新于 06-16 22:59</div>
     </article>
 
     <!-- ===== Side Index ===== -->
     <nav class="side-idx" id="sideIdx"></nav>
 
-    <footer class="footer container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-16 20:41</footer>
+    <footer class="footer container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-16 22:59</footer>
 
 <script>
 const snapshotData = {

@@ -286,7 +286,7 @@
       },
       "valuation": {
         "peg": 0.18,
-        "fwd_pe": 15.7,
+        "fwd_pe": 16.7,
         "sp_fwd_pe": 20.5,
         "peg_ok": true,
         "fwd_pe_ok": true,
