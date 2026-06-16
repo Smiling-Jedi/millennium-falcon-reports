@@ -4445,6 +4445,174 @@
         "input_tokens": 0,
         "output_tokens": 1806,
         "prompt_version": "1.2.0"
+      },
+      {
+        "name": "Circle",
+        "code": "US.CRCL",
+        "doc_url": "https://www.feishu.cn/docx/G6ATdC9xmoBSTlxX3XHcHqL7nFb",
+        "doc_id": "G6ATdC9xmoBSTlxX3XHcHqL7nFb",
+        "date": "2026-06-17",
+        "report_title": null,
+        "change_rate": -4.38,
+        "input_tokens": 5539,
+        "output_tokens": 3218,
+        "prompt_version": "1.2.1"
+      },
+      {
+        "name": "Lumentum",
+        "code": "US.LITE",
+        "doc_url": "https://www.feishu.cn/docx/JjKid4GeHoMjn6xS3Z9cuzwen9g",
+        "doc_id": "JjKid4GeHoMjn6xS3Z9cuzwen9g",
+        "date": "2026-06-17",
+        "report_title": null,
+        "change_rate": -8.55,
+        "input_tokens": 5136,
+        "output_tokens": 3106,
+        "prompt_version": "1.2.1"
+      },
+      {
+        "name": "Meta",
+        "code": "US.META",
+        "doc_url": "https://www.feishu.cn/docx/GHcsdcCMcoUtvSxHVhPcTVd9nfg",
+        "doc_id": "GHcsdcCMcoUtvSxHVhPcTVd9nfg",
+        "date": "2026-06-17",
+        "report_title": null,
+        "change_rate": 1.13,
+        "input_tokens": 5497,
+        "output_tokens": 3232,
+        "prompt_version": "1.2.1"
+      },
+      {
+        "name": "微软",
+        "code": "US.MSFT",
+        "doc_url": "https://www.feishu.cn/docx/Cgw8dVpJEorygsxjSNac8M1en2g",
+        "doc_id": "Cgw8dVpJEorygsxjSNac8M1en2g",
+        "date": "2026-06-17",
+        "report_title": "微软失血跌破 390-395 敏感区，SpaceX 虹吸效应加剧 🟡【观望】",
+        "change_rate": -1.48,
+        "input_tokens": 6639,
+        "output_tokens": 3359,
+        "prompt_version": "1.2.1"
+      },
+      {
+        "name": "英伟达",
+        "code": "US.NVDA",
+        "doc_url": "https://www.feishu.cn/docx/VWpQd6O2BonIIdxg2v9c74xWnE1",
+        "doc_id": "VWpQd6O2BonIIdxg2v9c74xWnE1",
+        "date": "2026-06-17",
+        "report_title": null,
+        "change_rate": -2.37,
+        "input_tokens": 5685,
+        "output_tokens": 3073,
+        "prompt_version": "1.2.1"
+      },
+      {
+        "name": "Palantir",
+        "code": "US.PLTR",
+        "doc_url": "https://www.feishu.cn/docx/GLspdQxRGosvhcx8OCycNMXpnVg",
+        "doc_id": "GLspdQxRGosvhcx8OCycNMXpnVg",
+        "date": "2026-06-17",
+        "report_title": null,
+        "change_rate": -1.08,
+        "input_tokens": 5356,
+        "output_tokens": 3124,
+        "prompt_version": "1.2.1"
+      },
+      {
+        "name": "SoFi",
+        "code": "US.SOFI",
+        "doc_url": "https://www.feishu.cn/docx/LdjtdUQN9oAk1zxPflJciYjFnBg",
+        "doc_id": "LdjtdUQN9oAk1zxPflJciYjFnBg",
+        "date": "2026-06-17",
+        "report_title": "SoFi 低位反弹 3.39% 均线纠缠反弹成色待验 🟡【观望】",
+        "change_rate": 3.39,
+        "input_tokens": 5063,
+        "output_tokens": 3027,
+        "prompt_version": "1.2.1"
+      },
+      {
+        "name": "特斯拉",
+        "code": "US.TSLA",
+        "doc_url": "https://www.feishu.cn/docx/G6jIdgWvwo5RIvxqTIHcmb3cntc",
+        "doc_id": "G6jIdgWvwo5RIvxqTIHcmb3cntc",
+        "date": "2026-06-17",
+        "report_title": null,
+        "change_rate": -1.58,
+        "input_tokens": 4151,
+        "output_tokens": 3357,
+        "prompt_version": "1.2.1"
+      },
+      {
+        "name": "Sea",
+        "code": "US.SE",
+        "doc_url": "https://www.feishu.cn/docx/VHJLdaNU1oGzYBxq7ufcdyOSnPv",
+        "doc_id": "VHJLdaNU1oGzYBxq7ufcdyOSnPv",
+        "date": "2026-06-17",
+        "report_title": "跳高被砸回原点，均线纠缠待方向 🟡【观望】",
+        "change_rate": 0.17,
+        "input_tokens": 4954,
+        "output_tokens": 2449,
+        "prompt_version": "1.2.1"
+      },
+      {
+        "name": "博通",
+        "code": "US.AVGO",
+        "doc_url": "https://www.feishu.cn/docx/QzPcdifvMo5tqAxnA3TcOM3lnxg",
+        "doc_id": "QzPcdifvMo5tqAxnA3TcOM3lnxg",
+        "date": "2026-06-17",
+        "report_title": null,
+        "change_rate": -4.37,
+        "input_tokens": 5706,
+        "output_tokens": 3180,
+        "prompt_version": "1.2.1"
+      },
+      {
+        "name": "Coherent",
+        "code": "US.COHR",
+        "doc_url": "https://www.feishu.cn/docx/A69pd2FgSouXy8x7VypcvQmjn5d",
+        "doc_id": "A69pd2FgSouXy8x7VypcvQmjn5d",
+        "date": "2026-06-17",
+        "report_title": "放量暴跌回踩 MA20，跳高被砸主力出逃 🟡【观望】",
+        "change_rate": -7.5,
+        "input_tokens": 5188,
+        "output_tokens": 3179,
+        "prompt_version": "1.2.1"
+      },
+      {
+        "name": "US.AXTI",
+        "code": "US.AXTI",
+        "doc_url": "https://www.feishu.cn/docx/HKQqdsTs3o5NbtxDkERcZ6kLn1f",
+        "doc_id": "HKQqdsTs3o5NbtxDkERcZ6kLn1f",
+        "date": "2026-06-17",
+        "report_title": null,
+        "change_rate": -15.98,
+        "input_tokens": 5461,
+        "output_tokens": 3150,
+        "prompt_version": "1.2.1"
+      },
+      {
+        "name": "SpaceX",
+        "code": "US.SPCX",
+        "doc_url": "https://www.feishu.cn/docx/VVR2dZN9YoEr8kxsRR5cm1mCnud",
+        "doc_id": "VVR2dZN9YoEr8kxsRR5cm1mCnud",
+        "date": "2026-06-17",
+        "report_title": null,
+        "change_rate": 4.83,
+        "input_tokens": 2828,
+        "output_tokens": 2776,
+        "prompt_version": "1.2.1"
+      },
+      {
+        "name": "2倍做多RKLB ETF-Defiance",
+        "code": "US.RKLX",
+        "doc_url": "https://www.feishu.cn/docx/PYFUdzeSKoM12DxhuWncPn4Vnxd",
+        "doc_id": "PYFUdzeSKoM12DxhuWncPn4Vnxd",
+        "date": "2026-06-17",
+        "report_title": null,
+        "change_rate": -8.5,
+        "input_tokens": 2558,
+        "output_tokens": 2468,
+        "prompt_version": "1.2.1"
       }
     ]
   },
@@ -4474,5 +4642,5 @@
       "market": "A股"
     }
   ],
-  "update_time": "2026-06-16 17:48"
+  "update_time": "2026-06-17 05:29"
 }
