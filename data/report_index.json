@@ -1445,6 +1445,126 @@
         "input_tokens": 4924,
         "output_tokens": 3306,
         "prompt_version": "1.2.0"
+      },
+      {
+        "name": "宁德时代",
+        "code": "SZ.300750",
+        "doc_url": "https://www.feishu.cn/docx/RGHFd7uA9oi0s4x5e3icbjSMn4d",
+        "doc_id": "RGHFd7uA9oi0s4x5e3icbjSMn4d",
+        "date": "2026-06-16",
+        "report_title": null,
+        "change_rate": 1.36,
+        "input_tokens": 5640,
+        "output_tokens": 2807,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "比亚迪",
+        "code": "SZ.002594",
+        "doc_url": "https://www.feishu.cn/docx/UbnTdwEe2orvHJxbECEcwMXRnUc",
+        "doc_id": "UbnTdwEe2orvHJxbECEcwMXRnUc",
+        "date": "2026-06-16",
+        "report_title": null,
+        "change_rate": -1.3,
+        "input_tokens": 5596,
+        "output_tokens": 3019,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "阳光电源",
+        "code": "SZ.300274",
+        "doc_url": "https://www.feishu.cn/docx/IqaGdVlU8oXtLdx7UotcZZmxnmG",
+        "doc_id": "IqaGdVlU8oXtLdx7UotcZZmxnmG",
+        "date": "2026-06-16",
+        "report_title": "阳光电源放量重返MA60 上方MA20反压待解 <text color=\"red\">【持有】</text>",
+        "change_rate": 2.27,
+        "input_tokens": 5697,
+        "output_tokens": 3779,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "招商银行",
+        "code": "SH.600036",
+        "doc_url": "https://www.feishu.cn/docx/OBrVdJGWjo56oRx2NyhcbqybnTe",
+        "doc_id": "OBrVdJGWjo56oRx2NyhcbqybnTe",
+        "date": "2026-06-16",
+        "report_title": null,
+        "change_rate": -0.98,
+        "input_tokens": 4881,
+        "output_tokens": 3330,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "兴业银行",
+        "code": "SH.601166",
+        "doc_url": "https://www.feishu.cn/docx/RAmfdRC8UoB7wnxdskBcBTn8ndG",
+        "doc_id": "RAmfdRC8UoB7wnxdskBcBTn8ndG",
+        "date": "2026-06-16",
+        "report_title": "跳空失守MA20，技术面转弱但估值铁底仍在 <text color=\"green\">【持有】</text>",
+        "change_rate": -2.32,
+        "input_tokens": 4734,
+        "output_tokens": 2790,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "交通银行",
+        "code": "SH.601328",
+        "doc_url": "https://www.feishu.cn/docx/VakYdoekFoKAnbxhKNeccYwLnbH",
+        "doc_id": "VakYdoekFoKAnbxhKNeccYwLnbH",
+        "date": "2026-06-16",
+        "report_title": null,
+        "change_rate": -0.86,
+        "input_tokens": 4425,
+        "output_tokens": 3373,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "中来股份",
+        "code": "SZ.300393",
+        "doc_url": "https://www.feishu.cn/docx/Ddp6dlDLxoWOvexKb6fcRDounkb",
+        "doc_id": "Ddp6dlDLxoWOvexKb6fcRDounkb",
+        "date": "2026-06-16",
+        "report_title": "中来超跌反弹收复8元关口但趋势未改 <text color=\"red\">【持有】</text>",
+        "change_rate": 3.33,
+        "input_tokens": 3718,
+        "output_tokens": 3104,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "机器人ETF华夏",
+        "code": "SH.562500",
+        "doc_url": "https://www.feishu.cn/docx/M29tdIcrioUyDfxwQf7cGNvjnJb",
+        "doc_id": "M29tdIcrioUyDfxwQf7cGNvjnJb",
+        "date": "2026-06-16",
+        "report_title": "平盘下沿夯实 MA60 支撑不破 <text color=\"green\">【持有】</text>",
+        "change_rate": 0.0,
+        "input_tokens": 4827,
+        "output_tokens": 2491,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "纳指ETF国泰",
+        "code": "SH.513100",
+        "doc_url": "https://www.feishu.cn/docx/Bh6Rd3cFroh7jSxGut9cgMbunNg",
+        "doc_id": "Bh6Rd3cFroh7jSxGut9cgMbunNg",
+        "date": "2026-06-16",
+        "report_title": "溢价停牌复牌冲高回落 溢价风险待消化 <text color=\"red\">【观望】</text>",
+        "change_rate": 0.88,
+        "input_tokens": 4583,
+        "output_tokens": 3999,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "润泽科技",
+        "code": "SZ.300442",
+        "doc_url": "https://www.feishu.cn/docx/DlpBdOAlOo0NApxX4FNcJE5gnsc",
+        "doc_id": "DlpBdOAlOo0NApxX4FNcJE5gnsc",
+        "date": "2026-06-16",
+        "report_title": null,
+        "change_rate": 1.04,
+        "input_tokens": 5252,
+        "output_tokens": 3154,
+        "prompt_version": "1.2.0"
       }
     ],
     "港股": [
@@ -2660,13 +2780,109 @@
       {
         "name": "粤海投资",
         "code": "HK.00270",
-        "doc_url": "https://www.feishu.cn/docx/ZsDzdqSd3oXZt0x5R3wccJBkns7",
-        "doc_id": "ZsDzdqSd3oXZt0x5R3wccJBkns7",
+        "doc_url": "https://www.feishu.cn/docx/ADDTd7CbboT26ZxLdyScGPyln1e",
+        "doc_id": "ADDTd7CbboT26ZxLdyScGPyln1e",
         "date": "2026-06-16",
-        "report_title": "均线纠缠平开低走 除息前减仓挂单未触发 <text color=\"green\">【持有】</text>",
-        "change_rate": -0.49,
-        "input_tokens": 4340,
-        "output_tokens": 2619,
+        "report_title": "均线纠缠成交清淡 资产剥离待落地 <text color=\"green\">【持有】</text>",
+        "change_rate": -1.09,
+        "input_tokens": 4629,
+        "output_tokens": 3306,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "腾讯控股",
+        "code": "HK.00700",
+        "doc_url": "https://www.feishu.cn/docx/NbWod1leVo942lx40DUc7XNjnnh",
+        "doc_id": "NbWod1leVo942lx40DUc7XNjnnh",
+        "date": "2026-06-16",
+        "report_title": null,
+        "change_rate": -2.65,
+        "input_tokens": 6023,
+        "output_tokens": 3626,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "小米集团-W",
+        "code": "HK.01810",
+        "doc_url": "https://www.feishu.cn/docx/NVWUdF4V3oUcecxUsb7c3YlKnrf",
+        "doc_id": "NVWUdF4V3oUcecxUsb7c3YlKnrf",
+        "date": "2026-06-16",
+        "report_title": "股价新低但超大单净买 背离待解 <text color=\"green\">【观望】</text>",
+        "change_rate": -2.28,
+        "input_tokens": 4241,
+        "output_tokens": 2975,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "建滔积层板",
+        "code": "HK.01888",
+        "doc_url": "https://www.feishu.cn/docx/IUyJdQBpIoc774xtbjrcG7E1nxg",
+        "doc_id": "IUyJdQBpIoc774xtbjrcG7E1nxg",
+        "date": "2026-06-16",
+        "report_title": "突破 88 后强势整理 估值泡沫与趋势惯性激烈对撞 <text color=\"red\">【持有】</text>",
+        "change_rate": 7.11,
+        "input_tokens": 4578,
+        "output_tokens": 2604,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "舜宇光学科技",
+        "code": "HK.02382",
+        "doc_url": "https://www.feishu.cn/docx/EghCdeJbAo62OuxwpUXc2qX2nZg",
+        "doc_id": "EghCdeJbAo62OuxwpUXc2qX2nZg",
+        "date": "2026-06-16",
+        "report_title": "均线纠缠方向待选 缩量整理考验耐心 <text color=\"green\">【持有】</text>",
+        "change_rate": -2.16,
+        "input_tokens": 5253,
+        "output_tokens": 3635,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "美团-W",
+        "code": "HK.03690",
+        "doc_url": "https://www.feishu.cn/docx/UYaudoR7goR6Ecxt888cQZC6n5g",
+        "doc_id": "UYaudoR7goR6Ecxt888cQZC6n5g",
+        "date": "2026-06-16",
+        "report_title": null,
+        "change_rate": -3.77,
+        "input_tokens": 46,
+        "output_tokens": 2494,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "百济神州",
+        "code": "HK.06160",
+        "doc_url": "https://www.feishu.cn/docx/VrlldETAzoV2xHx3huNce67tnEh",
+        "doc_id": "VrlldETAzoV2xHx3huNce67tnEh",
+        "date": "2026-06-16",
+        "report_title": "160 心理关再度失守 均线反压待消化 <text color=\"green\">【观望】</text>",
+        "change_rate": -0.25,
+        "input_tokens": 5592,
+        "output_tokens": 2870,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "阿里巴巴-W",
+        "code": "HK.09988",
+        "doc_url": "https://www.feishu.cn/docx/SG4odsRGZoOTLAxhsKIcODidnKf",
+        "doc_id": "SG4odsRGZoOTLAxhsKIcODidnKf",
+        "date": "2026-06-16",
+        "report_title": null,
+        "change_rate": -2.1,
+        "input_tokens": 41,
+        "output_tokens": 3228,
+        "prompt_version": "1.2.0"
+      },
+      {
+        "name": "腾讯 260828 500.00 购",
+        "code": "HK.TCH260828C500000",
+        "doc_url": "https://www.feishu.cn/docx/UoeQdPIbCoVx9Jx3bqCcIB8on7f",
+        "doc_id": "UoeQdPIbCoVx9Jx3bqCcIB8on7f",
+        "date": "2026-06-16",
+        "report_title": null,
+        "change_rate": -29.87,
+        "input_tokens": 3179,
+        "output_tokens": 2838,
         "prompt_version": "1.2.0"
       }
     ],
@@ -4149,14 +4365,14 @@
       {
         "name": "特斯拉",
         "code": "US.TSLA",
-        "doc_url": "https://www.feishu.cn/docx/MWDldv62soyxrAxWA4FcYrb4nob",
-        "doc_id": "MWDldv62soyxrAxWA4FcYrb4nob",
+        "doc_url": "https://www.feishu.cn/docx/Aqu7doKoxoEVOTxgSeRcWemnn8f",
+        "doc_id": "Aqu7doKoxoEVOTxgSeRcWemnn8f",
         "date": "2026-06-16",
-        "report_title": "均线纠缠 SpaceX 情绪溢价撑盘 <text color=\"red\">【持有】</text>",
+        "report_title": "马斯克芯片叙事再燃 均线纠缠待破局 🟡【观望】",
         "change_rate": 1.16,
-        "input_tokens": 0,
-        "output_tokens": 1872,
-        "prompt_version": "1.2.0"
+        "input_tokens": 4006,
+        "output_tokens": 2267,
+        "prompt_version": "1.2.1"
       },
       {
         "name": "Sea",
@@ -4258,5 +4474,5 @@
       "market": "A股"
     }
   ],
-  "update_time": "2026-06-16 14:15"
+  "update_time": "2026-06-16 17:33"
 }
