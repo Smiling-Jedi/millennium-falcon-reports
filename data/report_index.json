@@ -2780,110 +2780,110 @@
       {
         "name": "粤海投资",
         "code": "HK.00270",
-        "doc_url": "https://www.feishu.cn/docx/ADDTd7CbboT26ZxLdyScGPyln1e",
-        "doc_id": "ADDTd7CbboT26ZxLdyScGPyln1e",
+        "doc_url": "https://www.feishu.cn/docx/PHLidOy6uomG5txL0dOcclG0n6c",
+        "doc_id": "PHLidOy6uomG5txL0dOcclG0n6c",
         "date": "2026-06-16",
-        "report_title": "均线纠缠成交清淡 资产剥离待落地 <text color=\"green\">【持有】</text>",
+        "report_title": "永旺股权出售落地 股价失守MA20 🔵【持有】",
         "change_rate": -1.09,
-        "input_tokens": 4629,
-        "output_tokens": 3306,
-        "prompt_version": "1.2.0"
+        "input_tokens": 4466,
+        "output_tokens": 2245,
+        "prompt_version": "1.2.1"
       },
       {
         "name": "腾讯控股",
         "code": "HK.00700",
-        "doc_url": "https://www.feishu.cn/docx/NbWod1leVo942lx40DUc7XNjnnh",
-        "doc_id": "NbWod1leVo942lx40DUc7XNjnnh",
+        "doc_url": "https://www.feishu.cn/docx/ReDjdQd0moOR3lxsVRRcFSh5nTc",
+        "doc_id": "ReDjdQd0moOR3lxsVRRcFSh5nTc",
         "date": "2026-06-16",
-        "report_title": null,
+        "report_title": "腾讯跳空被砸 MA20 失守资金出逃 🔴【减仓】",
         "change_rate": -2.65,
-        "input_tokens": 6023,
-        "output_tokens": 3626,
-        "prompt_version": "1.2.0"
+        "input_tokens": 5797,
+        "output_tokens": 3003,
+        "prompt_version": "1.2.1"
       },
       {
         "name": "小米集团-W",
         "code": "HK.01810",
-        "doc_url": "https://www.feishu.cn/docx/NVWUdF4V3oUcecxUsb7c3YlKnrf",
-        "doc_id": "NVWUdF4V3oUcecxUsb7c3YlKnrf",
+        "doc_url": "https://www.feishu.cn/docx/DLsDdy9u8oTn1bxPocMcesX4nW6",
+        "doc_id": "DLsDdy9u8oTn1bxPocMcesX4nW6",
         "date": "2026-06-16",
-        "report_title": "股价新低但超大单净买 背离待解 <text color=\"green\">【观望】</text>",
+        "report_title": "小米创60日新低 空头趋势未改 🔴【减仓】",
         "change_rate": -2.28,
-        "input_tokens": 4241,
-        "output_tokens": 2975,
-        "prompt_version": "1.2.0"
+        "input_tokens": 4044,
+        "output_tokens": 2195,
+        "prompt_version": "1.2.1"
       },
       {
         "name": "建滔积层板",
         "code": "HK.01888",
-        "doc_url": "https://www.feishu.cn/docx/IUyJdQBpIoc774xtbjrcG7E1nxg",
-        "doc_id": "IUyJdQBpIoc774xtbjrcG7E1nxg",
+        "doc_url": "https://www.feishu.cn/docx/CZ8ydNmp2ox75Nxx9aRc3Qdxnic",
+        "doc_id": "CZ8ydNmp2ox75Nxx9aRc3Qdxnic",
         "date": "2026-06-16",
-        "report_title": "突破 88 后强势整理 估值泡沫与趋势惯性激烈对撞 <text color=\"red\">【持有】</text>",
+        "report_title": "花旗上调目标至100港元 股价冲新高后回落 🔵【持有】",
         "change_rate": 7.11,
-        "input_tokens": 4578,
-        "output_tokens": 2604,
-        "prompt_version": "1.2.0"
+        "input_tokens": 4412,
+        "output_tokens": 2379,
+        "prompt_version": "1.2.1"
       },
       {
         "name": "舜宇光学科技",
         "code": "HK.02382",
-        "doc_url": "https://www.feishu.cn/docx/EghCdeJbAo62OuxwpUXc2qX2nZg",
-        "doc_id": "EghCdeJbAo62OuxwpUXc2qX2nZg",
+        "doc_url": "https://www.feishu.cn/docx/T8AddRFXDoFepbx9UUUcP9S8nDc",
+        "doc_id": "T8AddRFXDoFepbx9UUUcP9S8nDc",
         "date": "2026-06-16",
-        "report_title": "均线纠缠方向待选 缩量整理考验耐心 <text color=\"green\">【持有】</text>",
+        "report_title": "均线纠缠多空拉锯 XR增资难挡抛压 🔵【持有】",
         "change_rate": -2.16,
-        "input_tokens": 5253,
-        "output_tokens": 3635,
-        "prompt_version": "1.2.0"
+        "input_tokens": 5044,
+        "output_tokens": 2360,
+        "prompt_version": "1.2.1"
       },
       {
         "name": "美团-W",
         "code": "HK.03690",
-        "doc_url": "https://www.feishu.cn/docx/UYaudoR7goR6Ecxt888cQZC6n5g",
-        "doc_id": "UYaudoR7goR6Ecxt888cQZC6n5g",
+        "doc_url": "https://www.feishu.cn/docx/WwgNdBN2BolgnQxdJFscnEpln1c",
+        "doc_id": "WwgNdBN2BolgnQxdJFscnEpln1c",
         "date": "2026-06-16",
-        "report_title": null,
+        "report_title": "美团放量跌破 MA20 小单恐慌出逃 🔴【减仓】",
         "change_rate": -3.77,
-        "input_tokens": 46,
-        "output_tokens": 2494,
-        "prompt_version": "1.2.0"
+        "input_tokens": 3110,
+        "output_tokens": 1664,
+        "prompt_version": "1.2.1"
       },
       {
         "name": "百济神州",
         "code": "HK.06160",
-        "doc_url": "https://www.feishu.cn/docx/VrlldETAzoV2xHx3huNce67tnEh",
-        "doc_id": "VrlldETAzoV2xHx3huNce67tnEh",
+        "doc_url": "https://www.feishu.cn/docx/Zs2QdEBFqoWkfExMxawcfw7Vnib",
+        "doc_id": "Zs2QdEBFqoWkfExMxawcfw7Vnib",
         "date": "2026-06-16",
-        "report_title": "160 心理关再度失守 均线反压待消化 <text color=\"green\">【观望】</text>",
+        "report_title": "跳高被砸 ATR 收缩待选方向 🔵【持有】",
         "change_rate": -0.25,
-        "input_tokens": 5592,
-        "output_tokens": 2870,
-        "prompt_version": "1.2.0"
+        "input_tokens": 5385,
+        "output_tokens": 2359,
+        "prompt_version": "1.2.1"
       },
       {
         "name": "阿里巴巴-W",
         "code": "HK.09988",
-        "doc_url": "https://www.feishu.cn/docx/SG4odsRGZoOTLAxhsKIcODidnKf",
-        "doc_id": "SG4odsRGZoOTLAxhsKIcODidnKf",
+        "doc_url": "https://www.feishu.cn/docx/VCBDdZQFKo7zeexneRhczdAcnSg",
+        "doc_id": "VCBDdZQFKo7zeexneRhczdAcnSg",
         "date": "2026-06-16",
-        "report_title": null,
+        "report_title": "阿里再创新低107 100不加仓线悬于头顶 🔴【减仓】",
         "change_rate": -2.1,
-        "input_tokens": 41,
-        "output_tokens": 3228,
-        "prompt_version": "1.2.0"
+        "input_tokens": 4953,
+        "output_tokens": 2394,
+        "prompt_version": "1.2.1"
       },
       {
         "name": "腾讯 260828 500.00 购",
         "code": "HK.TCH260828C500000",
-        "doc_url": "https://www.feishu.cn/docx/UoeQdPIbCoVx9Jx3bqCcIB8on7f",
-        "doc_id": "UoeQdPIbCoVx9Jx3bqCcIB8on7f",
+        "doc_url": "https://www.feishu.cn/docx/OaXUdbzESo9HPNxG6pecHLwUnvo",
+        "doc_id": "OaXUdbzESo9HPNxG6pecHLwUnvo",
         "date": "2026-06-16",
-        "report_title": null,
+        "report_title": "腾讯购权暴跌近30% 期权临近到期归零风险 🔴【减仓清仓】",
         "change_rate": -29.87,
-        "input_tokens": 3179,
-        "output_tokens": 2838,
-        "prompt_version": "1.2.0"
+        "input_tokens": 3030,
+        "output_tokens": 1821,
+        "prompt_version": "1.2.1"
       }
     ],
     "美股": [
@@ -4474,5 +4474,5 @@
       "market": "A股"
     }
   ],
-  "update_time": "2026-06-16 17:33"
+  "update_time": "2026-06-16 17:48"
 }
