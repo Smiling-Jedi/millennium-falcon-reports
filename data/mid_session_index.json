@@ -1,6 +1,17 @@
 {
   "A股": [
     {
+      "date": "2026-06-17",
+      "doc_url": "https://www.feishu.cn/docx/YZvAd3ehWoG9kgxvGimcl8hAnl4",
+      "doc_id": "YZvAd3ehWoG9kgxvGimcl8hAnl4",
+      "update_time": "11:37",
+      "report_title": "新能源集体失血银行微调，润泽科技逆势独舞",
+      "input_tokens": 17510,
+      "output_tokens": 6862,
+      "prompt_version": "0.5.2",
+      "stock_count": 11
+    },
+    {
       "date": "2026-06-16",
       "doc_url": "https://www.feishu.cn/docx/GYK0dVpjpoXCS0xTNxCcGq13nOb",
       "doc_id": "GYK0dVpjpoXCS0xTNxCcGq13nOb",
@@ -255,6 +266,17 @@
     }
   ],
   "港股": [
+    {
+      "date": "2026-06-17",
+      "doc_url": "https://www.feishu.cn/docx/JtgldfTYYoKOxyxsTgfcmOsfnxb",
+      "doc_id": "JtgldfTYYoKOxyxsTgfcmOsfnxb",
+      "update_time": "12:06",
+      "report_title": "舜宇放量领涨，建滔巨震博弈，小米逼近支撑",
+      "input_tokens": 13810,
+      "output_tokens": 5971,
+      "prompt_version": "0.5.2",
+      "stock_count": 9
+    },
     {
       "date": "2026-06-16",
       "doc_url": "https://www.feishu.cn/docx/DLm0dz3ACoXu11x7TkpcgV6znkd",
