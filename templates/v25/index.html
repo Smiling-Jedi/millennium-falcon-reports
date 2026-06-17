@@ -463,11 +463,25 @@
         .card-badge.watch{ background: #f4f3f1; color: #6b6b6b; }
         .card-badge.stop { background: #f8eae8; color: #b8453c; }
 
-        .card-plan { font-size: 13px; line-height: 1.65; }
-        .card-plan .pl { display: flex; margin-bottom: 2px; }
-        .card-plan .pl .pk { font-weight: 600; color: var(--ink-light); flex: 0 0 34px; font-size: 12px; }
+        .card-plan { font-size: 15px; line-height: 1.55; margin-bottom: 10px; }
+        .card-plan .pl { display: flex; margin-bottom: 5px; }
+        .card-plan .pl .pk { font-weight: 700; font-size: 12px; color: #222; background: #ebe6df; flex: 0 0 40px; padding: 1px 6px; border-radius: 3px; margin-right: 8px; text-align: center; letter-spacing: 0.5px; }
         .card-plan .pl .pv { flex: 1; }
         .card-plan .pl .pv.mute { color: var(--gray); }
+
+        .daily-check {
+            padding: 8px 0; margin-bottom: 10px;
+            border-top: 1px dashed var(--line);
+            border-bottom: 1px dashed var(--line);
+            font-size: 13px;
+            display: flex; align-items: center; gap: 10px;
+        }
+        .daily-check .dc-label { font-weight: 700; font-size: 12px; color: #555; flex-shrink: 0; letter-spacing: 0.5px; }
+        .daily-check .dc-pills { display: flex; gap: 5px; }
+        .daily-check .pill { padding: 1px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; }
+        .daily-check .pill.on  { background: #e8f5e9; color: #2e7d32; }
+        .daily-check .pill.off { background: #e8e8e8; color: #777; }
+        .daily-check .dc-empty { color: var(--gray); font-size: 12px; }
 
         .card-report {
             margin-top: 8px; font-size: 11px;
