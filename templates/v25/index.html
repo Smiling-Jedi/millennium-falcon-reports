@@ -340,9 +340,12 @@
         }
         .card-report-link:hover .report-body { color: var(--ink); }
         .card-report {
-            padding-top: 12px;
+            padding-top: 10px;
             border-top: 1px solid var(--line);
-            margin-bottom: 12px;
+            margin-top: 8px;
+            font-size: 13px;
+            color: #555;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
         }
         .report-label {
             font-size: 12px;
@@ -483,12 +486,6 @@
         .daily-check .pill.off { background: #e8e8e8; color: #777; }
         .daily-check .dc-empty { color: var(--gray); font-size: 12px; }
 
-        .card-report {
-            margin-top: 8px; font-size: 11px;
-            color: var(--gray);
-            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-            padding-top: 6px; border-top: 1px solid var(--line);
-        }
         .card-main-link { display: block; text-decoration: none; color: inherit; }
     </style>
 </head>
