@@ -4829,6 +4829,174 @@
         "input_tokens": 2558,
         "output_tokens": 2468,
         "prompt_version": "1.2.1"
+      },
+      {
+        "name": "Circle",
+        "code": "US.CRCL",
+        "doc_url": "https://www.feishu.cn/docx/FSd6dTQHrodfi3xvr7tcVQ9knwD",
+        "doc_id": "FSd6dTQHrodfi3xvr7tcVQ9knwD",
+        "date": "2026-06-18",
+        "report_title": "弱势反弹难改空头排列 5.14%换手藏玄机 🔵【持有】",
+        "change_rate": 1.09,
+        "input_tokens": 73,
+        "output_tokens": 3423,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "Lumentum",
+        "code": "US.LITE",
+        "doc_url": "https://www.feishu.cn/docx/ZLtOd08mwondFLxxUKrcMHgznGc",
+        "doc_id": "ZLtOd08mwondFLxxUKrcMHgznGc",
+        "date": "2026-06-18",
+        "report_title": "均线纠缠中等待 MA60 支撑确认 🔵【持有】",
+        "change_rate": -0.61,
+        "input_tokens": 4265,
+        "output_tokens": 2862,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "Meta",
+        "code": "US.META",
+        "doc_url": "https://www.feishu.cn/docx/P8OHd759yov71qxqlOgc8drDnee",
+        "doc_id": "P8OHd759yov71qxqlOgc8drDnee",
+        "date": "2026-06-18",
+        "report_title": "Meta 放量重挫逾5% AI主帅离职引爆卖压 🔴【减仓】",
+        "change_rate": -5.44,
+        "input_tokens": 4815,
+        "output_tokens": 2809,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "微软",
+        "code": "US.MSFT",
+        "doc_url": "https://www.feishu.cn/docx/Jpdcdee7zoAAhbxO7qicULvJnac",
+        "doc_id": "Jpdcdee7zoAAhbxO7qicULvJnac",
+        "date": "2026-06-18",
+        "report_title": "微软放量击穿 MA200，主力资金加速撤离 🔴【减仓】",
+        "change_rate": -3.79,
+        "input_tokens": 4989,
+        "output_tokens": 2784,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "英伟达",
+        "code": "US.NVDA",
+        "doc_url": "https://www.feishu.cn/docx/PCcfdnEjyoCnxyxtAktcfvVXnsd",
+        "doc_id": "PCcfdnEjyoCnxyxtAktcfvVXnsd",
+        "date": "2026-06-18",
+        "report_title": "PE高压悬顶，MA60命悬一线 🟡【观望】",
+        "change_rate": -1.33,
+        "input_tokens": 5152,
+        "output_tokens": 3259,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "Palantir",
+        "code": "US.PLTR",
+        "doc_url": "https://www.feishu.cn/docx/WoCrdxMhgo22tWxjWmUcoQinnRg",
+        "doc_id": "WoCrdxMhgo22tWxjWmUcoQinnRg",
+        "date": "2026-06-18",
+        "report_title": "MA60/200死叉压制，小周期支撑待验证 🟡【观望】",
+        "change_rate": -1.97,
+        "input_tokens": 4831,
+        "output_tokens": 3804,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "SoFi",
+        "code": "US.SOFI",
+        "doc_url": "https://www.feishu.cn/docx/Yor5dtknGov7loxHNdqcyPadncf",
+        "doc_id": "Yor5dtknGov7loxHNdqcyPadncf",
+        "date": "2026-06-18",
+        "report_title": "SoFi 冲高回落吞噬日内涨幅 关键阻力前多空剧烈博弈 🔵【持有】",
+        "change_rate": -1.64,
+        "input_tokens": 4736,
+        "output_tokens": 3099,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "特斯拉",
+        "code": "US.TSLA",
+        "doc_url": "https://www.feishu.cn/docx/WHZtdFm7VoHwrZxnJtNcgqPrnGb",
+        "doc_id": "WHZtdFm7VoHwrZxnJtNcgqPrnGb",
+        "date": "2026-06-18",
+        "report_title": "TSLA MA60攻防战胶着 信仰底仓继续观察 🟡【观望】",
+        "change_rate": -2.05,
+        "input_tokens": 4019,
+        "output_tokens": 2838,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "Sea",
+        "code": "US.SE",
+        "doc_url": "https://www.feishu.cn/docx/T6iJd2MP0oI1Tpxu5hRcrJGSnxg",
+        "doc_id": "T6iJd2MP0oI1Tpxu5hRcrJGSnxg",
+        "date": "2026-06-18",
+        "report_title": "SE跳空放量突破均线压制，但面临斐波那契阻力 🟡【观望】",
+        "change_rate": 4.64,
+        "input_tokens": 4550,
+        "output_tokens": 3478,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "博通",
+        "code": "US.AVGO",
+        "doc_url": "https://www.feishu.cn/docx/EniSdWvp4ospV5xUAf1c4Jhqnif",
+        "doc_id": "EniSdWvp4ospV5xUAf1c4Jhqnif",
+        "date": "2026-06-18",
+        "report_title": "AVGO 跳空反弹止跌信号增至 3/4 🔵【持有】",
+        "change_rate": 4.3,
+        "input_tokens": 5224,
+        "output_tokens": 3655,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "Coherent",
+        "code": "US.COHR",
+        "doc_url": "https://www.feishu.cn/docx/T4y6dn7PBorEofxkmzPcayBWnpf",
+        "doc_id": "T4y6dn7PBorEofxkmzPcayBWnpf",
+        "date": "2026-06-18",
+        "report_title": "CHIPS利好对冲AI能耗隐忧 均线纠缠中等待方向 🟡【观望】",
+        "change_rate": -1.03,
+        "input_tokens": 4066,
+        "output_tokens": 3825,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "US.AXTI",
+        "code": "US.AXTI",
+        "doc_url": "https://www.feishu.cn/docx/UmU7d02ZWopSLuxXzs0cTBJfnix",
+        "doc_id": "UmU7d02ZWopSLuxXzs0cTBJfnix",
+        "date": "2026-06-18",
+        "report_title": "长期合同利好难阻短线卖压，均线纠缠胶着 🟡【观望】",
+        "change_rate": -1.0,
+        "input_tokens": 4240,
+        "output_tokens": 3260,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "SpaceX",
+        "code": "US.SPCX",
+        "doc_url": "https://www.feishu.cn/docx/OCfQdYzGvo4zPDxBGlbcpclcntc",
+        "doc_id": "OCfQdYzGvo4zPDxBGlbcpclcntc",
+        "date": "2026-06-18",
+        "report_title": "冲高遇阻天量长阴 SpaceX IPO 虹吸旧航 🟡【观望】",
+        "change_rate": -4.95,
+        "input_tokens": 2902,
+        "output_tokens": 2311,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "2倍做多RKLB ETF-Defiance",
+        "code": "US.RKLX",
+        "doc_url": "https://www.feishu.cn/docx/EE6UdScrQoCktjxDH0DcMU3Tnse",
+        "doc_id": "EE6UdScrQoCktjxDH0DcMU3Tnse",
+        "date": "2026-06-18",
+        "report_title": "RKLX暴力反弹遇阻MA60关键位 🟡【观望】",
+        "change_rate": 6.11,
+        "input_tokens": 2639,
+        "output_tokens": 2405,
+        "prompt_version": "1.2.2"
       }
     ]
   },
@@ -4858,5 +5026,5 @@
       "market": "A股"
     }
   ],
-  "update_time": "2026-06-17 16:25"
+  "update_time": "2026-06-18 07:40"
 }
