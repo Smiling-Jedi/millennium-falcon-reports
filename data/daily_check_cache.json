@@ -1,259 +1,13 @@
 {
   "date": "2026-06-17",
-  "updated": "15:36",
+  "updated": "16:25",
   "stocks": {
-    "SZ.002594": {
-      "code": "SZ.002594",
+    "HK.00270": {
+      "code": "HK.00270",
       "date": "2026-06-17",
-      "current_price": 87.47,
-      "pe_ttm": 28.95,
-      "currency": "CNY",
-      "has_plan": true,
-      "plan_version": "3",
-      "stock_type": "A亚类",
-      "trigger_type": "🟡",
-      "trigger_reason": "PEG 0.89 接近边界; 预警线接近: 距离 1.9%",
-      "signal_count": 2,
-      "signals": [
-        {
-          "name": "均线支撑",
-          "description": "价格接近 MA5/10/20/60 任一条（±3%内）",
-          "satisfied": true
-        },
-        {
-          "name": "阳线放量",
-          "description": "单日阳线收盘 + 成交量 > 前日 1.2 倍",
-          "satisfied": false
-        },
-        {
-          "name": "不创新低",
-          "description": "连续 2 天最低价不创新低",
-          "satisfied": false
-        },
-        {
-          "name": "ATR收缩",
-          "description": "ATR(5) < ATR(20)",
-          "satisfied": true
-        }
-      ],
-      "trend_status": "数据不足（78日 / 需120日）",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "[小周期] 跳空: -0.71%(平) | 首时: -1.58% | 支撑: 92.4(x4), 93.4(x4), 94.5(x5) | 距最近94.5: +-7.4% | 阻力: 93.9(x4), 94.7(x4), 96.1(x3) | 距最近96.1: -9.8% | ATR: 5=0.8 vs 20=0.8 → 收缩✅(方向快选) | 节奏: 上午强2/下午强8(共10天)",
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": {
-        "peg": 0.89,
-        "fwd_pe": 20.2,
-        "sp_fwd_pe": null,
-        "peg_ok": true,
-        "fwd_pe_ok": null,
-        "anchor_valid": true
-      },
-      "stop_checks": [
-        {
-          "label": "预警线",
-          "price": 85.88,
-          "description": "",
-          "status": "接近",
-          "detail": "距离 1.9%"
-        },
-        {
-          "label": "硬止损",
-          "price": null,
-          "description": "",
-          "status": "安全",
-          "detail": "不设价格止损"
-        }
-      ],
-      "target_checks": []
-    },
-    "SZ.300274": {
-      "code": "SZ.300274",
-      "date": "2026-06-17",
-      "current_price": 149.15,
-      "pe_ttm": 25.93,
-      "currency": "CNY",
-      "has_plan": true,
-      "plan_version": "7",
-      "stock_type": "B",
-      "trigger_type": "🟡",
-      "trigger_reason": "距 MA60（149.0）仅 0.1%",
-      "signal_count": 2,
-      "signals": [
-        {
-          "name": "均线支撑",
-          "description": "价格接近 MA5/10/20/60 任一条（±3%内）",
-          "satisfied": true
-        },
-        {
-          "name": "阳线放量",
-          "description": "单日阳线收盘 + 成交量 > 前日 1.2 倍",
-          "satisfied": false
-        },
-        {
-          "name": "不创新低",
-          "description": "连续 2 天最低价不创新低",
-          "satisfied": false
-        },
-        {
-          "name": "ATR收缩",
-          "description": "ATR(5) < ATR(20)",
-          "satisfied": true
-        }
-      ],
-      "trend_status": "数据不足（78日 / 需120日）",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "[小周期] 跳空: -1.63% | 首时: -1.00% | 支撑: 149.2(x3), 151.8(x3), 163.7(x3) | 距最近163.7: +-8.9% | 阻力: 156.5(x4), 166.0(x3), 173.6(x3) | 距最近156.5: -4.9% | ATR: 5=2.7 vs 20=3.8 → 收缩✅(方向快选) | 节奏: 上午强5/下午强5(共10天)",
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [
-        {
-          "label": "预警线",
-          "price": null,
-          "description": "",
-          "status": "安全",
-          "detail": "不设价格止损"
-        },
-        {
-          "label": "硬止损",
-          "price": null,
-          "description": "",
-          "status": "安全",
-          "detail": "不设价格止损"
-        },
-        {
-          "label": "硬止损",
-          "price": null,
-          "description": "",
-          "status": "安全",
-          "detail": "不设价格止损"
-        }
-      ],
-      "target_checks": []
-    },
-    "SZ.300750": {
-      "code": "SZ.300750",
-      "date": "2026-06-17",
-      "current_price": 399.0,
-      "pe_ttm": 23.37,
-      "currency": "CNY",
-      "has_plan": true,
-      "plan_version": "4",
-      "stock_type": "A亚类",
-      "trigger_type": "🟢",
-      "trigger_reason": "",
-      "signal_count": 2,
-      "signals": [
-        {
-          "name": "均线支撑",
-          "description": "价格接近 MA5/10/20/60 任一条（±3%内）",
-          "satisfied": true
-        },
-        {
-          "name": "阳线放量",
-          "description": "单日阳线收盘 + 成交量 > 前日 1.2 倍",
-          "satisfied": false
-        },
-        {
-          "name": "不创新低",
-          "description": "连续 2 天最低价不创新低",
-          "satisfied": false
-        },
-        {
-          "name": "ATR收缩",
-          "description": "ATR(5) < ATR(20)",
-          "satisfied": true
-        }
-      ],
-      "trend_status": "数据不足（78日 / 需120日）",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "[小周期] 跳空: -0.87% | 首时: -0.13% | 支撑: 403.5(x4), 407.1(x4), 425.7(x3) | 距最近425.7: +-6.3% | 阻力: 411.7(x4), 430.8(x3), 436.9(x3) | 距最近436.9: -9.5% | ATR: 5=4.2 vs 20=5.8 → 收缩✅(方向快选) | 节奏: 上午强4/下午强6(共10天)",
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": {
-        "peg": 0.49,
-        "fwd_pe": 16.7,
-        "sp_fwd_pe": null,
-        "peg_ok": true,
-        "fwd_pe_ok": null,
-        "anchor_valid": true
-      },
-      "stop_checks": [
-        {
-          "label": "预警线",
-          "price": null,
-          "description": "",
-          "status": "安全",
-          "detail": "不设价格止损"
-        },
-        {
-          "label": "硬止损",
-          "price": null,
-          "description": "",
-          "status": "安全",
-          "detail": "不设价格止损"
-        }
-      ],
-      "target_checks": []
-    },
-    "SH.600036": {
-      "code": "SH.600036",
-      "date": "2026-06-17",
-      "current_price": 38.23,
-      "pe_ttm": 6.4,
-      "currency": "CNY",
-      "has_plan": true,
-      "plan_version": "2",
-      "stock_type": "F",
-      "trigger_type": "🟢",
-      "trigger_reason": "",
-      "signal_count": 1,
-      "signals": [
-        {
-          "name": "均线支撑",
-          "description": "价格接近 MA5/10/20/60 任一条（±3%内）",
-          "satisfied": true
-        },
-        {
-          "name": "阳线放量",
-          "description": "单日阳线收盘 + 成交量 > 前日 1.2 倍",
-          "satisfied": false
-        },
-        {
-          "name": "不创新低",
-          "description": "连续 2 天最低价不创新低",
-          "satisfied": false
-        },
-        {
-          "name": "ATR收缩",
-          "description": "ATR(5) < ATR(20)",
-          "satisfied": false
-        }
-      ],
-      "trend_status": "数据不足（78日 / 需120日）",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "[小周期] 跳空: +0.29%(平) | 首时: -0.96% | 支撑: 38.3(x27), 38.7(x20) | 距最近38.7: +-1.2% | 阻力: 38.5(x16), 38.8(x29), 39.4(x3) | 距最近39.4: -2.9% | ATR: 5=0.2 vs 20=0.3 → 收缩✅(方向快选) | 节奏: 上午强6/下午强4(共10天)",
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [],
-      "target_checks": []
-    },
-    "SH.601166": {
-      "code": "SH.601166",
-      "date": "2026-06-17",
-      "current_price": 17.84,
-      "pe_ttm": 4.87,
-      "currency": "CNY",
+      "current_price": 8.0,
+      "pe_ttm": 11.24,
+      "currency": "HKD",
       "has_plan": true,
       "plan_version": "3",
       "stock_type": "F",
@@ -282,29 +36,29 @@
           "satisfied": false
         }
       ],
-      "trend_status": "数据不足（78日 / 需120日）",
+      "trend_status": "数据不足（80日 / 需120日）",
       "trend_changed": "",
       "auto_action": "",
       "auto_reason": "",
-      "small_cycle_text": "[小周期] 跳空: +0.44%(平) | 首时: -1.49% | 支撑: 18.0(x42), 18.4(x6) | 距最近18.4: +-2.9% | 阻力: 18.1(x38), 18.5(x10) | 距最近18.5: -3.7% | ATR: 5=0.1 vs 20=0.2 → 收缩✅(方向快选) | 节奏: 上午强5/下午强5(共10天)",
+      "small_cycle_text": "[小周期] 跳空: -0.74%(平) | 首时: +0.37% | 支撑: 8.2(x72) | 距最近8.2: +-2.9% | 阻力: 8.3(x72) | 距最近8.3: -3.9% | ATR: 5=0.1 vs 20=0.1 → 收缩✅(方向快选) | 节奏: 上午强5/下午强5(共10天)",
       "suggested_changes": [],
       "buy_window": null,
       "valuation": null,
       "stop_checks": [],
       "target_checks": []
     },
-    "SH.601328": {
-      "code": "SH.601328",
+    "HK.00700": {
+      "code": "HK.00700",
       "date": "2026-06-17",
-      "current_price": 6.9,
-      "pe_ttm": 6.32,
-      "currency": "CNY",
+      "current_price": 445.4,
+      "pe_ttm": 16.3,
+      "currency": "HKD",
       "has_plan": true,
-      "plan_version": "2",
-      "stock_type": "F",
+      "plan_version": "3",
+      "stock_type": "A",
       "trigger_type": "🟢",
       "trigger_reason": "",
-      "signal_count": 1,
+      "signal_count": 2,
       "signals": [
         {
           "name": "均线支撑",
@@ -324,65 +78,94 @@
         {
           "name": "ATR收缩",
           "description": "ATR(5) < ATR(20)",
-          "satisfied": false
+          "satisfied": true
         }
       ],
-      "trend_status": "数据不足（100日 / 需120日）",
+      "trend_status": "数据不足（80日 / 需120日）",
       "trend_changed": "",
       "auto_action": "",
       "auto_reason": "",
-      "small_cycle_text": "[小周期] 跳空: +0.14%(平) | 首时: -0.43% | 支撑: 6.9(x48) | 距最近6.9: +0.4% | 阻力: 6.9(x48) | 距最近6.9: -0.5% | ATR: 5=0.1 vs 20=0.1 → 扩张⚠️(还在博弈) | 节奏: 上午强5/下午强5(共10天)",
+      "small_cycle_text": "[小周期] 跳空: -0.40%(平) | 首时: +0.63% | 支撑: 462.2(x3), 463.2(x3), 464.2(x4) | 距最近464.2: +-4.1% | 阻力: 468.0(x5), 469.0(x3), 484.2(x3) | 距最近484.2: -8.7% | ATR: 5=4.2 vs 20=4.6 → 收缩✅(方向快选) | 节奏: 上午强5/下午强5(共10天)",
       "suggested_changes": [],
       "buy_window": null,
       "valuation": null,
-      "stop_checks": [],
+      "stop_checks": [
+        {
+          "label": "预警线",
+          "price": null,
+          "description": "",
+          "status": "安全",
+          "detail": "不设价格止损"
+        },
+        {
+          "label": "硬止损",
+          "price": 400.0,
+          "description": "",
+          "status": "安全",
+          "detail": "距离 11.3%"
+        },
+        {
+          "label": "硬止损",
+          "price": null,
+          "description": "",
+          "status": "安全",
+          "detail": "不设价格止损"
+        }
+      ],
       "target_checks": []
     },
-    "SZ.300393": {
-      "code": "SZ.300393",
+    "HK.01888": {
+      "code": "HK.01888",
       "date": "2026-06-17",
-      "current_price": 8.2,
-      "pe_ttm": "N/A",
-      "currency": "CNY",
+      "current_price": 88.55,
+      "pe_ttm": 114.26,
+      "currency": "HKD",
       "has_plan": true,
       "plan_version": "2",
       "stock_type": "",
-      "trigger_type": "🟢",
-      "trigger_reason": "",
+      "trigger_type": "🔴机械",
+      "trigger_reason": "估值锚失效",
       "signal_count": 2,
       "signals": [
         {
           "name": "均线支撑",
           "description": "价格接近 MA5/10/20/60 任一条（±3%内）",
-          "satisfied": true
+          "satisfied": false
         },
         {
           "name": "阳线放量",
           "description": "单日阳线收盘 + 成交量 > 前日 1.2 倍",
-          "satisfied": false
+          "satisfied": true
         },
         {
           "name": "不创新低",
           "description": "连续 2 天最低价不创新低",
-          "satisfied": false
+          "satisfied": true
         },
         {
           "name": "ATR收缩",
           "description": "ATR(5) < ATR(20)",
-          "satisfied": true
+          "satisfied": false
         }
       ],
-      "trend_status": "数据不足（78日 / 需120日）",
+      "trend_status": "数据不足（80日 / 需120日）",
       "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "[小周期] 跳空: -0.95% | 首时: -0.12% | 支撑: 8.1(x31), 8.9(x13), 9.2(x4) | 距最近9.2: +-10.6% | 阻力: 8.3(x30), 9.0(x7), 9.3(x11) | 距最近9.0: -9.8% | ATR: 5=0.2 vs 20=0.2 → 收缩✅(方向快选) | 节奏: 上午强6/下午强4(共10天)",
+      "auto_action": "无需调整",
+      "auto_reason": "机械型触发但参数无实质变化",
+      "small_cycle_text": "[小周期] 跳空: -5.12% | 首时: +6.56% → ✅跳低被买(支撑有) | 支撑: 80.4(x3), 84.2(x3), 85.2(x4) | 距最近85.2: +4.0% | ATR: 5=3.2 vs 20=3.7 → 收缩✅(方向快选) | 节奏: 上午强8/下午强2(共10天)",
       "suggested_changes": [],
       "buy_window": null,
-      "valuation": null,
+      "valuation": {
+        "peg": 8.9,
+        "fwd_pe": null,
+        "sp_fwd_pe": null,
+        "peg_ok": false,
+        "fwd_pe_ok": null,
+        "anchor_valid": false
+      },
       "stop_checks": [
         {
-          "label": "硬止损",
+          "label": "预警线",
           "price": null,
           "description": "",
           "status": "安全",
@@ -391,28 +174,28 @@
       ],
       "target_checks": []
     },
-    "SH.562500": {
-      "code": "SH.562500",
+    "HK.02382": {
+      "code": "HK.02382",
       "date": "2026-06-17",
-      "current_price": 1.14,
-      "pe_ttm": "N/A",
-      "currency": "CNY",
+      "current_price": 79.55,
+      "pe_ttm": 16.71,
+      "currency": "HKD",
       "has_plan": true,
       "plan_version": "5",
       "stock_type": "",
-      "trigger_type": "🟡",
-      "trigger_reason": "预警线接近: 距离 7.5%",
+      "trigger_type": "🔴机械",
+      "trigger_reason": "估值锚失效",
       "signal_count": 3,
       "signals": [
         {
           "name": "均线支撑",
           "description": "价格接近 MA5/10/20/60 任一条（±3%内）",
-          "satisfied": true
+          "satisfied": false
         },
         {
           "name": "阳线放量",
           "description": "单日阳线收盘 + 成交量 > 前日 1.2 倍",
-          "satisfied": false
+          "satisfied": true
         },
         {
           "name": "不创新低",
@@ -425,30 +208,23 @@
           "satisfied": true
         }
       ],
-      "trend_status": "数据不足（78日 / 需120日）",
+      "trend_status": "数据不足（80日 / 需120日）",
       "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "[小周期] 跳空: -0.70%(平) | 首时: +0.88% | 支撑: 1.1(x48) | 距最近1.1: +2.0% | ATR: 5=0.0 vs 20=0.0 → 收缩✅(方向快选) | 节奏: 上午强6/下午强4(共10天)",
+      "auto_action": "无需调整",
+      "auto_reason": "机械型触发但参数无实质变化",
+      "small_cycle_text": "[小周期] 跳空: +0.54%(平) | 首时: +8.40% | 支撑: 81.4(x6), 81.8(x4), 82.4(x4) | 距最近82.4: +-3.5% | 阻力: 82.5(x4), 83.3(x6), 84.1(x3) | 距最近84.1: -5.7% | ATR: 5=1.0 vs 20=1.6 → 收缩✅(方向快选) | 节奏: 上午强5/下午强5(共10天)",
       "suggested_changes": [],
       "buy_window": null,
-      "valuation": null,
+      "valuation": {
+        "peg": 2.2,
+        "fwd_pe": null,
+        "sp_fwd_pe": null,
+        "peg_ok": false,
+        "fwd_pe_ok": null,
+        "anchor_valid": false
+      },
       "stop_checks": [
         {
-          "label": "预警线",
-          "price": null,
-          "description": "",
-          "status": "安全",
-          "detail": "不设价格止损"
-        },
-        {
-          "label": "硬止损",
-          "price": null,
-          "description": "",
-          "status": "安全",
-          "detail": "不设价格止损"
-        },
-        {
           "label": "硬止损",
           "price": null,
           "description": "",
@@ -457,65 +233,20 @@
         },
         {
           "label": "预警线",
-          "price": 1.06,
-          "description": "接近 MA200",
-          "status": "接近",
-          "detail": "距离 7.5%"
+          "price": null,
+          "description": "",
+          "status": "安全",
+          "detail": "不设价格止损"
         }
       ],
       "target_checks": []
     },
-    "SH.512010": {
-      "code": "SH.512010",
+    "HK.06160": {
+      "code": "HK.06160",
       "date": "2026-06-17",
-      "current_price": 0.32,
-      "pe_ttm": "N/A",
-      "currency": "CNY",
-      "has_plan": true,
-      "plan_version": "4",
-      "stock_type": "B",
-      "trigger_type": "🟢",
-      "trigger_reason": "",
-      "signal_count": 1,
-      "signals": [
-        {
-          "name": "均线支撑",
-          "description": "价格接近 MA5/10/20/60 任一条（±3%内）",
-          "satisfied": false
-        },
-        {
-          "name": "阳线放量",
-          "description": "单日阳线收盘 + 成交量 > 前日 1.2 倍",
-          "satisfied": false
-        },
-        {
-          "name": "不创新低",
-          "description": "连续 2 天最低价不创新低",
-          "satisfied": false
-        },
-        {
-          "name": "ATR收缩",
-          "description": "ATR(5) < ATR(20)",
-          "satisfied": true
-        }
-      ],
-      "trend_status": "数据不足（78日 / 需120日）",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "[小周期] 跳空: +0.31%(平) | 首时: -0.62% | 支撑: 0.3(x48) | 距最近0.3: +-0.5% | 阻力: 0.3(x48) | 距最近0.3: -1.5% | ATR: 5=0.0 vs 20=0.0 → 收缩✅(方向快选) | 节奏: 上午强3/下午强7(共10天)",
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [],
-      "target_checks": []
-    },
-    "SH.513100": {
-      "code": "SH.513100",
-      "date": "2026-06-17",
-      "current_price": 2.28,
-      "pe_ttm": "N/A",
-      "currency": "CNY",
+      "current_price": 157.4,
+      "pe_ttm": 108.63,
+      "currency": "HKD",
       "has_plan": true,
       "plan_version": "2",
       "stock_type": "B",
@@ -544,29 +275,37 @@
           "satisfied": true
         }
       ],
-      "trend_status": "数据不足（78日 / 需120日）",
+      "trend_status": "数据不足（80日 / 需120日）",
       "trend_changed": "",
       "auto_action": "",
       "auto_reason": "",
-      "small_cycle_text": "[小周期] 跳空: -1.27% | 首时: +0.62% → ✅跳低被买(支撑有) | 支撑: 2.2(x48) | 距最近2.2: +3.0% | ATR: 5=0.0 vs 20=0.0 → 收缩✅(方向快选) | 节奏: 上午强5/下午强5(共10天)",
+      "small_cycle_text": "[小周期] 跳空: +0.00%(平) | 首时: -0.25% | 支撑: 164.3(x4), 167.1(x3), 167.8(x6) | 距最近167.8: +-6.2% | 阻力: 166.3(x3), 168.9(x5), 169.4(x5) | 距最近169.4: -7.6% | ATR: 5=1.2 vs 20=1.5 → 收缩✅(方向快选) | 节奏: 上午强2/下午强8(共10天)",
       "suggested_changes": [],
       "buy_window": null,
       "valuation": null,
-      "stop_checks": [],
+      "stop_checks": [
+        {
+          "label": "硬止损",
+          "price": null,
+          "description": "",
+          "status": "安全",
+          "detail": "不设价格止损"
+        }
+      ],
       "target_checks": []
     },
-    "SZ.300442": {
-      "code": "SZ.300442",
+    "HK.09988": {
+      "code": "HK.09988",
       "date": "2026-06-17",
-      "current_price": 81.17,
-      "pe_ttm": 25.61,
-      "currency": "CNY",
+      "current_price": 106.9,
+      "pe_ttm": 17.11,
+      "currency": "HKD",
       "has_plan": true,
-      "plan_version": "2",
-      "stock_type": "",
-      "trigger_type": "🔴判断",
-      "trigger_reason": "止损触发: MA200 已跌破",
-      "signal_count": 3,
+      "plan_version": "3",
+      "stock_type": "A",
+      "trigger_type": "🟢",
+      "trigger_reason": "",
+      "signal_count": 1,
       "signals": [
         {
           "name": "均线支撑",
@@ -581,45 +320,47 @@
         {
           "name": "不创新低",
           "description": "连续 2 天最低价不创新低",
-          "satisfied": true
+          "satisfied": false
         },
         {
           "name": "ATR收缩",
           "description": "ATR(5) < ATR(20)",
-          "satisfied": true
+          "satisfied": false
         }
       ],
-      "trend_status": "数据不足（78日 / 需120日）",
+      "trend_status": "数据不足（80日 / 需120日）",
       "trend_changed": "",
       "auto_action": "",
       "auto_reason": "",
-      "small_cycle_text": "[小周期] 跳空: -1.08% | 首时: +2.87% → ✅跳低被买(支撑有) | 支撑: 80.1(x3), 80.6(x4), 81.4(x3) | 距最近81.4: +-0.2% | 阻力: 80.9(x4), 81.4(x5), 82.0(x5) | 距最近82.0: -1.0% | ATR: 5=1.4 vs 20=1.4 → 收缩✅(方向快选) | 节奏: 上午强8/下午强2(共10天)",
+      "small_cycle_text": "[小周期] 跳空: +1.21% | 首时: -1.29% → ⚠️跳高被砸(卖压真) | 支撑: 122.4(x3), 125.7(x6), 127.6(x3) | 距最近127.6: +-16.2% | 阻力: 126.3(x3), 128.1(x3), 129.2(x3) | 距最近116.9: -9.4% | ATR: 5=1.0 vs 20=1.3 → 收缩✅(方向快选) | 节奏: 上午强4/下午强6(共10天)",
       "suggested_changes": [],
       "buy_window": null,
       "valuation": null,
-      "stop_checks": [
-        {
-          "label": "预警线",
-          "price": null,
-          "description": "",
-          "status": "安全",
-          "detail": "不设价格止损"
-        },
-        {
-          "label": "硬止损",
-          "price": null,
-          "description": "",
-          "status": "安全",
-          "detail": "不设价格止损"
-        },
-        {
-          "label": "硬止损",
-          "price": 87.78,
-          "description": "MA200 已跌破",
-          "status": "触发",
-          "detail": "当前 81.17"
-        }
-      ],
+      "stop_checks": [],
+      "target_checks": []
+    },
+    "HK.TCH260828C500000": {
+      "code": "HK.TCH260828C500000",
+      "date": "2026-06-17",
+      "current_price": 9.88,
+      "pe_ttm": "N/A",
+      "currency": "HKD",
+      "has_plan": false,
+      "plan_version": "?",
+      "stock_type": "",
+      "trigger_type": "🟢",
+      "trigger_reason": "无 Master 交易计划",
+      "signal_count": 0,
+      "signals": [],
+      "trend_status": "",
+      "trend_changed": false,
+      "auto_action": "",
+      "auto_reason": "",
+      "small_cycle_text": "[小周期] 跳空: +0.29%(平) | 首时: +2.65% | 支撑: 18.0(x7), 19.0(x6), 19.4(x3) | 距最近19.4: +-49.2% | 阻力: 19.3(x4), 19.7(x4), 20.9(x3) | 距最近10.1: -2.2% | ATR: 5=0.7 vs 20=0.7 → 收缩✅(方向快选) | 节奏: 上午强2/下午强8(共10天)",
+      "suggested_changes": [],
+      "buy_window": null,
+      "valuation": null,
+      "stop_checks": [],
       "target_checks": []
     }
   }

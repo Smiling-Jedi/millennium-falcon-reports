@@ -3016,6 +3016,90 @@
         "input_tokens": 3030,
         "output_tokens": 1821,
         "prompt_version": "1.2.1"
+      },
+      {
+        "name": "粤海投资",
+        "code": "HK.00270",
+        "doc_url": "https://www.feishu.cn/docx/SXPOdqc69oyhxrxoxMycRx8knFe",
+        "doc_id": "SXPOdqc69oyhxrxoxMycRx8knFe",
+        "date": "2026-06-17",
+        "report_title": "均线纠缠缩量阴跌，考验 MA60 支撑 🔵【持有】",
+        "change_rate": -1.72,
+        "input_tokens": 4521,
+        "output_tokens": 3376,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "腾讯控股",
+        "code": "HK.00700",
+        "doc_url": "https://www.feishu.cn/docx/CguldaXXYocNhuxnIp3cND2Vn4f",
+        "doc_id": "CguldaXXYocNhuxnIp3cND2Vn4f",
+        "date": "2026-06-17",
+        "report_title": "回购难阻 MA20 失守，多空纠缠待方向 🟡【观望】",
+        "change_rate": -0.45,
+        "input_tokens": 5720,
+        "output_tokens": 2816,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "建滔积层板",
+        "code": "HK.01888",
+        "doc_url": "https://www.feishu.cn/docx/Eid3dY9oZon18KxNxRGc5XQenud",
+        "doc_id": "Eid3dY9oZon18KxNxRGc5XQenud",
+        "date": "2026-06-17",
+        "report_title": "大股东折价套现 vs 资金逆势拉升，矛盾加剧 🔵【持有】",
+        "change_rate": 3.08,
+        "input_tokens": 4293,
+        "output_tokens": 3229,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "舜宇光学科技",
+        "code": "HK.02382",
+        "doc_url": "https://www.feishu.cn/docx/Fs19d35wdouwDBx5SO6cbN0Xn3c",
+        "doc_id": "Fs19d35wdouwDBx5SO6cbN0Xn3c",
+        "date": "2026-06-17",
+        "report_title": "放量突破MA20但南向资金连续减持 🔵【持有】",
+        "change_rate": 6.64,
+        "input_tokens": 5402,
+        "output_tokens": 3670,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "百济神州",
+        "code": "HK.06160",
+        "doc_url": "https://www.feishu.cn/docx/OTdAdbjRIoIQcdxauXKc4HZbnxd",
+        "doc_id": "OTdAdbjRIoIQcdxauXKc4HZbnxd",
+        "date": "2026-06-17",
+        "report_title": "空头排列遇小周期抵抗，信号未明 🟡【观望】",
+        "change_rate": -1.13,
+        "input_tokens": 4918,
+        "output_tokens": 3158,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "阿里巴巴-W",
+        "code": "HK.09988",
+        "doc_url": "https://www.feishu.cn/docx/TLZndWBTkok3yFxGBjOchrKUnMe",
+        "doc_id": "TLZndWBTkok3yFxGBjOchrKUnMe",
+        "date": "2026-06-17",
+        "report_title": "阿里跳高被砸逼近前低，静待止跌信号 🟡【观望】",
+        "change_rate": -0.09,
+        "input_tokens": 4654,
+        "output_tokens": 2921,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "腾讯 260828 500.00 购",
+        "code": "HK.TCH260828C500000",
+        "doc_url": "https://www.feishu.cn/docx/SkTydJFEUoajZMx6XBgcpuJwnSb",
+        "doc_id": "SkTydJFEUoajZMx6XBgcpuJwnSb",
+        "date": "2026-06-17",
+        "report_title": "腾讯末日期权缩量重挫 6% 流动性枯竭 🟡【观望】",
+        "change_rate": -6.08,
+        "input_tokens": 3225,
+        "output_tokens": 2413,
+        "prompt_version": "1.2.2"
       }
     ],
     "美股": [
@@ -4750,349 +4834,29 @@
   },
   "watchlist": [
     {
-      "market": "A股",
-      "code": "SZ.002594",
-      "name": "比亚迪",
-      "shares": 14500,
-      "avg_cost": 87.9083,
-      "role": "底仓"
-    },
-    {
-      "market": "A股",
-      "code": "SZ.300274",
-      "name": "阳光电源",
-      "shares": 3800,
-      "avg_cost": 141.672,
-      "role": "底仓"
-    },
-    {
-      "market": "A股",
-      "code": "SZ.300750",
-      "name": "宁德时代",
-      "shares": 1000,
-      "avg_cost": 111.3443,
-      "role": "底仓"
-    },
-    {
-      "market": "A股",
-      "code": "SH.600030",
-      "name": "中信证券",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "清仓"
-    },
-    {
-      "market": "A股",
-      "code": "SH.600036",
-      "name": "招商银行",
-      "shares": 2500,
-      "avg_cost": 39.3939,
-      "role": "底仓"
-    },
-    {
-      "market": "A股",
-      "code": "SH.601166",
-      "name": "兴业银行",
-      "shares": 11500,
-      "avg_cost": 18.63,
-      "role": "底仓"
-    },
-    {
-      "market": "A股",
-      "code": "SH.601328",
-      "name": "交通银行",
-      "shares": 15000,
-      "avg_cost": 7.0953,
-      "role": "底仓"
-    },
-    {
-      "market": "A股",
-      "code": "SZ.300393",
-      "name": "中来股份",
-      "shares": 5000,
-      "avg_cost": 9.9336,
-      "role": "底仓"
-    },
-    {
-      "market": "A股",
-      "code": "SH.562500",
-      "name": "机器人ETF华夏",
-      "shares": 400000,
-      "avg_cost": 0.7843,
-      "role": "底仓"
-    },
-    {
-      "market": "A股",
-      "code": "SH.512010",
-      "name": "医药ETF易方达",
-      "shares": 2675800,
-      "avg_cost": 0.394,
-      "role": "底仓"
-    },
-    {
-      "market": "A股",
-      "code": "SH.513100",
-      "name": "纳指ETF国泰",
-      "shares": 53400,
-      "avg_cost": 2.1062,
-      "role": "底仓"
-    },
-    {
-      "market": "A股",
       "code": "SZ.300442",
       "name": "润泽科技",
       "shares": 300,
       "avg_cost": 90.93,
-      "role": "观察"
+      "role": "观察",
+      "market": "A股"
     },
     {
-      "market": "A股",
       "code": "SH.600406",
       "name": "国电南瑞",
       "shares": 0,
       "avg_cost": 0,
-      "role": "观察"
+      "role": "观察",
+      "market": "A股"
     },
     {
-      "market": "A股",
       "code": "SH.600183",
       "name": "生益科技",
       "shares": 0,
       "avg_cost": 0,
-      "role": "观察"
-    },
-    {
-      "market": "港股",
-      "code": "HK.00270",
-      "name": "粤海投资",
-      "shares": 74000,
-      "avg_cost": 7.159,
-      "role": "底仓"
-    },
-    {
-      "market": "港股",
-      "code": "HK.00700",
-      "name": "腾讯控股",
-      "shares": 7200,
-      "avg_cost": 486.212,
-      "role": "底仓"
-    },
-    {
-      "market": "港股",
-      "code": "HK.01276",
-      "name": "恒瑞医药",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "清仓"
-    },
-    {
-      "market": "港股",
-      "code": "HK.01810",
-      "name": "小米集团-W",
-      "shares": 3000,
-      "avg_cost": 33.772,
-      "role": "底仓"
-    },
-    {
-      "market": "港股",
-      "code": "HK.01888",
-      "name": "建滔积层板",
-      "shares": 500,
-      "avg_cost": 14.323,
-      "role": "底仓"
-    },
-    {
-      "market": "港股",
-      "code": "HK.02382",
-      "name": "舜宇光学科技",
-      "shares": 600,
-      "avg_cost": 76.783,
-      "role": "底仓"
-    },
-    {
-      "market": "港股",
-      "code": "HK.03690",
-      "name": "美团-W",
-      "shares": 200,
-      "avg_cost": 105.119,
-      "role": "底仓"
-    },
-    {
-      "market": "港股",
-      "code": "HK.06160",
-      "name": "百济神州",
-      "shares": 3000,
-      "avg_cost": 173.791,
-      "role": "底仓"
-    },
-    {
-      "market": "港股",
-      "code": "HK.09988",
-      "name": "阿里巴巴-W",
-      "shares": 12000,
-      "avg_cost": 135.827,
-      "role": "底仓"
-    },
-    {
-      "market": "港股",
-      "code": "HK.07747",
-      "name": "南方两倍做多三星电子",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "清仓"
-    },
-    {
-      "market": "港股",
-      "code": "HK.TCH260828C500000",
-      "name": "腾讯 260828 500.00 购",
-      "shares": 30,
-      "avg_cost": 14.65,
-      "role": "底仓"
-    },
-    {
-      "market": "美股",
-      "code": "US.CRCL",
-      "name": "Circle",
-      "shares": 20,
-      "avg_cost": 82.819,
-      "role": "底仓"
-    },
-    {
-      "market": "美股",
-      "code": "US.LITE",
-      "name": "Lumentum",
-      "shares": 8,
-      "avg_cost": 868.393,
-      "role": "底仓"
-    },
-    {
-      "market": "美股",
-      "code": "US.META",
-      "name": "Meta",
-      "shares": 90,
-      "avg_cost": 612.668,
-      "role": "底仓"
-    },
-    {
-      "market": "美股",
-      "code": "US.MSFT",
-      "name": "微软",
-      "shares": 150,
-      "avg_cost": 396.777,
-      "role": "底仓"
-    },
-    {
-      "market": "美股",
-      "code": "US.NIO",
-      "name": "蔚来",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "清仓"
-    },
-    {
-      "market": "美股",
-      "code": "US.NVDA",
-      "name": "英伟达",
-      "shares": 350,
-      "avg_cost": 184.152,
-      "role": "底仓"
-    },
-    {
-      "market": "美股",
-      "code": "US.PDD",
-      "name": "拼多多",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "清仓"
-    },
-    {
-      "market": "美股",
-      "code": "US.PLTR",
-      "name": "Palantir",
-      "shares": 60,
-      "avg_cost": 138.12,
-      "role": "底仓"
-    },
-    {
-      "market": "美股",
-      "code": "US.RKLB",
-      "name": "Rocket Lab",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "清仓"
-    },
-    {
-      "market": "美股",
-      "code": "US.SOFI",
-      "name": "SoFi",
-      "shares": 2000,
-      "avg_cost": 17.402,
-      "role": "底仓"
-    },
-    {
-      "market": "美股",
-      "code": "US.TSLA",
-      "name": "特斯拉",
-      "shares": 250,
-      "avg_cost": 393.751,
-      "role": "底仓"
-    },
-    {
-      "market": "美股",
-      "code": "US.SATS",
-      "name": "回声星通信",
-      "shares": 0,
-      "avg_cost": 0,
-      "role": "清仓"
-    },
-    {
-      "market": "美股",
-      "code": "US.SE",
-      "name": "Sea",
-      "shares": 60,
-      "avg_cost": 91.167,
-      "role": "底仓"
-    },
-    {
-      "market": "美股",
-      "code": "US.AVGO",
-      "name": "博通",
-      "shares": 80,
-      "avg_cost": 400.053,
-      "role": "底仓"
-    },
-    {
-      "market": "美股",
-      "code": "US.COHR",
-      "name": "Coherent",
-      "shares": 5,
-      "avg_cost": 373.036,
-      "role": "底仓"
-    },
-    {
-      "market": "美股",
-      "code": "US.AXTI",
-      "name": "US.AXTI",
-      "shares": 15,
-      "avg_cost": 83.63,
-      "role": "底仓"
-    },
-    {
-      "market": "美股",
-      "code": "US.SPCX",
-      "name": "SpaceX",
-      "shares": 5,
-      "avg_cost": 174.106,
-      "role": "底仓"
-    },
-    {
-      "market": "美股",
-      "code": "US.RKLX",
-      "name": "2倍做多RKLB ETF-Defiance",
-      "shares": 20,
-      "avg_cost": 52.52,
-      "role": "底仓"
+      "role": "观察",
+      "market": "A股"
     }
   ],
-  "update_time": "2026-06-17 15:50"
+  "update_time": "2026-06-17 16:25"
 }
