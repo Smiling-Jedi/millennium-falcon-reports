@@ -1697,6 +1697,126 @@
         "input_tokens": 4520,
         "output_tokens": 2614,
         "prompt_version": "1.2.1"
+      },
+      {
+        "name": "比亚迪",
+        "code": "SZ.002594",
+        "doc_url": "https://www.feishu.cn/docx/NVMkdflbcoQ7isxiCq9cxVvNnMg",
+        "doc_id": "NVMkdflbcoQ7isxiCq9cxVvNnMg",
+        "date": "2026-06-18",
+        "report_title": "大唐EV发布难改弱势 濒临关键支撑 🔵【持有】",
+        "change_rate": 0.75,
+        "input_tokens": 4636,
+        "output_tokens": 2828,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "阳光电源",
+        "code": "SZ.300274",
+        "doc_url": "https://www.feishu.cn/docx/KtmUdYpQho14fvxcPT9cM2WNn4c",
+        "doc_id": "KtmUdYpQho14fvxcPT9cM2WNn4c",
+        "date": "2026-06-18",
+        "report_title": "MA60失守预警触发，储能利好难阻趋势 🔴【减仓】",
+        "change_rate": -1.45,
+        "input_tokens": 4592,
+        "output_tokens": 4001,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "宁德时代",
+        "code": "SZ.300750",
+        "doc_url": "https://www.feishu.cn/docx/L4yjdl8aSol3cixlKn7chsnmnTg",
+        "doc_id": "L4yjdl8aSol3cixlKn7chsnmnTg",
+        "date": "2026-06-18",
+        "report_title": "均线纠缠持续 PE 被动压缩近支撑 🔵【持有】",
+        "change_rate": -1.87,
+        "input_tokens": 5088,
+        "output_tokens": 2995,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "兴业银行",
+        "code": "SH.601166",
+        "doc_url": "https://www.feishu.cn/docx/HvIpdM2THoRBzrxqmOSc8CtOnIb",
+        "doc_id": "HvIpdM2THoRBzrxqmOSc8CtOnIb",
+        "date": "2026-06-18",
+        "report_title": "破位下杀直逼前低，估值安全垫再临考验 🟡【观望】",
+        "change_rate": -2.91,
+        "input_tokens": 4203,
+        "output_tokens": 2820,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "交通银行",
+        "code": "SH.601328",
+        "doc_url": "https://www.feishu.cn/docx/RA87dO08aolDmvxAnWmcMi6Wnie",
+        "doc_id": "RA87dO08aolDmvxAnWmcMi6Wnie",
+        "date": "2026-06-18",
+        "report_title": "银行股放量下挫失守MA20，高股息防御价值凸显 🔵【持有】",
+        "change_rate": -3.19,
+        "input_tokens": 3998,
+        "output_tokens": 3446,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "中来股份",
+        "code": "SZ.300393",
+        "doc_url": "https://www.feishu.cn/docx/SHjCdKxVooOiCPx9hXncucCWngd",
+        "doc_id": "SHjCdKxVooOiCPx9hXncucCWngd",
+        "date": "2026-06-18",
+        "report_title": "快速跳水失守 MA20，散户踩踏明显 🟡【观望】",
+        "change_rate": -3.29,
+        "input_tokens": 3583,
+        "output_tokens": 2641,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "机器人ETF华夏",
+        "code": "SH.562500",
+        "doc_url": "https://www.feishu.cn/docx/I4PjdvyL9ozM5Fxv7hPc6MLKnzg",
+        "doc_id": "I4PjdvyL9ozM5Fxv7hPc6MLKnzg",
+        "date": "2026-06-18",
+        "report_title": "放量突破均线纠缠 产业催化密集 🟢【加仓】",
+        "change_rate": 2.63,
+        "input_tokens": 4284,
+        "output_tokens": 2762,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "医药ETF易方达",
+        "code": "SH.512010",
+        "doc_url": "https://www.feishu.cn/docx/LrJpd8z5uotWg0xJCg1clT0nnmg",
+        "doc_id": "LrJpd8z5uotWg0xJCg1clT0nnmg",
+        "date": "2026-06-18",
+        "report_title": "医药止跌曙光初现但无量能配合 🟡【观望】",
+        "change_rate": 3.13,
+        "input_tokens": 3599,
+        "output_tokens": 2470,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "纳指ETF国泰",
+        "code": "SH.513100",
+        "doc_url": "https://www.feishu.cn/docx/ZHR4dYMtwoKNAqxA0E5cNd8Un5f",
+        "doc_id": "ZHR4dYMtwoKNAqxA0E5cNd8Un5f",
+        "date": "2026-06-18",
+        "report_title": "停牌复牌溢价收窄 量能不足方向待定 🟡【观望】",
+        "change_rate": -0.44,
+        "input_tokens": 4034,
+        "output_tokens": 3141,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "润泽科技",
+        "code": "SZ.300442",
+        "doc_url": "https://www.feishu.cn/docx/WCWQddTVdoGECCx6BIvcjMMpnmc",
+        "doc_id": "WCWQddTVdoGECCx6BIvcjMMpnmc",
+        "date": "2026-06-18",
+        "report_title": "放量反弹遇均线纠缠 MA60 压力未解 🟡【观望】",
+        "change_rate": 4.94,
+        "input_tokens": 4213,
+        "output_tokens": 3175,
+        "prompt_version": "1.2.2"
       }
     ],
     "港股": [
@@ -5026,5 +5146,5 @@
       "market": "A股"
     }
   ],
-  "update_time": "2026-06-18 07:40"
+  "update_time": "2026-06-18 15:34"
 }
