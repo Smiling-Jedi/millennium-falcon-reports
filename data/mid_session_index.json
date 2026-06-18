@@ -1,6 +1,17 @@
 {
   "A股": [
     {
+      "date": "2026-06-18",
+      "doc_url": "https://www.feishu.cn/docx/UYLDdEsYAopH89xtDNAcRUX2njb",
+      "doc_id": "UYLDdEsYAopH89xtDNAcRUX2njb",
+      "update_time": "11:36",
+      "report_title": "银行集体领跌润泽逆市走强，宁德阳光预警逼近",
+      "input_tokens": 16128,
+      "output_tokens": 5677,
+      "prompt_version": "0.5.2",
+      "stock_count": 11
+    },
+    {
       "date": "2026-06-17",
       "doc_url": "https://www.feishu.cn/docx/YZvAd3ehWoG9kgxvGimcl8hAnl4",
       "doc_id": "YZvAd3ehWoG9kgxvGimcl8hAnl4",
