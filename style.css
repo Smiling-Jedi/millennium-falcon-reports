@@ -209,8 +209,8 @@ a { text-decoration: none; color: inherit; }
     box-shadow: var(--shadow-card);
 }
 .plan-section {
-    padding: 12px 0;
-    border-bottom: 1px dotted var(--line);
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
 }
 .plan-section:last-child { border-bottom: none; padding-bottom: 0; }
 .plan-section:first-child { padding-top: 0; }
@@ -226,15 +226,60 @@ a { text-decoration: none; color: inherit; }
     display: flex;
     font-size: 14px;
     line-height: 1.6;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
 }
 .ps-row .k {
-    flex: 0 0 68px;
+    flex: 0 0 auto;
+    min-width: 68px;
+    max-width: 130px;
     font-weight: 600;
     color: var(--ink-soft);
     font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .ps-row .v { flex: 1; }
+
+/* 多列表格 */
+.ps-table {
+    display: grid;
+    gap: 3px 10px;
+    font-size: 13px;
+    line-height: 1.55;
+}
+.ps-table .ps-th {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--line);
+}
+.ps-table .ps-td {
+    padding: 2px 0;
+    border-bottom: 1px dotted var(--line);
+}
+.ps-table .ps-td:last-child { border-bottom: none; }
+
+/* 预警 / 关注行 */
+.ps-row.alert,
+.ps-table .ps-td.alert {
+    background: #fff5f5;
+    border-left: 3px solid var(--red);
+    padding: 3px 8px;
+    border-radius: 0 4px 4px 0;
+    margin-bottom: 3px;
+}
+.ps-row.warn,
+.ps-table .ps-td.warn {
+    background: #fffdf0;
+    border-left: 3px solid #e6a817;
+    padding: 3px 8px;
+    border-radius: 0 4px 4px 0;
+    margin-bottom: 3px;
+}
 .sig-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
