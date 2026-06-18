@@ -3220,6 +3220,114 @@
         "input_tokens": 3225,
         "output_tokens": 2413,
         "prompt_version": "1.2.2"
+      },
+      {
+        "name": "粤海投资",
+        "code": "HK.00270",
+        "doc_url": "https://www.feishu.cn/docx/UDR2daM24oX6hyx23HTcJSEWnP5",
+        "doc_id": "UDR2daM24oX6hyx23HTcJSEWnP5",
+        "date": "2026-06-18",
+        "report_title": "出售永旺股权落地，股价缩量回撤测试支撑 🔵【持有】",
+        "change_rate": -0.62,
+        "input_tokens": 4509,
+        "output_tokens": 3311,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "腾讯控股",
+        "code": "HK.00700",
+        "doc_url": "https://www.feishu.cn/docx/U4n0dDqK2oikiIxzL1HcrsUwnZb",
+        "doc_id": "U4n0dDqK2oikiIxzL1HcrsUwnZb",
+        "date": "2026-06-18",
+        "report_title": "MA20失守触发预警，但止跌3/4信号浮现 🟡【观望】",
+        "change_rate": -1.17,
+        "input_tokens": 5703,
+        "output_tokens": 3331,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "建滔积层板",
+        "code": "HK.01888",
+        "doc_url": "https://www.feishu.cn/docx/BtJtd8GBQoXX9oxhpZCc6L3gnwc",
+        "doc_id": "BtJtd8GBQoXX9oxhpZCc6L3gnwc",
+        "date": "2026-06-18",
+        "report_title": "折价配售利空出尽低开高走，趋势加速 🔵【持有】",
+        "change_rate": 3.73,
+        "input_tokens": 4280,
+        "output_tokens": 2666,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "舜宇光学科技",
+        "code": "HK.02382",
+        "doc_url": "https://www.feishu.cn/docx/UxYgd4R4lo3CbVx5jL7cSakMnke",
+        "doc_id": "UxYgd4R4lo3CbVx5jL7cSakMnke",
+        "date": "2026-06-18",
+        "report_title": "消息面短暂亢奋后回落 技术面纠缠待方向 🟡【观望】",
+        "change_rate": 0.75,
+        "input_tokens": 5381,
+        "output_tokens": 3685,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "百济神州",
+        "code": "HK.06160",
+        "doc_url": "https://www.feishu.cn/docx/O2R2dI6VloNdW6xpSSkc73GHnTh",
+        "doc_id": "O2R2dI6VloNdW6xpSSkc73GHnTh",
+        "date": "2026-06-18",
+        "report_title": "缩量反弹逼近 MA20 关键阻力 🟡【观望】",
+        "change_rate": 4.0,
+        "input_tokens": 5996,
+        "output_tokens": 3222,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "阿里巴巴-W",
+        "code": "HK.09988",
+        "doc_url": "https://www.feishu.cn/docx/KtI6d3NDcoLWUnxKYiGcq8dun6c",
+        "doc_id": "KtI6d3NDcoLWUnxKYiGcq8dun6c",
+        "date": "2026-06-18",
+        "report_title": "创60日新低但主力暗流涌动 🔵【持有】",
+        "change_rate": -1.87,
+        "input_tokens": 4613,
+        "output_tokens": 3678,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "腾讯 260828 500.00 购",
+        "code": "HK.TCH260828C500000",
+        "doc_url": "https://www.feishu.cn/docx/WRdEd1MDCoY6Y4x95BhcS47xnUe",
+        "doc_id": "WRdEd1MDCoY6Y4x95BhcS47xnUe",
+        "date": "2026-06-18",
+        "report_title": "期权单日暴跌 24% 成交近冰点 🟡【观望】",
+        "change_rate": -24.29,
+        "input_tokens": 3198,
+        "output_tokens": 2401,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "阿里 260929 120.00 购",
+        "code": "HK.ALB260929C120000",
+        "doc_url": "https://www.feishu.cn/docx/BPXCdzcw8o8sD4xRon4cH7dHncf",
+        "doc_id": "BPXCdzcw8o8sD4xRon4cH7dHncf",
+        "date": "2026-06-18",
+        "report_title": "期权价格断崖式崩跌 流动性枯竭 🟡【观望】",
+        "change_rate": -22.65,
+        "input_tokens": 3239,
+        "output_tokens": 2426,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "腾讯 260929 480.00 购",
+        "code": "HK.TCH260929C480000",
+        "doc_url": "https://www.feishu.cn/docx/F7zpdTe7OoNiutxRGQWcjgAjnbd",
+        "doc_id": "F7zpdTe7OoNiutxRGQWcjgAjnbd",
+        "date": "2026-06-18",
+        "report_title": "涡轮价格创阶段新低 主体回购与涡轮流动性枯竭并存 🟡【观望】",
+        "change_rate": -16.75,
+        "input_tokens": 3178,
+        "output_tokens": 2423,
+        "prompt_version": "1.2.2"
       }
     ],
     "美股": [
@@ -5146,5 +5254,5 @@
       "market": "A股"
     }
   ],
-  "update_time": "2026-06-18 15:34"
+  "update_time": "2026-06-18 16:26"
 }
