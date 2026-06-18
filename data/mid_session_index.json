@@ -278,6 +278,17 @@
   ],
   "港股": [
     {
+      "date": "2026-06-18",
+      "doc_url": "https://www.feishu.cn/docx/FCa9d0RZhoqrrQxUOeQcfguknSh",
+      "doc_id": "FCa9d0RZhoqrrQxUOeQcfguknSh",
+      "update_time": "12:05",
+      "report_title": "科技股与阿里拖累恒指，百济神州逆市独舞",
+      "input_tokens": 11157,
+      "output_tokens": 4574,
+      "prompt_version": "0.5.2",
+      "stock_count": 7
+    },
+    {
       "date": "2026-06-17",
       "doc_url": "https://www.feishu.cn/docx/JtgldfTYYoKOxyxsTgfcmOsfnxb",
       "doc_id": "JtgldfTYYoKOxyxsTgfcmOsfnxb",
