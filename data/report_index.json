@@ -1817,6 +1817,138 @@
         "input_tokens": 4213,
         "output_tokens": 3175,
         "prompt_version": "1.2.2"
+      },
+      {
+        "name": "比亚迪",
+        "code": "SZ.002594",
+        "doc_url": "https://www.feishu.cn/docx/H638dBfUjoB0V8xVMOLci0oln0c",
+        "doc_id": "H638dBfUjoB0V8xVMOLci0oln0c",
+        "date": "2026-06-22",
+        "report_title": "比亚迪探底84.6元后回收，MA20命悬一线 🟡【观望】",
+        "change_rate": -0.61,
+        "input_tokens": 4930,
+        "output_tokens": 3219,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "阳光电源",
+        "code": "SZ.300274",
+        "doc_url": "https://www.feishu.cn/docx/K4KVd3neqoaIfJxnLACcAPKJnBb",
+        "doc_id": "K4KVd3neqoaIfJxnLACcAPKJnBb",
+        "date": "2026-06-22",
+        "report_title": "跳高放量突破MA20但均线纠缠未解 🔵【持有】",
+        "change_rate": 11.21,
+        "input_tokens": 4876,
+        "output_tokens": 3192,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "宁德时代",
+        "code": "SZ.300750",
+        "doc_url": "https://www.feishu.cn/docx/R2bNd9WN9oRhGkxJabKcQfpsnxd",
+        "doc_id": "R2bNd9WN9oRhGkxJabKcQfpsnxd",
+        "date": "2026-06-22",
+        "report_title": "锂矿复产预期引爆，放量收回MA20剑指年线 🔵【持有】",
+        "change_rate": 4.45,
+        "input_tokens": 5371,
+        "output_tokens": 2743,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "招商银行",
+        "code": "SH.600036",
+        "doc_url": "https://www.feishu.cn/docx/N0andh75fo2W41xLzTRckQAMnDb",
+        "doc_id": "N0andh75fo2W41xLzTRckQAMnDb",
+        "date": "2026-06-22",
+        "report_title": "零售承压对公补位 估值躺在地板待方向 🔵【持有】",
+        "change_rate": 1.05,
+        "input_tokens": 4380,
+        "output_tokens": 3235,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "兴业银行",
+        "code": "SH.601166",
+        "doc_url": "https://www.feishu.cn/docx/ZvcLdVIFPocS6Vx2kkLcJwj3nAh",
+        "doc_id": "ZvcLdVIFPocS6Vx2kkLcJwj3nAh",
+        "date": "2026-06-22",
+        "report_title": "超跌反弹重返 17.73，均线纠缠博弈加剧 🟡【观望】",
+        "change_rate": 2.37,
+        "input_tokens": 4524,
+        "output_tokens": 3100,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "交通银行",
+        "code": "SH.601328",
+        "doc_url": "https://www.feishu.cn/docx/UncvdprOOoETfcxw6SdcpLTGn9g",
+        "doc_id": "UncvdprOOoETfcxw6SdcpLTGn9g",
+        "date": "2026-06-22",
+        "report_title": "缩量整理考验均线支撑 银行股静待方向选择 🔵【持有】",
+        "change_rate": 0.15,
+        "input_tokens": 4230,
+        "output_tokens": 3836,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "中来股份",
+        "code": "SZ.300393",
+        "doc_url": "https://www.feishu.cn/docx/Br32df9lWor3ykx2UZscuN6rnYg",
+        "doc_id": "Br32df9lWor3ykx2UZscuN6rnYg",
+        "date": "2026-06-22",
+        "report_title": "创60日新低后反弹收阳 空头压制尚难逆转 🟡【观望】",
+        "change_rate": 1.26,
+        "input_tokens": 3990,
+        "output_tokens": 2830,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "机器人ETF华夏",
+        "code": "SH.562500",
+        "doc_url": "https://www.feishu.cn/docx/VvBudu1Qfog41bxR3N5ckuP6ngf",
+        "doc_id": "VvBudu1Qfog41bxR3N5ckuP6ngf",
+        "date": "2026-06-22",
+        "report_title": "人形机器人含量飙升但价格回撤关键支撑 🔵【持有】",
+        "change_rate": -1.71,
+        "input_tokens": 4509,
+        "output_tokens": 2830,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "医药ETF易方达",
+        "code": "SH.512010",
+        "doc_url": "https://www.feishu.cn/docx/W9yqdwqmDoLw4IxV51ec24iFnJd",
+        "doc_id": "W9yqdwqmDoLw4IxV51ec24iFnJd",
+        "date": "2026-06-22",
+        "report_title": "成交11%换手原地踏步，0.33元拉锯待方向 🟡【观望】",
+        "change_rate": 0.0,
+        "input_tokens": 4438,
+        "output_tokens": 2463,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "纳指ETF国泰",
+        "code": "SH.513100",
+        "doc_url": "https://www.feishu.cn/docx/Rk22dp9wlonCB9xFtircAqDgnbb",
+        "doc_id": "Rk22dp9wlonCB9xFtircAqDgnbb",
+        "date": "2026-06-22",
+        "report_title": "多只纳指ETF集体临停 溢价风险下技术位博弈 🔵【持有】",
+        "change_rate": -0.88,
+        "input_tokens": 4357,
+        "output_tokens": 2846,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "润泽科技",
+        "code": "SZ.300442",
+        "doc_url": "https://www.feishu.cn/docx/CgKddvy0iobnlKxKBUUcdaObnuO",
+        "doc_id": "CgKddvy0iobnlKxKBUUcdaObnuO",
+        "date": "2026-06-22",
+        "report_title": "润泽科技击穿 MA200 后反抽测试 趋势未明 🟡【观望】",
+        "change_rate": 0.96,
+        "input_tokens": 4405,
+        "output_tokens": 2859,
+        "prompt_version": "1.2.2"
       }
     ],
     "港股": [
@@ -5254,5 +5386,5 @@
       "market": "A股"
     }
   ],
-  "update_time": "2026-06-18 16:26"
+  "update_time": "2026-06-22 15:29"
 }
