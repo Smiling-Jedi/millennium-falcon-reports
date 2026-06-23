@@ -278,6 +278,17 @@
   ],
   "港股": [
     {
+      "date": "2026-06-23",
+      "doc_url": "https://www.feishu.cn/docx/YDPgd7oVNobKXWxz3rkc6jxWnlh",
+      "doc_id": "YDPgd7oVNobKXWxz3rkc6jxWnlh",
+      "update_time": "12:06",
+      "report_title": "恒科开杀腾讯领跌近4%，建滔高位跳水7.6%回吐周涨幅",
+      "input_tokens": 14824,
+      "output_tokens": 6026,
+      "prompt_version": "0.5.2",
+      "stock_count": 10
+    },
+    {
       "date": "2026-06-18",
       "doc_url": "https://www.feishu.cn/docx/FCa9d0RZhoqrrQxUOeQcfguknSh",
       "doc_id": "FCa9d0RZhoqrrQxUOeQcfguknSh",
