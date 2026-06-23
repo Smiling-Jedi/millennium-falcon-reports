@@ -1,6 +1,17 @@
 {
   "A股": [
     {
+      "date": "2026-06-23",
+      "doc_url": "https://www.feishu.cn/docx/CAb4dnUceo95ABxypToclFY6nMc",
+      "doc_id": "CAb4dnUceo95ABxypToclFY6nMc",
+      "update_time": "11:36",
+      "report_title": "新能源集体回撤银行分化上行，交通银行逆市领涨",
+      "input_tokens": 16291,
+      "output_tokens": 7008,
+      "prompt_version": "0.5.2",
+      "stock_count": 11
+    },
+    {
       "date": "2026-06-18",
       "doc_url": "https://www.feishu.cn/docx/UYLDdEsYAopH89xtDNAcRUX2njb",
       "doc_id": "UYLDdEsYAopH89xtDNAcRUX2njb",
