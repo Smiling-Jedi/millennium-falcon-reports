@@ -5465,6 +5465,174 @@
         "input_tokens": 2639,
         "output_tokens": 2405,
         "prompt_version": "1.2.2"
+      },
+      {
+        "name": "Circle",
+        "code": "US.CRCL",
+        "doc_url": "https://www.feishu.cn/docx/Csb2dSVlCoGIJIxNerocuovsn5d",
+        "doc_id": "Csb2dSVlCoGIJIxNerocuovsn5d",
+        "date": "2026-06-22",
+        "report_title": "Circle 跳高被砸逼近 W5 低点 🔴【减仓/观望】",
+        "change_rate": -0.35,
+        "input_tokens": 3857,
+        "output_tokens": 2176,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "Lumentum",
+        "code": "US.LITE",
+        "doc_url": "https://www.feishu.cn/docx/YpgsdZTuso9Glhxa2gFcHDofnKf",
+        "doc_id": "YpgsdZTuso9Glhxa2gFcHDofnKf",
+        "date": "2026-06-22",
+        "report_title": "Lumentum 放量反弹逼近 MA20 加仓信号待确认 🟡【观望】",
+        "change_rate": 5.17,
+        "input_tokens": 3970,
+        "output_tokens": 2643,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "Meta",
+        "code": "US.META",
+        "doc_url": "https://www.feishu.cn/docx/ZbIcdLUNSoVlopx9mUQcU9scnPr",
+        "doc_id": "ZbIcdLUNSoVlopx9mUQcU9scnPr",
+        "date": "2026-06-22",
+        "report_title": "Meta跳空低开失守570 止跌信号仍缺 🔴【减仓】",
+        "change_rate": -2.32,
+        "input_tokens": 4509,
+        "output_tokens": 2418,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "微软",
+        "code": "US.MSFT",
+        "doc_url": "https://www.feishu.cn/docx/PTGRdLIgloHYkax27zycD0wZnKc",
+        "doc_id": "PTGRdLIgloHYkax27zycD0wZnKc",
+        "date": "2026-06-22",
+        "report_title": "欧盟反垄断施压 Azure 均线全面失守 🔴【减仓】",
+        "change_rate": -3.18,
+        "input_tokens": 4652,
+        "output_tokens": 2372,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "英伟达",
+        "code": "US.NVDA",
+        "doc_url": "https://www.feishu.cn/docx/KpcLdtireo1OlnxxVqZc24aWnXb",
+        "doc_id": "KpcLdtireo1OlnxxVqZc24aWnXb",
+        "date": "2026-06-22",
+        "report_title": "股东大会前缩量震荡 MA20 下方承压 🔵【持有】",
+        "change_rate": -0.97,
+        "input_tokens": 4856,
+        "output_tokens": 2549,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "Palantir",
+        "code": "US.PLTR",
+        "doc_url": "https://www.feishu.cn/docx/CLeldd7fcowMK6xoDTFcaT0mnbs",
+        "doc_id": "CLeldd7fcowMK6xoDTFcaT0mnbs",
+        "date": "2026-06-22",
+        "report_title": "PLTR 放量跌破 W5 低创 60 日新低 🔴【减仓清仓】",
+        "change_rate": -6.98,
+        "input_tokens": 4356,
+        "output_tokens": 2087,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "SoFi",
+        "code": "US.SOFI",
+        "doc_url": "https://www.feishu.cn/docx/IdujdOocNobrgYxMAt3c1hm9n9e",
+        "doc_id": "IdujdOocNobrgYxMAt3c1hm9n9e",
+        "date": "2026-06-22",
+        "report_title": "跳空低开破17.2支撑 均线握手区2%待验 🔵【持有】",
+        "change_rate": -4.52,
+        "input_tokens": 4437,
+        "output_tokens": 2261,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "特斯拉",
+        "code": "US.TSLA",
+        "doc_url": "https://www.feishu.cn/docx/MgKkd5gqqo5C8Ex5C77cKRNQn5e",
+        "doc_id": "MgKkd5gqqo5C8Ex5C77cKRNQn5e",
+        "date": "2026-06-22",
+        "report_title": "跳低被买守住生命线 均线纠缠待方向选择 🔵【持有】",
+        "change_rate": 1.14,
+        "input_tokens": 4623,
+        "output_tokens": 2244,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "Sea",
+        "code": "US.SE",
+        "doc_url": "https://www.feishu.cn/docx/DZXDd2ZgqopXaUx9B8Tce9jGnch",
+        "doc_id": "DZXDd2ZgqopXaUx9B8Tce9jGnch",
+        "date": "2026-06-22",
+        "report_title": "Sea放量跌破91支撑 均线纠缠待方向选择 🟡【观望】",
+        "change_rate": -2.45,
+        "input_tokens": 4215,
+        "output_tokens": 2185,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "博通",
+        "code": "US.AVGO",
+        "doc_url": "https://www.feishu.cn/docx/NPvbdI0FwoUaJ5xiltrcj9fqnBg",
+        "doc_id": "NPvbdI0FwoUaJ5xiltrcj9fqnBg",
+        "date": "2026-06-22",
+        "report_title": "博通跳空高开后暴跌击穿支撑 🔴【减仓】",
+        "change_rate": -4.52,
+        "input_tokens": 4873,
+        "output_tokens": 2483,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "Coherent",
+        "code": "US.COHR",
+        "doc_url": "https://www.feishu.cn/docx/STtodF82Io65NCxL8DXcRt0kn1d",
+        "doc_id": "STtodF82Io65NCxL8DXcRt0kn1d",
+        "date": "2026-06-22",
+        "report_title": "COHR 跳高长阳突破 MA20 但 ATR 扩张未收敛 🔵【持有】",
+        "change_rate": 9.22,
+        "input_tokens": 3548,
+        "output_tokens": 2326,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "US.AXTI",
+        "code": "US.AXTI",
+        "doc_url": "https://www.feishu.cn/docx/EfAUdnqB2oPKmqxIBhoc1fTGnrf",
+        "doc_id": "EfAUdnqB2oPKmqxIBhoc1fTGnrf",
+        "date": "2026-06-22",
+        "report_title": "跳高被砸假突破 均线纠缠待方向 🔵【持有】",
+        "change_rate": 9.31,
+        "input_tokens": 3813,
+        "output_tokens": 2117,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "SpaceX",
+        "code": "US.SPCX",
+        "doc_url": "https://www.feishu.cn/docx/XejvdyUa1oSwTHxWOfBcCaXvnkg",
+        "doc_id": "XejvdyUa1oSwTHxWOfBcCaXvnkg",
+        "date": "2026-06-22",
+        "report_title": "SpaceX 上市首破 MA20 暴跌 16% 创纪录 🔴【减仓清仓】",
+        "change_rate": -16.43,
+        "input_tokens": 2684,
+        "output_tokens": 1704,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "2倍做多RKLB ETF-Defiance",
+        "code": "US.RKLX",
+        "doc_url": "https://www.feishu.cn/docx/PFabdChvmoYREMxNmVscWXO9nWc",
+        "doc_id": "PFabdChvmoYREMxNmVscWXO9nWc",
+        "date": "2026-06-22",
+        "report_title": "RKLX暴跌13%破MA60 杠杆ETF风险暴露 🔴【减仓清仓】",
+        "change_rate": -13.33,
+        "input_tokens": 2494,
+        "output_tokens": 1689,
+        "prompt_version": "1.2.2"
       }
     ]
   },
@@ -5494,5 +5662,5 @@
       "market": "A股"
     }
   ],
-  "update_time": "2026-06-22 16:26"
+  "update_time": "2026-06-23 11:18"
 }
