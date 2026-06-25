@@ -1,604 +1,12 @@
 {
-  "date": "2026-06-23",
-  "updated": "22:33",
+  "date": "2026-06-25",
+  "updated": "23:09",
   "stocks": {
-    "SZ.002594": {
-      "code": "SZ.002594",
-      "date": "2026-06-23",
-      "current_price": 85.0,
-      "pe_ttm": 23.76,
-      "currency": "CNY",
-      "has_plan": true,
-      "plan_version": "3",
-      "stock_type": "A亚类",
-      "trigger_type": "🔴判断",
-      "trigger_reason": "止损触发: 减1/3至10,000股。LL形成=趋势反转，结构否定必须响应。",
-      "signal_count": 0,
-      "signals": [
-        {
-          "name": "均线支撑",
-          "description": "价格在均线附近",
-          "satisfied": false
-        },
-        {
-          "name": "阳线放量",
-          "description": "阳线+放量",
-          "satisfied": false
-        },
-        {
-          "name": "不创新低",
-          "description": "连2日不创新低",
-          "satisfied": false
-        },
-        {
-          "name": "ATR收缩",
-          "description": "ATR5<ATR20",
-          "satisfied": false
-        }
-      ],
-      "trend_status": "向下反转",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "",
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": {
-        "peg": 0.89,
-        "fwd_pe": 20.2,
-        "sp_fwd_pe": null,
-        "peg_ok": true,
-        "fwd_pe_ok": null,
-        "anchor_valid": true
-      },
-      "stop_checks": [
-        {
-          "label": "预警线",
-          "price": 85.88,
-          "description": "减1/3至10,000股。LL形成=趋势反转，结构否定必须响应。",
-          "status": "触发",
-          "detail": "当前 85.00 已跌破，且 0/4 信号全部失败，确认弱势"
-        },
-        {
-          "label": "硬止损",
-          "price": null,
-          "description": "减至10,000股。逻辑止损，证伪的是「海外增长+盈利恢复」逻辑。",
-          "status": "安全",
-          "detail": "不设价格止损"
-        }
-      ],
-      "target_checks": []
-    },
-    "SZ.300274": {
-      "code": "SZ.300274",
-      "date": "2026-06-23",
-      "current_price": 152.0,
-      "pe_ttm": 23.41,
-      "currency": "CNY",
-      "has_plan": true,
-      "plan_version": "7",
-      "stock_type": "B",
-      "trigger_type": "🟡",
-      "trigger_reason": "距 MA60（149.0）仅 2.0%; 预警线接近: 距离 2.0%",
-      "signal_count": 0,
-      "signals": [
-        {
-          "name": "均线支撑",
-          "description": "价格在均线附近",
-          "satisfied": false
-        },
-        {
-          "name": "阳线放量",
-          "description": "阳线+放量",
-          "satisfied": false
-        },
-        {
-          "name": "不创新低",
-          "description": "连2日不创新低",
-          "satisfied": false
-        },
-        {
-          "name": "ATR收缩",
-          "description": "ATR5<ATR20",
-          "satisfied": false
-        }
-      ],
-      "trend_status": "即将走强",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "",
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [
-        {
-          "label": "预警线",
-          "price": 149.0,
-          "description": "减1/3或暂停加仓。Q2季报后恢复标准B型MA60止损。",
-          "status": "接近",
-          "detail": "距离 2.0%"
-        },
-        {
-          "label": "硬止损",
-          "price": 115.0,
-          "description": "清仓。趋势彻底反转。",
-          "status": "安全",
-          "detail": "距离 32.2%"
-        },
-        {
-          "label": "硬止损",
-          "price": null,
-          "description": "全清。",
-          "status": "安全",
-          "detail": "不设价格止损"
-        }
-      ],
-      "target_checks": []
-    },
-    "SZ.300750": {
-      "code": "SZ.300750",
-      "date": "2026-06-23",
-      "current_price": 392.51,
-      "pe_ttm": 25.15,
-      "currency": "CNY",
-      "has_plan": true,
-      "plan_version": "5",
-      "stock_type": "A亚类",
-      "trigger_type": "🟡",
-      "trigger_reason": "预警线接近: 距离 1.7%",
-      "signal_count": 1,
-      "signals": [
-        {
-          "name": "缩量",
-          "description": "缩量",
-          "satisfied": true
-        },
-        {
-          "name": "阳线",
-          "description": "阳线",
-          "satisfied": false
-        }
-      ],
-      "trend_status": "正常",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "",
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": {
-        "peg": 0.49,
-        "fwd_pe": 16.7,
-        "sp_fwd_pe": null,
-        "peg_ok": true,
-        "fwd_pe_ok": null,
-        "anchor_valid": true
-      },
-      "stop_checks": [
-        {
-          "label": "预警线",
-          "price": 386.0,
-          "description": "MA120(¥386)连3日收盘跌破→止损走人（试探仓错了要认）",
-          "status": "接近",
-          "detail": "距离 1.7%"
-        },
-        {
-          "label": "预警线",
-          "price": 0.0,
-          "description": "MA120连3日跌破→暂停后续加仓",
-          "status": "安全",
-          "detail": "不设价格止损"
-        },
-        {
-          "label": "硬止损",
-          "price": null,
-          "description": "全清",
-          "status": "安全",
-          "detail": "不设价格止损"
-        }
-      ],
-      "target_checks": []
-    },
-    "SH.600036": {
-      "code": "SH.600036",
-      "date": "2026-06-23",
-      "current_price": 37.4,
-      "pe_ttm": 6.28,
-      "currency": "CNY",
-      "has_plan": true,
-      "plan_version": "2",
-      "stock_type": "F",
-      "trigger_type": "🟢",
-      "trigger_reason": "",
-      "signal_count": 0,
-      "signals": [
-        {
-          "name": "MA20斜率转正",
-          "description": "MA20斜率转正",
-          "satisfied": false
-        },
-        {
-          "name": "站上MA60",
-          "description": "站上MA60",
-          "satisfied": false
-        }
-      ],
-      "trend_status": "向下反转",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "",
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [],
-      "target_checks": []
-    },
-    "SH.601166": {
-      "code": "SH.601166",
-      "date": "2026-06-23",
-      "current_price": 17.65,
-      "pe_ttm": 4.82,
-      "currency": "CNY",
-      "has_plan": true,
-      "plan_version": "3",
-      "stock_type": "F",
-      "trigger_type": "🟢",
-      "trigger_reason": "",
-      "signal_count": 0,
-      "signals": [
-        {
-          "name": "均线支撑",
-          "description": "价格在均线附近",
-          "satisfied": false
-        },
-        {
-          "name": "阳线放量",
-          "description": "阳线+放量",
-          "satisfied": false
-        },
-        {
-          "name": "不创新低",
-          "description": "连2日不创新低",
-          "satisfied": false
-        },
-        {
-          "name": "ATR收缩",
-          "description": "ATR5<ATR20",
-          "satisfied": false
-        }
-      ],
-      "trend_status": "向下反转",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "",
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [],
-      "target_checks": []
-    },
-    "SH.601328": {
-      "code": "SH.601328",
-      "date": "2026-06-23",
-      "current_price": 6.83,
-      "pe_ttm": 6.31,
-      "currency": "CNY",
-      "has_plan": true,
-      "plan_version": "2",
-      "stock_type": "F",
-      "trigger_type": "🟢",
-      "trigger_reason": "",
-      "signal_count": 0,
-      "signals": [
-        {
-          "name": "均线支撑",
-          "description": "价格在均线附近",
-          "satisfied": false
-        },
-        {
-          "name": "阳线放量",
-          "description": "阳线+放量",
-          "satisfied": false
-        },
-        {
-          "name": "不创新低",
-          "description": "连2日不创新低",
-          "satisfied": false
-        },
-        {
-          "name": "ATR收缩",
-          "description": "ATR5<ATR20",
-          "satisfied": false
-        }
-      ],
-      "trend_status": "即将走弱",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "",
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [],
-      "target_checks": []
-    },
-    "SZ.300393": {
-      "code": "SZ.300393",
-      "date": "2026-06-23",
-      "current_price": 7.65,
-      "pe_ttm": -6.08,
-      "currency": "CNY",
-      "has_plan": true,
-      "plan_version": "2",
-      "stock_type": "",
-      "trigger_type": "🟢",
-      "trigger_reason": "",
-      "signal_count": 0,
-      "signals": [
-        {
-          "name": "均线支撑",
-          "description": "价格在均线附近",
-          "satisfied": false
-        },
-        {
-          "name": "阳线放量",
-          "description": "阳线+放量",
-          "satisfied": false
-        },
-        {
-          "name": "不创新低",
-          "description": "连2日不创新低",
-          "satisfied": false
-        },
-        {
-          "name": "ATR收缩",
-          "description": "ATR5<ATR20",
-          "satisfied": false
-        }
-      ],
-      "trend_status": "即将走弱",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "",
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [
-        {
-          "label": "硬止损",
-          "price": 6.37,
-          "description": "无条件清仓。最多再亏¥1.3万。",
-          "status": "安全",
-          "detail": "距离 20.1%"
-        }
-      ],
-      "target_checks": []
-    },
-    "SH.562500": {
-      "code": "SH.562500",
-      "date": "2026-06-23",
-      "current_price": 1.14,
-      "pe_ttm": null,
-      "currency": "CNY",
-      "has_plan": true,
-      "plan_version": "5",
-      "stock_type": "",
-      "trigger_type": "🟡",
-      "trigger_reason": "预警线接近: 距离 6.5%",
-      "signal_count": 0,
-      "signals": [
-        {
-          "name": "均线支撑",
-          "description": "价格在均线附近",
-          "satisfied": false
-        },
-        {
-          "name": "阳线放量",
-          "description": "阳线+放量",
-          "satisfied": false
-        },
-        {
-          "name": "不创新低",
-          "description": "连2日不创新低",
-          "satisfied": false
-        },
-        {
-          "name": "ATR收缩",
-          "description": "ATR5<ATR20",
-          "satisfied": false
-        }
-      ],
-      "trend_status": "即将走强",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "",
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [
-        {
-          "label": "预警线",
-          "price": 1.021,
-          "description": "波段减半",
-          "status": "安全",
-          "detail": "距离 11.7%"
-        },
-        {
-          "label": "硬止损",
-          "price": null,
-          "description": "波段全清，底仓重评",
-          "status": "安全",
-          "detail": "不设价格止损"
-        },
-        {
-          "label": "硬止损",
-          "price": null,
-          "description": "波段价格止损5-8%（从入场价算）",
-          "status": "安全",
-          "detail": "不设价格止损"
-        },
-        {
-          "label": "预警线",
-          "price": 1.07,
-          "description": "接近 MA200",
-          "status": "接近",
-          "detail": "距离 6.5%"
-        }
-      ],
-      "target_checks": []
-    },
-    "SH.512010": {
-      "code": "SH.512010",
-      "date": "2026-06-23",
-      "current_price": 0.33,
-      "pe_ttm": null,
-      "currency": "CNY",
-      "has_plan": true,
-      "plan_version": "5",
-      "stock_type": "B",
-      "trigger_type": "🟢",
-      "trigger_reason": "",
-      "signal_count": 0,
-      "signals": [
-        {
-          "name": "站上MA20",
-          "description": "站上MA20",
-          "satisfied": false
-        }
-      ],
-      "trend_status": "向下反转",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "",
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [],
-      "target_checks": []
-    },
-    "SH.513100": {
-      "code": "SH.513100",
-      "date": "2026-06-23",
-      "current_price": 2.17,
-      "pe_ttm": null,
-      "currency": "CNY",
-      "has_plan": true,
-      "plan_version": "2",
-      "stock_type": "B",
-      "trigger_type": "🟢",
-      "trigger_reason": "",
-      "signal_count": 0,
-      "signals": [
-        {
-          "name": "均线支撑",
-          "description": "价格在均线附近",
-          "satisfied": false
-        },
-        {
-          "name": "阳线放量",
-          "description": "阳线+放量",
-          "satisfied": false
-        },
-        {
-          "name": "不创新低",
-          "description": "连2日不创新低",
-          "satisfied": false
-        },
-        {
-          "name": "ATR收缩",
-          "description": "ATR5<ATR20",
-          "satisfied": false
-        }
-      ],
-      "trend_status": "正常",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "",
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [],
-      "target_checks": []
-    },
-    "SZ.300442": {
-      "code": "SZ.300442",
-      "date": "2026-06-23",
-      "current_price": 82.23,
-      "pe_ttm": 26.72,
-      "currency": "CNY",
-      "has_plan": true,
-      "plan_version": "2",
-      "stock_type": "",
-      "trigger_type": "🔴判断",
-      "trigger_reason": "止损触发: MA200 已跌破",
-      "signal_count": 0,
-      "signals": [
-        {
-          "name": "均线支撑",
-          "description": "价格在均线附近",
-          "satisfied": false
-        },
-        {
-          "name": "阳线放量",
-          "description": "阳线+放量",
-          "satisfied": false
-        },
-        {
-          "name": "不创新低",
-          "description": "连2日不创新低",
-          "satisfied": false
-        },
-        {
-          "name": "ATR收缩",
-          "description": "ATR5<ATR20",
-          "satisfied": false
-        }
-      ],
-      "trend_status": "即将走强",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "",
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [
-        {
-          "label": "预警线",
-          "price": 68.0,
-          "description": "减至150股",
-          "status": "安全",
-          "detail": "距离 20.9%"
-        },
-        {
-          "label": "硬止损",
-          "price": 56.39,
-          "description": "清仓",
-          "status": "安全",
-          "detail": "距离 45.8%"
-        },
-        {
-          "label": "硬止损",
-          "price": 87.74,
-          "description": "MA200 已跌破",
-          "status": "触发",
-          "detail": "当前 82.23"
-        }
-      ],
-      "target_checks": []
-    },
     "HK.00270": {
       "code": "HK.00270",
-      "date": "2026-06-23",
-      "current_price": 7.78,
-      "pe_ttm": 10.93,
+      "date": "2026-06-25",
+      "current_price": 7.73,
+      "pe_ttm": 10.76,
       "currency": "HKD",
       "has_plan": true,
       "plan_version": "4",
@@ -626,21 +34,21 @@
     },
     "HK.00700": {
       "code": "HK.00700",
-      "date": "2026-06-23",
-      "current_price": 414.8,
-      "pe_ttm": 15.18,
+      "date": "2026-06-25",
+      "current_price": 428.8,
+      "pe_ttm": 15.42,
       "currency": "HKD",
       "has_plan": true,
       "plan_version": "3",
       "stock_type": "A",
-      "trigger_type": "🔴判断",
-      "trigger_reason": "止损触发: 新买入波段减1/3",
-      "signal_count": 1,
+      "trigger_type": "🟡",
+      "trigger_reason": "预警线接近: 当前 428.80 已跌破，但 2/4 止跌信号满足，可能假突破; 预警线接近: 距离 2.1%",
+      "signal_count": 2,
       "signals": [
         {
           "name": "均线支撑",
           "description": "均线支撑",
-          "satisfied": false
+          "satisfied": true
         },
         {
           "name": "阳线放量",
@@ -692,22 +100,22 @@
           "label": "预警线",
           "price": 450.0,
           "description": "新买入波段减1/3",
-          "status": "触发",
-          "detail": "当前 414.80 已跌破"
+          "status": "接近",
+          "detail": "当前 428.80 已跌破，但 2/4 止跌信号满足，可能假突破"
         },
         {
           "label": "预警线",
           "price": 420.0,
           "description": "新买入波段再减1/3",
-          "status": "触发",
-          "detail": "当前 414.80 已跌破"
+          "status": "接近",
+          "detail": "距离 2.1%"
         },
         {
           "label": "硬止损",
           "price": 400.0,
           "description": "波段仓全清",
           "status": "接近",
-          "detail": "距离 3.7%"
+          "detail": "距离 7.2%"
         },
         {
           "label": "硬止损",
@@ -721,9 +129,9 @@
     },
     "HK.01888": {
       "code": "HK.01888",
-      "date": "2026-06-23",
-      "current_price": 87.25,
-      "pe_ttm": 112.58,
+      "date": "2026-06-25",
+      "current_price": 93.55,
+      "pe_ttm": 134.45,
       "currency": "HKD",
       "has_plan": true,
       "plan_version": "2",
@@ -774,16 +182,16 @@
           "price": 50.05,
           "description": "减200股(收回本金)。成本14.32极低，收回本金后无需硬止损。",
           "status": "安全",
-          "detail": "距离 74.3%"
+          "detail": "距离 86.9%"
         }
       ],
       "target_checks": []
     },
     "HK.02382": {
       "code": "HK.02382",
-      "date": "2026-06-23",
-      "current_price": 76.4,
-      "pe_ttm": 16.05,
+      "date": "2026-06-25",
+      "current_price": 75.9,
+      "pe_ttm": 14.08,
       "currency": "HKD",
       "has_plan": true,
       "plan_version": "5",
@@ -813,7 +221,7 @@
           "satisfied": false
         }
       ],
-      "trend_status": "即将走强",
+      "trend_status": "正常",
       "trend_changed": "",
       "auto_action": "无需调整",
       "auto_reason": "机械型触发但参数无实质变化",
@@ -834,42 +242,42 @@
           "price": 50.3,
           "description": "全仓清仓",
           "status": "安全",
-          "detail": "距离 51.9%"
+          "detail": "距离 50.9%"
         },
         {
           "label": "预警线",
           "price": 67.8,
           "description": "不加第二档",
           "status": "安全",
-          "detail": "距离 12.7%"
+          "detail": "距离 11.9%"
         },
         {
           "label": "预警线",
-          "price": 66.77,
+          "price": 67.17,
           "description": "接近 MA200",
           "status": "接近",
-          "detail": "距离 14.4%"
+          "detail": "距离 13.0%"
         }
       ],
       "target_checks": []
     },
     "HK.06160": {
       "code": "HK.06160",
-      "date": "2026-06-23",
-      "current_price": 160.9,
-      "pe_ttm": 111.04,
+      "date": "2026-06-25",
+      "current_price": 165.2,
+      "pe_ttm": 115.25,
       "currency": "HKD",
       "has_plan": true,
       "plan_version": "4",
       "stock_type": "B",
       "trigger_type": "🟢",
       "trigger_reason": "",
-      "signal_count": 0,
+      "signal_count": 1,
       "signals": [
         {
           "name": "阳线收MA5上方",
           "description": "阳线收MA5上方",
-          "satisfied": false
+          "satisfied": true
         },
         {
           "name": "KDJ金叉",
@@ -890,9 +298,9 @@
     },
     "HK.09988": {
       "code": "HK.09988",
-      "date": "2026-06-23",
-      "current_price": 98.95,
-      "pe_ttm": 15.84,
+      "date": "2026-06-25",
+      "current_price": 99.4,
+      "pe_ttm": 15.21,
       "currency": "HKD",
       "has_plan": true,
       "plan_version": "4",
@@ -933,11 +341,571 @@
       "stop_checks": [],
       "target_checks": []
     },
+    "SZ.002594": {
+      "code": "SZ.002594",
+      "date": "2026-06-25",
+      "current_price": 83.3,
+      "pe_ttm": 27.2,
+      "currency": "CNY",
+      "has_plan": true,
+      "plan_version": "4",
+      "stock_type": "A亚类",
+      "trigger_type": "🟢",
+      "trigger_reason": "",
+      "signal_count": 0,
+      "signals": [
+        {
+          "name": "站上MA20",
+          "description": "站上MA20",
+          "satisfied": false
+        }
+      ],
+      "trend_status": "数据不足（80日 / 需120日）",
+      "trend_changed": "",
+      "auto_action": "",
+      "auto_reason": "",
+      "small_cycle_text": "",
+      "suggested_changes": [],
+      "buy_window": null,
+      "valuation": null,
+      "stop_checks": [],
+      "target_checks": []
+    },
+    "SZ.300274": {
+      "code": "SZ.300274",
+      "date": "2026-06-25",
+      "current_price": 154.8,
+      "pe_ttm": 26.54,
+      "currency": "CNY",
+      "has_plan": true,
+      "plan_version": "7",
+      "stock_type": "B",
+      "trigger_type": "🟡",
+      "trigger_reason": "距 MA60（149.0）仅 3.9%; 预警线接近: 距离 3.9%",
+      "signal_count": 0,
+      "signals": [
+        {
+          "name": "均线支撑",
+          "description": "价格在均线附近",
+          "satisfied": false
+        },
+        {
+          "name": "阳线放量",
+          "description": "阳线+放量",
+          "satisfied": false
+        },
+        {
+          "name": "不创新低",
+          "description": "连2日不创新低",
+          "satisfied": false
+        },
+        {
+          "name": "ATR收缩",
+          "description": "ATR5<ATR20",
+          "satisfied": false
+        }
+      ],
+      "trend_status": "数据不足（81日 / 需120日）",
+      "trend_changed": "",
+      "auto_action": "",
+      "auto_reason": "",
+      "small_cycle_text": "",
+      "suggested_changes": [],
+      "buy_window": {
+        "low": 115.0,
+        "high": 130.0,
+        "in_window": false,
+        "distance_pct": 16.0
+      },
+      "valuation": null,
+      "stop_checks": [
+        {
+          "label": "预警线",
+          "price": 149.0,
+          "description": "减1/3或暂停加仓。Q2季报后恢复标准B型MA60止损。",
+          "status": "接近",
+          "detail": "距离 3.9%"
+        },
+        {
+          "label": "硬止损",
+          "price": 115.0,
+          "description": "清仓。趋势彻底反转。",
+          "status": "安全",
+          "detail": "距离 34.6%"
+        },
+        {
+          "label": "硬止损",
+          "price": null,
+          "description": "全清。",
+          "status": "安全",
+          "detail": "不设价格止损"
+        }
+      ],
+      "target_checks": []
+    },
+    "SZ.300750": {
+      "code": "SZ.300750",
+      "date": "2026-06-25",
+      "current_price": 395.36,
+      "pe_ttm": 23.54,
+      "currency": "CNY",
+      "has_plan": true,
+      "plan_version": "5",
+      "stock_type": "A亚类",
+      "trigger_type": "🟡",
+      "trigger_reason": "预警线接近: 距离 2.4%",
+      "signal_count": 2,
+      "signals": [
+        {
+          "name": "缩量",
+          "description": "缩量",
+          "satisfied": true
+        },
+        {
+          "name": "阳线",
+          "description": "阳线",
+          "satisfied": true
+        }
+      ],
+      "trend_status": "数据不足（81日 / 需120日）",
+      "trend_changed": "",
+      "auto_action": "",
+      "auto_reason": "",
+      "small_cycle_text": "",
+      "suggested_changes": [],
+      "buy_window": null,
+      "valuation": {
+        "peg": 0.49,
+        "fwd_pe": 16.7,
+        "sp_fwd_pe": null,
+        "peg_ok": true,
+        "fwd_pe_ok": null,
+        "anchor_valid": true
+      },
+      "stop_checks": [
+        {
+          "label": "预警线",
+          "price": 386.0,
+          "description": "MA120(¥386)连3日收盘跌破→止损走人（试探仓错了要认）",
+          "status": "接近",
+          "detail": "距离 2.4%"
+        },
+        {
+          "label": "预警线",
+          "price": 0.0,
+          "description": "MA120连3日跌破→暂停后续加仓",
+          "status": "安全",
+          "detail": "不设价格止损"
+        },
+        {
+          "label": "硬止损",
+          "price": null,
+          "description": "全清",
+          "status": "安全",
+          "detail": "不设价格止损"
+        }
+      ],
+      "target_checks": []
+    },
+    "SH.600036": {
+      "code": "SH.600036",
+      "date": "2026-06-25",
+      "current_price": 36.76,
+      "pe_ttm": 6.06,
+      "currency": "CNY",
+      "has_plan": true,
+      "plan_version": "2",
+      "stock_type": "F",
+      "trigger_type": "🟢",
+      "trigger_reason": "",
+      "signal_count": 0,
+      "signals": [
+        {
+          "name": "MA20斜率转正",
+          "description": "MA20斜率转正",
+          "satisfied": false
+        },
+        {
+          "name": "站上MA60",
+          "description": "站上MA60",
+          "satisfied": false
+        }
+      ],
+      "trend_status": "数据不足（80日 / 需120日）",
+      "trend_changed": "",
+      "auto_action": "",
+      "auto_reason": "",
+      "small_cycle_text": "",
+      "suggested_changes": [],
+      "buy_window": null,
+      "valuation": null,
+      "stop_checks": [],
+      "target_checks": []
+    },
+    "SH.601166": {
+      "code": "SH.601166",
+      "date": "2026-06-25",
+      "current_price": 17.12,
+      "pe_ttm": 4.63,
+      "currency": "CNY",
+      "has_plan": true,
+      "plan_version": "3",
+      "stock_type": "F",
+      "trigger_type": "🟢",
+      "trigger_reason": "",
+      "signal_count": 0,
+      "signals": [
+        {
+          "name": "均线支撑",
+          "description": "价格在均线附近",
+          "satisfied": false
+        },
+        {
+          "name": "阳线放量",
+          "description": "阳线+放量",
+          "satisfied": false
+        },
+        {
+          "name": "不创新低",
+          "description": "连2日不创新低",
+          "satisfied": false
+        },
+        {
+          "name": "ATR收缩",
+          "description": "ATR5<ATR20",
+          "satisfied": false
+        }
+      ],
+      "trend_status": "数据不足（81日 / 需120日）",
+      "trend_changed": "",
+      "auto_action": "",
+      "auto_reason": "",
+      "small_cycle_text": "",
+      "suggested_changes": [],
+      "buy_window": null,
+      "valuation": null,
+      "stop_checks": [],
+      "target_checks": []
+    },
+    "SH.601328": {
+      "code": "SH.601328",
+      "date": "2026-06-25",
+      "current_price": 6.63,
+      "pe_ttm": 6.04,
+      "currency": "CNY",
+      "has_plan": true,
+      "plan_version": "2",
+      "stock_type": "F",
+      "trigger_type": "🟢",
+      "trigger_reason": "",
+      "signal_count": 0,
+      "signals": [
+        {
+          "name": "均线支撑",
+          "description": "价格在均线附近",
+          "satisfied": false
+        },
+        {
+          "name": "阳线放量",
+          "description": "阳线+放量",
+          "satisfied": false
+        },
+        {
+          "name": "不创新低",
+          "description": "连2日不创新低",
+          "satisfied": false
+        },
+        {
+          "name": "ATR收缩",
+          "description": "ATR5<ATR20",
+          "satisfied": false
+        }
+      ],
+      "trend_status": "数据不足（81日 / 需120日）",
+      "trend_changed": "",
+      "auto_action": "",
+      "auto_reason": "",
+      "small_cycle_text": "",
+      "suggested_changes": [],
+      "buy_window": null,
+      "valuation": null,
+      "stop_checks": [],
+      "target_checks": []
+    },
+    "SZ.300393": {
+      "code": "SZ.300393",
+      "date": "2026-06-25",
+      "current_price": 7.61,
+      "pe_ttm": null,
+      "currency": "CNY",
+      "has_plan": true,
+      "plan_version": "2",
+      "stock_type": "",
+      "trigger_type": "🟢",
+      "trigger_reason": "",
+      "signal_count": 0,
+      "signals": [
+        {
+          "name": "均线支撑",
+          "description": "价格在均线附近",
+          "satisfied": false
+        },
+        {
+          "name": "阳线放量",
+          "description": "阳线+放量",
+          "satisfied": false
+        },
+        {
+          "name": "不创新低",
+          "description": "连2日不创新低",
+          "satisfied": false
+        },
+        {
+          "name": "ATR收缩",
+          "description": "ATR5<ATR20",
+          "satisfied": false
+        }
+      ],
+      "trend_status": "数据不足（81日 / 需120日）",
+      "trend_changed": "",
+      "auto_action": "",
+      "auto_reason": "",
+      "small_cycle_text": "",
+      "suggested_changes": [],
+      "buy_window": null,
+      "valuation": null,
+      "stop_checks": [
+        {
+          "label": "硬止损",
+          "price": 6.37,
+          "description": "无条件清仓。最多再亏¥1.3万。",
+          "status": "安全",
+          "detail": "距离 19.5%"
+        }
+      ],
+      "target_checks": []
+    },
+    "SH.562500": {
+      "code": "SH.562500",
+      "date": "2026-06-25",
+      "current_price": 1.15,
+      "pe_ttm": null,
+      "currency": "CNY",
+      "has_plan": true,
+      "plan_version": "5",
+      "stock_type": "",
+      "trigger_type": "🟡",
+      "trigger_reason": "预警线接近: 距离 6.5%",
+      "signal_count": 0,
+      "signals": [
+        {
+          "name": "均线支撑",
+          "description": "价格在均线附近",
+          "satisfied": false
+        },
+        {
+          "name": "阳线放量",
+          "description": "阳线+放量",
+          "satisfied": false
+        },
+        {
+          "name": "不创新低",
+          "description": "连2日不创新低",
+          "satisfied": false
+        },
+        {
+          "name": "ATR收缩",
+          "description": "ATR5<ATR20",
+          "satisfied": false
+        }
+      ],
+      "trend_status": "数据不足（80日 / 需120日）",
+      "trend_changed": "",
+      "auto_action": "",
+      "auto_reason": "",
+      "small_cycle_text": "",
+      "suggested_changes": [],
+      "buy_window": null,
+      "valuation": null,
+      "stop_checks": [
+        {
+          "label": "预警线",
+          "price": 1.021,
+          "description": "波段减半",
+          "status": "安全",
+          "detail": "距离 12.6%"
+        },
+        {
+          "label": "硬止损",
+          "price": null,
+          "description": "波段全清，底仓重评",
+          "status": "安全",
+          "detail": "不设价格止损"
+        },
+        {
+          "label": "硬止损",
+          "price": null,
+          "description": "波段价格止损5-8%（从入场价算）",
+          "status": "安全",
+          "detail": "不设价格止损"
+        },
+        {
+          "label": "预警线",
+          "price": 1.08,
+          "description": "接近 MA200",
+          "status": "接近",
+          "detail": "距离 6.5%"
+        }
+      ],
+      "target_checks": []
+    },
+    "SH.512010": {
+      "code": "SH.512010",
+      "date": "2026-06-25",
+      "current_price": 0.34,
+      "pe_ttm": null,
+      "currency": "CNY",
+      "has_plan": true,
+      "plan_version": "5",
+      "stock_type": "B",
+      "trigger_type": "🟢",
+      "trigger_reason": "",
+      "signal_count": 1,
+      "signals": [
+        {
+          "name": "站上MA20",
+          "description": "站上MA20",
+          "satisfied": true
+        }
+      ],
+      "trend_status": "数据不足（80日 / 需120日）",
+      "trend_changed": "",
+      "auto_action": "",
+      "auto_reason": "",
+      "small_cycle_text": "",
+      "suggested_changes": [],
+      "buy_window": null,
+      "valuation": null,
+      "stop_checks": [],
+      "target_checks": []
+    },
+    "SH.513100": {
+      "code": "SH.513100",
+      "date": "2026-06-25",
+      "current_price": 2.19,
+      "pe_ttm": null,
+      "currency": "CNY",
+      "has_plan": true,
+      "plan_version": "2",
+      "stock_type": "B",
+      "trigger_type": "🟢",
+      "trigger_reason": "",
+      "signal_count": 0,
+      "signals": [
+        {
+          "name": "均线支撑",
+          "description": "价格在均线附近",
+          "satisfied": false
+        },
+        {
+          "name": "阳线放量",
+          "description": "阳线+放量",
+          "satisfied": false
+        },
+        {
+          "name": "不创新低",
+          "description": "连2日不创新低",
+          "satisfied": false
+        },
+        {
+          "name": "ATR收缩",
+          "description": "ATR5<ATR20",
+          "satisfied": false
+        }
+      ],
+      "trend_status": "数据不足（79日 / 需120日）",
+      "trend_changed": "",
+      "auto_action": "",
+      "auto_reason": "",
+      "small_cycle_text": "",
+      "suggested_changes": [],
+      "buy_window": null,
+      "valuation": null,
+      "stop_checks": [],
+      "target_checks": []
+    },
+    "SZ.300442": {
+      "code": "SZ.300442",
+      "date": "2026-06-25",
+      "current_price": 85.6,
+      "pe_ttm": 26.37,
+      "currency": "CNY",
+      "has_plan": true,
+      "plan_version": "2",
+      "stock_type": "",
+      "trigger_type": "🔴判断",
+      "trigger_reason": "止损触发: MA200 已跌破",
+      "signal_count": 0,
+      "signals": [
+        {
+          "name": "均线支撑",
+          "description": "价格在均线附近",
+          "satisfied": false
+        },
+        {
+          "name": "阳线放量",
+          "description": "阳线+放量",
+          "satisfied": false
+        },
+        {
+          "name": "不创新低",
+          "description": "连2日不创新低",
+          "satisfied": false
+        },
+        {
+          "name": "ATR收缩",
+          "description": "ATR5<ATR20",
+          "satisfied": false
+        }
+      ],
+      "trend_status": "数据不足（71日 / 需120日）",
+      "trend_changed": "",
+      "auto_action": "",
+      "auto_reason": "",
+      "small_cycle_text": "",
+      "suggested_changes": [],
+      "buy_window": null,
+      "valuation": null,
+      "stop_checks": [
+        {
+          "label": "预警线",
+          "price": 68.0,
+          "description": "减至150股",
+          "status": "安全",
+          "detail": "距离 25.9%"
+        },
+        {
+          "label": "硬止损",
+          "price": 56.39,
+          "description": "清仓",
+          "status": "安全",
+          "detail": "距离 51.8%"
+        },
+        {
+          "label": "硬止损",
+          "price": 87.7,
+          "description": "MA200 已跌破",
+          "status": "触发",
+          "detail": "当前 85.60"
+        }
+      ],
+      "target_checks": []
+    },
     "US.CRCL": {
       "code": "US.CRCL",
-      "date": "2026-06-23",
-      "current_price": 77.03,
-      "pe_ttm": -268.41,
+      "date": "2026-06-25",
+      "current_price": 70.98,
+      "pe_ttm": -244.09,
       "currency": "USD",
       "has_plan": true,
       "plan_version": "2",
@@ -981,7 +949,7 @@
           "price": 3.0,
           "description": "减50%",
           "status": "安全",
-          "detail": "距离 2467.7%"
+          "detail": "距离 2266.0%"
         },
         {
           "label": "硬止损",
@@ -995,15 +963,15 @@
     },
     "US.LITE": {
       "code": "US.LITE",
-      "date": "2026-06-23",
-      "current_price": 843.61,
-      "pe_ttm": 2280.03,
+      "date": "2026-06-25",
+      "current_price": 842.53,
+      "pe_ttm": 2291.86,
       "currency": "USD",
       "has_plan": true,
       "plan_version": "4",
       "stock_type": "B",
       "trigger_type": "🟡",
-      "trigger_reason": "预警线接近: 距离 1.0%",
+      "trigger_reason": "预警线接近: 距离 0.9%",
       "signal_count": 2,
       "signals": [
         {
@@ -1038,23 +1006,23 @@
           "price": 835.0,
           "description": "预警",
           "status": "接近",
-          "detail": "距离 1.0%"
+          "detail": "距离 0.9%"
         },
         {
           "label": "硬止损",
           "price": 680.0,
           "description": "硬止损",
           "status": "安全",
-          "detail": "距离 24.1%"
+          "detail": "距离 23.9%"
         }
       ],
       "target_checks": []
     },
     "US.META": {
       "code": "US.META",
-      "date": "2026-06-23",
-      "current_price": 568.62,
-      "pe_ttm": 24.21,
+      "date": "2026-06-25",
+      "current_price": 557.67,
+      "pe_ttm": 23.48,
       "currency": "USD",
       "has_plan": true,
       "plan_version": "5",
@@ -1084,7 +1052,7 @@
           "satisfied": false
         }
       ],
-      "trend_status": "向下反转",
+      "trend_status": "即将走弱",
       "trend_changed": "",
       "auto_action": "",
       "auto_reason": "",
@@ -1126,9 +1094,9 @@
     },
     "US.MSFT": {
       "code": "US.MSFT",
-      "date": "2026-06-23",
-      "current_price": 376.95,
-      "pe_ttm": 27.64,
+      "date": "2026-06-25",
+      "current_price": 365.46,
+      "pe_ttm": 25.97,
       "currency": "USD",
       "has_plan": true,
       "plan_version": "4",
@@ -1193,9 +1161,9 @@
     },
     "US.NVDA": {
       "code": "US.NVDA",
-      "date": "2026-06-23",
-      "current_price": 202.97,
-      "pe_ttm": 41.42,
+      "date": "2026-06-25",
+      "current_price": 199.0,
+      "pe_ttm": 39.97,
       "currency": "USD",
       "has_plan": true,
       "plan_version": "6",
@@ -1267,83 +1235,86 @@
     },
     "US.PLTR": {
       "code": "US.PLTR",
-      "date": "2026-06-23",
-      "current_price": 119.25,
-      "pe_ttm": 189.28,
+      "date": "2026-06-25",
+      "current_price": 113.5,
+      "pe_ttm": 169.18,
       "currency": "USD",
       "has_plan": true,
-      "plan_version": "4",
+      "plan_version": "6",
       "stock_type": "B",
-      "trigger_type": "🟡",
-      "trigger_reason": "预警线接近: 距离 2.6%; 硬止损接近: 距离 2.6%",
-      "signal_count": 1,
+      "trigger_type": "🔴机械",
+      "trigger_reason": "估值锚失效",
+      "signal_count": 0,
       "signals": [
         {
-          "name": "缩量",
-          "description": "缩量",
-          "satisfied": true
-        },
-        {
-          "name": "阳线",
-          "description": "阳线",
+          "name": "均线支撑",
+          "description": "价格在均线附近",
           "satisfied": false
         },
         {
-          "name": "锤子线",
-          "description": "锤子线",
+          "name": "阳线放量",
+          "description": "阳线+放量",
+          "satisfied": false
+        },
+        {
+          "name": "不创新低",
+          "description": "连2日不创新低",
+          "satisfied": false
+        },
+        {
+          "name": "ATR收缩",
+          "description": "ATR5<ATR20",
           "satisfied": false
         }
       ],
       "trend_status": "向下反转",
       "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
+      "auto_action": "无需调整",
+      "auto_reason": "机械型触发但参数无实质变化",
       "small_cycle_text": "",
       "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
+      "buy_window": {
+        "low": 100.0,
+        "high": 95.0,
+        "in_window": false,
+        "distance_pct": 16.3
+      },
+      "valuation": {
+        "peg": 1.5,
+        "fwd_pe": 52.0,
+        "sp_fwd_pe": null,
+        "peg_ok": false,
+        "fwd_pe_ok": null,
+        "anchor_valid": false
+      },
       "stop_checks": [
         {
-          "label": "预警线",
-          "price": 116.25,
-          "description": "$116.25硬止损（-7%）。入场后触发。",
-          "status": "接近",
-          "detail": "距离 2.6%"
-        },
-        {
-          "label": "预警线",
-          "price": 0.0,
-          "description": "60股太少减无可减，持有不动。但 MA60/200 已死叉——这是「太少不减」不是「趋势没问题」。",
-          "status": "安全",
-          "detail": "不设价格止损"
-        },
-        {
           "label": "硬止损",
-          "price": 116.25,
-          "description": "底仓+波段全清。$122.68 破了 = 三窗口连续 LL，趋势加速下跌确认。",
-          "status": "接近",
-          "detail": "距离 2.6%"
+          "price": 95.0,
+          "description": "硬止损（ 下方 5%）。入场即挂止损单。破了  整数关 = 趋势确认继续向下，不扛。",
+          "status": "安全",
+          "detail": "距离 19.5%"
         }
       ],
       "target_checks": []
     },
     "US.SOFI": {
       "code": "US.SOFI",
-      "date": "2026-06-23",
-      "current_price": 17.57,
-      "pe_ttm": 45.04,
+      "date": "2026-06-25",
+      "current_price": 17.31,
+      "pe_ttm": 44.42,
       "currency": "USD",
       "has_plan": true,
       "plan_version": "4.2",
       "stock_type": "B",
-      "trigger_type": "🟡",
-      "trigger_reason": "距 MA60（16.77）仅 4.8%; 预警线接近: 距离 4.8%",
-      "signal_count": 1,
+      "trigger_type": "🔴机械",
+      "trigger_reason": "价格跌破窗口下沿 14.0%",
+      "signal_count": 0,
       "signals": [
         {
           "name": "缩量",
           "description": "缩量",
-          "satisfied": true
+          "satisfied": false
         },
         {
           "name": "MA60斜率转正",
@@ -1353,11 +1324,16 @@
       ],
       "trend_status": "向下反转",
       "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
+      "auto_action": "无需调整",
+      "auto_reason": "机械型触发但参数无实质变化",
       "small_cycle_text": "",
       "suggested_changes": [],
-      "buy_window": null,
+      "buy_window": {
+        "low": 20.13,
+        "high": 16.91,
+        "in_window": false,
+        "distance_pct": 16.3
+      },
       "valuation": {
         "peg": 0.61,
         "fwd_pe": 22.6,
@@ -1372,7 +1348,7 @@
           "price": 16.77,
           "description": "减至1,000股(~5%)",
           "status": "接近",
-          "detail": "距离 4.8%"
+          "detail": "距离 3.2%"
         },
         {
           "label": "硬止损",
@@ -1386,9 +1362,9 @@
     },
     "US.TSLA": {
       "code": "US.TSLA",
-      "date": "2026-06-23",
-      "current_price": 388.7,
-      "pe_ttm": 359.87,
+      "date": "2026-06-25",
+      "current_price": 375.53,
+      "pe_ttm": 347.5,
       "currency": "USD",
       "has_plan": true,
       "plan_version": "5",
@@ -1421,7 +1397,7 @@
         {
           "tier": "第1档",
           "price_text": "$440-$450",
-          "distance": "距当前 +13%",
+          "distance": "距当前 +17%",
           "action": "提前$440+卖 |",
           "triggered": false
         }
@@ -1429,9 +1405,9 @@
     },
     "US.SE": {
       "code": "US.SE",
-      "date": "2026-06-23",
-      "current_price": 89.32,
-      "pe_ttm": 35.44,
+      "date": "2026-06-25",
+      "current_price": 92.75,
+      "pe_ttm": 35.82,
       "currency": "USD",
       "has_plan": true,
       "plan_version": "3",
@@ -1469,15 +1445,15 @@
     },
     "US.AVGO": {
       "code": "US.AVGO",
-      "date": "2026-06-23",
-      "current_price": 385.76,
-      "pe_ttm": 80.87,
+      "date": "2026-06-25",
+      "current_price": 382.07,
+      "pe_ttm": 79.95,
       "currency": "USD",
       "has_plan": true,
-      "plan_version": "6",
+      "plan_version": "7",
       "stock_type": "A",
-      "trigger_type": "🟢",
-      "trigger_reason": "",
+      "trigger_type": "🟡",
+      "trigger_reason": "波段预警线接近: 距离 6.1%",
       "signal_count": 2,
       "signals": [
         {
@@ -1520,14 +1496,7 @@
         {
           "label": "预警线",
           "price": null,
-          "description": "被动降至20%",
-          "status": "安全",
-          "detail": "不设价格止损"
-        },
-        {
-          "label": "预警线",
-          "price": null,
-          "description": "减1/3",
+          "description": "降至20%",
           "status": "安全",
           "detail": "不设价格止损"
         },
@@ -1537,15 +1506,22 @@
           "description": "全清",
           "status": "安全",
           "detail": "不设价格止损"
+        },
+        {
+          "label": "波段预警线",
+          "price": 360.0,
+          "description": "**$360 到了就卖**（不等到收盘）。选位逻辑：ATR（$345）/ 结构（$370）/ 均线（$363）三角度独立",
+          "status": "接近",
+          "detail": "距离 6.1%"
         }
       ],
       "target_checks": []
     },
     "US.COHR": {
       "code": "US.COHR",
-      "date": "2026-06-23",
-      "current_price": 393.32,
-      "pe_ttm": -756.38,
+      "date": "2026-06-25",
+      "current_price": 392.5,
+      "pe_ttm": -760.21,
       "currency": "USD",
       "has_plan": true,
       "plan_version": "6",
@@ -1586,23 +1562,23 @@
           "price": 329.0,
           "description": "减至3股",
           "status": "安全",
-          "detail": "距离 19.6%"
+          "detail": "距离 19.3%"
         },
         {
           "label": "硬止损",
           "price": 329.0,
           "description": "清仓",
           "status": "安全",
-          "detail": "距离 19.6%"
+          "detail": "距离 19.3%"
         }
       ],
       "target_checks": []
     },
     "US.AXTI": {
       "code": "US.AXTI",
-      "date": "2026-06-23",
-      "current_price": 83.5,
-      "pe_ttm": -170.41,
+      "date": "2026-06-25",
+      "current_price": 70.14,
+      "pe_ttm": -138.47,
       "currency": "USD",
       "has_plan": true,
       "plan_version": "5",
@@ -1646,23 +1622,23 @@
           "price": 62.0,
           "description": "减至60股",
           "status": "安全",
-          "detail": "距离 34.7%"
+          "detail": "距离 13.1%"
         },
         {
           "label": "硬止损",
           "price": 55.0,
           "description": "全清",
           "status": "安全",
-          "detail": "距离 51.8%"
+          "detail": "距离 27.5%"
         }
       ],
       "target_checks": []
     },
     "US.SPCX": {
       "code": "US.SPCX",
-      "date": "2026-06-23",
-      "current_price": 157.62,
-      "pe_ttm": -417.13,
+      "date": "2026-06-25",
+      "current_price": 154.54,
+      "pe_ttm": -405.62,
       "currency": "USD",
       "has_plan": false,
       "plan_version": "?",
@@ -1684,8 +1660,8 @@
     },
     "US.RKLX": {
       "code": "US.RKLX",
-      "date": "2026-06-23",
-      "current_price": 43.68,
+      "date": "2026-06-25",
+      "current_price": 32.47,
       "pe_ttm": null,
       "currency": "USD",
       "has_plan": false,
