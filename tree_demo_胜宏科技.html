@@ -5,169 +5,150 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>胜宏科技 · 交易树</title>
 <style>
+/* ── 千年隼 design tokens ── */
+:root {
+  --bg: #f8fafc; --card-bg: #fff;
+  --border: #e2e8f0; --border-light: #e2e8f0;
+  --accent-blue: #2563eb; --accent-red: #dc2626; --accent-green: #16a34a;
+  --text: #1e293b; --text-body: #64748b; --text-muted: #94a3b8;
+  --tag-red-bg: #fef2f2; --tag-green-bg: #f0fdf4; --tag-blue-bg: #eff6ff;
+}
 *{margin:0;padding:0;box-sizing:border-box}
 body{
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  background:#f8fafc;color:#1e293b;padding:32px 16px;
+  background:var(--bg);color:var(--text);padding:32px 16px;
   max-width:640px;margin:0 auto;
 }
-h1{font-size:18px}
-.sub{font-size:12px;color:#94a3b8;margin:2px 0 20px}
+h1{font-size:18px;font-weight:600;margin-bottom:2px}
+.sub{font-size:12px;color:var(--text-muted);margin-bottom:20px}
 
-/* 状态条 */
+/* 状态条 — 复用千年隼 tag 色系 */
 .bar{
-  display:flex;align-items:center;gap:8px;padding:10px 14px;
-  border-radius:6px;font-size:13px;margin-bottom:20px;
-  border:1px solid #fcd34d;background:#fffbeb;
+  display:flex;align-items:center;gap:8px;
+  padding:8px 14px;border-radius:6px;
+  font-size:13px;margin-bottom:20px;
+  background:var(--tag-blue-bg);border:1px solid #bfdbfe;
 }
-.bar-dot{width:8px;height:8px;border-radius:50%;background:#f59e0b}
-.bar-price{margin-left:auto;font-size:12px;color:#92400e}
+.bar-dot{width:8px;height:8px;border-radius:50%;background:var(--accent-blue);animation:pulse-dot 2s infinite}
+@keyframes pulse-dot{0%,100%{opacity:1}50%{opacity:.4}}
+.bar-price{margin-left:auto;font-size:12px;color:var(--accent-blue)}
 
-/* 树容器 */
-.tree{
-  background:#fff;border:1px solid #e2e8f0;border-radius:8px;
-  padding:20px 16px 16px;font-size:13px;line-height:1.7;
-}
-
-/* ── CSS 分支线核心 ── */
-.tree ul{
-  list-style:none;
-  padding-left:24px;
-  border-left:1px solid #d1d5db;        /* │ 竖线 */
-  margin-left:6px;
-}
-.tree li{
-  position:relative;
-  padding:3px 0 3px 10px;
-}
-.tree li::before{                         /* ├── 横线 */
-  content:"";
-  position:absolute;left:0;top:12px;
-  width:10px;height:0;
-  border-top:1px solid #d1d5db;
-}
-.tree li:last-child::after{               /* 最后一项截断竖线 */
-  content:"";
-  position:absolute;left:-25px;top:12px;bottom:-6px;
-  width:2px;background:#fff;
+/* 卡片 — 和 .plan-card 一模一样 */
+.card{
+  background:var(--card-bg);
+  border:1px solid var(--border);
+  border-left:4px solid var(--accent-blue);
+  border-radius:0 8px 8px 0;
+  padding:20px 18px;margin-bottom:20px;
 }
 
-/* 节点类型 */
-.node{
-  display:inline-flex;align-items:center;gap:6px;
-  padding:4px 10px;border-radius:4px;
-  font-size:13px;white-space:nowrap;
-}
-.node-root{border:1px solid #fcd34d;background:#fffbeb;font-weight:500}
-.node-a{border:1px solid #fecaca;background:#fef2f2}
-.node-b{border:1px solid #bbf7d0;background:#f0fdf4}
-.node-neutral{border:1px solid #e2e8f0;background:#f8fafc}
+/* ── 树线 ── */
+.tree{font-size:13px;line-height:2}
+.tree ul{list-style:none;padding-left:22px;border-left:1px solid #cbd5e1;margin-left:8px}
+.tree li{position:relative;padding:2px 0 2px 12px}
+.tree li::before{content:"";position:absolute;left:0;top:13px;width:12px;border-top:1px solid #cbd5e1}
+.tree li:last-child::after{content:"";position:absolute;left:-23px;top:13px;bottom:-4px;width:2px;background:var(--card-bg)}
 
-.node-stem{
-  display:inline-flex;align-items:center;gap:6px;
-  padding:2px 8px;font-size:12px;
-}
+/* 节点底色 — 复用 .mkt-tag 色系 */
+.node{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:4px;font-size:13px}
+.node-root{border:1px solid #bfdbfe;background:var(--tag-blue-bg)}
+.node-a{border:1px solid #fecaca;background:var(--tag-red-bg)}
+.node-b{border:1px solid #bbf7d0;background:var(--tag-green-bg)}
+.node-neutral{border:1px solid var(--border);color:var(--text-body)}
 
-/* 标签 */
-.tag{font-size:10px;padding:1px 5px;border-radius:3px;font-weight:500}
-.tag-a{background:#fee2e2;color:#991b1b}
-.tag-b{background:#dcfce7;color:#166534}
-.tag-mid{background:#f1f5f9;color:#64748b}
-.tag-cond{font-size:11px;color:#94a3b8}
+/* 信息行 */
+.info{font-size:12px;color:var(--text-body);padding-left:16px;line-height:1.8}
+.info strong{color:var(--text)}
+.info .rr{color:var(--accent-green);font-weight:500}
+.info .stop{color:var(--accent-red);font-weight:500}
+.info .muted{color:var(--text-muted);font-size:11px}
 
-/* 数据行 */
-.data-row{font-size:12px;color:#64748b;padding-left:14px}
-.data-row strong{color:#1e293b}
-.data-row .rr{color:#22c55e;font-weight:500}
-.data-row .stop{color:#ef4444;font-weight:500}
+/* section 标签 */
+.sec-label{font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
 
-/* Q2 止损 */
-.stop-box{
-  margin:16px 0 0;padding:10px 12px;
-  background:#fef2f2;border:1px solid #fecaca;border-radius:6px;
-  font-size:11px;line-height:1.8;
-}
-.stop-box b{color:#991b1b}
+/* 信号检查 */
+.checks{font-size:11px;color:var(--text-muted);padding-left:16px;line-height:2}
+.checks .fail{color:#cbd5e1}
+.checks .pass{color:var(--accent-green)}
 
-/* 检查项 */
-.check-row{font-size:11px;padding-left:14px;color:#94a3b8}
-.check-row .pass{color:#22c55e}
-.check-row .fail{color:#cbd5e1}
+/* 止损区 */
+.stop-box{margin-top:16px;padding:12px;border-radius:6px;background:var(--tag-red-bg);border:1px solid #fecaca;font-size:11px;line-height:1.9}
+.stop-box b{color:var(--accent-red)}
 </style>
 </head>
 <body>
 
-<h1>🔬 胜宏科技 · 交易树</h1>
-<div class="sub">SZ.300476 · B型波段 · ¥300,000 预算 · 现价 ¥319.55 (6/26)</div>
+<h1>胜宏科技 · 交易树</h1>
+<div class="sub">SZ.300476 · B型波段 · ¥300,000 预算 · 现价 ¥319.55（6/26）</div>
 
 <div class="bar">
   <div class="bar-dot"></div>
-  ⏳ 盯盘中 — 等 ¥310 触发观察仓
-  <span class="bar-price">距触发 -3.0%</span>
+  ⏳ 盯盘中 — 等待 ¥310 触发观察仓
+  <span class="bar-price">距 ¥310 还差 ¥9.55（3.0%）</span>
 </div>
 
-<div class="tree">
+<div class="card">
+  <div class="sec-label">决策树</div>
 
-  <!-- 根 -->
-  <span class="node node-root">● ① ¥310 · 200股 · 观察仓</span>
-  <span class="tag-cond"> 跌到即买，无条件</span>
+  <div class="tree">
 
-  <ul>
-    <!-- ===== 路径 A ===== -->
-    <li>
-      <span class="node node-a">📉 路径A · 箱体交易（继续跌）</span>
-      <ul>
-        <li>
-          <span>② ¥292 · 300股 · ¥87,600</span>
-        </li>
-        <li>
-          <span>③ ¥250 · 500股 · ¥125,000</span>
-          <div class="data-row">
-            均价 <strong>¥274.6</strong> · 1,000股 · <strong>¥274,600</strong><br>
-            T1 <strong>¥350</strong>(+27%) · T2 <strong>¥390</strong>(+42%)<br>
-            <span class="stop">止损 ¥235</span> · <span class="rr">R:R 1.90</span>
-          </div>
-        </li>
-      </ul>
-    </li>
+    <!-- 根 -->
+    <span class="node node-root">● ① ¥310 · 200 股 · 观察仓</span>
+    <span class="muted" style="font-size:11px"> 跌到即买 · 无条件</span>
 
-    <!-- ===== 路径 B ===== -->
-    <li>
-      <span class="node node-b">📈 路径B · 趋势跟踪（止跌反转）</span>
-      <ul>
-        <li>
-          <span>🔍 止跌四信号检查</span>
-          <div class="check-row">
-            <span class="fail">① 长下影/阳包阴</span> &nbsp;
-            <span class="fail">② 放量 >20日均量×1.3</span><br>
-            <span class="fail">③ KDJ金叉</span> &nbsp;
-            <span class="fail">④ PCB板块≥2只收红</span><br>
-            0/4 — 缺一不追
-          </div>
-          <ul>
-            <li>
-              <span class="node node-b">4/4 ✓ → ② ~¥328 · 700股 · ¥229,600</span>
-              <div class="data-row">
-                均价 <strong>¥324.0</strong> · 900股 · <strong>¥291,600</strong><br>
-                T1 <strong>¥375</strong>(+16%) · T2 <strong>¥400</strong>(+23%)<br>
-                <span class="stop">止损 ¥300</span> · <span class="rr">R:R 2.13</span>
-              </div>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <span class="node node-neutral">‍ &lt;4/4 → 中间态：只持200股，不追</span>
-        </li>
-      </ul>
-    </li>
-  </ul>
+    <ul>
+      <!-- ===== 路径 A ===== -->
+      <li>
+        <span class="node node-a">📉 路径A · 箱体交易 · 继续跌</span>
+        <ul>
+          <li><span>② ¥292 · 300 股 · ¥87,600</span></li>
+          <li>
+            <span>③ ¥250 · 500 股 · ¥125,000</span>
+            <div class="info">
+              均价 <strong>¥274.6</strong> · 1,000 股 · ¥274,600<br>
+              T1 <strong>¥350</strong>（+27%）&nbsp; T2 <strong>¥390</strong>（+42%）<br>
+              <span class="stop">止损 ¥235</span> &nbsp; <span class="rr">R:R 1.90</span>
+            </div>
+          </li>
+        </ul>
+      </li>
 
-  <!-- Q2 提前止损 -->
-  <div class="stop-box">
-    <b>🛑 Q2 财报提前止损</b>（任一触发即卖，不等 ¥235/300）<br>
-    🔴 Q2营收 &lt; ¥55亿 &nbsp; 🔴 毛利率 &lt; 32% &nbsp; 🔴 净利 &lt; ¥15亿 &nbsp; 🟡 英伟达增速 &lt; 20%
+      <!-- ===== 路径 B ===== -->
+      <li>
+        <span class="node node-b">📈 路径B · 趋势跟踪 · 止跌反转</span>
+        <ul>
+          <li>
+            <span>🔍 止跌四信号</span>
+            <div class="checks">
+              <span class="fail">① 长下影 / 阳包阴</span> &nbsp;
+              <span class="fail">② 放量 &gt; 20日均量 ×1.3</span><br>
+              <span class="fail">③ KDJ 金叉</span> &nbsp;
+              <span class="fail">④ PCB 板块 ≥2只收红</span><br>
+              0/4 — 缺一不追
+            </div>
+            <ul>
+              <li>
+                <span class="node node-b">4/4 ✓ → ② ~¥328 · 700 股 · ¥229,600</span>
+                <div class="info">
+                  均价 <strong>¥324.0</strong> · 900 股 · ¥291,600<br>
+                  T1 <strong>¥375</strong>（+16%）&nbsp; T2 <strong>¥400</strong>（+23%）<br>
+                  <span class="stop">止损 ¥300</span> &nbsp; <span class="rr">R:R 2.13</span>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li><span class="node node-neutral">&lt;4/4 → 中间态：只持 200 股，不追不加</span></li>
+        </ul>
+      </li>
+    </ul>
+
   </div>
 
+  <div class="stop-box">
+    <b>🛑 Q2 财报提前止损</b>（任一触发即卖，不等 ¥235 / ¥300）<br>
+    🔴 营收 &lt; ¥55亿 &nbsp; 🔴 毛利率 &lt; 32% &nbsp; 🔴 净利 &lt; ¥15亿 &nbsp; 🟡 英伟达增速 &lt; 20%
+  </div>
 </div>
+
 </body>
 </html>
