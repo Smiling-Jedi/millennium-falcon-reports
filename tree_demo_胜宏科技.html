@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>胜宏科技 · 交易树</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f8fafc; color: #1e293b; padding: 24px;
+    max-width: 720px; margin: 0 auto;
+}
+h1 { font-size: 20px; margin-bottom: 4px; }
+.sub { font-size: 12px; color: #94a3b8; margin-bottom: 24px; }
+
+/* ── 状态条 ── */
+.state-bar {
+    display: flex; align-items: center; gap: 10px;
+    background: #fff; border: 1px solid #e2e8f0; border-radius: 8px;
+    padding: 12px 16px; margin-bottom: 20px;
+}
+.state-dot { width: 10px; height: 10px; border-radius: 50%; }
+.state-dot.watch { background: #f59e0b; animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100% { opacity:1 } 50% { opacity:.4 } }
+.state-dot.done { background: #22c55e; }
+.state-dot.wait { background: #cbd5e1; }
+.state-dot.stop { background: #ef4444; }
+.state-text { font-size: 14px; font-weight: 500; }
+.state-price { font-size: 12px; color: #64748b; margin-left: auto; }
+
+/* ── 树主体 ── */
+.tree {
+    background: #fff; border: 1px solid #e2e8f0; border-radius: 8px;
+    padding: 20px 16px;
+}
+/* 根节点 */
+.tree-root {
+    display: flex; align-items: center; gap: 4px;
+    padding: 10px 14px; border-radius: 6px;
+    background: #fffbeb; border: 1px solid #fcd34d;
+    font-size: 14px; font-weight: 500; margin-bottom: 2px;
+}
+.root-cond { font-size: 11px; color: #92400e; margin-left: auto; }
+
+/* 分叉 */
+.tree-fork {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 12px; margin-top: 12px;
+}
+.tree-branch {
+    border-radius: 6px; padding: 12px;
+    font-size: 13px; border: 1px solid #e2e8f0;
+}
+.branch-a { background: #fef2f2; border-left: 3px solid #ef4444; }
+.branch-b { background: #f0fdf4; border-left: 3px solid #22c55e; }
+.branch-mid { background: #f8fafc; border-left: 3px solid #94a3b8; }
+.branch-label {
+    font-size: 12px; font-weight: 600; margin-bottom: 8px;
+    display: flex; align-items: center; gap: 6px;
+}
+
+/* 节点列表 */
+.node-list { list-style: none; }
+.node-list li {
+    display: flex; align-items: center; gap: 8px;
+    padding: 5px 0; font-size: 13px;
+}
+.node-num {
+    width: 18px; height: 18px; border-radius: 50%;
+    background: #e2e8f0; color: #64748b;
+    font-size: 10px; font-weight: 600;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+}
+.node-num.active { background: #f59e0b; color: #fff; }
+.node-price { font-weight: 500; color: #1e293b; min-width: 42px; }
+.node-shares { color: #64748b; font-size: 12px; }
+.node-cond { font-size: 11px; color: #94a3b8; margin-left: auto; }
+
+/* 底线 */
+.tree-footer {
+    margin-top: 16px; padding-top: 12px;
+    border-top: 1px solid #e2e8f0;
+    display: flex; flex-wrap: wrap; gap: 12px;
+    font-size: 12px;
+}
+.footer-item { color: #64748b; }
+.footer-item strong { color: #1e293b; }
+.footer-item.stop { color: #ef4444; font-weight: 500; }
+
+/* 四信号 checklist */
+.check-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 6px; margin-top: 8px;
+}
+.check-item {
+    font-size: 11px; padding: 3px 6px;
+    border-radius: 4px; background: #f1f5f9;
+    display: flex; align-items: center; gap: 4px;
+}
+.check-item.pass { background: #dcfce7; color: #166534; }
+.check-item.fail { color: #94a3b8; }
+
+/* Q2 提前止损区 */
+.stop-early {
+    margin-top: 12px; padding: 10px 12px;
+    background: #fef2f2; border-radius: 6px;
+    border: 1px solid #fecaca; font-size: 12px;
+}
+.stop-early-title { font-weight: 600; color: #991b1b; margin-bottom: 6px; }
+.stop-early-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 4px;
+}
+.stop-cond { color: #b91c1c; font-size: 11px; }
+</style>
+</head>
+<body>
+
+<h1>🔬 胜宏科技 · 交易树</h1>
+<div class="sub">SZ.300476 · B型波段 · 总预算 ¥300,000 · 数据截止 2026-06-26</div>
+
+<!-- 当前状态条 -->
+<div class="state-bar">
+    <div class="state-dot watch"></div>
+    <span class="state-text">⏳ 盯盘中 — 等 ¥310 触发观察仓</span>
+    <span class="state-price">现价 ¥319.55 距触发 -3.0%</span>
+</div>
+
+<!-- 交易树 -->
+<div class="tree">
+
+    <!-- 根节点 -->
+    <div class="tree-root">
+        ● <strong>¥310</strong>&nbsp;200 股&nbsp;·&nbsp;¥62,000
+        <span class="root-cond">观察仓 · 跌到即买</span>
+    </div>
+
+    <!-- 分叉 -->
+    <div class="tree-fork">
+
+        <!-- 路径 A: 继续跌 -->
+        <div class="tree-branch branch-a">
+            <div class="branch-label">📉 路径 A · 箱体交易</div>
+            <ul class="node-list">
+                <li>
+                    <div class="node-num">②</div>
+                    <span class="node-price">¥292</span>
+                    <span class="node-shares">300 股 · ¥87,600</span>
+                    <span class="node-cond">继续跌</span>
+                </li>
+                <li>
+                    <div class="node-num">③</div>
+                    <span class="node-price">¥250</span>
+                    <span class="node-shares">500 股 · ¥125,000</span>
+                    <span class="node-cond">箱底</span>
+                </li>
+            </ul>
+            <div class="tree-footer">
+                <div class="footer-item">均价 <strong>¥274.6</strong></div>
+                <div class="footer-item">1,000 股 · <strong>¥274,600</strong></div>
+                <div class="footer-item">T1 <strong>¥350</strong> (+27%)</div>
+                <div class="footer-item">T2 <strong>¥390</strong> (+42%)</div>
+                <div class="footer-item stop">止损 ¥235</div>
+                <div class="footer-item">R:R <strong>1.90</strong> ✅</div>
+            </div>
+        </div>
+
+        <!-- 路径 B: 止跌反转 -->
+        <div class="tree-branch branch-b">
+            <div class="branch-label">📈 路径 B · 趋势跟踪</div>
+            <div class="check-grid">
+                <div class="check-item fail">① 长下影/阳包阴</div>
+                <div class="check-item fail">② 放量 > 20日均量 1.3x</div>
+                <div class="check-item fail">③ KDJ 金叉</div>
+                <div class="check-item fail">④ PCB板块 ≥2只收红</div>
+            </div>
+            <div style="font-size:11px;color:#94a3b8;margin-top:4px;">0/4 — 不满足不追</div>
+            <ul class="node-list" style="margin-top:6px;">
+                <li>
+                    <div class="node-num">②</div>
+                    <span class="node-price">~¥328</span>
+                    <span class="node-shares">700 股 · ¥229,600</span>
+                    <span class="node-cond">四信号齐后次日开盘</span>
+                </li>
+            </ul>
+            <div class="tree-footer">
+                <div class="footer-item">均价 <strong>¥324.0</strong></div>
+                <div class="footer-item">900 股 · <strong>¥291,600</strong></div>
+                <div class="footer-item">T1 <strong>¥375</strong> (+16%)</div>
+                <div class="footer-item">T2 <strong>¥400</strong> (+23%)</div>
+                <div class="footer-item stop">止损 ¥300</div>
+                <div class="footer-item">R:R <strong>2.13</strong> ✅</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 中间态 -->
+    <div style="text-align:center; margin: 10px 0; font-size:12px; color:#94a3b8;">
+        四信号不全 → <span style="color:#64748b;font-weight:500;">中间态</span>：只持 200 股观察仓，不追不加
+    </div>
+
+    <!-- Q2 提前止损 -->
+    <div class="stop-early">
+        <div class="stop-early-title">🛑 Q2 财报提前止损（任一触发即卖，不等 ¥235/300）</div>
+        <div class="stop-early-grid">
+            <div class="stop-cond">🔴 Q2 营收 < ¥55亿</div>
+            <div class="stop-cond">🔴 Q2 毛利率 < 32%</div>
+            <div class="stop-cond">🔴 Q2 净利 < ¥15亿</div>
+            <div class="stop-cond">🟡 英伟达收入增速 < 20%</div>
+        </div>
+    </div>
+
+</div>
+
+<p style="font-size:11px;color:#cbd5e1;text-align:center;margin-top:20px;">
+四技能联合分析：白毛女 · Anna · 欧比旺 · Master &nbsp;|&nbsp; 2026-06-27
+</p>
+
+</body>
+</html>
