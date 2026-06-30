@@ -1,6 +1,6 @@
 {
   "date": "2026-06-30",
-  "updated": "22:59",
+  "updated": "23:30",
   "stocks": {
     "US.CRCL": {
       "code": "US.CRCL",
@@ -238,7 +238,7 @@
       "code": "US.MSFT",
       "date": "2026-06-30",
       "current_price": 368.57,
-      "pe_ttm": 27.1,
+      "pe_ttm": 22.01,
       "currency": "USD",
       "has_plan": true,
       "plan_version": "4",
@@ -249,22 +249,22 @@
       "signals": [
         {
           "name": "均线支撑",
-          "description": "均线支撑",
+          "description": "价格在均线附近",
           "satisfied": true
         },
         {
           "name": "阳线放量",
-          "description": "阳线放量",
+          "description": "非阳线",
           "satisfied": false
         },
         {
           "name": "不创新低",
-          "description": "不创新低",
+          "description": "连2日不创新低",
           "satisfied": true
         },
         {
           "name": "ATR收缩",
-          "description": "ATR收缩",
+          "description": "ATR未收缩",
           "satisfied": false
         }
       ],
@@ -288,7 +288,10 @@
         "total": 4,
         "ready": true
       },
-      "consecutive_days": null,
+      "consecutive_days": {
+        "conclusion": "需修改计划",
+        "days": 1
+      },
       "suggested_changes": [],
       "buy_window": null,
       "valuation": null,
@@ -492,18 +495,18 @@
       "code": "US.SOFI",
       "date": "2026-06-30",
       "current_price": 18.19,
-      "pe_ttm": 45.52,
+      "pe_ttm": 39.89,
       "currency": "USD",
       "has_plan": true,
       "plan_version": "4.2",
       "stock_type": "B",
       "trigger_type": "🔴判断",
-      "trigger_reason": "前提不成立: ATR20=$1（5.4%）> 买入区间宽度 $-3（-17.7%），一天波动就能穿透整个买入区; 近 3 日收盘均$18.19在窗口[$20-$17]上方",
+      "trigger_reason": "前提不成立: ATR20=$1（5.4%）> 买入区间宽度 $0（0.9%），一天波动就能穿透整个买入区; 近 3 日收盘均$18.19在窗口[$17-$17]上方",
       "signal_count": 2,
       "signals": [
         {
           "name": "缩量",
-          "description": "缩量",
+          "description": "缩量(0.8x)",
           "satisfied": true
         },
         {
@@ -522,11 +525,11 @@
       "level1_failures": [
         {
           "check": "ATR 超过买入区间宽度",
-          "detail": "ATR20=$1（5.4%）> 买入区间宽度 $-3（-17.7%），一天波动就能穿透整个买入区"
+          "detail": "ATR20=$1（5.4%）> 买入区间宽度 $0（0.9%），一天波动就能穿透整个买入区"
         },
         {
           "check": "买入窗口持续在窗外",
-          "detail": "近 3 日收盘均$18.19在窗口[$20-$17]上方"
+          "detail": "近 3 日收盘均$18.19在窗口[$17-$17]上方"
         },
         {
           "check": "MA60锚定均线日内失守",
@@ -540,13 +543,16 @@
         "total": 2,
         "ready": true
       },
-      "consecutive_days": null,
+      "consecutive_days": {
+        "conclusion": "需修改计划",
+        "days": 1
+      },
       "suggested_changes": [],
       "buy_window": {
-        "low": 20.13,
+        "low": 16.74,
         "high": 16.91,
         "in_window": false,
-        "distance_pct": 10.7
+        "distance_pct": 7.0
       },
       "valuation": {
         "peg": 0.61,
