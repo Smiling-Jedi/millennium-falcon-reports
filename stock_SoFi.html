@@ -7,8 +7,8 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>SoFi · 交易计划 · 千年隼</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=202606302347">
-    <link rel="stylesheet" href="style.css?v=202606302347">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=202607010019">
+    <link rel="stylesheet" href="style.css?v=202607010019">
 </head>
 <body>
     <header class="masthead container">
@@ -21,8 +21,8 @@
                 </div>
             </div>
             <div class="issue">
-                <div class="day">30</div>
-                <div class="meta">Jun · Tuesday</div>
+                <div class="day">1</div>
+                <div class="meta">Jul · Wednesday</div>
             </div>
         </div>
     </header>
@@ -54,66 +54,67 @@
 
     <div class="container">
             <div class="daily-check">
-                <div class="dc-title">⚡ 日检对照 <span class="tag-red-judge">需修改计划</span></div>
+                <div class="dc-title">⚡ 日检对照 <span style="font-size:10px;color:var(--ink-soft)">（计划文本提取）</span></div>
                 <div class="dc-rows">
-        <div class="dc-row dc-alert">❌ ATR 超过买入区间宽度: ATR20=$1（5.4%）> 买入区间宽度 $0（0.9%），一天波动就能穿透整个买入区</div>
-        <div class="dc-row dc-alert">❌ 买入窗口持续在窗外: 近 3 日收盘均$18.19在窗口[$17-$17]上方</div>
-        <div class="dc-row dc-alert">❌ MA60锚定均线日内失守: MA60 $16.95 在 2026-06-25 被刺穿（低$16.82），收盘收回</div>
-        <div class="dc-row dc-alert">🛑 前提不成立: ATR20=$1（5.4%）> 买入区间宽度 $0（0.9%），一天波动就能穿透整个买入区; 近 3 日收盘均$18.19在窗口[$17-$17]上方</div>
-        <div class="dc-row"><span class="dc-label">窗口</span><span class="dc-val">$16.74 - $16.91</span><span class="dc-bad">🔴 已出窗口 (+7.0%)</span></div>
-        <div class="dc-row"><span class="dc-label">止跌</span><span class="dc-val">2/4</span><span class="dc-detail">缩量✅  MA60斜率转正✅</span></div>
-        <div class="dc-row"><span class="dc-label">估值</span><span class="dc-val">PEG 0.61  Fwd PE 22.6x</span><span class="dc-detail">✅</span></div>
-        <div class="dc-row"><span class="dc-label">预警</span><span class="dc-val">预警线: 距离 8.5%</span></div>
+        <div class="dc-row"><span class="dc-label">窗口</span><span class="dc-val">$17</span><span class="dc-detail">（差 6.8%）</span></div>
+        <div class="dc-row"><span class="dc-label">止跌</span><span class="dc-val">—</span></div>
+        <div class="dc-row"><span class="dc-label">预警</span><span class="dc-val">[安全] 预警线 $16（ $15.50(前低$14.92+0.6×ATR缓冲)跌），距离 15.4%  |  趋势向下反转  |  硬止损: 增速连两季<15%/坏账率跳升2%+→全清。证伪的是「成长冲刺」逻辑，不是价格。</span></div>
                 </div>
             </div>
         </div>
 
     <section class="section container">
-        <div class="section-title">交易计划<span class="ver">v4.3 · 06-22</span></div>
+        <div class="section-title">交易计划<span class="ver">v4.4 · 06-22</span></div>
         <div class="plan-card">
         <div class="plan-section">
             <div class="ps-label">加仓</div>
-<div class="ps-table" style="grid-template-columns:repeat(3,1fr)">
+<div class="ps-table" style="grid-template-columns:repeat(5,1fr)">
 <div class="ps-th">路径</div>
 <div class="ps-th">条件</div>
 <div class="ps-th">操作</div>
+<div class="ps-th">止损</div>
+<div class="ps-th">R:R(第一档)</div>
 <div class="ps-td ">回调买</div>
-<div class="ps-td ">$16.74-16.91缩量不破（MA60斜率维持上升）</div>
-<div class="ps-td ">+300股</div>
+<div class="ps-td ">$16.74-16.91缩量不破+MA60斜率维持上升</div>
+<div class="ps-td ">+500股</div>
+<div class="ps-td ">$15.50</div>
+<div class="ps-td ">2.4:1</div>
 <div class="ps-td ">突破买</div>
-<div class="ps-td ">突破$20.13(W5高)</div>
-<div class="ps-td ">+300股</div>
+<div class="ps-td ">突破$20.13(W5高)+量确认</div>
+<div class="ps-td ">+500股</div>
+<div class="ps-td ">$18.80(假突破)</div>
+<div class="ps-td ">2.2:1</div>
 </div>
         </div>
         <div class="plan-section">
             <div class="ps-label">止损</div>
-            <div class="ps-row alert"><span class="v">$15.50(前低$14.92+0.6×ATR缓冲)跌破→减至1,000股(~5%)</span></div>
-            <div class="ps-row "><span class="v">3日内放量收回MA60→买回原仓（Beta 2.15，防大盘系统性误杀）</span></div>
+            <div class="ps-row alert"><span class="v">回调买： $15.50(前低$14.92+0.6×ATR缓冲)跌破→减至1,000股+3日收回缓冲</span></div>
+            <div class="ps-row alert"><span class="v">突破买： $18.80(前高/短期天花板)跌破→假突破，减突破仓位</span></div>
             <div class="ps-row alert"><span class="v">增速连两季<15%/坏账率跳升2%+→全清。证伪的是「成长冲刺」逻辑，不是价格。</span></div>
         </div>
         <div class="plan-section">
             <div class="ps-label">止盈</div>
-<div class="ps-table" style="grid-template-columns:repeat(4,1fr)">
-<div class="ps-th">档位</div>
-<div class="ps-th">价位</div>
-<div class="ps-th">锚</div>
-<div class="ps-th">操作</div>
-<div class="ps-td ">T1</div>
-<div class="ps-td ">$20.13</div>
-<div class="ps-td ">结构锚·W5高</div>
-<div class="ps-td ">卖500股</div>
-<div class="ps-td ">T2</div>
-<div class="ps-td ">$22.00</div>
-<div class="ps-td ">估值锚·PEG跨入合理区</div>
-<div class="ps-td ">卖500股</div>
-<div class="ps-td ">T3</div>
-<div class="ps-td ">$25.00</div>
-<div class="ps-td ">情绪锚·PEG≈1天花板</div>
-<div class="ps-td ">卖500股</div>
-<div class="ps-td ">剩余仓位</div>
-<div class="ps-td ">—</div>
-<div class="ps-td ">稳定币故事</div>
-<div class="ps-td ">留500股（后续跟踪）</div>
+<div class="ps-table" style="grid-template-columns:repeat(5,1fr)">
+<div class="ps-th">路径</div>
+<div class="ps-th">成本</div>
+<div class="ps-th">第一档</div>
+<div class="ps-th">第二档</div>
+<div class="ps-th">第三档</div>
+<div class="ps-td ">回调买</div>
+<div class="ps-td ">~$16.85</div>
+<div class="ps-td ">$20.13(170股)</div>
+<div class="ps-td ">$22.00(170股)</div>
+<div class="ps-td ">$25.00(160股)</div>
+<div class="ps-td ">突破买</div>
+<div class="ps-td ">~$20.13</div>
+<div class="ps-td ">$23.00(170股)</div>
+<div class="ps-td ">$28.00(170股)</div>
+<div class="ps-td ">$32.00(160股)</div>
+<div class="ps-td ">现有仓位</div>
+<div class="ps-td ">$17.40</div>
+<div class="ps-td ">$22.00(700股)</div>
+<div class="ps-td ">$25.00(700股)</div>
+<div class="ps-td ">$28.00(500股)</div>
 </div>
         </div>
         <div class="plan-section">
@@ -127,7 +128,7 @@
     </section>
 
 
-    <footer class="site-foot container">千年隼 MILLENNIUM FALCON · 最后更新 2026-06-30 23:47</footer>
-    <script>(function(){var v='202606302347';if(!location.search){location.replace(location.pathname+'?v='+v);return;}var as=document.querySelectorAll('a[href]');for(var i=0;i<as.length;i++){var h=as[i].getAttribute('href');if(h&&h.indexOf('://')<0&&h.indexOf('?v=')<0&&h.match(/\.html$/))as[i].setAttribute('href',h+'?v='+v);}})();</script>
+    <footer class="site-foot container">千年隼 MILLENNIUM FALCON · 最后更新 2026-07-01 00:19</footer>
+    <script>(function(){var v='202607010019';if(!location.search){location.replace(location.pathname+'?v='+v);return;}var as=document.querySelectorAll('a[href]');for(var i=0;i<as.length;i++){var h=as[i].getAttribute('href');if(h&&h.indexOf('://')<0&&h.indexOf('?v=')<0&&h.match(/\.html$/))as[i].setAttribute('href',h+'?v='+v);}})();</script>
 </body>
 </html>

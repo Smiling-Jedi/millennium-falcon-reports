@@ -1,6 +1,6 @@
 {
   "date": "2026-06-30",
-  "updated": "23:30",
+  "updated": "23:57",
   "stocks": {
     "US.CRCL": {
       "code": "US.CRCL",
@@ -495,13 +495,13 @@
       "code": "US.SOFI",
       "date": "2026-06-30",
       "current_price": 18.19,
-      "pe_ttm": 39.89,
+      "pe_ttm": 39.8,
       "currency": "USD",
       "has_plan": true,
-      "plan_version": "4.2",
+      "plan_version": "4.3",
       "stock_type": "B",
       "trigger_type": "🔴判断",
-      "trigger_reason": "前提不成立: ATR20=$1（5.4%）> 买入区间宽度 $0（0.9%），一天波动就能穿透整个买入区; 近 3 日收盘均$18.19在窗口[$17-$17]上方",
+      "trigger_reason": "前提不成立: MA60 $16.95 在 2026-06-25 被刺穿（低$16.82），收盘收回",
       "signal_count": 2,
       "signals": [
         {
@@ -524,14 +524,6 @@
       "conclusion": "需修改计划",
       "level1_failures": [
         {
-          "check": "ATR 超过买入区间宽度",
-          "detail": "ATR20=$1（5.4%）> 买入区间宽度 $0（0.9%），一天波动就能穿透整个买入区"
-        },
-        {
-          "check": "买入窗口持续在窗外",
-          "detail": "近 3 日收盘均$18.19在窗口[$17-$17]上方"
-        },
-        {
           "check": "MA60锚定均线日内失守",
           "detail": "MA60 $16.95 在 2026-06-25 被刺穿（低$16.82），收盘收回"
         }
@@ -545,30 +537,25 @@
       },
       "consecutive_days": {
         "conclusion": "需修改计划",
-        "days": 1
+        "days": 2
       },
       "suggested_changes": [],
-      "buy_window": {
-        "low": 16.74,
-        "high": 16.91,
-        "in_window": false,
-        "distance_pct": 7.0
-      },
+      "buy_window": null,
       "valuation": {
-        "peg": 0.61,
-        "fwd_pe": 22.6,
+        "peg": 21.81,
+        "fwd_pe": 22.1,
         "sp_fwd_pe": null,
-        "peg_ok": true,
+        "peg_ok": false,
         "fwd_pe_ok": null,
-        "anchor_valid": true
+        "anchor_valid": false
       },
       "stop_checks": [
         {
           "label": "预警线",
-          "price": 16.77,
+          "price": 15.5,
           "description": "减至1,000股(~5%)",
-          "status": "接近",
-          "detail": "距离 8.5%"
+          "status": "安全",
+          "detail": "距离 17.4%"
         },
         {
           "label": "硬止损",
