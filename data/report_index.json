@@ -3856,6 +3856,90 @@
         "input_tokens": 3024,
         "output_tokens": 1720,
         "prompt_version": "1.2.2"
+      },
+      {
+        "name": "阿里 260929 120.00 购",
+        "code": "HK.ALB260929C120000",
+        "doc_url": "https://www.feishu.cn/docx/AXKbd3YYYo0xvQxB48Gcukfdn4e",
+        "doc_id": "AXKbd3YYYo0xvQxB48Gcukfdn4e",
+        "date": "2026-07-06",
+        "report_title": "阿里购权技术性反弹但流动性枯竭 🟡【观望】",
+        "change_rate": 10.77,
+        "input_tokens": 3161,
+        "output_tokens": 1947,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "阿里巴巴-W",
+        "code": "HK.09988",
+        "doc_url": "https://www.feishu.cn/docx/O7exdXWFNoVS1fxQrDQcgYK3nTg",
+        "doc_id": "O7exdXWFNoVS1fxQrDQcgYK3nTg",
+        "date": "2026-07-06",
+        "report_title": "阿里回抽 MA20 遇阻 降本波段条件仍不成熟 🔵【持有】",
+        "change_rate": 1.97,
+        "input_tokens": 5244,
+        "output_tokens": 3365,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "百济神州",
+        "code": "HK.06160",
+        "doc_url": "https://www.feishu.cn/docx/UxmwdGdByoVXFbx6G38clVoknWu",
+        "doc_id": "UxmwdGdByoVXFbx6G38clVoknWu",
+        "date": "2026-07-06",
+        "report_title": "盈利催化跳空突破，AH联动加速上行 🔵【持有】",
+        "change_rate": 4.04,
+        "input_tokens": 6171,
+        "output_tokens": 2938,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "美团 260929 82.50 购",
+        "code": "HK.MET260929C82500",
+        "doc_url": "https://www.feishu.cn/docx/HC7ldpRrgoCUeLxXxwwcZh8Qnwe",
+        "doc_id": "HC7ldpRrgoCUeLxXxwwcZh8Qnwe",
+        "date": "2026-07-06",
+        "report_title": "美团正股反弹但期权流动性枯竭 🟡【观望】",
+        "change_rate": 17.01,
+        "input_tokens": 3181,
+        "output_tokens": 2598,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "建滔积层板",
+        "code": "HK.01888",
+        "doc_url": "https://www.feishu.cn/docx/NdMrdIEiFoFnOfx1VJSc7mI9nnf",
+        "doc_id": "NdMrdIEiFoFnOfx1VJSc7mI9nnf",
+        "date": "2026-07-06",
+        "report_title": "涨价利好遭砸盘，12.55%暴跌后的浮盈保卫战 🔵【持有】",
+        "change_rate": -12.55,
+        "input_tokens": 4576,
+        "output_tokens": 3257,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "腾讯控股",
+        "code": "HK.00700",
+        "doc_url": "https://www.feishu.cn/docx/VYs7d0oNwoZEmDxOXGKcvoJanhg",
+        "doc_id": "VYs7d0oNwoZEmDxOXGKcvoJanhg",
+        "date": "2026-07-06",
+        "report_title": "腾讯放量反弹触及预警线 均线纠缠待方向明朗 🟡【观望】",
+        "change_rate": 4.82,
+        "input_tokens": 5947,
+        "output_tokens": 3142,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "粤海投资",
+        "code": "HK.00270",
+        "doc_url": "https://www.feishu.cn/docx/CW8fd9lV1oXcjhxuGJ3cynKvnCh",
+        "doc_id": "CW8fd9lV1oXcjhxuGJ3cynKvnCh",
+        "date": "2026-07-06",
+        "report_title": "缩量震荡均线纠缠，等待方向选择 🟡【观望】",
+        "change_rate": -0.13,
+        "input_tokens": 4154,
+        "output_tokens": 2827,
+        "prompt_version": "1.2.2"
       }
     ],
     "美股": [
@@ -5958,5 +6042,5 @@
       "market": "A股"
     }
   ],
-  "update_time": "2026-07-06 15:35"
+  "update_time": "2026-07-06 16:28"
 }
