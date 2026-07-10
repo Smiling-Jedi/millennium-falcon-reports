@@ -4036,6 +4036,90 @@
         "input_tokens": 3358,
         "output_tokens": 2512,
         "prompt_version": "1.2.2"
+      },
+      {
+        "name": "阿里巴巴-W",
+        "code": "HK.09988",
+        "doc_url": "https://www.feishu.cn/docx/PHdUdylJ9oYP27xxGcRcuzFUnGe",
+        "doc_id": "PHdUdylJ9oYP27xxGcRcuzFUnGe",
+        "date": "2026-07-10",
+        "report_title": "超跌反弹受阻 113，缩量盘整待方向 🟡【观望】",
+        "change_rate": 2.04,
+        "input_tokens": 5081,
+        "output_tokens": 2725,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "百济神州",
+        "code": "HK.06160",
+        "doc_url": "https://www.feishu.cn/docx/GXoGdM44GosVYpxT8jEcxVQ8nOc",
+        "doc_id": "GXoGdM44GosVYpxT8jEcxVQ8nOc",
+        "date": "2026-07-10",
+        "report_title": "百济WA震荡收阳机构撑场，散户中单离场分歧未消 🟡【观望】",
+        "change_rate": 0.88,
+        "input_tokens": 53,
+        "output_tokens": 3317,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "美团 260929 82.50 购",
+        "code": "HK.MET260929C82500",
+        "doc_url": "https://www.feishu.cn/docx/OcWWdwYqAoov9jxjxr0cxRctnhd",
+        "doc_id": "OcWWdwYqAoov9jxjxr0cxRctnhd",
+        "date": "2026-07-10",
+        "report_title": "美团期权逆势收涨均线纠缠待方向 🟡【观望】",
+        "change_rate": 0.17,
+        "input_tokens": 3169,
+        "output_tokens": 2511,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "建滔积层板",
+        "code": "HK.01888",
+        "doc_url": "https://www.feishu.cn/docx/A9pNdvyRsoZFVJx57qXcpuqAneb",
+        "doc_id": "A9pNdvyRsoZFVJx57qXcpuqAneb",
+        "date": "2026-07-10",
+        "report_title": "冲高回落吞没涨幅，均线压制凸显 🟡【观望】",
+        "change_rate": -7.24,
+        "input_tokens": 4637,
+        "output_tokens": 2947,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "腾讯控股",
+        "code": "HK.00700",
+        "doc_url": "https://www.feishu.cn/docx/SI9idzRDoosArhx0UJOcuxtcnBf",
+        "doc_id": "SI9idzRDoosArhx0UJOcuxtcnBf",
+        "date": "2026-07-10",
+        "report_title": "腾讯放量下挫考验 MA60，回购对冲减持冲击 🟡【观望】",
+        "change_rate": -2.0,
+        "input_tokens": 5928,
+        "output_tokens": 3304,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "粤海投资",
+        "code": "HK.00270",
+        "doc_url": "https://www.feishu.cn/docx/DEtUdJ14xoPhsxxc5OUcPjlWn20",
+        "doc_id": "DEtUdJ14xoPhsxxc5OUcPjlWn20",
+        "date": "2026-07-10",
+        "report_title": "微涨缩量均线纠缠 沽空比例异常引关注 🟡【观望】",
+        "change_rate": 0.66,
+        "input_tokens": 4813,
+        "output_tokens": 4000,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "南方两倍做多三星电子",
+        "code": "HK.07747",
+        "doc_url": "https://www.feishu.cn/docx/Ucced5OsRo3Ykpx4Y0QcMbiVnQh",
+        "doc_id": "Ucced5OsRo3Ykpx4Y0QcMbiVnQh",
+        "date": "2026-07-10",
+        "report_title": "韩国监管重击杠杆ETF 放量失守关键支撑 🟡【观望】",
+        "change_rate": -1.11,
+        "input_tokens": 3303,
+        "output_tokens": 2230,
+        "prompt_version": "1.2.2"
       }
     ],
     "美股": [
@@ -6136,7 +6220,15 @@
       "avg_cost": 0,
       "role": "观察",
       "market": "A股"
+    },
+    {
+      "code": "US.RKLX",
+      "name": "2倍做多RKLB ETF-Defiance",
+      "shares": 150,
+      "avg_cost": 30.076,
+      "role": "观察",
+      "market": "美股"
     }
   ],
-  "update_time": "2026-07-08 22:34"
+  "update_time": "2026-07-10 19:32"
 }
