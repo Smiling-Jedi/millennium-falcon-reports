@@ -2225,6 +2225,126 @@
         "input_tokens": 4844,
         "output_tokens": 3847,
         "prompt_version": "1.2.2"
+      },
+      {
+        "name": "比亚迪",
+        "code": "SZ.002594",
+        "doc_url": "https://www.feishu.cn/docx/LobCd8DZVobZDDx6Ty5cd3Vgnkd",
+        "doc_id": "LobCd8DZVobZDDx6Ty5cd3Vgnkd",
+        "date": "2026-07-10",
+        "report_title": "比亚迪放量突破90关口但MA60压制仍在 🔵【持有】",
+        "change_rate": 3.6,
+        "input_tokens": 5699,
+        "output_tokens": 3096,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "阳光电源",
+        "code": "SZ.300274",
+        "doc_url": "https://www.feishu.cn/docx/XTaldmHIsoXhwkxHNeIcVsmKnIc",
+        "doc_id": "XTaldmHIsoXhwkxHNeIcVsmKnIc",
+        "date": "2026-07-10",
+        "report_title": "新品利好出尽破位下杀，关键防线失守 🔴【减仓清仓】",
+        "change_rate": -7.43,
+        "input_tokens": 5955,
+        "output_tokens": 2850,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "宁德时代",
+        "code": "SZ.300750",
+        "doc_url": "https://www.feishu.cn/docx/Bz9cdAryeouVX1xbDnxcP1UfnVf",
+        "doc_id": "Bz9cdAryeouVX1xbDnxcP1UfnVf",
+        "date": "2026-07-10",
+        "report_title": "放量长阴击穿所有支撑，预警已触发 🔴【减仓】",
+        "change_rate": -7.12,
+        "input_tokens": 5670,
+        "output_tokens": 2647,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "招商银行",
+        "code": "SH.600036",
+        "doc_url": "https://www.feishu.cn/docx/Xt79dMjMjo5gjoxv5zYcYuy7nxb",
+        "doc_id": "Xt79dMjMjo5gjoxv5zYcYuy7nxb",
+        "date": "2026-07-10",
+        "report_title": "招行小幅反弹量能平淡，等待方向明朗 🟡【观望】",
+        "change_rate": 0.9,
+        "input_tokens": 4669,
+        "output_tokens": 2829,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "兴业银行",
+        "code": "SH.601166",
+        "doc_url": "https://www.feishu.cn/docx/U7kndfD0Ao4qHxxzM6XcnYMpner",
+        "doc_id": "U7kndfD0Ao4qHxxzM6XcnYMpner",
+        "date": "2026-07-10",
+        "report_title": "副行长辞任股价收红 数据不足观望延续 🟡【观望】",
+        "change_rate": 0.81,
+        "input_tokens": 4414,
+        "output_tokens": 2943,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "交通银行",
+        "code": "SH.601328",
+        "doc_url": "https://www.feishu.cn/docx/RDmydRZhkozDqpxKt1NcMPxxnXf",
+        "doc_id": "RDmydRZhkozDqpxKt1NcMPxxnXf",
+        "date": "2026-07-10",
+        "report_title": "MA200 失守后获支撑反弹 但计划前提已动摇 🟡【观望】",
+        "change_rate": 1.54,
+        "input_tokens": 4719,
+        "output_tokens": 3037,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "胜宏科技",
+        "code": "SZ.300476",
+        "doc_url": "https://www.feishu.cn/docx/NjDydwnDSo0QZwxQkq4cALIMnRh",
+        "doc_id": "NjDydwnDSo0QZwxQkq4cALIMnRh",
+        "date": "2026-07-10",
+        "report_title": "放量破位逼近路径A下沿 🔴【减仓】",
+        "change_rate": -8.32,
+        "input_tokens": 4990,
+        "output_tokens": 3346,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "纳指ETF国泰",
+        "code": "SH.513100",
+        "doc_url": "https://www.feishu.cn/docx/OKoydRE3RoRW8pxs2DvcjEkpnef",
+        "doc_id": "OKoydRE3RoRW8pxs2DvcjEkpnef",
+        "date": "2026-07-10",
+        "report_title": "平收静待均线收敛，方向抉择在即 🟡【观望】",
+        "change_rate": 0.0,
+        "input_tokens": 4574,
+        "output_tokens": 3198,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "中来股份",
+        "code": "SZ.300393",
+        "doc_url": "https://www.feishu.cn/docx/MIqmdeSqxocmI9x8UE6cFfpAnvg",
+        "doc_id": "MIqmdeSqxocmI9x8UE6cFfpAnvg",
+        "date": "2026-07-10",
+        "report_title": "缩量挣扎于 MA20 下方 成本高悬待解 🟡【观望】",
+        "change_rate": 0.15,
+        "input_tokens": 4345,
+        "output_tokens": 2657,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "润泽科技",
+        "code": "SZ.300442",
+        "doc_url": "https://www.feishu.cn/docx/G8FWd3IhyoCihexu4pIceO17nCb",
+        "doc_id": "G8FWd3IhyoCihexu4pIceO17nCb",
+        "date": "2026-07-10",
+        "report_title": "放量回抽 MA200 遇阻，止损执行面临考验 🔵【持有】",
+        "change_rate": 2.71,
+        "input_tokens": 5058,
+        "output_tokens": 4000,
+        "prompt_version": "1.2.2"
       }
     ],
     "港股": [
@@ -6230,5 +6350,5 @@
       "market": "美股"
     }
   ],
-  "update_time": "2026-07-10 19:32"
+  "update_time": "2026-07-10 19:35"
 }
