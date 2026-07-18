@@ -6305,6 +6305,18 @@
         "input_tokens": 2494,
         "output_tokens": 1689,
         "prompt_version": "1.2.2"
+      },
+      {
+        "name": "英伟达",
+        "code": "US.NVDA",
+        "doc_url": "https://www.feishu.cn/docx/AZm3dGK4hoxVnmx5neQcC2G8nmc",
+        "doc_id": "AZm3dGK4hoxVnmx5neQcC2G8nmc",
+        "date": "2026-07-10",
+        "report_title": "英伟达冲高回落 200关口守而未破 🟡【观望】",
+        "change_rate": -0.66,
+        "input_tokens": 4938,
+        "output_tokens": 13067,
+        "prompt_version": "1.2.2"
       }
     ]
   },
@@ -6350,5 +6362,5 @@
       "market": "美股"
     }
   ],
-  "update_time": "2026-07-10 19:35"
+  "update_time": "2026-07-10 20:37"
 }
