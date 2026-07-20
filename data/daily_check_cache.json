@@ -1,434 +1,18 @@
 {
-  "date": "2026-07-17",
-  "updated": "20:55",
+  "date": "2026-07-20",
+  "updated": "15:31",
   "stocks": {
-    "HK.ALB260929C120000": {
-      "code": "HK.ALB260929C120000",
-      "date": "2026-07-17",
-      "current_price": 6.2,
-      "pe_ttm": "N/A",
-      "currency": "HKD",
-      "has_plan": false,
-      "plan_version": "?",
-      "stock_type": "",
-      "trigger_type": "🟢",
-      "trigger_reason": "无 Master 交易计划",
-      "signal_count": 0,
-      "signals": [],
-      "trend_status": "",
-      "trend_changed": false,
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "[小周期] 跳空: +3.11% | 首时: -22.85% → ⚠️跳高被砸(卖压真) | 支撑: 7.1(x5), 8.5(x3), 9.3(x3) | 距最近9.3: +-33.7% | 阻力: 7.5(x3), 8.4(x3), 9.8(x4) | 距最近6.6: -6.3% | ATR: 5=0.2 vs 20=0.6 → 收缩✅(方向快选) | 节奏: 上午强7/下午强3(共10天)",
-      "buy_condition_contradiction": null,
-      "conclusion": "",
-      "level1_failures": [],
-      "level2_triggered": null,
-      "level3_ready": null,
-      "consecutive_days": null,
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [],
-      "target_checks": []
-    },
-    "HK.09988": {
-      "code": "HK.09988",
-      "date": "2026-07-17",
-      "current_price": 112.6,
-      "pe_ttm": 18.0,
-      "currency": "HKD",
-      "has_plan": true,
-      "plan_version": "4",
-      "stock_type": "A",
-      "trigger_type": "🟢",
-      "trigger_reason": "前提成立，信号 1/2",
-      "signal_count": 1,
-      "signals": [
-        {
-          "name": "均线支撑",
-          "description": "价格在均线附近",
-          "satisfied": true
-        },
-        {
-          "name": "阳线放量",
-          "description": "非阳线",
-          "satisfied": false
-        },
-        {
-          "name": "不创新低",
-          "description": "仍在创新低",
-          "satisfied": false
-        },
-        {
-          "name": "ATR收缩",
-          "description": "ATR未收缩",
-          "satisfied": false
-        }
-      ],
-      "trend_status": "数据不足（80日 / 需120日）",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "[小周期] 跳空: -0.51%(平) | 首时: -2.67% | 支撑: 113.2(x4), 116.3(x3), 118.1(x3) | 距最近118.1: +-4.7% | 阻力: 114.8(x4), 118.0(x3), 119.5(x4) | 距最近119.5: -6.2% | ATR: 5=1.5 vs 20=2.1 → 收缩✅(方向快选) | 节奏: 上午强8/下午强2(共10天)",
-      "buy_condition_contradiction": null,
-      "conclusion": "观望",
-      "level1_failures": [],
-      "level2_triggered": null,
-      "level3_ready": {
-        "met": 1,
-        "required": 2,
-        "total": 4,
-        "ready": false
-      },
-      "consecutive_days": null,
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [],
-      "target_checks": []
-    },
-    "HK.06160": {
-      "code": "HK.06160",
-      "date": "2026-07-17",
-      "current_price": 185.6,
-      "pe_ttm": 71.17,
-      "currency": "HKD",
-      "has_plan": true,
-      "plan_version": "4",
-      "stock_type": "B",
-      "trigger_type": "🟢",
-      "trigger_reason": "前提成立，等待信号",
-      "signal_count": 0,
-      "signals": [
-        {
-          "name": "连2日不创新低",
-          "description": "未满足连2日不创新低",
-          "satisfied": false
-        },
-        {
-          "name": "阳线收MA5上方",
-          "description": "未满足",
-          "satisfied": false
-        },
-        {
-          "name": "KDJ金叉",
-          "description": "KDJ未金叉(K=62.4 D=67.5)",
-          "satisfied": false
-        }
-      ],
-      "trend_status": "数据不足（80日 / 需120日）",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "[小周期] 跳空: +0.79%(平) | 首时: -3.28% | 支撑: 188.0(x5), 189.3(x5), 190.3(x3) | 距最近190.3: +-2.5% | 阻力: 188.9(x5), 191.6(x9), 192.4(x3) | 距最近192.4: -3.6% | ATR: 5=1.7 vs 20=2.5 → 收缩✅(方向快选) | 节奏: 上午强8/下午强2(共10天)",
-      "buy_condition_contradiction": null,
-      "conclusion": "观望",
-      "level1_failures": [],
-      "level2_triggered": null,
-      "level3_ready": {
-        "met": 0,
-        "required": 3,
-        "total": 3,
-        "ready": false
-      },
-      "consecutive_days": {
-        "conclusion": "观望",
-        "days": 10
-      },
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [],
-      "target_checks": []
-    },
-    "HK.MET260929C82500": {
-      "code": "HK.MET260929C82500",
-      "date": "2026-07-17",
-      "current_price": 7.75,
-      "pe_ttm": "N/A",
-      "currency": "HKD",
-      "has_plan": false,
-      "plan_version": "?",
-      "stock_type": "",
-      "trigger_type": "🟢",
-      "trigger_reason": "无 Master 交易计划",
-      "signal_count": 0,
-      "signals": [],
-      "trend_status": "",
-      "trend_changed": false,
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "[小周期] 跳空: -24.09% | 首时: -8.72% | 支撑: 7.0(x9), 7.6(x5), 10.4(x4) | 距最近10.4: +-25.6% | ATR: 5=0.2 vs 20=0.6 → 收缩✅(方向快选) | 节奏: 上午强5/下午强5(共10天)",
-      "buy_condition_contradiction": null,
-      "conclusion": "",
-      "level1_failures": [],
-      "level2_triggered": null,
-      "level3_ready": null,
-      "consecutive_days": null,
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [],
-      "target_checks": []
-    },
-    "HK.01888": {
-      "code": "HK.01888",
-      "date": "2026-07-17",
-      "current_price": 41.98,
-      "pe_ttm": 54.17,
-      "currency": "HKD",
-      "has_plan": true,
-      "plan_version": "2",
-      "stock_type": "",
-      "trigger_type": "🟡",
-      "trigger_reason": "预警触发: 预警线: 减200股(收回本金)。成本14.32极低，收回本金后无需硬止损。（当前 $41.98）",
-      "signal_count": 0,
-      "signals": [
-        {
-          "name": "均线支撑",
-          "description": "价格在均线附近",
-          "satisfied": false
-        },
-        {
-          "name": "阳线放量",
-          "description": "阳线+放量",
-          "satisfied": false
-        },
-        {
-          "name": "不创新低",
-          "description": "连2日不创新低",
-          "satisfied": false
-        },
-        {
-          "name": "ATR收缩",
-          "description": "ATR5<ATR20",
-          "satisfied": false
-        }
-      ],
-      "trend_status": "数据不足（80日 / 需120日）",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "[小周期] 跳空: -4.00% | 首时: -0.13% | 支撑: 80.6(x3), 82.2(x4), 84.5(x3) | 距最近84.5: +-50.3% | 阻力: 77.1(x3), 86.7(x4), 88.2(x3) | 距最近45.4: -8.1% | ATR: 5=1.9 vs 20=2.4 → 收缩✅(方向快选) | 节奏: 上午强3/下午强7(共10天)",
-      "buy_condition_contradiction": null,
-      "conclusion": "预警",
-      "level1_failures": [],
-      "level2_triggered": {
-        "type": "预警",
-        "detail": "预警线: 减200股(收回本金)。成本14.32极低，收回本金后无需硬止损。（当前 $41.98）"
-      },
-      "level3_ready": null,
-      "consecutive_days": null,
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": {
-        "peg": 8.9,
-        "fwd_pe": null,
-        "sp_fwd_pe": null,
-        "peg_ok": false,
-        "fwd_pe_ok": null,
-        "anchor_valid": false
-      },
-      "stop_checks": [
-        {
-          "label": "预警线",
-          "price": 50.05,
-          "description": "减200股(收回本金)。成本14.32极低，收回本金后无需硬止损。",
-          "status": "触发",
-          "detail": "当前 41.98 已跌破，且 0/4 信号全部失败，确认弱势"
-        }
-      ],
-      "target_checks": []
-    },
-    "HK.00700": {
-      "code": "HK.00700",
-      "date": "2026-07-17",
-      "current_price": 461.6,
-      "pe_ttm": 15.76,
-      "currency": "HKD",
-      "has_plan": true,
-      "plan_version": "3",
-      "stock_type": "A",
-      "trigger_type": "🟡",
-      "trigger_reason": "预警线: 距离 2.6%; 预警线: 距离 9.9%",
-      "signal_count": 1,
-      "signals": [
-        {
-          "name": "均线支撑",
-          "description": "价格在均线附近",
-          "satisfied": true
-        },
-        {
-          "name": "阳线放量",
-          "description": "非阳线",
-          "satisfied": false
-        },
-        {
-          "name": "不创新低",
-          "description": "仍在创新低",
-          "satisfied": false
-        },
-        {
-          "name": "ATR收缩",
-          "description": "ATR未收缩",
-          "satisfied": false
-        }
-      ],
-      "trend_status": "数据不足（80日 / 需120日）",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "[小周期] 跳空: +0.99% | 首时: -4.38% → ⚠️跳高被砸(卖压真) | 支撑: 465.4(x5), 467.1(x4), 472.0(x7) | 距最近472.0: +-2.2% | 阻力: 474.1(x7), 475.7(x4), 479.4(x6) | 距最近479.4: -3.9% | ATR: 5=4.2 vs 20=6.7 → 收缩✅(方向快选) | 节奏: 上午强7/下午强3(共10天)",
-      "buy_condition_contradiction": null,
-      "conclusion": "观望",
-      "level1_failures": [],
-      "level2_triggered": null,
-      "level3_ready": {
-        "met": 1,
-        "required": 3,
-        "total": 4,
-        "ready": false
-      },
-      "consecutive_days": null,
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [
-        {
-          "label": "预警线",
-          "price": null,
-          "description": "被动降",
-          "status": "安全",
-          "detail": "不设价格止损"
-        },
-        {
-          "label": "预警线",
-          "price": null,
-          "description": "减1/3",
-          "status": "安全",
-          "detail": "不设价格止损"
-        },
-        {
-          "label": "硬止损",
-          "price": null,
-          "description": "全清",
-          "status": "安全",
-          "detail": "不设价格止损"
-        },
-        {
-          "label": "预警线",
-          "price": 450.0,
-          "description": "新买入波段减1/3",
-          "status": "接近",
-          "detail": "距离 2.6%"
-        },
-        {
-          "label": "预警线",
-          "price": 420.0,
-          "description": "新买入波段再减1/3",
-          "status": "接近",
-          "detail": "距离 9.9%"
-        },
-        {
-          "label": "硬止损",
-          "price": 400.0,
-          "description": "波段仓全清",
-          "status": "安全",
-          "detail": "距离 15.4%"
-        },
-        {
-          "label": "硬止损",
-          "price": null,
-          "description": "旧波段(1200股@540)只在🛑400止损，预警和收紧只管新买入。",
-          "status": "安全",
-          "detail": "不设价格止损"
-        }
-      ],
-      "target_checks": []
-    },
-    "HK.00270": {
-      "code": "HK.00270",
-      "date": "2026-07-17",
-      "current_price": 7.9,
-      "pe_ttm": 10.78,
-      "currency": "HKD",
-      "has_plan": true,
-      "plan_version": "4",
-      "stock_type": "F",
-      "trigger_type": "🟢",
-      "trigger_reason": "前提成立，等待信号",
-      "signal_count": 0,
-      "signals": [
-        {
-          "name": "站上MA60",
-          "description": "价格7.90 <= MA60(7.93)",
-          "satisfied": false
-        }
-      ],
-      "trend_status": "数据不足（80日 / 需120日）",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "[小周期] 跳空: -0.65%(平) | 首时: +2.87% | 支撑: 7.6(x72) | 距最近7.6: +4.5% | ATR: 5=0.1 vs 20=0.1 → 收缩✅(方向快选) | 节奏: 上午强3/下午强7(共10天)",
-      "buy_condition_contradiction": null,
-      "conclusion": "观望",
-      "level1_failures": [],
-      "level2_triggered": null,
-      "level3_ready": {
-        "met": 0,
-        "required": 1,
-        "total": 1,
-        "ready": false
-      },
-      "consecutive_days": null,
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [],
-      "target_checks": []
-    },
-    "HK.07747": {
-      "code": "HK.07747",
-      "date": "2026-07-17",
-      "current_price": 67.2,
-      "pe_ttm": "N/A",
-      "currency": "HKD",
-      "has_plan": false,
-      "plan_version": "?",
-      "stock_type": "",
-      "trigger_type": "🟢",
-      "trigger_reason": "无 Master 交易计划",
-      "signal_count": 0,
-      "signals": [],
-      "trend_status": "",
-      "trend_changed": false,
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "[小周期] 跳空: -3.61% | 首时: -15.50% | 支撑: 132.5(x3), 135.6(x3), 137.6(x3) | 距最近137.6: +-51.2% | 阻力: 135.8(x4), 139.3(x3), 141.9(x3) | 距最近69.5: -3.4% | ATR: 5=4.5 vs 20=5.6 → 收缩✅(方向快选) | 节奏: 上午强5/下午强5(共10天)",
-      "buy_condition_contradiction": null,
-      "conclusion": "",
-      "level1_failures": [],
-      "level2_triggered": null,
-      "level3_ready": null,
-      "consecutive_days": null,
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [],
-      "target_checks": []
-    },
     "SZ.002594": {
       "code": "SZ.002594",
-      "date": "2026-07-17",
-      "current_price": 93.47,
-      "pe_ttm": 30.93,
+      "date": "2026-07-20",
+      "current_price": 93.92,
+      "pe_ttm": 31.08,
       "currency": "CNY",
       "has_plan": true,
       "plan_version": "5",
       "stock_type": "A亚类",
-      "trigger_type": "🟢",
-      "trigger_reason": "前提成立，等待信号",
+      "trigger_type": "🔴判断",
+      "trigger_reason": "前提不成立: MA200 $92.64 在 2026-07-16 被刺穿（低$91.15），收盘收回",
       "signal_count": 0,
       "signals": [
         {
@@ -452,17 +36,25 @@
           "satisfied": false
         }
       ],
-      "trend_status": "数据不足（100日 / 需120日）",
+      "trend_status": "数据不足（80日 / 需120日）",
       "trend_changed": "",
       "auto_action": "",
       "auto_reason": "",
-      "small_cycle_text": "无小周期数据",
+      "small_cycle_text": "[小周期] 跳空: +0.02%(平) | 首时: -0.29% | 支撑: 92.4(x3), 92.9(x6), 93.5(x3) | 距最近93.5: +0.4% | 阻力: 92.9(x3), 93.6(x5), 94.1(x3) | 距最近94.1: -0.2% | ATR: 5=1.3 vs 20=1.4 → 收缩✅(方向快选) | 节奏: 上午强5/下午强5(共10天)",
       "buy_condition_contradiction": null,
-      "conclusion": "观望",
-      "level1_failures": [],
+      "conclusion": "需修改计划",
+      "level1_failures": [
+        {
+          "check": "MA200锚定均线日内失守",
+          "detail": "MA200 $92.64 在 2026-07-16 被刺穿（低$91.15），收盘收回"
+        }
+      ],
       "level2_triggered": null,
       "level3_ready": null,
-      "consecutive_days": null,
+      "consecutive_days": {
+        "conclusion": "需修改计划",
+        "days": 2
+      },
       "suggested_changes": [],
       "buy_window": null,
       "valuation": null,
@@ -471,15 +63,15 @@
     },
     "SZ.300274": {
       "code": "SZ.300274",
-      "date": "2026-07-17",
-      "current_price": 101.61,
-      "pe_ttm": 17.66,
+      "date": "2026-07-20",
+      "current_price": 101.77,
+      "pe_ttm": 17.69,
       "currency": "CNY",
       "has_plan": true,
       "plan_version": "10",
       "stock_type": "B",
       "trigger_type": "🔴判断",
-      "trigger_reason": "前提不成立: 计划 7 天未复查（ATR 8.9% 档位 ≤5日），价格 $101.61 偏离参考 $142.43 =4.5×ATR",
+      "trigger_reason": "前提不成立: 计划 10 天未复查（ATR 8.8% 档位 ≤5日），价格 $101.77 偏离参考 $144.64 =4.8×ATR",
       "signal_count": 0,
       "signals": [
         {
@@ -503,17 +95,17 @@
           "satisfied": false
         }
       ],
-      "trend_status": "数据不足（100日 / 需120日）",
+      "trend_status": "数据不足（80日 / 需120日）",
       "trend_changed": "",
       "auto_action": "",
       "auto_reason": "",
-      "small_cycle_text": "无小周期数据",
+      "small_cycle_text": "[小周期] 跳空: +0.38%(平) | 首时: +0.57% | 支撑: 124.1(x3), 127.3(x3), 128.2(x3) | 距最近128.2: +-20.6% | 阻力: 110.6(x4), 129.6(x3), 130.4(x3) | 距最近110.6: -8.6% | ATR: 5=3.3 vs 20=3.4 → 收缩✅(方向快选) | 节奏: 上午强5/下午强5(共10天)",
       "buy_condition_contradiction": null,
       "conclusion": "需修改计划",
       "level1_failures": [
         {
           "check": "计划过期 + 价格偏离过大",
-          "detail": "计划 7 天未复查（ATR 8.9% 档位 ≤5日），价格 $101.61 偏离参考 $142.43 =4.5×ATR"
+          "detail": "计划 10 天未复查（ATR 8.8% 档位 ≤5日），价格 $101.77 偏离参考 $144.64 =4.8×ATR"
         }
       ],
       "level2_triggered": null,
@@ -530,15 +122,15 @@
     },
     "SZ.300750": {
       "code": "SZ.300750",
-      "date": "2026-07-17",
-      "current_price": 360.0,
-      "pe_ttm": 21.09,
+      "date": "2026-07-20",
+      "current_price": 376.43,
+      "pe_ttm": 22.05,
       "currency": "CNY",
       "has_plan": true,
       "plan_version": "7",
       "stock_type": "A亚类",
       "trigger_type": "🔴判断",
-      "trigger_reason": "前提不成立: 预警线 $367.56 在 20260715 被日内刺穿（低$363.08），收盘$373.00收回",
+      "trigger_reason": "前提不成立: 预警线 $367.56 在 2026-07-20 被日内刺穿（低$353.80），收盘$376.43收回",
       "signal_count": 0,
       "signals": [
         {
@@ -566,19 +158,16 @@
       "trend_changed": "",
       "auto_action": "",
       "auto_reason": "",
-      "small_cycle_text": "无小周期数据",
+      "small_cycle_text": "[小周期] 跳空: -1.67% | 首时: +4.97% → ✅跳低被买(支撑有) | 支撑: 372.0(x3), 373.2(x3), 374.6(x3) | 距最近374.6: +0.5% | 阻力: 375.6(x4), 376.7(x3), 378.4(x5) | 距最近378.4: -0.5% | ATR: 5=9.7 vs 20=7.4 → 扩张⚠️(还在博弈) | 节奏: 上午强6/下午强4(共10天)",
       "buy_condition_contradiction": null,
       "conclusion": "需修改计划",
       "level1_failures": [
         {
           "check": "止损预警线日内刺穿",
-          "detail": "预警线 $367.56 在 20260715 被日内刺穿（低$363.08），收盘$373.00收回"
+          "detail": "预警线 $367.56 在 2026-07-20 被日内刺穿（低$353.80），收盘$376.43收回"
         }
       ],
-      "level2_triggered": {
-        "type": "预警",
-        "detail": "预警线: **¥335 收盘确认跌破 → 600股全减**（当前 $360.00）"
-      },
+      "level2_triggered": null,
       "level3_ready": null,
       "consecutive_days": {
         "conclusion": "需修改计划",
@@ -592,15 +181,15 @@
           "label": "预警线",
           "price": 367.56,
           "description": "**¥335 收盘确认跌破 → 600股全减**",
-          "status": "触发",
-          "detail": "当前 360.00 已跌破，且 0/4 信号全部失败，确认弱势"
+          "status": "接近",
+          "detail": "距离 2.4%"
         },
         {
           "label": "预警线",
           "price": 335.0,
           "description": "¥335收盘破→暂停后续加仓",
-          "status": "接近",
-          "detail": "距离 7.5%"
+          "status": "安全",
+          "detail": "距离 12.4%"
         },
         {
           "label": "硬止损",
@@ -614,15 +203,15 @@
     },
     "SH.600036": {
       "code": "SH.600036",
-      "date": "2026-07-17",
-      "current_price": 38.02,
-      "pe_ttm": "N/A",
+      "date": "2026-07-20",
+      "current_price": 38.91,
+      "pe_ttm": 6.51,
       "currency": "CNY",
       "has_plan": true,
       "plan_version": "2",
       "stock_type": "F",
       "trigger_type": "🔴判断",
-      "trigger_reason": "前提不成立: MA200 $37.83 在 2026-07-17 被刺穿（低$37.68），收盘收回",
+      "trigger_reason": "前提不成立: 计划 33 天未复查（ATR 2.1% 档位 ≤7日），价格 $38.91 偏离参考 $36.93 =2.4×ATR",
       "signal_count": 2,
       "signals": [
         {
@@ -632,21 +221,21 @@
         },
         {
           "name": "站上MA60",
-          "description": "价格38.02 > MA60(37.83)",
+          "description": "价格38.91 > MA60(36.93)",
           "satisfied": true
         }
       ],
-      "trend_status": "数据不足（81日 / 需120日）",
+      "trend_status": "数据不足（80日 / 需120日）",
       "trend_changed": "",
       "auto_action": "",
       "auto_reason": "",
-      "small_cycle_text": "无小周期数据",
+      "small_cycle_text": "[小周期] 跳空: -0.18%(平) | 首时: +1.84% | 支撑: 37.5(x7), 37.9(x5), 38.5(x3) | 距最近38.5: +1.2% | ATR: 5=0.4 vs 20=0.4 → 扩张⚠️(还在博弈) | 节奏: 上午强7/下午强3(共10天)",
       "buy_condition_contradiction": null,
       "conclusion": "需修改计划",
       "level1_failures": [
         {
-          "check": "MA200锚定均线日内失守",
-          "detail": "MA200 $37.83 在 2026-07-17 被刺穿（低$37.68），收盘收回"
+          "check": "计划过期 + 价格偏离过大",
+          "detail": "计划 33 天未复查（ATR 2.1% 档位 ≤7日），价格 $38.91 偏离参考 $36.93 =2.4×ATR"
         }
       ],
       "level2_triggered": null,
@@ -665,15 +254,15 @@
     },
     "SH.601166": {
       "code": "SH.601166",
-      "date": "2026-07-17",
-      "current_price": 17.75,
-      "pe_ttm": "N/A",
+      "date": "2026-07-20",
+      "current_price": 18.34,
+      "pe_ttm": 5.01,
       "currency": "CNY",
       "has_plan": true,
       "plan_version": "3",
       "stock_type": "F",
-      "trigger_type": "🟢",
-      "trigger_reason": "前提成立，等待信号",
+      "trigger_type": "🔴判断",
+      "trigger_reason": "前提不成立: 计划 33 天未复查（ATR 2.2% 档位 ≤7日），价格 $18.34 偏离参考 $17.48 =2.1×ATR",
       "signal_count": 0,
       "signals": [
         {
@@ -697,70 +286,22 @@
           "satisfied": false
         }
       ],
-      "trend_status": "数据不足（100日 / 需120日）",
+      "trend_status": "数据不足（80日 / 需120日）",
       "trend_changed": "",
       "auto_action": "",
       "auto_reason": "",
-      "small_cycle_text": "无小周期数据",
-      "buy_condition_contradiction": null,
-      "conclusion": "观望",
-      "level1_failures": [],
-      "level2_triggered": null,
-      "level3_ready": null,
-      "consecutive_days": {
-        "conclusion": "观望",
-        "days": 4
-      },
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [],
-      "target_checks": []
-    },
-    "SH.601328": {
-      "code": "SH.601328",
-      "date": "2026-07-17",
-      "current_price": 6.83,
-      "pe_ttm": 6.26,
-      "currency": "CNY",
-      "has_plan": true,
-      "plan_version": "2",
-      "stock_type": "F",
-      "trigger_type": "🔴判断",
-      "trigger_reason": "前提不成立: MA200 $6.77 在 2026-07-15 被刺穿（低$6.71），收盘收回",
-      "signal_count": 0,
-      "signals": [
-        {
-          "name": "MA120斜率转正",
-          "description": "MA120斜率未转正",
-          "satisfied": false
-        }
-      ],
-      "trend_status": "数据不足（100日 / 需120日）",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "无小周期数据",
+      "small_cycle_text": "[小周期] 跳空: -0.34%(平) | 首时: +1.81% | 支撑: 17.1(x25), 17.6(x16), 18.1(x3) | 距最近18.1: +1.5% | ATR: 5=0.2 vs 20=0.2 → 扩张⚠️(还在博弈) | 节奏: 上午强5/下午强5(共10天)",
       "buy_condition_contradiction": null,
       "conclusion": "需修改计划",
       "level1_failures": [
         {
-          "check": "MA200锚定均线日内失守",
-          "detail": "MA200 $6.77 在 2026-07-15 被刺穿（低$6.71），收盘收回"
+          "check": "计划过期 + 价格偏离过大",
+          "detail": "计划 33 天未复查（ATR 2.2% 档位 ≤7日），价格 $18.34 偏离参考 $17.48 =2.1×ATR"
         }
       ],
       "level2_triggered": null,
-      "level3_ready": {
-        "met": 0,
-        "required": 1,
-        "total": 0,
-        "ready": false,
-        "multi_path": true
-      },
-      "consecutive_days": {
-        "conclusion": "需修改计划",
-        "days": 2
-      },
+      "level3_ready": null,
+      "consecutive_days": null,
       "suggested_changes": [],
       "buy_window": null,
       "valuation": null,
@@ -769,15 +310,15 @@
     },
     "SZ.159949": {
       "code": "SZ.159949",
-      "date": "2026-07-17",
-      "current_price": 1.64,
+      "date": "2026-07-20",
+      "current_price": 1.65,
       "pe_ttm": "N/A",
       "currency": "CNY",
       "has_plan": true,
       "plan_version": "1",
       "stock_type": "",
       "trigger_type": "🔴判断",
-      "trigger_reason": "前提不成立: 计划 25 天未复查（ATR 4.9% 档位 ≤7日），价格 $1.64 偏离参考 $1.92 =3.5×ATR",
+      "trigger_reason": "前提不成立: 计划 28 天未复查（ATR 5.5% 档位 ≤5日），价格 $1.65 偏离参考 $1.90 =2.8×ATR",
       "signal_count": 0,
       "signals": [
         {
@@ -801,17 +342,17 @@
           "satisfied": false
         }
       ],
-      "trend_status": "数据不足（49日 / 需120日）",
+      "trend_status": "数据不足（80日 / 需120日）",
       "trend_changed": "",
       "auto_action": "",
       "auto_reason": "",
-      "small_cycle_text": "无小周期数据",
+      "small_cycle_text": "[小周期] 跳空: +1.53% | 首时: -1.38% → ⚠️跳高被砸(卖压真) | 支撑: 1.8(x44) | 距最近1.8: +-7.7% | ATR: 5=0.1 vs 20=0.0 → 扩张⚠️(还在博弈) | 节奏: 上午强5/下午强5(共10天)",
       "buy_condition_contradiction": null,
       "conclusion": "需修改计划",
       "level1_failures": [
         {
           "check": "计划过期 + 价格偏离过大",
-          "detail": "计划 25 天未复查（ATR 4.9% 档位 ≤7日），价格 $1.64 偏离参考 $1.92 =3.5×ATR"
+          "detail": "计划 28 天未复查（ATR 5.5% 档位 ≤5日），价格 $1.65 偏离参考 $1.90 =2.8×ATR"
         }
       ],
       "level2_triggered": null,
@@ -828,8 +369,8 @@
     },
     "SH.562500": {
       "code": "SH.562500",
-      "date": "2026-07-17",
-      "current_price": 0.97,
+      "date": "2026-07-20",
+      "current_price": 0.93,
       "pe_ttm": "N/A",
       "currency": "CNY",
       "has_plan": true,
@@ -860,11 +401,11 @@
           "satisfied": false
         }
       ],
-      "trend_status": "数据不足（61日 / 需120日）",
+      "trend_status": "数据不足（80日 / 需120日）",
       "trend_changed": "",
       "auto_action": "",
       "auto_reason": "",
-      "small_cycle_text": "无小周期数据",
+      "small_cycle_text": "[小周期] 跳空: +0.62%(平) | 首时: -2.67% | 支撑: 1.1(x44) | 距最近1.1: +-11.6% | ATR: 5=0.0 vs 20=0.0 → 扩张⚠️(还在博弈) | 节奏: 上午强5/下午强5(共10天)",
       "buy_condition_contradiction": null,
       "conclusion": "需修改计划",
       "level1_failures": [
@@ -875,7 +416,7 @@
       ],
       "level2_triggered": {
         "type": "止损",
-        "detail": "硬止损: MA200 已跌破（当前 $0.97）"
+        "detail": "硬止损: MA200 已跌破（当前 $0.93）"
       },
       "level3_ready": null,
       "consecutive_days": {
@@ -891,7 +432,7 @@
           "price": 1.021,
           "description": "波段减半",
           "status": "触发",
-          "detail": "当前 0.97 已跌破，且 0/4 信号全部失败，确认弱势"
+          "detail": "当前 0.93 已跌破，且 0/4 信号全部失败，确认弱势"
         },
         {
           "label": "硬止损",
@@ -912,38 +453,198 @@
           "price": 1.12,
           "description": "MA200 已跌破",
           "status": "触发",
-          "detail": "当前 0.97"
+          "detail": "当前 0.93"
         }
       ],
       "target_checks": []
     },
     "SH.512010": {
       "code": "SH.512010",
-      "date": "2026-07-17",
-      "current_price": 0.36,
+      "date": "2026-07-20",
+      "current_price": 0.38,
       "pe_ttm": "N/A",
       "currency": "CNY",
       "has_plan": true,
       "plan_version": "6",
       "stock_type": "B",
-      "trigger_type": "🟡",
-      "trigger_reason": "距 MA60（0.351）仅 2.6%",
-      "signal_count": 0,
+      "trigger_type": "🟢",
+      "trigger_reason": "买入信号到位 (1/1)",
+      "signal_count": 1,
       "signals": [
         {
           "name": "站上MA20",
-          "description": "价格0.36 <= MA20(0.36)",
-          "satisfied": false
+          "description": "价格0.38 > MA20(0.36)",
+          "satisfied": true
         }
       ],
-      "trend_status": "数据不足（11日 / 需120日）",
+      "trend_status": "数据不足（80日 / 需120日）",
       "trend_changed": "",
       "auto_action": "",
       "auto_reason": "",
-      "small_cycle_text": "无小周期数据",
+      "small_cycle_text": "[小周期] 跳空: -1.37% | 首时: +3.34% → ✅跳低被买(支撑有) | 支撑: 0.4(x44) | 距最近0.4: +4.1% | ATR: 5=0.0 vs 20=0.0 → 扩张⚠️(还在博弈) | 节奏: 上午强6/下午强4(共10天)",
+      "buy_condition_contradiction": null,
+      "conclusion": "买入",
+      "level1_failures": [],
+      "level2_triggered": null,
+      "level3_ready": {
+        "met": 1,
+        "required": 1,
+        "total": 1,
+        "ready": true
+      },
+      "consecutive_days": null,
+      "suggested_changes": [],
+      "buy_window": null,
+      "valuation": null,
+      "stop_checks": [],
+      "target_checks": []
+    },
+    "SZ.300476": {
+      "code": "SZ.300476",
+      "date": "2026-07-20",
+      "current_price": 224.11,
+      "pe_ttm": 47.06,
+      "currency": "CNY",
+      "has_plan": true,
+      "plan_version": "3",
+      "stock_type": "A",
+      "trigger_type": "🟢",
+      "trigger_reason": "前提成立，等待信号",
+      "signal_count": 0,
+      "signals": [
+        {
+          "name": "均线支撑",
+          "description": "价格在均线附近",
+          "satisfied": false
+        },
+        {
+          "name": "阳线放量",
+          "description": "阳线+放量",
+          "satisfied": false
+        },
+        {
+          "name": "不创新低",
+          "description": "连2日不创新低",
+          "satisfied": false
+        },
+        {
+          "name": "ATR收缩",
+          "description": "ATR5<ATR20",
+          "satisfied": false
+        }
+      ],
+      "trend_status": "数据不足（80日 / 需120日）",
+      "trend_changed": "",
+      "auto_action": "",
+      "auto_reason": "",
+      "small_cycle_text": "[小周期] 跳空: +2.15% | 首时: -9.91% → ⚠️跳高被砸(卖压真) | 支撑: 281.7(x5), 288.7(x3), 292.1(x3) | 距最近292.1: +-23.3% | ATR: 5=15.9 vs 20=11.3 → 扩张⚠️(还在博弈) | 节奏: 上午强4/下午强6(共10天)",
       "buy_condition_contradiction": null,
       "conclusion": "观望",
       "level1_failures": [],
+      "level2_triggered": null,
+      "level3_ready": null,
+      "consecutive_days": null,
+      "suggested_changes": [],
+      "buy_window": null,
+      "valuation": null,
+      "stop_checks": [],
+      "target_checks": []
+    },
+    "SH.600584": {
+      "code": "SH.600584",
+      "date": "2026-07-20",
+      "current_price": 76.99,
+      "pe_ttm": 83.41,
+      "currency": "CNY",
+      "has_plan": true,
+      "plan_version": "4",
+      "stock_type": "A亚类",
+      "trigger_type": "🔴判断",
+      "trigger_reason": "前提不成立: ATR20=$10（13.2%）> 买入区间宽度 $10（13.0%），一天波动就能穿透整个买入区; 近 3 日收盘均$76.99在窗口[$37-$47]上方",
+      "signal_count": 0,
+      "signals": [
+        {
+          "name": "放量",
+          "description": "未放量(0.8x)",
+          "satisfied": false
+        }
+      ],
+      "trend_status": "数据不足（80日 / 需120日）",
+      "trend_changed": "",
+      "auto_action": "",
+      "auto_reason": "",
+      "small_cycle_text": "[小周期] 跳空: +0.60%(平) | 首时: -8.02% | 支撑: 98.6(x4), 99.6(x3), 101.2(x3) | 距最近101.2: +-24.0% | 阻力: 101.9(x5), 102.9(x5), 103.7(x3) | 距最近84.0: -9.1% | ATR: 5=5.2 vs 20=5.0 → 扩张⚠️(还在博弈) | 节奏: 上午强7/下午强3(共10天)",
+      "buy_condition_contradiction": null,
+      "conclusion": "需修改计划",
+      "level1_failures": [
+        {
+          "check": "ATR 超过买入区间宽度",
+          "detail": "ATR20=$10（13.2%）> 买入区间宽度 $10（13.0%），一天波动就能穿透整个买入区"
+        },
+        {
+          "check": "买入窗口持续在窗外",
+          "detail": "近 3 日收盘均$76.99在窗口[$37-$47]上方"
+        }
+      ],
+      "level2_triggered": null,
+      "level3_ready": {
+        "met": 0,
+        "required": 1,
+        "total": 1,
+        "ready": false
+      },
+      "consecutive_days": null,
+      "suggested_changes": [],
+      "buy_window": {
+        "low": 37.0,
+        "high": 47.0,
+        "in_window": false,
+        "distance_pct": 39.0
+      },
+      "valuation": null,
+      "stop_checks": [
+        {
+          "label": "硬止损",
+          "price": null,
+          "description": "丢 SK 海力士独家 → 全清",
+          "status": "安全",
+          "detail": "不设价格止损"
+        }
+      ],
+      "target_checks": []
+    },
+    "SZ.002371": {
+      "code": "SZ.002371",
+      "date": "2026-07-20",
+      "current_price": 676.91,
+      "pe_ttm": 88.09,
+      "currency": "CNY",
+      "has_plan": true,
+      "plan_version": "4.1",
+      "stock_type": "A亚类",
+      "trigger_type": "🔴判断",
+      "trigger_reason": "前提不成立: MA200 $668.40 在 2026-07-17 被刺穿（低$660.01），收盘收回",
+      "signal_count": 0,
+      "signals": [
+        {
+          "name": "阳线",
+          "description": "阴线",
+          "satisfied": false
+        }
+      ],
+      "trend_status": "数据不足（80日 / 需120日）",
+      "trend_changed": "",
+      "auto_action": "",
+      "auto_reason": "",
+      "small_cycle_text": "[小周期] 跳空: +3.99% | 首时: -4.12% → ⚠️跳高被砸(卖压真) | 支撑: 787.5(x3), 799.9(x3), 807.3(x3) | 距最近807.3: +-16.1% | 阻力: 823.6(x3), 830.8(x3), 837.7(x3) | 距最近701.2: -3.6% | ATR: 5=29.9 vs 20=29.0 → 扩张⚠️(还在博弈) | 节奏: 上午强7/下午强3(共10天)",
+      "buy_condition_contradiction": null,
+      "conclusion": "需修改计划",
+      "level1_failures": [
+        {
+          "check": "MA200锚定均线日内失守",
+          "detail": "MA200 $668.40 在 2026-07-17 被刺穿（低$660.01），收盘收回"
+        }
+      ],
       "level2_triggered": null,
       "level3_ready": {
         "met": 0,
@@ -958,70 +659,67 @@
       "stop_checks": [],
       "target_checks": []
     },
-    "SZ.300476": {
-      "code": "SZ.300476",
-      "date": "2026-07-17",
-      "current_price": 241.5,
-      "pe_ttm": 50.72,
+    "SZ.300394": {
+      "code": "SZ.300394",
+      "date": "2026-07-20",
+      "current_price": 213.54,
+      "pe_ttm": 107.25,
       "currency": "CNY",
       "has_plan": true,
-      "plan_version": "2",
-      "stock_type": "A",
+      "plan_version": "1.4",
+      "stock_type": "B",
       "trigger_type": "🔴判断",
-      "trigger_reason": "前提不成立: 计划 20 天未复查（ATR 9.6% 档位 ≤5日），价格 $241.50 偏离参考 $304.91 =2.7×ATR",
+      "trigger_reason": "前提不成立: 计划 14 天未复查（ATR 10.8% 档位 ≤5日），价格 $213.54 偏离参考 $277.32 =2.8×ATR",
       "signal_count": 1,
       "signals": [
         {
           "name": "放量",
           "description": "放量(1.2x)",
           "satisfied": true
-        },
-        {
-          "name": "KDJ金叉",
-          "description": "KDJ未金叉(K=15.4 D=18.5)",
-          "satisfied": false
-        },
-        {
-          "name": "阳包阴",
-          "description": "非阳包阴形态",
-          "satisfied": false
         }
       ],
-      "trend_status": "数据不足（43日 / 需120日）",
+      "trend_status": "数据不足（80日 / 需120日）",
       "trend_changed": "",
       "auto_action": "",
       "auto_reason": "",
-      "small_cycle_text": "无小周期数据",
+      "small_cycle_text": "[小周期] 跳空: +6.45% | 首时: -6.37% → ⚠️跳高被砸(卖压真) | 支撑: 259.6(x4), 261.3(x3), 268.2(x3) | 距最近268.2: +-20.4% | 阻力: 255.1(x3), 270.1(x4), 273.8(x3) | 距最近220.7: -3.3% | ATR: 5=11.9 vs 20=10.9 → 扩张⚠️(还在博弈) | 节奏: 上午强5/下午强5(共10天)",
       "buy_condition_contradiction": null,
       "conclusion": "需修改计划",
       "level1_failures": [
         {
           "check": "计划过期 + 价格偏离过大",
-          "detail": "计划 20 天未复查（ATR 9.6% 档位 ≤5日），价格 $241.50 偏离参考 $304.91 =2.7×ATR"
+          "detail": "计划 14 天未复查（ATR 10.8% 档位 ≤5日），价格 $213.54 偏离参考 $277.32 =2.8×ATR"
         }
       ],
       "level2_triggered": null,
       "level3_ready": {
         "met": 1,
-        "required": 3,
-        "total": 3,
-        "ready": false
+        "required": 1,
+        "total": 1,
+        "ready": true
       },
       "consecutive_days": null,
       "suggested_changes": [],
       "buy_window": null,
-      "valuation": null,
+      "valuation": {
+        "peg": 2.4,
+        "fwd_pe": null,
+        "sp_fwd_pe": null,
+        "peg_ok": false,
+        "fwd_pe_ok": null,
+        "anchor_valid": false
+      },
       "stop_checks": [],
       "target_checks": []
     },
-    "SH.513100": {
-      "code": "SH.513100",
-      "date": "2026-07-17",
-      "current_price": 2.11,
+    "SH.515050": {
+      "code": "SH.515050",
+      "date": "2026-07-20",
+      "current_price": 1.02,
       "pe_ttm": "N/A",
       "currency": "CNY",
       "has_plan": true,
-      "plan_version": "2",
+      "plan_version": "1",
       "stock_type": "B",
       "trigger_type": "🟢",
       "trigger_reason": "前提成立，等待信号",
@@ -1048,147 +746,15 @@
           "satisfied": false
         }
       ],
-      "trend_status": "数据不足（6日 / 需120日）",
+      "trend_status": "数据不足（80日 / 需120日）",
       "trend_changed": "",
       "auto_action": "",
       "auto_reason": "",
-      "small_cycle_text": "无小周期数据",
+      "small_cycle_text": "[小周期] 跳空: +3.13% | 首时: -6.07% → ⚠️跳高被砸(卖压真) | 支撑: 1.2(x44) | 距最近1.2: +-12.4% | ATR: 5=0.0 vs 20=0.0 → 扩张⚠️(还在博弈) | 节奏: 上午强3/下午强7(共10天)",
       "buy_condition_contradiction": null,
       "conclusion": "观望",
       "level1_failures": [],
       "level2_triggered": null,
-      "level3_ready": null,
-      "consecutive_days": {
-        "conclusion": "观望",
-        "days": 6
-      },
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [],
-      "target_checks": []
-    },
-    "SZ.300393": {
-      "code": "SZ.300393",
-      "date": "2026-07-17",
-      "current_price": 5.54,
-      "pe_ttm": "N/A",
-      "currency": "CNY",
-      "has_plan": true,
-      "plan_version": "2",
-      "stock_type": "",
-      "trigger_type": "🔴判断",
-      "trigger_reason": "前提不成立: 计划 30 天未复查（ATR 7.6% 档位 ≤5日），价格 $5.54 偏离参考 $8.94 =8.1×ATR",
-      "signal_count": 0,
-      "signals": [
-        {
-          "name": "均线支撑",
-          "description": "价格在均线附近",
-          "satisfied": false
-        },
-        {
-          "name": "阳线放量",
-          "description": "阳线+放量",
-          "satisfied": false
-        },
-        {
-          "name": "不创新低",
-          "description": "连2日不创新低",
-          "satisfied": false
-        },
-        {
-          "name": "ATR收缩",
-          "description": "ATR5<ATR20",
-          "satisfied": false
-        }
-      ],
-      "trend_status": "数据不足（61日 / 需120日）",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "无小周期数据",
-      "buy_condition_contradiction": null,
-      "conclusion": "需修改计划",
-      "level1_failures": [
-        {
-          "check": "计划过期 + 价格偏离过大",
-          "detail": "计划 30 天未复查（ATR 7.6% 档位 ≤5日），价格 $5.54 偏离参考 $8.94 =8.1×ATR"
-        }
-      ],
-      "level2_triggered": {
-        "type": "止损",
-        "detail": "硬止损: 无条件清仓。最多再亏¥1.3万。（当前 $5.54）"
-      },
-      "level3_ready": null,
-      "consecutive_days": {
-        "conclusion": "需修改计划",
-        "days": 5
-      },
-      "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [
-        {
-          "label": "硬止损",
-          "price": 6.37,
-          "description": "无条件清仓。最多再亏¥1.3万。",
-          "status": "触发",
-          "detail": "当前 5.54 已跌破，且 0/4 信号全部失败，确认弱势"
-        }
-      ],
-      "target_checks": []
-    },
-    "SZ.300442": {
-      "code": "SZ.300442",
-      "date": "2026-07-17",
-      "current_price": 64.36,
-      "pe_ttm": 20.3,
-      "currency": "CNY",
-      "has_plan": true,
-      "plan_version": "2",
-      "stock_type": "",
-      "trigger_type": "🔴判断",
-      "trigger_reason": "前提不成立: 计划 30 天未复查（ATR 8.9% 档位 ≤5日），价格 $64.36 偏离参考 $84.83 =3.6×ATR",
-      "signal_count": 0,
-      "signals": [
-        {
-          "name": "均线支撑",
-          "description": "价格在均线附近",
-          "satisfied": false
-        },
-        {
-          "name": "阳线放量",
-          "description": "阳线+放量",
-          "satisfied": false
-        },
-        {
-          "name": "不创新低",
-          "description": "连2日不创新低",
-          "satisfied": false
-        },
-        {
-          "name": "ATR收缩",
-          "description": "ATR5<ATR20",
-          "satisfied": false
-        }
-      ],
-      "trend_status": "数据不足（100日 / 需120日）",
-      "trend_changed": "",
-      "auto_action": "",
-      "auto_reason": "",
-      "small_cycle_text": "无小周期数据",
-      "buy_condition_contradiction": null,
-      "conclusion": "需修改计划",
-      "level1_failures": [
-        {
-          "check": "计划过期 + 价格偏离过大",
-          "detail": "计划 30 天未复查（ATR 8.9% 档位 ≤5日），价格 $64.36 偏离参考 $84.83 =3.6×ATR"
-        }
-      ],
-      "level2_triggered": {
-        "type": "止损",
-        "detail": "硬止损: MA200 已跌破（当前 $64.36）"
-      },
       "level3_ready": null,
       "consecutive_days": null,
       "suggested_changes": [],
@@ -1196,25 +762,18 @@
       "valuation": null,
       "stop_checks": [
         {
-          "label": "预警线",
-          "price": 68.0,
-          "description": "减至150股",
-          "status": "触发",
-          "detail": "当前 64.36 已跌破，且 0/4 信号全部失败，确认弱势"
-        },
-        {
-          "label": "硬止损",
-          "price": 56.39,
-          "description": "清仓",
+          "label": "第一档（0.94）",
+          "price": 0.88,
+          "description": "第一档（0.94）: ¥0.88 → ¥0.87",
           "status": "安全",
-          "detail": "距离 14.1%"
+          "detail": "距离 15.9%"
         },
         {
-          "label": "硬止损",
-          "price": 84.83,
-          "description": "MA200 已跌破",
-          "status": "触发",
-          "detail": "当前 64.36"
+          "label": "第二档（0.87）",
+          "price": 0.8,
+          "description": "第二档（0.87）: ¥0.80 → ¥0.79",
+          "status": "安全",
+          "detail": "距离 27.5%"
         }
       ],
       "target_checks": []
