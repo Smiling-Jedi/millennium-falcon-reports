@@ -2465,6 +2465,126 @@
         "input_tokens": 4733,
         "output_tokens": 3070,
         "prompt_version": "1.2.2"
+      },
+      {
+        "name": "比亚迪",
+        "code": "SZ.002594",
+        "doc_url": "https://www.feishu.cn/docx/FjRhd1IeooHQ4pxiQsucJd3Pnze",
+        "doc_id": "FjRhd1IeooHQ4pxiQsucJd3Pnze",
+        "date": "2026-07-22",
+        "report_title": "比亚迪失守 MA60 多空纠缠待决 🟡【观望】",
+        "change_rate": -2.9,
+        "input_tokens": 5686,
+        "output_tokens": 3089,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "阳光电源",
+        "code": "SZ.300274",
+        "doc_url": "https://www.feishu.cn/docx/EqYLduOfzoY4sdx7T1jchPXOn0e",
+        "doc_id": "EqYLduOfzoY4sdx7T1jchPXOn0e",
+        "date": "2026-07-22",
+        "report_title": "回购利好驱动反弹 但趋势压力未解 🟡【观望】",
+        "change_rate": 5.64,
+        "input_tokens": 125,
+        "output_tokens": 3150,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "宁德时代",
+        "code": "SZ.300750",
+        "doc_url": "https://www.feishu.cn/docx/PP7zdljZGo7gu8xWcDdcwPAbnac",
+        "doc_id": "PP7zdljZGo7gu8xWcDdcwPAbnac",
+        "date": "2026-07-22",
+        "report_title": "放量下挫考验估值锚，PE落至21.8x 🔵【持有】",
+        "change_rate": -2.6,
+        "input_tokens": 5813,
+        "output_tokens": 2837,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "长鑫申购",
+        "code": "SH.688981",
+        "doc_url": "https://www.feishu.cn/docx/XwyAdhVAEo19x6xpcBMclROjnGh",
+        "doc_id": "XwyAdhVAEo19x6xpcBMclROjnGh",
+        "date": "2026-07-22",
+        "report_title": "股价承压估值之重，但下方支撑暗藏玄机 🟡【观望】",
+        "change_rate": -2.76,
+        "input_tokens": 3236,
+        "output_tokens": 2760,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "医药ETF易方达",
+        "code": "SH.512010",
+        "doc_url": "https://www.feishu.cn/docx/HrP4dIrYZogE5Xx0inlcEjNEnVc",
+        "doc_id": "HrP4dIrYZogE5Xx0inlcEjNEnVc",
+        "date": "2026-07-22",
+        "report_title": "医药ETF十字星收平 确认突破成关键 🔵【持有】",
+        "change_rate": 0.0,
+        "input_tokens": 5096,
+        "output_tokens": 3494,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "胜宏科技",
+        "code": "SZ.300476",
+        "doc_url": "https://www.feishu.cn/docx/P5KkdNV54oES6SxpmImcSHdFnMe",
+        "doc_id": "P5KkdNV54oES6SxpmImcSHdFnMe",
+        "date": "2026-07-22",
+        "report_title": "胜宏科技微涨止跌但均线全面压制 🟡【观望】",
+        "change_rate": 0.05,
+        "input_tokens": 5263,
+        "output_tokens": 2548,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "长电科技",
+        "code": "SH.600584",
+        "doc_url": "https://www.feishu.cn/docx/Oga1dVb5UoGsBhxCqface4HVnsH",
+        "doc_id": "Oga1dVb5UoGsBhxCqface4HVnsH",
+        "date": "2026-07-22",
+        "report_title": "V型反转涨停却远高于买点，持有等计划 🟡【观望】",
+        "change_rate": 1.29,
+        "input_tokens": 88,
+        "output_tokens": 2784,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "北方华创",
+        "code": "SZ.002371",
+        "doc_url": "https://www.feishu.cn/docx/Bst4dRNXGoGxpoxz8F9cNNHbnrb",
+        "doc_id": "Bst4dRNXGoGxpoxz8F9cNNHbnrb",
+        "date": "2026-07-22",
+        "report_title": "跳空高开遭获利盘兑现，融资计划引分歧 🔵【持有】",
+        "change_rate": 2.61,
+        "input_tokens": 4877,
+        "output_tokens": 3127,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "天孚通信",
+        "code": "SZ.300394",
+        "doc_url": "https://www.feishu.cn/docx/GSBwdvmvKonyHyxUtj6c7FN0n9i",
+        "doc_id": "GSBwdvmvKonyHyxUtj6c7FN0n9i",
+        "date": "2026-07-22",
+        "report_title": "天孚通信业绩利好难敌趋势下行压力 🟡【观望】",
+        "change_rate": -5.79,
+        "input_tokens": 4579,
+        "output_tokens": 2603,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "通信ETF华夏",
+        "code": "SH.515050",
+        "doc_url": "https://www.feishu.cn/docx/I8XidmaTmo4iICxBN7mcKRnln5e",
+        "doc_id": "I8XidmaTmo4iICxBN7mcKRnln5e",
+        "date": "2026-07-22",
+        "report_title": "大跌4.5%但机构逆势吸筹，止跌信号尚未确认 🟡【观望】",
+        "change_rate": -4.5,
+        "input_tokens": 4680,
+        "output_tokens": 3321,
+        "prompt_version": "1.2.2"
       }
     ],
     "港股": [
@@ -6536,8 +6656,8 @@
     {
       "code": "SH.600584",
       "name": "长电科技",
-      "shares": 300,
-      "avg_cost": 77.9375,
+      "shares": 600,
+      "avg_cost": 77.9275,
       "role": "观察",
       "market": "A股"
     },
@@ -6574,5 +6694,5 @@
       "market": "美股"
     }
   ],
-  "update_time": "2026-07-20 16:28"
+  "update_time": "2026-07-22 15:40"
 }
