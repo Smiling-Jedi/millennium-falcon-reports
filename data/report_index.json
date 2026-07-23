@@ -6881,6 +6881,162 @@
         "input_tokens": 4938,
         "output_tokens": 13067,
         "prompt_version": "1.2.2"
+      },
+      {
+        "name": "特斯拉",
+        "code": "US.TSLA",
+        "doc_url": "https://www.feishu.cn/docx/M7ajdEmO3oSXx4xr9PucNCfhnVf",
+        "doc_id": "M7ajdEmO3oSXx4xr9PucNCfhnVf",
+        "date": "2026-07-24",
+        "report_title": "特斯拉单日重挫14.5%破位337前低 🔴【清仓】",
+        "change_rate": -14.52,
+        "input_tokens": 5930,
+        "output_tokens": 2755,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "SoFi Technologies",
+        "code": "US.SOFI",
+        "doc_url": "https://www.feishu.cn/docx/O7oKdcgouoCbhBxmAO1cBN4onYf",
+        "doc_id": "O7oKdcgouoCbhBxmAO1cBN4onYf",
+        "date": "2026-07-24",
+        "report_title": "均线纠缠破位 MA60 失守需观望 🔴【减仓】",
+        "change_rate": -2.46,
+        "input_tokens": 6411,
+        "output_tokens": 2912,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "Palantir",
+        "code": "US.PLTR",
+        "doc_url": "https://www.feishu.cn/docx/U2dkdCFKBoFFA6x2Rt3cIIFpneb",
+        "doc_id": "U2dkdCFKBoFFA6x2Rt3cIIFpneb",
+        "date": "2026-07-24",
+        "report_title": "PLTR 失守 MA20 关键支撑待确认 🟡【观望】",
+        "change_rate": -0.96,
+        "input_tokens": 6058,
+        "output_tokens": 3110,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "英伟达",
+        "code": "US.NVDA",
+        "doc_url": "https://www.feishu.cn/docx/U6ljdwrIUo8RuixBRHOcC70Inqd",
+        "doc_id": "U6ljdwrIUo8RuixBRHOcC70Inqd",
+        "date": "2026-07-24",
+        "report_title": "NVDA 缩量回测 MA60 支撑 多空方向待定 🔵【持有】",
+        "change_rate": -1.56,
+        "input_tokens": 6037,
+        "output_tokens": 3522,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "美光科技",
+        "code": "US.MU",
+        "doc_url": "https://www.feishu.cn/docx/LBZydi7nqolM7ux9NV4ccFxvnBd",
+        "doc_id": "LBZydi7nqolM7ux9NV4ccFxvnBd",
+        "date": "2026-07-24",
+        "report_title": "马斯克点名力挺难掩 MA20 阻力 🟡【观望】",
+        "change_rate": 3.2,
+        "input_tokens": 4658,
+        "output_tokens": 3046,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "微软",
+        "code": "US.MSFT",
+        "doc_url": "https://www.feishu.cn/docx/TFU4dkynKo1ot2x7vsGcUBeInCh",
+        "doc_id": "TFU4dkynKo1ot2x7vsGcUBeInCh",
+        "date": "2026-07-24",
+        "report_title": "微软放量下试 MA20 支撑，结构未定看防御 🔵【持有】",
+        "change_rate": -2.24,
+        "input_tokens": 6202,
+        "output_tokens": 3063,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "迈威尔科技",
+        "code": "US.MRVL",
+        "doc_url": "https://www.feishu.cn/docx/WhMkdzrG1otWykxh5UscgfBtn0g",
+        "doc_id": "WhMkdzrG1otWykxh5UscgfBtn0g",
+        "date": "2026-07-24",
+        "report_title": "MRVL弱反弹遇阻均线丛林 静待小周期信号明朗 🟡【观望】",
+        "change_rate": -0.79,
+        "input_tokens": 5111,
+        "output_tokens": 2546,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "Meta Platforms",
+        "code": "US.META",
+        "doc_url": "https://www.feishu.cn/docx/Wlp8dKoURoKBd1xrgrRcIM0SnXe",
+        "doc_id": "Wlp8dKoURoKBd1xrgrRcIM0SnXe",
+        "date": "2026-07-24",
+        "report_title": "跳空失守 MA200 关键防线 🔴【减仓清仓】",
+        "change_rate": -3.36,
+        "input_tokens": 5105,
+        "output_tokens": 2814,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "Lumentum",
+        "code": "US.LITE",
+        "doc_url": "https://www.feishu.cn/docx/Jf0WdxQDMoF1mpxAhB0c0LzGnBd",
+        "doc_id": "Jf0WdxQDMoF1mpxAhB0c0LzGnBd",
+        "date": "2026-07-24",
+        "report_title": "冲高回落留长上影 多空博弈静待财报 🟡【观望】",
+        "change_rate": 0.47,
+        "input_tokens": 5933,
+        "output_tokens": 3432,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "谷歌-C",
+        "code": "US.GOOG",
+        "doc_url": "https://www.feishu.cn/docx/IIdKdxfdjok3HTxxCkgcDmqtnOh",
+        "doc_id": "IIdKdxfdjok3HTxxCkgcDmqtnOh",
+        "date": "2026-07-24",
+        "report_title": "谷歌单日暴跌近7%破颈线 🟡【观望】",
+        "change_rate": -6.89,
+        "input_tokens": 4527,
+        "output_tokens": 2559,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "AXT Inc",
+        "code": "US.AXTI",
+        "doc_url": "https://www.feishu.cn/docx/U67CdjNXioAciJxadEAcRgaNnDc",
+        "doc_id": "U67CdjNXioAciJxadEAcRgaNnDc",
+        "date": "2026-07-24",
+        "report_title": "预警线已破黄金分割岌岌可危 🔴【减仓清仓】",
+        "change_rate": -0.09,
+        "input_tokens": 5796,
+        "output_tokens": 2954,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "博通",
+        "code": "US.AVGO",
+        "doc_url": "https://www.feishu.cn/docx/PyNHdm271oEOffxoHtbcMBTfnTI",
+        "doc_id": "PyNHdm271oEOffxoHtbcMBTfnTI",
+        "date": "2026-07-24",
+        "report_title": "博通收跌1%险守支撑，外媒传350亿融资包 🔵【持有】",
+        "change_rate": -1.09,
+        "input_tokens": 5925,
+        "output_tokens": 3435,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "RKLB 260828 65.00P",
+        "code": "US.RKLB260828P65000",
+        "doc_url": "https://www.feishu.cn/docx/Zwa3dZBffoCJ5gxAScdczwEdnvd",
+        "doc_id": "Zwa3dZBffoCJ5gxAScdczwEdnvd",
+        "date": "2026-07-24",
+        "report_title": "RKLB深度价外Put寻底 MA20附近多空胶着 🟡【观望】",
+        "change_rate": -2.83,
+        "input_tokens": 2612,
+        "output_tokens": 2109,
+        "prompt_version": "1.2.2"
       }
     ]
   },
@@ -6928,11 +7084,11 @@
     {
       "code": "US.RKLX",
       "name": "2倍做多RKLB ETF-Defiance",
-      "shares": 150,
-      "avg_cost": 30.076,
+      "shares": 500,
+      "avg_cost": 23.391,
       "role": "观察",
       "market": "美股"
     }
   ],
-  "update_time": "2026-07-23 16:23"
+  "update_time": "2026-07-24 05:21"
 }
