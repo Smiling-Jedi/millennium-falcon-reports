@@ -4948,6 +4948,102 @@
         "input_tokens": 3366,
         "output_tokens": 2153,
         "prompt_version": "1.2.2"
+      },
+      {
+        "name": "阿里 260929 120.00 购",
+        "code": "HK.ALB260929C120000",
+        "doc_url": "https://www.feishu.cn/docx/HlpFdCPNMoP0doxYXedcnfdZn7e",
+        "doc_id": "HlpFdCPNMoP0doxYXedcnfdZn7e",
+        "date": "2026-07-24",
+        "report_title": "深度虚值购权流动性冻结，有价无市 🟡【观望】",
+        "change_rate": -26.5,
+        "input_tokens": 3249,
+        "output_tokens": 2057,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "阿里巴巴-W",
+        "code": "HK.09988",
+        "doc_url": "https://www.feishu.cn/docx/MVj9d4eY2oWCPrxi7DUclzdunul",
+        "doc_id": "MVj9d4eY2oWCPrxi7DUclzdunul",
+        "date": "2026-07-24",
+        "report_title": "放量回撤 南向背离 警报未消 减仓应对 🔴【减仓】",
+        "change_rate": -4.26,
+        "input_tokens": 5141,
+        "output_tokens": 2827,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "百济神州",
+        "code": "HK.06160",
+        "doc_url": "https://www.feishu.cn/docx/D0eNdXcTToVYNfxdesFc0ULMnWc",
+        "doc_id": "D0eNdXcTToVYNfxdesFc0ULMnWc",
+        "date": "2026-07-24",
+        "report_title": "逼近 200 整数关口 美国追加 3 亿投资 🔵【持有】",
+        "change_rate": 2.79,
+        "input_tokens": 6213,
+        "output_tokens": 3221,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "美团 260929 82.50 购",
+        "code": "HK.MET260929C82500",
+        "doc_url": "https://www.feishu.cn/docx/QhCid0NEFodvx3x5Ge6c8vrIn7k",
+        "doc_id": "QhCid0NEFodvx3x5Ge6c8vrIn7k",
+        "date": "2026-07-24",
+        "report_title": "深度价内期权零博弈，正股风口期待发酵 🟡【观望】",
+        "change_rate": -0.89,
+        "input_tokens": 3190,
+        "output_tokens": 2153,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "建滔积层板",
+        "code": "HK.01888",
+        "doc_url": "https://www.feishu.cn/docx/ZloBdNeqqoyFoxxvCwqcpJXFn5S",
+        "doc_id": "ZloBdNeqqoyFoxxvCwqcpJXFn5S",
+        "date": "2026-07-24",
+        "report_title": "花旗唱多难敌单日重挫7%，MA20跌破触发预警 🔵【持有】",
+        "change_rate": -7.32,
+        "input_tokens": 4665,
+        "output_tokens": 3097,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "腾讯控股",
+        "code": "HK.00700",
+        "doc_url": "https://www.feishu.cn/docx/FieRd0WQMo7LyGxGFB4crYuyn5d",
+        "doc_id": "FieRd0WQMo7LyGxGFB4crYuyn5d",
+        "date": "2026-07-24",
+        "report_title": "腾讯续跌2.38%失守MA20 预警线触发 🟡【观望】",
+        "change_rate": -2.38,
+        "input_tokens": 5929,
+        "output_tokens": 3347,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "粤海投资",
+        "code": "HK.00270",
+        "doc_url": "https://www.feishu.cn/docx/GKGcdzDcCoOlzjxH355cytPknCf",
+        "doc_id": "GKGcdzDcCoOlzjxH355cytPknCf",
+        "date": "2026-07-24",
+        "report_title": "缩量回调但MA20支撑确认，静待突破 🔵【持有】",
+        "change_rate": -0.97,
+        "input_tokens": 5165,
+        "output_tokens": 3415,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "南方两倍做多三星电子",
+        "code": "HK.07747",
+        "doc_url": "https://www.feishu.cn/docx/Se0tdDPkPoyVJlxlfI4cX6rjndf",
+        "doc_id": "Se0tdDPkPoyVJlxlfI4cX6rjndf",
+        "date": "2026-07-24",
+        "report_title": "跳空暴跌吞噬昨日涨幅，大资金逆势净买能否托底？ 🔵【持有】",
+        "change_rate": -13.2,
+        "input_tokens": 3368,
+        "output_tokens": 2502,
+        "prompt_version": "1.2.2"
       }
     ],
     "美股": [
@@ -7234,5 +7330,5 @@
       "market": "美股"
     }
   ],
-  "update_time": "2026-07-24 15:28"
+  "update_time": "2026-07-24 16:24"
 }
