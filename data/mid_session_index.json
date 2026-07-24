@@ -1,6 +1,17 @@
 {
   "A股": [
     {
+      "date": "2026-07-24",
+      "doc_url": "https://www.feishu.cn/docx/M5WfdIUasoJJXPxXKvtcCITJnhe",
+      "doc_id": "M5WfdIUasoJJXPxXKvtcCITJnhe",
+      "update_time": "11:36",
+      "report_title": "科技股内部分化加剧，半导体设备逆势走强",
+      "input_tokens": 18670,
+      "output_tokens": 7000,
+      "prompt_version": "0.5.2",
+      "stock_count": 13
+    },
+    {
       "date": "2026-07-23",
       "doc_url": "https://www.feishu.cn/docx/R266dcPamoHHchx7OPBcNEW1nDd",
       "doc_id": "R266dcPamoHHchx7OPBcNEW1nDd",
@@ -299,6 +310,17 @@
     }
   ],
   "港股": [
+    {
+      "date": "2026-07-24",
+      "doc_url": "https://www.feishu.cn/docx/RLh2d7Pjmo9l8jxnpg1cFlmMndv",
+      "doc_id": "RLh2d7Pjmo9l8jxnpg1cFlmMndv",
+      "update_time": "12:06",
+      "report_title": null,
+      "input_tokens": 17230,
+      "output_tokens": 4873,
+      "prompt_version": "0.5.2",
+      "stock_count": 12
+    },
     {
       "date": "2026-07-23",
       "doc_url": "https://www.feishu.cn/docx/UZDsdhngsogk40xrQ1GcLAS3nNk",

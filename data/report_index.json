@@ -2729,6 +2729,150 @@
         "input_tokens": 4395,
         "output_tokens": 2751,
         "prompt_version": "1.2.2"
+      },
+      {
+        "name": "比亚迪",
+        "code": "SZ.002594",
+        "doc_url": "https://www.feishu.cn/docx/LzFFdPkKSouDUrx3KN5cKQdfnB1",
+        "doc_id": "LzFFdPkKSouDUrx3KN5cKQdfnB1",
+        "date": "2026-07-24",
+        "report_title": "MA20 支撑存疑 窄幅整理等方向 🟡【观望】",
+        "change_rate": -0.82,
+        "input_tokens": 5805,
+        "output_tokens": 2735,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "阳光电源",
+        "code": "SZ.300274",
+        "doc_url": "https://www.feishu.cn/docx/ZFGuddytFoLqNxxlCQ9cR6wvnrg",
+        "doc_id": "ZFGuddytFoLqNxxlCQ9cR6wvnrg",
+        "date": "2026-07-24",
+        "report_title": "跌破均线支撑后加速下行，静待回购信号确认底部 🔴【减仓】",
+        "change_rate": -3.71,
+        "input_tokens": 6317,
+        "output_tokens": 3020,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "宁德时代",
+        "code": "SZ.300750",
+        "doc_url": "https://www.feishu.cn/docx/B5t0d1HCcoTXZZxOoHIc9ifmnzA",
+        "doc_id": "B5t0d1HCcoTXZZxOoHIc9ifmnzA",
+        "date": "2026-07-24",
+        "report_title": "缩量震荡 MA20 附近多空纠缠未决 🟡【观望】",
+        "change_rate": -0.77,
+        "input_tokens": 6109,
+        "output_tokens": 2634,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "红利低波ETF华泰柏瑞",
+        "code": "SH.512890",
+        "doc_url": "https://www.feishu.cn/docx/IVR8dupXtoO6fSxiaQAclDP7nCe",
+        "doc_id": "IVR8dupXtoO6fSxiaQAclDP7nCe",
+        "date": "2026-07-24",
+        "report_title": "均线纠缠中放量回踩，等待方向选择 🟡【观望】",
+        "change_rate": -0.85,
+        "input_tokens": 4112,
+        "output_tokens": 2582,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "长鑫申购",
+        "code": "SH.688981",
+        "doc_url": "https://www.feishu.cn/docx/Vz30dKypjoRnNFxaWmkc0TdRnyc",
+        "doc_id": "Vz30dKypjoRnNFxaWmkc0TdRnyc",
+        "date": "2026-07-24",
+        "report_title": "银行集体回撤 MA20 命悬一线 🔵【持有】",
+        "change_rate": -0.94,
+        "input_tokens": 3223,
+        "output_tokens": 2253,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "医药ETF易方达",
+        "code": "SH.512010",
+        "doc_url": "https://www.feishu.cn/docx/P1lLdQFCjozewWx58ofc6zeYnVe",
+        "doc_id": "P1lLdQFCjozewWx58ofc6zeYnVe",
+        "date": "2026-07-24",
+        "report_title": "放量长阴破位，主力与散户剧烈博弈 🔴【减仓】",
+        "change_rate": -5.26,
+        "input_tokens": 5184,
+        "output_tokens": 3046,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "胜宏科技",
+        "code": "SZ.300476",
+        "doc_url": "https://www.feishu.cn/docx/UzqGdGgXpoKpJMxwgj5c1l3inOc",
+        "doc_id": "UzqGdGgXpoKpJMxwgj5c1l3inOc",
+        "date": "2026-07-24",
+        "report_title": "Vera Rubin 红利难敌均线反压 胜宏续创新低 🟡【观望】",
+        "change_rate": -3.73,
+        "input_tokens": 5258,
+        "output_tokens": 2831,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "长电科技",
+        "code": "SH.600584",
+        "doc_url": "https://www.feishu.cn/docx/GORNd5sFfowLuTxDo3McaOKunpb",
+        "doc_id": "GORNd5sFfowLuTxDo3McaOKunpb",
+        "date": "2026-07-24",
+        "report_title": "跳空低开强势反弹 估值仍高企维持观望 🟡【观望】",
+        "change_rate": 2.59,
+        "input_tokens": 6304,
+        "output_tokens": 2953,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "北方华创",
+        "code": "SZ.002371",
+        "doc_url": "https://www.feishu.cn/docx/L7CpdmAhtoN82ax0TfvcdP7lnKf",
+        "doc_id": "L7CpdmAhtoN82ax0TfvcdP7lnKf",
+        "date": "2026-07-24",
+        "report_title": "跳低逆转触发右侧追涨信号 🔵【持有】",
+        "change_rate": 2.3,
+        "input_tokens": 4982,
+        "output_tokens": 2837,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "天孚通信",
+        "code": "SZ.300394",
+        "doc_url": "https://www.feishu.cn/docx/QYzUdWA45oUgUFx7zJycIgcHn0e",
+        "doc_id": "QYzUdWA45oUgUFx7zJycIgcHn0e",
+        "date": "2026-07-24",
+        "report_title": "空头排列加速赶底，MA200关口岌岌可危 🟡【观望】",
+        "change_rate": -4.09,
+        "input_tokens": 4529,
+        "output_tokens": 2794,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "通信ETF华夏",
+        "code": "SH.515050",
+        "doc_url": "https://www.feishu.cn/docx/LADEdNK7nosIvnx2TLBcyhRgnMd",
+        "doc_id": "LADEdNK7nosIvnx2TLBcyhRgnMd",
+        "date": "2026-07-24",
+        "report_title": "跌近3%但7亿净流入，信号不明 🟡【观望】",
+        "change_rate": -2.83,
+        "input_tokens": 4576,
+        "output_tokens": 2870,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "安集科技",
+        "code": "SH.688019",
+        "doc_url": "https://www.feishu.cn/docx/QYFxdx6IxomBjwx3suzclDomnsh",
+        "doc_id": "QYFxdx6IxomBjwx3suzclDomnsh",
+        "date": "2026-07-24",
+        "report_title": "放量反弹试探MA60 均线纠缠未定方向 🟡【观望】",
+        "change_rate": 5.06,
+        "input_tokens": 4375,
+        "output_tokens": 2747,
+        "prompt_version": "1.2.2"
       }
     ],
     "港股": [
@@ -7052,8 +7196,8 @@
     {
       "code": "SH.600584",
       "name": "长电科技",
-      "shares": 600,
-      "avg_cost": 77.9275,
+      "shares": 1000,
+      "avg_cost": 74.7858,
       "role": "观察",
       "market": "A股"
     },
@@ -7090,5 +7234,5 @@
       "market": "美股"
     }
   ],
-  "update_time": "2026-07-24 05:21"
+  "update_time": "2026-07-24 15:28"
 }
