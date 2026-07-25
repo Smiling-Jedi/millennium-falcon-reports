@@ -7,8 +7,8 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>建滔积层板 · 交易计划 · 千年隼</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=202607252102">
-    <link rel="stylesheet" href="style.css?v=202607252102">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=202607252220">
+    <link rel="stylesheet" href="style.css?v=202607252220">
 </head>
 <body>
     <header class="masthead container">
@@ -47,7 +47,7 @@
 
     <div class="status-bar container">
         <span class="status-item">类型 <strong>D</strong></span>
-        <span class="status-item">持仓 <strong>500股@14.323</strong></span>
+        <span class="status-item">持仓 <strong>1,000股@34.237</strong></span>
     </div>
 
     <div class="container">
@@ -56,38 +56,41 @@
                 <div class="dc-rows">
         <div class="dc-row"><span class="dc-label">窗口</span><span class="dc-val">—</span></div>
         <div class="dc-row"><span class="dc-label">止跌</span><span class="dc-val">—</span></div>
-        <div class="dc-row"><span class="dc-label">预警</span><span class="dc-val">[条件] 预警线： MA20(50.05)跌破→减200股(收回本金)。成本14.32极低，收回本金后无需硬止损。  |  硬止损: MA20(50.05)跌破→减200股(收回本金)。成本14.32极低，收回本金后无需硬止损。</span></div>
+        <div class="dc-row"><span class="dc-label">预警</span><span class="dc-val">跌破 MA60</span></div>
                 </div>
             </div>
         </div>
 
     <section class="section container">
-        <div class="section-title">交易计划<span class="ver">v2 · 07-24</span></div>
+        <div class="section-title">交易计划<span class="ver">v3 · 07-24</span></div>
         <div class="plan-card">
         <div class="plan-section">
             <div class="ps-label">买入</div>
-            <div class="ps-row warn"><span class="v">暂不加仓（98%分位+PEG 8.9+RSI 70.7）。</span></div>
+<div class="ps-table" style="grid-template-columns:repeat(4,1fr)">
+<div class="ps-th">档</div>
+<div class="ps-th">触发</div>
+<div class="ps-th">数量</div>
+<div class="ps-th">逻辑</div>
+<div class="ps-td ">右侧确认</div>
+<div class="ps-td ">止跌信号 ≥2（连续2日不创新低/放量阳线/缩量企稳）+ 收盘站稳 40（7/21-23 平台）</div>
+<div class="ps-td ">+500 股</div>
+<div class="ps-td ">资金出逃结束才加。R:R：入~40/守33.4/目标58 = 2.8:1</div>
+<div class="ps-td ">左侧极端</div>
+<div class="ps-td ">跌到 28-30（MA200+周期底部估值区）且 CCL 仍在涨价</div>
+<div class="ps-td ">+500 股</div>
+<div class="ps-td ">越跌越买的前提=论点没死（涨价函还在发），不是越跌越便宜</div>
+</div>
         </div>
         <div class="plan-section">
             <div class="ps-label">止损</div>
-            <div class="ps-row alert"><span class="v">MA20(50.05)跌破→减200股(收回本金)。成本14.32极低，收回本金后无需硬止损。</span></div>
+            <div class="ps-row "><span class="v">加仓部分：收盘 <33.4 → 加仓部分先走</span></div>
+            <div class="ps-row warn"><span class="v">底仓：收盘 <33.4 → 重评（非自动卖，例外+小仓位）；收盘 <28.6（MA200）→ 「D 型底仓」例外失效，按 D 型波段纪律清</span></div>
         </div>
         <div class="plan-section">
             <div class="ps-label">止盈</div>
-<div class="ps-table" style="grid-template-columns:repeat(3,1fr)">
-<div class="ps-th">档位</div>
-<div class="ps-th">条件</div>
-<div class="ps-th">操作</div>
-<div class="ps-td ">T1</div>
-<div class="ps-td ">卖200股@64</div>
-<div class="ps-td ">收回本金~HK$12,800</div>
-<div class="ps-td ">T2</div>
-<div class="ps-td alert">MA20(50.05)跌破</div>
-<div class="ps-td ">减1/3</div>
-<div class="ps-td ">T3</div>
-<div class="ps-td ">Q3毛利率未突破20%</div>
-<div class="ps-td alert">清仓</div>
-</div>
+            <div class="ps-row alert"><span class="v">CCL 开始降价（周期见顶实锤）→ 减至 500 股</span></div>
+            <div class="ps-row "><span class="v">反弹至 MA60 区（~58）→ 减 500 股收回大半成本，剩余 500 股零压力跟周期</span></div>
+            <div class="ps-row "><span class="v">中报净利 <25 亿 → 重估全计划</span></div>
         </div>
         <div class="plan-section">
             <div class="ps-label">原则对照</div>
@@ -98,7 +101,7 @@
     </section>
 
 
-    <footer class="site-foot container">千年隼 MILLENNIUM FALCON · 最后更新 2026-07-25 21:02</footer>
-    <script>(function(){var v='202607252102';if(!location.search){location.replace(location.pathname+'?v='+v);return;}var as=document.querySelectorAll('a[href]');for(var i=0;i<as.length;i++){var h=as[i].getAttribute('href');if(h&&h.indexOf('://')<0&&h.indexOf('?v=')<0&&h.match(/\.html$/))as[i].setAttribute('href',h+'?v='+v);}})();</script>
+    <footer class="site-foot container">千年隼 MILLENNIUM FALCON · 最后更新 2026-07-25 22:20</footer>
+    <script>(function(){var v='202607252220';if(!location.search){location.replace(location.pathname+'?v='+v);return;}var as=document.querySelectorAll('a[href]');for(var i=0;i<as.length;i++){var h=as[i].getAttribute('href');if(h&&h.indexOf('://')<0&&h.indexOf('?v=')<0&&h.match(/\.html$/))as[i].setAttribute('href',h+'?v='+v);}})();</script>
 </body>
 </html>
