@@ -1,0 +1,25 @@
+{
+ "date": "2026-07-25",
+ "tolerance_pct": 0.5,
+ "summary": {
+  "checked": 1,
+  "ok": 1,
+  "mismatch": [],
+  "errors": []
+ },
+ "results": {
+  "SH.688019": {
+   "source": "ifind",
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA200",
+     "ours": 199.05,
+     "theirs": 199.6424,
+     "diff_pct": 0.297,
+     "ok": true
+    }
+   ]
+  }
+ }
+}
