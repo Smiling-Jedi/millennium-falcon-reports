@@ -2,8 +2,8 @@
  "date": "2026-07-26",
  "tolerance_pct": 0.5,
  "summary": {
-  "checked": 1,
-  "ok": 0,
+  "checked": 2,
+  "ok": 1,
   "mismatch": [
    "SH.688019"
   ],
@@ -20,6 +20,19 @@
      "theirs": 199.6424,
      "diff_pct": 1.026,
      "ok": false
+    }
+   ]
+  },
+  "SZ.002371": {
+   "source": "ifind",
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA200",
+     "ours": 523.94,
+     "theirs": 523.6556,
+     "diff_pct": 0.054,
+     "ok": true
     }
    ]
   }
