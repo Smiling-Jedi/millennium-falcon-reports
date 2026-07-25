@@ -1,12 +1,11 @@
 {
- "date": "2026-07-25",
+ "date": "2026-07-26",
  "tolerance_pct": 0.5,
  "summary": {
-  "checked": 4,
-  "ok": 2,
+  "checked": 1,
+  "ok": 0,
   "mismatch": [
-   "SH.688019",
-   "SZ.002594"
+   "SH.688019"
   ],
   "errors": []
  },
@@ -17,77 +16,10 @@
    "pairs": [
     {
      "name": "MA200",
-     "ours": 227.61,
+     "ours": 201.69,
      "theirs": 199.6424,
-     "diff_pct": 14.009,
+     "diff_pct": 1.026,
      "ok": false
-    }
-   ]
-  },
-  "SZ.002594": {
-   "source": "ifind",
-   "status": "mismatch",
-   "pairs": [
-    {
-     "name": "MA200",
-     "ours": 95.99,
-     "theirs": 96.5769,
-     "diff_pct": 0.608,
-     "ok": false
-    }
-   ]
-  },
-  "US.SOFI": {
-   "source": "opend",
-   "status": "ok",
-   "pairs": [
-    {
-     "name": "MA20",
-     "ours": 17.85,
-     "theirs": 17.849500000000006,
-     "diff_pct": 0.003,
-     "ok": true
-    },
-    {
-     "name": "MA60",
-     "ours": 16.97,
-     "theirs": 16.969333333333335,
-     "diff_pct": 0.004,
-     "ok": true
-    },
-    {
-     "name": "MA200",
-     "ours": 21.64,
-     "theirs": 21.641949999999984,
-     "diff_pct": 0.009,
-     "ok": true
-    }
-   ]
-  },
-  "US.AXTI": {
-   "source": "opend",
-   "status": "ok",
-   "pairs": [
-    {
-     "name": "MA20",
-     "ours": 58.5,
-     "theirs": 58.503999999999984,
-     "diff_pct": 0.007,
-     "ok": true
-    },
-    {
-     "name": "MA60",
-     "ours": 88.0,
-     "theirs": 88.00216666666667,
-     "diff_pct": 0.002,
-     "ok": true
-    },
-    {
-     "name": "MA200",
-     "ours": 45.48,
-     "theirs": 45.48450000000002,
-     "diff_pct": 0.01,
-     "ok": true
     }
    ]
   }
