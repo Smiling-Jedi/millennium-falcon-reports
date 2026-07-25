@@ -3,8 +3,9 @@
  "tolerance_pct": 0.5,
  "summary": {
   "checked": 4,
-  "ok": 3,
+  "ok": 2,
   "mismatch": [
+   "SH.688019",
    "SZ.002594"
   ],
   "errors": []
@@ -12,14 +13,14 @@
  "results": {
   "SH.688019": {
    "source": "ifind",
-   "status": "ok",
+   "status": "mismatch",
    "pairs": [
     {
      "name": "MA200",
-     "ours": 199.05,
+     "ours": 227.61,
      "theirs": 199.6424,
-     "diff_pct": 0.297,
-     "ok": true
+     "diff_pct": 14.009,
+     "ok": false
     }
    ]
   },
