@@ -1,6 +1,6 @@
 {
   "date": "2026-07-25",
-  "updated": "12:19",
+  "updated": "15:45",
   "stocks": {
     "US.TSLA": {
       "code": "US.TSLA",
@@ -77,19 +77,19 @@
     "US.SOFI": {
       "code": "US.SOFI",
       "date": "2026-07-25",
-      "current_price": 16.46,
+      "current_price": 16.65,
       "pe_ttm": 36.58,
       "currency": "USD",
       "has_plan": true,
       "plan_version": "4.8",
       "stock_type": "B",
-      "trigger_type": "🔴判断",
-      "trigger_reason": "前提不成立: ATR20=$1（5.2%）> 买入区间宽度 $0（0.9%），一天波动就能穿透整个买入区; 预警线 $16.40 在 2026-07-24 被日内刺穿（低$16.33），收盘$16.46收回",
+      "trigger_type": "🟡",
+      "trigger_reason": "硬止损: 距离 7.4%",
       "signal_count": 0,
       "signals": [
         {
           "name": "站上$17.00",
-          "description": "收盘16.46 <= $17.00",
+          "description": "收盘16.65 <= $17.00",
           "satisfied": false
         },
         {
@@ -99,49 +99,28 @@
         },
         {
           "name": "$15.60-$15.75",
-          "description": "价格16.46不在$15.60-$15.75",
+          "description": "价格16.65不在$15.60-$15.75",
           "satisfied": false
         },
         {
           "name": "放量",
-          "description": "未放量(1.1x)",
+          "description": "未放量(0.9x)",
           "satisfied": false
         },
         {
           "name": "站上$20.13",
-          "description": "收盘16.46 <= $20.13",
+          "description": "收盘16.65 <= $20.13",
           "satisfied": false
         }
       ],
-      "trend_status": "数据不足（80日 / 需120日）",
+      "trend_status": "向下反转",
       "trend_changed": "",
       "auto_action": "",
       "auto_reason": "",
-      "small_cycle_text": "[小周期] 跳空: +0.42%(平) | 首时: -1.58% | 支撑: 17.7(x7), 18.2(x16), 18.7(x8) | 距最近18.7: +-12.0% | 阻力: 17.9(x8), 18.4(x12), 18.9(x11) | 距最近17.9: -8.9% | ATR: 5=0.2 vs 20=0.2 → 收缩✅(方向快选) | 节奏: 上午强5/下午强5(共10天)",
+      "small_cycle_text": "",
       "buy_condition_contradiction": null,
-      "conclusion": "需修改计划",
-      "level1_failures": [
-        {
-          "check": "ATR 超过买入区间宽度",
-          "detail": "ATR20=$1（5.2%）> 买入区间宽度 $0（0.9%），一天波动就能穿透整个买入区"
-        },
-        {
-          "check": "止损预警线日内刺穿",
-          "detail": "预警线 $16.40 在 2026-07-24 被日内刺穿（低$16.33），收盘$16.46收回"
-        },
-        {
-          "check": "买入窗口持续在窗外",
-          "detail": "近 3 日收盘均$16.46在窗口[$16-$16]上方"
-        },
-        {
-          "check": "MA60锚定均线收盘失守",
-          "detail": "MA60 $16.94 已连续 1 日收于下方（最近 2026-07-24 收$16.46）"
-        },
-        {
-          "check": "止盈价位被触及",
-          "detail": "第2档 $17.00 在 2026-07-22 被触及（高$17.61），计划可能需刷新"
-        }
-      ],
+      "conclusion": "观望",
+      "level1_failures": [],
       "level2_triggered": null,
       "level3_ready": {
         "met": 0,
@@ -150,21 +129,18 @@
         "ready": false,
         "multi_path": true
       },
-      "consecutive_days": {
-        "conclusion": "需修改计划",
-        "days": 2
-      },
+      "consecutive_days": null,
       "fundamental_watch": null,
       "suggested_changes": [],
       "buy_window": {
         "low": 15.6,
         "high": 15.75,
         "in_window": false,
-        "distance_pct": 4.3
+        "distance_pct": 5.4
       },
       "valuation": {
-        "peg": 0.61,
-        "fwd_pe": null,
+        "peg": 0.55,
+        "fwd_pe": 20.3,
         "sp_fwd_pe": null,
         "peg_ok": true,
         "fwd_pe_ok": null,
@@ -172,18 +148,25 @@
       },
       "stop_checks": [
         {
+          "label": "硬止损",
+          "price": 15.5,
+          "description": "减至1000股+3日收回缓冲",
+          "status": "接近",
+          "detail": "距离 7.4%"
+        },
+        {
           "label": "预警线",
           "price": 17.07,
           "description": "⚠️ $17.07(MA60)收盘跌破→清掉路径①的300股（当前未建仓）",
           "status": "路径止损",
-          "detail": "属于未建仓买入路径，当前 16.46 已跌破该路径失效位"
+          "detail": "属于未建仓买入路径，当前 16.65 已跌破该路径失效位"
         },
         {
           "label": "预警线",
           "price": 16.4,
           "description": "⚠️ $16.40收盘跌破→假收复，清",
           "status": "路径止损",
-          "detail": "属于未建仓买入路径，距失效位 0.4%"
+          "detail": "属于未建仓买入路径，距失效位 1.5%"
         },
         {
           "label": "预警线",
@@ -197,7 +180,7 @@
           "price": 14.9,
           "description": "⚠️ $14.90收盘跌破→前低结构破坏，清",
           "status": "路径止损",
-          "detail": "属于未建仓买入路径，距失效位 10.5%"
+          "detail": "属于未建仓买入路径，距失效位 11.7%"
         },
         {
           "label": "预警线",
@@ -211,14 +194,7 @@
           "price": 18.8,
           "description": "⚠️ $18.80收盘跌破→假突破，清掉路径③的500股",
           "status": "路径止损",
-          "detail": "属于未建仓买入路径，当前 16.46 已跌破该路径失效位"
-        },
-        {
-          "label": "预警线",
-          "price": 15.5,
-          "description": "⚠️ $15.50(前低$14.92+0.6×ATR缓冲)收盘跌破→减至1,000股+3日收回缓冲",
-          "status": "接近",
-          "detail": "距离 6.2%"
+          "detail": "属于未建仓买入路径，当前 16.65 已跌破该路径失效位"
         },
         {
           "label": "硬止损",
@@ -239,7 +215,7 @@
         {
           "tier": "第2档",
           "price_text": "$17",
-          "distance": "距当前 +3%",
+          "distance": "距当前 +2%",
           "action": "",
           "triggered": false
         }
@@ -867,35 +843,30 @@
     "US.AXTI": {
       "code": "US.AXTI",
       "date": "2026-07-25",
-      "current_price": 47.23,
+      "current_price": 52.93,
       "pe_ttm": -147.59,
       "currency": "USD",
       "has_plan": true,
       "plan_version": "8",
       "stock_type": "B",
-      "trigger_type": "🔴判断",
-      "trigger_reason": "前提不成立: MA60 $87.64 已连续 1 日收于下方（最近 2026-07-24 收$47.23）",
+      "trigger_type": "🟢",
+      "trigger_reason": "前提成立，等待信号",
       "signal_count": 0,
       "signals": [
         {
           "name": "站上MA20",
-          "description": "价格47.23 <= MA20(57.41)",
+          "description": "价格52.93 <= MA20(58.50)",
           "satisfied": false
         }
       ],
-      "trend_status": "数据不足（80日 / 需120日）",
+      "trend_status": "正常",
       "trend_changed": "",
       "auto_action": "",
       "auto_reason": "",
-      "small_cycle_text": "[小周期] 跳空: -3.65% | 首时: -3.45% | 支撑: 55.7(x3), 56.7(x6), 57.2(x3) | 距最近57.2: +-17.4% | 阻力: 57.5(x7), 58.1(x5), 58.5(x3) | 距最近51.5: -9.1% | ATR: 5=1.4 vs 20=1.8 → 收缩✅(方向快选) | 节奏: 上午强5/下午强5(共10天)",
+      "small_cycle_text": "",
       "buy_condition_contradiction": null,
-      "conclusion": "需修改计划",
-      "level1_failures": [
-        {
-          "check": "MA60锚定均线收盘失守",
-          "detail": "MA60 $87.64 已连续 1 日收于下方（最近 2026-07-24 收$47.23）"
-        }
-      ],
+      "conclusion": "观望",
+      "level1_failures": [],
       "level2_triggered": null,
       "level3_ready": {
         "met": 0,
@@ -904,21 +875,25 @@
         "ready": false,
         "multi_path": true
       },
-      "consecutive_days": {
-        "conclusion": "需修改计划",
-        "days": 7
-      },
+      "consecutive_days": null,
       "fundamental_watch": null,
       "suggested_changes": [],
       "buy_window": null,
-      "valuation": null,
+      "valuation": {
+        "peg": 0.38,
+        "fwd_pe": 60.7,
+        "sp_fwd_pe": null,
+        "peg_ok": true,
+        "fwd_pe_ok": null,
+        "anchor_valid": true
+      },
       "stop_checks": [
         {
           "label": "硬止损",
           "price": 39.7,
-          "description": "全清",
+          "description": "清仓",
           "status": "安全",
-          "detail": "距离 19.0%"
+          "detail": "距离 33.3%"
         },
         {
           "label": "硬止损",
@@ -1055,8 +1030,8 @@
       "has_plan": true,
       "plan_version": "6",
       "stock_type": "A亚类",
-      "trigger_type": "🟢",
-      "trigger_reason": "前提成立，等待信号",
+      "trigger_type": "🟡",
+      "trigger_reason": "预警线: 距离 2.9%; 硬止损: 距离 4.9%",
       "signal_count": 0,
       "signals": [
         {
@@ -1090,12 +1065,44 @@
       "level1_failures": [],
       "level2_triggered": null,
       "level3_ready": null,
-      "consecutive_days": null,
+      "consecutive_days": {
+        "conclusion": "观望",
+        "days": 1
+      },
       "fundamental_watch": null,
       "suggested_changes": [],
       "buy_window": null,
       "valuation": null,
-      "stop_checks": [],
+      "stop_checks": [
+        {
+          "label": "预警线",
+          "price": 90.0,
+          "description": "回踩变深，波段仓通道暂停",
+          "status": "接近",
+          "detail": "距离 2.9%"
+        },
+        {
+          "label": "硬止损",
+          "price": 88.3,
+          "description": "波段仓止损第一层：卖一半",
+          "status": "接近",
+          "detail": "距离 4.9%"
+        },
+        {
+          "label": "硬止损",
+          "price": 86.5,
+          "description": "波段仓止损第二层：清剩余",
+          "status": "接近",
+          "detail": "距离 7.1%"
+        },
+        {
+          "label": "硬止损",
+          "price": 84.9,
+          "description": "反弹结构破坏，底仓减2000股",
+          "status": "接近",
+          "detail": "距离 9.1%"
+        }
+      ],
       "target_checks": []
     },
     "SH.688019": {
