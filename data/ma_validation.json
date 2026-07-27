@@ -3,9 +3,10 @@
  "tolerance_pct": 0.5,
  "summary": {
   "checked": 21,
-  "ok": 16,
+  "ok": 15,
   "mismatch": [
-   "SZ.300394"
+   "SZ.300394",
+   "SH.688019"
   ],
   "errors": [
    "SH.562500",
@@ -54,9 +55,9 @@
    "pairs": [
     {
      "name": "MA200",
-     "ours": 52.75,
+     "ours": 52.78,
      "theirs": 52.9775,
-     "diff_pct": 0.429,
+     "diff_pct": 0.373,
      "ok": true
     }
    ]
@@ -94,9 +95,9 @@
    "pairs": [
     {
      "name": "MA200",
-     "ours": 96.41,
+     "ours": 96.45,
      "theirs": 96.5109,
-     "diff_pct": 0.105,
+     "diff_pct": 0.063,
      "ok": true
     }
    ]
@@ -107,9 +108,9 @@
    "pairs": [
     {
      "name": "MA200",
-     "ours": 155.69,
+     "ours": 155.94,
      "theirs": 155.6437,
-     "diff_pct": 0.03,
+     "diff_pct": 0.19,
      "ok": true
     }
    ]
@@ -120,9 +121,9 @@
    "pairs": [
     {
      "name": "MA200",
-     "ours": 382.93,
+     "ours": 383.07,
      "theirs": 383.7729,
-     "diff_pct": 0.22,
+     "diff_pct": 0.183,
      "ok": true
     }
    ]
@@ -145,9 +146,9 @@
    "pairs": [
     {
      "name": "MA200",
-     "ours": 296.96,
+     "ours": 297.09,
      "theirs": 296.0498,
-     "diff_pct": 0.307,
+     "diff_pct": 0.351,
      "ok": true
     }
    ]
@@ -158,9 +159,9 @@
    "pairs": [
     {
      "name": "MA200",
-     "ours": 524.32,
+     "ours": 524.4,
      "theirs": 525.4135,
-     "diff_pct": 0.208,
+     "diff_pct": 0.193,
      "ok": true
     }
    ]
@@ -171,9 +172,9 @@
    "pairs": [
     {
      "name": "MA200",
-     "ours": 205.0,
+     "ours": 206.04,
      "theirs": 201.8165,
-     "diff_pct": 1.577,
+     "diff_pct": 2.093,
      "ok": false
     }
    ]
@@ -186,14 +187,14 @@
   },
   "SH.688019": {
    "source": "ifind",
-   "status": "ok",
+   "status": "mismatch",
    "pairs": [
     {
      "name": "MA200",
-     "ours": 200.43,
+     "ours": 201.65,
      "theirs": 200.2172,
-     "diff_pct": 0.106,
-     "ok": true
+     "diff_pct": 0.716,
+     "ok": false
     }
    ]
   },
