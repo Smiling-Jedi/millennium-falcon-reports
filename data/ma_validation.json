@@ -3,11 +3,8 @@
  "tolerance_pct": 0.5,
  "summary": {
   "checked": 21,
-  "ok": 15,
-  "mismatch": [
-   "SZ.300394",
-   "SH.688019"
-  ],
+  "ok": 17,
+  "mismatch": [],
   "errors": [
    "SH.562500",
    "SH.512890",
@@ -55,9 +52,9 @@
    "pairs": [
     {
      "name": "MA200",
-     "ours": 52.78,
+     "ours": 52.72,
      "theirs": 52.9775,
-     "diff_pct": 0.373,
+     "diff_pct": 0.486,
      "ok": true
     }
    ]
@@ -95,9 +92,9 @@
    "pairs": [
     {
      "name": "MA200",
-     "ours": 96.45,
+     "ours": 96.58,
      "theirs": 96.5109,
-     "diff_pct": 0.063,
+     "diff_pct": 0.072,
      "ok": true
     }
    ]
@@ -108,9 +105,9 @@
    "pairs": [
     {
      "name": "MA200",
-     "ours": 155.94,
+     "ours": 155.83,
      "theirs": 155.6437,
-     "diff_pct": 0.19,
+     "diff_pct": 0.12,
      "ok": true
     }
    ]
@@ -121,9 +118,9 @@
    "pairs": [
     {
      "name": "MA200",
-     "ours": 383.07,
+     "ours": 383.31,
      "theirs": 383.7729,
-     "diff_pct": 0.183,
+     "diff_pct": 0.121,
      "ok": true
     }
    ]
@@ -146,9 +143,9 @@
    "pairs": [
     {
      "name": "MA200",
-     "ours": 297.09,
+     "ours": 296.31,
      "theirs": 296.0498,
-     "diff_pct": 0.351,
+     "diff_pct": 0.088,
      "ok": true
     }
    ]
@@ -159,23 +156,23 @@
    "pairs": [
     {
      "name": "MA200",
-     "ours": 524.4,
+     "ours": 523.38,
      "theirs": 525.4135,
-     "diff_pct": 0.193,
+     "diff_pct": 0.387,
      "ok": true
     }
    ]
   },
   "SZ.300394": {
    "source": "ifind",
-   "status": "mismatch",
+   "status": "ok",
    "pairs": [
     {
      "name": "MA200",
-     "ours": 206.04,
+     "ours": 201.3,
      "theirs": 201.8165,
-     "diff_pct": 2.093,
-     "ok": false
+     "diff_pct": 0.256,
+     "ok": true
     }
    ]
   },
@@ -187,14 +184,14 @@
   },
   "SH.688019": {
    "source": "ifind",
-   "status": "mismatch",
+   "status": "ok",
    "pairs": [
     {
      "name": "MA200",
-     "ours": 201.65,
+     "ours": 199.6,
      "theirs": 200.2172,
-     "diff_pct": 0.716,
-     "ok": false
+     "diff_pct": 0.308,
+     "ok": true
     }
    ]
   },
