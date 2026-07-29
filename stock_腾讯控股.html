@@ -7,8 +7,8 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>腾讯控股 · 交易计划 · 千年隼</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=202607281052">
-    <link rel="stylesheet" href="style.css?v=202607281052">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=202607292126">
+    <link rel="stylesheet" href="style.css?v=202607292126">
 </head>
 <body>
     <header class="masthead container">
@@ -21,8 +21,8 @@
                 </div>
             </div>
             <div class="issue">
-                <div class="day">28</div>
-                <div class="meta">Jul · Tuesday</div>
+                <div class="day">29</div>
+                <div class="meta">Jul · Wednesday</div>
             </div>
         </div>
     </header>
@@ -53,11 +53,11 @@
 
     <div class="container">
             <div class="daily-check">
-                <div class="dc-title">⚡ 日检对照 <span style="font-size:10px;color:var(--ink-soft)">（计划文本提取）</span></div>
+                <div class="dc-title">⚡ 日检对照 <span class="tag-yellow">观望</span></div>
                 <div class="dc-rows">
-        <div class="dc-row"><span class="dc-label">窗口</span><span class="dc-val">—</span></div>
-        <div class="dc-row"><span class="dc-label">止跌</span><span class="dc-val">≥2个 ①均线支撑 ②阳线放量 ③卖压衰竭 ④波动见顶</span></div>
-        <div class="dc-row"><span class="dc-label">预警</span><span class="dc-val">[触发] 预警线 ¥450（），当前 434.60已跌破  |  趋势向下反转  |  硬止损: 跌破400→波段仓全清</span></div>
+        <div class="dc-row dc-warning">⚠️ 硬止损: 距离 5.2%; 硬止损: 距离 6.5%；📡买入窗口进入：买12/30 480C论点仓2张（附加：站稳451再加第3张·预算7500港元以内）</div>
+        <div class="dc-row"><span class="dc-label">止跌</span><span class="dc-val">3/4</span><span class="dc-detail">均线支撑✅  阳线放量❌  不创新低✅  ATR收缩✅</span></div>
+        <div class="dc-row"><span class="dc-label">预警</span><span class="dc-val">硬止损: 距离 5.2%  |  硬止损: 距离 6.5%  |  预警线: 当前 447.20 已跌破，但 3/4 止跌信号满足，可能假突破</span></div>
                 </div>
             </div>
         </div>
@@ -91,8 +91,13 @@
             <div class="ps-row "><span class="v">旧波段(1200股@540)只在400止损，预警和收紧只管新买入。</span></div>
             <div class="ps-row warn"><span class="v">暂停买入: true</span></div>
             <div class="ps-row "><span class="v">{条件: 窗口任一条破线, 动作: 计划作废→Master重分析重做计划, 类型: 事件型}</span></div>
-            <div class="ps-row "><span class="v">{级别: 行动, 条件: 收盘 < 400, 动作: 旧波段(1200股@540)全清(唯一正股波段止损;破MA20/420减1/3规则仅适用新买入波段,当前无——7/26 Jedi确认知悉,不再报警)}</span></div>
-            <div class="ps-row "><span class="v">{级别: 关注, 条件: 止盈PE>24.4x(~710)波段卖1/2;PE>27.6x(~804)波段全清, 动作: 按档执行}</span></div>
+            <div class="ps-row "><span class="v">{级别: 行动, 条件: 收盘 < 400, 动作: 旧波段(1200股@540)全清(唯一正股波段止损;破MA20/420减1/3规则仅适用新买入波段，当前无——7/26 Jedi确认知悉，不再报警)}</span></div>
+            <div class="ps-row "><span class="v">{级别: 买入, 条件: 收盘 > 445, 动作: 买12/30 480C论点仓2张, 附加: 站稳451再加第3张·预算7500港元以内}</span></div>
+            <div class="ps-row "><span class="v">{级别: 止盈, 条件: 收盘 > 465, 动作: 短赌袖珍第一档止盈, 附加: 450购8月465-470卖2张·460购468-474卖2张}</span></div>
+            <div class="ps-row "><span class="v">{级别: 止盈, 条件: 收盘 > 480, 动作: 短赌袖珍第二档止盈+论点仓卖半, 附加: 450购8月475-480卖3张·460购480-490卖3张·450购9月480附近卖2张·论点仓480-490卖半}</span></div>
+            <div class="ps-row alert"><span class="v">{级别: 止盈, 条件: 收盘 > 500, 动作: 论点仓清仓或换远月, 附加: 450购9月490以上清·彩票仓500购持有到到期}</span></div>
+            <div class="ps-row "><span class="v">{级别: 止盈, 条件: 收盘 > 710, 动作: 波段仓卖1/2, 附加: PE>24.4x即3年P80}</span></div>
+            <div class="ps-row "><span class="v">{级别: 止盈, 条件: 收盘 > 804, 动作: 波段仓全清, 附加: PE>27.6x即3年最高}</span></div>
         </div>
         <div class="plan-section">
             <div class="ps-label">止盈</div>
@@ -119,7 +124,7 @@
     </section>
 
 
-    <footer class="site-foot container">千年隼 MILLENNIUM FALCON · 最后更新 2026-07-28 10:52</footer>
-    <script>(function(){var v='202607281052';if(!location.search){location.replace(location.pathname+'?v='+v);return;}var as=document.querySelectorAll('a[href]');for(var i=0;i<as.length;i++){var h=as[i].getAttribute('href');if(h&&h.indexOf('://')<0&&h.indexOf('?v=')<0&&h.match(/\.html$/))as[i].setAttribute('href',h+'?v='+v);}})();</script>
+    <footer class="site-foot container">千年隼 MILLENNIUM FALCON · 最后更新 2026-07-29 21:26</footer>
+    <script>(function(){var v='202607292126';if(!location.search){location.replace(location.pathname+'?v='+v);return;}var as=document.querySelectorAll('a[href]');for(var i=0;i<as.length;i++){var h=as[i].getAttribute('href');if(h&&h.indexOf('://')<0&&h.indexOf('?v=')<0&&h.match(/\.html$/))as[i].setAttribute('href',h+'?v='+v);}})();</script>
 </body>
 </html>
