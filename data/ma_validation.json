@@ -2,10 +2,15 @@
  "date": "2026-08-06",
  "tolerance_pct": 0.5,
  "summary": {
-  "checked": 2,
-  "ok": 2,
+  "checked": 12,
+  "ok": 8,
   "mismatch": [],
-  "errors": []
+  "errors": [
+   "SH.512890",
+   "SH.562500",
+   "SH.512010",
+   "SH.515050"
+  ]
  },
  "results": {
   "SZ.300750": {
@@ -28,8 +33,110 @@
     {
      "name": "MA200",
      "ours": 53.8,
-     "theirs": 53.8445,
-     "diff_pct": 0.083,
+     "theirs": 54.006,
+     "diff_pct": 0.381,
+     "ok": true
+    }
+   ]
+  },
+  "SZ.002594": {
+   "source": "ifind",
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA200",
+     "ours": 95.66,
+     "theirs": 95.6599,
+     "diff_pct": 0.0,
+     "ok": true
+    }
+   ]
+  },
+  "SZ.300274": {
+   "source": "ifind",
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA200",
+     "ours": 153.96,
+     "theirs": 153.9061,
+     "diff_pct": 0.035,
+     "ok": true
+    }
+   ]
+  },
+  "SH.512890": {
+   "source": "ifind",
+   "status": "error",
+   "note": "iFinD 未返回MA200",
+   "pairs": []
+  },
+  "SH.562500": {
+   "source": "ifind",
+   "status": "error",
+   "note": "iFinD 未返回MA200",
+   "pairs": []
+  },
+  "SH.512010": {
+   "source": "ifind",
+   "status": "error",
+   "note": "iFinD 未返回MA200",
+   "pairs": []
+  },
+  "SZ.300476": {
+   "source": "ifind",
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA200",
+     "ours": 292.96,
+     "theirs": 293.0642,
+     "diff_pct": 0.036,
+     "ok": true
+    }
+   ]
+  },
+  "SZ.002371": {
+   "source": "ifind",
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA200",
+     "ours": 533.48,
+     "theirs": 533.7505,
+     "diff_pct": 0.051,
+     "ok": true
+    }
+   ]
+  },
+  "SZ.300394": {
+   "source": "ifind",
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA200",
+     "ours": 203.9,
+     "theirs": 204.0413,
+     "diff_pct": 0.069,
+     "ok": true
+    }
+   ]
+  },
+  "SH.515050": {
+   "source": "ifind",
+   "status": "error",
+   "note": "iFinD 未返回MA200",
+   "pairs": []
+  },
+  "SH.688019": {
+   "source": "ifind",
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA200",
+     "ours": 202.46,
+     "theirs": 202.4996,
+     "diff_pct": 0.02,
      "ok": true
     }
    ]
