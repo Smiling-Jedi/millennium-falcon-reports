@@ -103,8 +103,8 @@
     {
      "name": "MA200",
      "ours": 533.48,
-     "theirs": 533.7505,
-     "diff_pct": 0.051,
+     "theirs": 535.286,
+     "diff_pct": 0.337,
      "ok": true
     }
    ]
