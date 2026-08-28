@@ -5056,6 +5056,18 @@
         "input_tokens": 3368,
         "output_tokens": 2502,
         "prompt_version": "1.2.2"
+      },
+      {
+        "name": "阿里巴巴-W",
+        "code": "HK.09988",
+        "doc_url": "https://www.feishu.cn/docx/JdGjdr7Dmo1xYcxq111c3JoVnsf",
+        "doc_id": "JdGjdr7Dmo1xYcxq111c3JoVnsf",
+        "date": "2026-08-28",
+        "report_title": "阿里配售落地量能不济 均线反压 🟡【观望】",
+        "change_rate": -1.39,
+        "input_tokens": 5492,
+        "output_tokens": 7214,
+        "prompt_version": "1.2.2"
       }
     ],
     "美股": [
@@ -7491,5 +7503,5 @@
       "market": "A股"
     }
   ],
-  "update_time": "2026-08-28 20:41"
+  "update_time": "2026-08-28 20:51"
 }
