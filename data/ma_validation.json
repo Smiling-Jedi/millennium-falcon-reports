@@ -1,216 +1,27 @@
 {
- "date": "2026-08-11",
+ "date": "2026-08-28",
  "tolerance_pct": 0.5,
  "summary": {
-  "checked": 19,
-  "ok": 15,
+  "checked": 12,
+  "ok": 8,
   "mismatch": [],
   "errors": [
-   "SH.512890",
    "SH.562500",
    "SH.512010",
-   "SH.515050"
+   "SH.515050",
+   "SH.518800"
   ]
  },
  "results": {
-  "HK.ALB260929C120000": {
-   "source": "opend",
-   "status": "ok",
-   "pairs": [
-    {
-     "name": "MA20",
-     "ours": 8.31,
-     "theirs": 8.306499999999975,
-     "diff_pct": 0.042,
-     "ok": true
-    },
-    {
-     "name": "MA60",
-     "ours": 8.99,
-     "theirs": 8.988333333333314,
-     "diff_pct": 0.019,
-     "ok": true
-    },
-    {
-     "name": "MA200",
-     "ours": 27.93,
-     "theirs": 27.925699999999974,
-     "diff_pct": 0.015,
-     "ok": true
-    }
-   ]
-  },
-  "HK.09988": {
-   "source": "opend",
-   "status": "ok",
-   "pairs": [
-    {
-     "name": "MA20",
-     "ours": 117.27,
-     "theirs": 117.27000000000007,
-     "diff_pct": 0.0,
-     "ok": true
-    },
-    {
-     "name": "MA60",
-     "ours": 114.19,
-     "theirs": 114.18683333333317,
-     "diff_pct": 0.003,
-     "ok": true
-    },
-    {
-     "name": "MA200",
-     "ours": 136.59,
-     "theirs": 136.59454999999994,
-     "diff_pct": 0.003,
-     "ok": true
-    }
-   ]
-  },
-  "HK.06160": {
-   "source": "opend",
-   "status": "ok",
-   "pairs": [
-    {
-     "name": "MA20",
-     "ours": 195.73,
-     "theirs": 195.73499999999993,
-     "diff_pct": 0.003,
-     "ok": true
-    },
-    {
-     "name": "MA60",
-     "ours": 180.08,
-     "theirs": 180.07833333333338,
-     "diff_pct": 0.001,
-     "ok": true
-    },
-    {
-     "name": "MA200",
-     "ours": 188.54,
-     "theirs": 188.54199999999986,
-     "diff_pct": 0.001,
-     "ok": true
-    }
-   ]
-  },
-  "HK.01888": {
-   "source": "opend",
-   "status": "ok",
-   "pairs": [
-    {
-     "name": "MA20",
-     "ours": 39.13,
-     "theirs": 39.128999999999984,
-     "diff_pct": 0.003,
-     "ok": true
-    },
-    {
-     "name": "MA60",
-     "ours": 57.55,
-     "theirs": 57.5495,
-     "diff_pct": 0.001,
-     "ok": true
-    },
-    {
-     "name": "MA200",
-     "ours": 29.83,
-     "theirs": 29.828199999999992,
-     "diff_pct": 0.006,
-     "ok": true
-    }
-   ]
-  },
-  "HK.00700": {
-   "source": "opend",
-   "status": "ok",
-   "pairs": [
-    {
-     "name": "MA20",
-     "ours": 468.06,
-     "theirs": 468.0599999999995,
-     "diff_pct": 0.0,
-     "ok": true
-    },
-    {
-     "name": "MA60",
-     "ours": 453.64,
-     "theirs": 453.6383333333332,
-     "diff_pct": 0.0,
-     "ok": true
-    },
-    {
-     "name": "MA200",
-     "ours": 530.93,
-     "theirs": 530.9274999999991,
-     "diff_pct": 0.0,
-     "ok": true
-    }
-   ]
-  },
-  "HK.00270": {
-   "source": "opend",
-   "status": "ok",
-   "pairs": [
-    {
-     "name": "MA20",
-     "ours": 8.18,
-     "theirs": 8.176,
-     "diff_pct": 0.049,
-     "ok": true
-    },
-    {
-     "name": "MA60",
-     "ours": 8.0,
-     "theirs": 7.997999999999993,
-     "diff_pct": 0.025,
-     "ok": true
-    },
-    {
-     "name": "MA200",
-     "ours": 7.5,
-     "theirs": 7.500149999999991,
-     "diff_pct": 0.002,
-     "ok": true
-    }
-   ]
-  },
-  "HK.07747": {
-   "source": "opend",
-   "status": "ok",
-   "pairs": [
-    {
-     "name": "MA20",
-     "ours": 75.32,
-     "theirs": 75.32200000000002,
-     "diff_pct": 0.003,
-     "ok": true
-    },
-    {
-     "name": "MA60",
-     "ours": 133.61,
-     "theirs": 133.60716666666676,
-     "diff_pct": 0.002,
-     "ok": true
-    },
-    {
-     "name": "MA200",
-     "ours": 79.6,
-     "theirs": 79.60244999999998,
-     "diff_pct": 0.003,
-     "ok": true
-    }
-   ]
-  },
   "SZ.002594": {
    "source": "ifind",
    "status": "ok",
    "pairs": [
     {
      "name": "MA200",
-     "ours": 95.42,
-     "theirs": 95.4252,
-     "diff_pct": 0.005,
+     "ours": 94.51,
+     "theirs": 94.5527,
+     "diff_pct": 0.045,
      "ok": true
     }
    ]
@@ -221,9 +32,9 @@
    "pairs": [
     {
      "name": "MA200",
-     "ours": 153.5,
-     "theirs": 153.4411,
-     "diff_pct": 0.038,
+     "ours": 149.3,
+     "theirs": 149.5178,
+     "diff_pct": 0.146,
      "ok": true
     }
    ]
@@ -234,18 +45,12 @@
    "pairs": [
     {
      "name": "MA200",
-     "ours": 382.51,
-     "theirs": 383.204,
-     "diff_pct": 0.181,
+     "ours": 383.61,
+     "theirs": 384.1671,
+     "diff_pct": 0.145,
      "ok": true
     }
    ]
-  },
-  "SH.512890": {
-   "source": "ifind",
-   "status": "error",
-   "note": "iFinD 未返回MA200",
-   "pairs": []
   },
   "SH.562500": {
    "source": "ifind",
@@ -265,9 +70,9 @@
    "pairs": [
     {
      "name": "MA200",
-     "ours": 293.19,
-     "theirs": 293.2889,
-     "diff_pct": 0.034,
+     "ours": 291.04,
+     "theirs": 290.7703,
+     "diff_pct": 0.093,
      "ok": true
     }
    ]
@@ -278,9 +83,9 @@
    "pairs": [
     {
      "name": "MA200",
-     "ours": 54.33,
-     "theirs": 54.3743,
-     "diff_pct": 0.081,
+     "ours": 57.18,
+     "theirs": 56.9958,
+     "diff_pct": 0.323,
      "ok": true
     }
    ]
@@ -291,22 +96,9 @@
    "pairs": [
     {
      "name": "MA200",
-     "ours": 538.52,
-     "theirs": 538.7777,
-     "diff_pct": 0.048,
-     "ok": true
-    }
-   ]
-  },
-  "SZ.300394": {
-   "source": "ifind",
-   "status": "ok",
-   "pairs": [
-    {
-     "name": "MA200",
-     "ours": 205.67,
-     "theirs": 205.8104,
-     "diff_pct": 0.068,
+     "ours": 562.4,
+     "theirs": 561.0114,
+     "diff_pct": 0.248,
      "ok": true
     }
    ]
@@ -323,9 +115,28 @@
    "pairs": [
     {
      "name": "MA200",
-     "ours": 203.78,
-     "theirs": 203.8182,
-     "diff_pct": 0.019,
+     "ours": 210.92,
+     "theirs": 209.8867,
+     "diff_pct": 0.492,
+     "ok": true
+    }
+   ]
+  },
+  "SH.518800": {
+   "source": "ifind",
+   "status": "error",
+   "note": "iFinD 未返回MA200",
+   "pairs": []
+  },
+  "SZ.000977": {
+   "source": "ifind",
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA200",
+     "ours": 67.22,
+     "theirs": 67.1858,
+     "diff_pct": 0.051,
      "ok": true
     }
    ]

@@ -1,6 +1,77 @@
 {
-  "date": "2026-08-11",
+  "date": "2026-08-28",
   "checked": 41,
-  "mismatches": [],
+  "mismatches": [
+    {
+      "code": "HK.06160",
+      "name": "百济神州",
+      "watchlist": 2000.0,
+      "actual": 1500.0,
+      "actual_cost": 134.767
+    },
+    {
+      "code": "HK.TCH260828C500000",
+      "name": "腾讯 260828 500.00 购",
+      "watchlist": 10.0,
+      "actual": 0.0,
+      "actual_cost": null
+    },
+    {
+      "code": "HK.TCH260828C460000",
+      "name": "腾讯 260828 460.00 购",
+      "watchlist": 8.0,
+      "actual": 0.0,
+      "actual_cost": 0.0
+    },
+    {
+      "code": "HK.TCH260929C450000",
+      "name": "腾讯 260929 450.00 购",
+      "watchlist": 4.0,
+      "actual": 8.0,
+      "actual_cost": 22.438
+    },
+    {
+      "code": "HK.TCH260828C450000",
+      "name": "腾讯 260828 450.00 购",
+      "watchlist": 2.0,
+      "actual": 0.0,
+      "actual_cost": null
+    },
+    {
+      "code": "US.TSLA",
+      "name": "特斯拉",
+      "watchlist": 80.0,
+      "actual": 60.0,
+      "actual_cost": 424.402
+    },
+    {
+      "code": "US.PLTR",
+      "name": "Palantir",
+      "watchlist": 75.0,
+      "actual": 100.0,
+      "actual_cost": 134.131
+    },
+    {
+      "code": "US.GOOG",
+      "name": "谷歌-C",
+      "watchlist": 140.0,
+      "actual": 160.0,
+      "actual_cost": 334.433
+    },
+    {
+      "code": "HK.ALB261029C127500",
+      "name": "阿里 261029 127.50 购",
+      "watchlist": 0,
+      "actual": 5.0,
+      "actual_cost": 3.07
+    },
+    {
+      "code": "HK.TCH261029C470000",
+      "name": "腾讯 261029 470.00 购",
+      "watchlist": 0,
+      "actual": 10.0,
+      "actual_cost": 14.225
+    }
+  ],
   "errors": []
 }

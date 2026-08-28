@@ -2873,6 +2873,18 @@
         "input_tokens": 4375,
         "output_tokens": 2747,
         "prompt_version": "1.2.2"
+      },
+      {
+        "name": "安集科技",
+        "code": "SH.688019",
+        "doc_url": "https://www.feishu.cn/docx/ItwhdWXvfopwcix990IcN861nfU",
+        "doc_id": "ItwhdWXvfopwcix990IcN861nfU",
+        "date": "2026-08-28",
+        "report_title": "中报高增已验证但均线纠缠 242止损压顶 🟡【观望】",
+        "change_rate": -1.96,
+        "input_tokens": 5599,
+        "output_tokens": 7667,
+        "prompt_version": "1.2.2"
       }
     ],
     "港股": [
@@ -7441,23 +7453,15 @@
       "code": "SZ.300476",
       "name": "胜宏科技",
       "shares": 600,
-      "avg_cost": 284.9978,
+      "avg_cost": 263.0874,
       "role": "观察",
       "market": "A股"
     },
     {
       "code": "SH.600584",
       "name": "长电科技",
-      "shares": 1000,
-      "avg_cost": 74.7858,
-      "role": "观察",
-      "market": "A股"
-    },
-    {
-      "code": "SZ.002371",
-      "name": "北方华创",
-      "shares": 100,
-      "avg_cost": 674.9207,
+      "shares": 2400,
+      "avg_cost": 71.0107,
       "role": "观察",
       "market": "A股"
     },
@@ -7478,13 +7482,14 @@
       "market": "A股"
     },
     {
-      "code": "US.RKLX",
-      "name": "2倍做多RKLB ETF-Defiance",
-      "shares": 500,
-      "avg_cost": 23.391,
+      "code": "SZ.000977",
+      "name": "浪潮信息",
+      "shares": 300,
+      "avg_cost": 74.2967,
       "role": "观察",
-      "market": "美股"
+      "note": "2026-08-22截图对账补记(买入日期/计划待核实)",
+      "market": "A股"
     }
   ],
-  "update_time": "2026-07-25 05:22"
+  "update_time": "2026-08-28 20:41"
 }
