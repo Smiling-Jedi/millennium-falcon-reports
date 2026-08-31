@@ -2885,6 +2885,18 @@
         "input_tokens": 5599,
         "output_tokens": 7667,
         "prompt_version": "1.2.2"
+      },
+      {
+        "name": "北方华创",
+        "code": "SZ.002371",
+        "doc_url": "https://www.feishu.cn/docx/ZRKHdkfWmoDcMaxzqh4ctQtUnid",
+        "doc_id": "ZRKHdkfWmoDcMaxzqh4ctQtUnid",
+        "date": "2026-08-31",
+        "report_title": "北方华创均线空头尾盘翻红 估值封顶反弹空间 🟡【观望】",
+        "change_rate": 0.33,
+        "input_tokens": 5052,
+        "output_tokens": 6235,
+        "prompt_version": "1.2.2"
       }
     ],
     "港股": [
@@ -7503,5 +7515,5 @@
       "market": "A股"
     }
   ],
-  "update_time": "2026-08-28 20:51"
+  "update_time": "2026-08-31 20:33"
 }
