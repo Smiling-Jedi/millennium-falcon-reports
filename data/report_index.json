@@ -2889,13 +2889,109 @@
       {
         "name": "北方华创",
         "code": "SZ.002371",
-        "doc_url": "https://www.feishu.cn/docx/ZRKHdkfWmoDcMaxzqh4ctQtUnid",
-        "doc_id": "ZRKHdkfWmoDcMaxzqh4ctQtUnid",
+        "doc_url": "https://www.feishu.cn/docx/VlZbdOLNRo6FvXxpesZceCWPnqd",
+        "doc_id": "VlZbdOLNRo6FvXxpesZceCWPnqd",
         "date": "2026-08-31",
-        "report_title": "北方华创均线空头尾盘翻红 估值封顶反弹空间 🟡【观望】",
+        "report_title": "下探672拉回699 空头排列不改 🟡【观望】",
         "change_rate": 0.33,
-        "input_tokens": 5052,
-        "output_tokens": 6235,
+        "input_tokens": 60,
+        "output_tokens": 9854,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "比亚迪",
+        "code": "SZ.002594",
+        "doc_url": "https://www.feishu.cn/docx/NzZvd26aKoQzgXxQjofch7ZNnNd",
+        "doc_id": "NzZvd26aKoQzgXxQjofch7ZNnNd",
+        "date": "2026-08-31",
+        "report_title": "半年报利好难改破位 触及88.3防线 🔴【减仓】",
+        "change_rate": -4.46,
+        "input_tokens": 7557,
+        "output_tokens": 12184,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "阳光电源",
+        "code": "SZ.300274",
+        "doc_url": "https://www.feishu.cn/docx/EKitdu56Uoa4pWxHSs9c4Z94n7b",
+        "doc_id": "EKitdu56Uoa4pWxHSs9c4Z94n7b",
+        "date": "2026-08-31",
+        "report_title": "阳光电源收盘破96.38全清线创年内新低 🔴【清仓】",
+        "change_rate": -6.34,
+        "input_tokens": 7724,
+        "output_tokens": 7708,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "宁德时代",
+        "code": "SZ.300750",
+        "doc_url": "https://www.feishu.cn/docx/NNopdNaoCoAMQux2R1ucZwd9nyh",
+        "doc_id": "NNopdNaoCoAMQux2R1ucZwd9nyh",
+        "date": "2026-08-31",
+        "report_title": "收盘逼近360止损线，宁德时代命悬一线 🟡【观望】",
+        "change_rate": -1.34,
+        "input_tokens": 8691,
+        "output_tokens": 5040,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "胜宏科技",
+        "code": "SZ.300476",
+        "doc_url": "https://www.feishu.cn/docx/OiocdUAMvoIgU4x6DBqcZbGHngd",
+        "doc_id": "OiocdUAMvoIgU4x6DBqcZbGHngd",
+        "date": "2026-08-31",
+        "report_title": "中报双增但MA20未收复，计划预警 🟡【观望】",
+        "change_rate": 0.64,
+        "input_tokens": 5298,
+        "output_tokens": 8208,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "长电科技",
+        "code": "SH.600584",
+        "doc_url": "https://www.feishu.cn/docx/TWCzdkSCmo04CqxRbVAcVsLWnae",
+        "doc_id": "TWCzdkSCmo04CqxRbVAcVsLWnae",
+        "date": "2026-08-31",
+        "report_title": "长电跳低获撑量能不足 MA20攻防未分 🔵【持有】",
+        "change_rate": 1.09,
+        "input_tokens": 7801,
+        "output_tokens": 6955,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "安集科技",
+        "code": "SH.688019",
+        "doc_url": "https://www.feishu.cn/docx/DQsqdHBuIotOyDxWirFchEwIn1d",
+        "doc_id": "DQsqdHBuIotOyDxWirFchEwIn1d",
+        "date": "2026-08-31",
+        "report_title": "空头排列下破242，右侧批止损触发 🔴【减仓】",
+        "change_rate": -1.73,
+        "input_tokens": 5971,
+        "output_tokens": 6444,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "黄金ETF国泰",
+        "code": "SH.518800",
+        "doc_url": "https://www.feishu.cn/docx/AQPsdrFHVoNLZIxdtLfclygznze",
+        "doc_id": "AQPsdrFHVoNLZIxdtLfclygznze",
+        "date": "2026-08-31",
+        "report_title": "黄金ETF放量回撤 MA20 命悬一线 🔴【减仓】",
+        "change_rate": -3.63,
+        "input_tokens": 3334,
+        "output_tokens": 9845,
+        "prompt_version": "1.2.2"
+      },
+      {
+        "name": "浪潮信息",
+        "code": "SZ.000977",
+        "doc_url": "https://www.feishu.cn/docx/Pbp6dSauaodGCsx56GycC40Xnfh",
+        "doc_id": "Pbp6dSauaodGCsx56GycC40Xnfh",
+        "date": "2026-08-31",
+        "report_title": "中报暴增催化涨停但买入信号未齐 🟡【观望】",
+        "change_rate": 9.99,
+        "input_tokens": 3770,
+        "output_tokens": 8600,
         "prompt_version": "1.2.2"
       }
     ],
@@ -7513,7 +7609,16 @@
       "role": "观察",
       "note": "2026-08-22截图对账补记(买入日期/计划待核实)",
       "market": "A股"
+    },
+    {
+      "code": "SH.688981",
+      "name": "中芯国际",
+      "shares": 0,
+      "avg_cost": 0,
+      "role": "观察",
+      "note": "2026-08-31 新建计划：D型波段，买入区120-124",
+      "market": "A股"
     }
   ],
-  "update_time": "2026-08-31 20:33"
+  "update_time": "2026-08-31 20:55"
 }
