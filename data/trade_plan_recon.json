@@ -1,0 +1,88 @@
+{
+  "date": "2026-09-01",
+  "cash": {
+    "hk_cash": 100000,
+    "us_cash": 26861,
+    "fund_assets": 75000
+  },
+  "positions_summary": {
+    "HK": {
+      "HK.01888": 2500
+    },
+    "US": {
+      "US.AVGO": 30
+    }
+  },
+  "deals": [
+    {
+      "code": "US.RKLB",
+      "name": "Rocket Lab",
+      "side": "BUY",
+      "qty": 5,
+      "price": 62.56,
+      "time": "2026-09-01 11:38:50",
+      "status": "OK",
+      "market": "美股",
+      "level": "观察仓",
+      "reason": "小额买入（约 313，<1000美金）默认观察仓"
+    },
+    {
+      "code": "US.AVGO",
+      "name": "博通",
+      "side": "SELL",
+      "qty": 30,
+      "price": 365.0,
+      "time": "2026-09-01 10:31:20",
+      "status": "OK",
+      "market": "美股",
+      "level": "待确认",
+      "reason": "卖出价 365.00 未命中计划卖出线",
+      "plan_version": "8.2"
+    },
+    {
+      "code": "US.INTC",
+      "name": "英特尔",
+      "side": "BUY",
+      "qty": 5,
+      "price": 86.44,
+      "time": "2026-09-01 10:09:14",
+      "status": "OK",
+      "market": "美股",
+      "level": "观察仓",
+      "reason": "小额买入（约 432，<1000美金）默认观察仓"
+    },
+    {
+      "code": "HK.TCH260929C450000",
+      "name": "腾讯 260929 450.00 购",
+      "side": "BUY",
+      "qty": 4,
+      "price": 11.7,
+      "time": "2026-09-01 09:44:36",
+      "status": "OK",
+      "market": "港股",
+      "level": "期权",
+      "reason": "期权成交，另按期权计划核对（本模块不做正股三档判定）"
+    },
+    {
+      "code": "HK.01888",
+      "name": "建滔积层板",
+      "side": "BUY",
+      "qty": 500,
+      "price": 45.0,
+      "time": "2026-09-01 09:33:03",
+      "status": "OK",
+      "market": "港股",
+      "level": "计划内",
+      "reason": "计划有买入方向（无明确价位可比）",
+      "plan_version": "3"
+    }
+  ],
+  "summary": {
+    "计划内": 1,
+    "待确认": 1,
+    "计划外": 0,
+    "观察仓": 2,
+    "期权": 1
+  },
+  "errors": []
+}

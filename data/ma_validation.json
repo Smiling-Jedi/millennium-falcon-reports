@@ -1,145 +1,104 @@
 {
- "date": "2026-08-28",
+ "date": "2026-09-02",
  "tolerance_pct": 0.5,
  "summary": {
-  "checked": 12,
-  "ok": 8,
+  "checked": 13,
+  "ok": 0,
   "mismatch": [],
   "errors": [
-   "SH.562500",
-   "SH.512010",
-   "SH.515050",
-   "SH.518800"
+   "US.TSLA",
+   "US.SOFI",
+   "US.PLTR",
+   "US.NVDA",
+   "US.MU",
+   "US.MSFT",
+   "US.MRVL",
+   "US.META",
+   "US.LITE",
+   "US.GOOG",
+   "US.AXTI",
+   "US.AVGO",
+   "US.RKLB"
   ]
  },
  "results": {
-  "SZ.002594": {
-   "source": "ifind",
-   "status": "ok",
-   "pairs": [
-    {
-     "name": "MA200",
-     "ours": 94.51,
-     "theirs": 94.5527,
-     "diff_pct": 0.045,
-     "ok": true
-    }
-   ]
-  },
-  "SZ.300274": {
-   "source": "ifind",
-   "status": "ok",
-   "pairs": [
-    {
-     "name": "MA200",
-     "ours": 149.3,
-     "theirs": 149.5178,
-     "diff_pct": 0.146,
-     "ok": true
-    }
-   ]
-  },
-  "SZ.300750": {
-   "source": "ifind",
-   "status": "ok",
-   "pairs": [
-    {
-     "name": "MA200",
-     "ours": 383.61,
-     "theirs": 384.1671,
-     "diff_pct": 0.145,
-     "ok": true
-    }
-   ]
-  },
-  "SH.562500": {
-   "source": "ifind",
+  "US.TSLA": {
+   "source": "opend",
    "status": "error",
-   "note": "iFinD 未返回MA200",
+   "note": "futu SDK 不可用",
    "pairs": []
   },
-  "SH.512010": {
-   "source": "ifind",
+  "US.SOFI": {
+   "source": "opend",
    "status": "error",
-   "note": "iFinD 未返回MA200",
+   "note": "futu SDK 不可用",
    "pairs": []
   },
-  "SZ.300476": {
-   "source": "ifind",
-   "status": "ok",
-   "pairs": [
-    {
-     "name": "MA200",
-     "ours": 291.04,
-     "theirs": 290.7703,
-     "diff_pct": 0.093,
-     "ok": true
-    }
-   ]
-  },
-  "SH.600584": {
-   "source": "ifind",
-   "status": "ok",
-   "pairs": [
-    {
-     "name": "MA200",
-     "ours": 57.18,
-     "theirs": 56.9958,
-     "diff_pct": 0.323,
-     "ok": true
-    }
-   ]
-  },
-  "SZ.002371": {
-   "source": "ifind",
-   "status": "ok",
-   "pairs": [
-    {
-     "name": "MA200",
-     "ours": 562.4,
-     "theirs": 561.0114,
-     "diff_pct": 0.248,
-     "ok": true
-    }
-   ]
-  },
-  "SH.515050": {
-   "source": "ifind",
+  "US.PLTR": {
+   "source": "opend",
    "status": "error",
-   "note": "iFinD 未返回MA200",
+   "note": "futu SDK 不可用",
    "pairs": []
   },
-  "SH.688019": {
-   "source": "ifind",
-   "status": "ok",
-   "pairs": [
-    {
-     "name": "MA200",
-     "ours": 210.92,
-     "theirs": 209.8867,
-     "diff_pct": 0.492,
-     "ok": true
-    }
-   ]
-  },
-  "SH.518800": {
-   "source": "ifind",
+  "US.NVDA": {
+   "source": "opend",
    "status": "error",
-   "note": "iFinD 未返回MA200",
+   "note": "futu SDK 不可用",
    "pairs": []
   },
-  "SZ.000977": {
-   "source": "ifind",
-   "status": "ok",
-   "pairs": [
-    {
-     "name": "MA200",
-     "ours": 67.22,
-     "theirs": 67.1858,
-     "diff_pct": 0.051,
-     "ok": true
-    }
-   ]
+  "US.MU": {
+   "source": "opend",
+   "status": "error",
+   "note": "futu SDK 不可用",
+   "pairs": []
+  },
+  "US.MSFT": {
+   "source": "opend",
+   "status": "error",
+   "note": "futu SDK 不可用",
+   "pairs": []
+  },
+  "US.MRVL": {
+   "source": "opend",
+   "status": "error",
+   "note": "futu SDK 不可用",
+   "pairs": []
+  },
+  "US.META": {
+   "source": "opend",
+   "status": "error",
+   "note": "futu SDK 不可用",
+   "pairs": []
+  },
+  "US.LITE": {
+   "source": "opend",
+   "status": "error",
+   "note": "futu SDK 不可用",
+   "pairs": []
+  },
+  "US.GOOG": {
+   "source": "opend",
+   "status": "error",
+   "note": "futu SDK 不可用",
+   "pairs": []
+  },
+  "US.AXTI": {
+   "source": "opend",
+   "status": "error",
+   "note": "futu SDK 不可用",
+   "pairs": []
+  },
+  "US.AVGO": {
+   "source": "opend",
+   "status": "error",
+   "note": "futu SDK 不可用",
+   "pairs": []
+  },
+  "US.RKLB": {
+   "source": "opend",
+   "status": "error",
+   "note": "futu SDK 不可用",
+   "pairs": []
   }
  }
 }
