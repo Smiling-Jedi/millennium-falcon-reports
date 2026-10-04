@@ -1,104 +1,445 @@
 {
- "date": "2026-09-02",
+ "date": "2026-10-04",
  "tolerance_pct": 0.5,
  "summary": {
-  "checked": 13,
-  "ok": 0,
+  "checked": 16,
+  "ok": 16,
   "mismatch": [],
-  "errors": [
-   "US.TSLA",
-   "US.SOFI",
-   "US.PLTR",
-   "US.NVDA",
-   "US.MU",
-   "US.MSFT",
-   "US.MRVL",
-   "US.META",
-   "US.LITE",
-   "US.GOOG",
-   "US.AXTI",
-   "US.AVGO",
-   "US.RKLB"
-  ]
+  "errors": [],
+  "skipped": []
  },
  "results": {
   "US.TSLA": {
    "source": "opend",
-   "status": "error",
-   "note": "futu SDK 不可用",
-   "pairs": []
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA20",
+     "ours": 365.16,
+     "theirs": 365.15500000000014,
+     "diff_pct": 0.001,
+     "ok": true
+    },
+    {
+     "name": "MA60",
+     "ours": 353.71,
+     "theirs": 353.7068333333334,
+     "diff_pct": 0.001,
+     "ok": true
+    },
+    {
+     "name": "MA200",
+     "ours": 393.71,
+     "theirs": 393.70574999999985,
+     "diff_pct": 0.001,
+     "ok": true
+    }
+   ]
   },
   "US.SOFI": {
    "source": "opend",
-   "status": "error",
-   "note": "futu SDK 不可用",
-   "pairs": []
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA20",
+     "ours": 16.97,
+     "theirs": 16.9655,
+     "diff_pct": 0.027,
+     "ok": true
+    },
+    {
+     "name": "MA60",
+     "ours": 17.53,
+     "theirs": 17.531166666666653,
+     "diff_pct": 0.007,
+     "ok": true
+    },
+    {
+     "name": "MA200",
+     "ours": 18.99,
+     "theirs": 18.993799999999997,
+     "diff_pct": 0.02,
+     "ok": true
+    }
+   ]
   },
   "US.PLTR": {
    "source": "opend",
-   "status": "error",
-   "note": "futu SDK 不可用",
-   "pairs": []
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA20",
+     "ours": 179.88,
+     "theirs": 179.87700000000012,
+     "diff_pct": 0.002,
+     "ok": true
+    },
+    {
+     "name": "MA60",
+     "ours": 162.26,
+     "theirs": 162.26116666666653,
+     "diff_pct": 0.001,
+     "ok": true
+    },
+    {
+     "name": "MA200",
+     "ours": 152.08,
+     "theirs": 152.07699999999994,
+     "diff_pct": 0.002,
+     "ok": true
+    }
+   ]
   },
   "US.NVDA": {
    "source": "opend",
-   "status": "error",
-   "note": "futu SDK 不可用",
-   "pairs": []
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA20",
+     "ours": 223.46,
+     "theirs": 223.46000000000018,
+     "diff_pct": 0.0,
+     "ok": true
+    },
+    {
+     "name": "MA60",
+     "ours": 215.88,
+     "theirs": 215.87716666666662,
+     "diff_pct": 0.001,
+     "ok": true
+    },
+    {
+     "name": "MA200",
+     "ours": 200.09,
+     "theirs": 200.08874999999998,
+     "diff_pct": 0.001,
+     "ok": true
+    }
+   ]
   },
   "US.MU": {
    "source": "opend",
-   "status": "error",
-   "note": "futu SDK 不可用",
-   "pairs": []
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA20",
+     "ours": 1019.16,
+     "theirs": 1019.1649999999993,
+     "diff_pct": 0.0,
+     "ok": true
+    },
+    {
+     "name": "MA60",
+     "ours": 950.18,
+     "theirs": 950.181000000001,
+     "diff_pct": 0.0,
+     "ok": true
+    },
+    {
+     "name": "MA200",
+     "ours": 677.31,
+     "theirs": 677.3091000000002,
+     "diff_pct": 0.0,
+     "ok": true
+    }
+   ]
   },
   "US.MSFT": {
    "source": "opend",
-   "status": "error",
-   "note": "futu SDK 不可用",
-   "pairs": []
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA20",
+     "ours": 501.3,
+     "theirs": 501.30150000000003,
+     "diff_pct": 0.0,
+     "ok": true
+    },
+    {
+     "name": "MA60",
+     "ours": 469.2,
+     "theirs": 469.1966666666666,
+     "diff_pct": 0.001,
+     "ok": true
+    },
+    {
+     "name": "MA200",
+     "ours": 431.23,
+     "theirs": 431.22729999999973,
+     "diff_pct": 0.001,
+     "ok": true
+    }
+   ]
   },
   "US.MRVL": {
    "source": "opend",
-   "status": "error",
-   "note": "futu SDK 不可用",
-   "pairs": []
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA20",
+     "ours": 243.0,
+     "theirs": 243.00449999999964,
+     "diff_pct": 0.002,
+     "ok": true
+    },
+    {
+     "name": "MA60",
+     "ours": 223.16,
+     "theirs": 223.15816666666663,
+     "diff_pct": 0.001,
+     "ok": true
+    },
+    {
+     "name": "MA200",
+     "ours": 165.93,
+     "theirs": 165.92585000000003,
+     "diff_pct": 0.003,
+     "ok": true
+    }
+   ]
   },
   "US.META": {
    "source": "opend",
-   "status": "error",
-   "note": "futu SDK 不可用",
-   "pairs": []
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA20",
+     "ours": 689.77,
+     "theirs": 689.7660000000003,
+     "diff_pct": 0.001,
+     "ok": true
+    },
+    {
+     "name": "MA60",
+     "ours": 627.21,
+     "theirs": 627.2111666666659,
+     "diff_pct": 0.0,
+     "ok": true
+    },
+    {
+     "name": "MA200",
+     "ours": 626.98,
+     "theirs": 626.9755999999998,
+     "diff_pct": 0.001,
+     "ok": true
+    }
+   ]
   },
   "US.LITE": {
    "source": "opend",
-   "status": "error",
-   "note": "futu SDK 不可用",
-   "pairs": []
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA20",
+     "ours": 929.82,
+     "theirs": 929.8235000000004,
+     "diff_pct": 0.0,
+     "ok": true
+    },
+    {
+     "name": "MA60",
+     "ours": 858.23,
+     "theirs": 858.2346666666665,
+     "diff_pct": 0.001,
+     "ok": true
+    },
+    {
+     "name": "MA200",
+     "ours": 741.67,
+     "theirs": 741.6743500000001,
+     "diff_pct": 0.001,
+     "ok": true
+    }
+   ]
   },
   "US.GOOG": {
    "source": "opend",
-   "status": "error",
-   "note": "futu SDK 不可用",
-   "pairs": []
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA20",
+     "ours": 339.19,
+     "theirs": 339.1930000000001,
+     "diff_pct": 0.001,
+     "ok": true
+    },
+    {
+     "name": "MA60",
+     "ours": 343.11,
+     "theirs": 343.1073333333334,
+     "diff_pct": 0.001,
+     "ok": true
+    },
+    {
+     "name": "MA200",
+     "ours": 336.85,
+     "theirs": 336.85490000000027,
+     "diff_pct": 0.001,
+     "ok": true
+    }
+   ]
   },
   "US.AXTI": {
    "source": "opend",
-   "status": "error",
-   "note": "futu SDK 不可用",
-   "pairs": []
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA20",
+     "ours": 69.96,
+     "theirs": 69.96150000000003,
+     "diff_pct": 0.002,
+     "ok": true
+    },
+    {
+     "name": "MA60",
+     "ours": 65.16,
+     "theirs": 65.16,
+     "diff_pct": 0.0,
+     "ok": true
+    },
+    {
+     "name": "MA200",
+     "ours": 59.98,
+     "theirs": 59.97504999999999,
+     "diff_pct": 0.008,
+     "ok": true
+    }
+   ]
   },
   "US.AVGO": {
    "source": "opend",
-   "status": "error",
-   "note": "futu SDK 不可用",
-   "pairs": []
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA20",
+     "ours": 353.85,
+     "theirs": 353.84899999999965,
+     "diff_pct": 0.0,
+     "ok": true
+    },
+    {
+     "name": "MA60",
+     "ours": 375.64,
+     "theirs": 375.64083333333326,
+     "diff_pct": 0.0,
+     "ok": true
+    },
+    {
+     "name": "MA200",
+     "ours": 366.17,
+     "theirs": 366.1701499999999,
+     "diff_pct": 0.0,
+     "ok": true
+    }
+   ]
   },
   "US.RKLB": {
    "source": "opend",
-   "status": "error",
-   "note": "futu SDK 不可用",
-   "pairs": []
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA20",
+     "ours": 67.29,
+     "theirs": 67.29399999999994,
+     "diff_pct": 0.006,
+     "ok": true
+    },
+    {
+     "name": "MA60",
+     "ours": 70.32,
+     "theirs": 70.31666666666666,
+     "diff_pct": 0.005,
+     "ok": true
+    },
+    {
+     "name": "MA200",
+     "ours": 81.32,
+     "theirs": 81.3214,
+     "diff_pct": 0.002,
+     "ok": true
+    }
+   ]
+  },
+  "US.INTC": {
+   "source": "opend",
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA20",
+     "ours": 110.25,
+     "theirs": 110.25199999999988,
+     "diff_pct": 0.002,
+     "ok": true
+    },
+    {
+     "name": "MA60",
+     "ours": 100.97,
+     "theirs": 100.9673333333333,
+     "diff_pct": 0.003,
+     "ok": true
+    },
+    {
+     "name": "MA200",
+     "ours": 80.77,
+     "theirs": 80.76979999999999,
+     "diff_pct": 0.0,
+     "ok": true
+    }
+   ]
+  },
+  "US.VOO": {
+   "source": "opend",
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA20",
+     "ours": 702.29,
+     "theirs": 702.2874999999999,
+     "diff_pct": 0.0,
+     "ok": true
+    },
+    {
+     "name": "MA60",
+     "ours": 697.82,
+     "theirs": 697.8248333333337,
+     "diff_pct": 0.001,
+     "ok": true
+    },
+    {
+     "name": "MA200",
+     "ours": 658.5,
+     "theirs": 658.4991499999998,
+     "diff_pct": 0.0,
+     "ok": true
+    }
+   ]
+  },
+  "US.AMZN": {
+   "source": "opend",
+   "status": "ok",
+   "pairs": [
+    {
+     "name": "MA20",
+     "ours": 252.01,
+     "theirs": 252.0109999999998,
+     "diff_pct": 0.0,
+     "ok": true
+    },
+    {
+     "name": "MA60",
+     "ours": 254.85,
+     "theirs": 254.84966666666654,
+     "diff_pct": 0.0,
+     "ok": true
+    },
+    {
+     "name": "MA200",
+     "ours": 241.22,
+     "theirs": 241.21799999999988,
+     "diff_pct": 0.001,
+     "ok": true
+    }
+   ]
   }
  }
 }
