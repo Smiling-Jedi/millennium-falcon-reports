@@ -1,6 +1,6 @@
 {
   "date": "2026-10-04",
-  "updated": "15:20",
+  "updated": "15:45",
   "stocks": {
     "US.TSLA": {
       "code": "US.TSLA",
@@ -104,10 +104,10 @@
       "pe_ttm": 32.18,
       "currency": "USD",
       "has_plan": true,
-      "plan_version": "6",
+      "plan_version": "7",
       "stock_type": "B",
-      "trigger_type": "🔴判断",
-      "trigger_reason": "前提不成立: 收盘>16.0（现价15.84）; 触发失效条件：收盘<16.0（现价15.84） → 减至1000股+3日收回缓冲",
+      "trigger_type": "🟡",
+      "trigger_reason": "硬止损: 距离 2.2%",
       "signal_count": 0,
       "signals": [
         {
@@ -128,34 +128,19 @@
       "small_cycle_text": "",
       "buy_condition_contradiction": null,
       "card_signal_hits": [],
-      "conclusion": "需修改计划",
-      "level1_failures": [
-        {
-          "check": "窗口前提失效",
-          "detail": "收盘>16.0（现价15.84）"
-        },
-        {
-          "check": "窗口前提失效",
-          "detail": "触发失效条件：收盘<16.0（现价15.84） → 减至1000股+3日收回缓冲"
-        }
-      ],
-      "freshness_warnings": [
-        {
-          "check": "软漂移",
-          "level": "yellow",
-          "detail": "收盘15.84跌破有效域下沿16.00，计划几何失效，需按新价格结构重估（1级）"
-        }
-      ],
+      "conclusion": "观望",
+      "level1_failures": [],
+      "freshness_warnings": [],
       "event_premise_notes": [
         {
           "check": "事件前提待验",
           "level": "gray",
-          "detail": "事件前提「TTM营收增速 >= 25%」上次验证 2026-08-14（2026Q2披露滞后折算），已超期 21 天（未标周期按月检30天计）"
+          "detail": "事件前提「TTM营收增速 >= 25%」上次验证 2026-09-02（as-of），已超期 2 天（未标周期按月检30天计）"
         },
         {
-          "check": "事件前提无验证记录",
+          "check": "事件前提待验",
           "level": "gray",
-          "detail": "事件前提「个人贷净核销率同比跳升 < 2个百分点」无验证时间记录，视同从未验证（未标周期按月检30天计）"
+          "detail": "事件前提「个人贷净核销率同比跳升 < 2个百分点」上次验证 2026-09-02（as-of），已超期 2 天（未标周期按月检30天计）"
         },
         {
           "check": "事件前提无验证记录",
@@ -166,12 +151,14 @@
           "check": "事件前提无验证记录",
           "level": "gray",
           "detail": "事件前提「个人贷净核销率同比跳升 >= 2个百分点」无验证时间记录，视同从未验证（未标周期按月检30天计）"
+        },
+        {
+          "check": "事件前提无验证记录",
+          "level": "gray",
+          "detail": "事件前提「2026-10-07收盘仍 < 16.00」无验证时间记录，视同从未验证（未标周期按月检30天计）"
         }
       ],
-      "level2_triggered": {
-        "type": "止损",
-        "detail": "硬止损: 减至1000股+3日收回缓冲（当前 $15.84）"
-      },
+      "level2_triggered": null,
       "level3_ready": {
         "met": 0,
         "required": 1,
@@ -179,10 +166,7 @@
         "ready": false,
         "multi_path": true
       },
-      "consecutive_days": {
-        "conclusion": "需修改计划",
-        "days": 1
-      },
+      "consecutive_days": null,
       "fundamental_watch": null,
       "suggested_changes": [],
       "buy_window": {
@@ -202,10 +186,10 @@
       "stop_checks": [
         {
           "label": "硬止损",
-          "price": 16.0,
-          "description": "减至1000股+3日收回缓冲",
-          "status": "触发",
-          "detail": "当前 15.84 已跌破且连续 4 日收盘确认，触发"
+          "price": 15.5,
+          "description": "核量≥1.5倍20日均量(≈6700万股)则立即卖1333股留667股;阴跌不放量→不立即执行由10-07时间腿兜底",
+          "status": "接近",
+          "detail": "距离 2.2%"
         }
       ],
       "target_checks": []
