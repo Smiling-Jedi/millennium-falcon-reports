@@ -79,9 +79,9 @@
       "time": "2026-09-30 10:19:32",
       "status": "OK",
       "market": "美股",
-      "level": "计划外",
-      "reason": "无交易计划",
-      "plan_version": "?"
+      "level": "计划内",
+      "reason": "买入价 251.03 落在买入区 244-247",
+      "plan_version": "1"
     },
     {
       "code": "US.MU",
@@ -130,9 +130,9 @@
       "time": "2026-09-29 19:09:18",
       "status": "OK",
       "market": "美股",
-      "level": "计划外",
-      "reason": "无交易计划",
-      "plan_version": "?"
+      "level": "计划内",
+      "reason": "买入价 246.69 落在买入区 244-247",
+      "plan_version": "1"
     },
     {
       "code": "US.SOFI",
@@ -287,7 +287,7 @@
       "market": "美股",
       "level": "待确认",
       "reason": "卖出价 80.49 未命中计划卖出线",
-      "plan_version": "9"
+      "plan_version": "10"
     },
     {
       "code": "US.GOOG",
@@ -316,9 +316,9 @@
     }
   ],
   "summary": {
-    "计划内": 10,
+    "计划内": 12,
     "待确认": 4,
-    "计划外": 3,
+    "计划外": 1,
     "观察仓": 1,
     "期权": 3
   },

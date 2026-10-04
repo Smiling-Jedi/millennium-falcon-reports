@@ -1,18 +1,18 @@
 {
   "date": "2026-10-04",
-  "updated": "15:45",
+  "updated": "17:26",
   "stocks": {
     "US.TSLA": {
       "code": "US.TSLA",
       "date": "2026-10-04",
-      "current_price": 354.11,
-      "pe_ttm": 343.14,
+      "current_price": 370.59,
+      "pe_ttm": null,
       "currency": "USD",
       "has_plan": true,
       "plan_version": "7.1",
       "stock_type": "G",
       "trigger_type": "🟢",
-      "trigger_reason": "前提成立，等待信号；📡买入窗口进入：重新评估买回(再上车线)（附加：且放量=反弹结构修复，需先解除暂停买入）；📡止盈窗口进入：反弹减仓①30股（附加：338-345区间）",
+      "trigger_reason": "前提成立，等待信号；📡买入窗口进入：重新评估买回(再上车线)（附加：且放量=反弹结构修复，需先解除暂停买入）；📡止盈窗口进入：反弹减仓①30股（附加：338-345区间）；📡止盈窗口进入：反弹减仓②30股（附加：360-365区间，数量待Jedi确认）",
       "signal_count": 0,
       "signals": [
         {
@@ -47,35 +47,25 @@
           "signal": "买入",
           "description": "重新评估买回(再上车线)",
           "extra": "且放量=反弹结构修复，需先解除暂停买入",
-          "price": 354.11
+          "price": 370.59
         },
         {
           "signal": "止盈",
           "description": "反弹减仓①30股",
           "extra": "338-345区间",
-          "price": 354.11
+          "price": 370.59
+        },
+        {
+          "signal": "止盈",
+          "description": "反弹减仓②30股",
+          "extra": "360-365区间，数量待Jedi确认",
+          "price": 370.59
         }
       ],
       "conclusion": "观望",
       "level1_failures": [],
       "freshness_warnings": [],
-      "event_premise_notes": [
-        {
-          "check": "事件前提待验",
-          "level": "gray",
-          "detail": "事件前提「三叙事线未证伪(FSD爬坡/Robotaxi试点/Optimus原型)」上次验证 2026-07-18（as-of），已超期 48 天（未标周期按月检30天计）"
-        },
-        {
-          "check": "事件前提无验证记录",
-          "level": "gray",
-          "detail": "事件前提「毛利率观察锚(重回并维持20%+)」无验证时间记录，视同从未验证（未标周期按月检30天计）"
-        },
-        {
-          "check": "事件前提待验",
-          "level": "gray",
-          "detail": "事件前提「G型门槛①现金造血(OCF+/FCF>0)」上次验证 2026-06-18（as-of），已超期 78 天（未标周期按月检30天计）"
-        }
-      ],
+      "event_premise_notes": [],
       "level2_triggered": null,
       "level3_ready": null,
       "consecutive_days": {
@@ -131,33 +121,7 @@
       "conclusion": "观望",
       "level1_failures": [],
       "freshness_warnings": [],
-      "event_premise_notes": [
-        {
-          "check": "事件前提待验",
-          "level": "gray",
-          "detail": "事件前提「TTM营收增速 >= 25%」上次验证 2026-09-02（as-of），已超期 2 天（未标周期按月检30天计）"
-        },
-        {
-          "check": "事件前提待验",
-          "level": "gray",
-          "detail": "事件前提「个人贷净核销率同比跳升 < 2个百分点」上次验证 2026-09-02（as-of），已超期 2 天（未标周期按月检30天计）"
-        },
-        {
-          "check": "事件前提无验证记录",
-          "level": "gray",
-          "detail": "事件前提「增速连两季 < 15%」无验证时间记录，视同从未验证（未标周期按月检30天计）"
-        },
-        {
-          "check": "事件前提无验证记录",
-          "level": "gray",
-          "detail": "事件前提「个人贷净核销率同比跳升 >= 2个百分点」无验证时间记录，视同从未验证（未标周期按月检30天计）"
-        },
-        {
-          "check": "事件前提无验证记录",
-          "level": "gray",
-          "detail": "事件前提「2026-10-07收盘仍 < 16.00」无验证时间记录，视同从未验证（未标周期按月检30天计）"
-        }
-      ],
+      "event_premise_notes": [],
       "level2_triggered": null,
       "level3_ready": {
         "met": 0,
@@ -166,7 +130,10 @@
         "ready": false,
         "multi_path": true
       },
-      "consecutive_days": null,
+      "consecutive_days": {
+        "conclusion": "观望",
+        "days": 1
+      },
       "fundamental_watch": null,
       "suggested_changes": [],
       "buy_window": {
@@ -238,23 +205,7 @@
       "conclusion": "观望",
       "level1_failures": [],
       "freshness_warnings": [],
-      "event_premise_notes": [
-        {
-          "check": "事件前提待验",
-          "level": "gray",
-          "detail": "事件前提「Q2财报验证通过(营收+93%」上次验证 2026-08-10（as-of），已超期 25 天（未标周期按月检30天计）"
-        },
-        {
-          "check": "事件前提无验证记录",
-          "level": "gray",
-          "detail": "事件前提「收盘 < MA60当日值」无验证时间记录，视同从未验证（未标周期按月检30天计）"
-        },
-        {
-          "check": "事件前提无验证记录",
-          "level": "gray",
-          "detail": "事件前提「底仓证伪线任一命中」无验证时间记录，视同从未验证（未标周期按月检30天计）"
-        }
-      ],
+      "event_premise_notes": [],
       "level2_triggered": null,
       "level3_ready": {
         "met": 2,
@@ -279,11 +230,11 @@
       },
       "stop_checks": [
         {
-          "label": "无 plan-card",
-          "price": null,
-          "description": "无机器可读止损卡，日检不做止损对照",
+          "label": "硬止损",
+          "price": 163.26,
+          "description": "全卖波段80股(收盘确认)",
           "status": "安全",
-          "detail": "需 Master 补 plan-card"
+          "detail": "距离 16.4%"
         }
       ],
       "target_checks": []
@@ -403,18 +354,7 @@
       "conclusion": "观望",
       "level1_failures": [],
       "freshness_warnings": [],
-      "event_premise_notes": [
-        {
-          "check": "事件前提无验证记录",
-          "level": "gray",
-          "detail": "事件前提「DRAM现货价趋势不崩」无验证时间记录，视同从未验证（未标周期按月检30天计）"
-        },
-        {
-          "check": "事件前提无验证记录",
-          "level": "gray",
-          "detail": "事件前提「FY27 capex指引不出现供给洪水」无验证时间记录，视同从未验证（未标周期按月检30天计）"
-        }
-      ],
+      "event_premise_notes": [],
       "level2_triggered": null,
       "level3_ready": {
         "met": 1,
@@ -505,13 +445,7 @@
       "conclusion": "买入",
       "level1_failures": [],
       "freshness_warnings": [],
-      "event_premise_notes": [
-        {
-          "check": "事件前提无验证记录",
-          "level": "gray",
-          "detail": "事件前提「CAPEX黄牌收敛(FCF恢复正增长)」无验证时间记录，视同从未验证（未标周期按月检30天计）"
-        }
-      ],
+      "event_premise_notes": [],
       "level2_triggered": null,
       "level3_ready": {
         "met": 1,
@@ -583,13 +517,7 @@
       "conclusion": "观望",
       "level1_failures": [],
       "freshness_warnings": [],
-      "event_premise_notes": [
-        {
-          "check": "事件前提待验",
-          "level": "gray",
-          "detail": "事件前提「营收增速不失速(腰斩线20%)」上次验证 2026-08-28（as-of），已超期 7 天（未标周期按月检30天计）"
-        }
-      ],
+      "event_premise_notes": [],
       "level2_triggered": null,
       "level3_ready": {
         "met": 3,
@@ -668,18 +596,7 @@
       "conclusion": "观望",
       "level1_failures": [],
       "freshness_warnings": [],
-      "event_premise_notes": [
-        {
-          "check": "事件前提待验",
-          "level": "gray",
-          "detail": "事件前提「AI军备不摧毁现金流+护城河完整(用户网络/广告生态/AI不掉队)」上次验证 2026-07-19（as-of），已超期 47 天（未标周期按月检30天计）"
-        },
-        {
-          "check": "事件前提无验证记录",
-          "level": "gray",
-          "detail": "事件前提「护城河事件(社交网络被替代/广告生态被颠覆/AI掉队)或仓位被动超20%」无验证时间记录，视同从未验证（未标周期按月检30天计）"
-        }
-      ],
+      "event_premise_notes": [],
       "level2_triggered": null,
       "level3_ready": {
         "met": 3,
@@ -709,6 +626,13 @@
         "anchor_valid": true
       },
       "stop_checks": [
+        {
+          "label": "硬止损",
+          "price": 600.0,
+          "description": "卖波段5股",
+          "status": "安全",
+          "detail": "距离 21.0%"
+        },
         {
           "label": "硬止损",
           "price": 555.0,
@@ -770,23 +694,7 @@
       "conclusion": "观望",
       "level1_failures": [],
       "freshness_warnings": [],
-      "event_premise_notes": [
-        {
-          "check": "事件前提待验",
-          "level": "gray",
-          "detail": "事件前提「EML龙头地位+增速不失速(Q4验证通过:营收+109%/指引+130%)」上次验证 2026-08-27（as-of），已超期 8 天（未标周期按月检30天计）"
-        },
-        {
-          "check": "事件前提待验",
-          "level": "gray",
-          "detail": "事件前提「行业景气(云厂商CapEx不下修/光模块需求)」上次验证 2026-08-27（as-of），已超期 8 天（未标周期按月检30天计）"
-        },
-        {
-          "check": "事件前提待验",
-          "level": "gray",
-          "detail": "事件前提「对华出口管制/关税不升级」上次验证 2026-08-27（as-of），已超期 8 天（未标周期按月检30天计）"
-        }
-      ],
+      "event_premise_notes": [],
       "level2_triggered": null,
       "level3_ready": {
         "met": 2,
@@ -861,23 +769,7 @@
       "conclusion": "观望",
       "level1_failures": [],
       "freshness_warnings": [],
-      "event_premise_notes": [
-        {
-          "check": "事件前提待验",
-          "level": "gray",
-          "detail": "事件前提「Cloud需求铁证(Cloud高增+积压订单)」上次验证 2026-07-22（as-of），已超期 44 天（未标周期按月检30天计）"
-        },
-        {
-          "check": "事件前提无验证记录",
-          "level": "gray",
-          "detail": "事件前提「反垄断尾部风险(分拆裁决)」无验证时间记录，视同从未验证（未标周期按月检30天计）"
-        },
-        {
-          "check": "事件前提无验证记录",
-          "level": "gray",
-          "detail": "事件前提「护城河事件(AI搜索颠覆广告)」无验证时间记录，视同从未验证（未标周期按月检30天计）"
-        }
-      ],
+      "event_premise_notes": [],
       "level2_triggered": null,
       "level3_ready": {
         "met": 1,
@@ -912,16 +804,31 @@
       "pe_ttm": 2862.33,
       "currency": "USD",
       "has_plan": true,
-      "plan_version": "9",
+      "plan_version": "10",
       "stock_type": "B",
       "trigger_type": "🟡",
-      "trigger_reason": "买入信号到位 (1/1)，但计划声明暂停加仓，维持观望；📡止盈窗口进入：再减20股（附加：MA20附近，目标区72-75）",
-      "signal_count": 1,
+      "trigger_reason": "买入信号到位 (2/2)，但计划声明暂停加仓，维持观望",
+      "signal_count": 2,
       "signals": [
         {
-          "name": "站上$77",
-          "description": "收盘81.81 > $77.00",
+          "name": "均线支撑",
+          "description": "收盘站上MA5(78.0)",
           "satisfied": true
+        },
+        {
+          "name": "阳线放量",
+          "description": "阳线放量",
+          "satisfied": true
+        },
+        {
+          "name": "不创新低",
+          "description": "仍在创新低",
+          "satisfied": false
+        },
+        {
+          "name": "ATR收缩",
+          "description": "ATR未收缩",
+          "satisfied": false
         }
       ],
       "trend_status": "向下反转",
@@ -930,41 +837,17 @@
       "auto_reason": "",
       "small_cycle_text": "",
       "buy_condition_contradiction": null,
-      "card_signal_hits": [
-        {
-          "signal": "止盈",
-          "description": "再减20股",
-          "extra": "MA20附近，目标区72-75",
-          "price": 81.81
-        }
-      ],
+      "card_signal_hits": [],
       "conclusion": "观望",
       "level1_failures": [],
       "freshness_warnings": [],
-      "event_premise_notes": [
-        {
-          "check": "事件前提待验",
-          "level": "gray",
-          "detail": "事件前提「TTM营收增速 >= 40%」上次验证 2026-05-15（2026Q1披露滞后折算），已超期 112 天（未标周期按月检30天计）"
-        },
-        {
-          "check": "事件前提待验",
-          "level": "gray",
-          "detail": "事件前提「毛利率 > 25%」上次验证 2026-05-15（2026Q1披露滞后折算），已超期 112 天（未标周期按月检30天计）"
-        },
-        {
-          "check": "事件前提无验证记录",
-          "level": "gray",
-          "detail": "事件前提「Q2增速 < 20% 或 亏损重新扩大」无验证时间记录，视同从未验证（未标周期按月检30天计）"
-        }
-      ],
+      "event_premise_notes": [],
       "level2_triggered": null,
       "level3_ready": {
-        "met": 1,
-        "required": 1,
-        "total": 1,
-        "ready": true,
-        "multi_path": true
+        "met": 2,
+        "required": 2,
+        "total": 4,
+        "ready": true
       },
       "consecutive_days": {
         "conclusion": "观望",
@@ -972,15 +855,27 @@
       },
       "fundamental_watch": null,
       "suggested_changes": [],
-      "buy_window": null,
+      "buy_window": {
+        "low": 57.0,
+        "high": 60.0,
+        "in_window": false,
+        "distance_pct": 26.7
+      },
       "valuation": null,
       "stop_checks": [
         {
           "label": "硬止损",
-          "price": 39.7,
-          "description": "清仓",
+          "price": 75.0,
+          "description": "波段30股先走",
+          "status": "接近",
+          "detail": "距离 9.1%"
+        },
+        {
+          "label": "硬止损",
+          "price": 71.5,
+          "description": "尾仓15股清",
           "status": "安全",
-          "detail": "距离 106.1%"
+          "detail": "距离 14.4%"
         }
       ],
       "target_checks": []
@@ -1019,13 +914,7 @@
       "conclusion": "观望",
       "level1_failures": [],
       "freshness_warnings": [],
-      "event_premise_notes": [
-        {
-          "check": "事件前提无验证记录",
-          "level": "gray",
-          "detail": "事件前提「三重护城河完整(DSP双寡头/TPU绑定/VMware整合)」无验证时间记录，视同从未验证（未标周期按月检30天计）"
-        }
-      ],
+      "event_premise_notes": [],
       "level2_triggered": null,
       "level3_ready": {
         "met": 1,
@@ -1094,18 +983,7 @@
       "conclusion": "买入",
       "level1_failures": [],
       "freshness_warnings": [],
-      "event_premise_notes": [
-        {
-          "check": "事件前提无验证记录",
-          "level": "gray",
-          "detail": "事件前提「收盘 < 55.7」无验证时间记录，视同从未验证（未标周期按月检30天计）"
-        },
-        {
-          "check": "事件前提无验证记录",
-          "level": "gray",
-          "detail": "事件前提「Neutron官宣跳票2027或Q3营收增速<40%」无验证时间记录，视同从未验证（未标周期按月检30天计）"
-        }
-      ],
+      "event_premise_notes": [],
       "level2_triggered": null,
       "level3_ready": {
         "met": 2,
@@ -1243,32 +1121,74 @@
       "current_price": 248.23,
       "pe_ttm": 20.23,
       "currency": "USD",
-      "has_plan": false,
-      "plan_version": "?",
-      "stock_type": "",
-      "trigger_type": "🟢",
-      "trigger_reason": "无 Master 交易计划",
+      "has_plan": true,
+      "plan_version": "1",
+      "stock_type": "A亚类",
+      "trigger_type": "🟡",
+      "trigger_reason": "距买入窗口 1.7%; 距窗口上沿 0.5%; 硬止损: 距离 3.4%",
       "signal_count": 0,
-      "signals": [],
-      "trend_status": "",
-      "trend_changed": false,
+      "signals": [
+        {
+          "name": "$244.00-$247.00",
+          "description": "价格248.23不在$244.00-$247.00",
+          "satisfied": false
+        },
+        {
+          "name": "放量",
+          "description": "未放量(0.9x)",
+          "satisfied": false
+        },
+        {
+          "name": "站上$255",
+          "description": "收盘248.23 <= $255.00",
+          "satisfied": false
+        }
+      ],
+      "trend_status": "正常",
+      "trend_changed": "",
       "auto_action": "",
       "auto_reason": "",
       "small_cycle_text": "",
       "buy_condition_contradiction": null,
       "card_signal_hits": [],
-      "conclusion": "",
+      "conclusion": "观望",
       "level1_failures": [],
       "freshness_warnings": [],
       "event_premise_notes": [],
       "level2_triggered": null,
-      "level3_ready": null,
+      "level3_ready": {
+        "met": 0,
+        "required": 1,
+        "total": 0,
+        "ready": false,
+        "multi_path": true
+      },
       "consecutive_days": null,
       "fundamental_watch": null,
       "suggested_changes": [],
-      "buy_window": null,
-      "valuation": null,
-      "stop_checks": [],
+      "buy_window": {
+        "low": 244.0,
+        "high": 247.0,
+        "in_window": false,
+        "distance_pct": 0.5
+      },
+      "valuation": {
+        "peg": 1.1,
+        "fwd_pe": null,
+        "sp_fwd_pe": null,
+        "peg_ok": false,
+        "fwd_pe_ok": null,
+        "anchor_valid": false
+      },
+      "stop_checks": [
+        {
+          "label": "硬止损",
+          "price": 240.0,
+          "description": "波段10股止损卖",
+          "status": "接近",
+          "detail": "距离 3.4%"
+        }
+      ],
       "target_checks": []
     }
   }
